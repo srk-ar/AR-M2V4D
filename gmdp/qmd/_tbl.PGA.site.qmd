@@ -1,0 +1,283 @@
+The following tables presents the design ground motions in terms of peak ground accelerations $PGA=S_a(0)$ for different service levels (return periods), site conditions according to NRC 2020, and confidence levels.
+
+
+```{r echo=FALSE}
+TR_TARGET <- c(100,200,500,1000,2500,5000,10000)
+po_TARGET <- c(0.05,0.10,0.16,0.50,"mean",0.84,0.90,0.95)
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_140
+#| tbl-cap: "Design Ground Motions for Vs30=140 m/s - PGA[g]" 
+Vs30_TARGET <- 140
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_250
+#| tbl-cap: "Design Ground Motions for Vs30=250 m/s - PGA[g]" 
+Vs30_TARGET <- 250
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_300
+#| tbl-cap: "Design Ground Motions for Vs30=300 m/s - PGA[g]" 
+Vs30_TARGET <- 300
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_360
+#| tbl-cap: "Design Ground Motions for Vs30=360 m/s - PGA[g]" 
+Vs30_TARGET <- 360
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_450
+#| tbl-cap: "Design Ground Motions for Vs30=450 m/s - PGA[g]" 
+Vs30_TARGET <- 450
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_580
+#| tbl-cap: "Design Ground Motions for Vs30=580 m/s - PGA[g]" 
+Vs30_TARGET <- 580
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_760
+#| tbl-cap: "Design Ground Motions for Vs30=760 m/s - PGA[g]" 
+Vs30_TARGET <- 760
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_910
+#| tbl-cap: "Design Ground Motions for Vs30=910 m/s - PGA[g]" 
+Vs30_TARGET <- 910
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_1100
+#| tbl-cap: "Design Ground Motions for Vs30=1100 m/s - PGA[g]" 
+Vs30_TARGET <- 1100
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_1600
+#| tbl-cap: "Design Ground Motions for Vs30=1600 m/s - PGA[g]" 
+Vs30_TARGET <- 1600
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_2000
+#| tbl-cap: "Design Ground Motions for Vs30=2000 m/s - PGA[g]" 
+Vs30_TARGET <- 2000
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_3000
+#| tbl-cap: "Design Ground Motions for Vs30=3000 m/s - PGA[g]" 
+Vs30_TARGET <- 3000
+# FIX BUG in gmdp when Vs30o different than Vref.
+DT <- gmdp::buildTable.Sa(UHSTable,Tno=0,Vs30o=Vs30_TARGET,po=po_TARGET,TRo = TR_TARGET)
+setnames(DT,old = c("TR[yr]","PGA[g]","Tn[s]","Vs30[m/s]"),new = c("TR","PGA","Tn","Vs30"))
+LT1 <- DT[p==0.50,.(TR,"50%"= PGA,Vs30)]
+LT2 <- DT[p=="mean",.(TR,"mean"=PGA,Vs30)]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,"95%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,"90%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.84,.(TR,"84%"=PGA,Vs30)]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+
+AUX|> setcolorder(neworder = c("TR","50%","mean","84%","90%","95%")) 
+AUX |> buildTable(library="gt") |> 
+  gt::fmt_number(columns = c("50%","mean","84%","90%","95%"),decimals = 2) 
+```

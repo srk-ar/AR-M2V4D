@@ -1,0 +1,232 @@
+The following figures shows the uniform hazard spectra for spectral ordinates with 5% damping in sites with Vs30=1000 m/s presented across various confidence levels.
+
+
+
+```{r echo=FALSE}
+TR_TARGET <- c(200,500,1000,2000,2500,5000,10000)
+Vs30_TARGET <- 1000
+YMAX <- 0.35
+```
+
+
+::: {.content-hidden when-format="html"}
+
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=1000 m/s"
+#| label: fig-UHS_1000_docx
+#| column: body-outset-right
+#| 
+DATA <- UHSTable[TR %in% TR_TARGET & Vs30 %in% Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+
+:::
+
+
+::: {.panel-tabset .nav-pills .content-visible when-format="html" unless-format="revealjs"}
+
+#### p=mean
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=1000 m/s"
+#| label: fig-UHS_mean
+
+p_TARGET <- "mean"
+
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+#### p=5%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
+#| label: fig-UHS_5
+p_TARGET <- 0.05
+
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+#### p=10%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
+#| label: fig-UHS_10
+
+p_TARGET <- 0.10
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+#### p=16%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
+#| label: fig-UHS_16
+
+p_TARGET <- 0.16
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+#### p=50%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
+#| label: fig-UHS_50
+
+p_TARGET <- 0.5
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+#### p=84%
+
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
+#| label: fig-UHS_84
+
+p_TARGET <- 0.84
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+#### p=90%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
+#| label: fig-UHS_90
+p_TARGET <- 0.90
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+#### p=95%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
+#| label: fig-UHS_95
+p_TARGET <- 0.95
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+:::

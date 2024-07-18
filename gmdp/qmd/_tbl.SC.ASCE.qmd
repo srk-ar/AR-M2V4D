@@ -1,0 +1,10 @@
+
+```{r include=TRUE}
+#| label: tbl-SC
+#| column: body-outset-right
+#| tbl-cap: "Site Classification according to ASCE/SEI 7-22"
+
+data(SiteClass)
+SiteClass |> buildTable(library="gt",font.size.body = 11,font.size.header = 11)
+
+```

@@ -1,0 +1,61 @@
+---
+params:
+  render: none
+  ext: png
+  lang: EN
+  exportImages: true
+  background: "white"
+  client: "Balasauskandyk"
+  clientShort: "client"
+  project: "Crawford"
+  srk: "SRK Consulting (US)"
+  vs30: 1000
+  hs: 25
+  s: 2.5
+  b: 10
+---
+
+
+```{r ,include=FALSE}
+REBUILD <- TRUE
+source("R/setup.R")
+source("R/global.R")
+if(REBUILD){
+  source("R/dataset.R")
+} else {
+  UHSTable <- readRDS("data/UHSTable.Rds")
+AEPTable <- readRDS("data/AEPTable.Rds")
+}
+  
+```
+
+
+{{< include qmd/_Scope.qmd >}}
+
+{{< include qmd/_Disclaimer.qmd >}}
+
+{{< include qmd/_Hazard.qmd >}}
+
+<!-- {{< include qmd/_AmplificationFactor.qmd >}} -->
+
+{{< include qmd/_DesignGroundMotions.qmd >}}
+
+<!-- {{< include qmd/_FundamentalPeriods.qmd >}} -->
+
+<!-- {{< include qmd/_SeismicCoefficients.qmd >}} -->
+
+# References
+
+::: {#refs}
+:::
+
+# Appendices
+
+{{< include qmd/_SiteClassification.qmd >}}
+
+{{< include qmd/_Ishihara.qmd >}}
+
+
+
+
+

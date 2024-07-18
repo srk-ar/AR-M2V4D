@@ -1,0 +1,163 @@
+
+The following figures shows the uniform hazard spectra for spectral ordinates with 5% damping in rock (BC) for different confidence levels.
+
+```{r echo=FALSE}
+Vs30_TARGET <- 760
+TR_TARGET <- c(200,500,1000,2000,2500,5000,10000)
+YMAX <- 1.0
+
+```
+
+
+::: {.content-hidden when-format="html"}
+
+
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] in rock, with 5% damping - Mean Values"
+#| label: fig-UHS_AEP_docx
+#| column: page-inset-right
+#| 
+p_TARGET <- "mean"
+DATA <- UHSTable[TR %in% TR_TARGET & Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max =YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+:::
+
+
+::: {.panel-tabset .nav-pills .content-visible when-format="html" unless-format="revealjs"}
+
+
+### p=mean
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] in rock, with 5% damping, for 1/100 to 1/10,000 years AEP"
+#| label: fig-UHS_AEP
+p_TARGET <- "mean"
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+### p=50%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] in rock, with 5% damping, for 1/100 to 1/10,000 years AEP"
+#| label: fig-UHS_AEP_50
+
+p_TARGET <- 0.5
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+### p=84%
+
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] in rock, with 5% damping, for 1/100 to 1/10,000 years AEP"
+#| label: fig-UHS_AEP_84
+
+p_TARGET <- 0.84
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+### p=90%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] in rock, with 5% damping, for 1/100 to 1/10,000 years AEP"
+#| label: fig-UHS_AEP_90
+
+p_TARGET <- 0.90
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+
+### p=95%
+```{r echo=FALSE,include=TRUE}
+#| fig-cap: "Uniform Hazard Spectra Sa[g] in rock, with 5% damping, for 1/100 to 1/10,000 years AEP"
+#| label: fig-UHS_AEP_95
+
+p_TARGET <- 0.95
+DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "hc",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="Sa[g]",
+  group.legend="TR[yr]",
+  data=DATA)
+PLOT
+```
+:::
