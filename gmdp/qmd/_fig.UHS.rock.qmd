@@ -1,0 +1,158 @@
+
+The following figures shows the uniform hazard spectra for spectral ordinates with 5% damping in rock (BC) for different confidence levels.
+
+```{r echo=FALSE}
+Vs30_TARGET <- 1100
+TR_TARGET <- c(100,200,500,1000,2000,2500,5000,10000)
+UHS <- UHSTable[Vs30==Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1" & TR %in% TR_TARGET]
+
+```
+
+
+::: {.content-hidden when-format="html"}
+
+
+
+:::
+
+
+::: {.panel-tabset .nav-pills .content-visible when-format="html" unless-format="revealjs"}
+
+
+### p=50%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.50
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s." |> sprintf("Sa(Tn)",p_TARGET,Vs30_TARGET)
+#| label: fig-UHS.50.rock.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+### p=mean
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- "mean"
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s and 5% damping." |> sprintf("Sa(Tn)","mean",Vs30_TARGET)
+#| label: fig-UHS.mean.rock.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+### p=84%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.84
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s." |> sprintf("Sa(Tn)",p_TARGET,Vs30_TARGET)
+#| label: fig-UHS.84.rock.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+
+### p=90%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.90
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s." |> sprintf("Sa(Tn)",p_TARGET,Vs30_TARGET)
+#| label: fig-UHS.90.rock.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+### p=95%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.95
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s." |> sprintf("Sa(Tn)",p_TARGET,Vs30_TARGET)
+#| label: fig-UHS.95.rock.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+:::

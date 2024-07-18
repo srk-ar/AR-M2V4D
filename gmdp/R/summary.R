@@ -13,7 +13,7 @@ Tn_TARGET <- c(0,0.1,0.5,1.0)
 DATA <- AEPTable[Vref==1500  & Vs30==1500 & p %in% p_TARGET & Tn==0 ,.(ID=SM,X=Sa,Y=AEP)][order(X)]|> unique()
 
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="spline",
@@ -36,7 +36,7 @@ TR_TARGET <- c(475,1000,2475,5000,10000)
 DATA <- UHSTable[Vs30==760 & p =="mean"  & SM=="gmdp" & TR %in% TR_TARGET,.(ID=TR,X=Tn,Y=Sa)][order(X)]|> unique()
 
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="line",
@@ -54,10 +54,10 @@ PLOT
 
 
 
-DATA <- UHSTable[Vref==760 & Vs30==760 & SM=="openquake" & TR == 10000,.(ID=p,X=Tn,Y=Sa)][order(X)]|> unique()
+DATA <- UHSTable[p%in% c(0.16,0.50,"mean",0.84) & Vs30==760 & ID=="nrc_v3.19.1" & SM=="openquake" & TR == 10000,.(ID=p,X=Tn,Y=Sa)][order(X)]|> unique()
 
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="spline",
@@ -77,7 +77,7 @@ PLOT
 DATA <- UHSTable[ Vref==Vs30 & p=="mean" & TR ==2500,.(ID=Vref,X=Tn,Y=Sa)][order(X)]|> unique()
 
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="spline",
@@ -96,7 +96,7 @@ PLOT
 DATA <- UHSTable[ Vs30==220 & p=="mean" & TR ==10000 & SM=="openquake" & ID=="nrc_v3.19.1",.(ID=as.factor(Vref),X=Tn,Y=Sa)][order(X)]|> unique()
 
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="line",
@@ -119,7 +119,7 @@ PLOT
 
 DATA=UHSTable[ Vs30==220 & p=="mean" & SM=="openquake" & ID=="nrc_v3.19.1" & TR==2475,.(ID=as.factor(Vref),X=Tn,Y=Sa)][order(X)]|> unique()
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="line",
@@ -141,7 +141,7 @@ PLOT
 
 DATA=UHSTable[ Vs30==180 & p==0.50 & SM=="openquake"  & TR==2475,.(ID=ID,X=Tn,Y=Sa)][order(X)]|> unique()
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="spline",
@@ -162,7 +162,7 @@ PLOT
 
 DATA=UHSTable[ Vs30==760 & p=="mean" & SM=="openquake" & ID=="nrc_v3.19.1" & TR %in% c(475,1000,2475,5000,10000),.(ID=TR,X=Tn,Y=Sa)][order(X)]|> unique()
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="spline",

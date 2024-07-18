@@ -17,16 +17,18 @@ params:
 
 
 ```{r ,include=FALSE}
-REBUILD <- TRUE
+REBUILD <- FALSE
 source("R/setup.R")
 source("R/global.R")
 if(REBUILD){
   source("R/dataset.R")
 } else {
   UHSTable <- readRDS("data/UHSTable.Rds")
-AEPTable <- readRDS("data/AEPTable.Rds")
+  AEPTable <- readRDS("data/AEPTable.Rds")
 }
-  
+# Select dataset
+UHSTable <- UHSTable[SM=="openquake" & ID=="nrc_v3.19.1" & p %in% c(0.16,0.50,"mean",0.84) & TR %in% c(475,1000,2475,5000,10000)]
+
 ```
 
 

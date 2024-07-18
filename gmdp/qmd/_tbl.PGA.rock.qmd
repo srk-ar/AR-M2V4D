@@ -1,0 +1,32 @@
+The following table presents the design ground motions for different service levels (return periods) and confidence levels in terms of peak ground accelerations $PGA=S_a(0)$ in rock (BC).
+
+
+
+```{r echo=FALSE}
+TR_TARGET <- c(100,475,1000,2000,2475,5000,10000)
+p_TARGET <- c(0.16,0.50,"mean",0.84)
+Vs30_TARGET <- 1100
+```
+
+
+```{r echo=FALSE,include=TRUE}
+#| label: tbl-PGA_rock
+#| tbl-cap: "Design Ground Motions (rock) - PGA[g]" 
+#| column: body-outset-right
+#| 
+DT <- gmdp::buildTable.Sa(UHS,Tno=0,po=c(0.05,0.10,0.16,0.50,"mean",0.84,0.90,0.95),TRo = TR_TARGET,Vs30o = Vs30_TARGET,tagUnits = FALSE)
+# setnames(DT,old = c("TR[yr]","PGA[g]"),new = c("TR","PGA"))
+LT1 <- DT[p==0.16,.(TR,"16%"=PGA)]
+LT2 <- DT[p==0.84,.(TR,"84%"=PGA)]
+LT3 <- DT[p=="mean",.(TR,"mean"=PGA)]
+LT4 <- DT[p==0.50,.(TR,"50%"=PGA)]
+AUX <- LT1[LT2,on=.(TR)][LT3,on=.(TR)][LT4,on=.(TR)]
+AUX[,Vs30:=Vs30_TARGET] 
+AUX |> setcolorder(neworder = c("TR","Vs30","16%","50%","mean","84%")) 
+AUX |> buildTable(library="gt", font.size.body = 12,font.size.header = 11) |> 
+  gt::fmt_number(columns = c("16%","50%","mean","84%"),decimals = 2) 
+
+# Fix bug in gmdp when Tno !=NULL
+```
+
+
