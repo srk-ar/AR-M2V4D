@@ -2,8 +2,9 @@ The following tables presents the design ground motions in terms of peak ground 
 
 
 ```{r echo=FALSE}
-TR_TARGET <- c(100,200,500,1000,2500,5000,10000)
-po_TARGET <- c(0.05,0.10,0.16,0.50,"mean",0.84,0.90,0.95)
+TR_TARGET <- c(100,475,1000,2000,2475,5000,10000)
+p_TARGET <- c(0.16,0.50,"mean",0.84)
+Vs30_TARGET <- 250
 ```
 
 

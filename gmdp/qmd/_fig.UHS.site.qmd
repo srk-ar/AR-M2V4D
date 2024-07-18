@@ -1,37 +1,16 @@
-The following figures shows the uniform hazard spectra for spectral ordinates with 5% damping in sites with Vs30=1000 m/s presented across various confidence levels.
 
-
+The following figures shows the uniform hazard spectra for spectral ordinates with 5% damping in rock (BC) for different confidence levels.
 
 ```{r echo=FALSE}
-TR_TARGET <- c(200,500,1000,2000,2500,5000,10000)
-Vs30_TARGET <- 1000
-YMAX <- 0.35
+Vs30_TARGET <- 220
+TR_TARGET <- c(100,200,500,1000,2000,2500,5000,10000)
+UHS <- UHSTable[Vref==760 & Vs30==Vs30_TARGET & SM=="gmdp" & ID=="nrc_v3.19.1" & TR %in% TR_TARGET]
+
 ```
 
 
 ::: {.content-hidden when-format="html"}
 
-```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=1000 m/s"
-#| label: fig-UHS_1000_docx
-#| column: body-outset-right
-#| 
-DATA <- UHSTable[TR %in% TR_TARGET & Vs30 %in% Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
-setorder(DATA,X)
-PLOT <- buildPlot(
-  library = "hc",
-  yAxis.label =TRUE,
-  plot.type="line",
-  legend.layout="horizontal",
-  legend.show=TRUE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
-  data=DATA)
-PLOT
-```
 
 
 :::
@@ -39,192 +18,139 @@ PLOT
 
 ::: {.panel-tabset .nav-pills .content-visible when-format="html" unless-format="revealjs"}
 
-#### p=mean
-```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=1000 m/s"
-#| label: fig-UHS_mean
 
+### p=50%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.50
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s." |> sprintf("Sa(Tn)",p_TARGET,Vs30_TARGET)
+#| label: fig-UHS.50.site.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="spline",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+### p=mean
+
+```{r echo=FALSE,include=TRUE}
 p_TARGET <- "mean"
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s and 5% damping." |> sprintf("Sa(Tn)","mean",Vs30_TARGET)
+#| label: fig-UHS.mean.site.html
+#| column: page-inset-right
 
-DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
 setorder(DATA,X)
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   yAxis.label =TRUE,
-  plot.type="line",
+  plot.type="spline",
   legend.layout="horizontal",
-  legend.show=FALSE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
   yAxis.max = YMAX,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
-  data=DATA)
-PLOT
-```
-#### p=5%
-```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
-#| label: fig-UHS_5
-p_TARGET <- 0.05
-
-DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
-
-setorder(DATA,X)
-PLOT <- buildPlot(
-  library = "hc",
-  yAxis.label =TRUE,
-  plot.type="line",
-  legend.layout="horizontal",
-  legend.show=FALSE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
-  yAxis.max = YMAX,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
   data=DATA)
 PLOT
 ```
 
-#### p=10%
-```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
-#| label: fig-UHS_10
-
-p_TARGET <- 0.10
-DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
-setorder(DATA,X)
-PLOT <- buildPlot(
-  library = "hc",
-  yAxis.label =TRUE,
-  plot.type="line",
-  legend.layout="horizontal",
-  legend.show=FALSE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
-  yAxis.max = YMAX,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
-  data=DATA)
-PLOT
-```
-#### p=16%
-```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
-#| label: fig-UHS_16
-
-p_TARGET <- 0.16
-DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
-setorder(DATA,X)
-PLOT <- buildPlot(
-  library = "hc",
-  yAxis.label =TRUE,
-  plot.type="line",
-  legend.layout="horizontal",
-  legend.show=FALSE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
-  yAxis.max = YMAX,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
-  data=DATA)
-PLOT
-```
-#### p=50%
-```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
-#| label: fig-UHS_50
-
-p_TARGET <- 0.5
-DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
-setorder(DATA,X)
-PLOT <- buildPlot(
-  library = "hc",
-  yAxis.label =TRUE,
-  plot.type="line",
-  legend.layout="horizontal",
-  legend.show=FALSE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
-  yAxis.max = YMAX,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
-  data=DATA)
-PLOT
-```
-
-#### p=84%
+### p=84%
 
 ```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
-#| label: fig-UHS_84
-
 p_TARGET <- 0.84
-DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s." |> sprintf("Sa(Tn)",p_TARGET,Vs30_TARGET)
+#| label: fig-UHS.84.site.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
 setorder(DATA,X)
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   yAxis.label =TRUE,
-  plot.type="line",
+  plot.type="spline",
   legend.layout="horizontal",
-  legend.show=FALSE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
   yAxis.max = YMAX,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
   data=DATA)
 PLOT
 ```
 
-#### p=90%
+
+### p=90%
+
 ```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
-#| label: fig-UHS_90
 p_TARGET <- 0.90
-DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s." |> sprintf("Sa(Tn)",p_TARGET,Vs30_TARGET)
+#| label: fig-UHS.90.site.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
 setorder(DATA,X)
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   yAxis.label =TRUE,
-  plot.type="line",
+  plot.type="spline",
   legend.layout="horizontal",
-  legend.show=FALSE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
   yAxis.max = YMAX,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
   data=DATA)
 PLOT
 ```
 
-#### p=95%
+### p=95%
+
 ```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Uniform Hazard Spectra Sa[g] with 5% damping (mean) for sites with Vs30=550 m/s"
-#| label: fig-UHS_95
 p_TARGET <- 0.95
-DATA <- UHSTable[Vs30==Vs30_TARGET & p %in% p_TARGET,.(ID=TR,Y=Sa,X=Tn)]|> unique()
+#| fig-cap: "Uniform Hazard Spectra (UHS) for %s (p=%s) assuming site conditions with Vs30=%4d m/s." |> sprintf("Sa(Tn)",p_TARGET,Vs30_TARGET)
+#| label: fig-UHS.95.site.html
+#| column: page-inset-right
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=TR,Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
 setorder(DATA,X)
 PLOT <- buildPlot(
-  library = "hc",
+  library = "highcharter",
   yAxis.label =TRUE,
-  plot.type="line",
+  plot.type="spline",
   legend.layout="horizontal",
-  legend.show=FALSE,
-  xAxis.log = FALSE,
-  yAxis.log = FALSE,
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
   yAxis.max = YMAX,
-  xAxis.legend="Tn[s]",
-  yAxis.legend="Sa[g]",
-  group.legend="TR[yr]",
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
   data=DATA)
 PLOT
 ```
