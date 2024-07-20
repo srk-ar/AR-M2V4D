@@ -25,6 +25,8 @@ The performance level for the design of the slopes should be defined in consulta
 > In the current model, we assume three performance levels for the slopes, with target residual displacements $D_a$ of 25, 50, and 125 mm equivalent to 0.1%, 10.2%, and 0.5% of the slope height $H_s$, respectively. For the target residual displacements $D_a$, an objective exceedance probability of 16% (fixed) $(P[D_a>d_a^*]\leq 16 \%)$ will be adopted, regardless of the confidence levels of the seismic intensity and the dynamic parameters of the slope. 
 
 
+The following tables summarizes the seismic coefficients $k_{max}$ and $k_h$ adopted for the project slopes for different performance levels ($d_a$) and service levels ($T_R$) assuming local site conditions with $\bar v_S$=1000 m/s 
+s
 {{< include qmd/_tbl.KH.site.qmd >}}
 
 

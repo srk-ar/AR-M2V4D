@@ -1,5 +1,4 @@
 
-The following tables summarizes the seismic coefficients $k_{max}$ and $k_h$ adopted for the project slopes for different performance levels ($d_a$) and service levels ($T_R$) assuming local site conditions with $\bar v_S$=1000 m/s 
 
 ```{r KHmodel, echo=FALSE}
 Da_TARGET <- c(0.1/100, 0.2/100, 0.5/100)*Hs*100 # [cm]

@@ -1,0 +1,45 @@
+/* General styling */
+.reveal {
+  font-family: 'Arial, sans-serif'; /* Consistent font family */
+}
+
+/* Minimum margins for slides */
+.reveal .slides {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Slide header styles */
+.reveal h1 {
+  font-size: 4em !important; /* Adjust font size for h1 */
+  margin-bottom: 0.5em !important; /* Add a bit of spacing */
+}
+
+.reveal h2 {
+  font-size: 3em !important; /* Adjust font size for h2 */
+  margin-bottom: 0.5em !important; /* Add a bit of spacing */
+}
+
+.reveal h3 {
+  font-size: 2.5em !important; /* Font size for h3 */
+  margin-bottom: 0.5em !important; /* Add a bit of spacing */
+}
+
+.reveal h4 {
+  font-size: 1.5em !important; /* Font size for h3 */
+  margin-bottom: 0.5em !important; /* Add a bit of spacing */
+}
+
+/* Text and captions */
+.reveal p, .reveal figcaption {
+  font-size: 2em !important; /* Adjust font size for text and captions */
+  margin-bottom: 0.5em !important; /* Add a bit of spacing */
+}
+
+/* Ensure figures are properly sized and centered */
+.reveal .figure {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 0;
+}

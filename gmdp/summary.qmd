@@ -1,0 +1,85 @@
+---
+params:
+  render: none
+  ext: png
+  lang: EN
+  exportImages: true
+  background: "white"
+  client: "Balasauskandyk"
+  clientShort: "client"
+  project: "Crawford"
+  srk: "SRK Consulting (US)"
+# css: _build/styles.css
+---
+
+
+```{r ,include=FALSE}
+REBUILD_UHS <- FALSE
+REBUILD_TS <- FALSE
+
+source("R/setup.R")
+source("R/global.R")
+if(REBUILD_UHS | REBUILD_TS){
+  source("R/dataset.R")
+} 
+
+UHSTable <- readRDS("data/UHSTable.Rds")
+AEPTable <- readRDS("data/AEPTable.Rds")
+MAT <- readRDS("data/MAT.Rds")
+TS <- readRDS("data/TS.Rds")
+
+```
+
+
+# Hazard Results
+
+# AEP
+
+## Rock Site Conditions
+{{< include qmd/_fig.AEP.rock.qmd >}}
+
+## Soil Site Conditions
+{{< include qmd/_fig.AEP.site.qmd >}}
+
+
+# UHS
+
+## Rock Site Conditions
+
+{{< include qmd/_fig.UHS.rock.qmd >}}
+
+## Soil Site Conditions
+
+{{< include qmd/_fig.UHS.site.qmd >}}
+
+
+
+# Design Ground Motions
+
+## Rock Site Conditions
+
+{{< include qmd/_tbl.PGA.rock.qmd >}}
+
+## Soil Site Conditions
+
+{{< include qmd/_tbl.PGA.site.qmd >}}
+
+# Fundamental Periods
+
+
+
+## References
+
+::: {#refs}
+:::
+
+## Appendices
+
+<!-- {{< include qmd/_SiteClassification.qmd >}} -->
+
+<!-- {{< include qmd/_Ishihara.qmd >}} -->
+
+
+
+
+

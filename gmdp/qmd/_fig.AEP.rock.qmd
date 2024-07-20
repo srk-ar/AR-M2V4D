@@ -1,118 +1,81 @@
+<!-- The following figures illustrate the hazard curves at the project site, in terms of spectral pseudo-accelerations  $S_a(T_n)$. Each figure presents annual exceedance probabilities (AEP) of exceeding some level of $S_a(T_n)$ obtained for different  $V_{s30}$  values and confidence levels, highlighting the epistemic uncertainty of the seismic hazard for rock site conditions. -->
 
-The following figures present the annual exceedance probability for $S_a(T_n)$ for different structural periods and confidence intervals for rock site conditions.
+
 ```{r}
-Vs30_TARGET <- 250
-TR_max <- 100000
-AEP <- AEPTable[Vref==Vs30_TARGET &Vs30==Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1" & TR!=-Inf ]
+Vs30_TARGET <- 1100
+TR_max <- 500000
+Tn_TARGET <- c(0,0.05,0.1,0.2,0.5,1.0)
+AEP <- AEPTable[Vs30==Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1"]
+CAP <-  "Annual Exceedence Probabilities (AEP) in terms of Sa(Tn) for different natural periods Tn. AEPs were obtained for soil site conditions with  $V_{s30}$ = %4d  m/s within a p=%s confidence level."
+FILE <- file.path("png/fig-AEP.mean.rock.png")
 ```
 
-::: {.content-hidden when-format="html"}
 
 
-```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Annual Exceedence Probabilities (AEP) for PGA assuming site conditions with Vs30=%4d m/s" |> sprintf(Vs30_TARGET) 
-#| label: fig-AEP.pga.rock.docx
-# This section requires to build first html output
-# PNG files are generated during the html rendering
-FILE <- file.path("png/fig-AEP.pga.rock.png.png")
-knitr::include_graphics(path=FILE, dpi = DPI)
-```
-
-:::
-
-::: {.panel-tabset .nav-pills .content-visible when-format="html" unless-format="revealjs"}
-
-### Sa(0) (PGA), all quantiles
-
-```{r echo=FALSE,include=TRUE}
-#| fig-cap: "Annual Exceedence Probabilities (AEP) for %s assuming rock site conditions with Vs30=%4d m/s" |> sprintf("PGA",Vs30_TARGET) 
-#| label: fig-AEP.pga.rock.html
-
-p_TARGET <- c(0.16,0.50,"mean",0.84,0.90,0.95)
-TR_max <- 100000
-DATA <- AEP[p %in% p_TARGET & Tn==0 & TR<=TR_max,.(ID=p,X=Sa,Y=AEP)][order(X)]|> unique()
-
-PLOT <- buildPlot(
-  library = "highcharter",
-  plot.theme=highcharter::hc_theme_flat(),
-  xAxis.label =TRUE,
-  yAxis.label =TRUE,
-  plot.type="spline",
-  legend.layout="vertical",
-  legend.show=TRUE,
-  line.size=2.0,
-  xAxis.log = TRUE,
-  yAxis.log = TRUE,
-  yAxis.legend="AEP [1/yr]",
-  xAxis.legend="PGA [g]",
-  group.legend="quantile",
-  plot.save=FALSE,
-  data=DATA) 
-
-
-# Export PLOT for .docx rendering
-FILE <- file.path("png/fig-AEP.pga.site.png")
-DPI <- 150
-WIDTH <- round(FACTOR_WIDTH * PAGE_WIDTH * DPI)
-HEIGHT <- round(FACTOR_HEIGHT * PAGE_HEIGHT * DPI)
-buildPlot::export(hc=PLOT, filename=FILE,width=WIDTH,height=HEIGHT,dpi=DPI,delay=DELAY)
-
-PLOT 
-
-```
-
+::: {.panel-tabset .nav-pills }
 
 ### Sa(Tn), p=50%
 
 ```{r echo=FALSE,include=TRUE}
-p_TARGET <- 0.50
-DATA <- AEP[ p == p_TARGET & Tn>=0 & TR<=TR_max,.(ID=Tn,X=Sa,Y=AEP)]|> unique()
-setorder(DATA,X)
 
-#| fig-cap: "Annual Exceedence Probabilities (AEP) for %s (p=%s) assuming rock site conditions with Vs30=%4d m/s" |> sprintf("Sa(Tn)","mean",Vs30_TARGET) 
+p_TARGET <- 0.50
+
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
 #| label: fig-AEP.mean.rock.html
 #| column: body-outset-right
+#| 
+
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
   library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
-  plot.type="spline",
-  legend.layout="vertical",
+  plot.type="line",
+  legend.layout="horizontal",
   legend.show=TRUE,
-  line.size=2.0,
-  xAxis.log = TRUE,
+line.size=THICK_LINE_SIZE,
+xAxis.log = TRUE,
   yAxis.log = TRUE,
   yAxis.legend="AEP [1/yr]",
-  xAxis.legend="PGA [g]",
+  xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
   data=DATA)
 PLOT
+
 ```
 
 ### Sa(Tn), p=mean
 
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- "mean"
-DATA <- AEP[ p == p_TARGET & Tn>=0 & TR<=TR_max,.(ID=Tn,X=Sa,Y=AEP)]|> unique()
-setorder(DATA,X)
-
-#| fig-cap: "Annual Exceedence Probabilities (AEP) for %s (p=%s) assuming rock site conditions with Vs30=%4d m/s" |> sprintf("Sa(Tn)","mean",Vs30_TARGET) 
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
 #| label: fig-AEP.mean.rock.html
 #| column: body-outset-right
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
   library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="line",
-  legend.layout="vertical",
+  legend.layout="horizontal",
   legend.show=TRUE,
-  line.size=2.0,
-  xAxis.log = TRUE,
+line.size=THICK_LINE_SIZE,
+xAxis.log = TRUE,
   yAxis.log = TRUE,
   yAxis.legend="AEP [1/yr]",
-  xAxis.legend="PGA [g]",
+  xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
   data=DATA)
+PLOT
+
+
+# Export PLOT for .docx rendering
+
+DPI <- 150
+WIDTH <- round(FACTOR_WIDTH * PAGE_WIDTH * DPI)
+HEIGHT <- round(FACTOR_HEIGHT * PAGE_HEIGHT * DPI)
+buildPlot::export(hc=PLOT, filename=FILE,width=WIDTH,height=HEIGHT,dpi=DPI,delay=DELAY)
+# 
 PLOT
 ```
 
@@ -120,24 +83,23 @@ PLOT
 
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.84
-DATA <- AEP[ p == p_TARGET & Tn>=0 & TR<=TR_max,.(ID=Tn,X=Sa,Y=AEP)]|> unique()
-setorder(DATA,X)
-
-#| fig-cap: "Annual Exceedence Probabilities (AEP) for %s (p=%s) assuming rock site conditions with Vs30=%4d m/s" |> sprintf("Sa(Tn)","mean",Vs30_TARGET) 
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
 #| label: fig-AEP.mean.rock.html
 #| column: body-outset-right
+
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
   library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="line",
-  legend.layout="vertical",
+  legend.layout="horizontal",
   legend.show=TRUE,
-  line.size=2.0,
+  line.size=THICK_LINE_SIZE,
   xAxis.log = TRUE,
   yAxis.log = TRUE,
   yAxis.legend="AEP [1/yr]",
-  xAxis.legend="PGA [g]",
+  xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
   data=DATA)
 PLOT
@@ -147,24 +109,24 @@ PLOT
 
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.90
-DATA <- AEP[ p == p_TARGET & Tn>=0 & TR<=TR_max,.(ID=Tn,X=Sa,Y=AEP)]|> unique()
-setorder(DATA,X)
 
-#| fig-cap: "Annual Exceedence Probabilities (AEP) for %s (p=%s) assuming rock site conditions with Vs30=%4d m/s" |> sprintf("Sa(Tn)","mean",Vs30_TARGET) 
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
 #| label: fig-AEP.mean.rock.html
 #| column: body-outset-right
+
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
   library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="line",
-  legend.layout="vertical",
+  legend.layout="horizontal",
   legend.show=TRUE,
-  line.size=2.0,
+  line.size=THICK_LINE_SIZE,
   xAxis.log = TRUE,
   yAxis.log = TRUE,
   yAxis.legend="AEP [1/yr]",
-  xAxis.legend="PGA [g]",
+  xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
   data=DATA)
 PLOT
@@ -174,27 +136,28 @@ PLOT
 
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.95
-DATA <- AEP[ p == p_TARGET & Tn>=0 & TR<=TR_max,.(ID=Tn,X=Sa,Y=AEP)]|> unique()
-setorder(DATA,X)
 
-#| fig-cap: "Annual Exceedence Probabilities (AEP) for %s (p=%s) assuming rock site conditions with Vs30=%4d m/s" |> sprintf("Sa(Tn)","mean",Vs30_TARGET) 
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
 #| label: fig-AEP.mean.rock.html
 #| column: body-outset-right
+
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
   library = "highcharter",
   xAxis.label =TRUE,
   yAxis.label =TRUE,
   plot.type="line",
-  legend.layout="vertical",
+  legend.layout="horizontal",
   legend.show=TRUE,
-  line.size=2.0,
+  line.size=1.0,
   xAxis.log = TRUE,
   yAxis.log = TRUE,
   yAxis.legend="AEP [1/yr]",
-  xAxis.legend="PGA [g]",
+  xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
   data=DATA)
 PLOT
 ```
 
 :::
+
