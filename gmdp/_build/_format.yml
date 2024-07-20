@@ -20,7 +20,7 @@ format:
       gutter-width: 1.5rem
   revealjs:
     output-file: summary.html
-    theme: simple
+    theme: white #black,white,league,beige,sky,simple,solarized,blood,moon,*night
     smaller: true
     scrollable: true
     slideNumber: true
@@ -28,7 +28,9 @@ format:
     controls: true
     progress: true
     history: true
-    transition: slide  
+    transition: fade  
+    showNotes: true
+    css: styles.css
   docx: 
     output-file: article.docx
     reference-doc: _build/styles.docx

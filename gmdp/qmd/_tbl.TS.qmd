@@ -1,7 +1,4 @@
 
-The table [@tbl-TS] summarizes the shear modulus $G_o$, maximum shear velocity at the base $v_S^o$, inhomogeneity factor $m_o$ and fundamental periods $T_s$ adopted for the project slopes for different probability levels.
-
-
 
 ```{r echo=FALSE,include=TRUE}
 #| label: tbl-TS

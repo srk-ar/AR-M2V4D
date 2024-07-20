@@ -22,8 +22,10 @@ unlink(subdirs, recursive = TRUE, force = TRUE)
 
 .encode(language ="EN")
 .decode(language="EN")
-.buildYAML(language="EN",output_format=c("html"),output_dir=publishFolder)
-quarto::quarto_render(input = "index.qmd",output_format = "html",execute_params=list(ext="png",render="none"))
+.buildYAML(language="EN",output_format=c("revealjs","html"),output_dir=publishFolder)
+
+# quarto::quarto_render(input = "index.qmd",output_format = "html",execute_params=list(ext="png",render="none"))
+quarto::quarto_render(input = "summary.qmd",output_format = "revealjs",execute_params=list(ext="png",render="none"))
 
 # **
 

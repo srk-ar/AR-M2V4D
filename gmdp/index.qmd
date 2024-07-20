@@ -9,32 +9,31 @@ params:
   clientShort: "client"
   project: "Crawford"
   srk: "SRK Consulting (US)"
-  vs30: 1000
-  hs: 25
-  s: 2.5
-  b: 10
+css: _build/styles.css
 ---
 
 
 ```{r ,include=FALSE}
-REBUILD <- FALSE
+REBUILD_UHS <- FALSE
+REBUILD_TS <- FALSE
+
 source("R/setup.R")
 source("R/global.R")
-if(REBUILD){
+if(REBUILD_UHS | REBUILD_TS){
   source("R/dataset.R")
-} else {
-  UHSTable <- readRDS("data/UHSTable.Rds")
-  AEPTable <- readRDS("data/AEPTable.Rds")
-}
-# Select dataset
-UHSTable <- UHSTable[SM=="openquake" & ID=="nrc_v3.19.1" & p %in% c(0.16,0.50,"mean",0.84) & TR %in% c(475,1000,2475,5000,10000)]
+} 
+
+UHSTable <- readRDS("data/UHSTable.Rds")
+AEPTable <- readRDS("data/AEPTable.Rds")
+MAT <- readRDS("data/MAT.Rds")
+TS <- readRDS("data/TS.Rds")
 
 ```
 
 
-{{< include qmd/_Scope.qmd >}}
+<!-- {{< include qmd/_Scope.qmd >}} -->
 
-{{< include qmd/_Disclaimer.qmd >}}
+<!-- {{< include qmd/_Disclaimer.qmd >}} -->
 
 {{< include qmd/_Hazard.qmd >}}
 
@@ -45,6 +44,7 @@ UHSTable <- UHSTable[SM=="openquake" & ID=="nrc_v3.19.1" & p %in% c(0.16,0.50,"m
 <!-- {{< include qmd/_FundamentalPeriods.qmd >}} -->
 
 <!-- {{< include qmd/_SeismicCoefficients.qmd >}} -->
+
 
 # References
 
