@@ -1,16 +1,2 @@
 
 
-```{r echo=FALSE,include=TRUE}
-#| label: tbl-TS
-#| tbl-cap: "Shear modulus, shear-wave velocity, inhomogeneity factor and fundamental period for different probability levels" 
-#| column: body-outset-right
-#| 
-TS |> buildTable(library="gt",font.size.body = 11,font.size.header = 11)|>  
-  gt::fmt_number(columns = c("Go","VSo"),decimals = 0) |>  
-  gt::fmt_number(columns = c("mo","an"),decimals = 3)  |> 
-  gt::fmt_number(columns = c("Ts"), decimals = 2) 
-  
-```
-
-
-

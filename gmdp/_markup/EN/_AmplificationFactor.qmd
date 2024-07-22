@@ -1,0 +1,21 @@
+##  Site Response { #sec-MPAF}
+
+The estimation of dynamic site response can be achieved by utilizing a scalar amplification factor that is dependent on the average shear-wave velocity <ID.632E2A6F>, as outlined in ASCE/SEI 7-22. For a target service level, defined by the Annual Exceedance Probability (AEP), and a given structural period <ID.8DC523A7>, the median spectral ordinates <ID.139D9003> expected at sites characterized by an average shear-wave velocity <ID.632E2A6F>, can be derived from the spectral ordinates on rock, denoted as <ID.7D3AC713>. This approach facilitates a tailored response analysis based on arbitrary geotechnical site conditions.
+
+
+<ID.739A4A9E>{#eq-SAS}
+
+where <ID.9345A035> is the multi-period site factor and <ID.D6FCDE06> is the spectral ordinate for the structural period <ID.8DC523A7> in rocks (A) or firm soils (BC). The model proposed by @Stewart2017 is a three-component model dependent on shear-wave velocities <ID.F07CDE18> and can be used for both hard rock with <ID.4D60A5A0> of 3000 m/s or soft rock with <ID.4D60A5A0> of 760 m/s reference values.
+
+<ID.9FF167C0>{#eq-AF}
+
+where <ID.6CFEAF9D> is a scaling term relative to <ID.F07CDE18> = 760 m/s, <ID.D2FCA5AD> is amplification at <ID.F07CDE18> = 760 m/s relative to <ID.4D60A5A0> = 3000 m/s and <ID.2D745718> is a factor that considers non-linear effects, which has strong influence in soft-soil conditions. 
+
+The error term <ID.939A21CB> from <ID.EBDD6834> is a log-normal random variable, with mean <ID.A3FBD491> and variance <ID.0283E41B>. Because the spectral ordinates in rock are actually random variables, with conditional expectation <ID.3FF84637> and variance <ID.0CA9C9FD>, the error term from this model has been adapted to incorporate the seismic hazard's uncertainty:
+
+<ID.EF9463EF>
+
+<ID.52F4E3E4>
+
+
+

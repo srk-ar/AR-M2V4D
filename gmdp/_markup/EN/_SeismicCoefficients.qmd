@@ -1,0 +1,29 @@
+##  Seismic (Pseudo-Static) Coefficients 
+
+The pseudo-static seismic coefficient represents the maximum horizontal acceleration (<ID.F8503592>) expected in a failure wedge in slip potential and is obtained by averaging the horizontal (instantaneous) forces in the deformable sliding mass. The *horizontal* seismic coefficient, measured in units of <ID.8A6058AC>, is usually expressed in terms of the maximum ground acceleration <ID.0F75B329> according to <ID.7D81DD37>. 
+
+In pseudo-static slope stability analysis, the adoption of seismic coefficients <ID.57C17AA3> combined with <ID.440A83ED> indicates that some residual displacements will be expected. The empirical model from @Bray2018 and @Bray2019 provides an estimate of residual displacements <ID.FA76C7C9> for different yield coefficients <ID.200E4FC6> and intensity levels <ID.82F4E39B>. The seismic coefficient <ID.D1B49824> is obtained for that value of the yield coefficient <ID.200E4FC6> such that the (mean) residual displacements <ID.FA76C7C9> are less than or equal to a target displacement <ID.5A4468F7> according to the following expression:
+
+<ID.7DE0E8E7> {#eq-KMAX}
+
+where <ID.B09E4142> is the intensity level defined at the degraded (shifted) period <ID.56D6B577> and <ID.A7B8C425> are model parameters depending on the target displacement <ID.116614A9>, the peak-ground velocity <ID.0AF637BF>, the slope's fundamental period <ID.772ACB2D> and the moment magnitude <ID.3BD492AA> representative for the maximum considered seismic event. Further details of this model can be found in <ID.71C99DB8> and <ID.68D2ACF9>.
+
+Seismic slope stability is evaluated through application of the seismic coefficient calculated with <ID.38543948> in a pseudostatic slope stability analysis that satisfies all three conditions of equilibrium. The system is judged to perform satisfactorily if the resulting <ID.01B9D92F>, asuming that the calculated seismically induced permanent displacement will be less than the target displacement <ID.5A4468F7> <ID.68D2ACF9>
+
+
+
+
+The performance level for the design of the slopes should be defined in consultation with the owner. by the maximum allowable residual displacement <ID.5A4468F7> (for a given service level <ID.FE365A58>) and the percentage by which this displacement threshold may be exceeded. 
+
+
+
+> In the current model, we assume three performance levels for the slopes, with target residual displacements <ID.5A4468F7> of 25, 50, and 125 mm equivalent to 0.1%, 10.2%, and 0.5% of the slope height <ID.6866A79C>, respectively. For the target residual displacements <ID.5A4468F7>, an objective exceedance probability of 16% (fixed) <ID.325ADBC9> will be adopted, regardless of the confidence levels of the seismic intensity and the dynamic parameters of the slope. 
+
+
+The following tables summarizes the seismic coefficients <ID.D1B49824> and <ID.73D76CD6> adopted for the project slopes for different performance levels (<ID.FA76C7C9>) and service levels (<ID.FE365A58>) assuming local site conditions with <ID.F07CDE18>=1000 m/s 
+s
+<ID.FE60CB72>
+
+
+Seismic coefficients from this methodology are based on the condition of rigid plastic yielding deformation on a well-defined failure surface and therefore limited in terms of their application to compacted clayey embankments and dry or dense cohesionless soils that experience very little reduction in strength due to cyclic loading. The proposed methodology should not be applied in cases where embankments or their foundations are susceptible to liquefaction or strain weakening, as the residual displacements will be significantly underestimated.
+

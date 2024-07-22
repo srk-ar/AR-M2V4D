@@ -1,0 +1,11 @@
+<!-- The following table presents the design ground motions for different service levels (return periods) and confidence levels in terms of peak ground accelerations <ID.EF089DC1> in rock site conditions. -->
+
+
+
+<ID.27E681EB>
+
+
+<ID.23F4AC94>
+
+
+

@@ -39,109 +39,141 @@ if(REBUILD_UHS){
   GMDP <- buildGMDP(vref=3000,vs30=Vs30_TARGET,path="../oq/output/nrc/3000/",IDo="nrc_v3.19.1")
   UHSTable <- rbind(UHSTable,GMDP$UHSTable)
   AEPTable <- rbind(AEPTable,GMDP$AEPTable)
-  
-  
   saveRDS(UHSTable, "data/UHSTable.Rds")
   saveRDS(AEPTable, "data/AEPTable.Rds")
-  
-  
-} 
+} else {
+  UHSTable <- readRDS("data/UHSTable.Rds")
+  AEPTable <- readRDS("data/AEPTable.Rds")
+
+}
 
 
 # Fundamental Periods ----
-if(REBUILD_MAT){
-  MAT <- data.table()
-  
-  # 
-  id <- "Rock impoundment"
-  Hs <- 115
-  b <- 2840
-  s <- 6
-  SCN <- data.table(Hs=Hs,Water=0,Clays=0,Sands=0,Gravels=100,Silts=0,POP=0)
-  L1 <-  gmdp::fitModel.Shear(level=0.05,.newdata=SCN)
-  L2 <-  gmdp::fitModel.Shear(level="mean",.newdata=SCN)
-  L3 <-  gmdp::fitModel.Shear(level=0.95,.newdata=SCN)
-  L1 <- data.table(Name=id,b=b,s=s,Hs=Hs,L1)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L2 <- data.table(Name=id,b=b,s=s,Hs=Hs,L2)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L3 <- data.table(Name=id,b=b,s=s,Hs=Hs,L3)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  MAT <- rbindlist(list(MAT,L1,L2,L3))
-  
-  # 
-  id <- "Stock Pile (West)"
-  Hs <- 100
-  b <- 940
-  s <- 6
-  SCN <- data.table(Hs=Hs,Water=0,Clays=0,Sands=0,Gravels=100,Silts=0,POP=0)
-  L1 <-  gmdp::fitModel.Shear(level=0.05,.newdata=SCN)
-  L2 <-  gmdp::fitModel.Shear(level="mean",.newdata=SCN)
-  L3 <-  gmdp::fitModel.Shear(level=0.95,.newdata=SCN)
-  L1 <- data.table(Name=id,b=b,s=s,Hs=Hs,L1)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L2 <- data.table(Name=id,b=b,s=s,Hs=Hs,L2)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L3 <- data.table(Name=id,b=b,s=s,Hs=Hs,L3)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  MAT <- rbindlist(list(MAT,L1,L2,L3))
-  
-  
-  id <- "Stock Pile (East)"
-  Hs <- 100
-  b <- 314
-  s <- 6
-  SCN <- data.table(Hs=Hs,Water=0,Clays=0,Sands=0,Gravels=100,Silts=0,POP=0)
-  L1 <-  gmdp::fitModel.Shear(level=0.05,.newdata=SCN)
-  L2 <-  gmdp::fitModel.Shear(level="mean",.newdata=SCN)
-  L3 <-  gmdp::fitModel.Shear(level=0.95,.newdata=SCN)
-  L1 <- data.table(Name=id,b=b,s=s,Hs=Hs,L1)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L2 <- data.table(Name=id,b=b,s=s,Hs=Hs,L2)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L3 <- data.table(Name=id,b=b,s=s,Hs=Hs,L3)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  MAT <- rbindlist(list(MAT,L1,L2,L3))
-  
-  
-  id <- "Rock Berm"
-  Hs <- 50
-  b <- 20
-  s <- 2
-  SCN <- data.table(Hs=Hs,Water=0,Clays=0,Sands=0,Gravels=100,Silts=0,POP=0)
-  L1 <-  gmdp::fitModel.Shear(level=0.05,.newdata=SCN)
-  L2 <-  gmdp::fitModel.Shear(level="mean",.newdata=SCN)
-  L3 <-  gmdp::fitModel.Shear(level=0.95,.newdata=SCN)
-  L1 <- data.table(Name=id,b=b,s=s,Hs=Hs,L1)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L2 <- data.table(Name=id,b=b,s=s,Hs=Hs,L2)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L3 <- data.table(Name=id,b=b,s=s,Hs=Hs,L3)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  MAT <- rbindlist(list(MAT,L1,L2,L3))
-  
-  id <- "Sand & Silt impoundment"
-  Hs <- 50
-  b <- 470
-  s <- 3.5
-  SCN <- data.table(Hs=Hs,Water=0,Clays=0,Sands=0,Gravels=0,Silts=100,POP=0)
-  L1 <-  gmdp::fitModel.Shear(level=0.05,.newdata=SCN)
-  L2 <-  gmdp::fitModel.Shear(level="mean",.newdata=SCN)
-  L3 <-  gmdp::fitModel.Shear(level=0.95,.newdata=SCN)
-  L1 <- data.table(Name=id,b=b,s=s,Hs=Hs,L1)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L2 <- data.table(Name=id,b=b,s=s,Hs=Hs,L2)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L3 <- data.table(Name=id,b=b,s=s,Hs=Hs,L3)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  MAT <- rbindlist(list(MAT,L1,L2,L3))
-  
-  
-  id <- "Clay impoudment"
-  Hs <- 34
-  b <- 1000
-  s <- 2
-  SCN <- data.table(Hs=Hs,Water=0,Clays=100,Sands=0,Gravels=0,Silts=0,POP=0)
-  L1 <-  gmdp::fitModel.Shear(level=0.05,.newdata=SCN)
-  L2 <-  gmdp::fitModel.Shear(level="mean",.newdata=SCN)
-  L3 <-  gmdp::fitModel.Shear(level=0.95,.newdata=SCN)
-  L1 <- data.table(Name=id,b=b,s=s,Hs=Hs,L1)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L2 <- data.table(Name=id,b=b,s=s,Hs=Hs,L2)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  L3 <- data.table(Name=id,b=b,s=s,Hs=Hs,L3)[,lo := (b/(2*Hs*s+b)) |> round(digits=3)][]
-  MAT <- rbindlist(list(MAT,L1,L2,L3))
-  
-  
+if(REBUILD_TS){
+ 
+  NR_TARGET <- 100
+  LEVELS <- c(0.05,0.10,0.16,0.50,"mean",0.84,0.90,0.95)
+  SHT <- data.table()
+  MAT <- data.table(
+    ID=c("RI","SPW","SPE","RB","SSI","CI"),
+    Name=c("Rock impoundment","Stock Pile (West)","Stock Pile (East)","Rock Berm","Sand & Silt impoundment","Clay impoudment"),
+    b=c(2840,940,314,20,470,1000),
+    s=c(6,6,6,2,3.5,2),
+    lo=c(0.05,0.05,0.05,0.05,0.05,0.05),
+    Hs=c(115,100,100,50,50,34)
+  )
   saveRDS(MAT, "data/MAT.Rds")
   
-  #saveRDS(AEPTable, "data/TS.Rds")
+  # "Rock impoundment"
+  AUX <- MAT[ID=="RI",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("GW","GM","ML"),NR=NR_TARGET,levels=LEVELS))]
+  SHT <- rbind(SHT,AUX)
+  
+  # 
+  AUX <- MAT[ID=="SPW",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("GP","GM","ML","SM"),NR=NR_TARGET,levels=LEVELS))]
+  SHT <- rbind(SHT,AUX)
+  
+  # 
+  AUX <- MAT[ID=="SPE",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("GW","GP","GM","SP"),NR=NR_TARGET,levels=LEVELS))]
+  SHT <- rbind(SHT,AUX)
+  
+  
+  # 
+  AUX <- MAT[ID=="RB",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("GW","GP","GM"),NR=NR_TARGET,levels=LEVELS))]
+  SHT <- rbind(SHT,AUX)
+  # 
+  AUX <- MAT[ID=="SSI",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("ML","SM"),NR=NR_TARGET,levels=LEVELS))]
+  SHT <- rbind(SHT,AUX)
+  # 
+  AUX <- MAT[ID=="CI",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("CL","ML","SC","SM"),NR=NR_TARGET,levels=LEVELS))]
+  SHT <- rbind(SHT,AUX)
+  
+  
+  # Fundamental periods ----
+  SHT[, an := mapply(function(mo, lo) {
+    getCylinderRoots(mo = mo, lo = lo, no = 1, model = "nlm", extrapolate = TRUE)|> round(4) |> suppressWarnings()
+  }, mo, lo)]
+  
+  
+  SHT[,Ts:=(4*pi*Hs/(an*(2 - mo)*VSo)) |> round(3)]
+  saveRDS(SHT, "data/SHT.Rds")
+  
+} else {
+  SHT <- readRDS("data/SHT.Rds")
+  MAT <- readRDS("data/MAT.Rds")
 }
 
+
+
 # Seismic Coefficient ----
+if(REBUILD_KIT){
+  TR_TARGET <- c(475,1000,2475,5000,10000)
+  Vs30_TARGET <- 250# c(250,1100)
+  
+  Da_TARGET <- c(1,2.5,5,10,15,25)
+  p_TARGET <- c(0.05,"mean",0.95)
 
+  
+  
+  #
+  
+  SHT <- readRDS("data/SHT.Rds")
+  SHT <- SHT[level %in% p_TARGET,.(ID,Name,Tso=Ts,p=level)]
+  
+  UHS <- UHSTable[Vs30 %in% Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1" & TR %in% TR_TARGET & p%in% p_TARGET][,-c("ID","SM")] #Remove ID column to avoid conflicts with SHT
+  
+  DnTable <-  UHS[,dsra::fitModel.Dn.TR(Sa=Sa,PGA=PGA,Tn=Tn,Mw = 6.5, xD = 1.3, kymin = 0.001, kymax = 0.55, n = 100), by = .(Tn, TR,Vref,Vs30, p)] |> unique()
+  DnTRmodel <- DnTable[, .(Tn, TR, p, Ts, Vs30, Vref, a, b, e, PGA)] |> unique()
+  KhTRmodel <- DnTRmodel[, fitModel.Kmax.TR( a=a,b=b,e=e,pga=PGA,Ts=Ts, n = 100), by = .(Tn, TR, p,Vs30,Vref)]
+  
+  
+  KIT <- data.table()
+  
+  
+  # RI
+  ID_TARGET <- "RI"
+  sprintf("Building Seismic coefficients for %s", ID_TARGET) |> cat()
+  AUX <- KhTRmodel[SHT[ID==ID_TARGET], on="p"][,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Vref,Tso)]
+  KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
+  
+  
+  # SPW
+  ID_TARGET <- "SPW"
+  sprintf("Building Seismic coefficients for %s", ID_TARGET) |> cat()
+  AUX <- KhTRmodel[SHT[ID==ID_TARGET], on="p"][,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Vref,Tso)]
+  KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
+  
+  
+  # SPE
+  ID_TARGET <- "SPE"
+  sprintf("Building Seismic coefficients for %s", ID_TARGET) |> cat()
+  AUX <- KhTRmodel[SHT[ID==ID_TARGET], on="p"][,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Vref,Tso)]
+  KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
+  
+  # RB
+  ID_TARGET <- "RB"
+  sprintf("Building Seismic coefficients for %s", ID_TARGET) |> cat()
+  AUX <- KhTRmodel[SHT[ID==ID_TARGET], on="p"][,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Vref,Tso)]
+  KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
+  
+  # SSI
+  ID_TARGET <- "SSI"
+  sprintf("Building Seismic coefficients for %s", ID_TARGET) |> cat()
+  AUX <- KhTRmodel[SHT[ID==ID_TARGET], on="p"][,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Vref,Tso)]
+  KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
+  
+  
+  # CI
+  ID_TARGET <- "CI"
+  sprintf("Building Seismic coefficients for %s", ID_TARGET) |> cat()
+  AUX <- KhTRmodel[SHT[ID==ID_TARGET], on="p"][,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Vref,Tso)]
+  KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
+  
+  KIT <- KIT[,-c("Tso","Vref")]
+  saveRDS(KIT, "data/KIT.Rds")
+} else {
+  KIT <- readRDS("data/KIT.Rds")
+}
 
-
+# 
+# saveRDS(DnTRmodel, "data/DnTRmodel.Rds")
+# saveRDS(KhTRmodel, "data/KhTRmodel.Rds")
