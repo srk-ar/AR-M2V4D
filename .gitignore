@@ -66,3 +66,6 @@ gmdp/data/
 psha/!archive/
 psha/.quarto/
 psha/data/
+
+# Local Netlify folder
+.netlify

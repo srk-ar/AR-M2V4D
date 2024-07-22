@@ -1,2 +1,43 @@
 
 
+
+```{r echo=FALSE}
+TR_TARGET <- c(100,475,1000,2475,5000,10000)
+Vs30_TARGET <- 250
+CAP <- "Pseudo-static (seismic) coefficients in terms of peak-ground accelerations (Kh) for the maximum design earthquake(MDE) assuming soil site conditions with  Vs30 = %4d  m/s. (Quantile p=%s)"
+```
+
+## Fundamental Periods and Shear Modulus
+
+::: {.panel-tabset  }
+### p=mean
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- "mean"
+TBL <- SHT[level==p_TARGET,.(ID,Name,USCS,level,b,s,Hs,Go,VSo,mo,lo,an,Ts)]
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+
+```
+
+
+### p=5%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.05
+TBL <- SHT[level==p_TARGET,.(ID,Name,USCS,level,b,s,Hs,Go,VSo,mo,lo,an,Ts)]
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+
+```
+
+
+
+### p=95%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.95
+TBL <- SHT[level==p_TARGET,.(ID,Name,USCS,level,b,s,Hs,Go,VSo,mo,lo,an,Ts)]
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+
+```
+
+:::

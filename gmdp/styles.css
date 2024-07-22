@@ -26,7 +26,7 @@
 }
 
 .reveal h4 {
-  font-size: 1.5em !important; /* Font size for h3 */
+  font-size: 1.5em !important; /* Font size for h4 */
   margin-bottom: 0.5em !important; /* Add a bit of spacing */
 }
 
@@ -42,4 +42,17 @@
   height: auto;
   margin: 0 auto;
   padding: 10px 0;
+}
+/* Adjust font size for tab titles in panel-tabset */
+.panel-tabset .nav-tabs .nav-link {
+  font-size: 1.5em !important;
+  padding: 10px 15px !important;
+  color: black !important;  /* Ensure text is readable */
+  background-color: lightgray; /* Set a background color for tabs */
+}
+
+.panel-tabset .nav-tabs .nav-link.active {
+  font-weight: bold !important;
+  background-color: darkgray !important; /* Change to your preferred color for active tab */
+  color: white !important; /* Ensure text is readable on active tab */
 }

@@ -10,7 +10,7 @@ CAP <-  "Annual Exceedence Probabilities (AEP) in terms of Sa(Tn) for different 
 FILE <- file.path("png/fig-AEP.mean.site.png")
 ```
 
-::: {.panel-tabset .nav-pills }
+::: {.panel-tabset  }
 
 ### Sa(Tn), p=50%
 
