@@ -1,0 +1,201 @@
+
+<!-- The following figures illustrate the Uniform Hazard Spectra (UHS) for the actual soil site conditions of the project, in terms of spectral pseudo-accelerations  $S_a(T_n)$  for a 5% critical damping, and return periods from 100 to 10,000 years. -->
+
+
+```{r echo=FALSE}
+p_TARGET <- "mean"
+Vs30_TARGET <- 250
+TR_TARGET <- c(100,475,1000,2475,5000,10000)
+CAP <-  "Horizontal seismic (pseudo-static) coefficients for %s in terms of peak-ground accelerations (Kh) for AEP ranging between 1/100 to 1/10,000 yr. All values were obtained assuming soil site conditions with  Vs30=%s  m/s and a maximum shear stiffness at the base of the slope of Go=%4.1f MPa (p=%s)"
+```
+
+
+
+## Seismic Coefficients for Rock Impoundment (RI)
+
+```{r echo=FALSE,include=TRUE}
+
+ID_TARGET <- "RI"
+Name <- SHT[ID==ID_TARGET]$Name[1]
+Go <- SHT[ID==ID_TARGET & level==p_TARGET]$Go
+Caption <- CAP  |> sprintf(Name,Vs30_TARGET,Go,p_TARGET)
+DATA <- KIT[ID==ID_TARGET & Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Kh,X=Da)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="spline",
+  point.size = 0.1,
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.legend="Da [cm]",
+  yAxis.legend="Kh [% PGA]",
+  group.legend="TR [yr]",
+  data=DATA,
+  plot.subtitle = Caption)
+PLOT
+```
+
+
+
+## Seismic Coefficients for Stock Pile West (SPW)
+
+
+```{r echo=FALSE,include=TRUE}
+
+ID_TARGET <- "SPW"
+Name <- SHT[ID==ID_TARGET]$Name[1]
+Go <- SHT[ID==ID_TARGET & level==p_TARGET]$Go
+Caption <- CAP  |> sprintf(Name,Vs30_TARGET,Go,p_TARGET)
+
+DATA <- KIT[ID==ID_TARGET & Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Kh,X=Da)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="spline",
+  point.size = 0.1,
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.legend="Da [cm]",
+  yAxis.legend="Kh [% PGA]",
+  group.legend="TR [yr]",
+  data=DATA,
+  plot.subtitle = Caption)
+PLOT
+```
+
+## Seismic Coefficients for Stock Pile East (SPE)
+
+
+```{r echo=FALSE,include=TRUE}
+
+ID_TARGET <- "SPE"
+Name <- SHT[ID==ID_TARGET]$Name[1]
+Go <- SHT[ID==ID_TARGET & level==p_TARGET]$Go
+Caption <- CAP  |> sprintf(Name,Vs30_TARGET,Go,p_TARGET)
+
+DATA <- KIT[ID==ID_TARGET & Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Kh,X=Da)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="spline",
+  point.size = 0.1,
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.legend="Da [cm]",
+  yAxis.legend="Kh [% PGA]",
+  group.legend="TR [yr]",
+  data=DATA,
+  plot.subtitle = Caption)
+PLOT
+```
+
+
+## Seismic Coefficients for Rock Berm (RB)
+
+
+```{r echo=FALSE,include=TRUE}
+
+ID_TARGET <- "RB"
+Name <- SHT[ID==ID_TARGET]$Name[1]
+Go <- SHT[ID==ID_TARGET & level==p_TARGET]$Go
+Caption <- CAP  |> sprintf(Name,Vs30_TARGET,Go,p_TARGET)
+
+DATA <- KIT[ID==ID_TARGET & Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Kh,X=Da)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="spline",
+  point.size = 0.1,
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.legend="Da [cm]",
+  yAxis.legend="Kh [% PGA]",
+  group.legend="TR [yr]",
+  data=DATA,
+  plot.subtitle = Caption)
+PLOT
+```
+
+
+
+## Seismic Coefficients for Sand & Silt impoundment (SSI)
+
+
+```{r echo=FALSE,include=TRUE}
+
+ID_TARGET <- "SSI"
+Name <- SHT[ID==ID_TARGET]$Name[1]
+Go <- SHT[ID==ID_TARGET & level==p_TARGET]$Go
+Caption <- CAP  |> sprintf(Name,Vs30_TARGET,Go,p_TARGET)
+
+
+DATA <- KIT[ID==ID_TARGET & Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Kh,X=Da)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="spline",
+  point.size = 0.1,
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.legend="Da [cm]",
+  yAxis.legend="Kh [% PGA]",
+  group.legend="TR [yr]",
+ data=DATA,
+  plot.subtitle = Caption)
+PLOT
+```
+
+
+## Seismic Coefficients for Clay Impoudment (CI)
+
+
+```{r echo=FALSE,include=TRUE}
+
+ID_TARGET <- "CI"
+Name <- SHT[ID==ID_TARGET]$Name[1]
+Go <- SHT[ID==ID_TARGET & level==p_TARGET]$Go
+Caption <- CAP  |> sprintf(Name,Vs30_TARGET,Go,p_TARGET)
+
+DATA <- KIT[ID==ID_TARGET & Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Kh,X=Da)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="spline",
+  point.size = 0.1,
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.legend="Da [cm]",
+  yAxis.legend="Kh [% PGA]",
+  group.legend="TR [yr]",
+  data=DATA,
+  plot.subtitle = Caption)
+PLOT
+```
+
+
+

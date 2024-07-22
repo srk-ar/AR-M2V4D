@@ -7,10 +7,11 @@ format:
     toc-location: left
     number-sections: false
     mainfont: Arial
-    fontsize: 12pt
+    fontsize: 14pt
     link-citations: true
     code-fold: true
     code-copy: true
+    css: styles.css
     citation-location: document #block,section,document, margin
     reference-location: margin ##block,section,document, margin
     grid: 
@@ -19,7 +20,7 @@ format:
       margin-width: 300px
       gutter-width: 1.5rem
   revealjs:
-    output-file: summary.html
+    output-file: index.html
     theme: white #black,white,league,beige,sky,simple,solarized,blood,moon,*night
     smaller: true
     scrollable: true

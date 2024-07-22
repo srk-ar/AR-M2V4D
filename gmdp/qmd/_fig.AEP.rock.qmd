@@ -12,7 +12,7 @@ FILE <- file.path("png/fig-AEP.mean.rock.png")
 
 
 
-::: {.panel-tabset .nav-pills }
+::: {.panel-tabset  }
 
 ### Sa(Tn), p=50%
 

@@ -1,7 +1,0 @@
-
-<!-- The following figures illustrate the Uniform Hazard Spectra (UHS) for the actual soil site conditions of the project, in terms of spectral pseudo-accelerations  <ID.BD09C494>  for a 5% critical damping, and return periods from 100 to 10,000 years. -->
-
-<ID.2FFB90B2>
-
-:::
-

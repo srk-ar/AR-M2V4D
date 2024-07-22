@@ -5,60 +5,73 @@ params:
   lang: EN
   exportImages: true
   background: "white"
-  client: "Balasauskandyk"
+  client: "Client"
   clientShort: "client"
   project: "Crawford"
   srk: "SRK Consulting (US)"
-css: _build/styles.css
+# css: _build/styles.css
 ---
 
-
 ```{r ,include=FALSE}
+
 REBUILD_UHS <- FALSE
 REBUILD_TS <- FALSE
-
+REBUILD_KIT <- FALSE
 source("R/setup.R")
 source("R/global.R")
-if(REBUILD_UHS | REBUILD_TS){
-  NR_TARGET <- 100
-  source("R/dataset.R")
-} 
-
-UHSTable <- readRDS("data/UHSTable.Rds")
-AEPTable <- readRDS("data/AEPTable.Rds")
-MAT <- readRDS("data/MAT.Rds")
-TS <- readRDS("data/SHT.Rds")
-
+source("R/dataset.R")
 ```
 
+# Annual Exceedance Probability (Hazard)
 
-<!-- {{< include qmd/_Scope.qmd >}} -->
+## Rock Site Conditions  (Vs30 = 1100 m/s)
 
-<!-- {{< include qmd/_Disclaimer.qmd >}} -->
+{{< include qmd/_fig.AEP.rock.qmd >}}
 
-{{< include qmd/_Hazard.qmd >}}
+## Soil Site Conditions  (Vs30 = 250 m/s)
 
-<!-- {{< include qmd/_AmplificationFactor.qmd >}} -->
+{{< include qmd/_fig.AEP.site.qmd >}}
 
-{{< include qmd/_DesignGroundMotions.qmd >}}
+# Uniform Hazard Spectra
 
-<!-- {{< include qmd/_FundamentalPeriods.qmd >}} -->
+## Rock Site Conditions (Vs30 = 1100 m/s)
 
-<!-- {{< include qmd/_SeismicCoefficients.qmd >}} -->
+{{< include qmd/_fig.UHS.rock.qmd >}}
+
+## Soil Site Conditions (Vs30 = 250 m/s)
+
+{{< include qmd/_fig.UHS.site.qmd >}}
+
+# Design Ground Motions
+
+## Rock Site Conditions (Vs30 = 1100 m/s)
+
+{{< include qmd/_tbl.PGA.rock.qmd >}}
+
+## Soil Site Conditions (Vs30 = 250 m/s)
+
+{{< include qmd/_tbl.PGA.site.qmd >}}
+
+# Slope Dynamic Response
 
 
-# References
+
+{{< include qmd/_tbl.TS.qmd >}}
+
+
+{{< include qmd/_fig.KIT.qmd >}}
+
+{{< include qmd/_tbl.KIT.qmd >}}
+
+
+
+## References
 
 ::: {#refs}
 :::
 
-# Appendices
+## Appendices
 
-{{< include qmd/_SiteClassification.qmd >}}
+<!-- {{< include qmd/_SiteClassification.qmd >}} -->
 
-{{< include qmd/_Ishihara.qmd >}}
-
-
-
-
-
+<!-- {{< include qmd/_Ishihara.qmd >}} -->
