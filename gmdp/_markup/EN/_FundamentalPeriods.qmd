@@ -1,0 +1,22 @@
+##  Slope's Fundamental period
+
+<ID.7AE2BFCC>
+
+
+The fundamental period <ID.72A94FBB> is the parameter that allows estimating the dynamic response of a slope during seismic ground motion, and depends on the slope's geometrical and mechanical properties. For heterogeneous slopes, the fundamental period of the embankment can be expressed in terms of the shear-wave velocity at the base <ID.1DB9FBDD> assuming a truncated-wedge shear-beam with a shear module varying as <ID.EA4DF050><ID.8D5F12D3><ID.D4534C90><ID.B8371393>a^{(j)}=a^{(j)}(m_o,\lambda_o)<ID.5A3DD540>j<ID.0096D0DC>m_o<ID.FA0FEF5A>\lambda_o<ID.9B68FFF2>z<ID.00A6A94C>G_o<ID.FC2B20CC>z=H_s<ID.16F6510A>\lambda=b/B$ is a measure of the influence of the geometry on the slope's dynamical properties ^[The fundamental period <ID.72A94FBB> increases with $\lambda=b/B<ID.F6FDB795>H_{s}<ID.9C432C61>b<ID.E20F8777>tan\beta=1/s<ID.15B1FBC2><ID.B44E8567><ID.68A83836>H_{s} \sim<ID.5CB91FDA>b\sim<ID.3499D1FC>1/s\sim<ID.8407F100>\lambda_o\sim<ID.992E6397>m_o<ID.E1F32EA3>G(z)\approx G_o (z/H_{s})^{m_o}<ID.E0DEF2B7>G(z)<ID.B617A6BC>z<ID.1037CF44>project` site, it is assumed that the shear stiffness properties of coarse material (gravels) with a fines content ranging between 0% and 30%. In this scenario, the following parameters were assumed:
+
+- The shear stiffness modulus <ID.D672EA97> will range between <ID.FA871D37> MPa (95%), with mean value   <ID.C550A703> m/s (5%) and <ID.8A09BFE8> m/s.  
+
+- The inhomogeneity factor <ID.19FDA5CD>, which best fits the variability of the shear stiffness at a height of 15 m, will range between <ID.64FE67C0>, with mean value  <ID.24CF3AD5>.
+
+- The fundamental periods of slopes <ID.72A94FBB> will range between <ID.8883CAAD> s (5%) and <ID.16268919> s. 
+
+
+
+The table <ID.4CFA6510> summarizes the shear modulus <ID.D672EA97>, maximum shear velocity at the base <ID.8FF83965>, inhomogeneity factor <ID.19FDA5CD> and fundamental periods <ID.72A94FBB> adopted for the project slopes for different probability levels.
+
+
+<ID.0F2AD39B>
+
+ 
+

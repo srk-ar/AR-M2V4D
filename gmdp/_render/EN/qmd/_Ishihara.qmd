@@ -1,0 +1,20 @@
+##  Shear Moduli {#sec-ISHIHARA}
+
+The shear Moduli $G(z)$ of an arbitrary layer at depth $z$ can be estimated in terms of the void ratio $e_o$ and the octahedral stresses $\sigma_o(z)$ from [@eq-SM], where $A$, $C_e$, and $n$ are material-dependent constants and $e_0$ is the void ratio of the material, and $\sigma_o(z)$ is the octahedral stress at depth $z$ [@Ishihara1997].  
+
+$$G(z,e_o)\approx A \frac{(C_e-1)^2}{1+e_o} \left(\frac{\sigma'_o(z)}{p_{ref}} \right)^n$$ {#eq-SM}
+
+The table from [-@Ishihara1997] presents the parameters of the shear stiffness estimation model together with the range of void ratios in which the correlations were calibrated.
+
+```{r include=TRUE}
+#| label: tbl-ISHI
+#| tbl-cap: "Shear stiffness parameters for gravels, sands and fines"
+#| column: body-outset-right
+#| 
+DT <- ShearModelParameters[,-c("ModelID","GroupID","UN")] |> setnames(,old=c("NameID","AuthorID"),new=c("Material","Author")) |> setcolorder(c("Material","Author","A","Ce","n","emin","emax"))
+DT |> buildTable()
+
+```
+
+The shear wave velocity at the base $v_S^{o}$ can be estimated from the shear stiffness $G_o$ at the base $z=H_s$ and the density $\rho$ of the material using the relation $v_S^{o}=\sqrt{G_o/\rho}$ [@Ishihara1997]. 
+

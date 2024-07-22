@@ -1,0 +1,41 @@
+
+The following tables summarize the MPAF obtained using the [@eq-AF] equation for the geotechnical scenarios of $\bar v_S$ = 1000 m/s (B) for the structural periods $T_n \sim 0$ corresponding to the peak-ground accelerations $pga$.
+
+```{r echo=FALSE}
+TR_TARGET <- c(200,500,1000,2500,5000,10000)
+po_TARGET <- c(0.05,0.10,0.16,0.50,"mean",0.84,0.90,0.95)
+Vs30_TARGET <- 1000
+```
+
+```{r include=TRUE}
+#| label: tbl-AF
+#| tbl-cap: "Multi-Period Amplification Factors (AF) for PGA assuming Vs30=1000 m/s" 
+
+AUX <- UHSTable[Tn==0 & TR %in% TR_TARGET & Vs30 %in% Vs30_TARGET & p %in% po_TARGET,.(TR,Vs30,Vref,PGA,p)]
+DT <- AUX[,fitModel.AF.TR(.x=.SD,Tn=0,q=p,Vs30=Vs30,Vref=760),by=.(TR,p,Vs30)][,.(TR,AF,p,Vs30)]
+LT1 <- DT[p==0.16,.(TR,Vs30,"16%"=round(AF,digits=2))]
+LT2 <- DT[p==0.84,.(TR,Vs30,"84%"=round(AF,digits=2))]
+AUX <- LT1[LT2,on=.(TR,Vs30)]
+LT<- DT[p=="mean",.(TR,Vs30,"mean"=round(AF,digits=2))]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.50,.(TR,Vs30,"50%"=round(AF,digits=2))]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT<- DT[p==0.05,.(TR,Vs30,"5%"=round(AF,digits=2))]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.95,.(TR,Vs30,"95%"=round(AF,digits=2))]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.10,.(TR,Vs30,"10%"=round(AF,digits=2))]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+LT <- DT[p==0.90,.(TR,Vs30,"90%"=round(AF,digits=2))]
+AUX <- LT[AUX,on=.(TR,Vs30)]
+setcolorder(AUX,neworder = c("TR","Vs30","5%","10%","16%","50%","mean","84%","90%","95%"))
+# AUX[,Vs30:=paste(Vs30_TARGET,"m/s")] 
+
+AUX|> buildTable(library="gt",font.size.body = 11,font.size.header = 11) |> 
+  gt::fmt_number(columns = c("5%","10%","16%","50%","mean","84%","90%","95%"),decimals = 2) 
+
+```
+
+
+
+

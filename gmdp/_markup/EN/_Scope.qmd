@@ -1,0 +1,8 @@
+##  Objectives and scope 
+
+This chapter presents a summary of the seismic hazard and seismic design criteria for the `r params<ID.2B75D082>k_{max}<ID.31E7E95C>pga<ID.3EF8E4FF>D_a<ID.95705616>T_R<ID.535DD9E8>G_{max}<ID.BA79703F>V_S<ID.52D11568>T_s<ID.F7298A80>k_{max}<ID.39FBD9C1>D_a$ (performance levels).
+
+- Perform an uncertainty assessment and provide confidence intervals of seismic design parameters for different levels of service and performance levels.
+
+- ****
+

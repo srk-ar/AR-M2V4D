@@ -1,0 +1,32 @@
+<!-- The following figures illustrate the hazard curves at the project site, in terms of spectral pseudo-accelerations  <ID.BD09C494>. Each figure presents annual exceedance probabilities (AEP) of exceeding some level of <ID.BD09C494> obtained for different  <ID.0F21EC3A>  values and confidence levels, highlighting the epistemic uncertainty of the seismic hazard for rock site conditions. -->
+
+
+<ID.B482234A>
+
+
+
+::: {.panel-tabset .nav-pills }
+
+### Sa(Tn), p=50%
+
+<ID.9630DAB9>
+
+### Sa(Tn), p=mean
+
+<ID.D29C60F1>
+
+### Sa(Tn), p=84%
+
+<ID.82831681>
+
+### Sa(Tn), p=90%
+
+<ID.713049F3>
+
+### Sa(Tn), p=95%
+
+<ID.B7FB428C>
+
+:::
+
+

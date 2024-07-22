@@ -3,7 +3,7 @@
 
 
 ```{r echo=FALSE}
-TR_TARGET <- c(100,475,1000,2000,2475,5000,10000)
+TR_TARGET <- c(100,475,1000,2475,5000,10000)
 Vs30_TARGET <- 1100
 p_TARGET <- c(0.50,"mean",0.84,0.90,0.95)
 UHS <- UHSTable[Vs30==Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1" & TR %in% TR_TARGET]

@@ -1,0 +1,37 @@
+##  Uncertainty analysis.
+
+The large variability of seismic hazard must be considered in design scenarios with a high degree of consequences to failure. The PSHA study prepared by LCI, has reported seismic intensities and annual exceedance probabilities for seven fractiles (5%, 10%, 16%, 50%, 84%, 90% and 5%) that allow estimating the variability of seismic hazard for a given service level. Assuming a log-normal distribution $ln(X) \sim \mathcal{N}(\mu_{lnX},\,\sigma_{lnX}^{2})$ for the seismic intensities of a given service level, the dispersion between the 16% and 84% percentiles allows estimating the standard error of the hazard model, according to $\sigma_{lnX} \approx 1/2 \ log ({X_{84\%}}/{X_{16\%}})$ and the mean value $\mu_{lnX} \approx \frac{1}{2} \left( log(X_{84\%}) + log(X_{16\%}) \right)$. 
+
+If $\eta_X=exp(\mu_{lnX})$ is the median (50%) of some seismic intensity measure, the 84% percentile of this measure can be estimated from $X_{84\%} \approx \eta_X \ exp(\sigma_{lnX})$ and this expression can be used to estimate the variability of any seismic design parameter based on that intensity measure, assuming that they have a log-normal distribution and an approximately linear relationship with the seismic intensity. The following table presents the standard error $\sigma_{X}=exp(\sigma_{lnX})$ for different service levels (return periods), based on 16% and 84% estimates for $S_a(T_n)$ 
+
+
+
+```{r include=TRUE}
+#| label: tbl-T2
+#| fig-cap: Standard Error $\sigma_{lnX}$ for PGA at different service levels
+DT <-  UHSTable[SM=="aep"][ p %in%  c(0.16,0.84) & Vs30==760 ,.(AEP,Tn,p,Sa)] |> unique()
+DT16 <- DT[p==0.16,.(AEP,Tn,Sa16=Sa)] 
+DT84 <- DT[p==0.84,.(AEP,Tn,Sa84=Sa)] 
+AUX <- DT84[DT16,on=.(AEP,Tn)] #merge(DT16,DT84,by=c("TR","Tn"),all=TRUE) |> na.omit()
+AUX[,sigmaLnX:=round(0.5*(log(Sa84)-log(Sa16)),digits = 4),by=.(Tn,AEP)]
+DT <- AUX[DT,on=.(Tn,AEP)] #merge(DT,AUX,by=.(Tn,TR,Vs30),all=TRUE) |> na.omit()
+DATA <- DT[,.(ID=1/AEP,Y=exp(sigmaLnX),X=Tn)]|> unique()
+setorder(DATA,X)
+buildPlot::buildPlot(
+  library="hc",
+  color.palette = "Dynamic",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=FALSE,
+  xAxis.log = FALSE,
+  yAxis.log = FALSE,
+  xAxis.legend="Tn[s]",
+  yAxis.legend="sigma[g]",
+  data=DATA)
+
+```
+
+
+
+

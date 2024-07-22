@@ -1,0 +1,163 @@
+
+<!-- The following figures illustrate the hazard curves at the project site, in terms of spectral pseudo-accelerations  $S_a(T_n)$. Each figure presents annual exceedance probabilities (AEP) of exceeding some level of $S_a(T_n)$ obtained for different  $V_{s30}$  values and confidence levels, highlighting the epistemic uncertainty for the actual soil site conditions of the project. -->
+
+```{r}
+Vs30_TARGET <- 250
+TR_max <- 500000
+Tn_TARGET <- c(0,0.05,0.1,0.2,0.5,1.0,2.0)
+AEP <- AEPTable[Vs30==Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1"]
+CAP <-  "Annual Exceedence Probabilities (AEP) in terms of Sa(Tn) for different natural periods Tn. AEPs were obtained for soil site conditions with  $V_{s30}$ = %4d  m/s within a p=%s confidence level."
+FILE <- file.path("png/fig-AEP.mean.site.png")
+```
+
+::: {.panel-tabset .nav-pills }
+
+### Sa(Tn), p=50%
+
+```{r echo=FALSE,include=TRUE}
+
+p_TARGET <- 0.50
+
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+#| label: fig-AEP.mean.site.html
+#| column: body-outset-right
+#| 
+
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
+PLOT <- buildPlot(
+  library = "highcharter",
+  xAxis.label =TRUE,
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.legend="AEP [1/yr]",
+  xAxis.legend="Sa(Tn) [g]",
+  group.legend="Tn [s]",
+  data=DATA)
+PLOT
+
+```
+
+### Sa(Tn), p=mean
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- "mean"
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+#| label: fig-AEP.mean.site.html
+#| column: body-outset-right
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
+PLOT <- buildPlot(
+  library = "highcharter",
+  xAxis.label =TRUE,
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.legend="AEP [1/yr]",
+  xAxis.legend="Sa(Tn) [g]",
+  group.legend="Tn [s]",
+  data=DATA)
+PLOT
+
+# 
+# # Export PLOT for .docx rendering
+# 
+# DPI <- 150
+# WIDTH <- round(FACTOR_WIDTH * PAGE_WIDTH * DPI)
+# HEIGHT <- round(FACTOR_HEIGHT * PAGE_HEIGHT * DPI)
+# buildPlot::export(hc=PLOT, filename=FILE,width=WIDTH,height=HEIGHT,dpi=DPI,delay=DELAY)
+# # 
+# PLOT
+```
+
+### Sa(Tn), p=84%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.84
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+#| label: fig-AEP.mean.site.html
+#| column: body-outset-right
+
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
+PLOT <- buildPlot(
+  library = "highcharter",
+  xAxis.label =TRUE,
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.legend="AEP [1/yr]",
+  xAxis.legend="Sa(Tn) [g]",
+  group.legend="Tn [s]",
+  data=DATA)
+PLOT
+```
+
+### Sa(Tn), p=90%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.90
+
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+#| label: fig-AEP.mean.site.html
+#| column: body-outset-right
+
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
+PLOT <- buildPlot(
+  library = "highcharter",
+  xAxis.label =TRUE,
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.legend="AEP [1/yr]",
+  xAxis.legend="Sa(Tn) [g]",
+  group.legend="Tn [s]",
+  data=DATA)
+PLOT
+```
+
+### Sa(Tn), p=95%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.95
+
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+#| label: fig-AEP.mean.site.html
+#| column: body-outset-right
+
+DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
+PLOT <- buildPlot(
+  library = "highcharter",
+  xAxis.label =TRUE,
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  line.size=THICK_LINE_SIZE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.legend="AEP [1/yr]",
+  xAxis.legend="Sa(Tn) [g]",
+  group.legend="Tn [s]",
+  data=DATA)
+PLOT
+```
+
+:::
+
+
+

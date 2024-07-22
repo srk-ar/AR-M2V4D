@@ -20,13 +20,14 @@ REBUILD_TS <- FALSE
 source("R/setup.R")
 source("R/global.R")
 if(REBUILD_UHS | REBUILD_TS){
+  NR_TARGET <- 100
   source("R/dataset.R")
 } 
 
 UHSTable <- readRDS("data/UHSTable.Rds")
 AEPTable <- readRDS("data/AEPTable.Rds")
 MAT <- readRDS("data/MAT.Rds")
-TS <- readRDS("data/TS.Rds")
+TS <- readRDS("data/SHT.Rds")
 
 ```
 

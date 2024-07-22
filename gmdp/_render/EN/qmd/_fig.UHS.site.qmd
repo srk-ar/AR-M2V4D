@@ -1,0 +1,156 @@
+
+<!-- The following figures illustrate the Uniform Hazard Spectra (UHS) for the actual soil site conditions of the project, in terms of spectral pseudo-accelerations  $S_a(T_n)$  for a 5% critical damping, and return periods from 100 to 10,000 years. -->
+
+```{r echo=FALSE}
+Vs30_TARGET <- 250
+TR_TARGET <- c(100,475,1000,2000,2475,5000,10000)
+UHS <- UHSTable[Vs30==Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1" & TR %in% TR_TARGET]
+YMAX <- max(1.1*UHS[TR==max(TR_TARGET) & p==0.95]$Sa,na.rm=TRUE) |> round(1)
+CAP <-  "Uniform Hazard Spectra (UHS) in terms of spectral pseudo-accelerations  $S_a(T_n)$  for a 5% critical damping, representing return periods from 100 to 10,000 years. Spectral ordinates were obtained for soil site conditions with  $V_{s30}$ = %4d  m/s within a p=%s confidence level."
+```
+
+
+
+::: {.panel-tabset .nav-pills }
+
+
+#### p=50%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.50
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+#| label: fig-UHS.50.site.html
+
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Sa,X=Tn)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  point.size = 0.1,
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+#### p=mean
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- "mean"
+#| fig-cap: CAP |> sprintf("Sa(Tn)","mean",Vs30_TARGET)
+#| label: fig-UHS.mean.site.html
+
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Sa,X=Tn)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+#### p=84%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.84
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+#| label: fig-UHS.84.site.html
+
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Sa,X=Tn)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+
+#### p=90%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.90
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+#| label: fig-UHS.90.site.html
+
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Sa,X=Tn)][order(X)]|> unique()
+
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  line.size=THICK_LINE_SIZE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+#### p=95%
+
+```{r echo=FALSE,include=TRUE}
+p_TARGET <- 0.95
+#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)x
+#| label: fig-UHS.95.site.html
+
+
+DATA <- UHS[Vs30==Vs30_TARGET & p == p_TARGET,.(ID=paste0("TR= ",TR," yr"),Y=Sa,X=Tn)][order(X)]|> unique()
+YMAX <- max(1.2*DATA$Y,na.rm=TRUE) |> round(1)
+setorder(DATA,X)
+PLOT <- buildPlot(
+  library = "highcharter",
+  yAxis.label =TRUE,
+  plot.type="line",
+  line.size=THICK_LINE_SIZE,
+  legend.layout="horizontal",
+  legend.show=TRUE,
+  xAxis.log = TRUE,
+  yAxis.log = TRUE,
+  yAxis.max = YMAX,
+  xAxis.legend="Tn [s]",
+  yAxis.legend="Sa [g]",
+  group.legend="TR [yr]",
+  data=DATA)
+PLOT
+```
+
+:::
+
