@@ -7,14 +7,14 @@ TR_TARGET <- c(100,475,1000,2475,5000,10000)
 Vs30_TARGET <- 1100
 p_TARGET <- c(0.50,"mean",0.84,0.90,0.95)
 UHS <- UHSTable[Vs30==Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1" & TR %in% TR_TARGET]
-CAP <- "Design Ground Motions in terms of peak ground accelerations PGA for return periods ranging from 100 to 10,000 years, obtained for rock site conditions with  $V_{s30}$ = %4d  m/s within a p=%s confidence level."
+CAP <- "Design Ground Motions in terms of peak ground accelerations PGA for return periods ranging from 100 to 10,000 years. Spectral ordinates were obtained assuming rock site conditions with Vs30 = %4d  m/s for different confidence intervals."
+
 ```
 
 
 ```{r echo=FALSE,include=TRUE}
-#| label: tbl-PGA.rock
-#| tbl-cap: "Design Ground Motions (rock) - PGA[g]" 
-#| column: body-outset-right
+Caption <- CAP  |> sprintf(Vs30_TARGET)
+
 DT <- gmdp::buildTable.Sa(UHS,Tno=0,po=p_TARGET,TRo = TR_TARGET,Vs30o = Vs30_TARGET,tagUnits = FALSE)
 # setnames(DT,old = c("TR[yr]","PGA[g]"),new = c("TR","PGA"))
 LT1 <- DT[p==0.50,.(TR,V50=PGA)]
@@ -36,7 +36,7 @@ AUX <- AUX |> setcolorder(neworder = c("TR","POE","Vs30","V50","Vmean","V84","V9
 
 setnames(AUX,old = c("POE","Vs30","V50","Vmean","V84","V90","V95"),new = c("POE[%]","Vs30[m/s]","PGA[g] (median)","PGA[g] (mean)","PGA[g]  (84%)","PGA[g] (90%)","PGA[g] (95%)"))
 
-AUX |> buildTable(library="gt", align.body="center",font.size.body = 12,font.size.header = 14) 
+AUX |> buildTable(library="gt", align.body="center",font.size.body = 12,font.size.header = 14, caption=Caption) 
 
 # Fix bug in gmdp when Tno !=NULL
 ```

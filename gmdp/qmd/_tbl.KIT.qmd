@@ -4,7 +4,7 @@ Vs30_TARGET <- 250
 TR_TARGET <- 10000
 
 
-CAP <-  "Horizontal seismic (pseudo-static) coefficients for all facilities in terms of peak-ground accelerations (Kh) for AEP ranging between 1/100 to 1/10,000 yr. All values were obtained assuming soil site conditions with  Vs30=%s  m/s and a maximum shear stiffness at the base of the slope of Go=%4.1f MPa (Quantile p=%s)."
+CAP <-  "Horizontal seismic (pseudo-static) coefficients for AEP ranging between 1/100 to 1/10,000 yr. Values obtained assuming a target residual displacement Da=%g cm and soil site conditions with  Vs30=%g  m/s (Quantile p=%s)."
 ```
 
 ## Seismic Coefficients for MDE - Large residual displacements
@@ -15,8 +15,9 @@ CAP <-  "Horizontal seismic (pseudo-static) coefficients for all facilities in t
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- "mean"
 Da_TARGET <- 25
+Caption <- sprintf(CAP,Da_TARGET,Vs30_TARGET,p_TARGET)
 TBL <- KIT[ Da==Da_TARGET &  TR==TR_TARGET & Vs30==Vs30_TARGET & p==p_TARGET]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE, caption=Caption)
 
 ```
 
@@ -26,8 +27,10 @@ TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bo
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.05
 Da_TARGET <- 25
+Caption <- sprintf(CAP,Da_TARGET,Vs30_TARGET,p_TARGET)
+
 TBL <- KIT[ Da==Da_TARGET &  TR==TR_TARGET & Vs30==Vs30_TARGET & p==p_TARGET]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE, caption=Caption)
 
 ```
 
@@ -37,8 +40,10 @@ TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bo
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.95
 Da_TARGET <- 25
+Caption <- sprintf(CAP,Da_TARGET,Vs30_TARGET,p_TARGET)
+
 TBL <- KIT[ Da==Da_TARGET &  TR==TR_TARGET & Vs30==Vs30_TARGET & p==p_TARGET]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE, caption=Caption)
 
 ```
 
@@ -53,8 +58,10 @@ TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bo
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- "mean"
 Da_TARGET <- 2.5
+Caption <- sprintf(CAP,Da_TARGET,Vs30_TARGET,p_TARGET)
+
 TBL <- KIT[ Da==Da_TARGET &  TR==TR_TARGET & Vs30==Vs30_TARGET & p==p_TARGET]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE, caption=Caption)
 
 ```
 
@@ -64,9 +71,10 @@ TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bo
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.05
 Da_TARGET <- 2.5
-TBL <- KIT[ Da==Da_TARGET &  TR==TR_TARGET & Vs30==Vs30_TARGET & p==p_TARGET]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+Caption <- sprintf(CAP,Da_TARGET,Vs30_TARGET,p_TARGET)
 
+TBL <- KIT[ Da==Da_TARGET &  TR==TR_TARGET & Vs30==Vs30_TARGET & p==p_TARGET]
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE, caption=Caption)
 ```
 
 
@@ -75,8 +83,10 @@ TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bo
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.95
 Da_TARGET <- 2.5
+Caption <- sprintf(CAP,Da_TARGET,Vs30_TARGET,p_TARGET)
+
 TBL <- KIT[ Da==Da_TARGET &  TR==TR_TARGET & Vs30==Vs30_TARGET & p==p_TARGET]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE)
+TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE, caption=Caption)
 
 ```
 
