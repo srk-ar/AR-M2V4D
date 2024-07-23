@@ -6,8 +6,7 @@ Vs30_TARGET <- 250
 TR_max <- 500000
 Tn_TARGET <- c(0,0.05,0.1,0.2,0.5,1.0,2.0)
 AEP <- AEPTable[Vs30==Vs30_TARGET & SM=="openquake" & ID=="nrc_v3.19.1"]
-CAP <-  "Annual Exceedence Probabilities (AEP) in terms of Sa(Tn) for different natural periods Tn. AEPs were obtained for soil site conditions with  $V_{s30}$ = %4d  m/s within a p=%s confidence level."
-FILE <- file.path("png/fig-AEP.mean.site.png")
+CAP <-  "Annual Exceedence Probabilities (AEP) in terms of spectral pseudo-accelerations  Sa(Tn) for all structural periods Tn. Spectral ordinates were obtained for rock site conditions with Vs30 = %g  m/s (Quantile p=%s)"
 ```
 
 ::: {.panel-tabset  }
@@ -17,11 +16,8 @@ FILE <- file.path("png/fig-AEP.mean.site.png")
 ```{r echo=FALSE,include=TRUE}
 
 p_TARGET <- 0.50
+Caption <- CAP  |> sprintf(Vs30_TARGET,p_TARGET)
 
-#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
-#| label: fig-AEP.mean.site.html
-#| column: body-outset-right
-#| 
 
 DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
@@ -37,7 +33,8 @@ PLOT <- buildPlot(
   yAxis.legend="AEP [1/yr]",
   xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
-  data=DATA)
+  data=DATA,
+  plot.subtitle = Caption)
 PLOT
 
 ```
@@ -46,9 +43,9 @@ PLOT
 
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- "mean"
-#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
-#| label: fig-AEP.mean.site.html
-#| column: body-outset-right
+Caption <- CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+
+
 DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
   library = "highcharter",
@@ -63,7 +60,8 @@ PLOT <- buildPlot(
   yAxis.legend="AEP [1/yr]",
   xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
-  data=DATA)
+  data=DATA,
+  plot.subtitle = Caption)
 PLOT
 
 # 
@@ -81,9 +79,8 @@ PLOT
 
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.84
-#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
-#| label: fig-AEP.mean.site.html
-#| column: body-outset-right
+Caption <- CAP  |> sprintf(Vs30_TARGET,p_TARGET)
+
 
 DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
@@ -99,7 +96,8 @@ PLOT <- buildPlot(
   yAxis.legend="AEP [1/yr]",
   xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
-  data=DATA)
+  data=DATA,
+  plot.subtitle = Caption)
 PLOT
 ```
 
@@ -107,10 +105,8 @@ PLOT
 
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.90
+Caption <- CAP  |> sprintf(Vs30_TARGET,p_TARGET)
 
-#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
-#| label: fig-AEP.mean.site.html
-#| column: body-outset-right
 
 DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
@@ -126,7 +122,8 @@ PLOT <- buildPlot(
   yAxis.legend="AEP [1/yr]",
   xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
-  data=DATA)
+  data=DATA,
+  plot.subtitle = Caption)
 PLOT
 ```
 
@@ -134,10 +131,8 @@ PLOT
 
 ```{r echo=FALSE,include=TRUE}
 p_TARGET <- 0.95
+Caption <- CAP  |> sprintf(Vs30_TARGET,p_TARGET)
 
-#| fig-cap: CAP  |> sprintf(Vs30_TARGET,p_TARGET)
-#| label: fig-AEP.mean.site.html
-#| column: body-outset-right
 
 DATA <- AEP[ p == p_TARGET & Tn %in% Tn_TARGET & TR<=TR_max,.(ID=paste0("Tn= ",Tn," s"),X=Sa,Y=AEP)][order(X)]|> unique()
 PLOT <- buildPlot(
@@ -153,7 +148,8 @@ PLOT <- buildPlot(
   yAxis.legend="AEP [1/yr]",
   xAxis.legend="Sa(Tn) [g]",
   group.legend="Tn [s]",
-  data=DATA)
+  data=DATA,
+  plot.subtitle = Caption)
 PLOT
 ```
 

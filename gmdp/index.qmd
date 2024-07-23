@@ -1,4 +1,13 @@
 ---
+format:
+  revealjs:
+    theme: white #black,white,league,beige,sky,simple,solarized,blood,moon,*night, default
+    config:
+      width: 1920
+      height: 1080
+      margin: 0.1
+      minScale: 0.5
+      maxScale: 1.8
 params:
   render: none
   ext: png
@@ -21,6 +30,7 @@ source("R/setup.R")
 source("R/global.R")
 source("R/dataset.R")
 ```
+
 
 # Annual Exceedance Probability (Hazard)
 
@@ -70,8 +80,3 @@ source("R/dataset.R")
 ::: {#refs}
 :::
 
-## Appendices
-
-<!-- {{< include qmd/_SiteClassification.qmd >}} -->
-
-<!-- {{< include qmd/_Ishihara.qmd >}} -->

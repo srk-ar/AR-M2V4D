@@ -21,7 +21,6 @@ format:
       gutter-width: 1.5rem
   revealjs:
     output-file: index.html
-    theme: white #black,white,league,beige,sky,simple,solarized,blood,moon,*night
     smaller: true
     scrollable: true
     slideNumber: true
@@ -29,7 +28,7 @@ format:
     controls: true
     progress: true
     history: true
-    transition: fade  
+    transition: fade  #
     showNotes: true
     css: styles.css
   docx: 
