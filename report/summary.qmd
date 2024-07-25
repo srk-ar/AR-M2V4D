@@ -1,13 +1,4 @@
 ---
-format:
-  revealjs:
-    theme: white #black,white,league,beige,sky,simple,solarized,blood,moon,*night, default
-    config:
-      width: 1920
-      height: 1080
-      margin: 0.1
-      minScale: 0.5
-      maxScale: 1.8
 params:
   render: none
   ext: png
@@ -21,7 +12,7 @@ params:
 # css: _build/styles.css
 ---
 
-```{r ,include=FALSE}
+```{r setup,include=FALSE}
 
 REBUILD_UHS <- FALSE
 REBUILD_TS <- FALSE
@@ -31,47 +22,491 @@ source("R/global.R")
 source("R/dataset.R")
 ```
 
+# Annual Exceedance Probability (AEP)
 
-# Annual Exceedance Probability (Hazard)
+## Rock (Vs30 = 1100 m/s)
 
-## Rock Site Conditions  (Vs30 = 1100 m/s)
+```{r}
+Vs30_TARGET <- 1100
+Tn_TARGET <- c(0,0.05,0.1,0.2,0.5,1.0)
+CAP <-  "Annual Exceedence Probabilities (AEP) in terms of spectral pseudo-accelerations  Sa(Tn) for structural periods Tn ranging between %g to %g. Spectral ordinates were obtained for rock site conditions with Vs30 = %g  m/s (Quantile p=%s)"
+```
 
-{{< include qmd/_fig.AEP.rock.qmd >}}
 
-## Soil Site Conditions  (Vs30 = 250 m/s)
+:::  {.panel-tabset  }
 
-{{< include qmd/_fig.AEP.site.qmd >}}
+### mean
+
+```{r}
+p_TARGET <- "mean"
+```
+{{< include qmd/_fig.AEP.qmd >}}
+
+### 50%
+```{r}
+p_TARGET <- 0.50
+```
+{{< include qmd/_fig.AEP.qmd >}}
+
+### 84% $(+1\ \sigma)$
+```{r}
+p_TARGET <- 0.84
+```
+{{< include qmd/_fig.AEP.qmd >}}
+
+### 90% $(+1.28\ \sigma)$
+
+```{r}
+p_TARGET <- 0.90
+```
+{{< include qmd/_fig.AEP.qmd >}}
+
+### 95% $(+1.65\ \sigma)$
+
+```{r}
+p_TARGET <- 0.95
+```
+{{< include qmd/_fig.AEP.qmd >}}
+
+:::
+
+
+
+
+## Local Site Conditions (Vs30 = 220 m/s)
+
+```{r}
+Vs30_TARGET <- 220
+Tn_TARGET <- c(0,0.05,0.1,0.2,0.5,1.0)
+CAP <-  "Annual Exceedence Probabilities (AEP) in terms of spectral pseudo-accelerations  Sa(Tn) for all structural periods Tn. Spectral ordinates were obtained for rock site conditions with Vs30 = %g  m/s (Quantile p=%s)"
+```
+
+:::  {.panel-tabset  }
+
+### mean
+
+```{r}
+p_TARGET <- "mean"
+```
+
+{{< include qmd/_fig.AEP.qmd >}}
+
+### 50%
+```{r}
+p_TARGET <- 0.50
+```
+
+{{< include qmd/_fig.AEP.qmd >}}
+
+### 84% $(+1\ \sigma)$
+
+```{r}
+p_TARGET <- 0.84
+```
+{{< include qmd/_fig.AEP.qmd >}}
+
+### 90% $(+1.28\ \sigma)$
+
+```{r}
+p_TARGET <- 0.90
+```
+{{< include qmd/_fig.AEP.qmd >}}
+
+### 95% $(+1.65\ \sigma)$
+
+```{r}
+p_TARGET <- 0.95
+```
+{{< include qmd/_fig.AEP.qmd >}}
+
+:::
+
+
 
 # Uniform Hazard Spectra
 
-## Rock Site Conditions (Vs30 = 1100 m/s)
+## Rock (Vs30 = 1100 m/s)
 
-{{< include qmd/_fig.UHS.rock.qmd >}}
+```{r echo=FALSE}
+Vs30_TARGET <- 1100
+TR_TARGET <- c(100,475,975,2475,5000,10000)
+CAP <-  "Uniform Hazard Spectra (UHS) with 5%% critical damping in terms of spectral pseudo-accelerations  Sa(Tn)  , representing return periods from %d to %d years. Spectral ordinates were obtained assuming site conditions with  Vs30 = %g  m/s (Quantile p=%s)"
+```
 
-## Soil Site Conditions (Vs30 = 250 m/s)
+:::  {.panel-tabset  }
 
-{{< include qmd/_fig.UHS.site.qmd >}}
+### mean
+
+```{r}
+p_TARGET <- "mean"
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+### 50%
+```{r}
+p_TARGET <- 0.50
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+### 84% $(+1\ \sigma)$
+```{r}
+p_TARGET <- 0.84
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+### 90% $(+1.28\ \sigma)$
+
+```{r}
+p_TARGET <- 0.90
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+### 95% $(+1.65\ \sigma)$
+```{r}
+p_TARGET <- 0.95
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+:::
+
+
+
+
+
+
+## Local Site Conditions (Vs30 = 220 m/s)
+
+```{r  echo=FALSE}
+Vs30_TARGET <- 220
+TR_TARGET <- c(100,475,975,2475,5000,10000)
+CAP <-  "Uniform Hazard Spectra (UHS) with 5%% critical damping in terms of spectral pseudo-accelerations  Sa(Tn)  , representing return periods from %d to %d years. Spectral ordinates were obtained assuming site conditions with  Vs30 = %g  m/s (Quantile p=%s)"
+```
+
+:::  {.panel-tabset  }
+
+### mean
+
+```{r}
+p_TARGET <- "mean"
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+### 50%
+```{r}
+p_TARGET <- 0.50
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+### 84% $(+1\ \sigma)$
+```{r}
+p_TARGET <- 0.84
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+### 90% $(+1.28\ \sigma)$
+
+```{r}
+p_TARGET <- 0.90
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+### 95% $(+1.65\ \sigma)$
+```{r}
+p_TARGET <- 0.95
+```
+{{< include qmd/_fig.UHS.qmd >}}
+
+:::
+
+
 
 # Design Ground Motions
 
-## Rock Site Conditions (Vs30 = 1100 m/s)
+## Peak-Ground Accelerations (PGA)
 
-{{< include qmd/_tbl.PGA.rock.qmd >}}
+```{r echo=FALSE}
+TR_TARGET <- c(100,475,975,2475,5000,10000)
+Vs30_TARGET <- c(180,200,220,230,360,760,1100,1500)
+CAP <- "Design Ground Motions in terms of peak ground accelerations PGA for return periods ranging from %d to %d years. Spectral ordinates were obtained assuming site conditions with Vs30 ranging from  %g to %g m/s. (Quantile p=%s)"
+```
 
-## Soil Site Conditions (Vs30 = 250 m/s)
+:::  {.panel-tabset  }
 
-{{< include qmd/_tbl.PGA.site.qmd >}}
+### mean
 
-# Slope Dynamic Response
+```{r }
+p_TARGET <- "mean"
+```
+
+{{< include qmd/_tbl.PGA.qmd >}}
+
+### 50%
+```{r}
+p_TARGET <- 0.50
+```
+{{< include qmd/_tbl.PGA.qmd >}}
+
+### 84% $(+1\ \sigma)$
+```{r}
+p_TARGET <- 0.84
+```
+{{< include qmd/_tbl.PGA.qmd >}}
+
+### 90% $(+1.28\ \sigma)$
+```{r}
+p_TARGET <- 0.90
+```
+{{< include qmd/_tbl.PGA.qmd >}}
 
 
+### 95% $(+1.65\ \sigma)$
 
+```{r}
+p_TARGET <- 0.95
+```
+{{< include qmd/_tbl.PGA.qmd >}}
+
+
+:::
+
+# Slope Design Parameters
+
+## Shear Moduli $G_o$ & Slope's Fundamental Periods $T_s$
+
+### All facilities
+
+```{r echo=FALSE}
+TR_TARGET <- c(100,475,1000,2475,5000,10000)
+CAP <- "Fundamental periods and shear modulus for slopes with material properties are expressed in terms of the Universal Soil Classification System (USCS) . Heights Hs in [m], crest width b in [m], Shear moduli Go in [MPa], Shear wave velocity at the base VSo in [m/s] and Fundamental Period Ts in [s] (Quantile p=%s)."
+```
+
+
+:::  {.panel-tabset  }
+
+### mean
+
+```{r}
+p_TARGET <- "mean"
+```
 {{< include qmd/_tbl.TS.qmd >}}
 
+### 50%
+```{r}
+p_TARGET <- 0.50
+```
+{{< include qmd/_tbl.TS.qmd >}}
 
-{{< include qmd/_fig.KIT.qmd >}}
+### 84% $(+1\ \sigma)$
+```{r}
+p_TARGET <- 0.84
+```
+{{< include qmd/_tbl.TS.qmd >}}
+
+### 90% $(+1.28\ \sigma)$
+
+```{r}
+p_TARGET <- 0.90
+```
+{{< include qmd/_tbl.TS.qmd >}}
+
+### 95% $(+1.65\ \sigma)$
+```{r}
+p_TARGET <- 0.95
+```
+{{< include qmd/_tbl.TS.qmd >}}
+
+:::
+
+
+
+
+## Seismic Coefficients $k_h$ & $k_{max}$
+
+```{r}
+TR_TARGET <- 10000
+
+CAP <-  "Horizontal seismic (pseudo-static) coefficients for %s. Spectral ordinates obtained for Maximum Design Earthquake (MDE) with an AEP=1/%d yr, assuming geotechnical site conditions with Vs30=%g  m/s. Seismic coefficients obtained for slopes with a fundamental period of Td=%g s and residual deformations ranging from %g cm (%g %% Hs) to %g cm (%g %% Hs). Quantile p=%s."  
+```
+
+
+### Rock Impoundment (RI)
+
+```{r}
+ID_TARGET <- "RI"
+```
 
 {{< include qmd/_tbl.KIT.qmd >}}
+
+## Seismic Coefficients $k_h$ & $k_{max}$
+### Stock Pile (West)
+
+```{r}
+ID_TARGET <- "SPW"
+```
+
+{{< include qmd/_tbl.KIT.qmd >}}
+
+## Seismic Coefficients $k_h$ & $k_{max}$
+### Stock Pile (East)
+
+```{r}
+ID_TARGET <- "SPE"
+```
+
+{{< include qmd/_tbl.KIT.qmd >}}
+
+## Seismic Coefficients $k_h$ & $k_{max}$
+
+### Rock Berms
+
+```{r}
+ID_TARGET <- "RB"
+```
+
+{{< include qmd/_tbl.KIT.qmd >}}
+
+## Seismic Coefficients $k_h$ & $k_{max}$
+
+### Sand & Silt Impoundments
+
+```{r}
+ID_TARGET <- "SSI"
+```
+
+{{< include qmd/_tbl.KIT.qmd >}}
+
+## Seismic Coefficients $k_h$ & $k_{max}$
+
+### Clay Impoundments
+
+```{r}
+ID_TARGET <- "SPW"
+```
+
+{{< include qmd/_tbl.KIT.qmd >}}
+
+## Seismic Coefficients $k_h$ & $k_{max}$
+### Tailings Management Facility
+
+
+```{r}
+ID_TARGET <- "TMF"
+```
+
+{{< include qmd/_tbl.KIT.qmd >}} 
+
+## Seismic Coefficients $k_h$
+
+### All facilities
+
+```{r echo=FALSE}
+TR_TARGET <- 10000
+CAP <-  "Horizontal seismic (pseudo-static) coefficients (all facilities) expressed in [%% PGA] obtained for the Maximum Design Earthquake (MDE) with an AEP=1/%d. All values were obtained for geotechnical site conditions with Vs30 ranging from %g to %g m/s and PGA values ranging from %g to %g g. (Quantile p=%s)"
+
+```
+
+
+:::  {.panel-tabset  }
+
+### mean
+
+```{r}
+p_TARGET <- "mean"
+```
+{{< include qmd/_fig.kh.qmd >}}
+
+### 50%
+```{r}
+p_TARGET <- 0.50
+```
+{{< include qmd/_fig.kh.qmd >}}
+
+### 84% $(+1\ \sigma)$
+```{r}
+p_TARGET <- 0.84
+```
+{{< include qmd/_fig.kh.qmd >}}
+
+### 90% $(+1.28\ \sigma)$
+
+```{r}
+p_TARGET <- 0.90
+```
+{{< include qmd/_fig.kh.qmd >}}
+
+### 95% $(+1.65\ \sigma)$
+```{r}
+p_TARGET <- 0.95
+```
+{{< include qmd/_fig.kh.qmd >}}
+
+:::
+
+
+
+
+::: 
+
+
+
+
+
+
+## Seismic Coefficients $k_{max}$
+### All facilities
+
+```{r echo=FALSE}
+TR_TARGET <- 10000
+CAP <-  "Horizontal seismic (pseudo-static) coefficients (all facilities) obtained for the Maximum Design Earthquake (MDE) with an AEP=1/%d. All values were obtained for geotechnical site conditions with Vs30 ranging from %g to %g m/s and PGA values ranging from %g to %g g. (Quantile p=%s)"
+
+```
+
+
+:::  {.panel-tabset  }
+
+### mean
+
+```{r}
+p_TARGET <- "mean"
+```
+{{< include qmd/_fig.kmax.qmd >}}
+
+### 50%
+```{r}
+p_TARGET <- 0.50
+```
+{{< include qmd/_fig.kmax.qmd >}}
+
+### 84% $(+1\ \sigma)$
+```{r}
+p_TARGET <- 0.84
+```
+{{< include qmd/_fig.kmax.qmd >}}
+
+### 90% $(+1.28\ \sigma)$
+
+```{r}
+p_TARGET <- 0.90
+```
+{{< include qmd/_fig.kmax.qmd >}}
+
+### 95% $(+1.65\ \sigma)$
+```{r}
+p_TARGET <- 0.95
+```
+{{< include qmd/_fig.kmax.qmd >}}
+
+:::
+
+
+
+
+::: 
+
+
+
+
+
 
 
 
@@ -79,4 +514,3 @@ source("R/dataset.R")
 
 ::: {#refs}
 :::
-

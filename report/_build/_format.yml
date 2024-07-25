@@ -21,16 +21,25 @@ format:
       gutter-width: 1.5rem
   revealjs:
     output-file: index.html
+    theme: white #black,white,league,beige,sky,simple,solarized,blood,moon,*night, default
+    config:
+      width: 1920
+      height: 1080
+      margin: 0.1
+    #   minScale: 0.5
+    #   maxScale: 1.8
     smaller: true
     scrollable: true
     slideNumber: true
-    center: true
+    center: false
     controls: true
     progress: true
     history: true
     transition: fade  #
     showNotes: true
     css: styles.css
+    chalkboard: true
+
   docx: 
     output-file: article.docx
     reference-doc: _build/styles.docx
