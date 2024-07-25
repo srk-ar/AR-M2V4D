@@ -1,46 +1,8 @@
 
-
-
-```{r echo=FALSE}
-TR_TARGET <- c(100,475,1000,2475,5000,10000)
-Vs30_TARGET <- 250
-CAP <- "Fundamental periods and shear modulus for slopes. Heights Hs in [m], crest width b in [m], Shear moduli Go in [MPa], Shear wave velocity at the base VSo in [m/s] and Fundamental Period Ts in [s] (Quantile p=%s). The material properties are expressed in terms of the Universal Soil Classification System (USCS) "
-```
-
-## Fundamental Periods and Shear Modulus
-
-::: {.panel-tabset  }
-### p=mean
-
-```{r echo=FALSE,include=TRUE}
-p_TARGET <- "mean"
+```{r include=TRUE}
 Caption <- CAP |> sprintf(p_TARGET)
 TBL <- SHT[level==p_TARGET,.(ID,Name,USCS,level,b,s,Hs,Go,VSo,mo,lo,an,Ts)]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE,caption=Caption)
-
+TBL |> buildTable(library="gt",font.size.body = FONT.SIZE.BODY,font.size.header = FONT.SIZE.HEADER,font.bold.header=TRUE,caption=Caption)
 ```
 
 
-### p=5%
-
-```{r echo=FALSE,include=TRUE}
-p_TARGET <- 0.05
-Caption <- CAP |> sprintf(p_TARGET)
-TBL <- SHT[level==p_TARGET,.(ID,Name,USCS,level,b,s,Hs,Go,VSo,mo,lo,an,Ts)]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE,caption=Caption)
-
-```
-
-
-
-### p=95%
-
-```{r echo=FALSE,include=TRUE}
-p_TARGET <- 0.95
-Caption <- CAP |> sprintf(p_TARGET)
-TBL <- SHT[level==p_TARGET,.(ID,Name,USCS,level,b,s,Hs,Go,VSo,mo,lo,an,Ts)]
-TBL |> buildTable(library="gt",font.size.body = 12,font.size.header = 14,font.bold.header=TRUE,caption=Caption)
-
-```
-
-:::
