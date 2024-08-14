@@ -1,9 +1,9 @@
 link-citations: true
 colorlinks: true
-fontsize: 11pt
-citation: true
+fontsize: 12pt
+citation: false
 appendix-cite-as: display
-google-scholar: true
+google-scholar: false
 execute:
   eval: true
   echo: false

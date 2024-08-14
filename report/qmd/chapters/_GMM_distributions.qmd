@@ -1,0 +1,14 @@
+
+The transformation usually performed on random variables associated with the occurrence of seismic events is the logarithmic transformation, which is equivalent to assuming a normal distribution law for the intensity logarithms. Under this transformation, the seismic intensity is determined according to a new normalized random variable $\beta_{I}$, with mean value $E[\beta_{I}]=0$ and variance $var[\beta_{I}]=1$ with null expectation and unit variance.
+
+$$\beta_{I}(i,m,r) \approx  \frac{ln \ i-ln[\eta_{I}(i,m,r)]}{\sigma_{ln \ I}}$$
+
+From this transformation the CDFs $P[I>i^*/m^*,r^*]$ can be defined explicitly in terms of the cumulative normal density function $\Phi_C(\beta_{I}^*)=1-\Phi(\beta_{I}^*)$ the seismic intensity exceedance probability for a given scenario $r_s^*,m_s^*$ can be obtained from:
+
+$$P[I>i^*]  \approx \ \Phi_C \left [ \beta_{I}(i^*,r_s^*,m_s^*) \right] $$
+
+Using the TPT the annual exceedance rate of earthquakes with magnitude greater than $m^\ast$ can be expressed in terms of an asymptotically truncated Gutenberg-Richter magnitude-frequency distribution. The discrete mass probability for magnitudes $P[M=m_j]^{(s)}=f_M^{(s)}(m_j)\,dM$ can be obtained from the first derivative of the magnitudes cumulative-density function $F_M^{(s)} (m_j)$ valid for $M_{max}^{(s)}<m^\ast<M_o^{(s)}$:
+
+$$\lambda^{(s)}[M>m^\ast]=\lambda_M^{(s)}(m^\ast)=\nu_o^{(s)}(1-F_M^{(s)}(m^\ast))\simeq \nu_o^{(s)}\dfrac{\mathrm{e}^{-\beta\left(m^\ast-M_o^{(s)}\right)}}{1-\mathrm{e}^{-β \left(M_{max}^{(s)}-M_o^{(s)} \right) }}$$
+
+The discrete mass probability function for distances $f_{R⁄M}^{(s)} (r^\ast |m^\ast ) dr^\ast=P[R=r^\ast |m^\ast ]^{(s)}$ can be obtained numerically from the histogram of an array of epicentres inside the boundaries of each source.

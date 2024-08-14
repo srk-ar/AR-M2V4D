@@ -1,0 +1,10 @@
+## Introduction {#sec-INTRO}
+
+<!-- `r params$srk` was appointed by `r params$client` (`r params$client_short`) to undertake a site-specific seismic hazard assessment (PSHA) at the `r params$project` project site located in `r params$location`. -->
+
+{{< include qmd/chapters/_Objectives.qmd >}}
+
+
+#### _*Disclaimer*_ 
+
+{{< include qmd/chapters/_Disclaimer.qmd >}}

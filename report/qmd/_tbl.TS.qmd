@@ -1,8 +1,0 @@
-
-```{r include=TRUE}
-Caption <- CAP |> sprintf(p_TARGET)
-TBL <- SHT[level==p_TARGET,.(ID,Name,USCS,level,b,s,Hs,Go,VSo,mo,lo,an,Ts)]
-TBL |> buildTable(library="gt",font.size.body = FONT.SIZE.BODY,font.size.header = FONT.SIZE.HEADER,font.bold.header=TRUE,caption=Caption)
-```
-
-

@@ -9,13 +9,6 @@
   padding: 20px 150px 120px 20px !important; /* Adjust padding (top/right/bottom/left) */
   margin-top: 30px; /* Increased top margin to accommodate the logo */
   margin-bottom: 20px; /* Adjust bottom margin as needed */
-  overflow: hidden; /* Ensure that the slides container itself does not scroll */
-}
-
-/* Ensure individual slides can scroll */
-.reveal .slides section {
-  overflow-y: auto !important; /* Enable vertical scrolling */
-  max-height: 100vh; /* Constrain height to viewport */
 }
 
 /* Background logo styling */
@@ -25,6 +18,7 @@
   background-position: bottom 100px right 30px; /* Position at bottom right */
   background-size: 250px auto; 
 }
+
 
 /* Slide number styling */
 .reveal .slide-number {
@@ -43,6 +37,8 @@
   z-index: 1000;
   padding: 10px 0;
 }
+
+
 
 /* General styling */
 .reveal {
@@ -102,6 +98,7 @@
   width: auto; /* Allow tables to adjust width to content */
 }
 
+
 /* Tabset styling */
 .tabset .nav-link {
   font-size: 2.5em; /* Adjust as needed */
@@ -116,3 +113,4 @@
   font-size: 2.5em; /* Adjust as needed */
   padding: 10px 0; /* Adjust as needed */
 }
+

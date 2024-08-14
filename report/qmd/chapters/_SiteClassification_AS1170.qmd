@@ -1,0 +1,14 @@
+
+
+The Australian Standard AS 1726-2017 "Geotechnical Site Investigations." provides guidelines for conducting geotechnical investigations and includes a site classification system that categorises sites into classes based on their soil properties, such as shear wave velocity parameter $v_S$, depth to bedrock, and soil type. The Australian Standard AS 1170.4 "Earthquake Actions on Structures" uses a similar site classification system based on the stiffness of the ground, but it does not explicitly use the shear wave velocity parameter $v_S$ to classify the ground. The categories range from A (rock) to E (soft soil), with a special category (S) for sites requiring site-specific investigations.
+
+-   **Site Class A - Strong Rock:** Site sub-soil Class A is defined as strong to extremely strong rock satisfying the following conditions: a) Unconfined compressive strength greater than 50 MPa or an average shear-wave velocity over the top 30 m greater than 1500 m/s and b) Not underlain by materials having a compressive strength less than 18 MPa or an average shear wave velocity less than 600 m/s
+
+-   **Site Class B - Rock:** Site sub-soil Class B is defined as rock satisfying the following conditions: a) a compressive strength between 1 and 50 MPa inclusive or an average shear-waver velocity over the top 30 m greater than 360 m/s and b) Nor underlain by materials having a compressive strength less than 0.8 Ma or an average shear wave velocity less than 300 m/s. A surface layer of no more than 3 m depth of highly weathered or completely weathered rock or soil (a material with a compressive strength less than 1 MPa) may be present.
+
+
+-   **Site Class C - Shallow soil site:** Site sub-soil Class C is defined as a site that is not Class A, Class B or Class E site satisfying the following conditions: a) the low-amplitude natural site period is less than or equal to 0.6 s; or b) the depths of soil do not exceed those listed in Table 4.1. 
+
+-   **Site Class D - Deep or soft soil site:** Site sub-soil Class D is defined as a site that is a) not Class A, Class B or Class E and b) underlain by less than 10 m of soil with an undrained shear-strength less than 12.5 kPa or soil with Standard Penetration Test (SPT) N-values less than 6; and either i) the low-amplitude natural site period is greater than 0.6 second or he depths of soil exceed those listed in table 4.1
+
+-   **Site Class E - Very soft soil site:** Site sub-soil class E is defined as a site with _any_ of the following: a) More than 10 m of very soft soil with undrained shear-strength less than 12.5 kPa b) more than 10 m of soil with STP N-values less than 6. c) More than 10 m depth of soil with shear-wave velocities of 150 m/s or less. d) More than 10 m combined depth of soils with properties as described in Items (a),(b) and (c) above.

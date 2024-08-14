@@ -1,0 +1,17 @@
+The seismic motions for the 6th Generation Seismic Hazard Model of Canada (CanadaSHM6) generates seismic ground motions using a multiple ground motion prediction equations (GMPE) logic tree approach. Equal weighting is used in the logic trees of each regime from the standpoint that each GMPE is no more likely as the others to represent the actual ground motions from future events. Eastern and western Canada are treated differently because of the different propagation of seismic waves in the crust. 
+
+<!-- @fig-CAN6SHMCat illustrates both the earthquake history and the regionalization used.  -->
+
+<!-- ![Earthquake catalog used for the 6th Generation model and eastern and western seismic regions](../../pictures/intensity/CAN-6SHMCatalogue.jpg){#fig-CAN6SHMCat} -->
+
+#### **Subduction Zones (SZ) Intensity Model** {.unnumbered #sec-SZ}
+
+The majority of the subduction GMPEs for the 6th Generation model are similar to those considered in the three-branch suite for the 5th Generation model [@atkinson2013ground]. For inslab events, the GMPEs of @Abrahamson2016, @Atkinson2003, @Garcia2005 and @Zha06 are used with equal weights. As @Atkinson2003 and @Zha06 were largely derived from, or intended for, Japan, a Cascadia factor is applied to account for differences in site conditions following the method of Atkinson and Adams [@atkinson2013ground]. @Garcia2005 GMPE, developed for inslab earthquakes in central Mexico, was included within the logic tree because it was found to perform well against recorded ground-motions from moderate to large magnitude earthquakes recorded in Cascadia [@kolaj2019ground]. For interface events, the GMPEs of @Abrahamson2016, @Zha06, @ghofrani2014 and @Atkinson2009 are equally weighted. A Cascadia factor is applied to @Zha06 and @ghofrani2014. For GMPEs with response spectral ordinates that do not reach 10 seconds (NBCC2020 requirement), extrapolation was performed using the corresponding ratio from @Abrahamson2016  for the same magnitude, distance and site. 
+
+#### **Western Active Shallow Crust (ASC) Intensity Model** {.unnumbered #sec-ASC}
+
+For the 6th Generation active crust model, the following [NGA West 2](https://peer.berkeley.edu/research/nga-west-2) GMPEs were adopted with equal weights: @Abr14 @Boo041,@CB14, @Chi14.
+
+#### **Eastern Stable Continental Crust (SCC) Intensity Model** {.unnumbered #sec-SCC}
+
+For the stable crust of eastern, central and Arctic Canada (east of the North American Cordillera), the 6th Generation model equally weights a) the @atkinson2013ground GMPEs used for the 5th Generation model, and b) the 13 NGA-East GMPEs (NGA-East-13, [@Goulet2017]). The full GMPE [NGA-East](https://peer.berkeley.edu/research/nga-east) project GMPEs list was not available for the NBCC2020 schedule. Although the 13 preliminary GMPEs were used, they give similar mean hazard to the 17 final GMPEs.

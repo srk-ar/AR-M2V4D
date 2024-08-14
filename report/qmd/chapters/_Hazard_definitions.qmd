@@ -1,0 +1,8 @@
+The probability of exceeding a certain level of seismic intensity $i^*$ at a given location is known as the seismic hazard of the site and can be estimated from the contribution of intensities from the different active faults of interest in the region. A *probabilistic seismic hazard assessment* (PSHA) quantifies the contributions of all sources for all possible magnitudes within the affected area. The PSHA stages identify all earthquake sources capable of producing significant ground-motion at the site and captures the expected range of all possible ground-motions in the target region. For a given source $(s)$
+
+$$P[I>i^*] ^{(s)} \approx \sum_{all \ m^*} \sum_{all \ r^*} P[I>i^*/m^*,r^*,\theta^*] \ P[M=m^*,R=r^*]$$ {#eq-TPT}
+
+The spatial variability is given by all possible locations of the hypocentres of future seismic events that may affect the site. Temporal variability, on the other hand, is associated with the number of events per unit time that we should expect in a given region and can be linked to the seismic magnitude and rupture area through the Gutenberg-Richter [@Gutenberg1944] probability model. The fundamental difference between PSHA and DSHA methodologies is the inclusion of random uncertainty in the calculation of the spatial and temporal distribution of earthquakes, as well as the (aleatory) uncertainty associated with the ground-motion models.
+
+
+

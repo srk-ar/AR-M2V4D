@@ -1,0 +1,6 @@
+In general, not enough strong ground-motion records are available for a given region to formulate a specific GMPE model for the particular site. To address this epistemic uncertainty, several models defined for similar tectonic regimes are combined by means of logic trees, with weights selected by expert judgement. The ground-motion intensity for a given hazard level $\beta$ can be obtained by a weighted sum of ground-motion intensities from different models for a given target $(M=m^* ,R=r^*)$
+
+$$\tilde i^*\approx \sum_{b=1}^{N_b} {w_b \ \eta_I ^{(b)} \left(m^*,r^*\right)} \ (\sigma_I)^{\beta}$$
+
+where $w_b$ is the weight assigned to the $b$-th branch of the logic tree, $\eta_I^{(b)}(m,r)$ is the ground-motion intensity model, and $\sigma_I$ is the standard deviation of the ground-motion intensity model. A minimum number $N_b$ of independent region-specific ground-motion model were selected to capture the expected range of possible ground-motions in the target region. They are selected following guidelines from Boomer et al. [@bommer2008use] and weighted in logic trees to address their relative confidence based on the available information.
+

@@ -1,0 +1,22 @@
+
+The present document provides an estimate of the seismic hazard of the `r params$project` project site located in `r params$location`. and presents seismic design criteria and design guidance for embankments in terms of ground acceleration, spectral accelerations and horizontal seismic coefficients for use in performance-based seismic stability analysis. 
+
+
+
+The main objectives of the study are as follows:
+
+- Define the tectonic framework of the study area, identify and characterize seismogenic sources capable of generating significant ground motion within a 500 km radius of the site, and select an appropriate source (seismogenic) model.
+
+- Select a suite of ground motion prediction equations (GMPEs) and develop a logic tree framework that addresses epistemic uncertainty by integrating the full range of tectonic regimes represented in the adopted seismogenic source model. 
+
+- Perform a full probabilistic seismic hazard assessment (PSHA) for the site, estimating the annual probability of exceeding specified seismic intensity levels due to potential earthquakes from all identified sources (@sec-PSHA).
+
+- Determine service levels by selecting target annual exceedance probabilities (AEP) in accordance with the Global Industry Standard on Tailings Management (GISTM).
+
+- Provide uniform hazard spectra (UHS) for the selected service levels and return periods, considering the full range of spectral periods relevant to the site (@sec-UHS).
+
+- Estimate the expected site amplification for different geotechnical conditions, expressed in terms of ta multi-period amplification factor. Provide the site response spectra for the site, considering the target service levels and geotechnical site conditions (@sec-SRA).
+
+- Estimate fundamental periods (@sec-TS) and seismic coefficients ($k_{max}$) (@sec-KIT) for performance-based stability analysis, considering different service levels (AEP), geotechnical conditions and performance levels expressed in terms of residual displacements ($D_a$) of an equivalent Newmark Sliding block.
+
+
