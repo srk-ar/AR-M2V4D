@@ -1,0 +1,5 @@
+Most ground-motion intensity models are defined in terms of finite fault distance metrics assuming a planar rupture geometry. The trace of the rupture is defined as the projection of the top edge of the rupture on the ground surface. The rupture plane, trace and the surface projection allow to define four finite fault distance metrics: $R_{RUP}$, $R_{JB}$ ,$R_{X}$ and $R_{Y0}$. The rupture distance $R_{RUP}$ is the distance from the site to the closest point of the rupture plane. The Joyner-Boore distance $R_{JB}$ is the closest distance between the site and the surface projection of the rupture plane and the auxiliary parameters $R_X$, $R_{Y0}$ and $Z_{TOR}$ are the coordinates from the site to the closest point of the top of the rupture.
+
+@fig-Source2site illustrates different metrics for source-to-site distances. A full description of these finite fault metrics can be found in Kaklamanos et al. [-@Kaklamanos2011].
+
+![Source-to-site distances](../png/SourceToSiteDistance.jpg){#fig-Source2site width="400"}

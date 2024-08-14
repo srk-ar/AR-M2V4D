@@ -55,17 +55,15 @@ rsconnect/
 # Ignore data folder at the root and in subdirectories
 data/
 
-gmdp/!archive/
 oq/!archive/
-psha/!archive/
 
-gmdp/!archive/
-gmdp/.quarto/
-gmdp/data/
+report/!archive/
+report/.quarto/
+report/_publish/
 
-psha/!archive/
-psha/.quarto/
-psha/data/
+report/data/
+
+
 
 # Local Netlify folder
 .netlify

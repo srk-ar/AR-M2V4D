@@ -1,0 +1,53 @@
+---
+params:
+  lang: EN
+  exportImages: true
+  background: "white"
+  client: "Canada Nickel Co"
+  client_short: "CN"
+  location: "Location"
+  project: "Crawford Project"
+  srk: "SRK Consulting (NA)"
+  obe: "1/5,000 yr"
+  mde: "1/10,000 yr"
+  vs30: "220~1500 m/s"
+  risk_rating: "Very High"
+# css: _build/styles.css
+bibliography: references.bib
+
+---
+
+```{r setup,include=FALSE}
+source("R/setup.R")
+source("R/global.R")
+REBUILD_UHS <- FALSE
+REBUILD_TS <- FALSE
+REBUILD_KIT <- FALSE
+source("R/dataset.R")
+
+if(!knitr::is_html_output()){
+  LIB <- "flextable"
+  FONT.SIZE.BODY <- 10
+  FONT.SIZE.HEADER <- 10
+} else {
+  LIB <- "gt"
+  FONT.SIZE.BODY <- 11
+  FONT.SIZE.HEADER <- 12
+}
+
+```
+
+# `r params$project`,`r params$location`. Site-Specific Probabilistic Seismic Hazard Assessment (PSHA)
+
+{{< include qmd/_introduction.qmd >}}
+
+{{< include qmd/_methodology.qmd >}}
+
+{{< include qmd/_results.qmd >}}
+
+{{< include qmd/_summary.qmd >}}
+
+{{< include qmd/_references.qmd >}}
+
+{{< include qmd/_appendices.qmd >}}
+

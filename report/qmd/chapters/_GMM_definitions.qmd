@@ -1,0 +1,12 @@
+
+Seismic ground motion is generally characterised by a scalar (spectral) measure of intensity $I=i^*$. The seismic intensity of site $i^*$ will generally depend on the distance from the site to the nearest point on fault $r^*$ and the magnitude $m^*$ of the seismic event, which is directly related to the size of the fault rupture area. For a given event of magnitude $m^*$ located at some distance $r^*$, the strong motion intensity $i^*=f(m^*,r^*,{\theta})$ can be estimated in terms of a probabilistic model expressed in terms of its conditional $\eta_{I|M,R}$ mean and an error term $\varepsilon$
+
+$$\eta_{I|M,R}=\phi_I(m^*,r^*,{\theta})+\varepsilon_I$$
+
+where $\phi(M=m^*,R=r^*,{\theta})$ is a regression model defined in terms of earthquake magnitudes $(m^*)$, source-to-site distances $(r^*)$ and geological/geotechnical site conditions $(\theta)$ and $\varepsilon_I$ is a random variable with mean $E[log (\varepsilon_I)]\approx 0$ and variance $var[\varepsilon_I]\approx(\sigma_{ln \ I})^2$.
+
+
+
+Intensity models are suites of model prediction equations (GMPE) that capture the random variability of the seismic motion. These prediction equations are statistical models calibrated with seismic records from around the world, obtained from seismic events of a given tectonic mechanism. The particular tectonic regime of the study region determines the selection of a suitable family of GMPEs that can capture the particular ground motion characteristics of the project site. Three predominant tectonic regimes can be identified: active shallow crustal, stable (continental) shallow crustal and subduction regimes. The Global Earthquake Model [@GEM] brought together ground-motion experts from various institutions around the world to develop recommendations on what GMPE should be used when conducting global seismic hazard assessments [@Stewart2013]. 
+
+

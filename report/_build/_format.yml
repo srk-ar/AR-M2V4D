@@ -3,11 +3,11 @@ format:
     output-file: index.html
     theme: spacelab 
     toc: true
-    toc-depth: 3
+    toc-depth: 4
     toc-location: left
     number-sections: false
     mainfont: Arial
-    fontsize: 14pt
+    fontsize: 12pt
     link-citations: true
     code-fold: true
     code-copy: true
