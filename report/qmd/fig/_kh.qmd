@@ -1,6 +1,6 @@
 
 
-::: {.panel-tabset  }
+::: {.panel-tabset  .content-hidden when-format=“docx”}
 
 #### mean
 

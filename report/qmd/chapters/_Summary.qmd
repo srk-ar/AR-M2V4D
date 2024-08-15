@@ -32,10 +32,6 @@ kmax_UE <- (KIT[ID==ID_TARGET & TR==TR_TARGET & Vs30 %in% Vs30_TARGET & p %in% p
 -  The MDE is expected to produce a horizontal peak ground acceleration (PGA) ranging between `r min(PGA)` $cm/s^2$  and `r max(PGA)` $cm/s^2$ for 50% and 95% confidence levels, respectively. Spectral ordinates (design spectra) obtained for the maximum design earthquake under different site conditions are shown in @sec-DE_results. 
 
 
--   Fundamental periods has been obtained for upstream embankments and downsetream embankments of the TSF (@sec-TS_results).  For the upstream embankments the fundamental periods are ranging between `r min(Ts_UE)` and `r max(Ts_UE)` sec. For the downstream embankments, the fundamental period are ranging between `r min(Ts_DE)` and `r max(Ts_DE)` sec.
-
-
--   Seismic coefficients have been defined for the maximum design earthquake (@sec-KIT_results), assuming a Newmark-based model. For the upstream embankments, the seismic coefficient ranges between `r min(kmax_UE)` $cm/s^2$ (`r min(kh_UE)` % PGA) and `r max(kmax_UE)` $cm/s^2$ (`r max(kh_UE)` % PGA). For the downsetream embankment, the seismic coefficient ranges between `r min(kmax_DE)` $cm/s^2$ (`r min(kh_DE)` % PGA) and `r max(kmax_DE)` $cm/s^2$ (`r max(kh_DE)` % PGA). Seismic coefficients for all embankments were calibrated to a single perfomance level corresponding to residual deformations below `r max(100*XDa)`% of the slope height.
 
 
 Alejandro Verri Kozlowski, PEng\

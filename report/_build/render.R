@@ -15,13 +15,10 @@ quarto_filename <- "_quarto.yml"
 source("_build/preRender.R")
 .encode(language ="EN")
 .decode(language="EN")
-.buildYAML(language="EN",output_format=c("docx","html"),output_dir=publishFolder)
+.buildYAML(language="EN",output_format=c("html"),output_dir=publishFolder)
 
-OUTPUT_FORMAT <- "docx"
-quarto::quarto_render(input = "index.qmd",output_format = OUTPUT_FORMAT)
-
-OUTPUT_FORMAT <- "html"
-quarto::quarto_render(input = "index.qmd",output_format = OUTPUT_FORMAT)
+# quarto::quarto_render(input = "index.qmd",output_format = "docx")
+quarto::quarto_render(input = "index.qmd",output_format = "html")
 
 # OUTPUT_FORMAT <- "els-pdf"
 # OUTPUT_FORMAT <- "revealjs"

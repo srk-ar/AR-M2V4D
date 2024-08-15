@@ -1,13 +1,11 @@
 
 
-:::  {.panel-tabset  }
+:::  {.panel-tabset .content-hidden when-format=“docx” }
 
 #### GISTM
 
-```{r include=TRUE}
-#| label: tbl-GISTM_appendix
-#| column: body-outset-right
-#| tbl-cap: "Annual Exceedance Probability (AEP) and Risk Categories according to the Global Industry Standard on Tailings Management (GISTM)"
+```{r include=knitr::is_html_output()}
+
 source("qmd/tbl/tbl_GISTM.R")
 TBL
 ```
@@ -16,10 +14,8 @@ TBL
 
 #### ANCOLD
 
-```{r include=TRUE}
-#| label: tbl-ANCOLD_appendix
-#| column: body-outset-right
-#| tbl-cap: "Annual Exceedance Probability (AEP) and Risk Categories according to the Australian National Committee on Large Dams (ANCOLD)"
+```{r include=knitr::is_html_output()}
+
 source("qmd/tbl/tbl_ANCOLD.R")
 TBL
 ```
@@ -27,10 +23,8 @@ TBL
 
 #### CDA
 
-```{r include=TRUE}
-#| label: tbl-CDA_appendix
-#| column: body-outset-right
-#| tbl-cap: "Annual Exceedance Probability (AEP) and Risk Categories according to Canadian Dam Association (CDA)"
+```{r include=knitr::is_html_output()}
+
 source("qmd/tbl/tbl_CDA.R")
 TBL
 ```

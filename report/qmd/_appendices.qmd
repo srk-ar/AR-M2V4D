@@ -1,14 +1,16 @@
 ## Appendices
 
 
-### Target AEP and Risk Categories
+<!-- ### Target AEP and Risk Categories -->
 
-{{< include qmd/tbl/_AEP.qmd >}}
+<!-- {{< include qmd/tbl/_AEP.qmd >}} -->
 
 
-### Site Classification according to ASCE/SEI 7-22 {#sec-ASCE722}
+### Site Classification
 
 {{< include qmd/chapters/_SiteClassification.qmd >}}
+
+#### ASCE/SEI 7-22 {#sec-ASCE722}
 
 {{< include qmd/chapters/_SiteClassification_ASCE722.qmd >}}
 
@@ -16,7 +18,7 @@
 source("qmd/tbl/tbl_ASCE722.R")
 TBL
 ```
-### Site Classification according to NRC 2020 {#sec-NRC2020}
+#### NRC 2020 {#sec-NRC2020}
 
 
 ```{r include=TRUE}
@@ -24,9 +26,9 @@ source("qmd/tbl/tbl_NBC2020.R")
 TBL
 ```
 
-<!-- ### Site Classification according to AS 1170.4 { #sec-SC_AS1170} -->
+#### AS 1170.4 { #sec-SC_AS1170}
 
-<!-- {{< include qmd/chapters/_SiteClassification_AS1170.qmd >}} -->
+{{< include qmd/chapters/_SiteClassification_AS1170.qmd >}}
 
 ### Shear stiffness parameters for gravels, sands and fines {#sec-ISHI}
 

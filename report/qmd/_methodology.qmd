@@ -38,7 +38,7 @@
 
 {{< include qmd/chapters/_Hazard_criteria.qmd >}}
 
-### Uniform Hazard Spectra (UHS) {#sec-UHSA}
+### Uniform Hazard Spectra (UHS) {#sec-UHS}
 
 {{< include qmd/chapters/_Hazard_UHS.qmd >}}
 
@@ -46,17 +46,19 @@
 
 {{< include qmd/chapters/_AmplificationFactor.qmd >}}
 
+> @sec-UHS_results and @sec-AEP_results presents the uniform hazard spectra and hazard curves assuming different service levels, geotechnical scenarios and confidence levels.
+
 ### Slope's fundamental periods {#sec-TS}
 
 {{< include qmd/chapters/_FundamentalPeriods.qmd >}}
 
-> @sec-TS_results presents the fundamental periods obtained for the upstream and downstream embankments assuming different geotechnical scenarios and confidence levels.
+> @sec-TS_results presents the fundamental periods for selected embankments assuming different geotechnical scenarios and confidence levels.
 
 ### Seismic (Pseudo-Static) Coefficients {#sec-KIT}
 
 {{< include qmd/chapters/_SeismicCoefficients.qmd >}}
 
-> @sec-KIT_results presents the seismic coefficients obtained for the upstream and downstream embankments assuming different geotechnical scenarios and confidence levels.
+> @sec-KIT_results presents the seismic coefficients for selected embankments assuming different geotechnical scenarios and confidence levels.
 
 <!-- ## Uncertainty analysis. -->
 

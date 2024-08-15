@@ -14,7 +14,6 @@ params:
   risk_rating: "Very High"
 # css: _build/styles.css
 bibliography: references.bib
-
 ---
 
 ```{r setup,include=FALSE}
@@ -37,7 +36,7 @@ if(!knitr::is_html_output()){
 
 ```
 
-# `r params$project`,`r params$location`. Site-Specific Probabilistic Seismic Hazard Assessment (PSHA)
+# `r params$project` - Site-Specific Probabilistic Seismic Hazard Assessment (PSHA)
 
 {{< include qmd/_introduction.qmd >}}
 
@@ -50,4 +49,5 @@ if(!knitr::is_html_output()){
 {{< include qmd/_references.qmd >}}
 
 {{< include qmd/_appendices.qmd >}}
+
 

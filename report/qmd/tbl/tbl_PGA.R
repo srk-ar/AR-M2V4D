@@ -1,7 +1,7 @@
 Caption <- CAP  |> sprintf(min(TR_TARGET),max(TR_TARGET),min(Vs30_TARGET),max(Vs30_TARGET),p_TARGET)
 # Caption <- ""
 
-UHS <- UHSTable[p == p_TARGET & Vs30 %in% Vs30_TARGET & Vref==760 & TR %in% TR_TARGET ]
+UHS <- UHSTable[p == p_TARGET & Vs30 %in% Vs30_TARGET & TR %in% TR_TARGET ]
 
 # DT <- gmdp::buildTable.Sa(UHS,Tno=0,po=p_TARGET,TRo = TR_TARGET,Vs30o = Vs30_TARGET,tagUnits = FALSE)
 DT <- UHS[Tn==0 & TR%in%TR_TARGET & Vs30%in%Vs30_TARGET,.(Tn,TR,p,PGA,Vs30,SID)]

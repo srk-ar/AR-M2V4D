@@ -1,4 +1,4 @@
-PGA_TARGET <- UHSTable[TR==TR_TARGET & Vref==760 & Vs30==Vs30_TARGET  & Tn==0]$PGA |> round(digits=3) |> unique()
+PGA_TARGET <- UHSTable[TR==TR_TARGET  & Vs30==Vs30_TARGET  & Tn==0]$PGA |> round(digits=3) |> unique()
 # Name <- KIT[ID==ID_TARGET]$Name |> unique()
 Caption <- CAP  |> sprintf(TR_TARGET,Vs30_TARGET,min(PGA_TARGET),max(PGA_TARGET),p_TARGET)
 
@@ -22,15 +22,3 @@ PLOT <- buildPlot(
   data=DATA,
   plot.subtitle = Caption)
 
-
-
-if(!knitr::is_html_output()){
-  FILE <- tempfile(tmpdir = imagesFolder,pattern="fig",fileext=".png")
-  XDELAY <- max(DELAY,round(nrow(DT)/1500*DELAY,digits = 2))
-  AUX <- tempfile(pattern="fig",fileext=".html")
-  htmlwidgets::saveWidget(widget = PLOT,background=params$background, file = AUX,selfcontained = TRUE)
-  webshot2::webshot(delay=XDELAY,url = AUX, file = FILE)
-  FIG <- knitr::include_graphics(path=FILE)
-} else {
-  FIG <- PLOT
-}

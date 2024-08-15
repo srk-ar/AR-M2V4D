@@ -6,23 +6,26 @@
 
 ```{r include=TRUE}
 TR_TARGET <- c(475,975,2475,5000,10000)
-Vs30_TARGET <- c(220,580,910,1500)
+Vs30_TARGET <- c(220,580,760,910,1500)
 CAP <- "Multi-Period Amplification Factors AF according to ASCE 7-22 for return periods ranging from %d to %d years. Amplification factores were obtained assuming local site conditions with Vs30 ranging from  %g to %g m/s. (p=%s)"
-
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/tbl/tbl_AF.R")
-  TBL
-}
-
 ```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/tbl/tbl_AF.R")
+TBL
+```
+
+
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/tbl/_AF.qmd >}}
 :::
 
-### Annual exceedance probability (AEP) {#sec-AEP}
+### Annual exceedance probability (AEP) {#sec-AEP_results}
 
 #### AEP for hard rocks ($v_S$=1500 m/s) 
 
@@ -31,16 +34,17 @@ if (!knitr::is_html_output()) {
 Vs30_TARGET <- 1500
 Tn_TARGET <- c(0,0.05,0.1,0.2,0.3,0.4,0.5,0.75,1.0,1.25,1.5,2.5)
 CAP <-   "Annual Exceedence Probabilities (AEP) in terms of spectral pseudo-accelerations  Sa(Tn) in [g] for structural periods Tn ranging between %g sec to %g sec. Spectral ordinates were obtained for site conditions with Vs30 = %d  m/s (p=%s)"
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_AEP.R")
-  FIG
-}
-
-
-
 ```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_AEP.R")
+.buildFigure(PLOT)
+```
+
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_AEP.qmd >}}
@@ -53,20 +57,48 @@ if (!knitr::is_html_output()) {
 Vs30_TARGET <- 910
 Tn_TARGET <- c(0,0.05,0.1,0.2,0.3,0.4,0.5,0.75,1.0,1.25,1.5,2.5)
 CAP <-   "Annual Exceedence Probabilities (AEP) in terms of spectral pseudo-accelerations  Sa(Tn) in [g] for structural periods Tn ranging between %g sec to %g sec. Spectral ordinates were obtained for site conditions with Vs30 = %d  m/s (p=%s)"
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_AEP.R")
-  FIG
-}
-
-
-
 ```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_AEP.R")
+.buildFigure(PLOT)
+```
+
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_AEP.qmd >}}
 :::
+
+
+
+#### AEP for medium rocks ($v_S$=760 m/s) 
+
+
+```{r include=TRUE}
+Vs30_TARGET <- 760
+Tn_TARGET <- c(0,0.05,0.1,0.2,0.3,0.4,0.5,0.75,1.0,1.25,1.5,2.5)
+CAP <-   "Annual Exceedence Probabilities (AEP) in terms of spectral pseudo-accelerations  Sa(Tn) in [g] for structural periods Tn ranging between %g sec to %g sec. Spectral ordinates were obtained for site conditions with Vs30 = %d  m/s (p=%s)"
+```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_AEP.R")
+.buildFigure(PLOT)
+```
+
+
+
+::: {.content-hidden when-format=“docx”}
+{{< include qmd/fig/_AEP.qmd >}}
+:::
+
+
 
 
 #### AEP for very dense soils ($v_S$=580 m/s) 
@@ -76,16 +108,17 @@ if (!knitr::is_html_output()) {
 Vs30_TARGET <- 580
 Tn_TARGET <- c(0,0.05,0.1,0.2,0.3,0.4,0.5,0.75,1.0,1.25,1.5,2.5)
 CAP <-   "Annual Exceedence Probabilities (AEP) in terms of spectral pseudo-accelerations  Sa(Tn) in [g] for structural periods Tn ranging between %g sec to %g sec. Spectral ordinates were obtained for site conditions with Vs30 = %d  m/s (p=%s)"
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_AEP.R")
-  FIG
-}
-
-
-
 ```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_AEP.R")
+.buildFigure(PLOT)
+```
+
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_AEP.qmd >}}
@@ -99,59 +132,88 @@ if (!knitr::is_html_output()) {
 Vs30_TARGET <- 220
 Tn_TARGET <- c(0,0.05,0.1,0.2,0.3,0.4,0.5,0.75,1.0,1.25,1.5,2.5)
 CAP <-   "Annual Exceedence Probabilities (AEP) in terms of spectral pseudo-accelerations  Sa(Tn) in [g] for structural periods Tn ranging between %g sec to %g sec. Spectral ordinates were obtained for site conditions with Vs30 = %d  m/s (p=%s)"
-
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_AEP.R")
-  FIG
-}
-
-
 ```
+
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_AEP.R")
+.buildFigure(PLOT)
+```
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_AEP.qmd >}}
 :::
 
-### Uniform hazard spectra (UHS) { #sec-UHS}
+### Uniform hazard spectra (UHS) { #sec-UHS_results}
 #### UHS for hard rocks ($v_S$=1500 m/s) 
 
 ```{r include=TRUE}
 Vs30_TARGET <- 1500
 TR_TARGET <- c(475,975,2475,5000,10000)
 CAP <-  "Uniform Hazard Spectra (UHS) with 5%% critical damping in terms of spectral pseudo-accelerations  Sa(Tn), representing return periods from %d to %d years. Spectral ordinates were obtained assuming site conditions with  Vs30 = %g  m/s (p=%s)"
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_UHS.R")
-  FIG
-}
-
 ```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_UHS.R")
+.buildFigure(PLOT)
+```
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_UHS.qmd >}}
 :::
 
-#### UHS for medium rocks ($v_S$=910 m/s) {
+#### UHS for medium rocks ($v_S$=910 m/s) 
 
 ```{r include=TRUE}
 Vs30_TARGET <- 910
 TR_TARGET <- c(475,975,2475,5000,10000)
 CAP <-  "Uniform Hazard Spectra (UHS) with 5%% critical damping in terms of spectral pseudo-accelerations  Sa(Tn), representing return periods from %d to %d years. Spectral ordinates were obtained assuming site conditions with  Vs30 = %g  m/s (p=%s)"
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_UHS.R")
-  FIG
-}
-
 ```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_UHS.R")
+.buildFigure(PLOT)
+```
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_UHS.qmd >}}
 :::
+
+
+#### UHS for medium rocks ($v_S$=760 m/s) 
+
+```{r include=TRUE}
+Vs30_TARGET <- 760
+TR_TARGET <- c(475,975,2475,5000,10000)
+CAP <-  "Uniform Hazard Spectra (UHS) with 5%% critical damping in terms of spectral pseudo-accelerations  Sa(Tn), representing return periods from %d to %d years. Spectral ordinates were obtained assuming site conditions with  Vs30 = %g  m/s (p=%s)"
+```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_UHS.R")
+.buildFigure(PLOT)
+```
+
+
+::: {.content-hidden when-format=“docx”}
+{{< include qmd/fig/_UHS.qmd >}}
+:::
+
+
 
 #### UHS for very dense soils ($v_S$=580 m/s)
 
@@ -159,14 +221,16 @@ if (!knitr::is_html_output()) {
 Vs30_TARGET <- 580
 TR_TARGET <- c(475,975,2475,5000,10000)
 CAP <-  "Uniform Hazard Spectra (UHS) with 5%% critical damping in terms of spectral pseudo-accelerations  Sa(Tn), representing return periods from %d to %d years. Spectral ordinates were obtained assuming site conditions with  Vs30 = %g  m/s (p=%s)"
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_UHS.R")
-  FIG
-}
-
 ```
+
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_UHS.R")
+.buildFigure(PLOT)
+```
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_UHS.qmd >}}
@@ -178,14 +242,15 @@ if (!knitr::is_html_output()) {
 Vs30_TARGET <- 220
 TR_TARGET <- c(475,975,2475,5000,10000)
 CAP <-  "Uniform Hazard Spectra (UHS) with 5%% critical damping in terms of spectral pseudo-accelerations  Sa(Tn), representing return periods from %d to %d years. Spectral ordinates were obtained assuming site conditions with  Vs30 = %g  m/s (p=%s)"
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_UHS.R")
-  FIG
-}
-
 ```
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_UHS.R")
+.buildFigure(PLOT)
+```
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_UHS.qmd >}}
@@ -197,18 +262,18 @@ if (!knitr::is_html_output()) {
 
 ```{r include=TRUE}
 TR_TARGET <- c(475,975,2475,5000,10000)
-Vs30_TARGET <- c(220,580,910,1500)
+Vs30_TARGET <- c(220,580,760,910,1500)
 CAP <- "Design Ground Motions in terms of peak ground accelerations PGA [g] for return periods ranging from %d to %d years. Spectral ordinates were obtained assuming site conditions with Vs30 ranging from  %g to %g m/s. (p=%s)"
-
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/tbl/tbl_PGA.R")
-  TBL
-}
-
-
 ```
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/tbl/tbl_PGA.R")
+TBL
+```
+
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/tbl/_PGA.qmd >}}
@@ -217,17 +282,18 @@ if (!knitr::is_html_output()) {
 #### Design Spectra {#sec-DE_results}
 
 ```{r include=TRUE}
-Vs30_TARGET <- c(220, 580,910,1500)
+Vs30_TARGET <- c(220, 580,760,910,1500)
 TR_TARGET <- 10000
 CAP <-  "Uniform Hazard Spectra (UHS) with 5%% critical damping representing the maximum design earthquake with 1/%d years AEP. Spectral ordinates were obtained assuming site conditions with Vs30 ranging from %g  to %g  m/s (p=%s)"
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_UHS_MDE.R")
-  FIG
-}
-
 ```
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_UHS_MDE.R")
+.buildFigure(PLOT)
+```
+
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_UHS_MDE.qmd >}}
@@ -242,15 +308,13 @@ if (!knitr::is_html_output()) {
 ```{r include=TRUE}
 TR_TARGET <- c(475,975,2475,5000,10000)
 CAP <- "Fundamental periods and shear modulus for slopes with material properties are expressed in terms of the Universal Soil Classification System (USCS) . Heights Hs in [m], crest width b in [m], Shear moduli Go in [MPa], Shear wave velocity at the base VSo in [m/s] and Fundamental Period Ts in [s] (p=%s)."
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/tbl/tbl_TS.R")
-  TBL
-}
-
 ```
 
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/tbl/tbl_TS.R")
+TBL
+```
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/tbl/_TS.qmd >}}
@@ -258,6 +322,7 @@ if (!knitr::is_html_output()) {
 
 
 ### Slope's seismic coefficients {#sec-KIT_results}
+
 ```{r}
 CAP <-  "Horizontal seismic (pseudo-static) coefficients expressed in [%% PGA] for the maximum design earthquake (MDE) with an AEP=1/%s. Values obtained for local site conditions with Vs30 = %s m/s  and peak ground accelerations (PGA) ranging between  %s and %s g. (p=%s)"
 
@@ -268,15 +333,13 @@ CAP <-  "Horizontal seismic (pseudo-static) coefficients expressed in [%% PGA] f
 ```{r include=TRUE}
 TR_TARGET <- 10000
 Vs30_TARGET <- 1500
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_kh.R")
-  FIG
-}
-
 ```
 
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_kh.R")
+.buildFigure(PLOT)
+```
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_kh.qmd >}}
@@ -286,33 +349,46 @@ if (!knitr::is_html_output()) {
 ```{r include=TRUE}
 TR_TARGET <- 10000
 Vs30_TARGET <- 910
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_kh.R")
-  FIG
-}
-
 ```
 
 
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_kh.R")
+.buildFigure(PLOT)
+```
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_kh.qmd >}}
 :::
+#### Medium rocks ($v_S$=760 m/s) 
+
+```{r include=TRUE}
+TR_TARGET <- 10000
+Vs30_TARGET <- 760
+```
+
+
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_kh.R")
+.buildFigure(PLOT)
+```
+::: {.content-hidden when-format=“docx”}
+{{< include qmd/fig/_kh.qmd >}}
+:::
+
 #### Very dense soils ($v_S$=580 m/s) 
 
 ```{r include=TRUE}
 TR_TARGET <- 10000
 Vs30_TARGET <- 580
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_kh.R")
-  FIG
-}
-
 ```
 
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_kh.R")
+.buildFigure(PLOT)
+```
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_kh.qmd >}}
@@ -322,15 +398,13 @@ if (!knitr::is_html_output()) {
 ```{r include=TRUE}
 TR_TARGET <- 10000
 Vs30_TARGET <- 220
-
-if (!knitr::is_html_output()) {
-  p_TARGET <- "mean"
-  source("qmd/fig/fig_kh.R")
-  FIG
-}
-
 ```
 
+```{r include=!knitr::is_html_output()}
+p_TARGET <- "mean"
+source("qmd/fig/fig_kh.R")
+.buildFigure(PLOT)
+```
 
 ::: {.content-hidden when-format=“docx”}
 {{< include qmd/fig/_kh.qmd >}}

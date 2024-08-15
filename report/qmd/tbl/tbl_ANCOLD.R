@@ -6,7 +6,7 @@ DT <- data.table(
   "Category"=Category,
   "OBE"=OBE,
   "MDE"=MDE)
-Caption <- "Annual Exceedance Probability (AEP) and Risk Category "
+Caption <- "Annual Exceedance Probability (AEP) and Risk Categories according to the Australian National Committee on Large Dams (ANCOLD)"
 
 
 TBL <- DT |> buildTable(library=LIB,font.size.body = FONT.SIZE.BODY,font.size.header = FONT.SIZE.HEADER, caption=Caption)

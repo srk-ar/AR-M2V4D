@@ -10,7 +10,7 @@ The site response spectra are obtained from the combination of the rock response
 
 $$S_a(T_n,\bar v_S) \approx F(T_n,\bar v_S) \ S_a(T_n,v_{ref})$${#eq-SAS}
 
-where $F(T_n,\bar v_S)$ is the multi-period site factor and $S_a(T_n,v_{ref})$ is the spectral ordinate for the structural period $T_n$ for $\bar v_S=\bar v_{ref}$. Following the same approach, Peak-ground velocities $pgv^{sc}$ Arias intensities $a_i^{sc}$ and other peak-based intensity measures expected on arbitrary site conditions can be obtained from @eq-PGVS and @eq-AIS [-@Verri2017],[-@Verri2023a], where $F_o(v_S)$ is the multi-period site factor (@eq-AF) defined for a target site in terms of $\bar v_S$, $pga^{o}$ is the peak-ground acceleration in rock, $\psi_1,\psi_2$ are model parameters.
+where $F(T_n,\bar v_S)$ is the multi-period site factor and $S_a(T_n,v_{ref})$ is the spectral ordinate for the structural period $T_n$ for $\bar v_S=\bar v_{ref}$. Following the same approach, Peak-ground velocities $pgv^{sc}$ Arias intensities $a_i^{sc}$ and other peak-based intensity measures expected on arbitrary site conditions can be obtained from @eq-PGVS and @eq-AIS [-@Verri2023a], where $F_o(v_S)$ is the multi-period site factor (@eq-AF) defined for a target site in terms of $\bar v_S$, $pga^{o}$ is the peak-ground acceleration in rock, $\psi_1,\psi_2$ are model parameters.
 
 $$pgv(v_S) \approx F_o(v_S) \ \phi_1 \ (pga^{o}/g)^{\phi_2} \  [m/s]$${#eq-PGVS}
 

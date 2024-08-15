@@ -6,23 +6,14 @@ if(REBUILD_UHS){
   AEPTable <- data.table()
   
   
-  Vs30_TARGET <- c(220,580,910,1500)
+  Vs30_TARGET <- c(220,580,760,910,1500)
   
   for(Vs in Vs30_TARGET){
     GMDP <- buildGMDP(vref=Vs,path=paste0("../oq/output/nrc/",Vs,"/"),IDo="nrc_v3.19.1")
     UHSTable <- rbind(UHSTable,GMDP$UHSTable)
     AEPTable <- rbind(AEPTable,GMDP$AEPTable)
   }
-  AUX <- sapply(c("A","B","BC", "C", "CD", "D", "DE", "E"), SIDtoVs30) |> unname()
   
-  Vs30_TARGET <- c(AUX,Vs30_TARGET) |> unique() |> sort()
-  GMDP <- buildGMDP(vref=760,vs30=Vs30_TARGET,path="../oq/output/nrc/760/",IDo="nrc_v3.19.1")
-  UHSTable <- rbind(UHSTable,GMDP$UHSTable)
-  AEPTable <- rbind(AEPTable,GMDP$AEPTable)
-  
-  GMDP <- buildGMDP(vref=3000,vs30=Vs30_TARGET,path="../oq/output/nrc/3000/",IDo="nrc_v3.19.1")
-  UHSTable <- rbind(UHSTable,GMDP$UHSTable)
-  AEPTable <- rbind(AEPTable,GMDP$AEPTable)
   saveRDS(UHSTable, "data/UHSTable.Rds")
   saveRDS(AEPTable, "data/AEPTable.Rds")
 } else {
@@ -96,12 +87,12 @@ if(REBUILD_TS){
 
 if(REBUILD_KIT){
   TR_TARGET <- c(475,975,2475,5000,10000)
-  Vs30_TARGET <- c(220,580,910,1500)
+  Vs30_TARGET <- c(220,580,760,910,1500)
   p_TARGET <- c(0.50,"mean",0.84,0.90,0.95)
   SHT <- readRDS("data/SHT.Rds")
   SHT <- SHT[level %in% p_TARGET,.(ID,Name,Hs=Hs,Tso=Ts,p=level)]
   
-  UHS <- UHSTable[SM=="gmdp" & Vs30 %in% Vs30_TARGET & Vref==760   & TR %in% TR_TARGET & p%in% p_TARGET]
+  UHS <- UHSTable[SM=="openquake" & Vs30 %in% Vs30_TARGET    & TR %in% TR_TARGET & p%in% p_TARGET]
   DnTable <-  UHS[,dsra::fitModel.Dn.TR(Sa=Sa,PGA=PGA,Tn=Tn,Mw = 7.3, xD = 1.3, kymin = 0.001, kymax = 0.55, n = 100), by = .(Tn, TR,Vs30, p)] |> unique()
   DnTRmodel <- DnTable[, .(Tn, TR, p, Ts, Vs30, a, b, e, PGA)] |> unique()
   KhTRmodel <- DnTRmodel[, fitModel.Kmax.TR( a=a,b=b,e=e,pga=PGA,Ts=Ts, n = 100), by = .(Tn, TR, p,Vs30)]
