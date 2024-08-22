@@ -14,12 +14,17 @@ if(REBUILD_UHS){
     AEPTable <- rbind(AEPTable,GMDP$AEPTable)
   }
   
+  
+  GMDP <- buildGMDP(vref=760,path=paste0("../oq/output/gem/760/"),IDo="gem_v3.19.1")
+  RMwTable <- GMDP$RMwTable
+  fwrite(RMwTable,"data/RMwTable.csv")
   saveRDS(UHSTable, "data/UHSTable.Rds")
   saveRDS(AEPTable, "data/AEPTable.Rds")
+  saveRDS(RMwTable, "data/RMwTable.Rds")
 } else {
   UHSTable <- readRDS("data/UHSTable.Rds")
   AEPTable <- readRDS("data/AEPTable.Rds")
-
+  RMwTable <- readRDS("data/RMwTable.Rds")
 }
 
 
