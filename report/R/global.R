@@ -23,3 +23,10 @@ THICK_LINE_SIZE <- 5
 GG_THEME <- ggplot2::theme_light()
 HC.THEME <- highcharter::hc_theme_hcrt()
 
+# Disaggregation
+PHI <- 20
+THETA <- 135
+BINS <- 25
+R_MAX <- 200
+M_MAX <- 7.5
+
