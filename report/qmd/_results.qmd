@@ -331,7 +331,7 @@ CAP <-  "Horizontal seismic (pseudo-static) coefficients expressed in [%% PGA] f
 #### Hard rocks ($v_S$=1500 m/s) 
 
 ```{r include=TRUE}
-TR_TARGET <- 10000
+TR_TARGET <- 2475
 Vs30_TARGET <- 1500
 ```
 
@@ -347,7 +347,7 @@ source("qmd/fig/fig_kh.R")
 #### Medium rocks ($v_S$=910 m/s) 
 
 ```{r include=TRUE}
-TR_TARGET <- 10000
+TR_TARGET <- 2475
 Vs30_TARGET <- 910
 ```
 
@@ -363,7 +363,7 @@ source("qmd/fig/fig_kh.R")
 #### Medium rocks ($v_S$=760 m/s) 
 
 ```{r include=TRUE}
-TR_TARGET <- 10000
+TR_TARGET <- 2475
 Vs30_TARGET <- 760
 ```
 
@@ -380,7 +380,7 @@ source("qmd/fig/fig_kh.R")
 #### Very dense soils ($v_S$=580 m/s) 
 
 ```{r include=TRUE}
-TR_TARGET <- 10000
+TR_TARGET <- 2475
 Vs30_TARGET <- 580
 ```
 
@@ -396,7 +396,7 @@ source("qmd/fig/fig_kh.R")
 #### Stiff Soils ($v_S$=220 m/s) 
 
 ```{r include=TRUE}
-TR_TARGET <- 10000
+TR_TARGET <- 2475
 Vs30_TARGET <- 220
 ```
 
