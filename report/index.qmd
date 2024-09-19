@@ -19,7 +19,7 @@ bibliography: references.bib
 ```{r setup,include=FALSE}
 source("R/setup.R")
 source("R/global.R")
-REBUILD_UHS <- TRUE
+REBUILD_UHS <- FALSE
 REBUILD_TS <- FALSE
 REBUILD_KIT <- FALSE
 source("R/dataset.R")

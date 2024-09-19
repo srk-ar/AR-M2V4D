@@ -36,10 +36,10 @@ if(REBUILD_TS){
   SHT <- data.table()
   MAT <- data.table(
     ID=c("RI","SPW","SPE","RB","SSI","CI","TMF"),
-    Name=c("Rock impoundment","Stock Pile (West)","Stock Pile (East)","Rock Berm","Sand & Silt impoundment","Clay impoudment","Tailings Management Facility"),
-    b=c(2840,940,314,20,470,1000,15),
-    s=c(6,6,6,2,3.5,2,12),
-    Hs=c(115,100,100,50,50,34,35)
+    Name=c("Rock impoundment","Rock Berm","Sand & Silt impoundment","Clay impoudment","Tailings Management Facility"),
+    b=c(2480,20,470,20,15),
+    s=c(7,2,8,10,12),
+    Hs=c(135,50,32,27,35)
   )
   # MAT[,lo:=(b/(2*Hs*s+b)) |> round(digits=3)]
   MAT <- MAT[,.(ID,Name,b,s,lo=(b/(2*Hs*s+b)) |> round(digits=3)),by=.(ID,Name,b,s,Hs)]
@@ -48,14 +48,6 @@ if(REBUILD_TS){
   AUX <- MAT[ID=="RI",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("GW","GM","ML"),NR=NR_TARGET,levels=LEVELS))]
   SHT <- rbind(SHT,AUX)
   
-  # 
-  AUX <- MAT[ID=="SPW",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("GP","GM","ML","SM"),NR=NR_TARGET,levels=LEVELS))]
-  SHT <- rbind(SHT,AUX)
-  
-  # 
-  AUX <- MAT[ID=="SPE",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("GW","GP","GM","SP"),NR=NR_TARGET,levels=LEVELS))]
-  SHT <- rbind(SHT,AUX)
-
   # 
   AUX <- MAT[ID=="RB",.(ID,Name,b,s,lo,getSiteProperties(Hs=Hs,USCS=c("GW","GP","GM"),NR=NR_TARGET,levels=LEVELS))]
   SHT <- rbind(SHT,AUX)
@@ -115,26 +107,8 @@ if(REBUILD_KIT){
   AUX <- DATA[Vs30%in%Vs30_TARGET,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Tso)]
   KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
   
-  ID_TARGET <- "SPW"
-  # Vs30_TARGET <- 360
-  # sprintf("Building Seismic coefficients for %s for Vs30=%d m/s\n", ID_TARGET,Vs30_TARGET) |> cat()
-  Hs <- SHT[ID==ID_TARGET]$Hs |> unique() 
-  Da_TARGET <- Hs*100*XDa
-  DATA <- KhTRmodel[SHT[ID==ID_TARGET], on=c("p")] 
-  AUX <- DATA[Vs30%in%Vs30_TARGET,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Tso)]
-  KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
-  
-  ID_TARGET <- "SPE"
-  # Vs30_TARGET <- 360
-  # sprintf("Building Seismic coefficients for %s for Vs30=%d m/s\n", ID_TARGET,Vs30_TARGET) |> cat()
-  Hs <- SHT[ID==ID_TARGET]$Hs |> unique() 
-  Da_TARGET <- Hs*100*XDa
-  DATA <- KhTRmodel[SHT[ID==ID_TARGET], on=c("p")] 
-  AUX <- DATA[Vs30%in%Vs30_TARGET,fitModel.Kmax.Ts(.SD,Tso=Tso,Dao=Da_TARGET,model="rf"),by=.(ID,Name,TR,p,Vs30,Tso)]
-  KIT <- rbindlist(list(KIT,AUX),use.names = TRUE)
-  
+
   ID_TARGET <- "RB"
-  
   Hs <- SHT[ID==ID_TARGET]$Hs |> unique() 
   Da_TARGET <- Hs*100*XDa
   DATA <- KhTRmodel[SHT[ID==ID_TARGET], on=c("p")] 

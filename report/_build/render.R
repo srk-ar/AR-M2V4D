@@ -18,6 +18,7 @@ source("_build/preRender.R")
 .buildYAML(language="EN",output_format=c("html"),output_dir=publishFolder)
 
 # quarto::quarto_render(input = "index.qmd",output_format = "docx")
+
 quarto::quarto_render(input = "index.qmd",output_format = "html")
 
 # OUTPUT_FORMAT <- "els-pdf"
