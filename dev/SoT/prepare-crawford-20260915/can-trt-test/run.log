@@ -1,0 +1,58 @@
+[INFO] Activating OpenQuake virtualenv at /Users/averrik/opt/openquake/oq-3.26.2/.venv
+
+Configuration:
+  Run directory: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run
+  Mode: classical
+  Model filter: M2V4D
+  Site filter:  CFD
+  VS30 filter:  760
+
+Scanning for model zips in /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run...
+==========================================
+Running: mode=classical model=M2V4D site=CFD vs=760
+Source:  /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run/classical/M2V4D/M2V4D.CFD.760.zip
+==========================================
+Extracting model...
+Running OpenQuake calculation...
+This may take several hours...
+Traceback (most recent call last):
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/server/db/upgrade_manager.py", line 243, in get_db_versions
+    curs.execute(query)
+sqlite3.OperationalError: no such table: revision_info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/bin/oq", line 8, in <module>
+    sys.exit(oq())
+             ^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commands/__main__.py", line 46, in oq
+    sap.run(commands, prog='oq')
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/baselib/sap.py", line 233, in run
+    return _run(parser(obj, **parserkw), argv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/baselib/sap.py", line 218, in _run
+    return func(**dic)
+           ^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commands/engine.py", line 155, in main
+    outdated = logs.dbcmd('check_outdated')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commonlib/logs.py", line 75, in dbcmd
+    return func(dbapi.db, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/server/db/actions.py", line 48, in check_outdated
+    return upgrader.check_versions(db.conn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/server/db/upgrade_manager.py", line 227, in check_versions
+    scripts = self.read_scripts(skip_versions=self.get_db_versions(conn))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/server/db/upgrade_manager.py", line 246, in get_db_versions
+    raise VersioningNotInstalled('Run oq engine --upgrade-db')
+openquake.server.db.upgrade_manager.VersioningNotInstalled: Run oq engine --upgrade-db
+ERROR: OQ calculation failed for /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run/classical/M2V4D/M2V4D.CFD.760.zip
+FAILED: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run/classical/M2V4D/M2V4D.CFD.760.zip
+==========================================
+WARNING: Some calculations failed (see FAILED lines above).
+Re-run 'oqt --run' to retry failed zips (completed ones will be skipped).
+Use 'oqt --extract' to export OpenQuake outputs
+==========================================

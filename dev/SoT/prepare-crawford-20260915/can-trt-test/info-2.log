@@ -1,0 +1,24 @@
+[INFO] Activating OpenQuake virtualenv at /Users/averrik/opt/openquake/oq-3.26.2/.venv
+[HEADER]
+calc_id:    2
+status:     failed
+date:       2026-09-15 14:47:09.950490+00:00
+desc:       Crawford (AR-M2V4D), CAN with general TRT GMMs VS30s=760 OQT_MODE=CLASSICAL OQT_SIG=d7ed2282fbee7f31.
+
+[SITE_PARAMS]
+reference_vs30_type: inferred
+reference_vs30_value: 760.0
+reference_depth_to_1pt0km_per_sec: 41.307
+reference_depth_to_2pt5km_per_sec: 0.142
+
+[OQPARAM]
+calculation_mode: classical
+investigation_time: 50.0
+truncation_level: 3.0
+maximum_distance: {'default': [[4.5, 1000.0], [10.2, 1000.0]]}
+imts: PGA, SA(0.05), SA(0.075), SA(0.1), SA(0.12), SA(0.15), SA(0.18), SA(0.2), SA(0.22), SA(0.25), SA(0.28), SA(0.3), SA(0.35), SA(0.4), SA(0.45), SA(0.5), SA(0.6), SA(0.7), SA(0.75), SA(0.85), SA(0.9), SA(1.0), SA(1.25), SA(1.5), SA(1.75), SA(2.0), SA(2.5), SA(3.0), SA(3.5), SA(4.0), SA(4.5), SA(5.0)
+
+[INPUT_FILES]
+job_ini: job.ini
+source_model_logic_tree: ssmLT_CAN.xml
+gsim_logic_tree: gmmLT_GMM.xml

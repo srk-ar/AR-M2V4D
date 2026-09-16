@@ -1,0 +1,26 @@
+{
+  "producer": {
+    "server": "http://127.0.0.1:8800",
+    "key": "scenario/S1/CFD/1500",
+    "sha256": "9b2e4b5ee61cf1aecb4843762c02a80058f742db6e1ff79a4d1782fa312eb6b1",
+    "identity": {
+      "calc_id": 17,
+      "start_time": "2026-09-16T19:00:24.589105+00:00",
+      "description": "Provisional S1 for Crawford: SCC Mw 6.5, epicentre at CFD, hypocentral depth 10 km, vertical strike-slip rupture. Synthetic scenario authorized for preparation; not calibrated to disaggregation VS30s=1500 OQT_MODE=SCENARIO OQT_SIG=493b8b28adef8686.",
+      "user_name": "averrik",
+      "calculation_mode": "scenario"
+    }
+  },
+  "files": {
+    "events_17.csv": "4979b43d08589684dbb434eaa0e40353f40edf4ed2580838f537a564b364cedd",
+    "sitemesh_17.csv": "e46101cfc936f18b8643e3fadc00dfc388a1b1ed2648b6ef350ea7ede090246b",
+    "avg_gmf_17.csv": "858defecdf8b603bd5d3a739943f6b19d3dc53bfef1d71f348032e7f6d440574",
+    "rupture_variants.csv": "ed5af8b50e27c643868b7439942d7696876fd8754e2ebe0b73f1724b77b77a54",
+    "sigma_epsilon_17.csv": "eceed5d2d94b409fdc14df9f675fa774c90e5afa4dc024f78e269ea30a959e37",
+    "realizations_17.csv": "a569de5c30e728cab041ea959d87066e0d7726890b459931b946caba7c3f2e64",
+    "gmf-data_17.csv": "88feca95b038b2b3cb0e318e123a959369d4b80c769a24840c655c3efb846f6b",
+    "rupture_distances.csv": "5cd07f177f925a4b2ea4c00610d7d3aa3bfb70c58baaa865f133866bcf447801",
+    "gmm_stats.csv": "a0cba23f54fac17cc2319436331720e201ddbb6d38e4b0ceea5fe2f6cc8b5b20",
+    "site_model_17.csv": "d1a31ad8616c642934c8915f644ffc5103341e81e1d6a127d4bc74e569a5ac33"
+  }
+}

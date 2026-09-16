@@ -36,6 +36,10 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
+# Python bytecode caches produced by local mapper checks
+__pycache__/
+*.py[cod]
+
 # R Environment Variables
 .Renviron
 
@@ -52,8 +56,14 @@ rsconnect/
 .quarto/
 
 
-# Ignore data folder at the root and in subdirectories
-data/
+# Ignore only the project-root data folder. OQT result tables under oq/data
+# are versioned inputs to the report, as in the other active projects.
+/data/
+
+# OpenQuake execution scratch and packed runs are reproducible runtime state.
+/oq/.tmp*/
+/oq/run/
+/oq/logs/
 
 oq/!archive/
 

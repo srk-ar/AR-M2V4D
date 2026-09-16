@@ -1,0 +1,88 @@
+[INFO] Activating OpenQuake virtualenv at /Users/averrik/opt/openquake/oq-3.26.2/.venv
+
+Configuration:
+  Run directory: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run
+  Mode: classical
+  Model filter: M2V4D
+  Site filter:  CFD
+  VS30 filter:  760
+
+Scanning for model zips in /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run...
+==========================================
+Running: mode=classical model=M2V4D site=CFD vs=760
+Source:  /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run/classical/M2V4D/M2V4D.CFD.760.zip
+==========================================
+Extracting model...
+/Users/averrik/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/matplotlib-wt71jdy0 because there was an issue with the default path (/Users/averrik/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/averrik/.cache/fontconfig
+	/Users/averrik/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+/Users/averrik/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/matplotlib-bsc6rld3 because there was an issue with the default path (/Users/averrik/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/averrik/.cache/fontconfig
+	/Users/averrik/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+Running OpenQuake calculation...
+This may take several hours...
+/Users/averrik/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/matplotlib-42py74ml because there was an issue with the default path (/Users/averrik/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/averrik/.cache/fontconfig
+	/Users/averrik/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+Traceback (most recent call last):
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commonlib/dbapi.py", line 345, in __call__
+    cursor.execute(templ, args)
+sqlite3.OperationalError: attempt to write a readonly database
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/bin/oq", line 8, in <module>
+    sys.exit(oq())
+             ^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commands/__main__.py", line 46, in oq
+    sap.run(commands, prog='oq')
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/baselib/sap.py", line 233, in run
+    return _run(parser(obj, **parserkw), argv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/baselib/sap.py", line 218, in _run
+    return func(**dic)
+           ^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commands/engine.py", line 169, in main
+    jobs = create_jobs(job_inis, log_level, log_file, user_name,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/engine/engine.py", line 260, in create_jobs
+    job = logs.init(dic, None, log_level, log_file, user_name, hc_id,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commonlib/logs.py", line 337, in init
+    return LogContext(job_ini, log_level, log_file, user_name, hc_id,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commonlib/logs.py", line 236, in __init__
+    self.calc_id = dbcmd(
+                   ^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commonlib/logs.py", line 75, in dbcmd
+    return func(dbapi.db, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/server/db/actions.py", line 132, in create_job
+    job_id = db('INSERT INTO job (?S) VALUES (?X)', job.keys(), job.values()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/opt/openquake/oq-3.26.2/.venv/lib/python3.12/site-packages/openquake/commonlib/dbapi.py", line 349, in __call__
+    raise exc.__class__('%s: %s %s' % (exc, templ, args))
+sqlite3.OperationalError: attempt to write a readonly database: INSERT INTO job (is_running, description, user_name, calculation_mode, ds_calc_dir, hazard_calculation_id, host, relevant) VALUES (?, ?, ?, ?, ?, ?, ?, ?) (1, 'Crawford (AR-M2V4D), CAN with general TRT GMMs VS30s=760 OQT_MODE=CLASSICAL OQT_SIG=d7ed2282fbee7f31.', 'averrik', 'classical', '/Users/averrik/oqdata', None, 'Alejandros-MacBook-Pro.local', True)
+ERROR: OQ calculation failed for /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run/classical/M2V4D/M2V4D.CFD.760.zip
+FAILED: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/prepare-crawford-20260915/can-trt-test/run/classical/M2V4D/M2V4D.CFD.760.zip
+==========================================
+WARNING: Some calculations failed (see FAILED lines above).
+Re-run 'oqt --run' to retry failed zips (completed ones will be skipped).
+Use 'oqt --extract' to export OpenQuake outputs
+==========================================

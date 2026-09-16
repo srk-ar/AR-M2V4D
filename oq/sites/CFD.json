@@ -1,0 +1,10 @@
+{
+  "siteID": "CFD",
+  "lon": -81.340633,
+  "lat": 48.794912,
+  "vs30": [180, 270, 360, 560, 760, 800, 1250, 1500],
+  "siteParamsModel": "hybrid",
+  "siteParams": {
+    "reference_vs30_type": "inferred"
+  }
+}

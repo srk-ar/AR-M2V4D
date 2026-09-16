@@ -1,0 +1,83 @@
+oqt --doctor: environment and OpenQuake diagnostics
+===================================================
+
+[SECTION] Environment
+----------------------
+Shell: /bin/zsh
+Interpreter: /usr/local/bin/bash 5.3.0(1)-release
+bash in PATH: /usr/local/bin/bash
+bash --version: GNU bash, version 5.3.0(1)-release (aarch64-apple-darwin25.2.0)
+python3: Python 3.12.11
+
+[SECTION] oqt binary
+---------------------
+oqt in PATH: /usr/local/bin/oqt
+ipt in PATH: (not found; OK)
+iqt in PATH: (not found; OK)
+Script directory: /usr/local/bin
+Helpers dir: /usr/local/libexec/oqt
+Build info: /usr/local/libexec/oqt/BUILD_INFO
+OQT_VERSION: 4a8330c
+Build: 4a8330c-dirty (built 2026-09-14T21:53:49Z)
+
+[SECTION] Helper scripts
+------------------------
+Source: /usr/local/libexec/oqt/install.manifest.json
+
+Python helpers:
+[OK]  info.py -> /usr/local/libexec/oqt/info.py
+[OK]  scenario_inputs.py -> /usr/local/libexec/oqt/scenario_inputs.py
+[OK]  gmpe_grid.py -> /usr/local/libexec/oqt/gmpe_grid.py
+[OK]  ssm_index.py -> /usr/local/libexec/oqt/ssm_index.py
+
+R helpers:
+[OK]  tableIO.R -> /usr/local/libexec/oqt/tableIO.R
+[OK]  dnModels.R -> /usr/local/libexec/oqt/dnModels.R
+[OK]  dnRunner.R -> /usr/local/libexec/oqt/dnRunner.R
+[OK]  pythonIO.R -> /usr/local/libexec/oqt/pythonIO.R
+[OK]  uhsDistribution.R -> /usr/local/libexec/oqt/uhsDistribution.R
+[OK]  mceDistribution.R -> /usr/local/libexec/oqt/mceDistribution.R
+[OK]  runPack.R -> /usr/local/libexec/oqt/runPack.R
+[OK]  runAEP.R -> /usr/local/libexec/oqt/runAEP.R
+[OK]  runUHS.R -> /usr/local/libexec/oqt/runUHS.R
+[OK]  runTs.R -> /usr/local/libexec/oqt/runTs.R
+[OK]  runDn.R -> /usr/local/libexec/oqt/runDn.R
+[OK]  runKmax.R -> /usr/local/libexec/oqt/runKmax.R
+[OK]  runDEQ.R -> /usr/local/libexec/oqt/runDEQ.R
+[OK]  runMCER.R -> /usr/local/libexec/oqt/runMCER.R
+[OK]  runMCE.R -> /usr/local/libexec/oqt/runMCE.R
+[OK]  runDisagg.R -> /usr/local/libexec/oqt/runDisagg.R
+[OK]  runAEPS.R -> /usr/local/libexec/oqt/runAEPS.R
+[OK]  runSRMw.R -> /usr/local/libexec/oqt/runSRMw.R
+[OK]  aggregateUHS.R -> /usr/local/libexec/oqt/aggregateUHS.R
+[OK]  aggregateAEP.R -> /usr/local/libexec/oqt/aggregateAEP.R
+[OK]  aggregateMCE.R -> /usr/local/libexec/oqt/aggregateMCE.R
+[OK]  aggregateAEPS.R -> /usr/local/libexec/oqt/aggregateAEPS.R
+[OK]  aggregateSRMw.R -> /usr/local/libexec/oqt/aggregateSRMw.R
+[OK]  aggregateRMw.R -> /usr/local/libexec/oqt/aggregateRMw.R
+[OK]  aggregateDn.R -> /usr/local/libexec/oqt/aggregateDn.R
+[OK]  aggregateKmax.R -> /usr/local/libexec/oqt/aggregateKmax.R
+[OK]  runGMPE.R -> /usr/local/libexec/oqt/runGMPE.R
+[OK]  runSSM.R -> /usr/local/libexec/oqt/runSSM.R
+[OK]  aggregateSSM.R -> /usr/local/libexec/oqt/aggregateSSM.R
+
+[SECTION] OpenQuake (oq)
+------------------------
+OQ_VENV: /Users/averrik/opt/openquake/oq-3.26.2/.venv
+[INFO] Activating OpenQuake virtualenv at /Users/averrik/opt/openquake/oq-3.26.2/.venv
+oq command: /Users/averrik/opt/openquake/oq-3.26.2/.venv/bin/oq
+/Users/averrik/.matplotlib is not a writable directory
+oq candidates (which -a oq):
+  /Users/averrik/opt/openquake/oq-3.26.2/.venv/bin/oq
+  /usr/local/bin/oq
+
+[SECTION] R / post-processing
+-----------------------------
+Rscript: Rscript (R) version 4.6.1 (2026-06-24)
+R packages for post-processing: OK (newmark, data.table)
+newmark version: 1.6.0 
+newmark path: /Library/Frameworks/R.framework/Versions/4.6/Resources/library/newmark 
+
+[SECTION] Summary
+------------------
+Environment check: OK

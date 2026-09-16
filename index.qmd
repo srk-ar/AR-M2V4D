@@ -1,0 +1,19 @@
+---
+title: "TOC"
+format:
+  html:
+    body-classes: cover-page
+bibliography:
+  - bib/references.bib
+  - _local/bib/references.bib
+csl: bib/apa.csl
+---
+
+```{r}
+#| include: true
+#| results: asis
+root <- normalizePath(here::here())
+source(file.path(root, "scripts", "setup", "setup.R"))
+source(file.path(root, "scripts", "setup", "cover.R"))
+knitCoverPage(root, params)
+```

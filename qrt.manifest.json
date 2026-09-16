@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "artifacts": [
+    {
+      "alias": "toc",
+      "kind": "quarto",
+      "path": "html/toc",
+      "required": true,
+      "renderSource": "_master/toc.en.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-toc",
+      "domain": "arm2v4d-toc.srk.ar"
+    },
+    {
+      "alias": "report",
+      "kind": "quarto",
+      "path": "html/book",
+      "required": false,
+      "renderSource": "_master/book.en.qmd",
+      "profile": "book",
+      "siteSlug": "arm2v4d-report",
+      "domain": "arm2v4d-report.srk.ar"
+    },
+    {
+      "alias": "gmdp",
+      "kind": "quarto",
+      "path": "html/gmdp",
+      "required": false,
+      "renderSource": "_master/gmdp.en.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-gmdp",
+      "domain": "arm2v4d-gmdp.srk.ar"
+    },
+    {
+      "alias": "ts",
+      "kind": "quarto",
+      "path": "html/gmdp.ts",
+      "required": true,
+      "renderSource": "_master/gmdp.ts.en.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-ts",
+      "domain": "arm2v4d-ts.srk.ar"
+    },
+    {
+      "alias": "dn",
+      "kind": "quarto",
+      "path": "html/gmdp.dn",
+      "required": true,
+      "renderSource": "_master/gmdp.dn.en.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-dn",
+      "domain": "arm2v4d-dn.srk.ar"
+    },
+    {
+      "alias": "kmax",
+      "kind": "quarto",
+      "path": "html/gmdp.kmax",
+      "required": true,
+      "renderSource": "_master/gmdp.kmax.en.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-kmax",
+      "domain": "arm2v4d-kmax.srk.ar"
+    },
+    {
+      "alias": "kh",
+      "kind": "quarto",
+      "path": "html/gmdp.kh",
+      "required": true,
+      "renderSource": "_master/gmdp.kh.en.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-kh",
+      "domain": "arm2v4d-kh.srk.ar"
+    },
+    {
+      "alias": "sdc",
+      "kind": "quarto",
+      "path": "html/sdc",
+      "required": false,
+      "renderSource": "_master/sdc.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-sdc",
+      "domain": "arm2v4d-sdc.srk.ar"
+    },
+    {
+      "alias": "sha",
+      "kind": "quarto",
+      "path": "html/sha",
+      "required": false,
+      "renderSource": "_master/sha.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-sha",
+      "domain": "arm2v4d-sha.srk.ar"
+    }
+  ]
+}

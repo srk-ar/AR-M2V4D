@@ -1,0 +1,21 @@
+params:
+  ext: png
+  title: "Seismic Hazard Assessment"
+  site: "Crawford"
+  project_id: "AR-M2V4D"
+  ssm: "CAN"
+  report:
+    sites:
+      - siteID: "CFD"
+        label: "Crawford"
+  latitude: 48.794912
+  longitude: -81.340633
+
+  # Cliente y localidad pendientes de definición del propietario.
+  location: null
+  client:
+    name: null
+  mapper:
+    radius_km: 500
+    mw_min: 3.5
+    mw_max: 7.5
