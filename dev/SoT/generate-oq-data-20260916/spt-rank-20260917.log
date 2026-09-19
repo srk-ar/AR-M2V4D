@@ -1,0 +1,14 @@
+stage0 pool: 10412 -> 1818 candidates (gmsp/selection/pool/selection.csv)
+stage0 batch 1/10: 200 records in 58.0 s
+stage0 batch 2/10: 200 records in 55.6 s
+stage0 batch 3/10: 200 records in 55.0 s
+stage0 batch 4/10: 200 records in 51.0 s
+stage0 batch 5/10: 200 records in 51.2 s
+stage0 batch 6/10: 200 records in 54.7 s
+stage0 batch 7/10: 200 records in 54.6 s
+stage0 batch 8/10: 200 records in 52.2 s
+stage0 batch 9/10: 200 records in 64.8 s
+stage0 batch 10/10: 18 records in 6.4 s
+stage0 oneRecordPerEvent: 1818 -> 358 candidates
+stage0 wrote 30 records to /Users/averrik/Cloud/github/projects/AR-M2V4D/gmsp/selection/CFD/selection.csv
+__SPT_RANK_EXIT_0__

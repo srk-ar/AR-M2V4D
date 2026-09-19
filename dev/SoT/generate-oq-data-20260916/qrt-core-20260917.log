@@ -1,0 +1,319 @@
+[render manifest] quarto sdc <- _master/sdc.qmd profile=revealjs path=html/sdc
+Render timestamp: 2026-09-17 10:55:03 -03
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+[render] revealjs → html/sdc/
+
+
+processing file: sdc.qmd
+1/9                  
+2/9 [setup]          
+3/9                  
+4/9 [unnamed-chunk-1]
+5/9                  
+6/9 [unnamed-chunk-2]
+7/9                  
+8/9 [unnamed-chunk-3]
+9/9                  
+output file: sdc.knit.md
+
+pandoc 
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/qrt-render.r1hUY9/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+metadata
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  author:
+    - name: Alejandro Verri Kozlowski, PEng
+      position: Corporate Consultant (Geotechnical Earthquake Engineering)
+      affiliation: SRK Consulting
+      email: averri@srk.com.ar
+  bibliography:
+    - bib/references.bib
+    - _local/bib/references.bib
+  csl: bib/apa.csl
+  
+Output created: _qrt-output/index.html
+
+[render manifest] quarto sha <- _master/sha.qmd profile=revealjs path=html/sha
+Render timestamp: 2026-09-17 10:55:33 -03
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+[render] revealjs → html/sha/
+
+
+processing file: sha.qmd
+1/9                  
+2/9 [setup]          
+3/9                  
+4/9 [unnamed-chunk-1]
+5/9                  
+6/9 [unnamed-chunk-2]
+7/9                  
+8/9 [unnamed-chunk-3]
+9/9                  
+output file: sha.knit.md
+
+pandoc 
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/qrt-render.pv8i0b/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+metadata
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  author:
+    - name: Alejandro Verri Kozlowski, PEng
+      position: Corporate Consultant (Geotechnical Earthquake Engineering)
+      affiliation: SRK Consulting
+      email: averri@srk.com.ar
+  bibliography:
+    - bib/references.bib
+    - _local/bib/references.bib
+  csl: bib/apa.csl
+  
+Output created: _qrt-output/index.html
+
+[render manifest] quarto srs <- _master/srs.qmd profile=revealjs path=html/srs
+Render timestamp: 2026-09-17 10:56:43 -03
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+[render] revealjs → html/srs/
+
+
+processing file: srs.qmd
+1/11                  
+2/11 [setup]          
+3/11                  
+4/11 [unnamed-chunk-1]
+5/11                  
+6/11 [unnamed-chunk-2]
+7/11                  
+8/11 [toc-decks]      
+9/11                  
+10/11 [unnamed-chunk-3]
+11/11                  
+output file: srs.knit.md
+
+pandoc 
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/qrt-render.kURCsR/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+metadata
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  
+Output created: _qrt-output/index.html
+
+[render manifest] outputs ok: 3 found, 0 optional missing
+[render manifest] complete: 3 render job(s)

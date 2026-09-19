@@ -1,7 +1,7 @@
 {
   "modelID": "S1",
   "mode": "scenario",
-  "description": "Provisional S1 for Crawford: SCC Mw 6.5, epicentre at CFD, hypocentral depth 10 km, vertical strike-slip rupture. Synthetic scenario authorized for preparation; not calibrated to disaggregation.",
+  "description": "Definitive S1 for Crawford, confirmed by the project owner on 2026-09-17: SCC Mw 6.5, epicentre at CFD, hypocentral depth 10 km, vertical strike-slip rupture. Synthetic scenario; not calibrated to disaggregation.",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "TRT": {
     "SCC": "SCC"

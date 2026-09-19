@@ -14,28 +14,10 @@
   x
 }
 
-.coverPublicationStamp <- function() {
-  Stamp <- format(Sys.time(), "%d/%m/%Y %H:%M %Z")
-  Commit <- tryCatch(
-    system2("git", c("rev-parse", "--short", "HEAD"),
-      stdout = TRUE, stderr = FALSE
-    )[1L],
-    error = function(e) "",
-    warning = function(w) ""
-  )
-  if (is.na(Commit) || !nzchar(Commit)) {
-    Commit <- Sys.getenv("QRT_SOURCE_COMMIT")
-    if (!nzchar(Commit)) return(Stamp)
-    return(paste0(Stamp, " · ", Commit))
-  }
-  Dirty <- tryCatch(
-    length(system2("git", c("status", "--porcelain"),
-      stdout = TRUE, stderr = FALSE
-    )) > 0L,
-    error = function(e) FALSE,
-    warning = function(w) FALSE
-  )
-  paste0(Stamp, " · ", Commit, if (Dirty) "+" else "")
+readRenderStamp <- function() {
+  Stamp <- Sys.getenv("NGR_RENDER_STAMP")
+  if (nzchar(Stamp)) return(Stamp)
+  paste0("Pub: ", format(Sys.time(), "%d/%m/%Y"), " Rev.— · DRAFT")
 }
 
 .spanishMonthYear <- function(time) {
@@ -60,7 +42,7 @@
 # -- Report cover ------------------------------------------------------
 buildCoverReport <- function(
     params, language = "en", output = c("html", "docx"),
-    stamp = .coverPublicationStamp()) {
+    stamp = readRenderStamp()) {
   h <- .escapeHtml
   output <- match.arg(output)
   Spanish <- grepl("^es", language)
@@ -69,14 +51,14 @@ buildCoverReport <- function(
       client = "Preparado para", consultant = "Preparado por",
       authors = "Autores", reviewed = "Revisado por",
       project = "Proyecto", year = "Año",
-      publication = "Publicación", citation = "Cómo citar"
+      revision = "Pub", citation = "Cómo citar"
     )
   } else {
     list(
       client = "Prepared for", consultant = "Prepared by",
       authors = "Authors", reviewed = "Reviewed by",
       project = "Project", year = "Year",
-      publication = "Publication", citation = "How to cite"
+      revision = "Pub", citation = "How to cite"
     )
   }
 
@@ -228,7 +210,7 @@ buildCoverReport <- function(
       Lines, "",
       paste0("**", Labels$project, ":** ", Text(params$project_id), "  "),
       paste0("**", Labels$year, ":** ", Text(params$year), "  "),
-      paste0("**", Labels$publication, ":** ", Text(stamp)),
+      paste0("**", Labels$revision, ":** ", Text(sub("^Pub: ", "", stamp))),
       "",
       paste0("**", Labels$citation, ":** ", CitationText),
       ""
@@ -246,8 +228,8 @@ buildCoverReport <- function(
     '          <div class="srk-cover__meta-value">', h(params$year), '</div>\n',
     '        </div>\n',
     '        <div class="srk-cover__meta-item">\n',
-    '          <div class="srk-cover__meta-label">', Labels$publication, ':</div>\n',
-    '          <div class="srk-cover__meta-value">', h(stamp), '</div>\n',
+    '          <div class="srk-cover__meta-label">', Labels$revision, ':</div>\n',
+    '          <div class="srk-cover__meta-value">', h(sub("^Pub: ", "", stamp)), '</div>\n',
     '        </div>'
   )
 
@@ -282,20 +264,18 @@ buildCoverReport <- function(
 
 buildCoverSignatureReport <- function(
     params, language = "en", output = c("html", "docx"),
-    stamp = .coverPublicationStamp()) {
+    stamp = readRenderStamp()) {
   output <- match.arg(output)
   Spanish <- grepl("^es", language)
   Labels <- if (Spanish) {
     list(
       title = "Firmas", prepared = "Preparado por",
-      reviewed = "Revisado por", signatory = "Firma",
-      publication = "Publicación"
+      reviewed = "Revisado por", signatory = "Firma"
     )
   } else {
     list(
       title = "Signatures", prepared = "Prepared by",
-      reviewed = "Reviewed by", signatory = "Signature",
-      publication = "Publication"
+      reviewed = "Reviewed by", signatory = "Signature"
     )
   }
   Text <- function(x) {
@@ -365,7 +345,7 @@ buildCoverSignatureReport <- function(
     Consultant <- Text(params$consultant$name)
     if (nzchar(Consultant)) Lines <- c(Lines, paste0("**", Consultant, "**"), "")
     Lines <- c(
-      Lines, paste0(Labels$publication, ": ", Text(stamp)), "", PageBreak, ""
+      Lines, Text(stamp), "", PageBreak, ""
     )
     return(paste(Lines, collapse = "\n"))
   }
@@ -401,7 +381,7 @@ buildCoverSignatureReport <- function(
     '<div style="font-weight: 600; margin-top: 1.2em;">',
     h(Text(params$consultant$name)), "</div>",
     '<div style="font-size: 12px; color: #888; margin-top: 0.6em;">',
-    Labels$publication, ": ", h(stamp), "</div>",
+    h(stamp), "</div>",
     "</section>"
   )
 }
@@ -426,7 +406,7 @@ knitCoverPage <- function(
   }
   ParamsCover <- params
   ParamsCover$title <- Title
-  Stamp <- .coverPublicationStamp()
+  Stamp <- readRenderStamp()
   Cover <- buildCoverReport(ParamsCover, Language, output, Stamp)
   Signatures <- buildCoverSignatureReport(ParamsCover, Language, output, Stamp)
   if (output == "html") {
@@ -442,19 +422,19 @@ knitCoverPage <- function(
 # when the project declares no params.signature, the slide is omitted rather
 # than publishing an empty or invented signature. A deck without signatures
 # is a valid draft.
-knitSignaturePpt <- function(params, language = "en") {
+knitSignaturePpt <- function(params, language = "en", stamp = readRenderStamp()) {
   SIGN <- params$signature
   if (!is.list(SIGN) || !length(SIGN)) return(invisible(NULL))
   Spanish <- grepl("^es", language)
   Labels <- if (Spanish) {
     list(
       prepared = "Informe preparado por %s.", reviewed = "Informe revisado por %s.",
-      and = "y", project = "Proyecto %s", printed = "Impreso: "
+      and = "y", project = "Proyecto %s"
     )
   } else {
     list(
       prepared = "Report prepared by %s.", reviewed = "Report reviewed by %s.",
-      and = "and", project = "Project %s", printed = "Printed: "
+      and = "and", project = "Project %s"
     )
   }
   textOf <- function(x) {
@@ -507,8 +487,8 @@ knitSignaturePpt <- function(params, language = "en") {
   if (length(OUT)) cat(paste(OUT, collapse = "<br>"), "<br>\n", sep = "")
   cat(sprintf("<b>%s</b><br>\n", textOf(params$consultant$name)))
   cat('<span style="font-size: 12px; font-family: Arial, sans-serif; ',
-      'color: var(--medium-grey);">', Labels$printed,
-      format(Sys.time(), "%d/%m/%Y %H:%M"), "</span><br></div>\n\n", sep = "")
+      'color: var(--medium-grey);">',
+      .escapeHtml(stamp), "</span><br></div>\n\n", sep = "")
   invisible(NULL)
 }
 

@@ -4,17 +4,54 @@ params:
   site: "Crawford"
   project_id: "AR-M2V4D"
   ssm: "CAN"
+  year: 2026
   report:
     sites:
       - siteID: "CFD"
         label: "Crawford"
+        SRS: "CFD"
+    selections:
+      - SRS: "CFD"
   latitude: 48.794912
   longitude: -81.340633
 
-  # Cliente y localidad pendientes de definición del propietario.
-  location: null
+  location: "Timmins, Ontario, Canada"
   client:
-    name: null
+    name: "Canada Nickel Co."
+    short: "CN"
+    city: "Timmins, Ontario"
+    address:
+      - ""
+      - ""
+      - ""
+    web: ""
+  consultant:
+    name: "SRK Consulting (Canada), Inc. and Paterson & Cooke"
+    short: "SRK-PC"
+    address:
+      - ""
+      - ""
+      - ""
+      - ""
+    web: "https://www.srk.com/"
+
+  roles:
+    - label: "Lead Author"
+      name: "Alejandro Verri Kozlowski"
+      title: "Principal Consultant, Practice Leader"
+      initials: "AVK"
+      email: "averri@srk.com.ar"
+    - label: "Lead Author"
+      name: "Diana K. Reyes"
+      title: "Principal Consultant"
+      initials: "DKR"
+      email: "dreyes@srk.com"
+
+  footer:
+    title: "Seismic Hazard Assessment"
+
+  URL: "https://arm2v4d-toc.srk.ar/"
+
   mapper:
     radius_km: 500
     mw_min: 3.5

@@ -50,5 +50,3 @@ for (i in seq_len(nrow(SiteTable))) {
 }
 rm(i, SiteTable)
 ```
-
-{{< include /_revealjs/signature.qmd >}}

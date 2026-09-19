@@ -31,5 +31,3 @@ cat(buildCoverPpt(params, title = "Períodos fundamentales", language = "es"))
 ```
 
 {{< include /_revealjs/periods.ES.qmd >}}
-
-{{< include /_revealjs/signature.ES.qmd >}}

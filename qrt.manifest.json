@@ -90,6 +90,126 @@
       "profile": "revealjs",
       "siteSlug": "arm2v4d-sha",
       "domain": "arm2v4d-sha.srk.ar"
+    },
+    {
+      "alias": "srs",
+      "kind": "quarto",
+      "path": "html/srs",
+      "required": true,
+      "renderSource": "_master/srs.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-srs",
+      "domain": "arm2v4d-srs.srk.ar"
+    },
+    {
+      "alias": "at",
+      "kind": "quarto",
+      "path": "html/srs.at",
+      "required": false,
+      "renderSource": "_master/srs.at.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-at",
+      "domain": "arm2v4d-at.srk.ar"
+    },
+    {
+      "alias": "vt",
+      "kind": "quarto",
+      "path": "html/srs.vt",
+      "required": false,
+      "renderSource": "_master/srs.vt.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-vt",
+      "domain": "arm2v4d-vt.srk.ar"
+    },
+    {
+      "alias": "dt",
+      "kind": "quarto",
+      "path": "html/srs.dt",
+      "required": false,
+      "renderSource": "_master/srs.dt.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-dt",
+      "domain": "arm2v4d-dt.srk.ar"
+    },
+    {
+      "alias": "ai",
+      "kind": "quarto",
+      "path": "html/srs.ai",
+      "required": false,
+      "renderSource": "_master/srs.ai.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-ai",
+      "domain": "arm2v4d-ai.srk.ar"
+    },
+    {
+      "alias": "cav",
+      "kind": "quarto",
+      "path": "html/srs.cav",
+      "required": false,
+      "renderSource": "_master/srs.cav.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-cav",
+      "domain": "arm2v4d-cav.srk.ar"
+    },
+    {
+      "alias": "cav5",
+      "kind": "quarto",
+      "path": "html/srs.cav5",
+      "required": false,
+      "renderSource": "_master/srs.cav5.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-cav5",
+      "domain": "arm2v4d-cav5.srk.ar"
+    },
+    {
+      "alias": "psa",
+      "kind": "quarto",
+      "path": "html/srs.psa",
+      "required": false,
+      "renderSource": "_master/srs.psa.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-psa",
+      "domain": "arm2v4d-psa.srk.ar"
+    },
+    {
+      "alias": "psv",
+      "kind": "quarto",
+      "path": "html/srs.psv",
+      "required": false,
+      "renderSource": "_master/srs.psv.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-psv",
+      "domain": "arm2v4d-psv.srk.ar"
+    },
+    {
+      "alias": "sd",
+      "kind": "quarto",
+      "path": "html/srs.sd",
+      "required": false,
+      "renderSource": "_master/srs.sd.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-sd",
+      "domain": "arm2v4d-sd.srk.ar"
+    },
+    {
+      "alias": "its",
+      "kind": "quarto",
+      "path": "html/srs.its",
+      "required": false,
+      "renderSource": "_master/srs.its.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-its",
+      "domain": "arm2v4d-its.srk.ar"
+    },
+    {
+      "alias": "ipsa",
+      "kind": "quarto",
+      "path": "html/srs.ipsa",
+      "required": false,
+      "renderSource": "_master/srs.ipsa.qmd",
+      "profile": "revealjs",
+      "siteSlug": "arm2v4d-ipsa",
+      "domain": "arm2v4d-ipsa.srk.ar"
     }
   ]
 }

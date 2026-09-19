@@ -22,7 +22,7 @@ readCaption <- function(caption) {
 # when the manifest, the alias, or its domain is absent, so every surface
 # renders without the sentence.
 .deckNote <- function(alias, name, text) {
-  FILE <- file.path(root, "qrt.manifest.json")
+  FILE <- file.path(root, "manifest.json")
   if (!file.exists(FILE) || !requireNamespace("jsonlite", quietly = TRUE)) {
     return("")
   }

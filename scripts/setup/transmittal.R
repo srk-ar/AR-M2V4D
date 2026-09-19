@@ -1,15 +1,15 @@
 # nolint start
 # Transmittal letter: deliverable table and letter body per language.
 
-# La tabla de entregables se deriva de qrt.manifest.json: ahí está lo que el
+# La tabla de entregables se deriva de manifest.json: ahí está lo que el
 # propietario decidió publicar, con el dominio de cada artefacto ya declarado
 # (mismo criterio que toc.R). La lista propia con URLs adivinadas
 # https://<base>-<sufijo>.srk.ar dejaba enlaces muertos en los proyectos que
 # publican un subconjunto.
 .transmittalDeliverables <- function(root, language) {
-  FILE <- file.path(root, "qrt.manifest.json")
+  FILE <- file.path(root, "manifest.json")
   if (!file.exists(FILE)) {
-    stop("qrt.manifest.json not found at the project root; the deliverable table is built from it.", call. = FALSE)
+    stop("manifest.json not found at the project root; the deliverable table is built from it.", call. = FALSE)
   }
   LIST <- jsonlite::fromJSON(FILE, simplifyVector = FALSE)$artifacts
   LIST <- Filter(function(a) !is.null(a$domain) && nzchar(a$domain), LIST)
@@ -176,6 +176,8 @@ knitTransmittalLetter <- function(language = "en") {
   cat(Lead$name, "  \n", sep = "")
   cat(Lead$title, "\n")
   }
+  Stamp <- Sys.getenv("NGR_RENDER_STAMP")
+  if (nzchar(Stamp) && !knitr::is_html_output()) cat("\n", Stamp, "\n", sep = "")
   invisible(NULL)
 }
 # nolint end

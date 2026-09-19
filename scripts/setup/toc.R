@@ -1,13 +1,13 @@
 # nolint start
-# Master index of published products, derived from qrt.manifest.json.
+# Master index of published products, derived from manifest.json.
 knitTocContents <- function(root, scope = "main", language = "en") {
-  # El índice se deriva de qrt.manifest.json: ahí está lo que el propietario
+  # El índice se deriva de manifest.json: ahí está lo que el propietario
   # decidió publicar, con el dominio de cada artefacto ya declarado. Mantener una
   # lista propia duplicaba esa verdad y dejaba enlaces muertos en los proyectos
   # que publican un subconjunto (AR-SAC00 no publica selección de sismos).
-  FILE <- file.path(root, "qrt.manifest.json")
+  FILE <- file.path(root, "manifest.json")
   if (!file.exists(FILE)) {
-    stop("qrt.manifest.json not found at the project root; the index is built from it.", call. = FALSE)
+    stop("manifest.json not found at the project root; the index is built from it.", call. = FALSE)
   }
   TOC <- jsonlite::fromJSON(FILE, simplifyVector = FALSE)$artifacts
 

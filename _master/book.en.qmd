@@ -12,6 +12,7 @@ chapters:
       - _book/psha.qmd
       - _book/gmm.qmd
       - _book/dsha.qmd
+      - _book/srs.qmd
   - part: "Design Ground Motions"
     chapters:
       - _book/site.qmd
