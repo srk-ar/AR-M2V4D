@@ -77,3 +77,11 @@ report/data/
 
 # Local Netlify folder
 .netlify
+
+# --- garage policy: build/cache (start) ---
+.DS_Store
+.Rproj.user/
+.quarto/
+_site/
+.Rhistory
+# --- garage policy: build/cache (end) ---
