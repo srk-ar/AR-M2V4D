@@ -2,7 +2,7 @@
 #| include: false
 root <- normalizePath(here::here())
 SSM_MODEL <- "SAM"
-SSM_FILE <- file.path(root, "oq", "data", "SSMTable.Rds")
+SSM_FILE <- file.path(DataRoot$hazard, "SSMTable.Rds")
 if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.SSM.SAM")
 ```
 

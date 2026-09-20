@@ -4,7 +4,7 @@
 # Responsibilities:
 #   1) packages / libraries
 #   2) helpers (utils.R)
-#   3) optional project user values (oq/data/data.R)
+#   3) project contracts (hazard.json, newmark.json)
 #   4) params.yml
 #   5) plotting / formatting defaults
 #   6) OQ table loading (global.R)
@@ -41,9 +41,16 @@ source(file.path(root, "scripts", "setup", "utils.R"))
 .installSiteChunkLabelHook()
 ID_max <- "max"
 
-# ── 3) Optional project user values ────────────────────────────────────
-FILE <- file.path(root, "oq", "data", "data.R")
-if (file.exists(FILE)) source(FILE)
+# ── 3) Project contracts (hazard.json, newmark.json) ───────────────────
+source(file.path(root, "scripts", "setup", "contracts.R"))
+ID.gmdp    <- .contractValue(Contracts$newmark, "ID.gmdp")
+IDm        <- .contractValue(Contracts$newmark, "IDm")
+TR.gmdp    <- .contractValue(Contracts$newmark, "TR.gmdp")
+Vref.gmdp  <- .contractValue(Contracts$newmark, "Vref.gmdp")
+Hs         <- .contractValue(Contracts$newmark, "Hs")
+DaH.gmdp   <- .contractValue(Contracts$newmark, "DaH.gmdp")
+uscs       <- .contractValue(Contracts$newmark, "uscs", required = FALSE)
+subduction <- .contractValue(Contracts$newmark, "subduction", required = FALSE)
 
 # ── 4) params.yml ──────────────────────────────────────────────────────
 FILE <- file.path(root, "params.yml")

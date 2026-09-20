@@ -3,7 +3,7 @@ if (!exists("SSM_MODEL", inherits = FALSE) || !identical(SSM_MODEL, "SAM")) {
   stop("SSM.SAM.R: SSM_MODEL must be 'SAM'.", call. = FALSE)
 }
 if (!exists("SSM_FILE", inherits = FALSE) || length(SSM_FILE) != 1L) {
-  stop("SSM.SAM.R: set SSM_FILE to oq/data/SSMTable.Rds.", call. = FALSE)
+  stop("SSM.SAM.R: set SSM_FILE to SSMTable.Rds under the hazard contract path.data.", call. = FALSE)
 }
 if (!file.exists(SSM_FILE)) {
   stop(sprintf("SSM.SAM.R: required inventory not found: %s.", SSM_FILE), call. = FALSE)

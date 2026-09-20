@@ -3,7 +3,7 @@ if (!exists("SSM_MODEL", inherits = FALSE) || !identical(SSM_MODEL, "AUS")) {
   stop("SSM.AUS.R: SSM_MODEL must be 'AUS'.", call. = FALSE)
 }
 if (!exists("SSM_FILE", inherits = FALSE) || length(SSM_FILE) != 1L) {
-  stop("SSM.AUS.R: set SSM_FILE to oq/data/SSMTable.Rds.", call. = FALSE)
+  stop("SSM.AUS.R: set SSM_FILE to SSMTable.Rds under the hazard contract path.data.", call. = FALSE)
 }
 if (!file.exists(SSM_FILE)) {
   stop(sprintf("SSM.AUS.R: required inventory not found: %s.", SSM_FILE), call. = FALSE)

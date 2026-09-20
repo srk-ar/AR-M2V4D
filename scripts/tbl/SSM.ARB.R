@@ -3,7 +3,7 @@ if (!exists("SSM_MODEL", inherits = FALSE) || !identical(SSM_MODEL, "ARB")) {
   stop("SSM.ARB.R: SSM_MODEL must be 'ARB'.", call. = FALSE)
 }
 if (!exists("SSM_FILE", inherits = FALSE) || length(SSM_FILE) != 1L) {
-  stop("SSM.ARB.R: set SSM_FILE to oq/data/SSMTable.Rds.", call. = FALSE)
+  stop("SSM.ARB.R: set SSM_FILE to SSMTable.Rds under the hazard contract path.data.", call. = FALSE)
 }
 if (!file.exists(SSM_FILE)) {
   stop("SSM.ARB.R: required inventory not found: ", SSM_FILE, ".", call. = FALSE)

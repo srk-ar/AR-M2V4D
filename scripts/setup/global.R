@@ -1,26 +1,17 @@
 # nolint start
-.loadOQ <- function(name) {
-  FILE <- file.path(root, "oq", "data", paste0(name, ".Rds"))
-  if (!file.exists(FILE)) return(NULL)
-  DT <- readRDS(FILE)
-  if ("p" %in% names(DT)) DT[p == "0.1", p := "0.10"]
-  DT
-}
-
-if (!exists("UHSTable"))   UHSTable   <- .loadOQ("UHSTable")
-if (!exists("GMPETable"))  GMPETable  <- .loadOQ("GMPETable")
-if (!exists("ScenarioGMPETable")) ScenarioGMPETable <- .loadOQ("ScenarioGMPETable")
-if (!exists("ScenarioTable")) ScenarioTable <- .loadOQ("ScenarioTable")
-if (!exists("MCETable"))   MCETable   <- .loadOQ("MCETable")
-if (!exists("AEPTable"))   AEPTable   <- .loadOQ("AEPTable")
-if (!exists("AEPSTable"))  AEPSTable  <- .loadOQ("AEPSTable")
-if (!exists("DnTable"))    DnTable    <- .loadOQ("DnTable")
-if (!exists("kmaxTable"))  kmaxTable  <- .loadOQ("kmaxTable")
-if (!exists("ShearTable")) ShearTable <- .loadOQ("ShearTable")
-if (!exists("RMwTable"))   RMwTable   <- .loadOQ("RMwTable")
-if (!exists("DEQTable"))   DEQTable   <- .loadOQ("DEQTable")
-if (!exists("ASCETable"))  ASCETable  <- .loadOQ("ASCETable")
-rm(.loadOQ)
+if (!exists("UHSTable"))   UHSTable   <- .loadTable("UHSTable", "hazard")
+if (!exists("GMPETable"))  GMPETable  <- .loadTable("GMPETable", "hazard")
+if (!exists("ScenarioGMPETable")) ScenarioGMPETable <- .loadTable("ScenarioGMPETable", "hazard")
+if (!exists("ScenarioTable")) ScenarioTable <- .loadTable("ScenarioTable", "hazard")
+if (!exists("MCETable"))   MCETable   <- .loadTable("MCETable", "hazard")
+if (!exists("AEPTable"))   AEPTable   <- .loadTable("AEPTable", "hazard")
+if (!exists("AEPSTable"))  AEPSTable  <- .loadTable("AEPSTable", "hazard")
+if (!exists("DnTable"))    DnTable    <- .loadTable("DnTable", "newmark")
+if (!exists("kmaxTable"))  kmaxTable  <- .loadTable("kmaxTable", "newmark")
+if (!exists("ShearTable")) ShearTable <- .loadTable("ShearTable", "newmark")
+if (!exists("RMwTable"))   RMwTable   <- .loadTable("RMwTable", "hazard")
+if (!exists("DEQTable"))   DEQTable   <- .loadTable("DEQTable", "hazard")
+if (!exists("ASCETable"))  ASCETable  <- .loadTable("ASCETable", "hazard")
 
 # ── UHSTable ──────────────────────────────────────────────────────────────────
 if (!is.null(UHSTable) && !exists("Tn.PGA")) {
@@ -95,7 +86,7 @@ if (!is.null(kmaxTable) && !exists("Da.data")) {
     Da.gmdp <- sort(unique(as.numeric(Da.gmdp)))
     OK <- sapply(Da.gmdp, function(v) any(abs(Da.data - v) < 1e-10))
     if (any(!OK)) stop(sprintf(
-      "Da.gmdp not in kmaxTable$Da: %s. Update oq/data/data.R",
+      "Da.gmdp not in kmaxTable$Da: %s. Update DaH.gmdp in newmark.json",
       paste(Da.gmdp[!OK], collapse = ", ")
     ))
     rm(OK)
