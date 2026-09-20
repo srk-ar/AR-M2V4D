@@ -1,0 +1,49 @@
+# Text normalisation
+* text=auto eol=lf
+*.qmd text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Data and model artifacts
+data/** filter=lfs diff=lfs merge=lfs -text
+gmsp/** filter=lfs diff=lfs merge=lfs -text
+models/** filter=lfs diff=lfs merge=lfs -text
+
+# OpenQuake
+oq/data/** filter=lfs diff=lfs merge=lfs -text
+oq/**/*.Rds filter=lfs diff=lfs merge=lfs -text
+oq/**/*.csv filter=lfs diff=lfs merge=lfs -text
+oq/**/*.nrml filter=lfs diff=lfs merge=lfs -text
+oq/**/*.xml filter=lfs diff=lfs merge=lfs -text
+oq/**/*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Mapper inputs and generated maps
+mapper/data/** filter=lfs diff=lfs merge=lfs -text
+mapper/maps/** filter=lfs diff=lfs merge=lfs -text
+mapper/byEvent/** filter=lfs diff=lfs merge=lfs -text
+mapper/byCluster/** filter=lfs diff=lfs merge=lfs -text
+
+# Documents and reference stores
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.PDF filter=lfs diff=lfs merge=lfs -text
+ref/** filter=lfs diff=lfs merge=lfs -text
+_ref/** filter=lfs diff=lfs merge=lfs -text
+
+# Client deliveries (dated zips; deliv is never gitignored)
+deliv/** filter=lfs diff=lfs merge=lfs -text
+
+# Rendered site outputs (ignored at tip; LFS safety net if ever force-added)
+html/** filter=lfs diff=lfs merge=lfs -text
+
+# The producer contracts and the project parameters are source, not products,
+# and they sit outside every payload path above.
+
+# Source that must stay out of LFS despite living under an LFS path.
+# Keep last: later rules win in .gitattributes.
+oq/data/data.R text eol=lf -filter -diff -merge
