@@ -1,3 +1,3 @@
-#,,,,,,,,,"generated_by='OpenQuake engine 3.26.2', start_date='2026-09-16T19:00:36', checksum=4140251790"
-sids,lon,lat,depth,vs30,vs30measured,custom_site_id,z1pt0,backarc,z2pt5
-0,-81.34060,48.79490,0.00000,3.60000E+02,0,CFD,4.02466E+02,0,3.23800E-01
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d6d34a8a8e871ae05b1b47026366f6a6c5c9db20be336dcbda3967ff812dd50
+size 254

@@ -1,8 +1,3 @@
-#,,"generated_by='OpenQuake engine 3.26.2', start_date='2026-09-16T19:00:29', checksum=276707868"
-rlz_id,branch_path,weight
-0,[Atkinson2008prime],1.6666999e-01
-1,[AtkinsonBoore2006Modified2011],1.6666999e-01
-2,[PezeshkEtAl2011],1.6666999e-01
-3,[ESHM20Craton],1.6666999e-01
-4,[SomervilleEtAl2009YilgarnCraton_SS14],1.6666999e-01
-5,[CollapsedNGAEastUSGS],1.6665000e-01
+version https://git-lfs.github.com/spec/v1
+oid sha256:09fbc87e2c3f95183811242f8fa627905c283cef8efc209a0abc3bfc6c531f63
+size 375

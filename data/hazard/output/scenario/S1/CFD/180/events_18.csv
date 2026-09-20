@@ -1,8 +1,3 @@
-#,,,,"generated_by='OpenQuake engine 3.26.2', start_date='2026-09-16T19:00:29', checksum=276707868"
-event_id,rup_id,rlz_id,year,ses_id
-0,0,0,0,1
-1,0,1,0,1
-2,0,5,0,1
-3,0,3,0,1
-4,0,2,0,1
-5,0,4,0,1
+version https://git-lfs.github.com/spec/v1
+oid sha256:084d9248b473c1114c840308654b7d551ec8b718e28da73b9927088ed80724a0
+size 203
