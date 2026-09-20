@@ -1,0 +1,30 @@
+{
+  "modelID": "GMPEASC",
+  "mode": "gmpe",
+  "description": "ASC attenuation grid: per-GMPE behavior vs ensemble",
+  "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
+  "TRT": {
+    "ASC": "ASC"
+  },
+  "grid": {
+    "Mw": {
+      "min": 4.5,
+      "max": 9.0,
+      "step": 0.1
+    },
+    "Repi": {
+      "min": 5,
+      "max": 1000,
+      "n": 42
+    }
+  },
+  "dep": 15,
+  "vs30": 760,
+  "rupture": {
+    "rake": 0,
+    "strike": 0,
+    "dip": 90,
+    "msr": "WC1994",
+    "aspectRatio": 8
+  }
+}

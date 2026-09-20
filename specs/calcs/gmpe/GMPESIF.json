@@ -1,0 +1,30 @@
+{
+  "modelID": "GMPESIF",
+  "mode": "gmpe",
+  "description": "SIF attenuation grid: per-GMPE behavior vs ensemble",
+  "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
+  "TRT": {
+    "SIF": "SIF"
+  },
+  "grid": {
+    "Mw": {
+      "min": 4.5,
+      "max": 9.0,
+      "step": 0.1
+    },
+    "Repi": {
+      "min": 5,
+      "max": 1000,
+      "n": 42
+    }
+  },
+  "dep": 40,
+  "vs30": 760,
+  "rupture": {
+    "rake": 90,
+    "strike": 0,
+    "dip": 20,
+    "msr": "StrasserInterface",
+    "aspectRatio": 5
+  }
+}
