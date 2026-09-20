@@ -1,6 +1,7 @@
 # nolint start
 # Deterministic scenarios: the declared rupture parameters of each scenario
-# specification, read from oq/calcs/scenario/<siteID>/*.json. Each variant
+# specification, read from scenario/<siteID>/*.json under the directory the
+# hazard contract declares in path.calcs. Each variant
 # inherits the ruptureBase fields it does not override; multi-branch values
 # are listed. A field no specification declares yields no column, so the
 # table publishes only what the project actually declares.
@@ -8,7 +9,7 @@
 SITE_ID <- if (exists("siteID.target", inherits = FALSE)) siteID.target else NULL
 if (length(SITE_ID) != 1L) stop("Scenarios.R: set siteID.target to one siteID.", call. = FALSE)
 
-FILES <- sort(Sys.glob(file.path(root, "oq", "calcs", "scenario", SITE_ID, "*.json")))
+FILES <- sort(Sys.glob(file.path(CalcRoot, "scenario", SITE_ID, "*.json")))
 if (!length(FILES)) {
   stop("Scenarios.R: no scenario specifications for the selected site.", call. = FALSE)
 }

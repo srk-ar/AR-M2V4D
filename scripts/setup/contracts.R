@@ -62,8 +62,16 @@
 
 Contracts <- list(hazard = .readContract(root, "hazard"),
                   newmark = .readContract(root, "newmark"))
-DataRoot <- list(hazard = .contractRoot(Contracts$hazard, "data", root),
-                 newmark = .contractRoot(Contracts$newmark, "data", root))
+# Each producer declares the directory it writes under its own key: hazard
+# names the directory of its tables, newmark the directory it owns. Reading
+# newmark from path.data would resolve to the hazard tables it only reads.
+DataKey <- list(hazard = "data", newmark = "products")
+DataRoot <- list(hazard = .contractRoot(Contracts$hazard, DataKey$hazard, root),
+                 newmark = .contractRoot(Contracts$newmark, DataKey$newmark, root))
+
+# The calculation specifications the report describes. The hazard contract
+# declares where they live, so the report never spells that directory.
+CalcRoot <- .contractRoot(Contracts$hazard, "calcs", root)
 
 # A declared root that holds no product of its producer is a misconfigured
 # project, not a project without results: it is the case that used to publish
@@ -72,8 +80,9 @@ DataRoot <- list(hazard = .contractRoot(Contracts$hazard, "data", root),
 # renders — so only the empty root fails.
 for (Product in names(DataRoot)) {
   if (!length(list.files(DataRoot[[Product]], pattern = "[.]Rds$"))) {
-    stop(attr(Contracts[[Product]], "file", exact = TRUE), ": path.data resolves to ",
-         DataRoot[[Product]], ", which holds no ", Product, " product.", call. = FALSE)
+    stop(attr(Contracts[[Product]], "file", exact = TRUE), ": path.",
+         DataKey[[Product]], " resolves to ", DataRoot[[Product]],
+         ", which holds no ", Product, " product.", call. = FALSE)
   }
 }
 

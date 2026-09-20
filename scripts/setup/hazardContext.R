@@ -50,7 +50,7 @@ SITE.candidates <- SITE.candidates[
 ]
 if (length(SITE.candidates)) Hazard.config$siteLabel <- SITE.candidates[1L]
 
-CALC.dir <- file.path(root, "oq", "calcs", "classical")
+CALC.dir <- file.path(CalcRoot, "classical")
 CALC.files <- if (dir.exists(CALC.dir)) {
   sort(list.files(CALC.dir, pattern = "\\.json$", full.names = TRUE))
 } else {
@@ -174,7 +174,8 @@ if (is.na(Hazard.config$ssmLabel) || !nzchar(Hazard.config$ssmLabel) ||
   stop(
     "hazardContext: incomplete classical calculation metadata for model ",
     Hazard.config$modelID,
-    " - oq/calcs/classical/<ID>.json must declare ssmFile, minimum_magnitude, ",
+    " - classical/<ID>.json under the hazard contract path.calcs must declare ",
+    "ssmFile, minimum_magnitude, ",
     "maximum_distance and truncation_level.",
     call. = FALSE
   )
