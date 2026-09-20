@@ -1,0 +1,13 @@
+{
+  "path": {
+    "output": "oq/output",
+    "uhs": "oq/uhs",
+    "mce": "oq/mce",
+    "disagg": "oq/disagg",
+    "data": "oq/data",
+    "calcs": "oq/calcs",
+    "sites": "oq/sites"
+  },
+  "uhsOQWeight": 0.5,
+  "TR.gmdp": [100, 200, 500, 1000, 2000, 2500, 5000, 10000]
+}
