@@ -1,12 +1,13 @@
 {
   "path": {
-    "output": "oq/output",
-    "uhs": "oq/uhs",
-    "mce": "oq/mce",
-    "disagg": "oq/disagg",
-    "data": "oq/data",
-    "calcs": "oq/calcs",
-    "sites": "oq/sites"
+    "output": "data/hazard/output",
+    "run": "data/hazard/run",
+    "uhs": "data/hazard/uhs",
+    "mce": "data/hazard/mce",
+    "disagg": "data/hazard/disagg",
+    "data": "data/hazard/tables",
+    "calcs": "specs/calcs",
+    "sites": "specs/sites"
   },
   "uhsOQWeight": 0.5,
   "TR.gmdp": [100, 200, 500, 1000, 2000, 2500, 5000, 10000]

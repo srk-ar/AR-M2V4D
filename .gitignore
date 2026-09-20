@@ -56,16 +56,16 @@ rsconnect/
 .quarto/
 
 
-# Ignore only the project-root data folder. OQT result tables under oq/data
-# are versioned inputs to the report, as in the other active projects.
-/data/
+# The hazard and newmark product tables under data/ are versioned inputs to
+# the report, as in the other active projects; only the runtime state below is
+# ignored.
 
 # OpenQuake execution scratch and packed runs are reproducible runtime state.
-/oq/.tmp*/
-/oq/run/
-/oq/logs/
+/data/hazard/.tmp*/
+/data/hazard/run/
+/data/hazard/logs/
 
-oq/!archive/
+data/hazard/!archive/
 
 report/!archive/
 report/.quarto/
