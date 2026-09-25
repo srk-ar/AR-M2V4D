@@ -1,0 +1,317 @@
+---
+title: "Parámetros de Diseño Sísmico"
+lang: es
+toc: false
+number-sections: false
+bibliography: _local/gmdp.memo.bib
+format:
+  docx:
+    reference-doc: _local/gmdp.memo.reference.docx
+---
+
+# Parámetros de Diseño Sísmico
+
+```{r}
+#| include: false
+root <- normalizePath(here::here())
+source(file.path(root, "scripts", "setup", "setup.R"))
+source(file.path(root, "scripts", "setup", "report.R"))
+Scenarios <- fread(file.path(root, "_local", "gmdp.memo.scenarios.csv"))
+siteID.target <- .requireOneTarget(SiteTable$siteID, "siteID.target", "memo")
+SiteID.caption <- siteID.target
+p.target <- "mean"
+TR.target <- c(500, 2500, TR.MDE)
+Da.target <- sort(Da.gmdp)
+IDn.target <- c("rigid", "ensemble", "flexible")
+PLOT.HEIGHT <- 720
+Demands <- list(tr500 = 500, tr2500 = 2500, mde = TR.MDE, mce = numeric())
+PSA_Units <- "cm/s2"
+Periods <- unique(ShearTable[.matchP(level, p.target)][
+  Scenarios, on = .(IDg, IDm), .(IDg, IDm, Hs, Ts)
+])
+stopifnot(!anyDuplicated(Scenarios$IDg), !anyNA(Periods),
+          nrow(Periods) == nrow(Scenarios))
+```
+
+<!-- fuentes: _chapters/executive.opening.es.md, _results/ts.results.es.qmd, _results/dn.results.es.qmd, _results/kmax.results.es.qmd; ledger de procedencia en agents/dev/SoT/newmark-memo-fluency-20260924 -->
+
+`r params$consultant$name` preparó este informe para `r params$client$name` en el marco del proyecto `r params$project_id`, ubicado en `r params$location`. El informe reporta las propiedades dinámicas de los taludes analizados, los desplazamientos permanentes que los sismos de diseño acumulan en sus masas potencialmente deslizantes y los coeficientes sísmicos basados en desempeño derivados de esos desplazamientos. Los modelos de desplazamiento de bloque flexible requieren el período fundamental de cada masa deslizante potencial y la rigidez dinámica del terreno que lo determina: se analizaron `r nrow(Scenarios)` escenarios de geometría y material con alturas entre `r min(Periods$Hs)` y `r max(Periods$Hs)` m, y el período fundamental estimado varía entre `r .fmt(min(Periods$Ts), 2)` y `r .fmt(max(Periods$Ts), 2)` s.
+
+```{r}
+#| include: false
+BM <- if (isTRUE(subduction)) "BM17" else "BM19"
+BM.code <- paste0(intToUtf8(96), BM, intToUtf8(96))
+```
+
+El desplazamiento permanente de Newmark $D_n$ cuantifica la deformación que el sismo acumula en la masa deslizante y es la medida de desempeño de la que se derivan los coeficientes sísmicos. Las curvas $D_n(k_y)$ relacionan, para cada combinación de geometría, material y escenario de diseño, la aceleración de fluencia $k_y$ con el desplazamiento permanente esperado; se calcularon con el conjunto `ensemble` de `AM88`, `JB07`, `SR08`, `BT07` y `r BM.code`, con la magnitud de referencia $M_w$ = `r .fmt(Mw.gmdp, 1)` y `r .fmti(NS)` realizaciones por demanda, y se leen en los fractiles $q = 1 - p_e$. El coeficiente pseudoestático horizontal $k_h$ se deriva a su vez del desplazamiento permanente admisible $D_a$ de la masa potencialmente deslizante [@BrayTravasarou2009; @MacedoEtAl2018]; los coeficientes se reportan para cuatro límites de desplazamiento relativo, $D_a/H_s$ = `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")` %, y las tablas de la Sección [-@sec-kh-tables] reúnen, para las demandas y los escenarios analizados, el coeficiente en cada límite, expresado como porcentaje de la PGA.
+
+```{r}
+#| include: false
+rm(list = intersect(c("BM", "BM.code"), ls()))
+```
+
+## Criterios de diseño sísmico para taludes {#sec-criteria}
+
+<!-- fuentes: _chapters/deq.criteria.es.md, _chapters/deq.kmax.es.md -->
+
+El diseño sísmico de los depósitos de relaves se basa en la filosofía de desempeño de dos niveles consolidada por la práctica de seguridad de presas: un sismo base de operación (OBE), que la instalación debe resistir sin interrupción operacional, y un sismo de evaluación de seguridad (SEE), bajo el cual no debe liberar relaves. El Boletín 148 de ICOLD formaliza esta filosofía para estructuras de terraplén [@ICOLD2016; @ANCOLD2012], y la regulación ER 1110-2-1806 del USACE la expresa en términos del OBE y del sismo máximo de diseño (MDE) [@USACE1995]. En este informe, el MDE corresponde al espectro probabilístico con $T_R=10{,}000$ años y el MCE, a la envolvente determinística.
+
+La verificación de los taludes bajo esos sismos de diseño sigue la práctica que ICOLD y FEMA encuadran para presas y terraplenes mediante niveles sucesivos de análisis: verificaciones pseudoestáticas, estimaciones simplificadas de deformación y análisis dinámicos cuando la consecuencia, la respuesta prevista o la complejidad del mecanismo lo requieren [@ICOLD2016; @FEMA2005]. En este marco, el método de Newmark aporta una estimación basada en deformaciones que complementa la verificación de equilibrio límite, y el coeficiente pseudoestático de esa verificación es una magnitud específica del proyecto y no una propiedad universal del tipo de estructura. Los manuales EM 1110-2-1902 y EM 1110-2-2100 del USACE incluyen el análisis pseudoestático entre los métodos aplicables a presas y obras de tierra y tratan el bloque deslizante para estimar la deformación sísmica permanente; vinculan la selección del coeficiente con la amenaza específica del sitio, el mecanismo potencial de falla y los criterios de desempeño del proyecto, de modo que el coeficiente resulta de las condiciones de cada proyecto y no de un único valor aplicable a todas ellas [@USACE2003; @USACE2005].
+
+Otras dos referencias relacionan la verificación pseudoestática con la deformación permanente. El Reporte NCHRP 611 formula el análisis sísmico de taludes e infraestructura de transporte en términos de desempeño por desplazamientos y utiliza correlaciones simplificadas de Newmark para relacionar la demanda con la deformación permanente [@AndersonEtAl2008], y el Eurocódigo 8 vincula la acción pseudoestática con la aceleración sísmica de diseño y la clase de consecuencia y admite el cálculo de desplazamientos de Newmark cuando la relación entre la aceleración crítica y la aceleración de diseño justifica una verificación basada en deformaciones [@CEN2004]. Estas referencias aportan el encuadre y los criterios de comparación para los coeficientes de este informe; sus valores orientativos sirven a esa comparación, y el objetivo de desplazamiento definido para el proyecto gobierna los coeficientes mismos.
+
+Ese objetivo se expresa como un desplazamiento permanente admisible relativo a la altura del talud. Los coeficientes de este informe se leen contra cuatro umbrales de daño del desplazamiento permanente relativo, $D_a/H$ = `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`%: las relaciones entre el asentamiento de coronamiento y la altura derivadas de noventa casos históricos de daño sísmico en presas de terraplén y asociadas a los estados límite operativo, de daño, de salvaguardia de la vida y de colapso de la norma italiana de presas NTD14 [@Aliberti2019]. Su denominador, la altura del terraplén más el espesor de la fundación deformable, es la altura de talud empleada aquí. Las tablas de coeficientes se reportan en esos umbrales; la derivación de los coeficientes a partir del desplazamiento admisible se desarrolla en la Sección [-@sec-coefficients].
+
+## Propiedades dinámicas de taludes {#sec-slope_periods}
+
+<!-- fuentes: _chapters/ts.model.es.md -->
+
+Los modelos de desplazamiento de bloque flexible evalúan la demanda espectral en períodos proporcionales al período fundamental de la masa potencialmente deslizante, de modo que cada combinación de geometría y material necesita $T_s$, que se obtiene a partir de la geometría del talud y de la variación del módulo de corte de pequeña deformación con la profundidad, representada por $G_o$, $m_o$ y $V_S^o$; los valores medios de $T_s$ y $V_{S30}$ caracterizan la respuesta dinámica empleada en los modelos de desplazamiento de la sección dedicada a los desplazamientos permanentes. El período fundamental de la masa potencialmente deslizante se representa mediante el primer modo de una viga de corte inhomogénea truncada [-@DakoulasGazetas1985Inhomogeneous]:
+
+$$
+T_s=\frac{4\pi H_s}{a_1(2-m_o)V_S^o}.
+$${#eq-slope-period}
+
+En la expresión [-@eq-slope-period], $H_s$ es la altura del talud; $V_S^o$ es la velocidad de onda de corte correspondiente al módulo basal $G_o$; $m_o$ es el exponente del perfil de rigidez; y $a_1$ es la primera raíz de la ecuación característica. El valor de $a_1$ depende conjuntamente de $m_o$ y de la razón de truncamiento $\lambda_o$, que puede expresarse, por semejanza geométrica, según la expresión [-@eq-slope-truncation], donde $b$ es el ancho de la berma y $b_{\max}$ es el ancho de la base.
+
+$$
+\lambda_o=\frac{b}{b_{\max}}.
+$${#eq-slope-truncation}
+
+Para la sección truncada equivalente del modelo de Dakoulas y Gazetas [-@DakoulasGazetas1985Inhomogeneous], la altura $H_s$, la relación de talud $s$ y la razón de truncamiento $\lambda_o$ determinan el ancho $b$ de la berma y el ancho $b_{\max}$ de la base según las expresiones [-@eq-slope-berm-width] y [-@eq-slope-base-width], respectivamente; la relación de talud se define por $\tan\beta=1/s$, con $\beta$ el ángulo del talud.
+
+$$
+b=\frac{2H_s s}{1/\lambda_o-1}.
+$${#eq-slope-berm-width}
+
+$$
+b_{\max}=b+2H_s s.
+$${#eq-slope-base-width}
+
+En cada realización, la velocidad basal de onda de corte $V_S^o$ se obtiene según la expresión [-@eq-slope-basal-velocity], donde $G_o$ es el módulo basal ajustado, $g$ es la aceleración de la gravedad y $\gamma_{\mathrm{sat}}^{(k_{\mathrm{b}})}$ es el peso unitario saturado de la capa basal, cuyo índice es $k_{\mathrm{b}}$, con las magnitudes expresadas en unidades consistentes.
+
+$$
+V_S^o=\left(\frac{gG_o}{\gamma_{\mathrm{sat}}^{(k_{\mathrm{b}})}}\right)^{1/2}.
+$${#eq-slope-basal-velocity}
+
+El perfil de rigidez de cada realización se representa según la expresión [-@eq-slope-profile], donde $z$ es la profundidad medida desde la coronación, $G_o$ es el módulo ajustado en $z/H_s=1$ y $m_o$ es el exponente obtenido del ajuste logarítmico de los módulos de capa $G_m^{(k)}$.
+
+$$
+G(z)=G_o\left(\frac{z}{H_s}\right)^{m_o}.
+$${#eq-slope-profile}
+
+Los módulos de capa provienen de la clasificación del suelo: la clasificación USCS de la capa $k$ determina su familia constitutiva y las $J^{(k)}$ formulaciones tabuladas de rigidez [-@Ishihara1996], y el módulo adoptado para la capa corresponde a la media aritmética definida por la expresión [-@eq-slope-modulus], donde $A^{(j)}$ y $n^{(j)}$ son parámetros tabulados, $F_e^{(k,j)}$ es el factor de relación de vacíos, $m_1^{(k)}$ es el exponente de sobreconsolidación, $p_m^{(k)}$ es la tensión normal octaédrica efectiva promediada en el espesor de la capa y $p_{\mathrm{ref}}=100$ kPa es la presión de normalización.
+
+$$
+G_m^{(k)}=\frac{1}{J^{(k)}}\sum_{j=1}^{J^{(k)}}
+A^{(j)}F_e^{(k,j)}
+\left[\mathrm{OCR}^{(k)}\right]^{m_1^{(k)}}
+p_{\mathrm{ref}}^{n^{(j)}}
+\left(\frac{p_m^{(k)}}{p_{\mathrm{ref}}}\right)^{n^{(j)}}.
+$${#eq-slope-modulus}
+
+La tensión normal octaédrica efectiva, promediada en el espesor de la capa $k$, $p_m^{(k)}$ [-@HardinBlack1968; -@HardinDrnevich1972], se obtiene, para el estado de esfuerzos en reposo, según la expresión [-@eq-slope-mean-pressure], donde $K_0$ es el coeficiente de presión lateral en reposo, $\gamma^{(\ell)}$ y $h^{(\ell)}$ son el peso unitario correspondiente a la condición freática y el espesor de la capa $\ell$, y $\ell<k$ identifica las capas suprayacentes.
+
+$$
+p_m^{(k)}=\frac{1+2K_0}{3}
+\left(\sum_{\ell=1}^{k-1}\gamma^{(\ell)}h^{(\ell)}
++\frac{\gamma^{(k)}h^{(k)}}{2}\right).
+$${#eq-slope-mean-pressure}
+
+La razón de sobreconsolidación $\mathrm{OCR}^{(k)}=\max[(p_m^{(k)}+\mathrm{POP})/p_m^{(k)},1]$, donde $\mathrm{POP}$ es la presión de preconsolidación, sólo modifica el módulo de los suelos finos: en ellos $m_1^{(k)}=f_{\mathrm{IP}}(\mathrm{IP}^{(k)})$, mientras que en arenas y gravas $m_1^{(k)}=0$ y $[\mathrm{OCR}^{(k)}]^{m_1^{(k)}}=1$. La relación de vacíos $e_0^{(k)}$ interviene en las tres familias mediante $F_e^{(k,j)}$, que en las formulaciones tabuladas [-@Ishihara1996] se define mediante [-@eq-slope-void-factor] a partir de la relación de vacíos $e_0^{(k)}$ y del parámetro $C_e^{(j)}$; $j_{\mathrm{SS75}}$ identifica la formulación de Shibata y Soelarno [-@ShibataSoelarno1975].
+
+$$
+F_e^{(k,j)}=
+\begin{cases}
+C_e^{(j)}-\dfrac{e_0^{(k)}}{1+e_0^{(k)}}, & j=j_{\mathrm{SS75}},\\[6pt]
+\dfrac{\left(C_e^{(j)}-e_0^{(k)}\right)^2}{1+e_0^{(k)}}, & j\ne j_{\mathrm{SS75}}.
+\end{cases}
+$${#eq-slope-void-factor}
+
+La velocidad de onda de corte $V_S^{(k)}$ de la capa $k$ se obtiene según la expresión [-@eq-slope-layer-velocity], donde $G_m^{(k)}$ es el módulo adoptado para la capa, $\gamma_{\mathrm{sat}}^{(k)}$ es su peso unitario saturado y las magnitudes se expresan en unidades consistentes.
+
+$$
+V_S^{(k)}=\left(\frac{gG_m^{(k)}}{\gamma_{\mathrm{sat}}^{(k)}}\right)^{1/2}.
+$${#eq-slope-layer-velocity}
+
+```{r}
+#| include: false
+CAP <- readCaption("../_local/tbl.SiteGo.ES")
+SiteGo.headers <- c("Formulación", "Familia", "Material de referencia", "Autor")
+SiteGo.groups <- c(Sands = "Arenas", Fines = "Finos", Gravels = "Gravas")
+```
+
+{{< include /_local/tbl.SiteGo.qmd >}}
+
+Para cada combinación de geometría y material se generan $N$ realizaciones sintéticas del perfil estratificado, y los valores de $G_o$, $m_o$, $V_S^o$ y $V_{S30}$ se resumen separadamente mediante la media y los fractiles marginales; para la media y cada fractil marginal, $a_1$ y $T_s$ se evalúan con los valores correspondientes de $m_o$ y $V_S^o$, y las estimaciones basadas en la media proporcionan las propiedades dinámicas empleadas por los modelos de desplazamiento. El valor de $V_{S30}$ se obtiene por tiempo de viaje según la expresión [-@eq-slope-vs30], donde $h_{30}^{(i)}$ es el espesor de la capa $i$ comprendido en los primeros 30 m, $V_S^{(i)}$ es su velocidad de onda de corte y $V_{\mathrm{ref}}$ es la velocidad asignada al espesor complementario cuando $H_s<30$ m.
+
+$$
+V_{S30}=\frac{30}{
+\displaystyle\sum_i\frac{h_{30}^{(i)}}{V_S^{(i)}}
++\dfrac{\max(30-H_s,0)}{V_{\mathrm{ref}}}}.
+$${#eq-slope-vs30}
+
+```{r}
+#| results: asis
+NGR::knitBlock(
+  path = "/_local/tbl.Ts.qmd",
+  stem = "memo-periods-table",
+  labels = "rewrite",
+  vars = list(CAP = readCaption("../_local/tbl.Ts.ES")),
+  root = root
+)
+```
+
+## Coeficiente sísmico basado en desempeño {#sec-coefficients}
+
+<!-- fuentes: _chapters/dn.ensemble.es.md, _chapters/dn.model.es.md, _chapters/dn.uncertainty.es.md; introducción desde 445c478~1:library/hazard/_chapters/coefficients.summary.es.md y displacements.summary.es.md -->
+
+El diseño sísmico de taludes por el método pseudoestático requiere un coeficiente horizontal que represente la acción del sismo sobre la masa deslizante. En este informe el coeficiente se deriva del desempeño en desplazamientos: el desplazamiento permanente de Newmark $D_n$ es la medida de desempeño de la que se derivan los coeficientes sísmicos, y el coeficiente $k_{\max}$ es la menor aceleración de fluencia $k_y$ compatible con un objetivo de desempeño definido por el desplazamiento admisible $D_a$ y la probabilidad objetivo $p_e$ de que $D_n$ exceda $D_a$. El coeficiente normalizado $k_h$ expresa $k_{\max}$ como porcentaje de la PGA con respuesta de sitio correspondiente a cada combinación de geometría y material, y los coeficientes se reportan por geometría, material y demanda sísmica. Para los taludes evaluados, $D_n$ se estima de forma probabilística combinando modelos empíricos de regresión en un marco lognormal.
+
+El coeficiente pseudoestático horizontal se deriva en esta evaluación a partir del desplazamiento permanente admisible $D_a$ de la masa potencialmente deslizante [@BrayTravasarou2009; @MacedoEtAl2018]. La demanda sísmica y los períodos fundamentales establecidos en las secciones precedentes permiten calcular las relaciones $D_n (k_y)$ entre el desplazamiento permanente de Newmark y la aceleración de fluencia; su inversión produce $k_{\max}$ y su normalización respecto de la PGA transformada al $V_{S30}$ de cada combinación de geometría y material produce $k_h$, de modo que el resultado vincula de forma trazable el objetivo de deformación con la acción horizontal empleada en la verificación de estabilidad. La aceleración de fluencia $a_y$ representa el nivel de aceleración que moviliza la resistencia disponible a lo largo del mecanismo potencial de falla, y su forma adimensional es $k_y=a_y/g$; para cada desplazamiento admisible y probabilidad objetivo de excedencia, el análisis determina el umbral de $k_y$ que satisface el criterio de desempeño, y ese umbral es $k_{\max}$, el coeficiente de la verificación pseudoestática de equilibrio límite.
+
+En el método del bloque deslizante de Newmark [@Newmark1965], la cuña en potencial deslizamiento es un bloque rígido apoyado sobre un plano inclinado: el movimiento relativo comienza cuando la aceleración impulsora supera la aceleración de fluencia $a_y=k_y g$ y continúa hasta que la velocidad relativa vuelve a cero, y el desplazamiento permanente es la suma de esos episodios durante el movimiento sísmico, obtenida por doble integración del exceso de aceleración. La extensión del procedimiento a presas y terraplenes [@MakdisiSeed1978] derivó la aceleración equivalente de la masa deslizante a partir de su respuesta dinámica y es el antecedente directo de las formulaciones flexibles. Las relaciones empíricas adoptadas representan estadísticamente el desplazamiento acumulado mediante dos idealizaciones: los modelos de bloque rígido relacionan el desplazamiento con medidas de la excitación basal, y los modelos de bloque flexible incorporan además la respuesta dinámica de la masa mediante $T_s$ y la aceleración espectral evaluada en un período proporcional a $T_s$.
+
+El cálculo de desplazamientos utiliza la demanda sísmica y los períodos fundamentales establecidos en la Sección [-@sec-slope_periods]. Para cada geometría, material y demanda sísmica —el espectro probabilístico de cada período de retorno evaluado y el escenario MCE— se construye una muestra conjunta de las medidas de intensidad requeridas por las formulaciones de bloque rígido y flexible; esa muestra es común a todos los modelos, de modo que sus diferencias representan la formulación del desplazamiento y no demandas sísmicas incompatibles. Dos entradas alimentan esa muestra. La entrada probabilística de cada período de retorno es la UHS en roca de referencia, que para 10,000 años es el MDE, y la entrada MCE es el espectro en roca de cada escenario; ambas conservan la distribución completa de la demanda en roca y ambas se definen para $V_{S30}=V_{\mathrm{ref}}=760$ m/s. Para cada escenario de geometría y material, las ordenadas espectrales y la PGA se transforman al $V_{S30}$ correspondiente mediante el modelo de amplificación `ST20` [@Stewart2020; @Hashash2020].
+
+En la condición de sitio de cada escenario, la muestra conjunta comprende PGA, $S_a (1.3T_s)$ y $S_a (1.5T_s)$. Las tres medidas se representan mediante marginales empíricas en $\ln S_a$ y una cópula gaussiana con la matriz completa de correlación interperíodo [@BakerJayaram2008], y las muestras se recentran para conservar la media de cada marginal amplificada; en cada realización, las tres intensidades permanecen apareadas y cada formulación de desplazamiento utiliza las medidas que intervienen en su regresión. La intensidad de Arias utilizada por `JB07` y `SR08` completa el conjunto de medidas de intensidad; se estima para cada realización a partir de la PGA, de modo que cada realización de PGA determina un único valor de $I_A$ y la muestra de desplazamientos propaga la variabilidad de PGA.
+
+Para cada escenario se evalúan 30 valores de $k_y$ distribuidos logarítmicamente entre 0.01 y $\max (\overline{\mathrm{PGA}},0.80)$, donde $\overline{\mathrm{PGA}}$ es la media de la PGA en la condición de sitio del escenario. Ese intervalo establece el soporte calculado de las relaciones $D_n (k_y)$, sobre el cual se evalúan las formulaciones y opera la inversión a $k_{\max}$.
+
+Cada formulación activa estima el desplazamiento permanente de Newmark [-@Newmark1965] de la masa deslizante a partir de la aceleración de fluencia y de las medidas de intensidad de su regresión, y todas expresan el desplazamiento positivo $D_n$, en centímetros, mediante
+
+$$
+D_n=\exp\!\left(\mu_{\ln D}+\epsilon\sigma_{\ln D}\right), \qquad \epsilon\sim\mathcal N (0,1),
+$${#eq-newmark-lognormal}
+
+donde $\mu_{\ln D}$ y $\sigma_{\ln D}$ son la media y la desviación estándar de $\ln D_n$ definidas por cada modelo, y $\epsilon$ es un residuo normal estándar. Algunas formulaciones fuente contienen una rama discreta de desplazamiento nulo o despreciable; la evaluación implementada utiliza exclusivamente la rama lognormal positiva. En todas las formulaciones, $k_y$, PGA y $S_a$ se expresan en unidades de $g$ —la aceleración de la gravedad—, $I_A$ en m/s y $T_s$ en segundos; la intensidad de Arias se deriva de la PGA de cada realización, y la magnitud de referencia del proyecto, $M_w=$ `r .fmt(Mw.gmdp, 1)`, se aplica como entrada constante a todas las demandas, geometrías, materiales y sitios evaluados. La forma publicada de cada formulación se reproduce en la Sección [-@sec-newmark-appendix]. El coeficiente sísmico basado en desempeño se define mediante
+
+$$
+k_{\max} (p_e\mid D_a)
+=\inf\left\{k_y:P[D_n (k_y)>D_a]\leq p_e\right\}.
+$${#eq-kmax-criterion}
+
+donde $p_e$ es la probabilidad objetivo de que $D_n$ exceda $D_a$: $k_{\max}$ es el menor $k_y$ para el cual la probabilidad de exceder el desplazamiento admisible es a lo sumo $p_e$. El coeficiente normalizado, reportado como porcentaje de la PGA [% de la PGA], se calcula con la PGA transformada al $V_{S30}$ de la combinación de geometría y material evaluada para cada demanda:
+
+$$
+k_h=\frac{k_{\max}}{\mathrm{PGA} (V_{S30})}.
+$${#eq-kh-normalization}
+
+$k_{\max}$ se expresa en unidades de $g$ y $k_h$ como porcentaje de la PGA de la condición de sitio correspondiente. Estas dos magnitudes expresan el criterio de desplazamiento como la acción horizontal de la verificación pseudoestática.
+
+Las cinco formulaciones se evalúan individualmente y se combinan en los tres conjuntos que las tablas y las figuras identifican como `IDn`: `rigid`, `flexible` y `ensemble`. El modelo de desplazamientos calcula realizaciones individuales para `AM88`, `JB07`, `SR08`, `BT07` y una quinta formulación seleccionada por el contexto tectónico: `BM17` para proyectos con control de subducción y `BM19` para proyectos con control cortical. El conjunto global de diseño, identificado como `ensemble`, combina con pesos iguales `AM88`, `JB07`, `SR08`, `BT07` y la rama BM activa; la familia rígida combina `AM88`, `JB07` y `SR08`, y la familia flexible combina `BT07` y la rama BM activa. La familia rígida relaciona así el desplazamiento con medidas de la excitación basal, la familia flexible incorpora además la respuesta dinámica de la masa deslizante mediante $T_s$, y `ensemble` es el conjunto de diseño que combina ambas. Para cada $k_y$, los desplazamientos de una familia se resumen a partir de la distribución empírica ponderada de las realizaciones de sus modelos.
+
+Todos los modelos reciben la misma muestra conjunta de PGA y aceleraciones espectrales, y una misma realización de $\epsilon$ se comparte entre los modelos y entre todos los valores de $k_y$; cada formulación escala ese residuo mediante su propia $\sigma_{\ln D}$, y la PGA muestreada se conserva con cada realización para que la inversión mantenga su estado de demanda. Las realizaciones de $D_n$ se calculan para cada clase de material con sus propiedades dinámicas medias; los fractiles de los perfiles de rigidez y de $T_s$ no se propagan como realizaciones adicionales en el cálculo de desplazamientos, y cada clase de material se conserva como entrada independiente durante la inversión a $k_{\max}$, de modo que las curvas de desplazamiento no se promedian entre materiales antes de esa operación.
+
+Para cada modelo y realización, la relación $D_n (k_y)$ calculada se proyecta sobre una curva no creciente y se invierte en el plano $(\ln D_n,\ln k_y)$ para resolver el criterio de [-@eq-kmax-criterion]; cuando $D_a$ se ubica fuera del soporte calculado, la relación se prolonga en ese plano a partir de los dos puntos del extremo correspondiente, con la única excepción del límite de AM88 tratado en la Sección [-@sec-newmark-appendix]. La inversión se efectúa primero por modelo dentro de cada realización. Las distribuciones de raíces de los modelos se combinan después con los pesos de la familia y se resumen mediante la media aritmética y los fractiles empíricos $q=0.05$, 0.10, 0.16, 0.50, 0.84, 0.90 y 0.95 [@VerriKozlowski2026Newmark]. Debido a la relación decreciente entre $D_n$ y $k_y$, el fractil asociado al objetivo de excedencia cumple la expresión [-@eq-kmax-fractile], donde $q=0.84$ corresponde a una probabilidad de excedencia de $p_e=16\%$.
+
+$$
+q=1-p_e
+$${#eq-kmax-fractile}
+
+Los fractiles $q$ son, por lo tanto, los estadísticos asociados al criterio expresado mediante $p_e$; la media aritmética resume el centro de la distribución simulada y no representa una probabilidad objetivo. La evaluación utiliza `r .fmti(NS)` realizaciones para cada demanda —el espectro probabilístico de cada período de retorno $T_R$ = `r paste(prettyNum(round(sort(TR.target), 0), big.mark = ","), collapse = ", ")` años y el MCE— y una grilla de desplazamientos admisibles $D_a/H_s$ comprendida entre `r paste(format(range(DaH.gmdp), trim = TRUE, scientific = FALSE), collapse = " y ")` %. Esta grilla contiene, para cada altura de talud, los umbrales de daño $D_a/H$ = `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`% de la Sección [-@sec-criteria], en los que se reportan las tablas de coeficientes. Los valores de $D_a$ que exceden el soporte calculado de una realización se obtienen mediante la prolongación logarítmica definida anteriormente.
+
+```{r}
+#| results: asis
+Sections <- c(
+  kmax = "Coeficiente sísmico basado en desempeño $k_{max}$",
+  kh = "Coeficiente sísmico basado en desempeño $k_h$"
+)
+for (x in names(Sections)) {
+  cat("\n\n## ", Sections[[x]], " {#sec-", x, "-tables}\n\n", sep = "")
+  for (d in names(Demands)) {
+    NGR::knitBlock(
+      path = paste0("/_local/fig.", x, ".one.qmd"),
+      stem = paste("memo", x, d, sep = "-"),
+      labels = "rewrite",
+      vars = list(
+        CAP = readCaption(paste0("../_local/fig.", x, if (d == "mce") ".MCE" else "", ".ES")),
+        IDg.target = Scenarios$IDg,
+        IDm.target = Scenarios$IDm,
+        TR.target = Demands[[d]]
+      ),
+      root = root
+    )
+  }
+  for (i in seq_len(nrow(Scenarios))) {
+    NGR::knitBlock(
+      path = paste0("/_local/tbl.", x, ".one.qmd"),
+      stem = paste("memo", x, tolower(Scenarios$IDg[[i]]),
+                   tolower(Scenarios$IDm[[i]]), sep = "-"),
+      labels = "rewrite",
+      vars = list(
+        CAP = readCaption(paste0("../_local/tbl.", x, ".ES")),
+        IDg.target = Scenarios$IDg[[i]],
+        IDm.target = Scenarios$IDm[[i]]
+      ),
+      root = root
+    )
+  }
+}
+```
+
+## Formulaciones de desplazamientos permanentes de Newmark {#sec-newmark-appendix}
+
+<!-- fuentes: _chapters/dn.appendix.es.md, con la introducción de las familias desde _chapters/dn.ensemble.es.md -->
+
+La sección de coeficientes sísmicos aplica cinco formulaciones de desplazamientos permanentes de Newmark: tres modelos de bloque rígido, dos modelos de bloque flexible y, entre estos últimos, la rama BM seleccionada por el control tectónico del proyecto. Esta sección reproduce la forma publicada de cada formulación, incluidas ambas ramas BM, y enuncia la regla que define la configuración activa. Las formulaciones de bloque rígido relacionan el desplazamiento con medidas de la excitación basal, mientras que las formulaciones de bloque flexible incorporan además la respuesta dinámica de la masa deslizante mediante su período fundamental $T_s$ y la aceleración espectral evaluada en un período proporcional a $T_s$.
+
+## Modelos de bloque rígido {#sec-newmark-rigid}
+
+La formulación `AM88` [@AmbraseysMenu1988] utiliza la razón entre aceleración de fluencia y PGA, limitada para mantener el dominio logarítmico, $r^\star=\min (k_y/\mathrm{PGA},0.9999)$^[El soporte numérico de $k_y$ corresponde al intervalo definido en la Sección [-@sec-coefficients]; cuando una realización AM88 completa alcanza el límite $r^\star=0.9999$, su inversión conserva la PGA muestreada y recupera la rama física según @eq-kmax-am88-limit.]:
+
+$$
+\begin{aligned} \mu_{\ln D} &=\ln (10)\left[0.90+\log_{10}\!\left((1-r^\star)^{2.53} (r^\star)^{-1.09}\right)\right],\\ \sigma_{\ln D}&=0.30\ln (10). \end{aligned}
+$${#eq-newmark-am88}
+
+Las dos formulaciones de bloque rígido restantes, JB07 y SR08, utilizan la intensidad de Arias, que se estima para cada realización a partir de la PGA; $I_A$ se expresa en m/s y PGA en unidades de $g$, y la estimación se aplica de forma determinística, de modo que cada realización de PGA determina un único valor de $I_A$ y la muestra de desplazamientos propaga la variabilidad de PGA. La formulación `JB07` [@Jibson2007] incorpora la intensidad de Arias y la razón $k_y/\mathrm{PGA}$:
+
+$$
+\begin{aligned} \mu_{\ln D} &=\ln (10)\left[0.561\log_{10}I_A -3.833\log_{10}\!\left(\frac{k_y}{\mathrm{PGA}}\right)-1.474\right],\\ \sigma_{\ln D}&=0.616\ln (10). \end{aligned}
+$${#eq-newmark-jb07}
+
+La formulación `SR08` [@SaygiliRathje2008] define $r=k_y/\mathrm{PGA}$ y combina PGA e intensidad de Arias:
+
+$$
+\begin{aligned} \mu_{\ln D} ={}&2.39-5.24r-18.78r^2+42.01r^3-29.15r^4\\ &-1.56\ln\mathrm{PGA}+1.38\ln I_A,\\ \sigma_{\ln D}={}&0.46+0.56r. \end{aligned}
+$${#eq-newmark-sr08}
+
+La prolongación logarítmica de las relaciones $D_n (k_y)$ más allá de su soporte calculado tiene una única excepción, el límite de AM88. Si la PGA muestreada de una realización, $\mathrm{PGA}_s$, es menor que el extremo inferior de la grilla, todos los puntos almacenados pueden satisfacer $k_y/\mathrm{PGA}_s\geq r_{\max}=0.9999$ y formar una meseta $D_{0,s}$. En ese caso se resuelve, para $D_a>D_{0,s}$, la rama física $0<r<r_{\max}$ de @eq-newmark-am88, en lugar de extrapolar la meseta o asignar $k_{\max}=0$:
+
+$$
+\mu_{\ln D}(r)
+=\ln D_a-\ln D_{0,s}+\mu_{\ln D}(r_{\max}),
+\qquad
+k_{\max,s}=\mathrm{PGA}_s r .
+$${#eq-kmax-am88-limit}
+
+El residuo aleatorio se cancela entre $D_a$ y $D_{0,s}$, y $\mathrm{d}\mu_{\ln D}/\mathrm{d}r=-2.53/(1-r)-1.09/r<0$, por lo que la raíz es única. Una meseta AM88 sólo se acepta cuando la curva original es exactamente constante y la propia $\mathrm{PGA}_s$ demuestra que toda la grilla alcanzó ese límite; una curva plana de otro modelo, o un objetivo $D_a\leq D_{0,s}$, se rechaza como soporte no identificable.
+
+## Modelos de bloque flexible {#sec-newmark-flexible}
+
+Las formulaciones de bloque flexible evalúan la aceleración espectral en un período proporcional al período fundamental $T_s$ de la masa deslizante. La formulación `BT07` [@BrayTravasarou2007] emplea $S_a=S_a (1.5T_s)$ y $M_w$:
+
+$$
+\begin{aligned} \mu_{\ln D}={}&a_0-2.83\ln k_y-0.333 (\ln k_y)^2 +0.566\ln k_y\ln S_a\\ &+3.04\ln S_a-0.244 (\ln S_a)^2 +1.50T_s+0.278 (M_w-7),\\ a_0={}& \begin{cases} -0.22, & T_s<0.05\ \mathrm{s},\\ -1.10, & T_s\geq0.05\ \mathrm{s}, \end{cases}\\ \sigma_{\ln D}={}&0.66. \end{aligned}
+$${#eq-newmark-bt07}
+
+La formulación `BM17` [@BrayEtAl2018] representa movimientos de interfaz de subducción con $S_a=S_a (1.5T_s)$:
+
+$$
+\begin{aligned} \mu_{\ln D}&=a_0+a_1\ln S_a-0.225 (\ln S_a)^2,\\ a_1&=3.060+0.538\ln k_y,\\ a_{0,<}={}&-5.864+0.550M_w-9.421T_s\\ &-3.353\ln k_y-0.390 (\ln k_y)^2,\\ a_{0,\geq}={}&-6.896+0.550M_w+3.081T_s-0.803T_s^2\\ &-3.353\ln k_y-0.390 (\ln k_y)^2,\\ a_0&= \begin{cases} a_{0,<}, & T_s<0.1\ \mathrm{s},\\ a_{0,\geq}, & T_s\geq0.1\ \mathrm{s}, \end{cases}\\ \sigma_{\ln D}&=0.73. \end{aligned}
+$${#eq-newmark-bm17}
+
+La formulación `BM19` [@BrayMacedo2019] representa movimientos corticales someros ordinarios con $S_a=S_a (1.3T_s)$:
+
+$$
+\begin{aligned} \mu_{\ln D}&=a_0+\left(2.649+0.344\ln k_y\right)\ln S_a -0.090 (\ln S_a)^2,\\ a_{0,<}={}&-4.684+0.603M_w-9.471T_s\\ &-2.482\ln k_y-0.244 (\ln k_y)^2,\\ a_{0,\geq}={}&-5.981+0.603M_w+3.223T_s-0.945T_s^2\\ &-2.482\ln k_y-0.244 (\ln k_y)^2,\\ a_0&= \begin{cases} a_{0,<}, & T_s<0.1\ \mathrm{s},\\ a_{0,\geq}, & T_s\geq0.1\ \mathrm{s}, \end{cases}\\ \sigma_{\ln D}&=0.72. \end{aligned}
+$${#eq-newmark-bm19}
+
+## Ensamble {#sec-newmark-ensemble}
+
+La configuración activa aplica cinco formulaciones: `AM88`, `JB07`, `SR08`, `BT07` y una rama BM — `BM17` cuando el proyecto declara control de subducción, `BM19` cuando declara control cortical; cada evaluación aplica por lo tanto cinco formulaciones, nunca ambas ramas BM a la vez. Los predictores y las dispersiones se aplican con la forma publicada de cada modelo, y las cinco formulaciones se combinan con los pesos iguales y las familias rígida y flexible definidos en la Sección [-@sec-coefficients].
+
+## Referencias
+
+::: {#refs}
+:::

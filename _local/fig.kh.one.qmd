@@ -1,0 +1,29 @@
+```{r}
+#| include: true
+#| label: fig-kh-one
+#| fig-cap: !expr CAP |> sprintf(paste(IDn.target, collapse = ", "), paste(IDg.target, collapse = ", "), paste(IDm.target, collapse = ", "), if (length(TR.target)) prettyNum(round(TR.target, 0), big.mark = ",") else "", paste(p.target, collapse = ", "), paste(.fmt(DAMAGE.CUTS, 1), collapse = ", "), SiteID.caption)
+ENV <- new.env(parent = environment())
+ENV$kmaxTable <- kmaxTable[Scenarios, on = .(IDg, IDm)]
+ENV$siteID.target <- siteID.target
+if (length(TR.target)) ENV$TR.target <- TR.target
+STYLES <- c(rigid = "Solid", ensemble = "ShortDash", flexible = "LongDash")
+LIST <- list()
+for (n in IDn.target) {
+  ENV$IDn.target <- n
+  source(file.path(root, "scripts", "fig/kh.R"), local = ENV)
+  LIST <- c(LIST, lapply(ENV$PLOT$x$hc_opts$series, function(Series) {
+    Series$name <- paste(sub("^[^.]+\\.", "", Series$name), n, sep = ".")
+    Series$dashStyle <- unname(STYLES[[n]])
+    Series$lineWidth <- THICK_LINE_SIZE
+    Series
+  }))
+}
+PLOT <- ENV$PLOT
+PLOT$x$hc_opts$series <- LIST
+PLOT$x$hc_opts$legend$title <- NULL
+PLOT$x$hc_opts$tooltip$pointFormat <- sub(
+  "IDm.IDg: ", "", PLOT$x$hc_opts$tooltip$pointFormat, fixed = TRUE
+)
+rm(ENV, LIST, STYLES, n)
+PLOT
+```

@@ -1,0 +1,20 @@
+&nbsp;
+
+```{r}
+#| include: true
+#| label: tbl-ish1
+#| tbl-cap: !expr CAP
+
+source(file.path(root, "scripts", "tbl", "SiteGo.R"))
+TBL
+```
+
+```{r}
+#| include: false
+rm(list = intersect(
+  c("CAP", "TBL", "SiteGo.headers", "SiteGo.groups"),
+  ls()
+))
+```
+
+&nbsp;

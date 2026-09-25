@@ -1,0 +1,12 @@
+```{r}
+#| include: true
+#| label: tbl-ts
+#| tbl-cap: !expr CAP
+DT <- unique(ShearTable[.matchP(level, p.target)][
+  Scenarios, on = .(IDg, IDm),
+  .(IDm, USCS, Hs, b, s, lo, mo, a1 = an, Go, VSo, VS30, Ts)
+])
+stopifnot(nrow(DT) == nrow(Scenarios), !anyNA(DT))
+source(file.path(root, "scripts", "tbl/Ts.R"))
+TBL
+```
