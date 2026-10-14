@@ -8,4 +8,9 @@ Area sources represent background, regional, and plate-margin zones; point sourc
 
 @tbl-ssm-aus-inventory summarizes the source identities in the complete local inventory. The count consolidates a provider identifier that appears in multiple branches; it therefore represents unique sources rather than repeated objects summed over the 16 realizations.^[The source count does not represent relative hazard contribution. Contribution depends on occurrence rates, branch weights, source-to-site distances, and the ground-motion distribution.] The ASC/SCC category identifies sources whose TRT assignment changes between the two codes with the selected branch.
 
+```{r}
+#| include: false
+CAP <- readCaption("tbl.SSM.AUS")
+```
+
 {{< include /_tbl/SSM.AUS.qmd >}}

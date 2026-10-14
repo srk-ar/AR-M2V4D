@@ -1,6 +1,5 @@
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.kh.sites")
 ```
 
 &nbsp;

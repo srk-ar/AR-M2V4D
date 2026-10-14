@@ -1,37 +1,41 @@
 {
   "modelID": "S1",
   "mode": "scenario",
-  "description": "Definitive S1 for Crawford, confirmed by the project owner on 2026-09-17: SCC Mw 6.5, epicentre at CFD, hypocentral depth 10 km, vertical strike-slip rupture. Synthetic scenario; not calibrated to disaggregation.",
+  "description": "Crawford official S1, approved 2026-09-22: SCC Mw6.5, Repi100km, depth15km; synthetic regional design scenario, Timiskaming plane analogue324/46/100. See data/hazard/dsha/RATIONALE.md.",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "TRT": {
     "SCC": "SCC"
   },
   "ruptureBase": {
-    "lon": -81.340633,
-    "lat": 48.794912,
-    "dep": 10.0,
+    "lon": -80.5122632102849,
+    "lat": 48.0830199430787,
+    "dep": 15,
     "mag": 6.5,
-    "rake": 0.0,
-    "strike": 0.0,
-    "dip": 90.0,
+    "rake": 100,
+    "strike": 324,
+    "dip": 46,
     "msr": "WC1994",
-    "occurrenceRate": 1.0,
+    "occurrenceRate": 1,
     "multiplicity": 1
   },
   "ruptureVariants": [
-    {"variantID": "base"}
+    {
+      "variantID": "base"
+    }
   ],
   "job": {
     "general": {
       "concurrent_tasks": 0
     },
     "erf": {
-      "rupture_mesh_spacing": 2.0
+      "rupture_mesh_spacing": 2
     },
     "calculation": {
       "random_seed": 42,
-      "maximum_distance": {"default": 1000.0},
-      "truncation_level": 3.0,
+      "maximum_distance": {
+        "default": 1000
+      },
+      "truncation_level": 3,
       "number_of_ground_motion_fields": 1
     },
     "output": {

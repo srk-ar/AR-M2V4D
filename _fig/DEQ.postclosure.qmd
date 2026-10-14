@@ -2,20 +2,6 @@
 ```{r}
 #| include: true
 Stage.target <- "Post-Closure"
-if (!exists("Stage.label", inherits = FALSE)) {
-  Stage.label <- if (length(Standard.target) != 1L) NULL else switch(
-    Standard.target,
-    GISTM = "Passive-Care Post-Closure",
-    Stage.target
-  )
-}
-if (is.null(Stage.label)) Stage.label <- "Post-Closure"
-if (!exists("CAP", inherits = FALSE)) {
-  CAP <- paste0(
-    if (length(Standard.target) == 1L) paste0(Standard.target, ". ") else "", Stage.label, ". ",
-    readCaption("fig.DEQ.postclosure")
-  )
-}
 ID.target <- .resolveIDTarget(
   DEQTable,
   "DEQ.postclosure figure",
@@ -132,5 +118,5 @@ PLOT
 
 ```{r}
 #| include: false
-rm(ID.target, Stage.target, Stage.label, Vs30.target, Sa.log, Tn.log, CAP, SiteID.caption)
+rm(ID.target, Stage.target, Vs30.target, Sa.log, Tn.log, CAP, SiteID.caption)
 ```

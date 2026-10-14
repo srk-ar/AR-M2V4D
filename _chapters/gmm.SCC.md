@@ -1,6 +1,6 @@
 
 
-The Stable Continental Crust (SCC) ground-motion logic tree applies to all sources classified as the Stable Continental Crust tectonic region type. The tree comprises six branches with a quasi-uniform weighting scheme: five branches each carry a weight of $0.16667$ and the sixth (`CollapsedNGAEastUSGS`) carries the complementary residual weight of $0.16665$, ensuring the total sums to exactly $1.00000$. The SCC tree is the only one among the four tectonic region types in this assessment that does not achieve exact uniform weighting, owing to the rounding required by the six-branch structure. The SCC tree contains fewer branches than the ASC, SIF, and SIS trees, reflecting the more limited number of GMPEs calibrated directly for stable continental regions.
+The Stable Continental Crust (SCC) ground-motion logic tree applies to all sources classified as the Stable Continental Crust tectonic region type. The tree comprises six branches with a quasi-uniform weighting scheme: five branches each carry a weight of $0.16667$ and the sixth (`CollapsedNGAEastUSGS`) carries the complementary residual weight of $0.16665$, ensuring the total sums to exactly $1.00000$. The SCC tree does not achieve exact uniform weighting, owing to the rounding required by the six-branch structure. The SCC tree contains fewer branches than the ASC, SIF, and SIS trees, reflecting the more limited number of GMPEs calibrated directly for stable continental regions.
 
 The six branches are documented below, with their assigned weight and calibration context:
 

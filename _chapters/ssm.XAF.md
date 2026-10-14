@@ -19,4 +19,15 @@ Activity rates for fault sources with available slip-rate data may be derived fr
 
 @tbl-ssm-xaf-lt, @tbl-ssm-xaf-recurrence, and @tbl-ssm-xaf-depth summarise, respectively, the structure of the five logic-tree branch sets, the recurrence and maximum-magnitude parameters by source group, and the seismogenic depth parameters by source type.
 
+```{r}
+#| include: false
+CAP <- stats::setNames(
+  lapply(
+    c("lt", "recurrence", "depth"),
+    function(key) readCaption(sprintf("tbl.SSM.XAF.%s", key))
+  ),
+  c("lt", "recurrence", "depth")
+)
+```
+
 {{< include /_tbl/SSM.XAF.qmd >}}

@@ -1,3 +1,13 @@
 ## <br>`r if (exists("TITLE", inherits = FALSE)) TITLE else "Selected Ground-Motion Suite<br>Pseudo-Spectral Velocity"`
 
+```{r}
+#| include: false
+CAP <- readCaption("fig.srs.ps")
+```
+
 {{< include /_fig/srs.psv.qmd >}}
+
+```{r}
+#| include: false
+rm(CAP)
+```

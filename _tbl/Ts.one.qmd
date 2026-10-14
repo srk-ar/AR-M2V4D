@@ -3,6 +3,11 @@
 #| include: true
 #| label: tbl-ts-one
 #| tbl-cap: !expr CAP |> sprintf(IDg.target |> gsub(pattern = "S", replacement = "") |> as.numeric())
+DT <- ShearTable[
+  IDg %in% IDg.target & .matchP(level, p.target),
+  .(IDm, USCS, Hs, b, s, lo, mo, a1 = an, Go, VSo, VS30, Ts)
+] |> unique()
+
 source(file.path(root, "scripts", "tbl/Ts.R"))
 TBL
 ```

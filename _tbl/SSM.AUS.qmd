@@ -3,7 +3,6 @@
 root <- normalizePath(here::here())
 SSM_MODEL <- "AUS"
 SSM_FILE <- file.path(DataRoot$hazard, "SSMTable.Rds")
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.SSM.AUS")
 ```
 
 &nbsp;

@@ -3,7 +3,7 @@
 ```{r}
 #| include: true
 #| label: tbl-kmax
-#| tbl-cap: !expr CAP |> sprintf(PSA_Units, IDg.target, IDm.target, paste(prettyNum(round(sort(TR.target), 0), big.mark = ","), collapse = ", "), SiteID.caption)
+#| tbl-cap: !expr CAP |> sprintf(PSA_Units, IDg.target, paste(prettyNum(round(sort(TR.target), 0), big.mark = ","), collapse = ", "), SiteID.caption)
 source(file.path(root, "scripts", "tbl/kmax.R"))
 TBL
 ```

@@ -1,6 +1,5 @@
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.UHS.sites")
 if (!exists("TR.target") || !length(TR.target)) TR.target <- TR.MDE
 Vs30.target <- .resolveValueTarget(Vref.gmdp, "Vs30.target", "UHS.sites.qmd")
 p.target <- "mean"

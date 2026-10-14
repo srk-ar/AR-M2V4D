@@ -1,7 +1,6 @@
 
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.PGA")
 if (!exists("Vs30.docx", inherits = FALSE)) Vs30.docx <- 800
 SiteID.caption <- .requireOneTarget(
   .currentTarget("siteID.target"), "siteID.target", "PGA caption"
@@ -17,6 +16,47 @@ ID.target <- .resolveIDTarget(
 if (!exists("TR.target") || !length(TR.target)) TR.target <- TR.gmdp
 if (!exists("PSA_Units") || !length(PSA_Units)) PSA_Units <- "cm/s2"
 root <- here::here()
+
+if (knitr::pandoc_to("docx") || knitr::is_html_output()) {
+  Vs30.table <- if (knitr::pandoc_to("docx")) Vs30.docx else Vs30.gmdp
+  P_COLS <- c("0.50", "mean", "0.84", "0.90", "0.95")
+  ITo <- unique(AEPTable$ITo)[1]
+  DT <- UHSTable[
+    .matchP(p, P_COLS) & ID %in% ID.target &
+      Vs30 %in% Vs30.table & TR %in% TR.target & siteID == SiteID.caption
+  ]
+  DT <- DT[, .SD[Tn == min(Tn), .(TR, p, PGA = SaF)], by = Vs30]
+  if (PSA_Units %in% c("cm", "cm/s2", "cm/s**2", "cm/s^2")) DT[, PGA := round(PGA * 980.665, 0)]
+  if (PSA_Units %in% c("g")) DT[, PGA := round(PGA, 3)]
+  DT <- DT[, .(PGA = max(PGA, na.rm = FALSE)), by = .(Vs30, TR, p)]
+  PGATable <- dcast(DT, Vs30 + TR ~ p, value.var = "PGA", fun.aggregate = mean)
+  P_PRESENT <- intersect(P_COLS, names(PGATable))
+  POE <- 100 * (1 - exp(-ITo / as.numeric(PGATable$TR)))
+  PGATable[, PoE := fifelse(POE > 0 & POE < 0.1, "<0.1", .formatNumber(POE, 1))]
+  PGATable[, TR := as.character(TR)]
+
+  MCE <- MCETable[
+    ID == "MCE" & .matchP(p, P_PRESENT) &
+      Vs30 %in% Vs30.table & siteID == SiteID.caption
+  ]
+  if (!nrow(MCE)) stop("PGA.qmd: no MCE rows for the selected site/Vs30.", call. = FALSE)
+  MCE <- MCE[Tn == min(Tn), .(Vs30, p, SaF)]
+  for (P in P_PRESENT) MCE[.matchP(p, P), p := P]
+  if (anyDuplicated(MCE, by = c("Vs30", "p")) ||
+      nrow(MCE) != length(P_PRESENT) * length(Vs30.table) ||
+      !setequal(MCE$Vs30, Vs30.table) || any(!is.finite(MCE$SaF))) {
+    stop("PGA.qmd: expected one finite MCE value per selected Vs30 for each statistic (",
+         paste(P_PRESENT, collapse = ", "), ").", call. = FALSE)
+  }
+  if (PSA_Units %in% c("cm", "cm/s2", "cm/s**2", "cm/s^2")) MCE[, SaF := round(SaF * 980.665, 0)]
+  if (PSA_Units %in% c("g")) MCE[, SaF := round(SaF, 3)]
+  MCE <- dcast(MCE, Vs30 ~ p, value.var = "SaF")
+  MCE[, TR := "MCE"]
+  MCE[, PoE := "\u2014"]
+  PGATable <- rbindlist(list(PGATable, MCE), use.names = TRUE, fill = FALSE)
+  setcolorder(PGATable, c("Vs30", "TR", "PoE", P_PRESENT))
+  rm(DT, MCE, P, P_COLS, P_PRESENT, POE, ITo, Vs30.table)
+}
 ```
 
 :::{.content-visible when-format='docx'}
@@ -29,6 +69,7 @@ root <- here::here()
 #| label: tbl-pga-vs30-800-docx
 #| tbl-cap: !expr CAP |> sprintf(PSA_Units, Vs30.docx, SiteID.caption)
 Vs30.target <- Vs30.docx
+AUX <- PGATable[Vs30 == Vs30.target, setdiff(names(PGATable), "Vs30"), with = FALSE]
 source(file.path(root, "scripts", "tbl/PGA.R"))
 TBL
 ```
@@ -46,6 +87,7 @@ TBL
 ```{r}
 #| include: false
 rm(ID.target, TR.target, PSA_Units, CAP, Vs30.target, SiteID.caption)
+rm(list = intersect("PGATable", ls()))
 if (exists("Target", inherits = FALSE) && length(Target)) ID.target <- Target
 rm(list = intersect("Target", ls()))
 ```

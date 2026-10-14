@@ -20,4 +20,10 @@ The TRT assignment provides the computational link between the tectonics represe
 
 @tbl-ssm-arb-inventory summarizes the 104 unique source identities in the complete local inventory. The count consolidates each `providerID` across the twelve source-model branches and reports it once; it therefore represents unique sources rather than repeated branch or site records.^[The source count is a structural inventory, not a measure of relative hazard contribution. Contribution depends on occurrence rates, branch weights, source-to-site distances, and the ground-motion distribution.]
 
+```{r}
+#| include: false
+CAP <- readCaption("tbl.SSM.ARB")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.SSM.ARB.json"), simplifyVector = TRUE)
+```
+
 {{< include /_tbl/SSM.ARB.qmd >}}

@@ -1,6 +1,5 @@
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.RMw")
 DT <- RMwTable
 if ("siteID" %in% names(DT) && exists("siteID.target", inherits = FALSE)) {
   DT <- DT[siteID %in% siteID.target]

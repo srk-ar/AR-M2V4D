@@ -266,13 +266,20 @@ formatRange <- function(x, digits = 0, unit = NULL) {
 
 # Shared core of the per-context knit blocks: optional multisite heading,
 # scoped variable swap in the knit global environment, and the child knit.
-# Multisite heading of a per-site block: emitted only when the report has
-# several sites. A chapter that wraps several blocks under one site heading
-# (a tabset per model) calls it before the wrapper.
+# Anchors remain available when callers omit redundant context headings.
 # These definitions live in setup helpers so standalone decks can use
 # selection context without running report-level SiteTable initialization.
 .reportHeading <- function(AUX, heading, level, anchor, context, kind) {
-  if (!AUX$context$multiple || is.null(heading)) return(invisible(NULL))
+  if (!AUX$context$multiple || (is.null(heading) && is.null(anchor))) {
+    return(invisible(NULL))
+  }
+  if (is.null(heading)) {
+    if (length(anchor) != 1L || is.na(anchor) || !nzchar(anchor)) {
+      stop(context, ": ", kind, " anchor must be one non-empty value.", call. = FALSE)
+    }
+    cat(sprintf("[]{#%s-%s}\n\n", anchor, AUX$context$key))
+    return(invisible(NULL))
+  }
   if (length(heading) != 1L || is.na(heading) || !nzchar(heading) ||
       length(anchor) != 1L || is.na(anchor) || !nzchar(anchor) ||
       length(level) != 1L || is.na(level) || level < 1L) {
@@ -457,24 +464,46 @@ formatRange <- function(x, digits = 0, unit = NULL) {
   )
 }
 
+.srsRuns <- function(root) {
+  FILES <- list.files(file.path(root, "gmsp"),
+                      pattern = "^match([.].+)?[.]json$")
+  OUT <- setNames(character(), character())
+  for (FILE in FILES) {
+    Contract <- .readContract(root, file.path("gmsp", sub("[.]json$", "", FILE)))
+    ID <- Contract$id
+    if (!is.character(ID) || length(ID) != 1L || is.na(ID) || !nzchar(trimws(ID))) {
+      stop(attr(Contract, "file"), ": id must be one non-empty string.", call. = FALSE)
+    }
+    if (ID %in% names(OUT)) {
+      stop(attr(Contract, "file"), ": duplicate SRS id: ", ID, call. = FALSE)
+    }
+    OUT[[ID]] <- .contractRoot(Contract, "out", root)
+  }
+  OUT[order(names(OUT))]
+}
+
 .srsAvailable <- function(root) {
-  DIR <- file.path(root, "gmsp", "match")
-  dir.exists(DIR) && length(list.dirs(DIR, recursive = FALSE)) > 0L
+  length(.srsRuns(root)) > 0L
+}
+
+.srsPath <- function(root, target = NULL) {
+  Runs <- .srsRuns(root)
+  if (is.null(target)) target <- names(Runs)
+  Target <- .requireOneTarget(target, "SRS.target", "SRS")
+  if (!Target %in% names(Runs)) {
+    stop("SRS: no match contract declares id ", Target, call. = FALSE)
+  }
+  unname(Runs[[Target]])
 }
 
 # One row per record selection the report must publish. Declared order wins:
 # params.report.selections, else the legacy per-site SRS declaration, else
-# every run found under gmsp/match (alphabetical) — leaving stale runs there
-# publishes them, by owner ruling (2026-08-15).
+# every run declared by gmsp/match*.json, ordered by id. Product locations
+# come only from path.out; historical runMatch.json retains its provenance.
 .srsSelectionTable <- function(params, root, sites = NULL,
                                context = "report SRS") {
-  DIR <- file.path(root, "gmsp", "match")
-  FILES <- if (dir.exists(DIR)) {
-    list.files(DIR, all.files = FALSE, full.names = FALSE, no.. = TRUE)
-  } else {
-    character()
-  }
-  FILES <- sort(.cleanTarget(FILES[dir.exists(file.path(DIR, FILES))]))
+  Runs <- .srsRuns(root)
+  FILES <- names(Runs)
   Config <- if (is.list(params) && is.list(params$report)) {
     params$report$selections
   } else {
@@ -535,7 +564,7 @@ formatRange <- function(x, digits = 0, unit = NULL) {
   }
   if (!nrow(DT) || anyNA(DT$SRS) || any(!nzchar(DT$SRS))) {
     stop(sprintf(
-      "%s: no record selection declared and no runs found under gmsp/match.",
+      "%s: no record selection declared and no gmsp/match*.json contracts found.",
       context
     ), call. = FALSE)
   }
@@ -552,7 +581,7 @@ formatRange <- function(x, digits = 0, unit = NULL) {
       if (length(FILES)) .targetChoices(FILES) else "none"
     ), call. = FALSE)
   }
-  DT[, PathSRS := file.path(DIR, SRS)]
+  DT[, PathSRS := unname(Runs[SRS])]
   DT[, `:=`(
     siteID.target = NA_character_,
     siteLabel.target = NA_character_
@@ -1011,6 +1040,8 @@ formatRange <- function(x, digits = 0, unit = NULL) {
   SIF = "#4DAF4A",
   SIS = "#984EA3"
 )
+# The producer's intraslab variants keep their IDs and the SIS family color.
+.TrtColors[c("SIS30", "SIS55")] <- .TrtColors[["SIS"]]
 
 .paintFillSeries <- function(plot, color) {
   if (missing(color) || length(color) != 1L || !nzchar(color)) return(plot)

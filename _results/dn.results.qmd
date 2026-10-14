@@ -1,6 +1,12 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "displacements.R"))
+BM <- if (isTRUE(subduction)) "BM17" else "BM19"
+BM.code <- paste0(intToUtf8(96), BM, intToUtf8(96))
 ```
 
-At the reference yield accelerations, the mean Newmark displacement of the `ensemble` set spans `r DisplacementsSummary$dn[order(ky), paste(sprintf("%s–%s cm at $k_y = %s$ g", .fmt(minimum, 1), .fmt(maximum, 1), .fmt(ky, 1)), collapse = " and ")]` across the MDE and MCE demand scenarios and the evaluated geometry–material combinations.
+- **Newmark Permanent Displacements.** The Newmark permanent displacement $D_n$ quantifies the deformation an earthquake accumulates in the sliding mass and is the performance measure from which the seismic coefficients are derived. The $D_n(k_y)$ curves relate, for each combination of geometry, material, and design scenario, the yield acceleration $k_y$ to the expected permanent displacement; they were computed with the `ensemble` set of `AM88`, `JB07`, `SR08`, `BT07`, and `r BM.code`, with the reference magnitude $M_w$ = `r .fmt(Mw.gmdp, 1)` and `r .fmti(NS)` realizations per demand, and are read at the fractiles $q = 1 - p_e$.
+
+```{r}
+#| include: false
+rm(list = intersect(c("BM", "BM.code"), ls()))
+```

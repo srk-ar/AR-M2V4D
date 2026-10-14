@@ -1,0 +1,17 @@
+```{r}
+#| include: false
+BM <- if (isTRUE(subduction)) "BM17" else "BM19"
+BM.code <- paste0(intToUtf8(96), BM, intToUtf8(96))
+Models <- c("AM88", "JB07", "SR08", "BT07", BM)
+Weights <- .contractValue(Contracts$newmark, "Dn_weights", required = FALSE)
+Equal <- !is.null(Weights) && all(Models %in% names(Weights)) && length(unique(unlist(Weights[Models]))) == 1L
+Demands <- knitr::combine_words(prettyNum(sort(TR.gmdp), big.mark = ","), and = " y ", oxford_comma = FALSE)
+Grid <- knitr::combine_words(.fmt(sort(DaH.gmdp), 2), and = " y ", oxford_comma = FALSE)
+```
+
+Los desplazamientos de Newmark se calcularon con el conjunto `ensemble` de cinco formulaciones: `AM88`, `JB07` y `SR08` para el bloque rígido, y `BT07` y `r BM.code` para el bloque flexible, siendo `r BM.code` la rama para proyectos con control `r if (isTRUE(subduction)) "de subducción" else "cortical"``r if (Equal) ", con pesos iguales" else ""`. Cada formulación recibió la magnitud de referencia $M_w$ = `r .fmt(Mw.gmdp, 1)` como entrada constante y la demanda de cada uno de los `r length(TR.gmdp)` períodos de retorno, `r Demands` años`r if (!is.null(MCETable) && nrow(MCETable)) ", y del MCE" else ""`, con `r .fmti(NS)` realizaciones por demanda, sobre las `r length(Hs)` alturas de talud de `r min(Hs)` a `r max(Hs)` m, las `r length(IDm)` clases de material y la grilla de desplazamiento relativo $D_a/H_s$ = `r Grid` %.
+
+```{r}
+#| include: false
+rm(list = intersect(c("BM", "BM.code", "Models", "Weights", "Equal", "Demands", "Grid"), ls()))
+```

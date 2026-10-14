@@ -31,7 +31,7 @@ NGR::knitBlock(
   path = "/_fig/GMPE.PSA.qmd",
   stem = paste(c(.SITE, "gmm-psa"), collapse = "-"),
   labels = "rewrite",
-  vars = list(siteID.target = siteID.target),
+  vars = list(CAP = readCaption("fig.GMPE.PSA"), siteID.target = siteID.target),
   root = root
 )
 ```
@@ -46,6 +46,13 @@ NGR::knitBlock(
   stem = paste(c(.SITE, "mce", "hazard-spectrum"), collapse = "-"),
   labels = "rewrite",
   vars = list(
+    CAP = readCaption("fig.MCE.envelope"),
+    TRT.text = c(
+      ASC = "shallow crustal source",
+      SCC = "stable continental source",
+      SIF = "subduction interface source",
+      SIS = "subduction intraslab source"
+    ),
     ID.target = "MCE",
     siteID.target = siteID.target,
     p.target = .P.curves,
@@ -65,6 +72,7 @@ NGR::knitBlock(
   stem = paste(c(.SITE, "mce-pga"), collapse = "-"),
   labels = "rewrite",
   vars = list(
+    CAP = readCaption("tbl.MCE.PGA"),
     ID.target = .IDS,
     siteID.target = siteID.target,
     p.target = .P.tables

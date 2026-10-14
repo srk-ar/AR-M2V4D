@@ -20,6 +20,7 @@ if (!is.null(SelectionTable)) {
   for (i in seq_len(nrow(SelectionTable))) {
     .knitSelectionBlock(
       path = "/_tbl/SRS.qmd",
+      vars = list(CAP = readCaption("tbl.SRS")),
       stem = "srs-records",
       selections = SelectionTable,
       i = i,
@@ -41,8 +42,24 @@ if (!is.null(SelectionTable)) {
 #| results: asis
 if (!is.null(SelectionTable)) {
   for (i in seq_len(nrow(SelectionTable))) {
+    if (!exists("CAPTION", inherits = FALSE)) {
+      Site <- .reportLabel(envir = list2env(
+        .reportSelection(SelectionTable, i, "srs-psa")$vars,
+        parent = knitr::knit_global()
+      ))
+      Site <- if (nzchar(Site)) {
+        sprintf(" at %s", Site)
+      } else if (exists("params", inherits = FALSE) && !is.null(params$site)) {
+        sprintf(" at %s", params$site)
+      } else {
+        ""
+      }
+      CAPTION <- sprintf(readCaption("fig.srs.psa"), Site)
+      rm(Site)
+    }
     .knitSelectionBlock(
       path = "/_fig/srs.psa.qmd",
+      vars = list(CAPTION = CAPTION),
       stem = "srs-psa",
       selections = SelectionTable,
       i = i,
@@ -52,6 +69,7 @@ if (!is.null(SelectionTable)) {
       anchor = "sec-srs_psa",
       context = "SRS chapter"
     )
+    rm(CAPTION)
   }
   rm(i)
 }

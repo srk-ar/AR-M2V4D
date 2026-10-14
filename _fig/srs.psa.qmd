@@ -1,19 +1,55 @@
 ```{r}
 #| include: false
 root <- normalizePath(here::here())
-source(file.path(root, "scripts", "fig", "srs.psa.R"))
-if (!exists("CAPTION", inherits = FALSE)) {
-  Site <- .reportLabel()
-  Site <- if (nzchar(Site)) {
-    sprintf(" at %s", Site)
-  } else if (exists("params", inherits = FALSE) && !is.null(params$site)) {
-    sprintf(" at %s", params$site)
-  } else {
-    ""
-  }
-  CAPTION <- sprintf(readCaption("fig.srs.psa"), Site)
-  rm(Site)
+# nolint start
+# SRS PSA figure context: run selection, PSW/target tables, target-band
+# legend from runMatch.json.
+if (!exists("PathSRS", inherits = FALSE)) {
+  PathSRS <- .srsPath(root, target = if (exists("SRS.target", inherits = FALSE)) SRS.target)
+  if (!exists("SRS.target", inherits = FALSE)) SRS.target <- basename(PathSRS)
 }
+if (!exists("SRS_UNITS", inherits = FALSE)) SRS_UNITS <- "mm"
+
+PSW_FILE <- file.path(PathSRS, "data", "PSW.csv")
+if (!file.exists(PSW_FILE)) {
+  stop(sprintf("SRS plot input not found: %s", PSW_FILE), call. = FALSE)
+}
+PSWTable <- data.table::fread(PSW_FILE)
+
+TARGET_FILE <- file.path(PathSRS, "match", "target.csv")
+if (exists("TargetTable", inherits = FALSE)) rm(TargetTable)
+if (file.exists(TARGET_FILE)) {
+  TargetTable <- data.table::fread(TARGET_FILE)
+}
+
+TARGET_META_FILE <- file.path(PathSRS, "metadata", "runMatch.json")
+SRS_TARGET_FILL_LEGEND <- "min–max"
+if (file.exists(TARGET_META_FILE)) {
+  SRS_TARGET_CONFIG <- jsonlite::read_json(TARGET_META_FILE, simplifyVector = TRUE)
+  SRS_TARGET_LOWER <- SRS_TARGET_CONFIG$target$envelope$lower
+  SRS_TARGET_UPPER <- SRS_TARGET_CONFIG$target$envelope$upper
+  .srsFormatProbability <- function(x) {
+    VALUE <- suppressWarnings(as.numeric(sub("^[pP]", "", as.character(x))))
+    if (!length(VALUE) || !is.finite(VALUE[[1L]])) return(NA_character_)
+    VALUE <- VALUE[[1L]]
+    if (VALUE <= 1) VALUE <- 100 * VALUE
+    format(VALUE, trim = TRUE, scientific = FALSE, nsmall = 0)
+  }
+  SRS_TARGET_LOWER_LABEL <- .srsFormatProbability(SRS_TARGET_LOWER)
+  SRS_TARGET_UPPER_LABEL <- .srsFormatProbability(SRS_TARGET_UPPER)
+  if (!is.na(SRS_TARGET_LOWER_LABEL) && !is.na(SRS_TARGET_UPPER_LABEL)) {
+    SRS_TARGET_FILL_LEGEND <- sprintf(
+      "p%s–p%s",
+      SRS_TARGET_LOWER_LABEL,
+      SRS_TARGET_UPPER_LABEL
+    )
+  }
+}
+
+ID <- "PSA"
+DIR <- "H1"
+
+# nolint end
 ```
 
 ::: {.content-visible when-format='html'}
@@ -22,7 +58,79 @@ if (!exists("CAPTION", inherits = FALSE)) {
 #| eval: !expr knitr::is_html_output()
 #| label: fig-srs-psa-h1
 #| fig-cap: !expr CAPTION
+Column <- paste(ID, DIR, sep = ".")
+if (!ID %in% c("PSA", "PSV", "SD")) {
+  stop("PS.R supports only PSA, PSV, and SD.", call. = FALSE)
+}
+if (!Column %in% names(PSWTable)) {
+  stop(sprintf("Missing PS column: %s", Column), call. = FALSE)
+}
+Units <- if (ID == "PSA") paste0(SRS_UNITS, "/s2") else if (ID == "PSV") paste0(SRS_UNITS, "/s") else SRS_UNITS
+
+SRS <- PSWTable[ID == "PSA" | Tn > 0, .(
+  ID    = RecordID,
+  X     = Tn,
+  Y     = get(Column),
+  style = "ShortDashDot",
+  size  = THIN_LINE_SIZE,
+  fill  = FALSE
+)][is.finite(X) & is.finite(Y)]
+
+MEAN <- SRS[, .(
+  ID    = "mean",
+  Y     = mean(Y, na.rm = TRUE),
+  style = "Solid",
+  size  = THICK_LINE_SIZE,
+  fill  = FALSE
+), by = X]
+
+LIST <- list(SRS, MEAN)
+if (ID == "PSA" && exists("TargetTable", inherits = TRUE)) {
+  TARGET_REQUIRED <- c("Tn", "Sa.low", "Sa.mean", "Sa.high")
+  TARGET_MISSING <- setdiff(TARGET_REQUIRED, names(TargetTable))
+  if (length(TARGET_MISSING)) {
+    stop(sprintf(
+      "Target spectrum is missing required columns: %s.",
+      paste(TARGET_MISSING, collapse = ", ")
+    ), call. = FALSE)
+  }
+  TARGET_INPUT <- TargetTable[, ..TARGET_REQUIRED]
+  if (anyDuplicated(TARGET_INPUT$Tn)) {
+    stop("Target spectrum contains duplicate periods.", call. = FALSE)
+  }
+  if (any(TARGET_INPUT$Sa.low > TARGET_INPUT$Sa.mean) ||
+      any(TARGET_INPUT$Sa.mean > TARGET_INPUT$Sa.high)) {
+    stop("Target spectrum interval does not contain its mean.", call. = FALSE)
+  }
+
+  TARGET <- TARGET_INPUT[, .(
+    ID    = "target",
+    X     = Tn,
+    Y     = Sa.mean,
+    style = "Dash",
+    size  = THICK_LINE_SIZE,
+    fill  = FALSE
+  )]
+  TARGET_BAND <- rbindlist(list(
+    TARGET_INPUT[, .(
+      ID = ".min", X = Tn, Y = Sa.low,
+      style = "Dash", size = THIN_LINE_SIZE, fill = TRUE
+    )],
+    TARGET_INPUT[, .(
+      ID = ".max", X = Tn, Y = Sa.high,
+      style = "Dash", size = THIN_LINE_SIZE, fill = TRUE
+    )]
+  ))
+  LIST <- c(LIST, list(TARGET_BAND, TARGET))
+}
+
+SRS <- rbindlist(LIST, use.names = TRUE)[order(ID, X)]
+
 source(file.path(root, "scripts", "fig", "PS.R"))
+rm(SRS, MEAN, LIST, Column, Units)
+rm(list = intersect(c(
+  "TARGET", "TARGET_BAND", "TARGET_INPUT", "TARGET_REQUIRED", "TARGET_MISSING"
+), ls()))
 PLOT
 ```
 

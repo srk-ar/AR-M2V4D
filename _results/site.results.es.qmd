@@ -1,6 +1,22 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "siteResults.R"))
+if (!exists("TBL.PGA.TR", inherits = FALSE)) stop("executive results: the caller must define TBL.PGA.TR, the id of the table it places.", call. = FALSE)
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+if (!exists("PSA_Units", inherits = FALSE)) PSA_Units <- "g"
+Units <- .executiveUnits(PSA_Units)
+SEP <- " a "
+Demand <- ExecutiveSummary$demand
+Conditions <- sort(unique(Demand$Vs30))
+PGA.MDE <- .executiveRange(Demand$SaF, SEP, function(v) .fmtSa(v, PSA_Units))
+Across <- if (uniqueN(Demand$siteID) > 1L) paste0("entre las condiciones de sitio de ", knitr::combine_words(SiteTable$label, and = " y ", oxford_comma = FALSE)) else "entre las condiciones de sitio"
+Envelopes <- if (!is.null(MCETable) && nrow(MCETable)) " junto con las envolventes determinísticas MCE y MCE (84 %)" else ""
 ```
 
-Para las `r .fmti(SiteSummary$scope$nVs30)` condiciones de sitio evaluadas y `r .fmti(SiteSummary$scope$nTR)` períodos de retorno entre `r .fmti(min(SiteSummary$returnPeriods))` y `r .fmti(max(SiteSummary$returnPeriods))` años, la PGA media de diseño del MDE ($T_R=`r .fmti(SiteSummary$returnPeriodMDE)`$ años) varía entre `r .fmtSa(min(SiteSummary$pgaMDE$SaF), PSA_Units)` y `r .fmtSa(max(SiteSummary$pgaMDE$SaF), PSA_Units)` `r PSA_Units` según la condición de sitio ($V_{S30}$ de `r .fmti(min(SiteSummary$pgaMDE$Vs30))` a `r .fmti(max(SiteSummary$pgaMDE$Vs30))` m/s). Estos valores corresponden a la mezcla de las dos estimaciones de la demanda: la evaluación directa del árbol lógico en el $V_{S30}$ objetivo y la transformación ST20 de la evaluación en la condición de referencia de 760 m/s.
+- **Respuesta de sitio.** Los sismos de diseño se definen para las condiciones $V_{S30}$ evaluadas en cada sitio a partir de la demanda espectral en superficie. Las demandas de diseño se evaluaron para `r .fmti(length(Conditions))` condiciones de sitio, con $V_{S30}$ entre `r .fmti(min(Conditions))` y `r .fmti(max(Conditions))` m/s, combinando la evaluación directa del árbol lógico en cada condición con la transformación ST20 de la demanda en la condición de referencia de 760 m/s, condicionada al PGA de la misma realización. La PGA media del MDE es de `r PGA.MDE` `r Units` `r Across`. Estos resultados representan respuestas medias ergódicas; un perfil estratigráfico específico requiere un análisis de respuesta de sitio independiente. La Tabla [-@`r TBL.PGA.TR`] reúne, para cada sitio y condición de sitio, la PGA probabilística`r Envelopes`.
+
+```{r}
+#| include: false
+rm(list = intersect(c("SEP", "Units", "Demand", "Conditions", "PGA.MDE", "Across", "Envelopes"), ls()))
+```

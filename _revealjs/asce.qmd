@@ -4,6 +4,11 @@
 
 ### Design Parameters
 
+```{r}
+#| include: false
+CAP <- readCaption("tbl.MCER")
+```
+
 {{< include /_tbl/MCER.qmd >}}
 
 ### Design Spectra
@@ -15,7 +20,7 @@ NGR::knitBlock(
   path = "/_fig/MCE.MDE.qmd",
   stem = .composeTargetStem("demands"),
   labels = "rewrite",
-  vars = list(),
+  vars = list(CAP = readCaption("fig.MCE.MDE")),
   root = root
 )
 ```

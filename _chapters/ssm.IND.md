@@ -19,4 +19,15 @@ The IND model contains no fault sources: the inventory consists exclusively of t
 
 @tbl-ssm-ind-inventory, @tbl-ssm-ind-lt, @tbl-ssm-ind-recurrence, and @tbl-ssm-ind-depth summarise, respectively, the source census by TRT and source type, the structure of the three logic-tree branch sets, the recurrence and maximum-magnitude parameters by TRT — including the epistemic bounds derived from the logic-tree perturbation — and the seismogenic depth architecture by TRT.
 
+```{r}
+#| include: false
+CAP <- stats::setNames(
+  lapply(
+    c("inventory", "lt", "recurrence", "depth"),
+    function(key) readCaption(sprintf("tbl.SSM.IND.%s", key))
+  ),
+  c("inventory", "lt", "recurrence", "depth")
+)
+```
+
 {{< include /_tbl/SSM.IND.qmd >}}

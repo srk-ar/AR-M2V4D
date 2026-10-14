@@ -47,3 +47,6 @@ html/** filter=lfs diff=lfs merge=lfs -text
 # Source that must stay out of LFS despite living under an LFS path.
 # Keep last: later rules win in .gitattributes.
 oq/data/data.R text eol=lf -filter -diff -merge
+data/mapper/*.py text eol=lf -filter -diff -merge
+data/mapper/*.csv text eol=lf -filter -diff -merge
+data/mapper/.gitignore text eol=lf -filter -diff -merge

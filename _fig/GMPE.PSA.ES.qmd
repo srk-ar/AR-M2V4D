@@ -1,6 +1,0 @@
-```{r}
-#| include: false
-CAP <- readCaption("fig.GMPE.PSA.ES")
-```
-
-{{< include /_fig/GMPE.PSA.qmd >}}

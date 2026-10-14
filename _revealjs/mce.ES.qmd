@@ -28,10 +28,10 @@ Vs30.target <- 760
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/GMPE.PSA.ES.qmd",
+  path = "/_fig/GMPE.PSA.qmd",
   stem = paste(c(.SITE, "gmm-psa"), collapse = "-"),
   labels = "rewrite",
-  vars = list(siteID.target = siteID.target),
+  vars = list(CAP = readCaption("fig.GMPE.PSA.ES"), siteID.target = siteID.target),
   root = root
 )
 ```
@@ -42,10 +42,17 @@ NGR::knitBlock(
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/MCE.UHS.ES.qmd",
+  path = "/_fig/MCE.UHS.qmd",
   stem = paste(c(.SITE, "mce", "hazard-spectrum"), collapse = "-"),
   labels = "rewrite",
   vars = list(
+    CAP = readCaption("fig.MCE.envelope.ES"),
+    TRT.text = c(
+      ASC = "fuente de corteza superficial activa",
+      SCC = "fuente de corteza continental estable",
+      SIF = "fuente de subducción interplaca",
+      SIS = "fuente de subducción intraplaca"
+    ),
     ID.target = "MCE",
     siteID.target = siteID.target,
     p.target = .P.curves,
@@ -61,10 +68,11 @@ NGR::knitBlock(
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_tbl/MCE.PGA.ES.qmd",
+  path = "/_tbl/MCE.PGA.qmd",
   stem = paste(c(.SITE, "mce-pga"), collapse = "-"),
   labels = "rewrite",
   vars = list(
+    CAP = readCaption("tbl.MCE.PGA.ES"),
     ID.target = .IDS,
     siteID.target = siteID.target,
     p.target = .P.tables

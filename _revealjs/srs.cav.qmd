@@ -1,3 +1,13 @@
 ## <br>`r if (exists("TITLE", inherits = FALSE)) TITLE else "Selected Ground-Motion Suite<br>Cumulative Absolute Velocity"`
 
+```{r}
+#| include: false
+CAP <- readCaption("fig.srs.im")
+```
+
 {{< include /_fig/srs.cav.qmd >}}
+
+```{r}
+#| include: false
+rm(CAP)
+```

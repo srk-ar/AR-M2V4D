@@ -2,21 +2,6 @@
 ```{r}
 #| include: true
 Stage.target <- "Closure"
-if (!exists("Stage.label", inherits = FALSE)) {
-  Stage.label <- if (length(Standard.target) != 1L) NULL else switch(
-    Standard.target,
-    ANCOLD = "SEE",
-    CDA = "Closure and Passive Care",
-    Stage.target
-  )
-}
-if (is.null(Stage.label)) Stage.label <- "Closure"
-if (!exists("CAP", inherits = FALSE)) {
-  CAP <- paste0(
-    if (length(Standard.target) == 1L) paste0(Standard.target, ". ") else "", Stage.label, ". ",
-    readCaption("fig.DEQ.closure")
-  )
-}
 ID.target <- .resolveIDTarget(
   DEQTable,
   "DEQ.closure figure",
@@ -136,5 +121,5 @@ PLOT
 
 ```{r}
 #| include: false
-rm(ID.target, Stage.target, Stage.label, Vs30.target, Sa.log, Tn.log, CAP, SiteID.caption)
+rm(ID.target, Stage.target, Vs30.target, Sa.log, Tn.log, CAP, SiteID.caption)
 ```

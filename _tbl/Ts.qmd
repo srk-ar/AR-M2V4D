@@ -3,7 +3,6 @@
 root <- here::here()
 if (!exists("TR.target") || !length(TR.target))   TR.target   <- TR.gmdp[6]
 if (!exists("IDg.target") || !length(IDg.target)) IDg.target  <- IDg.gmdp[4]
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.Ts")
 ```
 
 
@@ -17,6 +16,11 @@ if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.Ts")
 #| label: tbl-idg-0
 #| tbl-cap: !expr CAP |> sprintf(IDg.target|> gsub(pattern="S",replacement="") |> as.numeric())
 p.target <- c("mean")
+DT <- ShearTable[
+  IDg %in% IDg.target & .matchP(level, p.target),
+  .(IDm, USCS, Hs, b, s, lo, mo, a1 = an, Go, VSo, VS30, Ts)
+] |> unique()
+
 source(file.path(root,"scripts","tbl/Ts.R"))
 TBL
 ```

@@ -1,14 +1,10 @@
-Los modelos de desplazamiento de bloque flexible evalúan la demanda espectral en períodos proporcionales al período fundamental de la masa potencialmente deslizante. Para cada combinación de geometría y material, $T_s$ se obtiene a partir de la geometría del talud y de la variación del módulo de corte de pequeña deformación con la profundidad, representada por $G_o$, $m_o$ y $V_S^o$. Los valores medios de $T_s$ y $V_{S30}$ caracterizan la respuesta dinámica empleada en los modelos de desplazamiento del capítulo dedicado a los desplazamientos permanentes.
-
-El período fundamental de la masa potencialmente deslizante se representa mediante el primer modo de una viga de corte inhomogénea truncada [-@DakoulasGazetas1985Inhomogeneous]:
+Los modelos de desplazamiento de bloque flexible evalúan la demanda espectral en períodos proporcionales al período fundamental de la masa potencialmente deslizante, de modo que cada combinación de geometría y material necesita $T_s$, que se obtiene a partir de la geometría del talud y de la variación del módulo de corte de pequeña deformación con la profundidad, representada por $G_o$, $m_o$ y $V_S^o$; los valores medios de $T_s$ y $V_{S30}$ caracterizan la respuesta dinámica empleada en los modelos de desplazamiento del capítulo dedicado a los desplazamientos permanentes. El período fundamental de la masa potencialmente deslizante se representa mediante el primer modo de una viga de corte inhomogénea truncada [-@DakoulasGazetas1985Inhomogeneous]:
 
 $$
 T_s=\frac{4\pi H_s}{a_1(2-m_o)V_S^o}.
 $${#eq-slope-period}
 
-En la expresión [-@eq-slope-period], $H_s$ es la altura del talud; $V_S^o$ es la velocidad de onda de corte correspondiente al módulo basal $G_o$; $m_o$ es el exponente del perfil de rigidez; y $a_1$ es la primera raíz de la ecuación característica. El valor de $a_1$ depende conjuntamente de $m_o$ y de la razón de truncamiento $\lambda_o$.
-
-La razón de truncamiento $\lambda_o$ puede expresarse, por semejanza geométrica, según la expresión [-@eq-slope-truncation], donde $b$ es el ancho de la berma y $b_{\max}$ es el ancho de la base.
+En la expresión [-@eq-slope-period], $H_s$ es la altura del talud; $V_S^o$ es la velocidad de onda de corte correspondiente al módulo basal $G_o$; $m_o$ es el exponente del perfil de rigidez; y $a_1$ es la primera raíz de la ecuación característica. El valor de $a_1$ depende conjuntamente de $m_o$ y de la razón de truncamiento $\lambda_o$, que puede expresarse, por semejanza geométrica, según la expresión [-@eq-slope-truncation], donde $b$ es el ancho de la berma y $b_{\max}$ es el ancho de la base.
 
 $$
 \lambda_o=\frac{b}{b_{\max}}.
@@ -36,7 +32,7 @@ $$
 G(z)=G_o\left(\frac{z}{H_s}\right)^{m_o}.
 $${#eq-slope-profile}
 
-La clasificación USCS de la capa $k$ determina su familia constitutiva y las $J^{(k)}$ formulaciones tabuladas de rigidez [-@Ishihara1996]. El módulo adoptado para la capa corresponde a la media aritmética definida por la expresión [-@eq-slope-modulus], donde $A^{(j)}$ y $n^{(j)}$ son parámetros tabulados, $F_e^{(k,j)}$ es el factor de relación de vacíos, $m_1^{(k)}$ es el exponente de sobreconsolidación, $p_m^{(k)}$ es la tensión normal octaédrica efectiva promediada en el espesor de la capa y $p_{\mathrm{ref}}=100$ kPa es la presión de normalización.
+Los módulos de capa provienen de la clasificación del suelo: la clasificación USCS de la capa $k$ determina su familia constitutiva y las $J^{(k)}$ formulaciones tabuladas de rigidez [-@Ishihara1996], y el módulo adoptado para la capa corresponde a la media aritmética definida por la expresión [-@eq-slope-modulus], donde $A^{(j)}$ y $n^{(j)}$ son parámetros tabulados, $F_e^{(k,j)}$ es el factor de relación de vacíos, $m_1^{(k)}$ es el exponente de sobreconsolidación, $p_m^{(k)}$ es la tensión normal octaédrica efectiva promediada en el espesor de la capa y $p_{\mathrm{ref}}=100$ kPa es la presión de normalización.
 
 $$
 G_m^{(k)}=\frac{1}{J^{(k)}}\sum_{j=1}^{J^{(k)}}
@@ -54,9 +50,7 @@ p_m^{(k)}=\frac{1+2K_0}{3}
 +\frac{\gamma^{(k)}h^{(k)}}{2}\right).
 $${#eq-slope-mean-pressure}
 
-La razón de sobreconsolidación $\mathrm{OCR}^{(k)}=\max[(p_m^{(k)}+\mathrm{POP})/p_m^{(k)},1]$, donde $\mathrm{POP}$ es la presión de preconsolidación, sólo modifica el módulo de los suelos finos: en ellos $m_1^{(k)}=f_{\mathrm{IP}}(\mathrm{IP}^{(k)})$, mientras que en arenas y gravas $m_1^{(k)}=0$ y $[\mathrm{OCR}^{(k)}]^{m_1^{(k)}}=1$. La relación de vacíos $e_0^{(k)}$ interviene en las tres familias mediante $F_e^{(k,j)}$.
-
-En las formulaciones tabuladas [-@Ishihara1996], el factor $F_e^{(k,j)}$ se define mediante [-@eq-slope-void-factor] a partir de la relación de vacíos $e_0^{(k)}$ y del parámetro $C_e^{(j)}$; $j_{\mathrm{SS75}}$ identifica la formulación de Shibata y Soelarno [-@ShibataSoelarno1975].
+La razón de sobreconsolidación $\mathrm{OCR}^{(k)}=\max[(p_m^{(k)}+\mathrm{POP})/p_m^{(k)},1]$, donde $\mathrm{POP}$ es la presión de preconsolidación, sólo modifica el módulo de los suelos finos: en ellos $m_1^{(k)}=f_{\mathrm{IP}}(\mathrm{IP}^{(k)})$, mientras que en arenas y gravas $m_1^{(k)}=0$ y $[\mathrm{OCR}^{(k)}]^{m_1^{(k)}}=1$. La relación de vacíos $e_0^{(k)}$ interviene en las tres familias mediante $F_e^{(k,j)}$, que en las formulaciones tabuladas [-@Ishihara1996] se define mediante [-@eq-slope-void-factor] a partir de la relación de vacíos $e_0^{(k)}$ y del parámetro $C_e^{(j)}$; $j_{\mathrm{SS75}}$ identifica la formulación de Shibata y Soelarno [-@ShibataSoelarno1975].
 
 $$
 F_e^{(k,j)}=
@@ -72,11 +66,16 @@ $$
 V_S^{(k)}=\left(\frac{gG_m^{(k)}}{\gamma_{\mathrm{sat}}^{(k)}}\right)^{1/2}.
 $${#eq-slope-layer-velocity}
 
-{{< include /_tbl/SiteGo.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.SiteGo.ES")
+SiteGo.headers <- c("Formulación", "Familia", "Material de referencia", "Autor")
+SiteGo.groups <- c(Sands = "Arenas", Fines = "Finos", Gravels = "Gravas")
+```
 
-Para cada combinación de geometría y material se generan $N$ realizaciones sintéticas del perfil estratificado. Los valores de $G_o$, $m_o$, $V_S^o$ y $V_{S30}$ se resumen separadamente mediante la media y los fractiles marginales. Para la media y cada fractil marginal, $a_1$ y $T_s$ se evalúan con los valores correspondientes de $m_o$ y $V_S^o$; las estimaciones basadas en la media proporcionan las propiedades dinámicas empleadas por los modelos de desplazamiento.
+{{< include /_tbl/SiteGo.qmd >}}
 
-El valor de $V_{S30}$ se obtiene por tiempo de viaje según la expresión [-@eq-slope-vs30], donde $h_{30}^{(i)}$ es el espesor de la capa $i$ comprendido en los primeros 30 m, $V_S^{(i)}$ es su velocidad de onda de corte y $V_{\mathrm{ref}}$ es la velocidad asignada al espesor complementario cuando $H_s<30$ m.
+Para cada combinación de geometría y material se generan $N$ realizaciones sintéticas del perfil estratificado, y los valores de $G_o$, $m_o$, $V_S^o$ y $V_{S30}$ se resumen separadamente mediante la media y los fractiles marginales; para la media y cada fractil marginal, $a_1$ y $T_s$ se evalúan con los valores correspondientes de $m_o$ y $V_S^o$, y las estimaciones basadas en la media proporcionan las propiedades dinámicas empleadas por los modelos de desplazamiento. El valor de $V_{S30}$ se obtiene por tiempo de viaje según la expresión [-@eq-slope-vs30], donde $h_{30}^{(i)}$ es el espesor de la capa $i$ comprendido en los primeros 30 m, $V_S^{(i)}$ es su velocidad de onda de corte y $V_{\mathrm{ref}}$ es la velocidad asignada al espesor complementario cuando $H_s<30$ m.
 
 $$
 V_{S30}=\frac{30}{

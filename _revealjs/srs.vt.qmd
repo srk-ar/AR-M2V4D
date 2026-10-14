@@ -1,3 +1,13 @@
 ## <br>`r if (exists("TITLE", inherits = FALSE)) TITLE else "Selected Ground-Motion Suite<br>Velocity Time Histories"`
 
+```{r}
+#| include: false
+CAP <- readCaption("fig.srs.ts")
+```
+
 {{< include /_fig/srs.vt.qmd >}}
+
+```{r}
+#| include: false
+rm(CAP)
+```

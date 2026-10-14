@@ -7,9 +7,19 @@
 
 ### $(M_w,R)$ Heatmap
 
+```{r}
+#| include: false
+CAP <- readCaption("fig.RMw2D_cell")
+```
+
 {{< include /_fig/RMw2D.qmd >}}
 
 ### $(M_w,R)$ Tables
+
+```{r}
+#| include: false
+CAP <- readCaption("tbl.RMw")
+```
 
 {{< include /_tbl/RMw.qmd >}}
 

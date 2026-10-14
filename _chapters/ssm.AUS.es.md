@@ -8,4 +8,9 @@ Las fuentes de área representan zonas de fondo, regionales y del margen de plac
 
 La @tbl-ssm-aus-inventory resume las identidades de fuente presentes en el inventario local completo. El conteo consolida un mismo identificador del proveedor cuando aparece en varias ramas; por ello representa fuentes únicas y no la suma de objetos repetidos a través de las 16 realizaciones.^[El número de fuentes no representa su contribución relativa a la amenaza. Esa contribución depende de las tasas de ocurrencia, los pesos de rama, las distancias al sitio y la distribución del movimiento del suelo.] La categoría ASC/SCC identifica fuentes cuya asignación cambia entre ambos TRT según la rama seleccionada.
 
-{{< include /_tbl/SSM.AUS.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.SSM.AUS.ES")
+```
+
+{{< include /_tbl/SSM.AUS.qmd >}}

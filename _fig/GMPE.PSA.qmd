@@ -8,7 +8,6 @@ Scenarios <- ScenarioTable[siteID %in% SiteID.caption, ID]
 if (!length(Scenarios)) stop("GMPE.PSA: no scenarios for the selected site.", call. = FALSE)
 p.target <- c("0.10", "0.16", "0.50", "0.84", "0.90")
 Vs30.target <- 760
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.GMPE.PSA")
 ```
 
 :::: {.content-visible when-format='html'}

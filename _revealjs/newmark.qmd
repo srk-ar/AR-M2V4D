@@ -8,6 +8,9 @@ NGR::knitBlock(
   stem = .composeTargetStem("dn-curves"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Rigid Models", flexible = "Flexible Models", ensemble = "Ensemble Models"),
+    CAP = readCaption("fig.Dn"),
+    CAP.MCE = readCaption("fig.Dn.MCE"),
     p.target = "mean"
   ),
   root = root

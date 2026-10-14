@@ -8,9 +8,30 @@
 
 ### Spectral Match
 
+```{r}
+#| include: false
+if (!exists("CAPTION", inherits = FALSE)) {
+  Site <- .reportLabel()
+  Site <- if (nzchar(Site)) {
+    sprintf(" at %s", Site)
+  } else if (exists("params", inherits = FALSE) && !is.null(params$site)) {
+    sprintf(" at %s", params$site)
+  } else {
+    ""
+  }
+  CAPTION <- sprintf(readCaption("fig.srs.psa"), Site)
+  rm(Site)
+}
+```
+
 {{< include /_fig/srs.psa.qmd >}}
 
 ### Suite
+
+```{r}
+#| include: false
+CAP <- readCaption("tbl.SRS")
+```
 
 {{< include /_tbl/SRS.qmd >}}
 

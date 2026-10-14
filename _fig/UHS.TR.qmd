@@ -25,7 +25,6 @@ if (!length(TR.target)) {
 rm(AUX)
 Sa.log <- TRUE
 fill.target <- FALSE
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.UHS.TR")
 CAP <- CAP |>
   sprintf(
     Vs30.target,

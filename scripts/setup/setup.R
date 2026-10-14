@@ -45,6 +45,8 @@ ID_max <- "max"
 source(file.path(root, "scripts", "setup", "contracts.R"))
 ID.gmdp    <- .contractValue(Contracts$newmark, "ID.gmdp")
 IDm        <- .contractValue(Contracts$newmark, "IDm")
+Mw.gmdp    <- .contractValue(Contracts$newmark, "Mw.gmdp")
+NS         <- .contractValue(Contracts$newmark, "NS")
 TR.gmdp    <- .contractValue(Contracts$newmark, "TR.gmdp")
 Vref.gmdp  <- .contractValue(Contracts$newmark, "Vref.gmdp")
 Hs         <- .contractValue(Contracts$newmark, "Hs")

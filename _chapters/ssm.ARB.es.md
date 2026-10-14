@@ -20,4 +20,10 @@ La asignación TRT proporciona el enlace computacional entre la tectónica repre
 
 La @tbl-ssm-arb-inventory resume las 104 identidades de fuente únicas del inventario local completo. El conteo consolida cada `providerID` entre las doce ramas del modelo de fuentes y lo presenta una sola vez; por ello representa fuentes únicas y no registros repetidos por rama o sitio.^[El número de fuentes constituye un inventario estructural y no una medida de contribución relativa a la amenaza. La contribución depende de las tasas de ocurrencia, los pesos de rama, las distancias entre fuente y sitio y la distribución del movimiento del suelo.]
 
-{{< include /_tbl/SSM.ARB.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.SSM.ARB.ES")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.SSM.ARB.ES.json"), simplifyVector = TRUE)
+```
+
+{{< include /_tbl/SSM.ARB.qmd >}}

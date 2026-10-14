@@ -21,20 +21,20 @@ Standard.target <- c("GISTM", "CDA", "ANCOLD")
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/PGA.ES.qmd",
+    path = "/_tbl/PGA.qmd",
     stem = "site-pga",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PGA.ES"), ID.target = ID.gmdp),
     root = root,
     context = "PGA de sitio"
   )
   .knitReportBlock(
-    path = "/_tbl/PGA.TR.ES.qmd",
+    path = "/_tbl/PGA.TR.qmd",
     stem = "site-pga-tr",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PGA.TR.ES"), ID.target = ID.gmdp),
     root = root,
     context = "PGA de sitio por período de retorno y condición"
   )
@@ -47,11 +47,11 @@ rm(i)
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/PSA.ES.qmd",
+    path = "/_tbl/PSA.qmd",
     stem = "site-psa",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PSA.ES"), ID.target = ID.gmdp),
     root = root,
     context = "PSA de sitio"
   )
@@ -64,11 +64,11 @@ rm(i)
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/AF.ES.qmd",
+    path = "/_tbl/AF.qmd",
     stem = "site-af",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.AF.ES"), ID.target = ID.gmdp),
     root = root,
     context = "AF de sitio"
   )
@@ -97,20 +97,21 @@ if (nrow(SiteTable)) {
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/DEQ.operation.ES.qmd",
+    path = "/_tbl/DEQ.operation.qmd",
     stem = "criteria-obe-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.operation.ES"), ID.target = ID.gmdp),
     root = root,
     context = "tabla de criterios operacionales de relaves"
   )
   .knitReportBlock(
-    path = "/_tbl/DEQ.PGA.ES.qmd",
+    path = "/_tbl/DEQ.PGA.qmd",
     stem = "criteria-obe-pga",
     sites = SiteTable,
     i = i,
     vars = list(
+      CAP = readCaption("tbl.DEQ.PGA.ES"),
       ID.target = ID.gmdp,
       Standard.target = "GISTM",
       Stage.target = "Operation"
@@ -127,11 +128,11 @@ rm(i)
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/DEQ.closure.ES.qmd",
+    path = "/_tbl/DEQ.closure.qmd",
     stem = "criteria-sse-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.closure.ES"), ID.target = ID.gmdp),
     root = root,
     context = "tabla de criterios de cierre de relaves"
   )
@@ -144,11 +145,11 @@ rm(i)
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/DEQ.postclosure.ES.qmd",
+    path = "/_tbl/DEQ.postclosure.qmd",
     stem = "criteria-pce-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.postclosure.ES"), ID.target = ID.gmdp),
     root = root,
     context = "tabla de criterios post-cierre de relaves"
   )
@@ -175,11 +176,11 @@ if (nrow(SiteTable)) {
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/MCER.ES.qmd",
+    path = "/_tbl/MCER.qmd",
     stem = "structures-criteria",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.MCER.ES"), ID.target = ID.gmdp),
     root = root,
     context = "tabla de criterios de estructuras"
   )

@@ -11,6 +11,12 @@ source(file.path(root, "scripts", "setup", "report.R"))
 
 {{< include /_chapters/dsha.uncertainty.es.md >}}
 
+```{r}
+#| echo: false
+#| results: asis
+.localChapter("dsha.scenarios.es.md", root, heading = "Definición de escenarios")
+```
+
 ## Escenarios determinísticos {#sec-mce_results}
 
 {{< include /_chapters/dsha.results.es.md >}}
@@ -20,47 +26,47 @@ source(file.path(root, "scripts", "setup", "report.R"))
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_fig/GMPE.PSA.ES.qmd",
+    path = "/_fig/GMPE.PSA.qmd",
     stem = "dsha-gmm",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = NULL),
+    vars = list(CAP = readCaption("fig.GMPE.PSA.ES"), ID.target = NULL),
     root = root,
     context = "espectros GMM por escenario"
   )
   .knitReportBlock(
-    path = "/_tbl/Scenarios.ES.qmd",
+    path = "/_tbl/Scenarios.qmd",
     stem = "dsha-scenarios",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.Scenarios.ES"), ID.target = ID.gmdp),
     root = root,
     context = "parámetros declarados de escenarios"
   )
   .knitReportBlock(
-    path = "/_fig/UHS.compare.ES.qmd",
+    path = "/_fig/UHS.compare.qmd",
     stem = "dsha-compare",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.UHS.compare.ES"), ID.target = ID.gmdp),
     root = root,
     context = "comparación DSHA"
   )
   .knitReportBlock(
-    path = "/_tbl/DSHA.ES.qmd",
+    path = "/_tbl/DSHA.qmd",
     stem = "dsha-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp, Vs30.target = 760),
+    vars = list(CAP = readCaption("tbl.DSHA.ES"), ID.target = ID.gmdp, Vs30.target = 760),
     root = root,
     context = "tabla comparativa DSHA"
   )
   .knitReportBlock(
-    path = "/_tbl/Scenarios.PGA.ES.qmd",
+    path = "/_tbl/Scenarios.PGA.qmd",
     stem = "dsha-scenarios-pga",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.Scenarios.PGA.ES"), ID.target = ID.gmdp),
     root = root,
     context = "PGA de escenarios por condición"
   )

@@ -14,6 +14,7 @@ NGR::knitBlock(
   stem = paste0(.STEM, "uhs-compare"),
   labels = "rewrite",
   vars = list(
+    CAP = readCaption("fig.UHS.compare"),
     siteID.target = .SITE,
     Vs30.target = 760,
     p.target = "mean"

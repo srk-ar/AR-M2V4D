@@ -10,7 +10,6 @@ if (!file.exists(SSM_FILE)) {
 }
 
 DATA <- readRDS(SSM_FILE)
-Meta <- attr(DATA, "oqt", exact = TRUE)
 Schema <- c(
   "ID", "siteID", "providerID", "sourceName", "sourceType", "trt",
   "mfdType", "aValue", "bValue", "minMag", "maxMag",
@@ -32,37 +31,6 @@ if (!inherits(DATA, "data.frame") || !identical(names(DATA), Schema)) {
 if (!identical(vapply(DATA, class, character(1L)), Classes)) {
   stop("SSM.AUS.R: SSMTable.Rds has incompatible column types.", call. = FALSE)
 }
-RequiredMeta <- c(
-  "producer", "oqt", "written", "units", "keyRule", "selection", "engine",
-  "inputs"
-)
-if (!is.list(Meta) || any(!RequiredMeta %in% names(Meta))) {
-  stop("SSM.AUS.R: SSMTable.Rds lacks required OQT provenance.", call. = FALSE)
-}
-if (!identical(Meta$producer, "ssm / runSSM.R") ||
-    length(Meta$oqt) != 1L || !grepl("^[0-9a-f]{7,40}$", Meta$oqt) ||
-    length(Meta$written) != 1L || !nzchar(Meta$written) ||
-    length(Meta$engine) != 1L || !grepl("oq-3[.]26[.]2", Meta$engine) ||
-    !identical(
-      Meta$keyRule,
-      paste0(
-        "providerID normalized as in runAEPS.R so SSMTable joins AEPSTable ",
-        "on (ID, siteID, providerID); SRMwTable keeps the raw sourceID and ",
-        "needs consumer-side normalization"
-      )
-    ) ||
-    !identical(
-      Meta$selection,
-      "complete: every source in the model, no distance cut and no ranking truncation"
-    )) {
-  stop("SSM.AUS.R: SSMTable.Rds provenance is incomplete or incompatible.", call. = FALSE)
-}
-Units <- c(minMag = "Mw", maxMag = "Mw", usd = "km", lsd = "km")
-if (is.null(Meta$units) ||
-    !identical(unname(Meta$units[names(Units)]), unname(Units))) {
-  stop("SSM.AUS.R: SSMTable.Rds magnitude or depth units are incompatible.", call. = FALSE)
-}
-
 DT <- data.table::as.data.table(DATA)
 IdentityCols <- c("ID", "siteID", "providerID")
 if (!nrow(DT) ||
@@ -82,10 +50,8 @@ if (any(DT$providerID != NormalizedProvider)) {
   stop("SSM.AUS.R: providerID is not normalized as declared.", call. = FALSE)
 }
 SiteCount <- data.table::uniqueN(DT$siteID)
-ExpectedInputs <- c("ssmLT_AUS.xml", sprintf("%d sites", SiteCount))
-if (!identical(as.character(Meta$inputs), ExpectedInputs)) {
-  stop("SSM.AUS.R: inventory provenance does not identify the AUS source model.", call. = FALSE)
-}
+source(file.path(root, "scripts", "tbl", "ssmProvenance.R"), local = TRUE)
+.validateSSMProvenance(DT, file = SSM_FILE, model = SSM_MODEL)
 if (DT[, anyDuplicated(.SD), .SDcols = c("ID", "siteID", "providerID")]) {
   stop("SSM.AUS.R: inventory source identity is invalid.", call. = FALSE)
 }
@@ -169,8 +135,8 @@ TBL <- flextable::align(
 )
 
 rm(
-  AUX, Classes, DATA, DT, Expected, ExpectedBranches, ExpectedInputs,
-  IdentityCols, IntrinsicCols, Meta, NormalizedProvider, Observed,
-  ObservedBranches, RequiredMeta, Schema, SiteCount, SourceCols, Units
+  AUX, Classes, DATA, DT, Expected, ExpectedBranches,
+  IdentityCols, IntrinsicCols, NormalizedProvider, Observed,
+  ObservedBranches, Schema, SiteCount, SourceCols
 )
 # nolint end

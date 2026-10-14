@@ -1,6 +1,19 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "structures.R"))
+if (!exists("TBL.MCER", inherits = FALSE)) stop("executive results: the caller must define TBL.MCER, the id of the table it places.", call. = FALSE)
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+SEP <- " a "
+Structures <- ExecutiveSummary$structures
+SDS <- .executiveRange(Structures$SDS, SEP, function(v) .fmt(v, 2))
+SD1 <- .executiveRange(Structures$SD1, SEP, function(v) .fmt(v, 2))
+Across <- if (uniqueN(Structures$siteID) > 1L) " entre los sitios" else ""
 ```
 
-Para el sitio `r siteID.target` se obtuvieron los espectros MCER y los parámetros de diseño para las `r uniqueN(StructuresSummary$parameters$Vs30)` condiciones de sitio evaluadas ($V_{S30}$ de `r round(min(StructuresSummary$parameters$Vs30))` a `r round(max(StructuresSummary$parameters$Vs30))` m/s): $S_{DS}$ entre `r .fmt(min(StructuresSummary$parameters$SDS), 3)` y `r .fmt(max(StructuresSummary$parameters$SDS), 3)` g y $S_{D1}$ entre `r .fmt(min(StructuresSummary$parameters$SD1), 3)` y `r .fmt(max(StructuresSummary$parameters$SD1), 3)` g. La tabla siguiente resume los parámetros por condición de sitio.
+- **Criterios de diseño para estructuras convencionales.** Los criterios sísmicos de las estructuras convencionales se establecieron mediante el procedimiento específico del sitio de ASCE/SEI 7-22, a partir de la amenaza y la respuesta de sitio, en el que cada ordenada MCER corresponde al menor valor entre la componente probabilística ajustada por riesgo y la componente determinística prescrita por la norma [@ASCE722]. Se obtuvieron los espectros MCER y los parámetros de diseño para las `r .fmti(uniqueN(Structures$Vs30))` condiciones de sitio evaluadas: $S_{DS}$ varía de `r SDS` g y $S_{D1}$ de `r SD1` g`r Across`. La Tabla [-@`r TBL.MCER`] reúne los parámetros de diseño por sitio y condición de sitio.
+
+```{r}
+#| include: false
+rm(list = intersect(c("SEP", "Structures", "SDS", "SD1", "Across"), ls()))
+```

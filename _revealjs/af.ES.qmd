@@ -14,9 +14,11 @@ ID.target <- .resolveIDTarget(
   base = TRUE
 )
 .ID.BASE <- ID.target
+CAP <- readCaption("fig.AF.ES")
+CAP.MCE <- readCaption("fig.AF.MCE.ES")
 ```
 
-{{< include /_fig/AF.ES.qmd >}}
+{{< include /_fig/AF.qmd >}}
 
 ### Tabla de AF
 
@@ -30,9 +32,10 @@ ID.target <- .resolveIDTarget(
   target = .ID.BASE,
   siteID = .currentTarget("siteID.target")
 )
+CAP <- readCaption("tbl.AF.ES")
 ```
 
-{{< include /_tbl/AF.ES.qmd >}}
+{{< include /_tbl/AF.qmd >}}
 
 :::
 

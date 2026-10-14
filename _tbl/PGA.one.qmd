@@ -3,6 +3,7 @@
 #| include: true
 #| label: tbl-pga-one
 #| tbl-cap: !expr CAP |> sprintf(PSA_Units, Vs30.target, SiteID.caption)
+AUX <- PGATable[Vs30 == Vs30.target, setdiff(names(PGATable), "Vs30"), with = FALSE]
 source(file.path(root, "scripts", "tbl/PGA.R"))
 TBL
 ```

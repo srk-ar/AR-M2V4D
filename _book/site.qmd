@@ -27,10 +27,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-uhs",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.UHS"), CAP.MCE = readCaption("fig.UHS.MCE"), ID.target = ID.gmdp),
     root = root,
-    heading = if (knitr::is_html_output()) SiteTable$label[[i]] else NULL,
-    level = 4L,
     anchor = "sec-site-uhs-site",
     context = "site UHS"
   )
@@ -47,10 +45,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-pga",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PGA"), ID.target = ID.gmdp),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 4L,
     anchor = "sec-site-pga-site",
     context = "site PGA"
   )
@@ -59,7 +55,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-pga-tr",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PGA.TR"), ID.target = ID.gmdp),
     root = root,
     context = "site PGA by return period and condition"
   )
@@ -76,10 +72,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-psa",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PSA"), ID.target = ID.gmdp),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 4L,
     anchor = "sec-site-psa-site",
     context = "site PSA"
   )
@@ -96,10 +90,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-af-fig",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.AF"), CAP.MCE = readCaption("fig.AF.MCE"), ID.target = ID.gmdp),
     root = root,
-    heading = if (knitr::is_html_output()) SiteTable$label[[i]] else NULL,
-    level = 4L,
     anchor = "sec-site-af-fig-site",
     context = "site AF figure"
   )
@@ -116,10 +108,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-af",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.AF"), ID.target = ID.gmdp),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 4L,
     anchor = "sec-site-af-site",
     context = "site AF"
   )

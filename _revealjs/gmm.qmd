@@ -17,6 +17,7 @@ for (Trt in sort(unique(GMPETable$TRT))) {
     stem = paste0(StemPrefix, "gmm-", tolower(Trt), "-att"),
     labels = "rewrite",
     vars = list(
+      CAP = readCaption("fig.GMPE"),
       ID.target = unique(GMPETable[TRT == Trt, ID]),
       Mw.target = Mw.target,
       fillColor = FillColor

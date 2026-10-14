@@ -19,4 +19,15 @@ Las tasas de actividad de las fuentes de falla con datos de tasa de deslizamient
 
 Las @tbl-ssm-xaf-lt, @tbl-ssm-xaf-recurrence y @tbl-ssm-xaf-depth resumen, respectivamente, la estructura de los cinco conjuntos de ramas del árbol lógico, los parámetros de recurrencia y de magnitud máxima por grupo de fuentes y los parámetros de profundidad sismogénica por tipo de fuente.
 
-{{< include /_tbl/SSM.XAF.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- stats::setNames(
+  lapply(
+    c("lt", "recurrence", "depth"),
+    function(key) readCaption(sprintf("tbl.SSM.XAF.%s.ES", key))
+  ),
+  c("lt", "recurrence", "depth")
+)
+```
+
+{{< include /_tbl/SSM.XAF.qmd >}}

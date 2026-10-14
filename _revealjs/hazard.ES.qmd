@@ -1,4 +1,4 @@
-## <br>`r if (exists("TITLE", inherits = FALSE)) TITLE else "Probabilistic Hazard Assessment"`
+## <br>`r if (exists("TITLE", inherits = FALSE)) TITLE else "Amenaza Sísmica (PSHA)"`
 
 ```{r}
 #| include: false
@@ -23,10 +23,10 @@ ID.target <- .resolveIDTarget(
 .SITE <- .currentTarget("siteID.target")
 .STEM <- if (is.character(.SITE) && length(.SITE) == 1L) paste0(tolower(.SITE), "-") else ""
 NGR::knitBlock(
-  path = "/_fig/UHS.TR.ES.qmd",
+  path = "/_fig/UHS.TR.qmd",
   stem = paste0(.STEM, "uhs-tr"),
   labels = "rewrite",
-  vars = list(ID.target = .ID.BASE, siteID.target = .SITE),
+  vars = list(CAP = readCaption("fig.UHS.TR.ES"), ID.target = .ID.BASE, siteID.target = .SITE),
   root = root
 )
 rm(list = intersect(c(
@@ -36,7 +36,12 @@ rm(list = intersect(c(
 
 ### PoE (Total)
 
-{{< include /_fig/POE.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("fig.POE.ES")
+```
+
+{{< include /_fig/POE.qmd >}}
 
 ```{r}
 #| echo: false
@@ -46,7 +51,7 @@ if (!is.null(AEPSTable) && nrow(AEPSTable)) {
   .STEM <- if (is.character(.SITE) && length(.SITE) == 1L) paste0(tolower(.SITE), "-") else ""
   cat("\n### PoE (por fuente)\n\n")
   ID.target <- .ID.BASE
-  NGR::knitBlock(path = "/_fig/POES.ES.qmd", stem = paste0(.STEM, "poes"), labels = "rewrite", root = root)
+  NGR::knitBlock(path = "/_fig/POES.qmd", stem = paste0(.STEM, "poes"), labels = "rewrite", vars = list(CAP = readCaption("fig.POES.ES")), root = root)
   rm(.SITE, .STEM)
 }
 ```
@@ -56,9 +61,10 @@ if (!is.null(AEPSTable) && nrow(AEPSTable)) {
 ```{r}
 #| include: false
 ID.target <- .ID.BASE
+CAP <- readCaption("fig.AEP.ES")
 ```
 
-{{< include /_fig/AEP.ES.qmd >}}
+{{< include /_fig/AEP.qmd >}}
 
 ```{r}
 #| echo: false
@@ -68,7 +74,7 @@ if (!is.null(AEPSTable) && nrow(AEPSTable)) {
   .STEM <- if (is.character(.SITE) && length(.SITE) == 1L) paste0(tolower(.SITE), "-") else ""
   cat("\n### AEP (por fuente)\n\n")
   ID.target <- .ID.BASE
-  NGR::knitBlock(path = "/_fig/AEPS.ES.qmd", stem = paste0(.STEM, "aeps"), labels = "rewrite", root = root)
+  NGR::knitBlock(path = "/_fig/AEPS.qmd", stem = paste0(.STEM, "aeps"), labels = "rewrite", vars = list(CAP = readCaption("fig.AEPS.ES")), root = root)
   rm(.SITE, .STEM)
 }
 ```

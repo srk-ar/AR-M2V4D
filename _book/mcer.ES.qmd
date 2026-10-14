@@ -16,20 +16,20 @@ source(file.path(root, "scripts", "setup", "report.R"))
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/MCER.ES.qmd",
+    path = "/_tbl/MCER.qmd",
     stem = "structures-criteria",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.MCER.ES"), ID.target = ID.gmdp),
     root = root,
     context = "tabla de criterios de estructuras"
   )
   .knitReportBlock(
-    path = "/_fig/MCE.MDE.ES.qmd",
+    path = "/_fig/MCE.MDE.qmd",
     stem = "structures-mcer",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.MCE.MDE.ES"), ID.target = ID.gmdp),
     root = root,
     context = "figura de criterios de estructuras"
   )

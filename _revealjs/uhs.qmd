@@ -15,6 +15,12 @@ ID.target <- .resolveIDTarget(
 .ID.BASE <- ID.target
 ```
 
+```{r}
+#| include: false
+CAP <- readCaption("fig.UHS")
+CAP.MCE <- readCaption("fig.UHS.MCE")
+```
+
 {{< include /_fig/UHS.qmd >}}
 
 ### PGA
@@ -29,6 +35,11 @@ ID.target <- .resolveIDTarget(
 )
 ```
 
+```{r}
+#| include: false
+CAP <- readCaption("tbl.PGA")
+```
+
 {{< include /_tbl/PGA.qmd >}}
 
 ### PSA
@@ -41,6 +52,11 @@ ID.target <- .resolveIDTarget(
   target = .ID.BASE,
   siteID = .currentTarget("siteID.target")
 )
+```
+
+```{r}
+#| include: false
+CAP <- readCaption("tbl.PSA")
 ```
 
 {{< include /_tbl/PSA.qmd >}}

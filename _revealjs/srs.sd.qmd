@@ -1,3 +1,13 @@
 ## <br>`r if (exists("TITLE", inherits = FALSE)) TITLE else "Selected Ground-Motion Suite<br>Spectral Displacement"`
 
+```{r}
+#| include: false
+CAP <- readCaption("fig.srs.ps")
+```
+
 {{< include /_fig/srs.sd.qmd >}}
+
+```{r}
+#| include: false
+rm(CAP)
+```

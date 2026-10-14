@@ -19,7 +19,8 @@ source(file.path(root, "scripts", "setup", "report.R"))
 if (!is.null(SelectionTable)) {
   for (i in seq_len(nrow(SelectionTable))) {
     .knitSelectionBlock(
-      path = "/_tbl/SRS.ES.qmd",
+      path = "/_tbl/SRS.qmd",
+      vars = list(CAP = readCaption("tbl.SRS.ES")),
       stem = "srs-records",
       selections = SelectionTable,
       i = i,
@@ -41,8 +42,24 @@ if (!is.null(SelectionTable)) {
 #| results: asis
 if (!is.null(SelectionTable)) {
   for (i in seq_len(nrow(SelectionTable))) {
+    SRS_SITE_TEXT <- .reportLabel(envir = list2env(
+      .reportSelection(SelectionTable, i, "srs-psa")$vars,
+      parent = knitr::knit_global()
+    ))
+    if (!nzchar(SRS_SITE_TEXT) && !is.null(params$site) && length(params$site)) {
+      SRS_SITE_TEXT <- trimws(as.character(params$site[[1L]]))
+    }
+    if (!nzchar(SRS_SITE_TEXT) && !is.null(params$location) && length(params$location)) {
+      SRS_SITE_TEXT <- trimws(as.character(params$location[[1L]]))
+    }
+    if (!nzchar(SRS_SITE_TEXT)) SRS_SITE_TEXT <- "el proyecto"
+    CAPTION <- sprintf(
+      readCaption("fig.srs.psa.ES"),
+      SRS_SITE_TEXT
+    )
     .knitSelectionBlock(
-      path = "/_fig/srs.psa.ES.qmd",
+      path = "/_fig/srs.psa.qmd",
+      vars = list(CAPTION = CAPTION),
       stem = "srs-psa",
       selections = SelectionTable,
       i = i,
@@ -52,6 +69,7 @@ if (!is.null(SelectionTable)) {
       anchor = "sec-srs_psa",
       context = "capítulo SRS"
     )
+    rm(CAPTION, SRS_SITE_TEXT)
   }
   rm(i)
 }

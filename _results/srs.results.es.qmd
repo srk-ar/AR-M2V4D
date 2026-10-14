@@ -6,7 +6,7 @@ source(file.path(root, "scripts", "setup", "srs.R"))
 SRS_TARGET <- paste0(intToUtf8(96), SRS.config$target, intToUtf8(96))
 ```
 
-El conjunto seleccionado comprende `r .fmti(SRS$records)` registros de movimiento fuerte correspondientes a `r .fmti(SRS$events)` sismos y provenientes de `r .fmti(SRS$providers)` bases de datos. Abarca $M_w$ `r SRS$Mw` y distancia epicentral $R_{\mathrm{epi}}$ `r SRS$Repi`, con coeficientes de escala de `r SRS_SCALE$range`. Para el objetivo identificado como `r SRS_TARGET`, definido a $V_{S30}=$ `r .fmti(SRS.config$Vs30)` m/s, el RMSE relativo entre el espectro medio del conjunto y el espectro objetivo es `r SRS_STAGE$RMSE`, y la razón entre la PGA media del conjunto y la PGA objetivo es `r SRS_STAGE$pgaRatio`.
+- **Selección de registros sísmicos.** Las historias temporales constituyen la demanda sísmica de entrada de los análisis dinámicos de deformaciones. Se seleccionaron `r .fmti(SRS$records)` registros de movimiento fuerte, de `r .fmti(SRS$events)` sismos y `r .fmti(SRS$providers)` bases de datos, con $M_w$ `r SRS$Mw` y distancia epicentral $R_{\mathrm{epi}}$ `r SRS$Repi`, escalados con coeficientes de escala de `r SRS_SCALE$range` al espectro objetivo definido para `r SRS_TARGET` en $V_{S30}$ = `r .fmti(SRS.config$Vs30)` m/s. El espectro medio del conjunto tiene un RMSE relativo de `r SRS_STAGE$RMSE` respecto del objetivo, y la razón entre la PGA media del conjunto y la PGA objetivo es `r SRS_STAGE$pgaRatio`. El conjunto entregado incluye las historias temporales, las medidas de intensidad, los espectros y los metadatos de procedencia de los registros seleccionados.
 
 ```{r}
 #| include: false

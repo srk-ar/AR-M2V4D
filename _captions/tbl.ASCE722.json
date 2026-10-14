@@ -1,0 +1,7 @@
+{
+  "headers": ["SC", "Description", "Vs30"],
+  "columns": {
+    "Description": ["Hard rock", "Medium hard rock", "Soft rock", "Very dense soil or hard clay", "Dense sand or very stiff clay", "Medium dense sand or stiff clay", "Loose sand or medium stiff clay", "Very loose sand or soft clay", "Soils requiring site response analysis (ASCE/SEI 7-22 21.1)"],
+    "Vs30": [">1500 [m/s]", ">910-1500 [m/s]", ">640-910 [m/s]", ">440-640 [m/s]", ">300-440 [m/s]", ">210-300 [m/s]", ">150-210 [m/s]", "<=150 [m/s]", "*See ASCE 7 section 20.2.1"]
+  }
+}

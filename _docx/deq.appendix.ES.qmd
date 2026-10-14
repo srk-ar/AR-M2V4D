@@ -1,0 +1,31 @@
+```{r}
+#| include: true
+root <- normalizePath(here::here())
+source(file.path(root, "scripts", "setup", "setup.R"))
+```
+
+# Criterios sísmicos normativos para depósitos de relaves {#sec-tsf-criteria-appendix}
+
+```{r}
+#| include: false
+CAP <- readCaption("tbl.gistm.ES")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.gistm.ES.json"), simplifyVector = TRUE)
+```
+
+{{< include /_tbl/gistm.qmd >}}
+
+```{r}
+#| include: false
+CAP <- readCaption("tbl.cda.ES")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.cda.ES.json"), simplifyVector = TRUE)
+```
+
+{{< include /_tbl/cda.qmd >}}
+
+```{r}
+#| include: false
+CAP <- readCaption("tbl.ancold.ES")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.ancold.ES.json"), simplifyVector = TRUE)
+```
+
+{{< include /_tbl/ancold.qmd >}}

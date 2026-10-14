@@ -12,7 +12,6 @@ ID.target <- .resolveIDTarget(
   siteID = .currentTarget("siteID.target")
 )
 Vs30.target <- Vs30.gmdp
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.MCER")
 ```
 
 &nbsp;

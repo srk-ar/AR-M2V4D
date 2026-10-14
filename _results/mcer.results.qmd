@@ -1,6 +1,19 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "structures.R"))
+if (!exists("TBL.MCER", inherits = FALSE)) stop("executive results: the caller must define TBL.MCER, the id of the table it places.", call. = FALSE)
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+SEP <- " to "
+Structures <- ExecutiveSummary$structures
+SDS <- .executiveRange(Structures$SDS, SEP, function(v) .fmt(v, 2))
+SD1 <- .executiveRange(Structures$SD1, SEP, function(v) .fmt(v, 2))
+Across <- if (uniqueN(Structures$siteID) > 1L) " across the sites" else ""
 ```
 
-For site `r siteID.target`, the MCER spectra and design parameters were obtained for the `r uniqueN(StructuresSummary$parameters$Vs30)` evaluated site conditions ($V_{S30}$ from `r round(min(StructuresSummary$parameters$Vs30))` to `r round(max(StructuresSummary$parameters$Vs30))` m/s): $S_{DS}$ ranges from `r .fmt(min(StructuresSummary$parameters$SDS), 3)` to `r .fmt(max(StructuresSummary$parameters$SDS), 3)` g and $S_{D1}$ from `r .fmt(min(StructuresSummary$parameters$SD1), 3)` to `r .fmt(max(StructuresSummary$parameters$SD1), 3)` g. The following table summarizes the parameters by site condition.
+- **Design Criteria for Conventional Structures.** Seismic design criteria for conventional structures were established from the hazard and site-response analyses in accordance with the site-specific procedure of ASCE/SEI 7-22, in which each MCER ordinate is the lesser of the risk-targeted probabilistic component and the code-prescribed deterministic component [@ASCE722]. The MCER spectra and the design parameters were obtained for the `r .fmti(uniqueN(Structures$Vs30))` evaluated site conditions: $S_{DS}$ ranges from `r SDS` g and $S_{D1}$ from `r SD1` g`r Across`. Table [-@`r TBL.MCER`] reports the design parameters by site and site condition.
+
+```{r}
+#| include: false
+rm(list = intersect(c("SEP", "Structures", "SDS", "SD1", "Across"), ls()))
+```

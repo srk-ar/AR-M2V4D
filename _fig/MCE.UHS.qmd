@@ -1,6 +1,5 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "mce.R"))
 Vs30.target <- 760
 SiteID.caption <- .requireOneTarget(
   .currentTarget("siteID.target"), "siteID.target", "MCE spectrum caption"
@@ -8,7 +7,6 @@ SiteID.caption <- .requireOneTarget(
 if (!exists("Sa.log", inherits = FALSE)) Sa.log <- TRUE
 if (identical(ID.target, "MCE")) {
   Scn <- NULL
-  if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.MCE.envelope")
   CAP <- CAP |>
     sprintf(paste(p.target, collapse = ", "), Vs30.target, SiteID.caption)
 } else {
@@ -16,7 +14,6 @@ if (identical(ID.target, "MCE")) {
   if ("siteID" %in% names(Scn) && exists("siteID.target", inherits = FALSE)) {
     Scn <- Scn[siteID %in% siteID.target]
   }
-  if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.MCE.UHS")
   CAP <- CAP |>
     sprintf(
       ID.target,

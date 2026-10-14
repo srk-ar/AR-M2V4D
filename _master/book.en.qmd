@@ -10,6 +10,7 @@ chapters:
   - part: "Seismic Hazard Assessment"
     chapters:
       - _book/psha.qmd
+      - _book/ssm.qmd
       - _book/gmm.qmd
       - _book/dsha.qmd
       - _book/srs.qmd

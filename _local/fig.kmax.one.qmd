@@ -1,7 +1,7 @@
 ```{r}
 #| include: true
 #| label: fig-kmax-one
-#| fig-cap: !expr CAP |> sprintf(paste(IDn.target, collapse = ", "), paste(IDg.target, collapse = ", "), paste(IDm.target, collapse = ", "), if (length(TR.target)) prettyNum(round(TR.target, 0), big.mark = ",") else "", paste(p.target, collapse = ", "), paste(.fmt(DAMAGE.CUTS, 1), collapse = ", "), SiteID.caption)
+#| fig-cap: !expr do.call(sprintf, c(list(CAP, SiteID.caption, paste(IDg.target, collapse = ", ")), as.list(prettyNum(round(TR.target, 0), big.mark = ",")), list(paste(.fmt(DAMAGE.CUTS, 1), collapse = ", "))))
 ENV <- new.env(parent = environment())
 ENV$kmaxTable <- kmaxTable[Scenarios, on = .(IDg, IDm)]
 ENV$siteID.target <- siteID.target

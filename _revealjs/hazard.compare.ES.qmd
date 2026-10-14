@@ -10,10 +10,11 @@
   ""
 }
 NGR::knitBlock(
-  path = "/_fig/UHS.compare.ES.qmd",
+  path = "/_fig/UHS.compare.qmd",
   stem = paste0(.STEM, "uhs-compare"),
   labels = "rewrite",
   vars = list(
+    CAP = readCaption("fig.UHS.compare.ES"),
     siteID.target = .SITE,
     Vs30.target = 760,
     p.target = "mean"

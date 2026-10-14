@@ -1,3 +1,8 @@
 ## <br>Períodos fundamentales
 
-{{< include /_tbl/Ts.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.Ts.ES")
+```
+
+{{< include /_tbl/Ts.qmd >}}

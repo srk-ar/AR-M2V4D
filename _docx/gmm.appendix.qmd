@@ -1,0 +1,23 @@
+```{r}
+#| include: true
+root <- normalizePath(here::here())
+source(file.path(root, "scripts", "setup", "setup.R"))
+```
+
+# Ground Motion Prediction Equations (GMPE) {#sec-gmm-appendix}
+
+## Active Shallow Crust (ASC)
+
+{{< include /_chapters/gmm.ASC.md >}}
+
+## Stable Continental Crust (SCC)
+
+{{< include /_chapters/gmm.SCC.md >}}
+
+## Subduction Interface (SIF)
+
+{{< include /_chapters/gmm.SIF.md >}}
+
+## Subduction Intraslab (SIS)
+
+{{< include /_chapters/gmm.SIS.md >}}

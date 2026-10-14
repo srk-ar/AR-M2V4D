@@ -3,13 +3,11 @@
 if (!exists("TR.target") || !length(TR.target)) TR.target <- TR.gmdp
 if (!exists("IDg.target") || !length(IDg.target)) IDg.target <- IDg.gmdp
 if (!exists("Da.target") || !length(Da.target))  Da.target  <- sort(Da.gmdp)
-if (!exists("MODELS", inherits = FALSE)) MODELS <- c(rigid = "Rigid Models", flexible = "Flexible Models", ensemble = "Ensemble Models")
 if (!exists("IDn.target") || !length(IDn.target)) IDn.target <- names(MODELS)
 MODELS <- MODELS[names(MODELS) %in% IDn.target]
 if (!exists("p.target") || !length(p.target))   p.target   <- "mean"
 PSA_Units <- "cm/s2"
 root <- here::here()
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.kmax")
 SiteID.caption <- .requireOneTarget(
   .currentTarget("siteID.target"), "siteID.target", "kmax table caption"
 )

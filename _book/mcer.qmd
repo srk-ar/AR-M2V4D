@@ -20,7 +20,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "structures-criteria",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.MCER"), ID.target = ID.gmdp),
     root = root,
     context = "structural design criteria"
   )
@@ -29,7 +29,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "structures-mcer",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.MCE.MDE"), ID.target = ID.gmdp),
     root = root,
     context = "structural design criteria"
   )

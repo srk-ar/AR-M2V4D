@@ -9,6 +9,22 @@ source(file.path(root, "scripts", "setup", "report.R"))
 
 {{< include /_chapters/ts.model.md >}}
 
+```{r}
+#| include: false
+CAP <- readCaption("tbl.IDm")
+HEADER <- "TSF Zone"
+ZONE <- c(
+  "Fine Tailings (Slimes, Pond)",
+  "Coarse Tailings Beach / Upstream Shell",
+  "Transitional Zone (Beach Margin / Intermediate Tailings)",
+  "Rockfill Buttress / Downstream Shell",
+  "Downstream Shell with Granular Filter or Transition Layer",
+  "Downstream Shell with Fines-Enriched Transition / Filter",
+  "Core Zone (Impervious Core / Cutoff Trench)",
+  "Core Zone with Silty-Clay Transition (Core Margin / Fine Fill)"
+)
+```
+
 {{< include /_tbl/IDm.qmd >}}
 
 ## Fundamental Periods {#sec-periods_results}
@@ -16,17 +32,12 @@ source(file.path(root, "scripts", "setup", "report.R"))
 ```{r}
 #| echo: false
 #| results: asis
-for (i in seq_len(nrow(SiteTable))) {
-  .knitReportBlock(
-    path = "/_tbl/Ts.qmd",
-    stem = "periods-table",
-    sites = SiteTable,
-    i = i,
-    root = root,
-    context = "fundamental-period table"
-  )
-}
-rm(list = intersect(c(
-  "i", "SiteTable"
-), ls()))
+NGR::knitBlock(
+  path = "/_tbl/Ts.qmd",
+  stem = "periods-table",
+  labels = "rewrite",
+  vars = list(CAP = readCaption("tbl.Ts")),
+  root = root
+)
+rm(SiteTable)
 ```

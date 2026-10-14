@@ -6,8 +6,26 @@ source(file.path(root, "scripts", "setup", "setup.R"))
 
 # Normative Seismic Criteria for Tailings Storage Facilities {#sec-tsf-criteria-appendix}
 
+```{r}
+#| include: false
+CAP <- readCaption("tbl.gistm")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.gistm.json"), simplifyVector = TRUE)
+```
+
 {{< include /_tbl/gistm.qmd >}}
 
+```{r}
+#| include: false
+CAP <- readCaption("tbl.cda")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.cda.json"), simplifyVector = TRUE)
+```
+
 {{< include /_tbl/cda.qmd >}}
+
+```{r}
+#| include: false
+CAP <- readCaption("tbl.ancold")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.ancold.json"), simplifyVector = TRUE)
+```
 
 {{< include /_tbl/ancold.qmd >}}

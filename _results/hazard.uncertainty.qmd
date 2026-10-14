@@ -1,0 +1,25 @@
+```{r}
+#| include: false
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+if (!exists("TBL.PGA.TR", inherits = FALSE)) stop("executive results: the caller must define TBL.PGA.TR, the id of the PGA table it places.", call. = FALSE)
+Stat <- ExecutiveSummary$statistics
+SEP <- " to "
+Excess <- function(mean, p84) if (all(is.finite(mean)) && all(is.finite(p84))) .executiveRange(100 * (p84 / mean - 1), SEP, .fmti) else NA_character_
+X.MDE <- Excess(Stat$MDE.mean, Stat$MDE.p84)
+X.MCE <- Excess(Stat$MCE.mean, Stat$MCE.p84)
+Sites <- if (nrow(SiteTable) > 1L) paste("the sites", knitr::combine_words(SiteTable$label, and = " and ")) else paste("the site", SiteTable$label)
+Global <- if (is.na(X.MDE)) "" else paste0(
+  " For ", Sites, ", on reference rock, the 0.84 quantile of the PGA exceeds its mean by ", X.MDE, " % for the MDE",
+  if (is.na(X.MCE)) "" else paste0(" and by ", X.MCE, " % for the MCE"),
+  "; Table [-@", TBL.PGA.TR, "] reports both statistics by site condition."
+)
+```
+
+- **Uncertainty Treatment.** Epistemic uncertainty is represented through the logic trees of the source model and of the GMMs, and aleatory variability through the standard deviation of each ground-motion model; every spectrum is reported as its mean and its quantiles. Each deterministic scenario combines the equally weighted rupture variants, the GMM branches with their weights, and the record-to-record variability in a lognormal mixture.`r Global`
+
+```{r}
+#| include: false
+rm(list = intersect(c("Stat", "SEP", "Excess", "X.MDE", "X.MCE", "Sites", "Global"), ls()))
+```

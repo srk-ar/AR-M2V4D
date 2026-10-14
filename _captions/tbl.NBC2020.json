@@ -1,0 +1,6 @@
+{
+  "headers": ["SC", "Description", "Vs30"],
+  "columns": {
+    "Description": ["Hard rocks", "Rocks", "Very dense soils or soft rocks", "Stiff soils", "Soft soils", "Other soils"]
+  }
+}

@@ -1,6 +1,0 @@
-```{r}
-#| include: false
-CAP <- readCaption("tbl.PSA.ES")
-```
-
-{{< include /_tbl/PSA.qmd >}}

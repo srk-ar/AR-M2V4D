@@ -15,7 +15,13 @@ ID.target <- .resolveIDTarget(
 .ID.BASE <- ID.target
 ```
 
-{{< include /_fig/UHS.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("fig.UHS.ES")
+CAP.MCE <- readCaption("fig.UHS.MCE.ES")
+```
+
+{{< include /_fig/UHS.qmd >}}
 
 ### PGA
 
@@ -29,7 +35,12 @@ ID.target <- .resolveIDTarget(
 )
 ```
 
-{{< include /_tbl/PGA.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.PGA.ES")
+```
+
+{{< include /_tbl/PGA.qmd >}}
 
 ### PSA
 
@@ -43,7 +54,12 @@ ID.target <- .resolveIDTarget(
 )
 ```
 
-{{< include /_tbl/PSA.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.PSA.ES")
+```
+
+{{< include /_tbl/PSA.qmd >}}
 
 :::
 

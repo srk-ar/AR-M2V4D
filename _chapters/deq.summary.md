@@ -1,1 +1,0 @@
-The following table presents the design PGA under GISTM for the operation stage and the site condition $V_{S30} = 800$ m/s [@gistm2020]. Results for the other criteria and lifecycle stages are presented in the main report.

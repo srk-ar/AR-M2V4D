@@ -1,6 +1,21 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "criteriaResults.R"))
+if (!exists("TBL.DEQ.PGA", inherits = FALSE)) stop("executive results: the caller must define TBL.DEQ.PGA, the id of the table it places.", call. = FALSE)
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+if (!exists("PSA_Units", inherits = FALSE)) PSA_Units <- "g"
+Units <- .executiveUnits(PSA_Units)
+SEP <- " a "
+Standards <- knitr::combine_words(ExecutiveSummary$criteria$standards, and = " y ", oxford_comma = FALSE)
+Bands <- ExecutiveSummary$criteria$bands
+Sa <- function(v) .fmtSa(v, PSA_Units)
+PGA.all <- .executiveRange(c(Bands$minimum, Bands$maximum), SEP, Sa)
 ```
 
-Los criterios de diseño se evaluaron según `r CriteriaSummary$standards`, para las clases de consecuencia y las etapas del ciclo de vida que cada estándar define. En la condición de roca de referencia ($V_{S30}=`r round(CriteriaSummary$bandsVs30)`$ m/s), los criterios de las clases de consecuencia más bajas conducen a PGA de diseño de `r round(CriteriaSummary$bands[band == 1L, PGA.min], 2)` a `r round(CriteriaSummary$bands[band == 1L, PGA.max], 2)` g; los intermedios, de `r round(CriteriaSummary$bands[band == 2L, PGA.min], 2)` a `r round(CriteriaSummary$bands[band == 2L, PGA.max], 2)` g; y los más exigentes, de `r round(CriteriaSummary$bands[band == 3L, PGA.min], 2)` a `r round(CriteriaSummary$bands[band == 3L, PGA.max], 2)` g. Las tablas y los espectros resumen los valores de diseño correspondientes a cada estándar, clase de consecuencia y etapa del ciclo de vida.
+- **Criterios de diseño para depósitos de relaves.** El diseño sísmico de los depósitos de relaves se basa en una filosofía de desempeño de dos niveles: el sismo base de operación (OBE), asociado con la continuidad operacional, y el sismo de evaluación de seguridad (SEE), asociado con la prevención de la liberación de relaves [@ICOLD2016; @USACE1995]. Los sismos de diseño de los depósitos de relaves se evaluaron según `r Standards`, para las clases de consecuencia y las etapas del ciclo de vida de operación, cierre y post-cierre que cada marco define [@gistm2020; @cda2021; @ancold2019]. En roca de referencia, la PGA de diseño varía de `r PGA.all` `r Units` según el marco, la clase de consecuencia y la etapa del ciclo de vida. La Tabla [-@`r TBL.DEQ.PGA`] reúne, por clase de consecuencia y condición de sitio, la PGA de diseño del marco GISTM en la etapa de operación; el capítulo de criterios de diseño reporta la PGA y los espectros de diseño por marco, clase de consecuencia, etapa del ciclo de vida y condición de sitio.
+
+```{r}
+#| include: false
+rm(list = intersect(c("SEP", "Units", "Standards", "Bands", "Sa", "PGA.all"), ls()))
+```

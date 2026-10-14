@@ -6,7 +6,7 @@ source(file.path(root, "scripts", "setup", "srs.R"))
 SRS_TARGET <- paste0(intToUtf8(96), SRS.config$target, intToUtf8(96))
 ```
 
-The selected suite comprises `r .fmti(SRS$records)` strong-motion records from `r .fmti(SRS$events)` earthquakes and `r .fmti(SRS$providers)` databases. It spans $M_w$ `r SRS$Mw` and epicentral distance $R_{\mathrm{epi}}$ `r SRS$Repi`, with scale factors from `r SRS_SCALE$range`. For the target identified as `r SRS_TARGET`, defined at $V_{S30}=$ `r .fmti(SRS.config$Vs30)` m/s, the relative RMSE between the suite-mean spectrum and the target spectrum is `r SRS_STAGE$RMSE`, and the ratio of the suite-mean PGA to the target PGA is `r SRS_STAGE$pgaRatio`.
+- **Seismic Record Selection.** Ground-motion time histories provide the seismic input for the dynamic deformation analyses. A suite of `r .fmti(SRS$records)` strong-motion records from `r .fmti(SRS$events)` earthquakes and `r .fmti(SRS$providers)` databases was selected, with $M_w$ `r SRS$Mw` and epicentral distance $R_{\mathrm{epi}}$ `r SRS$Repi`, and scaled by factors of `r SRS_SCALE$range` to the target spectrum defined for `r SRS_TARGET` at $V_{S30}$ = `r .fmti(SRS.config$Vs30)` m/s. The suite-mean spectrum has a relative RMSE of `r SRS_STAGE$RMSE` with respect to the target, and the ratio of the suite-mean PGA to the target PGA is `r SRS_STAGE$pgaRatio`. The delivered suite includes the time histories, intensity measures, spectra, and provenance metadata of the selected records.
 
 ```{r}
 #| include: false

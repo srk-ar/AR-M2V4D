@@ -8,7 +8,6 @@ TRT.target <- GMPETable[ID %in% ID.target, TRT][1]
 AUX <- sort(unique(GMPETable[ID %in% ID.target, Mw]))
 Mw.target <- AUX[which.min(abs(Mw.target - AUX))]
 rm(AUX)
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.GMPE")
 ```
 
 ::: {.content-visible when-format='html'}

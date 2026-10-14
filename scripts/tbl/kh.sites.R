@@ -9,9 +9,8 @@ DT <- AUX[DT, on = "IDg"]
 DT[, DaH := signif(Da / Hs, 3L)]
 DT <- DT[DaH %in% signif(DAMAGE.CUTS, 3L),
   .(Kh = paste0(
-    .fmt(round(100 * mean(Kh), 1L), 1L), " [",
     .fmt(round(100 * min(Kh), 1L), 1L), "–",
-    .fmt(round(100 * max(Kh), 1L), 1L), "]"
+    .fmt(round(100 * max(Kh), 1L), 1L)
   )), by = .(siteID, Hs, DaH)]
 DT <- dcast(DT, siteID + Hs ~ DaH, value.var = "Kh")
 DT <- DT[order(match(siteID, siteID.target), Hs)]

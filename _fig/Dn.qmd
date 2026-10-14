@@ -1,13 +1,10 @@
 ```{r}
 #| eval: !expr knitr::is_html_output()
 #| include: true
-if (!exists("MODELS", inherits = FALSE)) MODELS <- c(rigid = "Rigid Models", flexible = "Flexible Models", ensemble = "Ensemble Models")
 if (!exists("IDn.target") || !length(IDn.target)) IDn.target <- names(MODELS)
 MODELS <- MODELS[names(MODELS) %in% IDn.target]
 IDg.target <- IDg.gmdp
 if (!exists("p.target") || !length(p.target)) p.target <- "mean"
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.Dn")
-if (!exists("CAP.MCE", inherits = FALSE)) CAP.MCE <- readCaption("fig.Dn.MCE")
 TR.label <- prettyNum(TR.gmdp, big.mark = ",", scientific = FALSE)
 IDm.target <- IDm.gmdp
 SiteID.caption <- .requireOneTarget(

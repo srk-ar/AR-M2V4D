@@ -2,20 +2,11 @@
 
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.ASCE722")
 root <- here::here()
 if (!exists("ASCE722Table", inherits = FALSE)) {
-  ASCE722Table <- data.table(
-    "SC" = c("A", "B", "BC", "C", "CD", "D", "DE", "E", "F"),
-    "Description" = c("Hard rock", "Medium hard rock", "Soft rock", "Very dense soil or hard clay",
-    "Dense sand or very stiff clay", "Medium dense sand or stiff clay",
-    "Loose sand or medium stiff clay", "Very loose sand or soft clay",
-    "Soils requiring site response analysis (ASCE/SEI 7-22 21.1)"
-    ),
-    "Vs30" = c(">1500 [m/s]", ">910-1500 [m/s]", ">640-910 [m/s]", ">440-640 [m/s]",
-    ">300-440 [m/s]", ">210-300 [m/s]", ">150-210 [m/s]", "<=150 [m/s]",
-    "*See ASCE 7 section 20.2.1")
-  )
+  ASCE722Table <- data.table(SC = c("A", "B", "BC", "C", "CD", "D", "DE", "E", "F"), Description = CONTENT$columns[["Description"]],
+      Vs30 = CONTENT$columns[["Vs30"]])
+  setnames(ASCE722Table, CONTENT$headers)
 }
 ```
 
@@ -29,6 +20,6 @@ TBL
 
 ```{r}
 #| include: false
-rm(list = intersect(c("CAP", "ASCE722Table"), ls()))
+rm(list = intersect(c("CONTENT", "CAP", "ASCE722Table"), ls()))
 ```
 &nbsp;

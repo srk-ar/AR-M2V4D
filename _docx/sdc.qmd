@@ -25,7 +25,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-pga",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PGA"), ID.target = ID.gmdp),
     root = root,
     context = "site PGA"
   )
@@ -34,7 +34,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-pga-tr",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PGA.TR"), ID.target = ID.gmdp),
     root = root,
     context = "site PGA by return period and condition"
   )
@@ -51,7 +51,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-psa",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.PSA"), ID.target = ID.gmdp),
     root = root,
     context = "site PSA"
   )
@@ -68,7 +68,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "site-af",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.AF"), ID.target = ID.gmdp),
     root = root,
     context = "site AF"
   )
@@ -101,7 +101,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-obe-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.operation"), ID.target = ID.gmdp),
     root = root,
     context = "tailings operational criteria table"
   )
@@ -111,6 +111,7 @@ for (i in seq_len(nrow(SiteTable))) {
     sites = SiteTable,
     i = i,
     vars = list(
+      CAP = readCaption("tbl.DEQ.PGA"),
       ID.target = ID.gmdp,
       Standard.target = "GISTM",
       Stage.target = "Operation"
@@ -131,7 +132,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-sse-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.closure"), ID.target = ID.gmdp),
     root = root,
     context = "tailings closure criteria table"
   )
@@ -148,7 +149,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-pce-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.postclosure"), ID.target = ID.gmdp),
     root = root,
     context = "tailings post-closure criteria table"
   )
@@ -179,7 +180,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "structures-criteria",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.MCER"), ID.target = ID.gmdp),
     root = root,
     context = "structural design criteria"
   )

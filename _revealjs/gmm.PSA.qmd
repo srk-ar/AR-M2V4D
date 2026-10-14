@@ -1,3 +1,8 @@
 ## <br>`r if (exists("TITLE", inherits = FALSE)) TITLE else "Ground Motion Models"`
 
+```{r}
+#| include: false
+CAP <- readCaption("fig.GMPE.PSA")
+```
+
 {{< include /_fig/GMPE.PSA.qmd >}}

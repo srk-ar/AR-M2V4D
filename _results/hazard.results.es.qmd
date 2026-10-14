@@ -1,6 +1,28 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "hazardResults.R"))
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+if (!exists("TBL.PGA.TR", inherits = FALSE)) stop("executive results: the caller must define TBL.PGA.TR, the id of the PGA table it places.", call. = FALSE)
+if (!exists("PSA_Units", inherits = FALSE)) PSA_Units <- "g"
+Units <- .executiveUnits(PSA_Units)
+SEP <- " a "
+REGIME <- c(
+  ASC = "corteza superficial activa", SCC = "corteza continental estable",
+  SIF = "interfaz de subducción", SIS = "intraplaca de subducción"
+)
+Names <- .executiveRegime(Hazard.config$trt, REGIME)
+AND <- if (grepl("^[iI]", tail(Names, 1L))) " e " else " y "
+Regimes <- knitr::combine_words(ifelse(Names == Hazard.config$trt, Hazard.config$trt, paste0(Names, " (", Hazard.config$trt, ")")), and = AND, oxford_comma = FALSE)
+Sites <- if (nrow(SiteTable) > 1L) paste("los sitios", knitr::combine_words(SiteTable$label, and = " y ", oxford_comma = FALSE)) else paste("el sitio", SiteTable$label)
+Rock <- ExecutiveSummary$rock
+Model <- paste0("**", ExecutiveSummary$ssm$label, "**", TREE.ES, if (nzchar(ExecutiveSummary$ssm$citation)) paste0(" ", ExecutiveSummary$ssm$citation) else "")
+PGA.MDE <- .executiveRange(Rock[TR == TR.MDE, c(minimum, maximum)], SEP, function(v) .fmtSa(v, PSA_Units))
 ```
 
-En roca de referencia ($V_{S30}=760$ m/s), la PGA media varía entre `r HazardSummary$pga[Vs30 == 760 & p == "mean", .fmtSa(min(SaF), PSA_Units)]` y `r HazardSummary$pga[Vs30 == 760 & p == "mean", .fmtSa(max(SaF), PSA_Units)]` `r PSA_Units` para períodos de retorno entre `r HazardSummary$pga[Vs30 == 760 & p == "mean", .fmti(min(TR))]` y `r HazardSummary$pga[Vs30 == 760 & p == "mean", .fmti(max(TR))]` años. La tabla siguiente reporta la PGA media por período de retorno y condición de sitio, junto con las envolventes determinísticas del MCE.
+- **Evaluación probabilística de la amenaza sísmica (PSHA).** La evaluación probabilística cuantifica la amenaza sísmica mediante la tasa anual con que cada nivel de movimiento del suelo puede excederse en cada sitio [@Cornell1968; @McGuire2004]. Adoptó el modelo regional de fuentes sísmicas `r Model`, junto con árboles lógicos de GMM para los tipos de región tectónica `r Regimes`. El período de retorno de `r .fmti(TR.MDE)` años define el sismo máximo de diseño (MDE). La Tabla [-@`r TBL.PGA.TR`] reúne, para `r Sites`, la PGA media por período de retorno y condición de sitio; en roca de referencia, $V_{S30}=760$ m/s, la PGA del MDE es de `r PGA.MDE` `r Units`.
+
+```{r}
+#| include: false
+rm(list = intersect(c("SEP", "Units", "REGIME", "Names", "AND", "Regimes", "Sites", "Rock", "Model", "PGA.MDE"), ls()))
+```

@@ -2,16 +2,11 @@
 
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.AS1726")
 root <- here::here()
 if (!exists("AS1726Table", inherits = FALSE)) {
-  AS1726Table <- data.table(
-    "SC" = c("A", "B", "C", "D", "E"),
-    "Description" = c("Strong Rocks", "Rocks", "Shallow soil site", "Deep or soft soil site",
-    "Very soft soil site"),
-    "Vs30" = c(">1500 [m/s]", ">360 [m/s]", ">150 [m/s]", ">150 [m/s]", "<=150 [m/s]"
-    )
-  )
+  AS1726Table <- data.table(SC = c("A", "B", "C", "D", "E"), Description = CONTENT$columns[["Description"]],
+      Vs30 = c(">1500 [m/s]", ">360 [m/s]", ">150 [m/s]", ">150 [m/s]", "<=150 [m/s]"))
+  setnames(AS1726Table, CONTENT$headers)
 }
 ```
 
@@ -25,6 +20,6 @@ TBL
 
 ```{r}
 #| include: false
-rm(list = intersect(c("CAP", "AS1726Table"), ls()))
+rm(list = intersect(c("CONTENT", "CAP", "AS1726Table"), ls()))
 ```
 &nbsp;

@@ -1,7 +1,6 @@
 
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.Scenarios")
 root <- here::here()
 ```
 

@@ -4,10 +4,13 @@
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/kh.ES.qmd",
+  path = "/_fig/kh.qmd",
   stem = .composeTargetStem("kh-curves"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"),
+    CAP = readCaption("fig.kh.ES"),
+    CAP.MCE = readCaption("fig.kh.MCE.ES"),
     p.target = "mean"
   ),
   root = root
@@ -20,10 +23,12 @@ NGR::knitBlock(
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_tbl/kh.ES.qmd",
+  path = "/_tbl/kh.qmd",
   stem = .composeTargetStem("kh-tables"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"),
+    CAP = readCaption("tbl.kh.ES"),
     p.target = "mean"
   ),
   root = root

@@ -11,9 +11,21 @@ p.target <- "mean"
 
 ### $k_{max}$
 
+```{r}
+#| include: false
+MODELS <- c(rigid = "Rigid Models", flexible = "Flexible Models", ensemble = "Ensemble Models")
+CAP <- readCaption("tbl.kmax")
+```
+
 {{< include /_tbl/kmax.qmd >}}
 
 ### $k_h$
+
+```{r}
+#| include: false
+MODELS <- c(rigid = "Rigid Models", flexible = "Flexible Models", ensemble = "Ensemble Models")
+CAP <- readCaption("tbl.kh")
+```
 
 {{< include /_tbl/kh.qmd >}}
 

@@ -10,7 +10,6 @@ if (!file.exists(SSM_FILE)) {
 }
 
 DATA <- readRDS(SSM_FILE)
-Meta <- attr(DATA, "oqt", exact = TRUE)
 Schema <- c(
   "ID", "siteID", "providerID", "sourceName", "sourceType", "trt",
   "mfdType", "aValue", "bValue", "minMag", "maxMag",
@@ -32,36 +31,6 @@ if (!inherits(DATA, "data.frame") || !identical(names(DATA), Schema)) {
 if (!identical(vapply(DATA, class, character(1L)), Classes)) {
   stop("SSM.SAM.R: SSMTable.Rds has incompatible column types.", call. = FALSE)
 }
-RequiredMeta <- c(
-  "producer", "oqt", "written", "units", "keyRule", "selection", "engine",
-  "inputs"
-)
-if (!is.list(Meta) || any(!RequiredMeta %in% names(Meta))) {
-  stop("SSM.SAM.R: SSMTable.Rds lacks required OQT provenance.", call. = FALSE)
-}
-if (!identical(Meta$producer, "ssm / runSSM.R") ||
-    length(Meta$oqt) != 1L || !grepl("^[0-9a-f]{7,40}$", Meta$oqt) ||
-    length(Meta$written) != 1L || !nzchar(Meta$written) ||
-    length(Meta$engine) != 1L || !grepl("oq-3[.]26[.]2", Meta$engine) ||
-    !identical(
-      Meta$keyRule,
-      paste0(
-        "providerID normalized as in runAEPS.R so SSMTable joins AEPSTable ",
-        "on (ID, siteID, providerID); SRMwTable keeps the raw sourceID and ",
-        "needs consumer-side normalization"
-      )
-    ) ||
-    !identical(
-      Meta$selection,
-      "complete: every source in the model, no distance cut and no ranking truncation"
-    )) {
-  stop("SSM.SAM.R: SSMTable.Rds provenance is incomplete or incompatible.", call. = FALSE)
-}
-Units <- c(minMag = "Mw", maxMag = "Mw", usd = "km", lsd = "km")
-if (is.null(Meta$units) || !identical(unname(Meta$units[names(Units)]), unname(Units))) {
-  stop("SSM.SAM.R: SSMTable.Rds magnitude or depth units are incompatible.", call. = FALSE)
-}
-
 DT <- data.table::as.data.table(DATA)
 IdentityCols <- c("ID", "siteID", "providerID")
 if (!nrow(DT) ||
@@ -81,10 +50,8 @@ if (any(DT$providerID != NormalizedProvider)) {
   stop("SSM.SAM.R: providerID is not normalized as declared.", call. = FALSE)
 }
 SiteCount <- data.table::uniqueN(DT$siteID)
-ExpectedInputs <- c("ssmLT_SAM.xml", sprintf("%d sites", SiteCount))
-if (!identical(as.character(Meta$inputs), ExpectedInputs)) {
-  stop("SSM.SAM.R: inventory provenance does not identify the SAM source model.", call. = FALSE)
-}
+source(file.path(root, "scripts", "tbl", "ssmProvenance.R"), local = TRUE)
+.validateSSMProvenance(DT, file = SSM_FILE, model = SSM_MODEL)
 if (DT[, any(is.na(providerID) | !nzchar(trimws(providerID)))] ||
     DT[, anyDuplicated(.SD), .SDcols = c("ID", "siteID", "providerID")]) {
   stop("SSM.SAM.R: inventory source identity is invalid.", call. = FALSE)
@@ -208,37 +175,31 @@ Map[AUX, on = "Component", `:=`(
   zMin = i.zMin,
   zMax = i.zMax
 )]
-AUX <- Map
-AUX[, Mw := sprintf("%.2f–%.2f", MwMin, MwMax)]
-AUX[, z := paste0(
-  sub("[.]0$", "", sprintf("%.1f", zMin)),
-  "–",
-  sub("[.]0$", "", sprintf("%.1f", zMax))
-)]
-AUX[Component %in% c("C5", "C6"), z := sprintf("%.1f–%.1f", zMin, zMax)]
-AUX[Component == "C5", z := paste0(z, "*")]
-AUX <- AUX[, .(TRT = trt, Component, N, MFD, Mw, z)]
-AUX <- data.table::rbindlist(list(
-  AUX,
-  data.table::data.table(
-    TRT = "Total", Component = "", N = sum(AUX$N), MFD = "", Mw = "", z = ""
-  )
-), use.names = TRUE)
+AUX <- Map[, .(TRT = trt, Component, N, MFD, MwMin, MwMax, zMin, zMax)]
 
 TBL <- AUX |> buildTable(
   library          = "flextable",
   align.body       = "center",
   font.size.body   = FONT.SIZE.BODY,
   font.size.header = FONT.SIZE.HEADER
-) |> flextable::set_header_labels(Component = "Comp.") |>
-  .mathHeader(c(N = "N", Mw = "M_w", z = "z")) |>
+) |> flextable::set_header_labels(
+  Component = "Comp.", MwMin = "Mw min", MwMax = "Mw max",
+  zMin = "z min [km]", zMax = "z max [km]"
+) |>
+  .mathHeader(c(N = "N", MwMin = "M_{w,\\min}", MwMax = "M_{w,\\max}",
+                zMin = "z_{\\min}\\;[\\mathrm{km}]", zMax = "z_{\\max}\\;[\\mathrm{km}]")) |>
+  flextable::colformat_double(j = c("MwMin", "MwMax"), digits = 2) |>
+  flextable::colformat_double(j = c("zMin", "zMax"), digits = 1, na_str = "—") |>
+  flextable::add_footer_lines(values = SsmNotes) |>
+  flextable::align(align = "left", part = "footer") |>
+  flextable::fontsize(size = FONT.SIZE.BODY, part = "footer") |>
   flextable::set_table_properties(layout = "autofit")
 TBL <- flextable::align(TBL, j = "N", align = "right", part = "body")
 
 rm(
-  AUX, Classes, DATA, DepthInterface, DT, Expected, ExpectedInputs,
+  AUX, Classes, DATA, DepthInterface, DT, Expected,
   ExpectedInterfaceMFD, ExpectedTypes, InterfaceFiles, InterfaceMFD,
-  IdentityCols, IntrinsicCols, Map, Meta, NormalizedProvider, Observed,
-  Recurrence, RequiredMeta, SampleN, Schema, SiteCount, Units, UsedFields
+  IdentityCols, IntrinsicCols, Map, NormalizedProvider, Observed,
+  Recurrence, SampleN, Schema, SiteCount, UsedFields
 )
 # nolint end

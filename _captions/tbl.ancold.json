@@ -1,0 +1,8 @@
+{
+  "headers": ["Class", "PAR", "Consequences", "OBE", "SEE"],
+  "columns": {
+    "PAR": ["0", "1–10", "11–100", "101–1,000", ">1,000 (up to a few thousand)", "> several thousand"],
+    "Consequences": ["No expected loss of life; negligible off‑site impact.", "Few persons at risk; minor off‑site or environmental impact.", "Possible loss of life; moderate environmental/economic impact.", "Likely multiple fatalities; major environmental/economic loss.", "Likely multiple fatalities; regional/catastrophic impact.", "Very high loss of life expected; catastrophic, long‑term impacts."],
+    "SEE": ["1/1,000", "1/1,000", "1/2,000", "1/5,000", "1/10,000", "Greater of MCE or 1/10,000 (85th percentile)"]
+  }
+}

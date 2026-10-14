@@ -4,7 +4,12 @@
 
 ### Parámetros de Diseño
 
-{{< include /_tbl/MCER.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.MCER.ES")
+```
+
+{{< include /_tbl/MCER.qmd >}}
 
 ### Espectros de Diseño
 
@@ -12,10 +17,10 @@
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/MCE.MDE.ES.qmd",
+  path = "/_fig/MCE.MDE.qmd",
   stem = .composeTargetStem("demands"),
   labels = "rewrite",
-  vars = list(),
+  vars = list(CAP = readCaption("fig.MCE.MDE.ES")),
   root = root
 )
 ```

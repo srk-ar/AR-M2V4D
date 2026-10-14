@@ -1,0 +1,23 @@
+```{r}
+#| include: true
+root <- normalizePath(here::here())
+source(file.path(root, "scripts", "setup", "setup.R"))
+```
+
+# Ecuaciones de predicción de movimiento sísmico (GMPE) {#sec-gmm-appendix}
+
+## Corteza superficial activa (ASC)
+
+{{< include /_chapters/gmm.ASC.es.md >}}
+
+## Corteza continental estable (SCC)
+
+{{< include /_chapters/gmm.SCC.es.md >}}
+
+## Subducción interplaca (SIF)
+
+{{< include /_chapters/gmm.SIF.es.md >}}
+
+## Subducción intraplaca (SIS)
+
+{{< include /_chapters/gmm.SIS.es.md >}}

@@ -8,10 +8,13 @@
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/kmax.ES.qmd",
+  path = "/_fig/kmax.qmd",
   stem = .composeTargetStem("kmax-flexible"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"),
+    CAP = readCaption("fig.kmax.ES"),
+    CAP.MCE = readCaption("fig.kmax.MCE.ES"),
     p.target = "mean",
     IDn.target = "flexible"
   ),
@@ -25,10 +28,13 @@ NGR::knitBlock(
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/kh.ES.qmd",
+  path = "/_fig/kh.qmd",
   stem = .composeTargetStem("kh-flexible"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"),
+    CAP = readCaption("fig.kh.ES"),
+    CAP.MCE = readCaption("fig.kh.MCE.ES"),
     p.target = "mean",
     IDn.target = "flexible"
   ),
@@ -42,10 +48,13 @@ NGR::knitBlock(
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/Dn.ES.qmd",
+  path = "/_fig/Dn.qmd",
   stem = .composeTargetStem("dn-flexible"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"),
+    CAP = readCaption("fig.Dn.ES"),
+    CAP.MCE = readCaption("fig.Dn.MCE.ES"),
     p.target = "mean",
     IDn.target = "flexible"
   ),

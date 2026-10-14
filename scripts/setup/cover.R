@@ -14,10 +14,11 @@
   x
 }
 
+# The documents show only the print date (owner ruling, 2026-09-23). The
+# render stamp that NGR exposes through NGR_RENDER_STAMP (technical revisions
+# and a DRAFT flag derived from the resources) stays out of every product.
 readRenderStamp <- function() {
-  Stamp <- Sys.getenv("NGR_RENDER_STAMP")
-  if (nzchar(Stamp)) return(Stamp)
-  paste0("Pub: ", format(Sys.time(), "%d/%m/%Y"), " Rev.— · DRAFT")
+  format(Sys.time(), "%d/%m/%Y")
 }
 
 .spanishMonthYear <- function(time) {
@@ -51,14 +52,14 @@ buildCoverReport <- function(
       client = "Preparado para", consultant = "Preparado por",
       authors = "Autores", reviewed = "Revisado por",
       project = "Proyecto", year = "Año",
-      revision = "Pub", citation = "Cómo citar"
+      printed = "Impreso", citation = "Cómo citar"
     )
   } else {
     list(
       client = "Prepared for", consultant = "Prepared by",
       authors = "Authors", reviewed = "Reviewed by",
       project = "Project", year = "Year",
-      revision = "Pub", citation = "How to cite"
+      printed = "Printed", citation = "How to cite"
     )
   }
 
@@ -210,7 +211,7 @@ buildCoverReport <- function(
       Lines, "",
       paste0("**", Labels$project, ":** ", Text(params$project_id), "  "),
       paste0("**", Labels$year, ":** ", Text(params$year), "  "),
-      paste0("**", Labels$revision, ":** ", Text(sub("^Pub: ", "", stamp))),
+      paste0("**", Labels$printed, ":** ", Text(stamp)),
       "",
       paste0("**", Labels$citation, ":** ", CitationText),
       ""
@@ -228,8 +229,8 @@ buildCoverReport <- function(
     '          <div class="srk-cover__meta-value">', h(params$year), '</div>\n',
     '        </div>\n',
     '        <div class="srk-cover__meta-item">\n',
-    '          <div class="srk-cover__meta-label">', Labels$revision, ':</div>\n',
-    '          <div class="srk-cover__meta-value">', h(sub("^Pub: ", "", stamp)), '</div>\n',
+    '          <div class="srk-cover__meta-label">', Labels$printed, ':</div>\n',
+    '          <div class="srk-cover__meta-value">', h(stamp), '</div>\n',
     '        </div>'
   )
 
@@ -270,12 +271,12 @@ buildCoverSignatureReport <- function(
   Labels <- if (Spanish) {
     list(
       title = "Firmas", prepared = "Preparado por",
-      reviewed = "Revisado por", signatory = "Firma"
+      reviewed = "Revisado por", signatory = "Firma", printed = "Impreso"
     )
   } else {
     list(
       title = "Signatures", prepared = "Prepared by",
-      reviewed = "Reviewed by", signatory = "Signature"
+      reviewed = "Reviewed by", signatory = "Signature", printed = "Printed"
     )
   }
   Text <- function(x) {
@@ -345,7 +346,7 @@ buildCoverSignatureReport <- function(
     Consultant <- Text(params$consultant$name)
     if (nzchar(Consultant)) Lines <- c(Lines, paste0("**", Consultant, "**"), "")
     Lines <- c(
-      Lines, Text(stamp), "", PageBreak, ""
+      Lines, paste0(Labels$printed, ": ", Text(stamp)), "", PageBreak, ""
     )
     return(paste(Lines, collapse = "\n"))
   }
@@ -381,7 +382,7 @@ buildCoverSignatureReport <- function(
     '<div style="font-weight: 600; margin-top: 1.2em;">',
     h(Text(params$consultant$name)), "</div>",
     '<div style="font-size: 12px; color: #888; margin-top: 0.6em;">',
-    h(stamp), "</div>",
+    h(paste0(Labels$printed, ": ", stamp)), "</div>",
     "</section>"
   )
 }
@@ -389,7 +390,7 @@ buildCoverSignatureReport <- function(
 # -- Cover page entry point --------------------------------------------
 # Single call for the cover document: resolves report title and language
 # from the hoisted _quarto.yml (falling back to params), then emits the
-# complete cover (report cover + signature block) for the current output.
+# HTML cover and signatures, or signatures only for the NGR DOCX composition.
 knitCoverPage <- function(
     root, params,
     output = if (knitr::is_html_output()) "html" else "docx") {
@@ -407,12 +408,12 @@ knitCoverPage <- function(
   ParamsCover <- params
   ParamsCover$title <- Title
   Stamp <- readRenderStamp()
-  Cover <- buildCoverReport(ParamsCover, Language, output, Stamp)
   Signatures <- buildCoverSignatureReport(ParamsCover, Language, output, Stamp)
   if (output == "html") {
+    Cover <- buildCoverReport(ParamsCover, Language, output, Stamp)
     cat("```{=html}\n", Cover, "\n", Signatures, "\n```\n", sep = "")
   } else {
-    cat(Cover, "\n", Signatures, "\n", sep = "")
+    cat(Signatures, "\n", sep = "")
   }
   invisible(NULL)
 }
@@ -429,12 +430,12 @@ knitSignaturePpt <- function(params, language = "en", stamp = readRenderStamp())
   Labels <- if (Spanish) {
     list(
       prepared = "Informe preparado por %s.", reviewed = "Informe revisado por %s.",
-      and = "y", project = "Proyecto %s"
+      and = "y", project = "Proyecto %s", printed = "Impreso"
     )
   } else {
     list(
       prepared = "Report prepared by %s.", reviewed = "Report reviewed by %s.",
-      and = "and", project = "Project %s"
+      and = "and", project = "Project %s", printed = "Printed"
     )
   }
   textOf <- function(x) {
@@ -488,7 +489,7 @@ knitSignaturePpt <- function(params, language = "en", stamp = readRenderStamp())
   cat(sprintf("<b>%s</b><br>\n", textOf(params$consultant$name)))
   cat('<span style="font-size: 12px; font-family: Arial, sans-serif; ',
       'color: var(--medium-grey);">',
-      .escapeHtml(stamp), "</span><br></div>\n\n", sep = "")
+      .escapeHtml(paste0(Labels$printed, ": ", stamp)), "</span><br></div>\n\n", sep = "")
   invisible(NULL)
 }
 

@@ -1,6 +1,24 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "dshaResults.R"))
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+if (!exists("TBL.PGA.TR", inherits = FALSE)) stop("executive results: the caller must define TBL.PGA.TR, the id of the PGA table it places.", call. = FALSE)
+if (!exists("PSA_Units", inherits = FALSE)) PSA_Units <- "g"
+Units <- .executiveUnits(PSA_Units)
+SEP <- " a "
+Sa <- function(v) .fmtSa(v, PSA_Units)
+Scn <- ExecutiveSummary$scenarios
+Mw <- .executiveRange(c(Scn$Mw.minimum, Scn$Mw.maximum), SEP, function(v) .fmt(v, 1))
+Sites <- if (nrow(SiteTable) > 1L) paste("los sitios", knitr::combine_words(SiteTable$label, and = " y ", oxford_comma = FALSE)) else paste("el sitio", SiteTable$label)
+Envelope <- ExecutiveSummary$envelope
+PGA.MCE <- .executiveRange(c(Envelope$minimum, Envelope$maximum), SEP, Sa)
+P84 <- if (is.na(Envelope$minimum84)) "" else paste0(" y la del MCE (84 %), de ", .executiveRange(c(Envelope$minimum84, Envelope$maximum84), SEP, Sa), " ", Units)
 ```
 
-En roca de referencia, $V_{S30}=760$ m/s, la PGA media de `r if (nrow(DSHASummary$scenarios) == 1L) "el escenario" else "cada escenario"` es `r paste(DSHASummary$scenarios[, sprintf("%s: %s", ID, .fmtSa(PGA.mean, PSA_Units))], collapse = "; ")` `r PSA_Units`. En PGA, `r DSHASummary$governorMean` define el máximo de las medias. Como referencia probabilística, la PGA media del espectro de amenaza uniforme para $T_R=10{,}000$ años es `r .fmtSa(DSHASummary$probabilisticPGA, PSA_Units)` `r PSA_Units`.
+- **Evaluación determinística de la amenaza sísmica (DSHA).** La evaluación determinística postula, para cada fuente tectónica capaz de controlar la demanda del sitio, su sismo máximo creíble (MCE): el mayor terremoto razonablemente concebible bajo el marco tectónico actualmente conocido [@ICOLD2016]. Se postularon `r .fmti(nrow(Scn))` escenarios con $M_w$ de `r Mw`; el espectro de diseño determinístico MCE es su envolvente. La Tabla [-@`r TBL.PGA.TR`] reúne, para `r Sites`, la PGA del MCE y del MCE (84 %) por condición de sitio; en roca de referencia, $V_{S30}=760$ m/s, la PGA del MCE es de `r PGA.MCE` `r Units``r P84`.
+
+```{r}
+#| include: false
+rm(list = intersect(c("Units", "SEP", "Sa", "Scn", "Mw", "Sites", "Envelope", "PGA.MCE", "P84"), ls()))
+```

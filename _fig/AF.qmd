@@ -12,8 +12,6 @@ ID.target <- .resolveIDTarget(
 AF.log   <- FALSE
 Tn.log   <- TRUE
 TR.label <- prettyNum(TR.gmdp, big.mark = ",", scientific = FALSE)
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.AF")
-if (!exists("CAP.MCE", inherits = FALSE)) CAP.MCE <- readCaption("fig.AF.MCE")
 SiteID.caption <- .requireOneTarget(
   .currentTarget("siteID.target"), "siteID.target", "AF caption"
 )

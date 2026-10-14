@@ -3,7 +3,6 @@
 root <- here::here()
 if (!exists("PSA_Units") || !length(PSA_Units)) PSA_Units <- "g"
 if (!exists("Vs30.target", inherits = FALSE) || length(Vs30.target) != 1L) Vs30.target <- 760
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.DSHA")
 ```
 
 ::: {.content-visible when-format='docx'}

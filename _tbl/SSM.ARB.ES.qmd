@@ -1,6 +1,0 @@
-```{r}
-#| include: false
-CAP <- readCaption("tbl.SSM.ARB.ES")
-```
-
-{{< include /_tbl/SSM.ARB.qmd >}}

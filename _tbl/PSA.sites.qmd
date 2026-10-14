@@ -1,7 +1,6 @@
 
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.PSA.sites")
 if (!exists("Vs30.docx", inherits = FALSE)) Vs30.docx <- 800
 if (!exists("PSA_Units") || !length(PSA_Units)) PSA_Units <- "cm/s2"
 if (!exists("Tn.target") || !length(Tn.target)) Tn.target <- Tn.gmdp

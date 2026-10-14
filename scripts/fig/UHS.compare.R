@@ -40,7 +40,31 @@ DT <- rbindlist(list(MCE, MDE), use.names = TRUE)
 if (!nrow(MCE) || !nrow(MDE)) {
   stop("UHS.compare.R: MCE or MDE spectra are missing.", call. = FALSE)
 }
-PRODUCTS <- c("MCE", "MDE")
+
+# Each product also carries a shaded region from its mean to its BAND_P
+# quantile (owner ruling, 2026-09-23); both limits come from the same tables.
+BAND_P <- "0.84"
+BAND <- rbindlist(list(
+  MCETable[
+    siteID %in% SITE_ID & ID == "MCE" & Vs30 == Vs30.target & .matchP(p, c("mean", BAND_P)),
+    .(Product = "MCE", p, Tn, Sa = SaF)
+  ],
+  UHSTable[
+    siteID %in% SITE_ID & ID %in% MDE_ID & TR == 10000 & Vs30 == Vs30.target & .matchP(p, c("mean", BAND_P)),
+    .(Product = "MDE", p, Tn, Sa = SaF)
+  ]
+), use.names = TRUE)
+BAND[.matchP(p, "mean"), p := "mean"]
+BAND[.matchP(p, BAND_P), p := BAND_P]
+BAND <- dcast(BAND, Product + Tn ~ p, value.var = "Sa")
+if (!all(c("mean", BAND_P) %in% names(BAND)) || anyNA(BAND) ||
+    !setequal(BAND$Product, PRODUCTS <- c("MCE", "MDE"))) {
+  stop("UHS.compare.R: the mean or the ", BAND_P, " quantile of MCE or MDE is missing for the band.", call. = FALSE)
+}
+RANGES <- data.table(
+  ID = paste0(BAND$Product, " mean\u2013", BAND_P),
+  X = BAND$Tn, lower = BAND$mean, upper = BAND[[BAND_P]], size = THIN_LINE_SIZE
+)
 P_LEVELS <- unique(as.character(p.target))
 P_STYLES <- c(
   "0.05" = "Dot",
@@ -86,7 +110,8 @@ PLOT <- buildPlot(
   group.legend  = "ID",
   plot.theme    = NGR::hc_theme_538_gridlines(),
   fill.minmax   = FALSE,
-  data.lines    = DATA
+  data.lines    = DATA,
+  data.ranges   = RANGES
 )
 COLORS <- c(
   S1 = "#E41A1C",
@@ -102,7 +127,7 @@ PLOT$x$hc_opts$series <- lapply(PLOT$x$hc_opts$series, function(Series) {
   Series
 })
 rm(
-  SITE_ID, MDE_ID, MCE, MDE, DT, DATA, DUP,
+  SITE_ID, MDE_ID, MCE, MDE, DT, DATA, DUP, BAND_P, BAND, RANGES,
   PRODUCTS, P_LEVELS, P_STYLES, COLORS
 )
 # nolint end

@@ -131,13 +131,8 @@
 # selection. Sites declare that same target; more than one is a contradiction
 # and stops instead of being resolved by choice.
 .resolveProjectSRS <- function(sites, root, context = "report SRS") {
-  DIR <- file.path(root, "gmsp", "match")
-  FILES <- if (dir.exists(DIR)) {
-    list.files(DIR, all.files = FALSE, full.names = FALSE, no.. = TRUE)
-  } else {
-    character()
-  }
-  FILES <- .cleanTarget(FILES[dir.exists(file.path(DIR, FILES))])
+  Runs <- .srsRuns(root)
+  FILES <- names(Runs)
   OUT <- unique(.cleanTarget(sites$SRS))
   if (!length(OUT)) {
     if (length(FILES) != 1L) {
@@ -160,7 +155,7 @@
       context, OUT, if (length(FILES)) .targetChoices(FILES) else "none"
     ), call. = FALSE)
   }
-  FILE <- file.path(DIR, OUT, "metadata", "runMatch.json")
+  FILE <- file.path(Runs[[OUT]], "metadata", "runMatch.json")
   if (!file.exists(FILE)) {
     stop(sprintf("%s: missing %s.", context, FILE), call. = FALSE)
   }

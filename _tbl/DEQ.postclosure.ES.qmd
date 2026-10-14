@@ -1,6 +1,0 @@
-```{r}
-#| include: false
-CAP <- readCaption("tbl.DEQ.postclosure.ES")
-```
-
-{{< include /_tbl/DEQ.postclosure.qmd >}}

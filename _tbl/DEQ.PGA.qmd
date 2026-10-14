@@ -1,7 +1,6 @@
 
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.DEQ.PGA")
 Target <- .currentTarget("ID.target")
 ID.target <- .resolveIDTarget(
   DEQTable,

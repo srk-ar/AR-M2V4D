@@ -1,6 +1,5 @@
 ```{r}
 #| include: true
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.AEP")
 SiteID.caption <- .requireOneTarget(
   .currentTarget("siteID.target"), "siteID.target", "AEP caption"
 )

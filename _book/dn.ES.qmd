@@ -13,6 +13,8 @@ source(file.path(root, "scripts", "setup", "report.R"))
 
 {{< include /_chapters/dn.uncertainty.es.md >}}
 
+{{< include /_results/dn.inputs.es.qmd >}}
+
 ## Desplazamientos y coeficientes sísmicos {#sec-newmark_results}
 
 Las figuras de desplazamientos sombrean los umbrales de daño del Capítulo [-@sec-criteria] como bandas de $D_n/H$ en el `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`% de la altura del talud, y las figuras de coeficientes sombrean los mismos umbrales sobre el eje $D_a/H$; cada pestaña de demanda reúne las combinaciones material–geometría para un período de retorno o el MCE, con colores para los materiales y trazos y grosores para las geometrías.
@@ -23,20 +25,14 @@ Las figuras de desplazamientos sombrean los umbrales de daño del Capítulo [-@s
 #| echo: false
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
-  .reportHeading(
-    .reportSite(SiteTable, i, "dn-curves", list(), "curvas de desplazamientos Newmark"),
-    heading = SiteTable$label[[i]],
-    level = 4L,
-    anchor = "sec-newmark-curves-site",
-    context = "curvas de desplazamientos Newmark",
-    kind = "multisite"
-  )
   .knitReportBlock(
-    path = "/_fig/Dn.ES.qmd",
+    path = "/_fig/Dn.qmd",
     stem = "dn-curves",
     sites = SiteTable,
     i = i,
+    vars = list(MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"), CAP = readCaption("fig.Dn.ES"), CAP.MCE = readCaption("fig.Dn.MCE.ES")),
     root = root,
+    anchor = "sec-newmark-curves-site",
     context = "curvas de desplazamientos Newmark"
   )
 }
@@ -49,20 +45,14 @@ rm(i)
 #| echo: false
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
-  .reportHeading(
-    .reportSite(SiteTable, i, "kmax-curves", list(), "curvas de kmax basadas en desempeño"),
-    heading = SiteTable$label[[i]],
-    level = 4L,
-    anchor = "sec-kmax-curves-site",
-    context = "curvas de kmax basadas en desempeño",
-    kind = "multisite"
-  )
   .knitReportBlock(
-    path = "/_fig/kmax.ES.qmd",
+    path = "/_fig/kmax.qmd",
     stem = "kmax-curves",
     sites = SiteTable,
     i = i,
+    vars = list(MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"), CAP = readCaption("fig.kmax.ES"), CAP.MCE = readCaption("fig.kmax.MCE.ES")),
     root = root,
+    anchor = "sec-kmax-curves-site",
     context = "curvas de kmax basadas en desempeño"
   )
 }
@@ -75,20 +65,14 @@ rm(i)
 #| echo: false
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
-  .reportHeading(
-    .reportSite(SiteTable, i, "kh-curves", list(), "curvas de kh basadas en desempeño"),
-    heading = SiteTable$label[[i]],
-    level = 4L,
-    anchor = "sec-kh-curves-site",
-    context = "curvas de kh basadas en desempeño",
-    kind = "multisite"
-  )
   .knitReportBlock(
-    path = "/_fig/kh.ES.qmd",
+    path = "/_fig/kh.qmd",
     stem = "kh-curves",
     sites = SiteTable,
     i = i,
+    vars = list(MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"), CAP = readCaption("fig.kh.ES"), CAP.MCE = readCaption("fig.kh.MCE.ES")),
     root = root,
+    anchor = "sec-kh-curves-site",
     context = "curvas de kh basadas en desempeño"
   )
 }
@@ -102,14 +86,14 @@ rm(i)
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/kmax.ES.qmd",
+    path = "/_tbl/kmax.qmd",
     stem = "kmax-tables",
     sites = SiteTable,
     i = i,
-    vars = list(p.target = "mean"),
+    vars = list(
+    MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"),
+    CAP = readCaption("tbl.kmax.ES"),p.target = "mean"),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 4L,
     anchor = "sec-kmax-tables-site",
     context = "kmax design tables"
   )
@@ -124,14 +108,14 @@ rm(i)
 #| results: asis
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/kh.ES.qmd",
+    path = "/_tbl/kh.qmd",
     stem = "kh-tables",
     sites = SiteTable,
     i = i,
-    vars = list(p.target = "mean"),
+    vars = list(
+    MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"),
+    CAP = readCaption("tbl.kh.ES"),p.target = "mean"),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 4L,
     anchor = "sec-kh-tables-site",
     context = "kh design tables"
   )

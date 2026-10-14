@@ -1,21 +1,4 @@
 # nolint start
-Column <- paste(ID, DIR, sep = ".")
-if (!ID %in% c("AT", "VT", "DT")) {
-  stop("TS.R supports only AT, VT, and DT.", call. = FALSE)
-}
-if (!Column %in% names(TSWTable)) {
-  stop(sprintf("Missing TS column: %s", Column), call. = FALSE)
-}
-Units <- if (ID == "AT") paste0(SRS_UNITS, "/s2") else if (ID == "VT") paste0(SRS_UNITS, "/s") else SRS_UNITS
-
-SRS <- TSWTable[, .(
-  ID    = RecordID,
-  X     = t,
-  Y     = get(Column),
-  style = "ShortDashDot",
-  size  = THIN_LINE_SIZE
-)][is.finite(X) & is.finite(Y)][order(ID, X)]
-
 PLOT <- buildPlot(
   line.type     = "line",
   plot.height   = 750,
@@ -39,5 +22,4 @@ PLOT$x$hc_opts$series <- lapply(PLOT$x$hc_opts$series, function(Series) {
   Series$visible <- FALSE
   Series
 })
-rm(SRS, Column, Units)
 # nolint end

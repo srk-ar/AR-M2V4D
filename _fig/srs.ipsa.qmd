@@ -1,3 +1,53 @@
+```{r}
+#| include: false
+IPSA_FILE <- file.path(PathSRS, "data", "IPSA.csv")
+if (!file.exists(IPSA_FILE)) {
+  stop(sprintf("SRS IPSA input not found: %s", IPSA_FILE), call. = FALSE)
+}
+IPSATable <- data.table::fread(IPSA_FILE)
+META_FILE <- file.path(PathSRS, "metadata", "MasterIndex.csv")
+IMW_FILE <- file.path(PathSRS, "data", "IMW.csv")
+for (FILE in c(META_FILE, IMW_FILE)) {
+  if (!file.exists(FILE)) stop(sprintf("SRS IPSA caption input not found: %s", FILE), call. = FALSE)
+}
+MasterTable <- data.table::fread(META_FILE)
+IMWTable <- data.table::fread(IMW_FILE)
+MISS <- setdiff(c(
+  "RecordID", "OCID", "EventName", "EventMagnitude", "EventMagnitudeType",
+  "StationVs30", "Repi"
+), names(MasterTable))
+if (length(MISS)) stop(sprintf("MasterIndex.csv missing columns: %s.", paste(MISS, collapse = ", ")), call. = FALSE)
+MISS <- setdiff(c("RecordID", "OCID", "PGA"), names(IMWTable))
+if (length(MISS)) stop(sprintf("IMW.csv missing columns: %s.", paste(MISS, collapse = ", ")), call. = FALSE)
+CaptionTable <- unique(MasterTable[OCID == "H1", .(
+  RecordID, OCID, EventName, EventMagnitude, EventMagnitudeType, StationVs30, Repi
+)])
+CaptionTable <- merge(
+  CaptionTable,
+  IMWTable[OCID == "H1", .(RecordID, OCID, PGA = PGA)],
+  by = c("RecordID", "OCID"),
+  all.x = TRUE
+)
+CAPTION_DUP <- CaptionTable[, .N, by = .(RecordID, OCID)][N > 1L]
+if (nrow(CAPTION_DUP)) stop("SRS caption inputs have duplicate RecordID/OCID rows.", call. = FALSE)
+RecordOrder <- unique(IPSATable[OCID == "H1", .(RecordID)])
+RecordOrder <- merge(
+  RecordOrder,
+  IMWTable[OCID == "H1", .(RecordID, PGA = PGA)],
+  by = "RecordID",
+  all.x = TRUE
+)
+if (anyNA(RecordOrder$PGA)) stop("IMW.csv missing H1 PGA values for IPSA records.", call. = FALSE)
+setorder(RecordOrder, -PGA, RecordID)
+RecordIDs <- head(as.character(RecordOrder$RecordID), 24L)
+if (!length(RecordIDs)) stop("SRS IPSA has no RecordID values.", call. = FALSE)
+MISSING_CAPTIONS <- setdiff(RecordIDs, CaptionTable[OCID == "H1", RecordID])
+if (length(MISSING_CAPTIONS)) stop(sprintf(
+  "SRS caption inputs missing H1 caption rows for: %s.",
+  paste(MISSING_CAPTIONS, collapse = ", ")
+), call. = FALSE)
+```
+
 :::{.content-hidden when-format='docx'}
 
 :::{.panel-tabset .full-width }

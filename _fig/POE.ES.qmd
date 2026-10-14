@@ -1,6 +1,0 @@
-```{r}
-#| include: false
-CAP <- readCaption("fig.POE.ES")
-```
-
-{{< include /_fig/POE.qmd >}}

@@ -23,10 +23,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-obe-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.operation"), ID.target = ID.gmdp),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 4L,
     anchor = "sec-criteria-obe-site",
     context = "tailings operational criteria table"
   )
@@ -35,7 +33,10 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-obe-figure",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(
+      CAP = paste0("Operation. ", readCaption("fig.DEQ.operation")),
+      ID.target = ID.gmdp
+    ),
     root = root,
     context = "tailings operational criteria figure"
   )
@@ -45,6 +46,7 @@ for (i in seq_len(nrow(SiteTable))) {
     sites = SiteTable,
     i = i,
     vars = list(
+      CAP = readCaption("tbl.DEQ.PGA"),
       ID.target = ID.gmdp,
       Standard.target = "GISTM",
       Stage.target = "Operation"
@@ -65,10 +67,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-sse-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.closure"), ID.target = ID.gmdp),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 4L,
     anchor = "sec-criteria-sse-site",
     context = "tailings closure criteria table"
   )
@@ -77,7 +77,10 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-sse-figure",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(
+      CAP = paste0("Closure. ", readCaption("fig.DEQ.closure")),
+      ID.target = ID.gmdp
+    ),
     root = root,
     context = "tailings closure criteria figure"
   )
@@ -94,10 +97,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-pce-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.DEQ.postclosure"), ID.target = ID.gmdp),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 4L,
     anchor = "sec-criteria-pce-site",
     context = "tailings post-closure criteria table"
   )
@@ -106,7 +107,10 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "criteria-pce-figure",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(
+      CAP = paste0("Post-Closure. ", readCaption("fig.DEQ.postclosure")),
+      ID.target = ID.gmdp
+    ),
     root = root,
     context = "tailings post-closure criteria figure"
   )

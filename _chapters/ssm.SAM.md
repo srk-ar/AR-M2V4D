@@ -12,4 +12,10 @@ Within the intraslab and deep component, the geometry and occurrence distributio
 
 @tbl-ssm-sam-inventory summarizes the six TRT–component combinations contained in the local inventory. For each combination, it reports the number of sources in the inventory ($N$)^[The count $N$ represents the computational objects in each source family. Relative hazard contribution is obtained by integrating their occurrence rates and the ground-motion distribution for the site and intensity level under consideration. A computational object representing a complex source may generate numerous potential ruptures [@Bazzurro1999; @OpenQuakeSourceModels326].], the MFD code for the recurrence representation, and the minimum–maximum magnitude and depth ranges.
 
+```{r}
+#| include: false
+CAP <- readCaption("tbl.SSM.SAM")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.SSM.SAM.json"), simplifyVector = TRUE)
+```
+
 {{< include /_tbl/SSM.SAM.qmd >}}

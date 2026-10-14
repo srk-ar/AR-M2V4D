@@ -12,6 +12,9 @@ NGR::knitBlock(
   stem = .composeTargetStem("kmax-ensemble"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Rigid Models", flexible = "Flexible Models", ensemble = "Ensemble Models"),
+    CAP = readCaption("fig.kmax"),
+    CAP.MCE = readCaption("fig.kmax.MCE"),
     p.target = "mean",
     IDn.target = "ensemble"
   ),
@@ -29,6 +32,9 @@ NGR::knitBlock(
   stem = .composeTargetStem("kh-ensemble"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Rigid Models", flexible = "Flexible Models", ensemble = "Ensemble Models"),
+    CAP = readCaption("fig.kh"),
+    CAP.MCE = readCaption("fig.kh.MCE"),
     p.target = "mean",
     IDn.target = "ensemble"
   ),
@@ -46,6 +52,9 @@ NGR::knitBlock(
   stem = .composeTargetStem("dn-ensemble"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Rigid Models", flexible = "Flexible Models", ensemble = "Ensemble Models"),
+    CAP = readCaption("fig.Dn"),
+    CAP.MCE = readCaption("fig.Dn.MCE"),
     p.target = "mean",
     IDn.target = "ensemble"
   ),

@@ -1,6 +1,5 @@
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.MCER.sites")
 ID.target <- .resolveIDTarget(
   ASCETable,
   "MCER.sites.qmd",

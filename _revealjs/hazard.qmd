@@ -26,7 +26,7 @@ NGR::knitBlock(
   path = "/_fig/UHS.TR.qmd",
   stem = paste0(.STEM, "uhs-tr"),
   labels = "rewrite",
-  vars = list(ID.target = .ID.BASE, siteID.target = .SITE),
+  vars = list(CAP = readCaption("fig.UHS.TR"), ID.target = .ID.BASE, siteID.target = .SITE),
   root = root
 )
 rm(list = intersect(c(
@@ -35,6 +35,11 @@ rm(list = intersect(c(
 ```
 
 ### PoE (Total)
+
+```{r}
+#| include: false
+CAP <- readCaption("fig.POE")
+```
 
 {{< include /_fig/POE.qmd >}}
 
@@ -46,7 +51,7 @@ if (!is.null(AEPSTable) && nrow(AEPSTable)) {
   .STEM <- if (is.character(.SITE) && length(.SITE) == 1L) paste0(tolower(.SITE), "-") else ""
   cat("\n### PoE (By Source)\n\n")
   ID.target <- .ID.BASE
-  NGR::knitBlock(path = "/_fig/POES.qmd", stem = paste0(.STEM, "poes"), labels = "rewrite", root = root)
+  NGR::knitBlock(path = "/_fig/POES.qmd", stem = paste0(.STEM, "poes"), labels = "rewrite", vars = list(CAP = readCaption("fig.POES")), root = root)
   rm(.SITE, .STEM)
 }
 ```
@@ -56,6 +61,7 @@ if (!is.null(AEPSTable) && nrow(AEPSTable)) {
 ```{r}
 #| include: false
 ID.target <- .ID.BASE
+CAP <- readCaption("fig.AEP")
 ```
 
 {{< include /_fig/AEP.qmd >}}
@@ -68,7 +74,7 @@ if (!is.null(AEPSTable) && nrow(AEPSTable)) {
   .STEM <- if (is.character(.SITE) && length(.SITE) == 1L) paste0(tolower(.SITE), "-") else ""
   cat("\n### AEP (By Source)\n\n")
   ID.target <- .ID.BASE
-  NGR::knitBlock(path = "/_fig/AEPS.qmd", stem = paste0(.STEM, "aeps"), labels = "rewrite", root = root)
+  NGR::knitBlock(path = "/_fig/AEPS.qmd", stem = paste0(.STEM, "aeps"), labels = "rewrite", vars = list(CAP = readCaption("fig.AEPS")), root = root)
   rm(.SITE, .STEM)
 }
 ```

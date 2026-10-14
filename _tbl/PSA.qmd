@@ -1,7 +1,6 @@
 
 ```{r}
 #| include: false
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.PSA")
 if (!exists("Vs30.docx", inherits = FALSE)) Vs30.docx <- 800
 SiteID.caption <- .requireOneTarget(
   .currentTarget("siteID.target"), "siteID.target", "PSA caption"

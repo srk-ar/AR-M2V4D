@@ -56,7 +56,9 @@ TBL <- WIDE |> buildTable(
 
 AUX <- c("TR")
 for (i in seq_along(AUX.Tn)) {
-  AUX <- c(AUX, paste0("Tn=", AUX.Tn[i], " s"), paste0("Tn=", AUX.Tn[i], " s"))
+  s <- as.character(AUX.Tn[i])
+  if (i == 1L) s <- paste0("Tn=", s)
+  AUX <- c(AUX, s, s)
 }
 TBL <- flextable::add_header_row(TBL, values = AUX, top = TRUE)
 TBL <- flextable::merge_h(TBL, part = "header")
@@ -74,9 +76,9 @@ for (i in seq_along(AUX.Tn)) {
 }
 TBL <- .mathHeader(TBL, SYM)
 
-# The spanning row labels a value of Tn, so it keeps the value and gains
-# the symbol; only the leading cell of each merged pair is visible.
-AUX.tex <- paste0("T_n = ", AUX.Tn, "\\,\\mathrm{s}")
+# Only the first period needs the symbol; units are stated in the caption.
+AUX.tex <- as.character(AUX.Tn)
+AUX.tex[1L] <- paste0("T_n = ", AUX.tex[1L])
 if (requireNamespace("equatags", quietly = TRUE)) {
   for (i in seq_along(AUX.Tn)) {
     TBL <- flextable::compose(

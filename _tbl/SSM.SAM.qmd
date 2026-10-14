@@ -3,7 +3,7 @@
 root <- normalizePath(here::here())
 SSM_MODEL <- "SAM"
 SSM_FILE <- file.path(DataRoot$hazard, "SSMTable.Rds")
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("tbl.SSM.SAM")
+SsmNotes <- CONTENT$notes
 ```
 
 &nbsp;
@@ -19,5 +19,5 @@ TBL
 
 ```{r}
 #| include: false
-rm(list = intersect(c("CAP", "SSM_MODEL", "SSM_FILE"), ls()))
+rm(list = intersect(c("CAP", "CONTENT", "SsmNotes", "SSM_MODEL", "SSM_FILE"), ls()))
 ```

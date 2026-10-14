@@ -1,6 +1,27 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "hazardResults.R"))
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+if (!exists("TBL.PGA.TR", inherits = FALSE)) stop("executive results: the caller must define TBL.PGA.TR, the id of the PGA table it places.", call. = FALSE)
+if (!exists("PSA_Units", inherits = FALSE)) PSA_Units <- "g"
+Units <- .executiveUnits(PSA_Units)
+SEP <- " to "
+REGIME <- c(
+  ASC = "active shallow crust", SCC = "stable continental crust",
+  SIF = "subduction interface", SIS = "subduction intraslab"
+)
+Names <- .executiveRegime(Hazard.config$trt, REGIME)
+Regimes <- knitr::combine_words(ifelse(Names == Hazard.config$trt, Hazard.config$trt, paste0(Names, " (", Hazard.config$trt, ")")), and = " and ")
+Sites <- if (nrow(SiteTable) > 1L) paste("the sites", knitr::combine_words(SiteTable$label, and = " and ")) else paste("the site", SiteTable$label)
+Rock <- ExecutiveSummary$rock
+Model <- paste0("**", ExecutiveSummary$ssm$label, "**", TREE.EN, if (nzchar(ExecutiveSummary$ssm$citation)) paste0(" ", ExecutiveSummary$ssm$citation) else "")
+PGA.MDE <- .executiveRange(Rock[TR == TR.MDE, c(minimum, maximum)], SEP, function(v) .fmtSa(v, PSA_Units))
 ```
 
-At reference rock ($V_{S30}=760$ m/s), the mean PGA ranges from `r HazardSummary$pga[Vs30 == 760 & p == "mean", .fmtSa(min(SaF), PSA_Units)]` to `r HazardSummary$pga[Vs30 == 760 & p == "mean", .fmtSa(max(SaF), PSA_Units)]` `r PSA_Units` for return periods between `r HazardSummary$pga[Vs30 == 760 & p == "mean", .fmti(min(TR))]` and `r HazardSummary$pga[Vs30 == 760 & p == "mean", .fmti(max(TR))]` years. The following table reports the mean PGA by return period and site condition, together with the deterministic MCE envelopes.
+- **Probabilistic Seismic Hazard Assessment (PSHA).** The probabilistic assessment quantifies the seismic hazard at each site as annual exceedance rates for specified ground-motion levels [@Cornell1968; @McGuire2004]. It adopted the regional seismic source model `r Model`, together with GMM logic trees for the `r Regimes` tectonic region types. The `r .fmti(TR.MDE)`-year return period defines the Maximum Design Earthquake (MDE). Table [-@`r TBL.PGA.TR`] reports, for `r Sites`, the mean PGA by return period and site condition; on reference rock, $V_{S30}=760$ m/s, the PGA of the MDE is `r PGA.MDE` `r Units`.
+
+```{r}
+#| include: false
+rm(list = intersect(c("SEP", "Units", "REGIME", "Names", "Regimes", "Sites", "Rock", "Model", "PGA.MDE"), ls()))
+```

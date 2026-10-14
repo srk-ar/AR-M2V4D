@@ -30,7 +30,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "hazard-rmw-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.RMw"), ID.target = ID.gmdp),
     root = root,
     context = "hazard RMw table"
   )
@@ -121,6 +121,12 @@ NGR::knitBlock(
 
 {{< include /_chapters/dsha.uncertainty.md >}}
 
+```{r}
+#| echo: false
+#| results: asis
+.localChapter("dsha.scenarios.md", root, heading = "Scenario Definition", level = 3L)
+```
+
 {{< include /_chapters/dsha.results.md >}}
 
 ```{r}
@@ -132,7 +138,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "dsha-scenarios",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.Scenarios"), ID.target = ID.gmdp),
     root = root,
     context = "declared scenario parameters"
   )
@@ -141,7 +147,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "dsha-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp, Vs30.target = 760),
+    vars = list(CAP = readCaption("tbl.DSHA"), ID.target = ID.gmdp, Vs30.target = 760),
     root = root,
     context = "DSHA comparison table"
   )
@@ -150,7 +156,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "dsha-scenarios-pga",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.Scenarios.PGA"), ID.target = ID.gmdp),
     root = root,
     context = "scenario PGA by condition"
   )
@@ -179,6 +185,7 @@ if (!is.null(SelectionTable)) {
   for (i in seq_len(nrow(SelectionTable))) {
     .knitSelectionBlock(
       path = "/_tbl/SRS.qmd",
+      vars = list(CAP = readCaption("tbl.SRS")),
       stem = "srs-records",
       selections = SelectionTable,
       i = i,

@@ -22,7 +22,7 @@ if (!is.null(UHSTable) && !exists("Tn.PGA")) {
   Vref.data  <- sort(as.numeric(unique(UHSTable[grepl("\\.site$", ID)]$Vref)))
   Vs30.gmdp  <- sort(setdiff(as.numeric(unique(UHSTable$Vs30)), Vref.data))
 
-  AUX <- c("1500"="A/B","1250"="B","800"="B","760"="B/C","560"="C","360"="C/D","270"="D","180"="D/E")
+  AUX <- c("1500"="A/B","1250"="B","800"="B/C","760"="B/C","560"="C","360"="C/D","270"="D","180"="D/E")
   Site.gmdp  <- AUX[as.character(Vs30.gmdp)]
   Site.gmdp[is.na(Site.gmdp)] <- paste0("Vs30=", Vs30.gmdp[is.na(Site.gmdp)])
   Site.label <- paste0(Site.gmdp, " (", Vs30.gmdp, ")")

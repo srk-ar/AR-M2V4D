@@ -11,6 +11,12 @@ source(file.path(root, "scripts", "setup", "report.R"))
 
 {{< include /_chapters/dsha.uncertainty.md >}}
 
+```{r}
+#| echo: false
+#| results: asis
+.localChapter("dsha.scenarios.md", root, heading = "Scenario Definition")
+```
+
 ## Deterministic Scenarios {#sec-mce_results}
 
 {{< include /_chapters/dsha.results.md >}}
@@ -24,7 +30,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "dsha-gmm",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = NULL),
+    vars = list(CAP = readCaption("fig.GMPE.PSA"), ID.target = NULL),
     root = root,
     context = "scenario GMM spectra"
   )
@@ -33,7 +39,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "dsha-compare",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.UHS.compare"), ID.target = ID.gmdp),
     root = root,
     context = "DSHA comparison"
   )
@@ -42,7 +48,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "dsha-scenarios",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.Scenarios"), ID.target = ID.gmdp),
     root = root,
     context = "declared scenario parameters"
   )
@@ -51,7 +57,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "dsha-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp, Vs30.target = 760),
+    vars = list(CAP = readCaption("tbl.DSHA"), ID.target = ID.gmdp, Vs30.target = 760),
     root = root,
     context = "DSHA comparison table"
   )
@@ -60,7 +66,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "dsha-scenarios-pga",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.Scenarios.PGA"), ID.target = ID.gmdp),
     root = root,
     context = "scenario PGA by condition"
   )

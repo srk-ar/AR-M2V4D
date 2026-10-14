@@ -14,7 +14,6 @@ ID.target <- .resolveIDTarget(
 MCEMDETRTarget <- 10000
 Sa.log   <- TRUE
 Tn.log   <- TRUE
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.MCE.MDE")
 SiteID.caption <- .requireOneTarget(
   .currentTarget("siteID.target"), "siteID.target", "MCE/MDE figure caption"
 )

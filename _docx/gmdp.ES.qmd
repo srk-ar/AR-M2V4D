@@ -11,22 +11,34 @@ source(file.path(root, "scripts", "setup", "report.R"))
 
 {{< include /_chapters/ts.model.es.md >}}
 
-{{< include /_tbl/IDm.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.IDm.ES")
+HEADER <- "Zona del TSF"
+ZONE <- c(
+  "Relaves finos (lamas, laguna)",
+  "Playa de relaves gruesos / espaldón aguas arriba",
+  "Zona de transición (margen de playa / relaves intermedios)",
+  "Contrafuerte de enrocado / espaldón aguas abajo",
+  "Espaldón aguas abajo con filtro granular o capa de transición",
+  "Espaldón aguas abajo con transición o filtro enriquecido en finos",
+  "Zona de núcleo (núcleo impermeable / trinchera de corte)",
+  "Zona de núcleo con transición limo-arcillosa (margen del núcleo / relleno fino)"
+)
+```
+
+{{< include /_tbl/IDm.qmd >}}
 
 ```{r}
 #| echo: false
 #| results: asis
-for (i in seq_len(nrow(SiteTable))) {
-  .knitReportBlock(
-    path = "/_tbl/Ts.ES.qmd",
-    stem = "periods-table",
-    sites = SiteTable,
-    i = i,
-    root = root,
-    context = "tabla de períodos fundamentales"
-  )
-}
-rm(i)
+NGR::knitBlock(
+  path = "/_tbl/Ts.qmd",
+  stem = "periods-table",
+  labels = "rewrite",
+  vars = list(CAP = readCaption("tbl.Ts.ES")),
+  root = root
+)
 ```
 
 ## Coeficiente sísmico basado en desempeño {#sec-coefficients}
@@ -36,6 +48,8 @@ rm(i)
 {{< include /_chapters/dn.model.es.md >}}
 
 {{< include /_chapters/dn.uncertainty.es.md >}}
+
+{{< include /_results/dn.inputs.es.qmd >}}
 
 ```{r}
 #| echo: false
@@ -57,14 +71,12 @@ if (nrow(SiteTable)) {
 }
 for (i in seq_len(nrow(SiteTable))) {
   .knitReportBlock(
-    path = "/_tbl/kh.sites.ES.qmd",
+    path = "/_tbl/kh.sites.qmd",
     stem = "kh-table",
     sites = SiteTable,
     i = i,
-    vars = list(IDg.target = IDg.gmdp, IDm.target = IDm.gmdp),
+    vars = list(CAP = readCaption("tbl.kh.sites.ES"), IDg.target = IDg.gmdp, IDm.target = IDm.gmdp),
     root = root,
-    heading = SiteTable$label[[i]],
-    level = 3L,
     anchor = "sec-kh-table-site",
     context = "MCE kh table"
   )

@@ -21,10 +21,13 @@ root <- normalizePath(here::here())
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_tbl/ancold.ES.qmd",
+  path = "/_tbl/ancold.qmd",
   stem = .STEM,
   labels = "rewrite",
-  vars = .VARS,
+  vars = c(.VARS, list(
+    CAP = readCaption("tbl.ancold.ES"),
+    CONTENT = jsonlite::read_json(file.path(root, "_captions", "tbl.ancold.ES.json"), simplifyVector = TRUE)
+  )),
   root = root
 )
 ```
@@ -35,10 +38,13 @@ NGR::knitBlock(
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/DEQ.operation.ES.qmd",
+  path = "/_fig/DEQ.operation.qmd",
   stem = paste0(.STEM, "-obe"),
   labels = "rewrite",
-  vars = .VARS,
+  vars = c(.VARS, list(
+    CAP = paste0(.VARS$Standard.target, ". OBE. ",
+                 readCaption("fig.DEQ.operation.ES"))
+  )),
   root = root
 )
 ```
@@ -47,10 +53,13 @@ NGR::knitBlock(
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/DEQ.closure.ES.qmd",
+  path = "/_fig/DEQ.closure.qmd",
   stem = paste0(.STEM, "-see"),
   labels = "rewrite",
-  vars = .VARS,
+  vars = c(.VARS, list(
+    CAP = paste0(.VARS$Standard.target, ". SEE. ",
+                 readCaption("fig.DEQ.closure.ES"))
+  )),
   root = root
 )
 ```
@@ -61,10 +70,10 @@ NGR::knitBlock(
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_tbl/DEQ.ES.qmd",
+  path = "/_tbl/DEQ.qmd",
   stem = paste0(.STEM, "-pga"),
   labels = "rewrite",
-  vars = .VARS,
+  vars = c(.VARS, list(CAP = readCaption("tbl.DEQ.ES"))),
   root = root
 )
 ```

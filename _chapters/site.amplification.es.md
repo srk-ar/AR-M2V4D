@@ -1,15 +1,16 @@
-El factor $F$ de [-@eq-site-af] sigue el marco ergódico de amplificación de sitio desarrollado para el centro y el este de Norteamérica. Stewart *et al.* [-@Stewart2020] establecen la respuesta lineal y el cambio de condición de referencia; Hashash *et al.* [-@Hashash2020] formulan la modificación no lineal dependiente de la intensidad. El modelo está expresado respecto de una condición de roca dura de 3000 m/s; para transformar una entrada en $V_{\mathrm{ref}}=760\,\mathrm{m/s}$, el cálculo aplica la diferencia exacta entre el modelo compuesto evaluado en la condición objetivo y en la condición de referencia:
+El factor $F$ de [-@eq-site-af] sigue el marco ergódico de amplificación de sitio desarrollado para el centro y el este de Norteamérica. Stewart *et al.* [-@Stewart2020] establecen la respuesta lineal y el cambio de condición de referencia; Hashash *et al.* [-@Hashash2020] formulan la modificación no lineal dependiente de la intensidad. El modelo está expresado respecto de una condición de roca dura de 3000 m/s. Su log-amplificación compuesta $f$ en una condición de sitio $V_{S30}$, para el período del oscilador $T_n$ y el PGA de entrada $pga^*$, es la suma de tres componentes:
 
 $$
-\begin{aligned}
-\mu_{\ln F}&=f-f_{\mathrm{ref}},\\
-f&=\ln F_{760}+\ln F_V+\ln F_{nl}.
-\end{aligned}
+f(T_n,V_{S30},pga^*)=\ln F_{760}(T_n,V_{S30})+\ln F_V(T_n,V_{S30})+\ln F_{nl}(T_n,V_{S30},pga^*).
+$${#eq-site-composite}
+
+Para transformar una entrada en $V_{\mathrm{ref}}=760\,\mathrm{m/s}$, el cálculo aplica la diferencia exacta entre el modelo compuesto evaluado en la condición objetivo y en la condición de referencia, para el mismo período e intensidad de entrada:
+
+$$
+\mu_{\ln F}(T_n,V_{S30},pga^*)=f(T_n,V_{S30},pga^*)-f(T_n,V_{\mathrm{ref}},pga^*).
 $${#eq-site-decomp}
 
-$V_{S30}$ es la velocidad de onda de corte promediada en el tiempo de viaje en los 30 m superiores, $T_n$ es el período del oscilador y $pga^*$ es el PGA de entrada. Aquí $f$ agrupa las tres componentes de log-amplificación evaluadas en la condición objetivo, para cada período e intensidad de entrada, y $f_{\mathrm{ref}}$ es la misma función evaluada en la condición de referencia $V_{\mathrm{ref}}$. En cada evaluación del modelo compuesto, $F_{\mathrm{comp}}=F_{760}F_VF_{nl}$; por consiguiente, el factor aplicado desde 760 m/s es la razón entre $F_{\mathrm{comp}}$ en la condición objetivo y en la condición de referencia.
-
-El término lineal $F_V$ representa el cambio de rigidez respecto de la condición de referencia y varía con $V_{S30}$ y $T_n$; adopta la unidad en 760 m/s y disminuye gradualmente hacia las condiciones más rígidas. El término $F_{760}$ vincula la referencia de 760 m/s con la roca dura de 3000 m/s nativa del modelo; depende del período, generalmente excede la unidad y pondera perfiles de referencia con contraste de impedancia y con gradiente de velocidad. La diferencia de [-@eq-site-decomp] conserva esa ponderación en ambas evaluaciones, incluida su transición para velocidades inferiores a 600 m/s.
+$V_{S30}$ es la velocidad de onda de corte promediada en el tiempo de viaje en los 30 m superiores, $T_n$ es el período del oscilador y $pga^*$ es el PGA de entrada. En cada evaluación del modelo compuesto, $F_{\mathrm{comp}}=F_{760}F_VF_{nl}$; por consiguiente, el factor aplicado desde 760 m/s es la razón entre $F_{\mathrm{comp}}$ en la condición objetivo y en la condición de referencia. El término lineal $F_V$ representa el cambio de rigidez respecto de la condición de referencia y varía con $V_{S30}$ y $T_n$; adopta la unidad en 760 m/s y disminuye gradualmente hacia las condiciones más rígidas. El término $F_{760}$ vincula la referencia de 760 m/s con la roca dura de 3000 m/s nativa del modelo; depende del período, generalmente excede la unidad y pondera perfiles de referencia con contraste de impedancia y con gradiente de velocidad. La diferencia de [-@eq-site-decomp] conserva esa ponderación en ambas evaluaciones, incluida su transición para velocidades inferiores a 600 m/s.
 
 El término $F_{nl}$ representa la variación de la amplificación con la intensidad del movimiento y depende de $V_{S30}$, $T_n$ y del $pga^*$. La formulación utiliza una referencia dependiente del período —760 m/s para $T_n<0.4$ s y 3000 m/s para períodos mayores— y convierte el PGA de entrada en 760 m/s a la referencia de roca dura mediante $pga^*_{3000}=pga^*_{760}/2.275$ [@Stewart2020; @Hashash2020]. Para intensidades bajas, la respuesta se aproxima al régimen lineal; al aumentar $pga^*$, el término reproduce la reducción de amplificación asociada con la respuesta no lineal del suelo. El balance entre $F_V$ y $F_{nl}$ permite representar amplificación en períodos intermedios y largos y reducción en períodos cortos para suelos de menor rigidez, mientras que la transformación se aproxima a la unidad cuando la condición objetivo coincide con la referencia.
 

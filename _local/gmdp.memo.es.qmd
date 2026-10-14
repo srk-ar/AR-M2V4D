@@ -7,6 +7,7 @@ bibliography: _local/gmdp.memo.bib
 format:
   docx:
     reference-doc: _local/gmdp.memo.reference.docx
+    fig-height: 4.725
 ---
 
 # Parámetros de Diseño Sísmico
@@ -24,6 +25,12 @@ TR.target <- c(500, 2500, TR.MDE)
 Da.target <- sort(Da.gmdp)
 IDn.target <- c("rigid", "ensemble", "flexible")
 PLOT.HEIGHT <- 720
+if (knitr::pandoc_to("docx")) {
+  knitr::opts_chunk$set(
+    out.width = "6.3in", fig.align = "center",
+    screenshot.opts = list(vwidth = 960, vheight = 720, zoom = 6.3 * 300 / 960)
+  )
+}
 Demands <- list(tr500 = 500, tr2500 = 2500, mde = TR.MDE, mce = numeric())
 PSA_Units <- "cm/s2"
 Periods <- unique(ShearTable[.matchP(level, p.target)][

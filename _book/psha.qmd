@@ -27,10 +27,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "hazard-aep",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.AEP"), ID.target = ID.gmdp),
     root = root,
-    heading = if (knitr::is_html_output()) SiteTable$label[[i]] else NULL,
-    level = 4L,
     anchor = "sec-hazard-aep-site",
     context = "hazard AEP"
   )
@@ -47,10 +45,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "hazard-aeps",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.AEPS"), ID.target = ID.gmdp),
     root = root,
-    heading = if (knitr::is_html_output()) SiteTable$label[[i]] else NULL,
-    level = 5L,
     anchor = "sec-hazard-aeps-site",
     context = "hazard AEPS"
   )
@@ -69,10 +65,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "hazard-poe",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.POE"), ID.target = ID.gmdp),
     root = root,
-    heading = if (knitr::is_html_output()) SiteTable$label[[i]] else NULL,
-    level = 4L,
     anchor = "sec-hazard-poe-site",
     context = "hazard POE"
   )
@@ -89,10 +83,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "hazard-poes",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.POES"), ID.target = ID.gmdp),
     root = root,
-    heading = if (knitr::is_html_output()) SiteTable$label[[i]] else NULL,
-    level = 5L,
     anchor = "sec-hazard-poes-site",
     context = "hazard POES"
   )
@@ -109,10 +101,8 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "hazard-rmw",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("fig.RMw2D_cell"), ID.target = ID.gmdp),
     root = root,
-    heading = if (knitr::is_html_output()) SiteTable$label[[i]] else NULL,
-    level = 4L,
     anchor = "sec-hazard-rmw-site",
     context = "hazard RMw figures"
   )
@@ -121,7 +111,7 @@ for (i in seq_len(nrow(SiteTable))) {
     stem = "hazard-rmw-table",
     sites = SiteTable,
     i = i,
-    vars = list(ID.target = ID.gmdp),
+    vars = list(CAP = readCaption("tbl.RMw"), ID.target = ID.gmdp),
     root = root,
     context = "hazard RMw table"
   )

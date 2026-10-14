@@ -4,19 +4,9 @@ if (!requireNamespace("jsonlite", quietly = TRUE)) {
 }
 
 if (!exists("PathSRS", inherits = FALSE)) {
-  if (exists("SRS.target", inherits = FALSE)) {
-    PathSRS <- file.path(root, "gmsp", "match", SRS.target)
-  } else {
-    SRS_ROOT <- file.path(root, "gmsp", "match")
-    SRS_RUNS <- list.dirs(SRS_ROOT, full.names = TRUE, recursive = FALSE)
-    if (length(SRS_RUNS) != 1L) {
-      stop("srs summary: set SRS.target or PathSRS before sourcing scripts/setup/srs.R.", call. = FALSE)
-    }
-    PathSRS <- SRS_RUNS[[1L]]
-    SRS.target <- basename(PathSRS)
-    rm(SRS_ROOT, SRS_RUNS)
-  }
-} else if (!exists("SRS.target", inherits = FALSE)) {
+  PathSRS <- .srsPath(root, target = if (exists("SRS.target", inherits = FALSE)) SRS.target)
+}
+if (!exists("SRS.target", inherits = FALSE)) {
   SRS.target <- basename(normalizePath(PathSRS, mustWork = FALSE))
 }
 if (!exists("SRS.PGA.units", inherits = FALSE)) SRS.PGA.units <- "g"

@@ -4,10 +4,13 @@
 #| echo: false
 #| results: asis
 NGR::knitBlock(
-  path = "/_fig/Dn.ES.qmd",
+  path = "/_fig/Dn.qmd",
   stem = .composeTargetStem("dn-curves"),
   labels = "rewrite",
   vars = list(
+    MODELS = c(rigid = "Modelos rígidos", flexible = "Modelos flexibles", ensemble = "Modelos ensemble"),
+    CAP = readCaption("fig.Dn.ES"),
+    CAP.MCE = readCaption("fig.Dn.MCE.ES"),
     p.target = "mean"
   ),
   root = root

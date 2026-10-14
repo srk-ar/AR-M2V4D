@@ -10,7 +10,6 @@ if (!exists("Vs30.target", inherits = FALSE) || length(Vs30.target) != 1L) {
 if (!exists("p.target", inherits = FALSE) || !length(p.target)) {
   p.target <- "mean"
 }
-if (!exists("CAP", inherits = FALSE)) CAP <- readCaption("fig.UHS.compare")
 ```
 
 ::: {.content-visible when-format='html'}

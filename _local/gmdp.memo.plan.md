@@ -15,7 +15,7 @@ Los masters, captions, builders y demás recursos propios del memo están juntos
 
 En ambos masters, la sección `sec-coefficients` integra `dn.ensemble`, `dn.model` y `dn.uncertainty`. La sección `sec-newmark-appendix` y las secciones H2 `sec-newmark-rigid`, `sec-newmark-flexible` y `sec-newmark-ensemble` desarrollan las formulaciones. Ts permanece completo bajo `sec-slope_periods`.
 
-Los masters coinciden byte por byte con `candidate.gmdp.memo.{en,es}.qmd` de la revisión editorial registrada en `agents/dev/SoT/newmark-memo-fluency-20260924`. Sus ledgers documentan la procedencia por idioma. La revisión de render no modificó esa prosa ni tradujo una versión para producir la otra. Los captions de kmax/kh también contienen la revisión editorial local.
+La prosa conserva la revisión de `candidate.gmdp.memo.{en,es}.qmd` registrada en `agents/dev/SoT/newmark-memo-fluency-20260924`. Sus ledgers documentan la procedencia por idioma. Los masters añaden únicamente los parámetros recuperados de captura DOCX; no se modificó esa prosa ni se tradujo una versión para producir la otra. Los captions de kmax/kh también contienen la revisión editorial local.
 
 La retirada expresa de `eq-newmark-arias` y `Verri2023a` se conserva. Permanecen las fórmulas JB07/SR08 que usan Arias y la referencia distinta `VerriKozlowski2026Newmark`.
 
@@ -29,16 +29,18 @@ HTML y DOCX contienen doce tablas de contenido, incluida una única Ts de cinco 
 
 Verificadores y logs de esta revisión: `reports/dev/plan/m2v4d-memo-publication`. Las comprobaciones anteriores permanecen en `reports/dev/SoT/m2v4d-memo-repair`; no sustituyen la comprobación del texto y los renders actuales.
 
+El ajuste posterior de tamaño Word está verificado en `reports/dev/plan/m2v4d-memo-figure-size`: captura de 960 × 720 px con zoom para 300 dpi, inserción a 6,3 pulgadas y PNG resultantes de 1890 × 1418 px. Las ocho figuras de cada idioma recuperan esa proporción. Estos parámetros son propios del memo y deben conservarse al revisar sus masters; no requieren modificar los helpers ni el scaffold.
+
 ## Limitaciones pendientes
 
 1. **Composición gráfica:** los builders locales sourcean `scripts/fig/kmax.R` y `kh.R` por modelo y reúnen sus salidas, pero también intervienen nombres, leyenda, tooltip y trazos. El rechazo previo de esa intervención no se convierte en aceptación por publicar esta revisión. No promoverla a SHA como formato aprobado.
-2. **Word:** la inspección mediante LibreOffice mantiene el desborde horizontal de Ts (ES, página física 9), leyendas pequeñas y truncadas (EN 13, ES 20) y captions partidos entre páginas (ES 20). La salida Word sigue siendo provisional. No se aisló la causa ni se introdujo un formato alternativo.
+2. **Word:** recuperado el tamaño de las figuras; las páginas inspeccionadas muestran leyendas completas. El desborde horizontal de tablas y la paginación de tablas/captions quedan pendientes. El ajuste de captura no los corrige y la salida Word sigue siendo provisional.
 3. **Ciencia y escenarios:** los pares de `gmdp.memo.scenarios.csv` siguen siendo provisionales para revisar formatos. No se aplicaron las cinco geometrías definitivas, pendientes, lambdas ni una nueva asociación de materiales. Esta revisión no recalculó datos.
 4. **Incertidumbre:** esta entrega contiene las ocho figuras de medias. La composición de figuras con incertidumbre sigue pendiente.
 
 ## Continuación
 
-Resolver la composición gráfica mediante los recursos de producción y corregir el ancho de tablas, la legibilidad de leyendas y la paginación de Word. Después aplicar las entradas científicas validadas y repetir solo las comprobaciones afectadas. Las futuras revisiones de texto deben conservar las anclas, ecuaciones, captions separados y callers de `knitBlock`, y deben partir de las fuentes y ledgers de cada idioma.
+Resolver la composición gráfica mediante los recursos de producción y corregir el ancho de tablas y la paginación de Word. Después aplicar las entradas científicas validadas y repetir solo las comprobaciones afectadas. Las futuras revisiones de texto deben conservar las anclas, ecuaciones, captions separados, parámetros de captura DOCX y callers de `knitBlock`, y deben partir de las fuentes y ledgers de cada idioma.
 
 Naming del paquete: `gmdp.memo` identifica el producto; `Ts`, `kmax`, `kh` y `SiteGo` conservan las identidades existentes. Prefijos `tbl.` y `fig.` distinguen capas en la carpeta plana. Builders sin idioma, captions EN sin sufijo y ES con `.ES.md`, masters `.en.qmd` y `.es.qmd`.
 

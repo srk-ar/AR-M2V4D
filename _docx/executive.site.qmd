@@ -1,35 +1,31 @@
-::: {.content-hidden when-format='html'}
+```{r}
+#| include: false
+PSA_Units <- "cm/s2"
+# Identities of the tables placed at the end of the summary: knitBlock rewrites every label with its stem (the chapters knit the same builders with their own labels, and a DOCX is one document), and the PGA builder labels its DOCX block separately.
+TBL.PGA.TR <- if (knitr::pandoc_to("docx")) "tbl-exec-pga-tr-pga-tr-docx" else "tbl-exec-pga-tr-pga-tr"
+TBL.DEQ.PGA <- "tbl-exec-deq-pga-deq-pga"
+TBL.MCER <- "tbl-exec-mcer-sites-mcer-sites"
+TBL.KH <- "tbl-exec-kh-sites-kh-sites"
+```
 
-## Seismic Hazard Assessment (PSHA / DSHA) {.unnumbered}
-
-:::
-
-{{< include /_chapters/psha.summary.md >}}
+{{< include /_results/hazard.results.qmd >}}
 
 ```{r}
 #| echo: false
 #| results: asis
-NGR::knitBlock(path = "/_tbl/PGA.TR.qmd", stem = "exec-pga-tr", labels = "rewrite", vars = list(ID.target = ID.gmdp, siteID.target = SiteTable$siteID, TR.target = TR.gmdp, Vs30.target = Vs30.gmdp, PSA_Units = "cm/s2"), root = root)
+if (!is.null(MCETable) && nrow(MCETable)) {
+  NGR::knitBlock(path = "/_results/dsha.results.qmd", stem = "exec-dsha", labels = "keep", root = root)
+}
 ```
 
-{{< include /_chapters/site.summary.md >}}
+{{< include /_results/hazard.uncertainty.qmd >}}
 
-
-::: {.content-hidden when-format='html'}
-`r .deckNote("sha", "Seismic Hazard Assessment", "The hazard curves and probabilistic spectra are developed in the %s annex.")`
-:::
+{{< include /_results/site.results.qmd >}}
 
 ```{r}
 #| echo: false
 #| results: asis
 if (!is.null(SelectionTable)) {
-  cat("::: {.content-hidden when-format='html'}\n## Seismic Record Selection\n:::\n\n")
-  NGR::knitBlock(
-    path = "/_chapters/srs.summary.md",
-    stem = "exec-srs-summary",
-    labels = "keep",
-    root = root
-  )
   for (i in seq_len(nrow(SelectionTable))) {
     .knitSelectionBlock(
       path = "/_results/srs.results.qmd",
@@ -37,99 +33,63 @@ if (!is.null(SelectionTable)) {
       selections = SelectionTable,
       i = i,
       root = root,
-      heading = SelectionTable$label[[i]],
-      level = 3L,
       anchor = "sec-exec-srs-selection",
       context = "SRS executive summary"
     )
   }
-  cat(sprintf(
-    "\n::: {.content-hidden when-format='html'}\n%s\n:::\n",
-    .deckNote("srs", "Seismic Record Selection", "The selected records and their verifications are presented in the %s annex.")
-  ))
   rm(i)
 }
 ```
 
-::: {.content-hidden when-format='html'}
+{{< include /_results/deq.results.qmd >}}
 
-## Seismic Design Criteria for Tailings Storage Facilities {.unnumbered}
+{{< include /_results/mcer.results.qmd >}}
 
-:::
+{{< include /_results/ts.results.qmd >}}
 
-{{< include /_chapters/deq.summary.md >}}
+{{< include /_results/dn.results.qmd >}}
 
-```{r}
-#| echo: false
-#| results: asis
-NGR::knitBlock(path = "/_tbl/DEQ.PGA.qmd", stem = "exec-deq-pga", labels = "keep", vars = list(ID.target = ID.gmdp, siteID.target = SiteTable$siteID, Standard.target = "GISTM", Stage.target = "Operation", Vs30.target = 800, PSA_Units = "cm/s2"), root = root)
-```
-
-::: {.content-hidden when-format='html'}
-`r .deckNote("sdc", "Seismic Design Criteria", "The design criteria by standard and consequence classification are developed in the %s annex.")`
-:::
-
-::: {.content-hidden when-format='html'}
-
-## Seismic Design Criteria for Conventional Structures {.unnumbered}
-
-:::
-
-{{< include /_chapters/mcer.summary.md >}}
+{{< include /_results/kmax.results.qmd >}}
 
 ```{r}
 #| echo: false
 #| results: asis
-NGR::knitBlock(path = "/_tbl/MCER.sites.qmd", stem = "exec-mcer-sites", labels = "keep", vars = list(ID.target = ID.gmdp, siteID.target = SiteTable$siteID, Vs30.target = Vs30.gmdp, PSA_Units = "cm/s2"), root = root)
-```
-
-::: {.content-hidden when-format='html'}
-`r .deckNote("sdc", "Seismic Design Criteria", "The structural design spectra and their parameters are developed in the %s annex.")`
-:::
-
-::: {.content-hidden when-format='html'}
-
-## Dynamic Properties of Slopes {.unnumbered}
-
-:::
-
-
-```{r}
-#| echo: false
-#| results: asis
-.knitReportBlock(
-  path = "/_results/ts.results.qmd",
-  stem = "exec-ts-results",
-  sites = SiteTable,
-  i = 1L,
-  root = root,
-  context = "ts executive results"
+Notes <- c(
+  .deckNote("sha", "Seismic Hazard Assessment", "The hazard curves, the probabilistic spectra, and the deterministic scenarios are presented in the %s annex."),
+  if (!is.null(SelectionTable)) .deckNote("srs", "Seismic Record Selection", "The selected records and their verifications are presented in the %s annex."),
+  .deckNote("sdc", "Seismic Design Criteria", "The design criteria and the structural design spectra are presented in the %s annex."),
+  .deckNote("gmdp", "Ground-Motion Design Parameters", "The fundamental periods, the Newmark displacements, and the seismic coefficients are presented in the %s annex.")
 )
+Notes <- Notes[nzchar(Notes)]
+if (length(Notes)) cat(paste(Notes, collapse = " "), "\n", sep = "")
+rm(Notes)
 ```
-
-::: {.content-hidden when-format='html'}
-`r .deckNote("gmdp", "Ground-Motion Design Parameters", "The fundamental periods and dynamic properties are detailed in the %s annex.")`
-:::
-
-::: {.content-hidden when-format='html'}
-
-## Performance-Based Seismic Coefficients {.unnumbered}
-
-:::
-
-{{< include /_chapters/kmax.summary.md >}}
 
 ```{r}
 #| echo: false
 #| results: asis
-NGR::knitBlock(path = "/_tbl/kh.sites.qmd", stem = "exec-kh-sites", labels = "rewrite", vars = list(siteID.target = SiteTable$siteID, IDg.target = .summaryIDg(ShearTable, IDg.gmdp), IDm.target = IDm.gmdp), root = root)
+NGR::knitBlock(path = "/_tbl/PGA.TR.qmd", stem = "exec-pga-tr", labels = "rewrite", vars = list(CAP = readCaption("tbl.PGA.TR"), ID.target = ID.gmdp, siteID.target = SiteTable$siteID, TR.target = TR.gmdp, Vs30.target = Vs30.gmdp, PSA_Units = "cm/s2"), root = root)
 ```
 
-::: {.content-hidden when-format='html'}
-`r .deckNote("gmdp", "Ground-Motion Design Parameters", "The seismic coefficients $k_{max}$ and $k_h$ are developed in the %s annex.")`
-:::
+```{r}
+#| echo: false
+#| results: asis
+NGR::knitBlock(path = "/_tbl/DEQ.PGA.qmd", stem = "exec-deq-pga", labels = "rewrite", vars = list(CAP = readCaption("tbl.DEQ.PGA"), ID.target = ID.gmdp, siteID.target = SiteTable$siteID, Standard.target = "GISTM", Stage.target = "Operation", Vs30.target = Vs30.gmdp, PSA_Units = "cm/s2"), root = root)
+```
+
+```{r}
+#| echo: false
+#| results: asis
+NGR::knitBlock(path = "/_tbl/MCER.sites.qmd", stem = "exec-mcer-sites", labels = "rewrite", vars = list(CAP = readCaption("tbl.MCER.sites"), ID.target = ID.gmdp, siteID.target = SiteTable$siteID, Vs30.target = Vs30.gmdp, PSA_Units = "cm/s2"), root = root)
+```
+
+```{r}
+#| echo: false
+#| results: asis
+NGR::knitBlock(path = "/_tbl/kh.sites.qmd", stem = "exec-kh-sites", labels = "rewrite", vars = list(CAP = readCaption("tbl.kh.sites"), siteID.target = SiteTable$siteID, IDg.target = IDg.gmdp, IDm.target = IDm.gmdp), root = root)
+```
 
 ```{r}
 #| include: false
-rm(list = intersect(c("siteID.target"), ls()))
+rm(list = intersect(c("siteID.target", "PSA_Units", "TBL.PGA.TR", "TBL.DEQ.PGA", "TBL.MCER", "TBL.KH", "ExecutiveSummary"), ls()))
 ```

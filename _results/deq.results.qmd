@@ -1,6 +1,21 @@
 ```{r}
 #| include: false
-source(file.path(root, "scripts", "setup", "criteriaResults.R"))
+if (!exists("TBL.DEQ.PGA", inherits = FALSE)) stop("executive results: the caller must define TBL.DEQ.PGA, the id of the table it places.", call. = FALSE)
+if (!exists("ExecutiveSummary", inherits = FALSE)) {
+  source(file.path(root, "scripts", "setup", "executiveResults.R"))
+}
+if (!exists("PSA_Units", inherits = FALSE)) PSA_Units <- "g"
+Units <- .executiveUnits(PSA_Units)
+SEP <- " to "
+Standards <- knitr::combine_words(ExecutiveSummary$criteria$standards, and = " and ")
+Bands <- ExecutiveSummary$criteria$bands
+Sa <- function(v) .fmtSa(v, PSA_Units)
+PGA.all <- .executiveRange(c(Bands$minimum, Bands$maximum), SEP, Sa)
 ```
 
-At the reference-rock condition ($V_{S30}=`r .fmti(CriteriaSummary$bandsVs30)`$ m/s), criteria for the lowest consequence classes yield design PGA from `r .fmt(CriteriaSummary$bands[band == 1L, PGA.min])` to `r .fmt(CriteriaSummary$bands[band == 1L, PGA.max])` g; intermediate criteria yield `r .fmt(CriteriaSummary$bands[band == 2L, PGA.min])` to `r .fmt(CriteriaSummary$bands[band == 2L, PGA.max])` g; and the most demanding criteria yield `r .fmt(CriteriaSummary$bands[band == 3L, PGA.min])` to `r .fmt(CriteriaSummary$bands[band == 3L, PGA.max])` g.
+- **Design Criteria for Tailings Storage Facilities.** Seismic design for tailings storage facilities is based on a two-level performance framework: the Operating Basis Earthquake (OBE), associated with continued operation, and the Safety Evaluation Earthquake (SEE), associated with preventing a tailings release [@ICOLD2016; @USACE1995]. The design earthquakes of the tailings storage facilities were evaluated under `r Standards`, for the consequence classes and the operation, closure, and post-closure lifecycle stages that each framework defines [@gistm2020; @cda2021; @ancold2019]. On reference rock, the design PGA ranges from `r PGA.all` `r Units` across frameworks, consequence classes, and lifecycle stages. Table [-@`r TBL.DEQ.PGA`] reports, by consequence class and site condition, the design PGA of the GISTM framework at the operation stage; the design-criteria chapter reports the design PGA and design spectra by framework, consequence class, lifecycle stage, and site condition.
+
+```{r}
+#| include: false
+rm(list = intersect(c("SEP", "Units", "Standards", "Bands", "Sa", "PGA.all"), ls()))
+```

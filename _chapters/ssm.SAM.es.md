@@ -12,4 +12,10 @@ En el componente intraslab y profundo, la geometría y la distribución de ocurr
 
 La @tbl-ssm-sam-inventory resume las seis combinaciones de TRT y componente contenidas en el inventario local. Para cada combinación informa el número de fuentes del inventario ($N$)^[El conteo $N$ corresponde a los objetos computacionales de cada familia de fuentes. La contribución relativa a la amenaza resulta de integrar sus tasas de ocurrencia y la distribución del movimiento del suelo para el sitio y el nivel analizados. Un objeto computacional correspondiente a una fuente compleja puede generar numerosas rupturas posibles [@Bazzurro1999; @OpenQuakeSourceModels326].], el código MFD de la representación de recurrencia y los intervalos mínimo–máximo de magnitud y profundidad.
 
-{{< include /_tbl/SSM.SAM.ES.qmd >}}
+```{r}
+#| include: false
+CAP <- readCaption("tbl.SSM.SAM.ES")
+CONTENT <- jsonlite::read_json(file.path(root, "_captions", "tbl.SSM.SAM.ES.json"), simplifyVector = TRUE)
+```
+
+{{< include /_tbl/SSM.SAM.qmd >}}
