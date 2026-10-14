@@ -1,0 +1,29 @@
+rows with kmax == 0 (Mw 7): 295738  (Mw 6.5): 306607 
+rows with rel >= 0.5: 13334 
+    zero7 zero65      IDn     N
+   <lgcl> <lgcl>   <char> <int>
+1:  FALSE   TRUE     BM19  4464
+2:  FALSE   TRUE flexible  3205
+3:  FALSE   TRUE     BT07  1965
+4:  FALSE  FALSE     BM19  1388
+5:  FALSE   TRUE ensemble  1235
+6:  FALSE  FALSE flexible   585
+7:  FALSE  FALSE     BT07   299
+8:  FALSE  FALSE ensemble   193
+       ID TRlabel    IDg    IDm      IDn      p    Da     kmax.7      kmax.65
+   <char>  <char> <char> <char>   <char> <char> <num>      <num>        <num>
+1:  M2V4D     200    S32     U7 ensemble   0.95  17.5 0.01020229 5.746843e-05
+2:  M2V4D     200    S35     U8 ensemble   0.95  16.0 0.01015672 7.624297e-05
+3:  M2V4D     200    S35     U7 ensemble   0.95  16.0 0.01031146 8.564700e-05
+4:  M2V4D     200    S32     U2 ensemble   0.95  16.0 0.01040141 9.283048e-05
+5:  M2V4D     200    S35     U2 ensemble   0.95  14.0 0.01003446 9.686062e-05
+      beyond.7   beyond.65       rel
+         <num>       <num>     <num>
+1: 0.001333333 0.001333333 0.9943671
+2: 0.002000000 0.002000000 0.9924933
+3: 0.001333333 0.001333333 0.9916940
+4: 0.002666667 0.002666667 0.9910752
+5: 0.004666667 0.004666667 0.9903472
+
+ensemble, p = mean rows: max rel = 0.5448668  zeros Mw7 = 9  zeros Mw6.5 = 9 
+beyond rows (TRUE share): Mw7 = 0.1287543  Mw6.5 = 0.1277235 

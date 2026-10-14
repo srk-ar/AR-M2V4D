@@ -1,0 +1,8 @@
+M2V4D/CFD/DnDraws.Rds        newmark-M55=10800000 newmark-M65=5400000  total  16200000  sha 2893284007e6 -> 672b43170c22
+M2V4D/CFD/DnTable.Rds        newmark-M55=460800 newmark-M65=230400  total    691200  sha 8bace6278d2c -> 5ee864387c77
+M2V4D/CFD/kmaxTable.Rds      newmark-M55=491520 newmark-M65=245760  total    737280  sha 53262120f8f5 -> 56e8efd3d10e
+DnTable.Rds                  newmark-M55=460800 newmark-M65=230400  total    691200  sha 8bace6278d2c -> 5ee864387c77
+DnPlotTable.Rds              newmark-M55=38590 newmark-M65=25826  total     64416  sha f2d7686850e7 -> 40337a6e3449
+kmaxTable.Rds                newmark-M55=491520 newmark-M65=245760  total    737280  sha 53262120f8f5 -> 56e8efd3d10e
+PGATable.csv: 325fb141ea5126a46bd0baf82b89a76d03a4cc86adc36f3b74ac770f9b6c8cbf 
+ShearTable.Rds: 334359667159dd8f928c54d4f40484af1162372a0e4114aee666691104b3cf29 

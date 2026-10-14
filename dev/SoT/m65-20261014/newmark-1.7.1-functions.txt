@@ -1,0 +1,870 @@
+==== newmark:::.seedInteger ====
+   1  function (seed) 
+   2  {
+   3      OK <- (is.numeric(seed) || is.character(seed)) && length(seed) == 1L
+   4      x <- if (OK) 
+   5          suppressWarnings(as.numeric(seed))
+   6      else NA_real_
+   7      if (is.na(x) || x < 0 || x != trunc(x) || x > .Machine$integer.max) {
+   8          stop("seed must be a non-negative integer")
+   9      }
+  10      as.integer(x)
+  11  }
+
+==== newmark:::.dnSeed ====
+   1  function (siteID, demandID, tr) 
+   2  {
+   3      Label <- if (is.na(tr)) 
+   4          character()
+   5      else format(tr, scientific = FALSE, trim = TRUE)
+   6      Chars <- utf8ToInt(paste(c(siteID, demandID, Label), collapse = "/"))
+   7      Seed <- 0
+   8      for (x in Chars) {
+   9          Seed <- (Seed * 31 + x)%%2147483647
+  10      }
+  11      as.integer(Seed)
+  12  }
+
+==== newmark:::fitDnProducts ====
+   1  function (rock, mce, shear, modelID, siteID, family, vref, mw, ns, weights, zTrunc, seeds, useParallel = FALSE, 
+   2      workers = 1L) 
+   3  {
+   4      .checkProductArgs(modelID, siteID, family, vref, ns, weights)
+   5      if (!is.numeric(mw) || length(mw) != 1L || !is.finite(mw) || mw <= 0 || !is.numeric(zTrunc) || length(zTrunc) != 
+   6          1L || !is.finite(zTrunc) || zTrunc <= 0) {
+   7          stop("mw and zTrunc must be finite positive scalars")
+   8      }
+   9      Family <- sort(unique(as.numeric(family)))
+  10      if (!is.null(seeds) && (!is.numeric(seeds) || length(seeds) != length(Family) + 1L || any(!is.finite(seeds)) || 
+  11          any(seeds < 0 | seeds > .Machine$integer.max) || any(seeds != as.integer(seeds)))) 
+  12          stop("seeds must contain one integer per demand, or be NULL")
+  13      Shear <- .validateShear(shear, vref)
+  14      Rock <- .validateRock(rock, modelID, siteID, vref, Family, 1.5 * max(Shear$Ts))
+  15      MceRock <- .validateMceRock(mce, siteID, vref, 1.5 * max(Shear$Ts))
+  16      LIST <- lapply(seq_len(length(Family) + 1L), function(i) {
+  17          IsMce <- i > length(Family)
+  18          tr <- if (IsMce) 
+  19              NA_real_
+  20          else Family[[i]]
+  21          .runDnDemand(demandID = if (IsMce) 
+  22              "MCE"
+  23          else modelID, tr = tr, rockTable = if (IsMce) 
+  24              MceRock
+  25          else Rock[TR == tr, .(Tn, k, muLn, sigmaLn, w)], shear = Shear, siteID = siteID, vref = vref, mw = mw, 
+  26              ns = as.integer(ns), weights = weights, zTrunc = zTrunc, useParallel = useParallel, workers = workers, 
+  27              seed = if (is.null(seeds)) 
+  28                  NULL
+  29              else seeds[[i]])
+  30      })
+  31      OUT <- lapply(c("curve", "draws", "pga"), function(x) rbindlist(lapply(LIST, `[[`, x)))
+  32      names(OUT) <- c("curve", "draws", "pga")
+  33      .validateDnTable(OUT$curve, Shear, siteID, weights, modelID, Family)
+  34      .validateDraws(OUT$draws, Shear, siteID, weights, ns, modelID, Family)
+  35      .validatePga(OUT$pga, Shear, siteID, modelID, Family)
+  36      OUT
+  37  }
+
+==== newmark:::.buildDnRecords ====
+   1  function (demandID, tr, rockTable, shear, vref, mw, ns, zTrunc) 
+   2  {
+   3      IsAnalytic <- !is.na(tr)
+   4      LIST <- Map(function(IDg, IDm, Vs30, Ts) {
+   5          if (IsAnalytic) {
+   6              Products <- .fitSiteProducts(gmm = rockTable, vs30 = Vs30, vref = vref)
+   7              UHS <- Products$mixture
+   8              PGA <- UHS[abs(Tn) <= TOL, sum(w * exp(muLn + sigmaLn^2/2))]
+   9          }
+  10          else {
+  11              Amplified <- .asTable(.fitSaFConverged(uhs = rockTable[, .(Tn, p, Sa)], vs30 = Vs30, vref = vref, pTarget = PTARGET))
+  12              UHS <- Amplified[, .(Tn = as.numeric(Tn), p = as.character(p), Sa = as.numeric(SaF))]
+  13              PGA <- UHS[abs(Tn) <= TOL & p == "mean", Sa]
+  14          }
+  15          .validateAmplified(DT = UHS, analytic = IsAnalytic, demandID = demandID, tr = tr, idg = IDg, idm = IDm)
+  16          Ky <- getDnKy(uhs = UHS, Ts = Ts)
+  17          if (length(Ky) != 30L || any(!is.finite(Ky)) || any(Ky <= 0) || anyDuplicated(Ky)) {
+  18              stop("getDnKy did not return 30 unique positive values for ID=", demandID, ", TR=", format(tr, scientific = FALSE), 
+  19                  ", IDg=", IDg, ", IDm=", IDm)
+  20          }
+  21          if (length(PGA) != 1L || !is.finite(PGA) || PGA <= 0) {
+  22              stop("site-response fit returned an invalid PGA for ID=", demandID, ", TR=", format(tr, scientific = FALSE), 
+  23                  ", IDg=", IDg, ", IDm=", IDm)
+  24          }
+  25          list(record = data.table(ID = demandID, TR = tr, IDg = IDg, IDm = IDm, Vs30 = Vs30, Ts = Ts, Mw = mw, NS = ns, 
+  26              zTrunc = if (IsAnalytic) zTrunc else NA_real_, UHS = list(UHS), ky = list(Ky)), pga = data.table(IDg = IDg, 
+  27              IDm = IDm, ID = demandID, TR = tr, PGA = PGA, Vs30 = Vs30))
+  28      }, shear$IDg, shear$IDm, shear$VS30, shear$Ts)
+  29      list(records = rbindlist(lapply(LIST, `[[`, "record"), use.names = TRUE), pga = rbindlist(lapply(LIST, `[[`, 
+  30          "pga"), use.names = TRUE))
+  31  }
+
+==== newmark:::.fitDnScenarioPrepared ====
+   1  function (x, weights) 
+   2  {
+   3      row <- x$row
+   4      AUX <- .buildDnScenarioTable(uhs = row$UHS[[1L]], ky = row$ky[[1L]], Ts = row$Ts[[1L]], Mw = row$Mw[[1L]], 
+   5          NS = row$NS[[1L]], weights = weights, dnSample = x$dnSample, eps = x$eps)
+   6      DT <- AUX$curve
+   7      if (nrow(DT)) {
+   8          DT[, `:=`(TR = row$TR[[1L]], Ts = row$Ts[[1L]], Vs30 = row$Vs30[[1L]], IDg = row$IDg[[1L]], IDm = row$IDm[[1L]], 
+   9              ID = row$ID[[1L]])]
+  10      }
+  11      OUT <- AUX$draws
+  12      if (nrow(OUT)) {
+  13          OUT[, `:=`(TR = row$TR[[1L]], IDg = row$IDg[[1L]], IDm = row$IDm[[1L]])]
+  14      }
+  15      list(curve = DT, draws = OUT)
+  16  }
+
+==== newmark:::.fitDnCurvePrepared ====
+   1  function (dnSample, eps, ky, Ts, Mw, weights, NFC, pulse = FALSE) 
+   2  {
+   3      w <- as.numeric(weights)
+   4      w <- w/sum(w)
+   5      NS <- length(eps)
+   6      AllDraws <- stats::setNames(lapply(names(weights), function(id) {
+   7          .drawDnModelCurve(dnSample, ky, Mw, Ts, id, NS, eps = eps, NFC = NFC, pulse = pulse)
+   8      }), names(weights))
+   9      ok <- names(weights)[vapply(AllDraws, function(d) !is.null(d) && nrow(d) > 0L, logical(1))]
+  10      if (!length(ok)) {
+  11          EmptyCurve <- data.table::data.table(ky = numeric(), p = character(), Dn = numeric(), IDn = character(), 
+  12              w = numeric())
+  13          EmptyDraws <- data.table::data.table(ky = numeric(), s = integer(), PGA.s = numeric(), Dn = numeric(), 
+  14              IDn = character())
+  15          return(list(curve = EmptyCurve, draws = EmptyDraws))
+  16      }
+  17      WOk <- w[match(ok, names(weights))]
+  18      OUT <- vector("list", length(ky))
+  19      for (j in seq_along(ky)) {
+  20          k <- ky[j]
+  21          LIST <- lapply(ok, function(id) {
+  22              d <- AllDraws[[id]][ky == k, Dn]
+  23              if (!length(d)) 
+  24                  NULL
+  25              else d
+  26          })
+  27          OkMask <- !vapply(LIST, is.null, logical(1))
+  28          if (!any(OkMask)) 
+  29              next
+  30          ListJ <- LIST[OkMask]
+  31          WOkJ <- WOk[OkMask]
+  32          IdsOkJ <- ok[OkMask]
+  33          AUX <- data.table::rbindlist(lapply(seq_along(IdsOkJ), function(i) {
+  34              DT <- .summarizeDn(ListJ[[i]], dnSample$pVals)
+  35              DT[, `:=`(IDn = IdsOkJ[i], w = WOkJ[i])]
+  36              DT
+  37          }), use.names = TRUE)
+  38          L <- .aggregateWeighted(ListJ, WOkJ, dnSample$pVals)
+  39          L[, `:=`(IDn = "ensemble", w = NA_real_)]
+  40          DT <- data.table::rbindlist(list(L, AUX), use.names = TRUE)
+  41          DT[, `:=`(ky, k)]
+  42          OUT[[j]] <- DT
+  43      }
+  44      Curve <- data.table::rbindlist(Filter(Negate(is.null), OUT), use.names = TRUE)
+  45      data.table::setcolorder(Curve, c("ky", "p", "Dn", "IDn", "w"))
+  46      Draws <- data.table::rbindlist(AllDraws[ok], use.names = TRUE)
+  47      list(curve = Curve, draws = Draws)
+  48  }
+
+==== newmark:::fitDnScenarios ====
+   1  function (records, weights, useParallel = FALSE, workers = 1L) 
+   2  {
+   3      records <- data.table::as.data.table(records)
+   4      n <- nrow(records)
+   5      if (!n) 
+   6          return(list(curve = data.table::data.table(), draws = data.table::data.table()))
+   7      LIST <- lapply(seq_len(n), function(i) .prepareDnScenario(records[i]))
+   8      processOne <- function(i) .fitDnScenarioPrepared(LIST[[i]], weights = weights)
+   9      if (isTRUE(useParallel) && workers > 1L && n > 1L && .forkOK()) {
+  10          Threads <- data.table::getDTthreads()
+  11          data.table::setDTthreads(1L)
+  12          on.exit(data.table::setDTthreads(Threads), add = TRUE)
+  13          OUT <- parallel::mclapply(seq_len(n), processOne, mc.cores = workers, mc.preschedule = FALSE)
+  14      }
+  15      else {
+  16          OUT <- lapply(seq_len(n), processOne)
+  17      }
+  18      .stopOnWorkerError(results = OUT)
+  19      list(curve = data.table::rbindlist(lapply(OUT, `[[`, "curve"), use.names = TRUE), draws = data.table::rbindlist(lapply(OUT, 
+  20          `[[`, "draws"), use.names = TRUE))
+  21  }
+
+==== newmark:::fitDnScenario ====
+   1  function (row, weights) 
+   2  {
+   3      .fitDnScenarioPrepared(.prepareDnScenario(row), weights = weights)
+   4  }
+
+==== newmark:::fitKmaxProducts ====
+   1  function (draws, pga, shear, modelID, siteID, family, vref, ns, weights, da, useParallel = FALSE, workers = 1L) 
+   2  {
+   3      .checkProductArgs(modelID, siteID, family, vref, ns, weights)
+   4      Family <- sort(unique(as.numeric(family)))
+   5      Da <- .validateDa(da)
+   6      Shear <- .validateShear(shear, vref)
+   7      PGA <- copy(as.data.table(pga))
+   8      Draws <- copy(as.data.table(draws))
+   9      .validatePga(PGA, Shear, siteID, modelID, Family)
+  10      .validateKmaxDraws(Draws, Shear, siteID, weights, ns, PGA, modelID, Family)
+  11      Records <- .buildKmaxRecords(PGA, Shear, siteID, Family)
+  12      Demands <- rbindlist(list(data.table(ID = modelID, TR = Family), data.table(ID = "MCE", TR = NA_real_)))
+  13      Materials <- sort(unique(Shear$IDm))
+  14      Cells <- Demands[, .(IDm = Materials), by = .(ID, TR)]
+  15      LIST <- Map(function(demandID, tr, materialID) {
+  16          .fitKmaxCell(demandID, tr, materialID, Draws, Records, siteID, weights, Da, useParallel, workers)
+  17      }, Cells$ID, Cells$TR, Cells$IDm)
+  18      DT <- rbindlist(LIST)
+  19      .validateKmax(DT, Shear, siteID, weights, Da, PGA, modelID, Family)
+  20      .warnBeyond(DT, label = paste0("siteID=", siteID))
+  21      DT
+  22  }
+
+==== newmark:::.buildKmaxRecords ====
+   1  function (PGA, shear, siteID, family) 
+   2  {
+   3      Records <- merge(PGA[, .(ID, TR, IDg, IDm, PGA)], shear[, .(IDg, IDm, Ts, Vs30 = VS30)], by = c("IDg", "IDm"), 
+   4          sort = FALSE)
+   5      if (nrow(Records) != (length(family) + 1L) * nrow(shear)) {
+   6          stop("Could not join PGATable to ShearTable for siteID=", siteID)
+   7      }
+   8      Records <- Records[, .(ID, TR, IDg, IDm, PGA, Ts, Vs30)]
+   9      setorder(Records, ID, TR, IDm, IDg)
+  10      Records
+  11  }
+
+==== newmark:::.buildKmaxDraws ====
+   1  function (draws, Da) 
+   2  {
+   3      draws <- data.table::as.data.table(draws)
+   4      Required <- c("ky", "s", "Dn", "IDn")
+   5      Missing <- setdiff(Required, names(draws))
+   6      if (length(Missing)) {
+   7          stop("kmax draws are missing columns: ", paste(Missing, collapse = ", "))
+   8      }
+   9      if (!is.numeric(Da) || !length(Da) || anyNA(Da) || any(!is.finite(Da)) || any(Da <= 0) || anyDuplicated(Da)) {
+  10          stop("Da must contain unique, finite positive values")
+  11      }
+  12      HasPGA <- "PGA.s" %in% names(draws)
+  13      COLS <- c("ky", "s", "Dn", "IDn", if (HasPGA) "PGA.s")
+  14      DT <- draws[, COLS, with = FALSE]
+  15      DT[, `:=`(IDn, as.character(IDn))]
+  16      if (!nrow(DT)) 
+  17          stop("kmax draws are empty")
+  18      if (anyNA(DT) || any(!is.finite(DT$ky)) || any(DT$ky <= 0) || any(!is.finite(DT$Dn)) || any(DT$Dn < 0) || any(!nzchar(DT$IDn))) {
+  19          stop("kmax draws contain invalid ky, s, Dn, or IDn values")
+  20      }
+  21      if (HasPGA && (any(!is.finite(DT$PGA.s)) || any(DT$PGA.s <= 0))) {
+  22          stop("kmax draws contain invalid PGA.s values")
+  23      }
+  24      if (anyDuplicated(DT, by = c("IDn", "s", "ky"))) {
+  25          stop("kmax draws duplicate an IDn, s, ky key")
+  26      }
+  27      OUT <- DT[order(ky), {
+  28          if (.N < 2L) {
+  29              stop("kmax inversion needs at least two ky values for IDn=", IDn[[1L]], " s=", s[[1L]])
+  30          }
+  31          Roots <- NULL
+  32          Beyond <- NULL
+  33          if (data.table::uniqueN(Dn) == 1L && Dn[[1L]] > 0 && identical(IDn[[1L]], "AM88")) {
+  34              if (!HasPGA) {
+  35                  stop("kmax inversion has non-invertible Dn support for IDn=AM88 s=", s[[1L]])
+  36              }
+  37              PGA <- unique(.SD[["PGA.s"]])
+  38              if (length(PGA) != 1L) {
+  39                  stop("flat AM88 inversion requires one PGA.s for IDn=AM88 s=", s[[1L]])
+  40              }
+  41              if (min(ky)/PGA < 0.9999) {
+  42                  stop("kmax inversion has non-invertible Dn support for IDn=AM88 s=", s[[1L]])
+  43              }
+  44              Roots <- .invertFlatAM88(pga = PGA, dn = Dn[[1L]], Da = Da)
+  45              Beyond <- rep(TRUE, length(Da))
+  46          }
+  47          if (is.null(Roots)) {
+  48              x <- data.table::fifelse(Dn < FLOOR.Dn, 0, Dn)
+  49              y <- rev(cummax(rev(x)))
+  50              Roots <- numeric(length(Da))
+  51              Beyond <- logical(length(Da))
+  52              MASK <- Da <= y[[1L]]
+  53              if (any(MASK)) {
+  54                  if (data.table::uniqueN(y) < 2L) {
+  55                    stop("kmax inversion has non-invertible Dn support for IDn=", IDn[[1L]], " s=", s[[1L]])
+  56                  }
+  57                  AUX <- .invertCurve(ky = ky, dn = x, Da = Da[MASK], idn = IDn[[1L]], pga = if (HasPGA) 
+  58                    .SD[["PGA.s"]][[1L]]
+  59                  else NULL)
+  60                  Roots[MASK] <- AUX$root
+  61                  Beyond[MASK] <- AUX$beyond
+  62              }
+  63          }
+  64          .(kmax = list(Roots), beyond = list(Beyond))
+  65      }, by = .(IDn, s)]
+  66      OUT <- OUT[, .(Da = Da, kmax = unlist(kmax, use.names = FALSE), beyond = unlist(beyond, use.names = FALSE)), 
+  67          by = .(IDn, s)]
+  68      data.table::setcolorder(OUT, c("Da", "s", "kmax", "IDn", "beyond"))
+  69      if (any(!is.finite(OUT$kmax)) || any(OUT$kmax < 0) || anyNA(OUT$beyond)) {
+  70          stop("kmax inversion produced invalid roots")
+  71      }
+  72      OUT
+  73  }
+
+==== newmark:::.aggregateKmaxDraws ====
+   1  function (draws, weights, p) 
+   2  {
+   3      if (!is.numeric(p) || anyNA(p) || any(!is.finite(p)) || any(p <= 0 | p >= 1) || anyDuplicated(p)) {
+   4          stop("p must contain unique finite values in (0, 1)")
+   5      }
+   6      Labels <- sprintf("%.2f", p)
+   7      if (anyDuplicated(Labels)) {
+   8          stop("p values collide after two-decimal formatting")
+   9      }
+  10      if (!is.numeric(weights) || !length(weights) || is.null(names(weights)) || anyNA(names(weights)) || any(!nzchar(names(weights))) || 
+  11          anyDuplicated(names(weights)) || anyNA(weights) || any(!is.finite(weights)) || any(weights < 0) || !any(weights > 
+  12          0)) {
+  13          stop("weights must be finite, non-negative, uniquely named, ", "and include one positive value")
+  14      }
+  15      Weights <- weights[weights > 0]
+  16      Weights <- Weights/sum(Weights)
+  17      Missing <- setdiff(names(Weights), unique(draws$IDn))
+  18      if (length(Missing)) {
+  19          stop("kmax draws are missing positive-weight models: ", paste(Missing, collapse = ", "))
+  20      }
+  21      DT <- draws[IDn %in% names(Weights)]
+  22      Models <- sort(names(Weights))
+  23      Weights <- Weights[Models]
+  24      Samples <- lapply(Models, function(model) sort(DT[IDn == model, unique(s)]))
+  25      Reference <- Samples[[1L]]
+  26      OK <- vapply(Samples, identical, logical(1), y = Reference)
+  27      if (!all(OK)) {
+  28          stop("kmax draws require complete shared s coverage")
+  29      }
+  30      DT[, {
+  31          LIST <- lapply(Models, function(model) kmax[IDn == model])
+  32          AUX <- .aggregateWeighted(LIST, as.numeric(Weights), p)
+  33          Share <- sum(vapply(seq_along(Models), function(i) Weights[[i]] * mean(beyond[IDn == Models[[i]]]), numeric(1)))
+  34          data.table::data.table(p = c("mean", Labels), kmax = c(AUX[p == "mean", Dn], AUX[p != "mean", Dn]), beyond = Share)
+  35      }, by = "Da"]
+  36  }
+
+==== newmark:::.fitKmaxCell ====
+   1  function (demandID, tr, materialID, draws, records, siteID, weights, Da, useParallel, workers) 
+   2  {
+   3      Cell <- paste0("ID=", demandID, " TR=", format(tr, scientific = FALSE), " IDm=", materialID)
+   4      DT <- draws[.(demandID, tr, materialID), on = .(ID, TR, IDm), nomatch = NULL, .(IDg, ky, s, PGA.s, IDn, Dn)]
+   5      if (!nrow(DT)) {
+   6          stop("Missing DnDraws for ", Cell)
+   7      }
+   8      JoinTR <- if (is.na(tr)) 
+   9          0
+  10      else tr
+  11      DT[, `:=`(TR, JoinTR)]
+  12      ScenarioRecords <- records[.(demandID, tr, materialID), on = .(ID, TR, IDm), nomatch = NULL, .(TR = JoinTR, 
+  13          IDg, PGA_rock = PGA)]
+  14      if (!nrow(ScenarioRecords) || anyDuplicated(ScenarioRecords, by = "IDg")) {
+  15          stop("Invalid kmax records for ", Cell)
+  16      }
+  17      Result <- .asTable(fitKmaxScenarios(records = ScenarioRecords, draws = DT, weights = weights, Da = Da, useParallel = useParallel, 
+  18          workers = min(workers, nrow(ScenarioRecords))))
+  19      Required <- c("Da", "p", "kmax", "beyond", "IDn", "PGA", "Kh", "TR", "IDg")
+  20      Missing <- setdiff(Required, names(Result))
+  21      if (length(Missing)) {
+  22          stop("fitKmaxScenarios is missing columns: ", paste(Missing, collapse = ", "))
+  23      }
+  24      if (!nrow(Result) || !setequal(unique(Result$p), PLEVELS)) {
+  25          stop("fitKmaxScenarios returned an incomplete p family")
+  26      }
+  27      Result[, `:=`(p, as.character(p))]
+  28      if (!.reproduces(Result, ScenarioRecords, by = "IDg", cols = c(PGA = "PGA_rock"))) {
+  29          stop("fitKmaxScenarios did not preserve PGATable PGA")
+  30      }
+  31      Geometry <- records[.(demandID, tr, materialID), on = .(ID, TR, IDm), nomatch = NULL, .(IDg, Ts, Vs30)]
+  32      Result <- merge(Result, Geometry, by = "IDg", all.x = TRUE, sort = FALSE)
+  33      if (anyNA(Result[, .(Ts, Vs30)])) {
+  34          stop("Could not attach Ts/Vs30 to kmax result")
+  35      }
+  36      Result[, `:=`(IDg = as.character(IDg), IDm = materialID, ID = demandID, TR = tr, Kh = kmax/PGA, IDn = as.character(IDn), 
+  37          siteID = siteID, units.Da = "cm", units.kmax = "g", units.PGA = "g", units.Kh = "ratio")]
+  38      Result[, ..KMAXCOLS]
+  39  }
+
+==== newmark:::fitKmaxScenarios ====
+   1  function (records, draws, weights, Da, useParallel = FALSE, workers = 1L) 
+   2  {
+   3      records <- data.table::as.data.table(records)
+   4      n <- nrow(records)
+   5      if (!n) 
+   6          return(data.table::data.table())
+   7      processOne <- function(i) {
+   8          fitKmaxScenario(row = records[i], draws = draws, weights = weights, Da = Da)
+   9      }
+  10      if (isTRUE(useParallel) && workers > 1L && n > 1L && .forkOK()) {
+  11          Threads <- data.table::getDTthreads()
+  12          data.table::setDTthreads(1L)
+  13          on.exit(data.table::setDTthreads(Threads), add = TRUE)
+  14          LIST <- parallel::mclapply(seq_len(n), processOne, mc.cores = workers, mc.preschedule = FALSE)
+  15      }
+  16      else {
+  17          LIST <- lapply(seq_len(n), processOne)
+  18      }
+  19      .stopOnWorkerError(results = LIST)
+  20      data.table::rbindlist(LIST, use.names = TRUE)
+  21  }
+
+==== newmark:::fitKmaxScenario ====
+   1  function (row, draws, weights, Da) 
+   2  {
+   3      row <- data.table::as.data.table(row)
+   4      if (nrow(row) != 1L) 
+   5          stop("kmax scenario row must have one row")
+   6      Required <- c("TR", "IDg", "PGA_rock")
+   7      Missing <- setdiff(Required, names(row))
+   8      if (length(Missing)) {
+   9          stop("kmax scenario row is missing columns: ", paste(Missing, collapse = ", "))
+  10      }
+  11      PGA <- row$PGA_rock[[1L]]
+  12      if (!is.numeric(PGA) || length(PGA) != 1L || !is.finite(PGA) || PGA <= 0) {
+  13          stop("kmax scenario PGA_rock must be one finite positive value")
+  14      }
+  15      draws <- data.table::as.data.table(draws)
+  16      COLS <- intersect(c("ky", "s", "PGA.s", "Dn", "IDn"), names(draws))
+  17      DT <- draws[TR == row$TR[[1L]] & IDg == row$IDg[[1L]], COLS, with = FALSE]
+  18      if (!nrow(DT)) 
+  19          stop("Missing DnDraws for TR=", row$TR[[1L]], " IDg=", row$IDg[[1L]])
+  20      OUT <- .buildKmaxScenarioTable(draws = DT, weights = weights, Da = Da)
+  21      OUT[, `:=`(PGA = PGA, Kh = 100 * kmax/PGA, TR = row$TR[[1L]], IDg = row$IDg[[1L]])]
+  22      OUT
+  23  }
+
+==== newmark:::invertDnDraws ====
+   1  function (draws, Da, weights, p = c(0.05, 0.1, 0.16, 0.5, 0.84, 0.9, 0.95)) 
+   2  {
+   3      draws <- data.table::as.data.table(draws)
+   4      Draws <- .buildKmaxDraws(draws = draws[IDn %in% names(weights)], Da = Da)
+   5      .aggregateKmaxDraws(draws = Draws, weights = weights, p = p)
+   6  }
+
+==== newmark:::getKmaxTable ====
+   1  function (tables, pga, shear, weights, modelID, family, vref, da) 
+   2  {
+   3      .checkSiteTables(tables)
+   4      if (!identical(names(tables), names(pga))) 
+   5          stop("tables and pga must name the same sites in the same order")
+   6      Shear <- .validateShear(shear, vref)
+   7      Da <- .validateDa(da)
+   8      LIST <- lapply(names(tables), function(siteID) {
+   9          DT <- copy(as.data.table(tables[[siteID]]))
+  10          PGA <- copy(as.data.table(pga[[siteID]]))
+  11          .validatePga(PGA, Shear, siteID, modelID, family)
+  12          .validateKmax(DT, Shear, siteID, weights, Da, PGA, modelID, family)
+  13          DT
+  14      })
+  15      DT <- rbindlist(LIST)
+  16      setkeyv(DT, KMAXKEY)
+  17      .warnBeyond(DT, label = "global")
+  18      DT
+  19  }
+
+callers of .dnSeed: runProcess 
+callers of fitDnProducts: runProcess 
+callers of .runDnDemand: fitDnProducts 
+callers of fitKmaxProducts: runProcess 
+functions mentioning set.seed: .runDnDemand, runProcess 
+
+==== newmark:::.runDnDemand ====
+   1  function (demandID, tr, rockTable, shear, siteID, vref, mw, ns, weights, zTrunc, useParallel, workers, seed) 
+   2  {
+   3      Site <- siteID
+   4      Input <- .buildDnRecords(demandID = demandID, tr = tr, rockTable = rockTable, shear = shear, vref = vref, mw = mw, 
+   5          ns = ns, zTrunc = zTrunc)
+   6      if (!is.null(seed)) 
+   7          set.seed(seed)
+   8      Result <- fitDnScenarios(records = Input$records, weights = weights, useParallel = useParallel, workers = workers)
+   9      Curve <- .asTable(Result$curve)
+  10      Required <- c("IDg", "IDm", "p", "ky", "Dn", "Ts", "Vs30", "IDn")
+  11      Missing <- setdiff(Required, names(Curve))
+  12      if (length(Missing)) {
+  13          stop("fitDnScenarios curve is missing columns: ", paste(Missing, collapse = ", "))
+  14      }
+  15      Curve[, `:=`(p, .canonicalP(p, name = "fitDnScenarios curve p"))]
+  16      Curve[, `:=`(ID = demandID, TR = tr, IDn = as.character(IDn), siteID = Site, units.Dn = "cm")]
+  17      Curve <- Curve[, ..DNCOLS]
+  18      Draws <- .asTable(Result$draws)
+  19      Required <- c("IDg", "IDm", "ky", "s", "PGA.s", "IDn", "Dn")
+  20      Missing <- setdiff(Required, names(Draws))
+  21      if (length(Missing)) {
+  22          stop("fitDnScenarios draws are missing columns: ", paste(Missing, collapse = ", "))
+  23      }
+  24      if (any(!is.finite(Draws$Dn)) || any(Draws$Dn < 0)) {
+  25          stop("fitDnScenarios draws contain non-finite or negative Dn")
+  26      }
+  27      Draws[, `:=`(ID = demandID, TR = tr, IDn = as.character(IDn), siteID = Site, units.Dn = "cm")]
+  28      Draws <- Draws[, ..DRAWCOLS]
+  29      PGA <- Input$pga
+  30      PGA[, `:=`(siteID = Site, units.PGA = "g")]
+  31      PGA <- PGA[, ..PGACOLS]
+  32      list(curve = Curve, draws = Draws, pga = PGA)
+  33  }
+
+==== newmark:::.prepareDnScenario ====
+   1  function (row) 
+   2  {
+   3      row <- data.table::as.data.table(row)
+   4      if (nrow(row) != 1L) 
+   5          stop("Dn scenario row must have one row")
+   6      ZTrunc <- NULL
+   7      if ("zTrunc" %in% names(row)) {
+   8          ZTrunc <- row$zTrunc[[1L]]
+   9          if (length(ZTrunc) == 1L && is.na(ZTrunc)) 
+  10              ZTrunc <- NULL
+  11      }
+  12      list(row = row, dnSample = .sampleDnScenario(uhs = row$UHS[[1L]], Ts = row$Ts[[1L]], NS = row$NS[[1L]], zTrunc = ZTrunc), 
+  13          eps = stats::rnorm(row$NS[[1L]]))
+  14  }
+
+==== newmark:::.drawDnModelCurve ====
+   1  function (.sample, ky, Mw, Ts, IDn, NS, eps = NULL, NFC = "D100", pulse = FALSE) 
+   2  {
+   3      if (is.null(eps)) 
+   4          eps <- stats::rnorm(NS)
+   5      LIST <- lapply(seq_along(ky), function(j) {
+   6          Dn <- .drawDnModel(.sample, ky[j], Ts, Mw, IDn, eps = eps, NFC = NFC, pulse = pulse)
+   7          if (is.null(Dn)) 
+   8              return(NULL)
+   9          data.table::data.table(ky = ky[j], s = seq_len(NS), PGA.s = .sample$PGA, Dn = Dn, IDn = IDn)
+  10      })
+  11      data.table::rbindlist(Filter(Negate(is.null), LIST), use.names = TRUE)
+  12  }
+
+==== newmark:::runProcess ====
+   1  function (file = "newmark.json", root = getwd(), steps = c("ts", "dn", "kmax"), sites = character(), models = character(), 
+   2      seed = NULL, dryRun = FALSE) 
+   3  {
+   4      if (!length(steps) || any(!steps %in% c("ts", "dn", "kmax"))) 
+   5          stop("steps must select ts, dn or kmax")
+   6      Steps <- c("ts", "dn", "kmax")[c("ts", "dn", "kmax") %in% steps]
+   7      Plan <- .planProcess(file = file, root = root, steps = Steps, sites = sites, models = models, seed = seed)
+   8      if (dryRun) {
+   9          if (any(c("dn", "kmax") %in% Steps) && !"ts" %in% Steps) {
+  10              Shear <- readRDS(Plan$shear)
+  11              if ("dn" %in% Steps) 
+  12                  .checkDemandSites(readRDS(Plan$mce), Shear, Plan$selected, Plan$vref)
+  13              if ("kmax" %in% Steps) 
+  14                  .relativeDa(Plan$dah, Shear, Plan$shear)
+  15          }
+  16          return(.describeProcess(Plan))
+  17      }
+  18      if ("ts" %in% Steps) {
+  19          if (!is.null(Plan$seed)) 
+  20              set.seed(Plan$seed)
+  21          Shear <- getTs(Plan$geometry, uscs = Plan$uscs, IDm = Plan$IDm, Vref = Plan$vref[[1L]], p = c(0.02, 0.05, 
+  22              0.1, 0.16, "mean", 0.84, 0.9, 0.95, 0.98), pairs = Plan$pairs)
+  23          .mkdir(Plan$products)
+  24          .publish(list(ShearTable = Shear), .globalProducts(Plan$products, "ts"), list(ShearTable = saveRDS))
+  25          message("ts: wrote ShearTable (", nrow(Shear), " rows", if (is.null(Plan$seed)) 
+  26              ""
+  27          else paste0(", seed ", Plan$seed), ")")
+  28      }
+  29      if (!any(c("dn", "kmax") %in% Steps)) 
+  30          return(invisible(NULL))
+  31      Shear <- readRDS(Plan$shear)
+  32      if ("kmax" %in% Steps) 
+  33          Da <- .relativeDa(Plan$dah, Shear, Plan$shear)
+  34      if ("dn" %in% Steps) {
+  35          Mce <- readRDS(Plan$mce)
+  36          .checkDemandSites(Mce, Shear, Plan$selected, Plan$vref)
+  37          UseParallel <- Plan$parallel$dn
+  38          Workers <- .stepWorkers(UseParallel, Plan$workers$dn, sum(Shear$level == "mean"))
+  39          for (Site in Plan$selected) {
+  40              SiteDir <- .mkdir(file.path(Plan$modelDir, Site))
+  41              Seeds <- c(vapply(Plan$family, function(tr) .dnSeed(Site, Plan$model, tr), integer(1)), .dnSeed(Site, 
+  42                  "MCE", NA_real_))
+  43              OUT <- fitDnProducts(rock = readRDS(file.path(Plan$rockDir, Site, "UHSRock.Rds")), mce = Mce, shear = Shear, 
+  44                  modelID = Plan$model, siteID = Site, family = Plan$family, vref = Plan$vref, mw = Plan$mw, ns = Plan$ns, 
+  45                  weights = Plan$weights, zTrunc = Plan$truncation, seeds = Seeds, useParallel = UseParallel, workers = Workers)
+  46              .publish(list(DnDraws = OUT$draws, PGATable = OUT$pga, DnTable = OUT$curve), .siteProducts(SiteDir, 
+  47                  "dn"), list(DnDraws = saveRDS, PGATable = function(x, path) fwrite(x, path, na = "NA"), DnTable = saveRDS))
+  48              message("dn: wrote site ", Site)
+  49          }
+  50          FILES <- file.path(Plan$modelDir, Plan$sites, "DnTable.Rds")
+  51          FILES <- FILES[file.exists(FILES)]
+  52          Tables <- setNames(lapply(FILES, readRDS), basename(dirname(FILES)))
+  53          OUT <- getDnTables(Tables, Shear, Plan$weights, Plan$model, Plan$family, Plan$vref)
+  54          .publish(list(DnPlotTable = OUT$plot, DnTable = OUT$curve), .globalProducts(Plan$products, "dn"), list(DnPlotTable = saveRDS, 
+  55              DnTable = saveRDS))
+  56      }
+  57      if ("kmax" %in% Steps) {
+  58          UseParallel <- Plan$parallel$kmax
+  59          Workers <- .stepWorkers(UseParallel, Plan$workers$kmax, uniqueN(Shear$IDg))
+  60          readPga <- function(path) fread(.inputPath(path, "written by the dn step"), colClasses = c(TR = "numeric"))
+  61          for (Site in Plan$selected) {
+  62              SiteDir <- file.path(Plan$modelDir, Site)
+  63              Draws <- readRDS(.inputPath(file.path(SiteDir, "DnDraws.Rds"), "written by the dn step"))
+  64              Pga <- readPga(file.path(SiteDir, "PGATable.csv"))
+  65              OUT <- fitKmaxProducts(draws = Draws, pga = Pga, shear = Shear, modelID = Plan$model, siteID = Site, 
+  66                  family = Plan$family, vref = Plan$vref, ns = Plan$ns, weights = Plan$weights, da = Da, useParallel = UseParallel, 
+  67                  workers = Workers)
+  68              .publish(list(kmaxTable = OUT), .siteProducts(SiteDir, "kmax"), list(kmaxTable = saveRDS))
+  69              message("kmax: wrote site ", Site)
+  70          }
+  71          FILES <- file.path(Plan$modelDir, Plan$sites, "kmaxTable.Rds")
+  72          FILES <- FILES[file.exists(FILES)]
+  73          Tables <- setNames(lapply(FILES, readRDS), basename(dirname(FILES)))
+  74          Pga <- setNames(lapply(file.path(dirname(FILES), "PGATable.csv"), readPga), names(Tables))
+  75          OUT <- getKmaxTable(Tables, Pga, Shear, Plan$weights, Plan$model, Plan$family, Plan$vref, Da)
+  76          .publish(list(kmaxTable = OUT), .globalProducts(Plan$products, "kmax"), list(kmaxTable = saveRDS))
+  77      }
+  78      invisible(NULL)
+  79  }
+
+==== newmark:::.sampleDnScenario ====
+   1  function (uhs, Ts, NS, zTrunc = NULL) 
+   2  {
+   3      uhs <- data.table::as.data.table(uhs)
+   4      InputType <- .classifySaInput(uhs = uhs)
+   5      IsAnalytic <- identical(InputType, "analytic")
+   6      Periods <- c(0, 1.3 * Ts, 1.5 * Ts)
+   7      if (IsAnalytic) {
+   8          SaTable <- uhs
+   9      }
+  10      else {
+  11          uhs <- uhs[, .(Tn, p, Sa)]
+  12          uhs[, `:=`(p, as.character(p))]
+  13          LIST <- lapply(Periods, function(period) {
+  14              if (period %in% uhs$Tn) {
+  15                  uhs[Tn == period]
+  16              }
+  17              else {
+  18                  interpolateSaTable(uhs = uhs, Tn = period)
+  19              }
+  20          })
+  21          SaTable <- data.table::rbindlist(LIST, use.names = TRUE)
+  22      }
+  23      J <- length(Periods)
+  24      C <- diag(J)
+  25      for (j in seq_len(J)) for (k in seq_len(J)) {
+  26          if (j != k) {
+  27              Tj <- if (Periods[j] == 0) 
+  28                  0.01
+  29              else Periods[j]
+  30              Tk <- if (Periods[k] == 0) 
+  31                  0.01
+  32              else Periods[k]
+  33              C[j, k] <- rhoBJ(Tn = Tj, T0 = Tk)
+  34          }
+  35      }
+  36      SaMatrix <- .sampleSaCorrFull(uhs = SaTable, Tn = Periods, rho = C, NS = NS, zTrunc = zTrunc)
+  37      PGA <- SaMatrix[, 1L]
+  38      Sa13 <- SaMatrix[, 2L]
+  39      Sa15 <- SaMatrix[, 3L]
+  40      PGV <- (PGA^1.0529) * exp(0.1241) * 100
+  41      AI <- (PGA^1.9228) * exp(2.6109)
+  42      if (IsAnalytic) {
+  43          PValues <- c(0.05, 0.1, 0.16, 0.5, 0.84, 0.9, 0.95)
+  44      }
+  45      else {
+  46          x <- suppressWarnings(as.numeric(uhs[p != "mean", p]))
+  47          PValues <- sort(unique(x[is.finite(x)]))
+  48      }
+  49      list(PGA = PGA, Sa13 = Sa13, Sa15 = Sa15, PGV = PGV, AI = AI, pVals = PValues)
+  50  }
+
+==== newmark:::.drawDnModel ====
+   1  function (.sample, ky, Ts, Mw, IDn, eps = NULL, NFC = "D100", pulse = FALSE) 
+   2  {
+   3      spec <- tryCatch({
+   4          switch(IDn, AM88 = Dn_AM88(.sample$PGA, ky), JB07 = Dn_JB07(.sample$PGA, ky, AI = .sample$AI), SR08 = Dn_SR08(.sample$PGA, 
+   5              ky, AI = .sample$AI), BT07 = Dn_BT07(ky = ky, Sa = .sample$Sa15, Ts = Ts, Mw = Mw), BM17 = Dn_BM17(ky = ky, 
+   6              Sa = .sample$Sa15, Ts = Ts, Mw = Mw), BM19 = Dn_BM19(ky = ky, Ts = Ts, Sa = .sample$Sa13, PGA = .sample$PGA, 
+   7              PGV = .sample$PGV, Mw = Mw, NFC = NFC, pulse = pulse), stop("Unsupported IDn: ", IDn))
+   8      }, error = function(e) NULL)
+   9      if (is.null(spec)) 
+  10          return(NULL)
+  11      if (is.null(eps)) 
+  12          eps <- stats::rnorm(length(.sample$PGA))
+  13      exp(spec$muLnD + spec$sdLnD * eps)
+  14  }
+
+==== newmark:::.buildDnScenarioTable ====
+   1  function (uhs, ky, Ts, Mw, NS, weights, dnSample = NULL, eps = NULL) 
+   2  {
+   3      Families <- .scenarioFamilies()
+   4      if (!is.null(dnSample) && !is.null(dnSample$pVals)) {
+   5          PVals <- dnSample$pVals
+   6      }
+   7      else if (all(c("p", "Sa") %in% names(uhs))) {
+   8          PVals <- sort(unique(as.numeric(uhs[p != "mean", p])))
+   9          PVals <- PVals[is.finite(PVals)]
+  10      }
+  11      else {
+  12          PVals <- c(0.05, 0.1, 0.16, 0.5, 0.84, 0.9, 0.95)
+  13      }
+  14      AUX <- if (is.null(dnSample) && is.null(eps)) {
+  15          fitDnCurve(uhs = uhs, ky = ky, Ts = Ts, Mw = Mw, NS = NS, weights = weights)
+  16      }
+  17      else {
+  18          .fitDnCurvePrepared(dnSample = dnSample, eps = eps, ky = ky, Ts = Ts, Mw = Mw, weights = weights, NFC = "D100", 
+  19              pulse = FALSE)
+  20      }
+  21      if (is.null(AUX$curve) || !nrow(AUX$curve)) {
+  22          return(list(curve = data.table::data.table(), draws = data.table::data.table()))
+  23      }
+  24      Draws <- AUX$draws
+  25      LIST <- lapply(names(Families), function(s) {
+  26          AUX <- .scenarioWeights(weights = weights, family = Families[[s]], ids = unique(Draws$IDn))
+  27          if (!length(AUX)) 
+  28              return(NULL)
+  29          .aggregateDnDraws(Draws, AUX, PVals, s)
+  30      })
+  31      names(LIST) <- names(Families)
+  32      LIST <- Filter(Negate(is.null), LIST)
+  33      OUT <- data.table::rbindlist(c(list(AUX$curve[IDn %in% names(weights), .(ky, p, Dn, IDn)]), LIST), use.names = TRUE)
+  34      list(curve = OUT, draws = Draws)
+  35  }
+
+==== newmark:::getDnTables ====
+   1  function (tables, shear, weights, modelID, family, vref) 
+   2  {
+   3      .checkSiteTables(tables)
+   4      Shear <- .validateShear(shear, vref)
+   5      LIST <- lapply(names(tables), function(siteID) {
+   6          DT <- copy(as.data.table(tables[[siteID]]))
+   7          .validateDnTable(DT, Shear, siteID, weights, modelID, family)
+   8          DT
+   9      })
+  10      DT <- rbindlist(LIST)
+  11      setkeyv(DT, DNKEY)
+  12      list(curve = DT, plot = .buildDnPlotTable(DT))
+  13  }
+
+==== newmark:::.buildDnPlotTable ====
+   1  function (DT) 
+   2  {
+   3      KEY <- c("siteID", "ID", "TR", "IDg", "IDn", "p")
+   4      OUT <- DT[Dn > DNPLOTMIN, {
+   5          N <- max(2L, as.integer(round(median(.SD[, uniqueN(ky), by = IDm]$V1))))
+   6          X <- exp(seq(log(min(ky)), log(max(ky)), length.out = N))
+   7          .SD[, {
+   8              OK <- is.finite(ky) & is.finite(Dn) & ky > 0 & Dn > 0
+   9              if (sum(OK) < 2L) {
+  10                  data.table(ky = numeric(), Dn = numeric())
+  11              }
+  12              else {
+  13                  ORD <- order(ky[OK])
+  14                  Y <- approx(log(ky[OK][ORD]), log(Dn[OK][ORD]), log(X), rule = 1, ties = mean)$y
+  15                  data.table(ky = X, Dn = exp(Y))
+  16              }
+  17          }, by = IDm][is.finite(Dn), .(Dn = mean(Dn)), by = ky]
+  18      }, by = KEY]
+  19      OUT <- OUT[Dn > DNPLOTMIN]
+  20      setkeyv(OUT, c(KEY, "ky"))
+  21      OUT
+  22  }
+
+==== newmark:::.planProcess ====
+   1  function (file, root, steps, sites, models, seed) 
+   2  {
+   3      Seed <- if (is.null(seed)) 
+   4          NULL
+   5      else .seedInteger(seed)
+   6      Root <- .projectRoot(root)
+   7      PATH.config <- .resolvePath(file, root = Root, label = "file")
+   8      Config <- .readContract(PATH.config)
+   9      readValue <- function(name) .contractValue(Config, name, PATH.config)
+  10      readNumber <- function(name) .contractNumeric(Config, name, PATH.config)
+  11      Plan <- list(steps = steps, config = PATH.config, seed = Seed, selected = character(), parallel = list(), workers = list(), 
+  12          data = .resolvePath(readValue(c("path", "data")), root = Root, label = "path.data"), products = .resolvePath(readValue(c("path", 
+  13              "products")), root = Root, label = "path.products"), vref = readNumber("Vref.gmdp"))
+  14      if ("ts" %in% steps) {
+  15          Plan$geometry <- if (.contractHas(Config, "geometryTable")) 
+  16              .contractGeometry(Config, PATH.config)
+  17          else {
+  18              Hs <- if (.contractHas(Config, "Hs")) 
+  19                  readNumber("Hs")
+  20              else {
+  21                  if (all(vapply(c("Hs.min", "Hs.max"), function(x) .contractHas(Config, x), logical(1)))) {
+  22                    seq(readNumber("Hs.min"), readNumber("Hs.max"), length.out = if (.contractHas(Config, "NTS")) 
+  23                      readNumber("NTS")
+  24                    else 10L)
+  25                  }
+  26                  else seq(10, 120, by = 10)
+  27              }
+  28              getGeometry(hs = Hs, lo = seq(readNumber("lo.min"), readNumber("lo.max"), length.out = length(Hs)), 
+  29                  s = seq(readNumber("s.min"), readNumber("s.max"), length.out = length(Hs)))
+  30          }
+  31          Plan$uscs <- readValue("uscs")
+  32          Plan$IDm <- readValue("IDm")
+  33          Plan$pairs <- if (.contractHas(Config, "pairs")) 
+  34              readValue("pairs")
+  35          else NULL
+  36      }
+  37      if (!any(c("dn", "kmax") %in% steps)) 
+  38          return(Plan)
+  39      if (!.contractHas(Config, c("path", "uhs"))) 
+  40          stop("dn and kmax require path.uhs in ", PATH.config)
+  41      PATH.uhs <- .resolvePath(readValue(c("path", "uhs")), root = Root, label = "path.uhs")
+  42      Plan$model <- readValue("ID.gmdp")
+  43      if (!.nameOK(Plan$model)) 
+  44          stop("ID.gmdp must be one valid model identifier")
+  45      if (length(models) && !Plan$model %in% models) 
+  46          stop("models excludes ID.gmdp")
+  47      Plan$rockDir <- file.path(PATH.uhs, Plan$model)
+  48      Plan$modelDir <- file.path(Plan$products, Plan$model)
+  49      Plan$family <- sort(unique(readNumber("TR.gmdp")))
+  50      Plan$ns <- readNumber("NS")
+  51      Plan$weights <- getDnWeights(.contractWeights(Config, PATH.config), readValue("subduction"))
+  52      Plan$shear <- file.path(Plan$products, "ShearTable.Rds")
+  53      if ("dn" %in% steps) {
+  54          if (!.contractHas(Config, c("path", "calc"))) {
+  55              stop("dn requires path.calc in ", PATH.config, " for the source calculation's truncation_level")
+  56          }
+  57          Plan$truncation <- .readTruncation(.resolvePath(readValue(c("path", "calc")), root = Root, label = "path.calc"))
+  58          Plan$mce <- file.path(Plan$data, "MCETable.Rds")
+  59          Plan$mw <- readNumber("Mw.gmdp")
+  60          Plan$parallel$dn <- .readLogical(Config, "DN_PARALLEL", TRUE)
+  61          Plan$workers$dn <- .readWorkers(Config, "DN_WORKERS")
+  62      }
+  63      if ("kmax" %in% steps) {
+  64          Plan$dah <- readNumber("DaH.gmdp")
+  65          if (any(!is.finite(Plan$dah)) || any(Plan$dah <= 0) || anyDuplicated(Plan$dah)) {
+  66              stop("DaH.gmdp in ", PATH.config, " must be distinct positive percentages of Hs")
+  67          }
+  68          Plan$parallel$kmax <- .readLogical(Config, "KMAX_PARALLEL", TRUE)
+  69          Plan$workers$kmax <- .readWorkers(Config, "KMAX_WORKERS")
+  70      }
+  71      if (!"ts" %in% steps) 
+  72          .inputPath(Plan$shear, "written by the ts step")
+  73      if ("dn" %in% steps) 
+  74          .inputPath(Plan$mce, "a hazard product of the project")
+  75      Plan$sites <- .listRockSites(Plan$rockDir)
+  76      if (length(sites) && any(!sites %in% Plan$sites)) 
+  77          stop("sites contains an unknown site")
+  78      Plan$selected <- if (length(sites)) 
+  79          Plan$sites[Plan$sites %in% sites]
+  80      else Plan$sites
+  81      if ("kmax" %in% steps && !"dn" %in% steps) {
+  82          for (Site in Plan$selected) {
+  83              .inputPath(file.path(Plan$modelDir, Site, "DnDraws.Rds"), "written by the dn step")
+  84              .inputPath(file.path(Plan$modelDir, Site, "PGATable.csv"), "written by the dn step")
+  85          }
+  86      }
+  87      Plan
+  88  }
+
+==== newmark:::getDnKy ====
+   1  function (uhs, Ts, kyN = 30L, pRef = "mean") 
+   2  {
+   3      uhs <- data.table::as.data.table(uhs)
+   4      InputType <- .classifySaInput(uhs = uhs)
+   5      IsAnalytic <- identical(InputType, "analytic")
+   6      if (IsAnalytic) {
+   7          Mixture <- .validateSaMixture(gmm = uhs)
+   8          PGA <- Mixture[Tn == 0, sum(w * exp(muLn + sigmaLn^2/2))]
+   9      }
+  10      else {
+  11          uhs <- uhs[, .(Tn, p, Sa)]
+  12          uhs[, `:=`(p, as.character(p))]
+  13          PGA <- uhs[Tn == min(Tn) & p == pRef, Sa]
+  14      }
+  15      Ky.min <- 0.01
+  16      Ky.max <- max(PGA, 0.8)
+  17      exp(seq(from = log(Ky.min), to = log(Ky.max), length.out = kyN))
+  18  }
+

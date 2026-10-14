@@ -1,0 +1,103 @@
+{
+  "path": {
+    "products": "data/newmark-M55",
+    "data": "data/hazard/tables",
+    "uhs": "data/hazard/uhs",
+    "calc": "specs/calcs/classical/M2V4D.json"
+  },
+  "Vref.gmdp": 760,
+  "ID.gmdp": "M2V4D",
+  "TR.gmdp": [
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    2500,
+    5000,
+    10000
+  ],
+  "Hs": [
+    135,
+    50,
+    32,
+    27,
+    35
+  ],
+  "NS": 300,
+  "Mw.gmdp": 5.5,
+  "subduction": false,
+  "DaH.gmdp": [
+    0.05,
+    0.1,
+    0.25,
+    0.4,
+    0.5,
+    1,
+    2.5
+  ],
+  "Dn_weights": {
+    "AM88": 1,
+    "JB07": 1,
+    "BT07": 1,
+    "SR08": 1,
+    "BM17": 1,
+    "BM19": 1
+  },
+  "uscs": {
+    "U1": [
+      "ML",
+      "MH"
+    ],
+    "U2": [
+      "SP",
+      "SM"
+    ],
+    "U3": [
+      "SP",
+      "SM",
+      "ML",
+      "MH"
+    ],
+    "U4": [
+      "GP",
+      "GW"
+    ],
+    "U5": [
+      "GP",
+      "GW",
+      "SP",
+      "SM"
+    ],
+    "U6": [
+      "GP",
+      "GW",
+      "ML",
+      "MH"
+    ],
+    "U7": [
+      "CL",
+      "CH"
+    ],
+    "U8": [
+      "CL",
+      "CH",
+      "ML",
+      "MH"
+    ]
+  },
+  "IDm": [
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U5",
+    "U6",
+    "U7",
+    "U8"
+  ],
+  "lo.min": 0.35,
+  "lo.max": 0.075,
+  "s.min": 2.5,
+  "s.max": 3.5
+}

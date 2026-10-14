@@ -1,0 +1,10 @@
+command: newmark process newmark-M65.json --root . --steps dn,kmax --seed 20260915
+start: 2026-10-14 17:29:51 -0300
+>> Dn models: subduction = FALSE -> BM17 off, BM19 on
+dn: wrote site CFD
+kmax: wrote site CFD
+Warning messages:
+1: siteID=CFD: 94168/737280 kmax rows use roots beyond sampled support (max beyond=0.3333; max kmax=0.9093 g at siteID=CFD ID=MCE IDg=S32 IDm=U4 IDn=SR08 p=0.95 Da=1.35) 
+2: global: 94168/737280 kmax rows use roots beyond sampled support (max beyond=0.3333; max kmax=0.9093 g at siteID=CFD ID=MCE IDg=S32 IDm=U4 IDn=SR08 p=0.95 Da=1.35) 
+end: 2026-10-14 17:35:35 -0300
+exit=0
