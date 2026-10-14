@@ -1,0 +1,11 @@
+command: hazard process --root . --steps ssm
+start: 2026-10-14 19:18:04 -0300
+Steps: ssm
+logic tree: 1 branchsets, 6 paths
+source files referenced by the tree: 6
+ssm index sources=205 sites=1 -> /var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/Rtmps8JYtV/ssm-sources-e6d15aef720.csv
+[runSSM] ID=M2V4D site=CFD sources=205 rows=195 -> data/hazard/tables/ssm/M2V4D/CFD
+[aggregateSSM] leaves=1 rows=195 -> data/hazard/tables/SSMTable.Rds
+Process complete
+end: 2026-10-14 19:18:25 -0300
+exit=0

@@ -1,0 +1,25 @@
+command: hazard run --root . --server http://127.0.0.1:18800 --mode classical --model M2V4D --site CFD --vs30 760
+start: 2026-10-14 19:36:43 -0300
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+Server calculation 34 created classical/M2V4D/CFD/760
+run exit=0
+calc id: 
+calc id: 34 (parsed by hand from 'Server calculation 34 created')
+19:37:50 calc 34 status=executing
+19:38:21 calc 34 status=executing
+19:38:51 calc 34 status=executing
+19:39:21 calc 34 status=executing
+19:39:52 calc 34 status=executing
+19:40:22 calc 34 status=executing
+19:40:52 calc 34 status=executing
+19:41:23 calc 34 status=executing
+19:41:53 calc 34 status=executing
+19:42:24 calc 34 status=executing
+19:42:54 calc 34 status=executing
+19:43:24 calc 34 status=executing
+19:43:55 calc 34 status=executing
+19:44:25 calc 34 status=executing
+19:44:56 calc 34 status=executing
+19:45:26 calc 34 status=executing
+19:45:56 calc 34 status=complete
+end: 2026-10-14 19:45:56 -0300 status=complete

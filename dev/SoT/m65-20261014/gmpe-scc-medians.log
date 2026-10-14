@@ -1,0 +1,109 @@
+
+=== SCC median Sa [g], Tn = 0 s, Vs30 760, dep 15 km; columns Repi [km]; last column = model / ensemble at Repi ~27 km ===
+Key: <Mw>
+       Mw                                model   9.5   20.7   26.8   51.2
+    <num>                               <char> <num>  <num>  <num>  <num>
+ 1:   5.5                    Atkinson2008prime 0.284 0.1510 0.1200 0.0603
+ 2:   5.5        AtkinsonBoore2006Modified2011 0.120 0.0647 0.0480 0.0189
+ 3:   5.5                 CollapsedNGAEastUSGS 0.190 0.1120 0.0854 0.0367
+ 4:   5.5                         ESHM20Craton 0.168 0.1050 0.0837 0.0399
+ 5:   5.5                      PezeshkEtAl2011 0.188 0.0985 0.0713 0.0255
+ 6:   5.5 SomervilleEtAl2009YilgarnCraton_SS14 0.411 0.1620 0.1140 0.0437
+ 7:   5.5                             ensemble 0.215 0.1140 0.0854 0.0357
+ 8:   6.0                    Atkinson2008prime 0.420 0.2430 0.1990 0.1110
+ 9:   6.0        AtkinsonBoore2006Modified2011 0.172 0.0950 0.0720 0.0297
+10:   6.0                 CollapsedNGAEastUSGS 0.303 0.1860 0.1450 0.0652
+11:   6.0                         ESHM20Craton 0.266 0.1730 0.1410 0.0716
+12:   6.0                      PezeshkEtAl2011 0.249 0.1380 0.1040 0.0409
+13:   6.0 SomervilleEtAl2009YilgarnCraton_SS14 0.652 0.2630 0.1870 0.0743
+14:   6.0                             ensemble 0.318 0.1770 0.1370 0.0611
+15:   6.5                    Atkinson2008prime 0.644 0.3710 0.3060 0.1750
+16:   6.5        AtkinsonBoore2006Modified2011 0.229 0.1290 0.1010 0.0437
+17:   6.5                 CollapsedNGAEastUSGS 0.451 0.2890 0.2330 0.1110
+18:   6.5                         ESHM20Craton 0.363 0.2460 0.2060 0.1120
+19:   6.5                      PezeshkEtAl2011 0.313 0.1850 0.1450 0.0635
+20:   6.5 SomervilleEtAl2009YilgarnCraton_SS14 1.160 0.4710 0.3350 0.1360
+21:   6.5                             ensemble 0.450 0.2640 0.2090 0.0996
+       Mw                                model   9.5   20.7   26.8   51.2
+    <num>                               <char> <num>  <num>  <num>  <num>
+    ratio27
+      <num>
+ 1:   1.400
+ 2:   0.562
+ 3:   1.000
+ 4:   0.980
+ 5:   0.835
+ 6:   1.330
+ 7:   1.000
+ 8:   1.450
+ 9:   0.526
+10:   1.060
+11:   1.030
+12:   0.759
+13:   1.360
+14:   1.000
+15:   1.460
+16:   0.482
+17:   1.110
+18:   0.984
+19:   0.693
+20:   1.600
+21:   1.000
+    ratio27
+      <num>
+
+=== SCC median Sa [g], Tn = 0.2 s, Vs30 760, dep 15 km; columns Repi [km]; last column = model / ensemble at Repi ~27 km ===
+Key: <Mw>
+       Mw                                model   9.5  20.7   26.8   51.2
+    <num>                               <char> <num> <num>  <num>  <num>
+ 1:   5.5                    Atkinson2008prime 0.273 0.157 0.1290 0.0764
+ 2:   5.5        AtkinsonBoore2006Modified2011 0.190 0.112 0.0869 0.0387
+ 3:   5.5                 CollapsedNGAEastUSGS 0.251 0.155 0.1220 0.0575
+ 4:   5.5                         ESHM20Craton 0.245 0.166 0.1370 0.0737
+ 5:   5.5                      PezeshkEtAl2011 0.180 0.104 0.0788 0.0324
+ 6:   5.5 SomervilleEtAl2009YilgarnCraton_SS14 0.443 0.197 0.1440 0.0613
+ 7:   5.5                             ensemble 0.254 0.146 0.1140 0.0543
+ 8:   6.0                    Atkinson2008prime 0.429 0.259 0.2190 0.1390
+ 9:   6.0        AtkinsonBoore2006Modified2011 0.296 0.178 0.1400 0.0647
+10:   6.0                 CollapsedNGAEastUSGS 0.442 0.283 0.2260 0.1110
+11:   6.0                         ESHM20Craton 0.419 0.291 0.2450 0.1380
+12:   6.0                      PezeshkEtAl2011 0.262 0.157 0.1230 0.0545
+13:   6.0 SomervilleEtAl2009YilgarnCraton_SS14 0.734 0.333 0.2460 0.1070
+14:   6.0                             ensemble 0.409 0.243 0.1930 0.0968
+15:   6.5                    Atkinson2008prime 0.696 0.403 0.3380 0.2140
+16:   6.5        AtkinsonBoore2006Modified2011 0.406 0.250 0.2010 0.0971
+17:   6.5                 CollapsedNGAEastUSGS 0.699 0.462 0.3790 0.1950
+18:   6.5                         ESHM20Craton 0.599 0.428 0.3680 0.2170
+19:   6.5                      PezeshkEtAl2011 0.353 0.222 0.1800 0.0866
+20:   6.5 SomervilleEtAl2009YilgarnCraton_SS14 1.350 0.613 0.4530 0.2010
+21:   6.5                             ensemble 0.617 0.376 0.3050 0.1600
+       Mw                                model   9.5  20.7   26.8   51.2
+    <num>                               <char> <num> <num>  <num>  <num>
+    ratio27
+      <num>
+ 1:   1.130
+ 2:   0.761
+ 3:   1.070
+ 4:   1.200
+ 5:   0.690
+ 6:   1.270
+ 7:   1.000
+ 8:   1.130
+ 9:   0.724
+10:   1.170
+11:   1.260
+12:   0.635
+13:   1.270
+14:   1.000
+15:   1.110
+16:   0.659
+17:   1.240
+18:   1.200
+19:   0.589
+20:   1.480
+21:   1.000
+    ratio27
+      <num>
+
+=== SCC median Sa [g], Tn = 1 s, Vs30 760, dep 15 km; columns Repi [km]; last column = model / ensemble at Repi ~27 km ===
+Key: <Mw>

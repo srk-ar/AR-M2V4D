@@ -1,0 +1,416 @@
+====================================================================================================
+legacy NRC run (repo)       -> /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/legacy-oq/nrc/nrc/CanadaSHM6-GMM-LT.xml
+  TRT=Stable Shallow Crust branches= 16  sumW=1.0000  imt-dependent=True
+       0.0757  CanadaSHM6_StableCrust_NGAEast[01]
+       0.0646  CanadaSHM6_StableCrust_NGAEast[02]
+       0.0551  CanadaSHM6_StableCrust_NGAEast[03]
+       0.0243  CanadaSHM6_StableCrust_NGAEast[04]
+       0.0277  CanadaSHM6_StableCrust_NGAEast[05]
+       0.0489  CanadaSHM6_StableCrust_NGAEast[06]
+       0.0365  CanadaSHM6_StableCrust_NGAEast[07]
+       0.0349  CanadaSHM6_StableCrust_NGAEast[08]
+       0.0333  CanadaSHM6_StableCrust_NGAEast[09]
+       0.0172  CanadaSHM6_StableCrust_NGAEast[10]
+       0.0369  CanadaSHM6_StableCrust_NGAEast[11]
+       0.0264  CanadaSHM6_StableCrust_NGAEast[12]
+       0.0184  CanadaSHM6_StableCrust_NGAEast[13]
+       0.1500  CanadaSHM6_StableCrust_AA13[high]
+       0.2500  CanadaSHM6_StableCrust_AA13[central]
+       0.1000  CanadaSHM6_StableCrust_AA13[low]
+  TRT=Active Shallow Crust branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014
+       0.2500  CanadaSHM6_ActiveCrust_BooreEtAl2014
+       0.2500  CanadaSHM6_ActiveCrust_CampbellBozorgnia2014
+       0.2500  CanadaSHM6_ActiveCrust_ChiouYoungs2014
+  TRT=Subduction Interface branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_Interface_AbrahamsonEtAl2015SInter
+       0.2500  CanadaSHM6_Interface_AtkinsonMacias2009
+       0.2500  CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia
+       0.2500  CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia
+  TRT=Subduction IntraSlab30 branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30
+       0.2500  CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30
+       0.2500  CanadaSHM6_InSlab_GarciaEtAl2005SSlab30
+       0.2500  CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30
+  TRT=Subduction IntraSlab55 branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55
+       0.2500  CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55
+       0.2500  CanadaSHM6_InSlab_GarciaEtAl2005SSlab55
+       0.2500  CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55
+====================================================================================================
+legacy GEM run Vs30_760     -> /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/legacy-oq/gem/gem/gmm/Vs30_760.xml
+  TRT=Stable Shallow Crust branches= 16  sumW=0.1000  imt-dependent=False
+       0.1000  GMPETable
+  TRT=Active Shallow Crust branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  AbrahamsonEtAl2014
+       0.2500  BooreEtAl2014
+       0.2500  CampbellBozorgnia2014
+       0.2500  ChiouYoungs2014
+  TRT=Subduction Interface branches=  4  sumW=0.2500  imt-dependent=False
+       0.2500  GMPETable
+  TRT=Subduction IntraSlab30 branches=  4  sumW=0.2500  imt-dependent=False
+       0.2500  GMPETable
+  TRT=Subduction IntraSlab55 branches=  4  sumW=0.2500  imt-dependent=False
+       0.2500  GMPETable
+====================================================================================================
+kashimaDB legacy/shm6       -> ~/kashimaDB/openquake/gmm/legacy/shm6/gmmLT_SHM6.xml
+  TRT=SCC        branches= 16  sumW=1.0000  imt-dependent=True
+       0.0757  CanadaSHM6_StableCrust_NGAEast[01]
+       0.0646  CanadaSHM6_StableCrust_NGAEast[02]
+       0.0551  CanadaSHM6_StableCrust_NGAEast[03]
+       0.0243  CanadaSHM6_StableCrust_NGAEast[04]
+       0.0277  CanadaSHM6_StableCrust_NGAEast[05]
+       0.0489  CanadaSHM6_StableCrust_NGAEast[06]
+       0.0365  CanadaSHM6_StableCrust_NGAEast[07]
+       0.0349  CanadaSHM6_StableCrust_NGAEast[08]
+       0.0333  CanadaSHM6_StableCrust_NGAEast[09]
+       0.0172  CanadaSHM6_StableCrust_NGAEast[10]
+       0.0369  CanadaSHM6_StableCrust_NGAEast[11]
+       0.0264  CanadaSHM6_StableCrust_NGAEast[12]
+       0.0184  CanadaSHM6_StableCrust_NGAEast[13]
+       0.1500  CanadaSHM6_StableCrust_AA13[high]
+       0.2500  CanadaSHM6_StableCrust_AA13[central]
+       0.1000  CanadaSHM6_StableCrust_AA13[low]
+  TRT=ASC        branches=  9  sumW=1.0000  imt-dependent=False
+       0.1100  CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014
+       0.1100  CanadaSHM6_ActiveCrust_BooreEtAl2014
+       0.1100  CanadaSHM6_ActiveCrust_CampbellBozorgnia2014
+       0.1100  CanadaSHM6_ActiveCrust_ChiouYoungs2014
+       0.1100  AbrahamsonEtAl2014
+       0.1100  ChiouYoungs2014
+       0.1100  KothaEtAl2020
+       0.1100  BooreEtAl2020
+       0.1200  HassaniAtkinson2020Asc
+  TRT=SIF        branches=  8  sumW=1.0000  imt-dependent=False
+       0.1250  CanadaSHM6_Interface_AbrahamsonEtAl2015SInter
+       0.1250  CanadaSHM6_Interface_AtkinsonMacias2009
+       0.1250  CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia
+       0.1250  CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia
+       0.1250  AbrahamsonGulerce2020SInter
+       0.1250  KuehnEtAl2020SInter
+       0.1250  ParkerEtAl2020SInter
+       0.1250  SiEtAl2020SInter
+  TRT=SIS30      branches=  7  sumW=1.0000  imt-dependent=False
+       0.1600  CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30
+       0.1400  CanadaSHM6_InSlab_GarciaEtAl2005SSlab30
+       0.1400  CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30
+       0.1400  AbrahamsonGulerce2020SSlab
+       0.1400  KuehnEtAl2020SSlab
+       0.1400  ParkerEtAl2020SSlab
+       0.1400  SiEtAl2020SSlab
+  TRT=SIS55      branches=  7  sumW=1.0000  imt-dependent=False
+       0.1600  CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55
+       0.1400  CanadaSHM6_InSlab_GarciaEtAl2005SSlab55
+       0.1400  CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55
+       0.1400  AbrahamsonGulerce2020SSlab
+       0.1400  KuehnEtAl2020SSlab
+       0.1400  ParkerEtAl2020SSlab
+       0.1400  SiEtAl2020SSlab
+====================================================================================================
+kashimaDB legacy/nbcc       -> ~/kashimaDB/openquake/gmm/legacy/nbcc/gmmLT_NBCC.xml
+  TRT=SCC        branches= 16  sumW=1.0000  imt-dependent=True
+       0.0757  CanadaSHM6_StableCrust_NGAEast[01]
+       0.0646  CanadaSHM6_StableCrust_NGAEast[02]
+       0.0551  CanadaSHM6_StableCrust_NGAEast[03]
+       0.0243  CanadaSHM6_StableCrust_NGAEast[04]
+       0.0277  CanadaSHM6_StableCrust_NGAEast[05]
+       0.0489  CanadaSHM6_StableCrust_NGAEast[06]
+       0.0365  CanadaSHM6_StableCrust_NGAEast[07]
+       0.0349  CanadaSHM6_StableCrust_NGAEast[08]
+       0.0333  CanadaSHM6_StableCrust_NGAEast[09]
+       0.0172  CanadaSHM6_StableCrust_NGAEast[10]
+       0.0369  CanadaSHM6_StableCrust_NGAEast[11]
+       0.0264  CanadaSHM6_StableCrust_NGAEast[12]
+       0.0184  CanadaSHM6_StableCrust_NGAEast[13]
+       0.1500  CanadaSHM6_StableCrust_AA13[high]
+       0.2500  CanadaSHM6_StableCrust_AA13[central]
+       0.1000  CanadaSHM6_StableCrust_AA13[low]
+  TRT=ASC        branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014
+       0.2500  CanadaSHM6_ActiveCrust_BooreEtAl2014
+       0.2500  CanadaSHM6_ActiveCrust_CampbellBozorgnia2014
+       0.2500  CanadaSHM6_ActiveCrust_ChiouYoungs2014
+  TRT=SIF        branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_Interface_AbrahamsonEtAl2015SInter
+       0.2500  CanadaSHM6_Interface_AtkinsonMacias2009
+       0.2500  CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia
+       0.2500  CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia
+  TRT=SIS30      branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30
+       0.2500  CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30
+       0.2500  CanadaSHM6_InSlab_GarciaEtAl2005SSlab30
+       0.2500  CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30
+  TRT=SIS55      branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55
+       0.2500  CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55
+       0.2500  CanadaSHM6_InSlab_GarciaEtAl2005SSlab55
+       0.2500  CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55
+====================================================================================================
+kashimaDB legacy/gem        -> ~/kashimaDB/openquake/gmm/legacy/gem/gmmLT_GEM.xml
+  TRT=SCC        branches=  3  sumW=1.0000  imt-dependent=False
+       0.3400  ESHM20Craton
+       0.3300  RietbrockEdwards2019Mean
+       0.3300  ShahjoueiPezeshk2016
+  TRT=ASC        branches=  9  sumW=1.0000  imt-dependent=False
+       0.1100  CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014
+       0.1100  CanadaSHM6_ActiveCrust_BooreEtAl2014
+       0.1100  CanadaSHM6_ActiveCrust_CampbellBozorgnia2014
+       0.1100  CanadaSHM6_ActiveCrust_ChiouYoungs2014
+       0.1100  AbrahamsonEtAl2014
+       0.1100  ChiouYoungs2014
+       0.1100  KothaEtAl2020
+       0.1100  BooreEtAl2020
+       0.1200  HassaniAtkinson2020Asc
+  TRT=SIF        branches=  8  sumW=1.0000  imt-dependent=False
+       0.1250  CanadaSHM6_Interface_AbrahamsonEtAl2015SInter
+       0.1250  CanadaSHM6_Interface_AtkinsonMacias2009
+       0.1250  CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia
+       0.1250  CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia
+       0.1250  AbrahamsonGulerce2020SInter
+       0.1250  KuehnEtAl2020SInter
+       0.1250  ParkerEtAl2020SInter
+       0.1250  SiEtAl2020SInter
+  TRT=SIS30      branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  AbrahamsonGulerce2020SSlab
+       0.2500  KuehnEtAl2020SSlab
+       0.2500  ParkerEtAl2020SSlab
+       0.2500  SiEtAl2020SSlab
+  TRT=SIS55      branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  AbrahamsonGulerce2020SSlab
+       0.2500  KuehnEtAl2020SSlab
+       0.2500  ParkerEtAl2020SSlab
+       0.2500  SiEtAl2020SSlab
+  TRT=SIS        branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  AbrahamsonGulerce2020SSlab
+       0.2500  KuehnEtAl2020SSlab
+       0.2500  ParkerEtAl2020SSlab
+       0.2500  SiEtAl2020SSlab
+====================================================================================================
+kashimaDB legacy/usgs       -> ~/kashimaDB/openquake/gmm/legacy/usgs/gmmLT_USGS.xml
+  TRT=SCC        branches= 23  sumW=1.0000  imt-dependent=False
+       0.0392  NGAEastUSGSSammons1
+       0.0392  NGAEastUSGSSammons2
+       0.0392  NGAEastUSGSSammons3
+       0.0392  NGAEastUSGSSammons4
+       0.0392  NGAEastUSGSSammons5
+       0.0392  NGAEastUSGSSammons6
+       0.0392  NGAEastUSGSSammons7
+       0.0392  NGAEastUSGSSammons8
+       0.0392  NGAEastUSGSSammons9
+       0.0392  NGAEastUSGSSammons10
+       0.0392  NGAEastUSGSSammons11
+       0.0392  NGAEastUSGSSammons12
+       0.0392  NGAEastUSGSSammons13
+       0.0392  NGAEastUSGSSammons14
+       0.0392  NGAEastUSGSSammons15
+       0.0392  NGAEastUSGSSammons16
+       0.0392  NGAEastUSGSSammons17
+       0.0555  NGAEastUSGSSeedGraizer16
+       0.0555  NGAEastUSGSSeedGraizer17
+       0.0555  NGAEastUSGSSeedFrankel
+       0.0555  NGAEastUSGSSeedYA15
+       0.0555  NGAEastUSGSSeedPZCT15_M1SS
+       0.0555  NGAEastUSGSSeedPZCT15_M2ES
+  TRT=ASC        branches=  9  sumW=1.0000  imt-dependent=False
+       0.1100  CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014
+       0.1100  CanadaSHM6_ActiveCrust_BooreEtAl2014
+       0.1100  CanadaSHM6_ActiveCrust_CampbellBozorgnia2014
+       0.1100  CanadaSHM6_ActiveCrust_ChiouYoungs2014
+       0.1100  AbrahamsonEtAl2014
+       0.1100  ChiouYoungs2014
+       0.1100  KothaEtAl2020
+       0.1100  BooreEtAl2020
+       0.1200  HassaniAtkinson2020Asc
+  TRT=SIF        branches=  8  sumW=1.0000  imt-dependent=False
+       0.1250  CanadaSHM6_Interface_AbrahamsonEtAl2015SInter
+       0.1250  CanadaSHM6_Interface_AtkinsonMacias2009
+       0.1250  CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia
+       0.1250  CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia
+       0.1250  AbrahamsonGulerce2020SInter
+       0.1250  KuehnEtAl2020SInter
+       0.1250  ParkerEtAl2020SInter
+       0.1250  SiEtAl2020SInter
+  TRT=SIS30      branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  AbrahamsonGulerce2020SSlab
+       0.2500  KuehnEtAl2020SSlab
+       0.2500  ParkerEtAl2020SSlab
+       0.2500  SiEtAl2020SSlab
+  TRT=SIS55      branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  AbrahamsonGulerce2020SSlab
+       0.2500  KuehnEtAl2020SSlab
+       0.2500  ParkerEtAl2020SSlab
+       0.2500  SiEtAl2020SSlab
+  TRT=SIS        branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  AbrahamsonGulerce2020SSlab
+       0.2500  KuehnEtAl2020SSlab
+       0.2500  ParkerEtAl2020SSlab
+       0.2500  SiEtAl2020SSlab
+====================================================================================================
+docs/legacy/SCC/gmmLT_SCC1  -> ~/kashimaDB/openquake/gmm/docs/legacy/SCC/gmmLT_SCC1.xml
+  TRT=SCC        branches=  3  sumW=1.0000  imt-dependent=False
+       0.3400  ESHM20Craton
+       0.3300  RietbrockEdwards2019Mean
+       0.3300  ShahjoueiPezeshk2016
+====================================================================================================
+docs/legacy/SCC/gmmLT_SCC2  -> ~/kashimaDB/openquake/gmm/docs/legacy/SCC/gmmLT_SCC2.xml
+  TRT=SCC        branches= 23  sumW=1.0000  imt-dependent=False
+       0.0392  NGAEastUSGSSammons1
+       0.0392  NGAEastUSGSSammons2
+       0.0392  NGAEastUSGSSammons3
+       0.0392  NGAEastUSGSSammons4
+       0.0392  NGAEastUSGSSammons5
+       0.0392  NGAEastUSGSSammons6
+       0.0392  NGAEastUSGSSammons7
+       0.0392  NGAEastUSGSSammons8
+       0.0392  NGAEastUSGSSammons9
+       0.0392  NGAEastUSGSSammons10
+       0.0392  NGAEastUSGSSammons11
+       0.0392  NGAEastUSGSSammons12
+       0.0392  NGAEastUSGSSammons13
+       0.0392  NGAEastUSGSSammons14
+       0.0392  NGAEastUSGSSammons15
+       0.0392  NGAEastUSGSSammons16
+       0.0392  NGAEastUSGSSammons17
+       0.0555  NGAEastUSGSSeedGraizer16
+       0.0555  NGAEastUSGSSeedGraizer17
+       0.0555  NGAEastUSGSSeedFrankel
+       0.0555  NGAEastUSGSSeedYA15
+       0.0555  NGAEastUSGSSeedPZCT15_M1SS
+       0.0555  NGAEastUSGSSeedPZCT15_M2ES
+====================================================================================================
+docs/legacy/SCC/gmmLT_SCC3  -> ~/kashimaDB/openquake/gmm/docs/legacy/SCC/gmmLT_SCC3.xml
+  TRT=SCC        branches= 16  sumW=1.0000  imt-dependent=True
+       0.0757  CanadaSHM6_StableCrust_NGAEast[01]
+       0.0646  CanadaSHM6_StableCrust_NGAEast[02]
+       0.0551  CanadaSHM6_StableCrust_NGAEast[03]
+       0.0243  CanadaSHM6_StableCrust_NGAEast[04]
+       0.0277  CanadaSHM6_StableCrust_NGAEast[05]
+       0.0489  CanadaSHM6_StableCrust_NGAEast[06]
+       0.0365  CanadaSHM6_StableCrust_NGAEast[07]
+       0.0349  CanadaSHM6_StableCrust_NGAEast[08]
+       0.0333  CanadaSHM6_StableCrust_NGAEast[09]
+       0.0172  CanadaSHM6_StableCrust_NGAEast[10]
+       0.0369  CanadaSHM6_StableCrust_NGAEast[11]
+       0.0264  CanadaSHM6_StableCrust_NGAEast[12]
+       0.0184  CanadaSHM6_StableCrust_NGAEast[13]
+       0.1500  CanadaSHM6_StableCrust_AA13[high]
+       0.2500  CanadaSHM6_StableCrust_AA13[central]
+       0.1000  CanadaSHM6_StableCrust_AA13[low]
+====================================================================================================
+TRT/SCC/gmmLT_NBCC.xml      -> ~/kashimaDB/openquake/gmm/TRT/SCC/gmmLT_NBCC.xml
+  TRT=SCC        branches= 16  sumW=1.0000  imt-dependent=False
+       0.0757  CanadaSHM6_StableCrust_NGAEast[01]
+       0.0646  CanadaSHM6_StableCrust_NGAEast[02]
+       0.0551  CanadaSHM6_StableCrust_NGAEast[03]
+       0.0243  CanadaSHM6_StableCrust_NGAEast[04]
+       0.0277  CanadaSHM6_StableCrust_NGAEast[05]
+       0.0489  CanadaSHM6_StableCrust_NGAEast[06]
+       0.0365  CanadaSHM6_StableCrust_NGAEast[07]
+       0.0349  CanadaSHM6_StableCrust_NGAEast[08]
+       0.0333  CanadaSHM6_StableCrust_NGAEast[09]
+       0.0172  CanadaSHM6_StableCrust_NGAEast[10]
+       0.0369  CanadaSHM6_StableCrust_NGAEast[11]
+       0.0264  CanadaSHM6_StableCrust_NGAEast[12]
+       0.0184  CanadaSHM6_StableCrust_NGAEast[13]
+       0.1500  CanadaSHM6_StableCrust_AA13[high]
+       0.2500  CanadaSHM6_StableCrust_AA13[central]
+       0.1000  CanadaSHM6_StableCrust_AA13[low]
+====================================================================================================
+TRT/ASC/gmmLT_NBCC.xml      -> ~/kashimaDB/openquake/gmm/TRT/ASC/gmmLT_NBCC.xml
+  TRT=ASC        branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_ActiveCrust_AbrahamsonEtAl2014
+       0.2500  CanadaSHM6_ActiveCrust_BooreEtAl2014
+       0.2500  CanadaSHM6_ActiveCrust_CampbellBozorgnia2014
+       0.2500  CanadaSHM6_ActiveCrust_ChiouYoungs2014
+====================================================================================================
+TRT/SIF/gmmLT_NBCC.xml      -> ~/kashimaDB/openquake/gmm/TRT/SIF/gmmLT_NBCC.xml
+  TRT=SIF        branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_Interface_AbrahamsonEtAl2015SInter
+       0.2500  CanadaSHM6_Interface_AtkinsonMacias2009
+       0.2500  CanadaSHM6_Interface_GhofraniAtkinson2014Cascadia
+       0.2500  CanadaSHM6_Interface_ZhaoEtAl2006SInterCascadia
+====================================================================================================
+TRT/SIS30/gmmLT_NBCC.xml    -> ~/kashimaDB/openquake/gmm/TRT/SIS30/gmmLT_NBCC.xml
+  TRT=SIS30      branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab30
+       0.2500  CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia30
+       0.2500  CanadaSHM6_InSlab_GarciaEtAl2005SSlab30
+       0.2500  CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia30
+====================================================================================================
+TRT/SIS55/gmmLT_NBCC.xml    -> ~/kashimaDB/openquake/gmm/TRT/SIS55/gmmLT_NBCC.xml
+  TRT=SIS55      branches=  4  sumW=1.0000  imt-dependent=False
+       0.2500  CanadaSHM6_InSlab_AbrahamsonEtAl2015SSlab55
+       0.2500  CanadaSHM6_InSlab_AtkinsonBoore2003SSlabCascadia55
+       0.2500  CanadaSHM6_InSlab_GarciaEtAl2005SSlab55
+       0.2500  CanadaSHM6_InSlab_ZhaoEtAl2006SSlabCascadia55
+====================================================================================================
+TRT/ASC/gmmLT_ASC.xml       -> ~/kashimaDB/openquake/gmm/TRT/ASC/gmmLT_ASC.xml
+  TRT=ASC        branches=  8  sumW=1.0000  imt-dependent=False
+       0.1250  AristeidouEtAl2024
+       0.1250  Atkinson2022Crust
+       0.1250  BooreEtAl2020
+       0.1250  CampbellBozorgnia2019
+       0.1250  ChaoEtAl2020Asc
+       0.1250  KothaEtAl2020
+       0.1250  PhungEtAl2020Asc
+       0.1250  Stafford2022
+====================================================================================================
+TRT/SCC/gmmLT_SCC.xml       -> ~/kashimaDB/openquake/gmm/TRT/SCC/gmmLT_SCC.xml
+  TRT=SCC        branches=  6  sumW=1.0000  imt-dependent=False
+       0.1667  Atkinson2008prime
+       0.1667  AtkinsonBoore2006Modified2011
+       0.1667  PezeshkEtAl2011
+       0.1667  ESHM20Craton
+       0.1667  SomervilleEtAl2009YilgarnCraton_SS14
+       0.1666  CollapsedNGAEastUSGS
+====================================================================================================
+current run gmmLT_GMM.xml   -> oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/gmmLT_GMM.xml
+  TRT=ASC        branches=  8  sumW=1.0000  imt-dependent=False
+       0.1250  AristeidouEtAl2024
+       0.1250  Atkinson2022Crust
+       0.1250  BooreEtAl2020
+       0.1250  CampbellBozorgnia2019
+       0.1250  ChaoEtAl2020Asc
+       0.1250  KothaEtAl2020
+       0.1250  PhungEtAl2020Asc
+       0.1250  Stafford2022
+  TRT=SCC        branches=  6  sumW=1.0000  imt-dependent=False
+       0.1667  Atkinson2008prime
+       0.1667  AtkinsonBoore2006Modified2011
+       0.1667  PezeshkEtAl2011
+       0.1667  ESHM20Craton
+       0.1667  SomervilleEtAl2009YilgarnCraton_SS14
+       0.1666  CollapsedNGAEastUSGS
+  TRT=SIF        branches= 10  sumW=1.0000  imt-dependent=False
+       0.1000  AbrahamsonEtAl2018SInter
+       0.1000  AbrahamsonGulerce2020SInter
+       0.1000  Atkinson2022SInter
+       0.1000  AtkinsonMacias2009NSHMP2014
+       0.1000  ChaoEtAl2020SInter
+       0.1000  KuehnEtAl2020SInter
+       0.1000  MontalvaEtAl2017SInter
+       0.1000  ParkerEtAl2020SInter
+       0.1000  PhungEtAl2020SInter
+       0.1000  SiEtAl2020SInter
+  TRT=SIS30      branches= 10  sumW=1.0000  imt-dependent=False
+       0.1000  AbrahamsonEtAl2018SSlab
+       0.1000  AbrahamsonGulerce2020SSlab
+       0.1000  Atkinson2022SSlab
+       0.1000  ChaoEtAl2020SSlab
+       0.1000  JaimesEtAl2020SSlab
+       0.1000  KuehnEtAl2020SSlab
+       0.1000  MontalvaEtAl2017SSlab
+       0.1000  ParkerEtAl2020SSlab
+       0.1000  PhungEtAl2020SSlab
+       0.1000  SiEtAl2020SSlab
+  TRT=SIS55      branches= 10  sumW=1.0000  imt-dependent=False
+       0.1000  AbrahamsonEtAl2018SSlab
+       0.1000  AbrahamsonGulerce2020SSlab
+       0.1000  Atkinson2022SSlab
+       0.1000  ChaoEtAl2020SSlab
+       0.1000  JaimesEtAl2020SSlab
+       0.1000  KuehnEtAl2020SSlab
+       0.1000  MontalvaEtAl2017SSlab
+       0.1000  ParkerEtAl2020SSlab
+       0.1000  PhungEtAl2020SSlab
+       0.1000  SiEtAl2020SSlab
