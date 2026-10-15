@@ -1,0 +1,204 @@
+{
+  "candidate_sha256": "10b14fb054eaee5da59f5f68daf7144d673770a37f919687f5cde98bdac33595",
+  "reviewer": "Codex, revisión focal del cambio solicitado",
+  "records": {
+    "contract": {
+      "path": "CONTRATO.md",
+      "sha256": "21db9eb98e070764b54fc43d6da3918b416223e5618592b99e3b2dfbef01c81d"
+    },
+    "provenance": {
+      "path": "PROVENANCE.md",
+      "sha256": "d4fa4d5e00a3167ae9f352a6c45415904fb31779cea4af87cc3103e201f4c778"
+    },
+    "entities": {
+      "path": "entities.txt",
+      "sha256": "9ae1106a7e67abbd8a74415e6c9e16d7d3c95ec5313cfcbca1d5b5940b1ae67a"
+    },
+    "formal": {
+      "path": "FORMAL.md",
+      "sha256": "d03cc019b284c9d38253affca0585c7e5bc28794e16fa2a6d973ec0dc897394f"
+    }
+  },
+  "baseline": {
+    "path": "baseline.md",
+    "sha256": "17e56f989de3c70f6b1f849827920d3b9537b463d28c3f99f8c30c9d5006cfdd"
+  },
+  "units": [
+    {
+      "text": "The reference magnitudes assigned to the seismic demands were $M_w$ = 5.5 for $T_R$ = 100, 200, 500, 1,000, 2,000, and 2,500 years; $M_w$ = 6.5 for $T_R$ = 5,000 and 10,000 years and the MCE. Within each demand, the same magnitude was used for the geometry--material combinations.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PROVENANCE filas 1–2: PROCEDENCIA:7–12 y los contratos leídos sustentan los nueve pares TR/Mw; el knit los reproduce sin constantes en prosa."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración identifica la magnitud por demanda; la segunda aclara su aplicación común a geometrías y materiales, evitando interpretar un promedio de magnitudes."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Reporta la combinación auditada de este proyecto por demanda; no compara Hazard ni elige otro escenario."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Texto declarativo; 'each demand' tiene el alcance de cada fila única del mapa, no universaliza a otros proyectos."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Sustituye la afirmación falsa de una sola magnitud; conserva todas las demandas auditadas y no cambia resultados."
+        }
+      }
+    },
+    {
+      "text": "The Newmark permanent displacement $D_n$ quantifies the displacement induced by an earthquake and accumulated in the sliding mass and is the performance measure from which the seismic coefficients are derived. The $D_n(k_y)$ curves relate, for each combination of geometry, material, and design scenario, the yield acceleration $k_y$ to the expected permanent displacement; they were computed with the `ensemble` set of `AM88`, `JB07`, `SR08`, `BT07`, and `BM19`, with the reference magnitude assigned to each seismic demand and 300 realizations per demand and are read at the fractiles $q = 1 - p_e$. The horizontal pseudostatic coefficient $k_h$ is in turn derived from the allowable permanent displacement $D_a$ of the potentially sliding mass [@BrayTravasarou2009; @MacedoEtAl2018]; the coefficients are reported at four relative displacement limits, $D_a/H_s$ = 0.1, 0.4, 1.0, 2.5%, and the tables in Section [-@sec-kh-tables] report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA.\nwhere $\\mu_{\\ln D}$ and $\\sigma_{\\ln D}$ are the mean and standard deviation of $\\ln D_n$ defined by each model, and $\\epsilon$ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch. In every formulation, $k_y$, PGA, and $S_a$ are expressed in units of $g$ -- the acceleration of gravity -- $I_A$ in m/s, and $T_s$ in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude assigned to each seismic demand is applied to its geometry--material combinations. The published form of each formulation is reproduced in Section [-@sec-newmark-appendix]. The performance-based seismic coefficient is defined by",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PROVENANCE filas 3–10: las dos ubicaciones del memo se leyeron completas; sólo cambia la cláusula Mw, sustentada por PROCEDENCIA:7–12."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Se retienen definición de Dn, relación ky, composición del ensemble, NS, fractiles y límites; el segundo pasaje define parámetros, rama positiva, unidades y remisiones necesarias a sus ecuaciones."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Extractos en contexto del mismo memo aprobado: introducción y método. No se traslada contenido de Hazard ni se reescriben los modelos."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conserva redacción editorial existente y citas; la expresión 'reference magnitude assigned to each seismic demand' reemplaza únicamente la falsa constancia."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "NS, umbrales, citas y referencias permanecen con idénticas fórmulas de origen; cambia únicamente la asignación por demanda."
+        }
+      }
+    },
+    {
+      "text": "where $\\mu_{\\ln D}$ and $\\sigma_{\\ln D}$ are the mean and standard deviation of $\\ln D_n$ defined by each model, and $\\epsilon$ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch. In every formulation, $k_y$, PGA, and $S_a$ are expressed in units of $g$ -- the acceleration of gravity -- $I_A$ in m/s, and $T_s$ in seconds; the Arias intensity is derived from the PGA of each realization according to [-@eq-newmark-arias], and the reference magnitude assigned to each seismic demand is applied to its geometry--material combinations. The published form of each formulation is reproduced in Appendix [-@sec-newmark-appendix]. The performance-based seismic coefficient is defined by",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PROVENANCE filas 6–10: dn.model:7 leído; Arias y las definiciones se conservan, magnitud por demanda de PROCEDENCIA:7–12."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Los parámetros y unidades permiten leer la lognormal; se conservan rama positiva, enlace a Arias, apéndice e introducción del criterio siguiente."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Metodología en _chapters sin valor de proyecto interpolado; el bloque _results reporta los valores."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Las unidades y 'every formulation' conservan el alcance aprobado; no hay conclusiones nuevas ni instrucciones."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Conserva las citas y anchors; retira sólo el escalar Mw.gmdp y su universalidad para las demandas."
+        }
+      }
+    },
+    {
+      "text": "- **Newmark Permanent Displacements.** The Newmark permanent displacement $D_n$ quantifies the displacement induced by an earthquake and accumulated in the sliding mass and is the performance measure from which the seismic coefficients are derived. The $D_n(k_y)$ curves relate, for each combination of geometry, material, and design scenario, the yield acceleration $k_y$ to the expected permanent displacement; they were computed with the `ensemble` set of `AM88`, `JB07`, `SR08`, `BT07`, and `BM19`, with the reference magnitude assigned to each seismic demand and 300 realizations per demand and are read at the fractiles $q = 1 - p_e$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PROVENANCE filas 3–4: dn.results:7 y contratos leídos respaldan los modelos, NS y fractiles; PROCEDENCIA respalda asignación por demanda."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Definición y relación Dn(ky) mantienen el contenido necesario del resumen; se corrige sólo el dato de magnitud único."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Resumen de desplazamientos existente, sin ampliación de alturas, materiales o métodos."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Se mantiene el texto aprobado y el título, con la mínima cláusula distinta."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Sin cambios a NS, modelos o q; no se incorporan valores literales a la fuente."
+        }
+      }
+    },
+    {
+      "text": "The Newmark displacements were computed with the `ensemble` set of five formulations: `AM88`, `JB07`, and `SR08` for the rigid block, and `BT07` and `BM19` for the flexible block, `BM19` being the branch for projects with crustal control, with equal weights. Every formulation received the reference magnitude assigned to each seismic demand and the demand of each of the 8 return periods, 100, 200, 500, 1,000, 2,000, 2,500, 5,000, and 10,000 years, and of the MCE, with 300 realizations per demand, over the 5 slope heights from 27 to 135 m, the 8 material classes, and the relative displacement grid $D_a/H_s$ = 0.05, 0.10, 0.25, 0.40, 0.50, 1.00, and 2.50 %.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PROVENANCE filas 11–12: dn.inputs:3–12 y contratos completos; se preservan los ocho TR, cinco alturas y ocho materiales calculados por R."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración identifica las formulaciones; la segunda fija la población y discretización del cálculo que el lector necesita para interpretar los productos."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Describe los inputs completos, como su baseline; no confunde esta población con los cinco pares del memo."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Cada cuantificador corresponde a los contratos leídos; 0.40 y 2.50 son sólo formato de DaH.gmdp, resuelto en PROVENANCE."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No cambia selecciones ni valores; sustituye 'constant input' por la asignación específica por demanda."
+        }
+      }
+    },
+    {
+      "text": "$$\nk_h=100\\,\\frac{k_{\\max}}{\\mathrm{PGA} (V_{S30})}.\n$${#eq-kh-normalization}",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PROVENANCE fila ecuación: scripts/tbl/kh.R convierte 100*Kh y el RDS guarda ratio; dn.model:14–20 declara porcentaje."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "El factor 100 es necesario para que la ecuación produzca la unidad declarada en texto, tablas y figuras."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Conversión de unidad documental, sin cambiar datos ni el cálculo de kmax."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Notación y anchor existentes; 100 es factor de unidad, no resultado científico pegado."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Sólo añade la conversión ya usada por el builder; conserva numerador, denominador, site-condition y referencia."
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "mw-scalar",
+      "fragment": "the reference magnitude of the project, $M_w=$ `r .fmt(Mw.gmdp, 1)`, is applied as a constant input to every demand, geometry, material and site evaluated",
+      "rule": "preservation",
+      "diagnosis": "El escalar de newmark.json no describe la combinación auditada por demanda.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "the reference magnitude assigned to each seismic demand is applied to its geometry--material combinations",
+        "evidence": "Cláusula releída en el contexto de ambos párrafos; PROCEDENCIA:7–12 y mapa validado definen la asignación. candidate.md refleja el resultado del knit.",
+        "verified": true
+      }
+    },
+    {
+      "id": "kh-percent",
+      "fragment": "k_h=\\frac{k_{\\max}}{\\mathrm{PGA} (V_{S30})}.",
+      "rule": "support",
+      "diagnosis": "La ecuación daba razón aunque texto y builder reportan porcentaje.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "k_h=100\\,\\frac{k_{\\max}}{\\mathrm{PGA} (V_{S30})}.",
+        "evidence": "Se cotejó con scripts/tbl/kh.R y units.Kh ratio; fórmula y contexto porcentual releídos, datos sin cambio.",
+        "verified": true
+      }
+    }
+  ]
+}

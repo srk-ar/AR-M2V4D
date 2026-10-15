@@ -1,0 +1,191 @@
+{
+  "candidate_sha256": "b58be57eeb7d057ae9df85ac841b639be95d740c19d2dd6ad1e06137d11bd807",
+  "reviewer": "Codex delegado diana_word",
+  "records": {
+    "contract": {
+      "path": "writing-contract.md",
+      "sha256": "6b71445bc6efb856f7ba07e64c94b5d16ad801b93f7d8d2ba62a1ae749c1eca4"
+    },
+    "provenance": {
+      "path": "corrections.provenance.md",
+      "sha256": "d2cbd60f225ac845c9b5e783b780d8fba14c8a03ff45ada77acf8ba919712f06"
+    },
+    "entities": {
+      "path": "corrections.entities.txt",
+      "sha256": "c6b59c69ea0f2e94907e3c1114528bdc78b5ba8b2c6be176c639753b70b6a2b2"
+    },
+    "formal": {
+      "path": "corrections.formal.md",
+      "sha256": "040d62894504ab9ad81c30a2d07e57ab452daad17c0d2830ae6c0046d98fe1ed"
+    }
+  },
+  "baseline": {
+    "path": "corrections.md",
+    "sha256": "b58be57eeb7d057ae9df85ac841b639be95d740c19d2dd6ad1e06137d11bd807"
+  },
+  "units": [
+    {
+      "text": "the estimated fundamental period varies between 0.22 and 1.28 s.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Memo-current:39 y tabla 2, el mismo conjunto de cinco escenarios."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "El lector obtiene el rango vigente de Ts en segundos; sin él persistiría el rango antiguo."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Sólo se sustituye el rango del capítulo de taludes."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "La cláusula mantiene el verbo varies y no compara modelos."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Se preservan statistic, unidades y conjunto; cambian únicamente 0.19/0.83 por los extremos renderizados."
+        }
+      }
+    },
+    {
+      "text": "with reference magnitudes $M_w = 5.5$ and $M_w = 6.5$ assigned according to the seismic demand",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PROCEDENCIA:7-12 y contratos M55/M65 documentan los dos valores."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "El resumen deja de afirmar una magnitud única."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Sólo la cláusula de magnitud; modelos, realizaciones y fractiles siguen intactos."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Reference magnitudes y seismic demand son vocabulario de Diana; sin valoración."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "La asignación por demanda sustituye exclusivamente el alcance falso de constante."
+        }
+      }
+    },
+    {
+      "text": "the reference magnitude is $M_w = 5.5$ for return periods up to 2,500 years and $M_w = 6.5$ for return periods of 5,000 and 10,000 years and the MCE. Within each demand, that magnitude is common to the geometry, material and site combinations evaluated.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PROCEDENCIA:7-12 y magnitude-map.csv:2-10 fijan exactamente la asignación."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración identifica la magnitud que corresponde a cada demanda; la segunda conserva que las combinaciones de una demanda comparten ese valor."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "No modifica Hazard ni define nuevas demandas; describe el reparto aprobado."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Each está sustentado por la combinación por demanda; no introduce una generalización entre demandas."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Conserva geometría, material y sitio como dimensiones; elimina exclusivamente la constancia falsa entre demandas."
+        }
+      }
+    },
+    {
+      "text": "$$T_s = \\frac{4\\pi H}{a_1(2-m_o)V_S^o}.$$",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Memo-current:59 contiene la ecuación corregida."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "El numerador requiere H desde el ápice para interpretar los períodos nuevos."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Corrección local de ecuación 10-1, sin cálculo nuevo."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Notación matemática existente, sin prosa añadida."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Los factores a1, mo y VSo y la numeración original permanecen."
+        }
+      }
+    },
+    {
+      "text": "The height from the virtual apex to the base of the equivalent wedge is $H = H_s/(1-\\lambda_o)$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Memo-current:61 define H; Diana:1414 ya contiene la descripción y fracción."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Relaciona explícitamente el símbolo H de la ecuación con la altura física definida por Diana."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Sólo añade H= a la definición existente."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conserva virtual apex y equivalent wedge de Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "La frase y la relación Hs/(1-lambda) se mantienen, sin reinterpretación geométrica."
+        }
+      }
+    },
+    {
+      "text": "$$k_h = 100\\frac{k_{\\max}}{PGA(V_{S30})}.$$",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Las notas originales de las figuras 10-1 a 10-3 ya expresan 100 kmax/PGA."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "El factor 100 hace explícita la unidad porcentual que declara el párrafo."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Sólo ecuación 10-15; datos y curvas intactos."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Símbolos y normalización por PGA(VS30) existentes."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Conserva cociente y unidades científicas; corrige la conversión a porcentaje."
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "register-each",
+      "fragment": "Within each demand",
+      "rule": "register",
+      "diagnosis": "El control de entidades señala el cuantificador each; requiere justificar su alcance.",
+      "resolution": {
+        "action": "retain",
+        "evidence": "PROCEDENCIA:7-12 combina las filas por demanda desde contratos que comparten las combinaciones. Se conserva la constancia dentro de la demanda, sin afirmar constancia entre demandas; releído en contexto.",
+        "verified": true
+      }
+    }
+  ]
+}

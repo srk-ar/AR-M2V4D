@@ -62,6 +62,12 @@ params <- readFile(FILE, "Missing params.yml", yaml::read_yaml)$params
 if (is.list(params$consultant)) params$SRK_short <- "SRK"
 
 # ── 5) Plotting / formatting defaults ──────────────────────────────────
+if (knitr::pandoc_to("docx")) {
+  flextable::set_flextable_defaults(
+    post_process_docx = function(x) flextable::set_table_properties(x, layout = "autofit", width = 1)
+  )
+}
+
 if (!exists("p.target",      inherits = FALSE)) p.target      <- NULL
 if (!exists("S.target",      inherits = FALSE)) S.target      <- NULL
 if (!exists("NMAX",          inherits = FALSE)) NMAX          <- 2500

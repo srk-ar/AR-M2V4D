@@ -1,0 +1,11 @@
+check_entities: candidate dev/SoT/m65-20261014/diana-sources/candidate.md; sources 8 file(s)
+UNSUPPORTED acronyms (0)
+UNSUPPORTED names (0)
+UNSUPPORTED numbers (2)
+  0.40: "Every formulation received the reference magnitude assigned to each seismic demand and the demand of each of the 8 return periods, 100, 200, 500, 1,000, 2,000, "
+  2.50: "Every formulation received the reference magnitude assigned to each seismic demand and the demand of each of the 8 return periods, 100, 200, 500, 1,000, 2,000, "
+REGISTER flags (3)
+  each: "Within each demand, the same magnitude was used for the geometry--material combinations."
+  every: "In every formulation, , PGA, and are expressed in units of -- the acceleration of gravity -- in m/s, and in seconds; the Arias intensity is derived from the PGA"
+  Every: "Every formulation received the reference magnitude assigned to each seismic demand and the demand of each of the 8 return periods, 100, 200, 500, 1,000, 2,000, "
+SUMMARY unsupported=2 register=3

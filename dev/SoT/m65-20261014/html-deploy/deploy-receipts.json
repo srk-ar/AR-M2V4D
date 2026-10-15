@@ -1,0 +1,212 @@
+[
+  {
+    "alias": "toc",
+    "path": "html/toc",
+    "siteId": "d24121f9-7e2d-4bb0-9096-16710cec54f5",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-toc.srk.ar",
+    "uniqueUrl": "https://6ad0ff7d1ad3f401d1ea6200--arm2v4d-toc.netlify.app",
+    "deployId": "6ad0ff7d1ad3f401d1ea6200"
+  },
+  {
+    "alias": "report",
+    "path": "html/book",
+    "siteId": "e814d560-334d-49f8-a77f-02dc745cebb0",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-report.srk.ar",
+    "uniqueUrl": "https://6ad0ff841b42f8106c8adc5c--arm2v4d-report.netlify.app",
+    "deployId": "6ad0ff841b42f8106c8adc5c"
+  },
+  {
+    "alias": "gmdp",
+    "path": "html/gmdp",
+    "siteId": "30da135a-2799-418a-890a-26668fd183b1",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-gmdp.srk.ar",
+    "uniqueUrl": "https://6ad0ff9041d9508b11d83da8--arm2v4d-gmdp.netlify.app",
+    "deployId": "6ad0ff9041d9508b11d83da8"
+  },
+  {
+    "alias": "ts",
+    "path": "html/gmdp.ts",
+    "siteId": "9527253e-0757-4192-8439-0d69fdb10811",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-ts.srk.ar",
+    "uniqueUrl": "https://6ad0ff9819a2fa8258ececad--arm2v4d-ts.netlify.app",
+    "deployId": "6ad0ff9819a2fa8258ececad"
+  },
+  {
+    "alias": "dn",
+    "path": "html/gmdp.dn",
+    "siteId": "044c1657-d68e-4c73-b327-b8fd6225a1b7",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-dn.srk.ar",
+    "uniqueUrl": "https://6ad0ffa1d76809e13978eb5d--arm2v4d-dn.netlify.app",
+    "deployId": "6ad0ffa1d76809e13978eb5d"
+  },
+  {
+    "alias": "kmax",
+    "path": "html/gmdp.kmax",
+    "siteId": "ca6ba0ef-badc-48b8-95fb-79e77d78d1d6",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-kmax.srk.ar",
+    "uniqueUrl": "https://6ad0ffa9a175fad9d40280a5--arm2v4d-kmax.netlify.app",
+    "deployId": "6ad0ffa9a175fad9d40280a5"
+  },
+  {
+    "alias": "kh",
+    "path": "html/gmdp.kh",
+    "siteId": "85b7341a-5cb3-4ca4-94da-0a8626f6a022",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-kh.srk.ar",
+    "uniqueUrl": "https://6ad0ffb15e3239ac008c5b02--arm2v4d-kh.netlify.app",
+    "deployId": "6ad0ffb15e3239ac008c5b02"
+  },
+  {
+    "alias": "sdc",
+    "path": "html/sdc",
+    "siteId": "60050607-4bae-457d-ad21-84dc79944096",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-sdc.srk.ar",
+    "uniqueUrl": "https://6ad0ffbb4e5400d7270280bf--arm2v4d-sdc.netlify.app",
+    "deployId": "6ad0ffbb4e5400d7270280bf"
+  },
+  {
+    "alias": "sha",
+    "path": "html/sha",
+    "siteId": "d3731f52-4c07-4a73-aa77-1a6bd0878184",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-sha.srk.ar",
+    "uniqueUrl": "https://6ad0ffc3d3d98a403efcfdd0--arm2v4d-sha.netlify.app",
+    "deployId": "6ad0ffc3d3d98a403efcfdd0"
+  },
+  {
+    "alias": "srs",
+    "path": "html/srs",
+    "siteId": "0c47f5d5-6e33-4a29-9bf6-b5302ed8de07",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-srs.srk.ar",
+    "uniqueUrl": "https://6ad0ffcc19a05b1e80b92047--arm2v4d-srs.netlify.app",
+    "deployId": "6ad0ffcc19a05b1e80b92047"
+  },
+  {
+    "alias": "at",
+    "path": "html/srs.at",
+    "siteId": "32b7450d-cc32-4c9b-bf0a-f02f5672e558",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-at.srk.ar",
+    "uniqueUrl": "https://6ad0ffd3a09388e876cdb51a--arm2v4d-at.netlify.app",
+    "deployId": "6ad0ffd3a09388e876cdb51a"
+  },
+  {
+    "alias": "vt",
+    "path": "html/srs.vt",
+    "siteId": "40b19a07-7273-438b-9c52-deb9189cef05",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-vt.srk.ar",
+    "uniqueUrl": "https://6ad0ffdebbb8f5d29823466a--arm2v4d-vt.netlify.app",
+    "deployId": "6ad0ffdebbb8f5d29823466a"
+  },
+  {
+    "alias": "dt",
+    "path": "html/srs.dt",
+    "siteId": "820bd640-d5ad-4c57-84ed-ef2be17afa3a",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-dt.srk.ar",
+    "uniqueUrl": "https://6ad0ffe73946c2ed912345f4--arm2v4d-dt.netlify.app",
+    "deployId": "6ad0ffe73946c2ed912345f4"
+  },
+  {
+    "alias": "ai",
+    "path": "html/srs.ai",
+    "siteId": "c6c0f402-6b45-4b26-86cd-250404af304f",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-ai.srk.ar",
+    "uniqueUrl": "https://6ad0fff2e8f09d79f6c2d233--arm2v4d-ai.netlify.app",
+    "deployId": "6ad0fff2e8f09d79f6c2d233"
+  },
+  {
+    "alias": "cav",
+    "path": "html/srs.cav",
+    "siteId": "4e79be92-89dd-47b5-8c1a-3b842df8b7cf",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-cav.srk.ar",
+    "uniqueUrl": "https://6ad0ffff0b43d21a2e8adcc7--arm2v4d-cav.netlify.app",
+    "deployId": "6ad0ffff0b43d21a2e8adcc7"
+  },
+  {
+    "alias": "cav5",
+    "path": "html/srs.cav5",
+    "siteId": "beb155d2-af2d-4171-a9d3-1dc9c6be32cf",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-cav5.srk.ar",
+    "uniqueUrl": "https://6ad10009c5c66f76db5523be--arm2v4d-cav5.netlify.app",
+    "deployId": "6ad10009c5c66f76db5523be"
+  },
+  {
+    "alias": "psa",
+    "path": "html/srs.psa",
+    "siteId": "8c5fcb7e-aadc-4e2d-abd3-d9eef79f2b63",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-psa.srk.ar",
+    "uniqueUrl": "https://6ad10016475525f71aea6203--arm2v4d-psa.netlify.app",
+    "deployId": "6ad10016475525f71aea6203"
+  },
+  {
+    "alias": "psv",
+    "path": "html/srs.psv",
+    "siteId": "9c2a070b-fbbd-4696-ac43-65066825ed24",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-psv.srk.ar",
+    "uniqueUrl": "https://6ad1001d9bedb1d510397d77--arm2v4d-psv.netlify.app",
+    "deployId": "6ad1001d9bedb1d510397d77"
+  },
+  {
+    "alias": "sd",
+    "path": "html/srs.sd",
+    "siteId": "f0438784-7011-4f53-898d-241b921cb79f",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-sd.srk.ar",
+    "uniqueUrl": "https://6ad10026b6465f5fb6a69bc4--arm2v4d-sd.netlify.app",
+    "deployId": "6ad10026b6465f5fb6a69bc4"
+  },
+  {
+    "alias": "its",
+    "path": "html/srs.its",
+    "siteId": "cec90739-2916-4338-8985-22a9452adcf8",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-its.srk.ar",
+    "uniqueUrl": "https://6ad1002d09e22bb5050280a8--arm2v4d-its.netlify.app",
+    "deployId": "6ad1002d09e22bb5050280a8"
+  },
+  {
+    "alias": "ipsa",
+    "path": "html/srs.ipsa",
+    "siteId": "1037333b-3ca3-4ca5-81da-ca94747973ed",
+    "mode": "production",
+    "status": "provider-confirmed",
+    "url": "https://arm2v4d-ipsa.srk.ar",
+    "uniqueUrl": "https://6ad1005ec7c98bb42385bb6d--arm2v4d-ipsa.netlify.app",
+    "deployId": "6ad1005ec7c98bb42385bb6d"
+  }
+]

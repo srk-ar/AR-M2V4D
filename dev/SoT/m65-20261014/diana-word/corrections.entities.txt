@@ -1,0 +1,7 @@
+check_entities: candidate dev/SoT/m65-20261014/diana-word/corrections.md; sources 5 file(s)
+UNSUPPORTED acronyms (0)
+UNSUPPORTED names (0)
+UNSUPPORTED numbers (0)
+REGISTER flags (1)
+  each: "Within each demand, that magnitude is common to the geometry, material and site combinations evaluated."
+SUMMARY unsupported=0 register=1

@@ -1,0 +1,9 @@
+# Verificación final del memo
+
+DOCX: docx/gmdp.memo.en.docx. SHA256 9812e23c42a59a5be3738723e8e1e06684f2aa84287870c3f06472a03c92a329. NGR render-memo-3.exit contiene 0. El render de QA con documents/render_docx.py produjo 34 páginas en /private/tmp/diana-delivery-check.QSbzK8/memo-final-pages. El coordinador abrió y revisó las 34 imágenes.
+
+El ajuste de ancho se acepta de forma acotada: las 12 tablas numeradas caben horizontalmente, incluidas sus continuaciones. Las ocho figuras están completas. Los párrafos de magnitudes por demanda y la ecuación kh con factor 100 se ven en las páginas físicas 10 y 12. Continúan defectos de presentación ajenos al cambio: página 3 con sólo logo, palabras partidas en tablas, último decimal de a1 en otra línea (tabla 2), filas que cruzan página y ampersands visibles en las ecuaciones del apéndice (páginas 30–32). No se declara saneamiento global ni revisión en Microsoft Word.
+
+Respecto del baseline /private/tmp/diana-delivery-check.QSbzK8/memo-before-width.docx (51d650efe17df2ed0891109718324f0737443151cabf7989ec951f4ca546a63e), document.xml es idéntico tras normalizar los 12 atributos tblW que pasan de pct=0 a pct=5000: mismo texto, ecuaciones y datos tabulares. Siete PNG cambian entre renders; no son idénticos pixel a pixel. La comparación RGB mide 0,0166–0,2150 % de píxeles diferentes por imagen; todas se revisaron visualmente. No se atribuye una causa no comprobada a esas diferencias. Las dimensiones de los siete PNG son 1890×1418.
+
+Hashes científicos reobservados después de los renders, sin cambios: ShearTable 334359667159dd8f928c54d4f40484af1162372a0e4114aee666691104b3cf29; kmaxTable 32653b7158e0a8899e9ac16313124d5a3dc27a112428a386216adcacf99a3fc5; DnTable f1a03ba421869204846994a3d6aaa590e488847b49168837a9af5ca2d8c3af7f. No hubo recálculos científicos.

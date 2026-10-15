@@ -1,0 +1,357 @@
+DEPLOY toc path=html/toc prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/toc
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-toc.srk.ar>
+Unique deploy URL: <https://6ad0ff7d1ad3f401d1ea6200--arm2v4d-toc.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-toc/deploys/6ad0ff7d1ad3f401d1ea6200>
+Function logs: <https://app.netlify.com/projects/arm2v4d-toc/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-toc/logs/edge-functions>
+DEPLOY report path=html/book prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/book
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-report.srk.ar>
+Unique deploy URL: <https://6ad0ff841b42f8106c8adc5c--arm2v4d-report.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-report/deploys/6ad0ff841b42f8106c8adc5c>
+Function logs: <https://app.netlify.com/projects/arm2v4d-report/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-report/logs/edge-functions>
+DEPLOY gmdp path=html/gmdp prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/gmdp
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-gmdp.srk.ar>
+Unique deploy URL: <https://6ad0ff9041d9508b11d83da8--arm2v4d-gmdp.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-gmdp/deploys/6ad0ff9041d9508b11d83da8>
+Function logs: <https://app.netlify.com/projects/arm2v4d-gmdp/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-gmdp/logs/edge-functions>
+DEPLOY ts path=html/gmdp.ts prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/gmdp.ts
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-ts.srk.ar>
+Unique deploy URL: <https://6ad0ff9819a2fa8258ececad--arm2v4d-ts.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-ts/deploys/6ad0ff9819a2fa8258ececad>
+Function logs: <https://app.netlify.com/projects/arm2v4d-ts/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-ts/logs/edge-functions>
+DEPLOY dn path=html/gmdp.dn prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/gmdp.dn
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-dn.srk.ar>
+Unique deploy URL: <https://6ad0ffa1d76809e13978eb5d--arm2v4d-dn.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-dn/deploys/6ad0ffa1d76809e13978eb5d>
+Function logs: <https://app.netlify.com/projects/arm2v4d-dn/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-dn/logs/edge-functions>
+DEPLOY kmax path=html/gmdp.kmax prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/gmdp.kmax
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-kmax.srk.ar>
+Unique deploy URL: <https://6ad0ffa9a175fad9d40280a5--arm2v4d-kmax.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-kmax/deploys/6ad0ffa9a175fad9d40280a5>
+Function logs: <https://app.netlify.com/projects/arm2v4d-kmax/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-kmax/logs/edge-functions>
+DEPLOY kh path=html/gmdp.kh prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/gmdp.kh
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-kh.srk.ar>
+Unique deploy URL: <https://6ad0ffb15e3239ac008c5b02--arm2v4d-kh.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-kh/deploys/6ad0ffb15e3239ac008c5b02>
+Function logs: <https://app.netlify.com/projects/arm2v4d-kh/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-kh/logs/edge-functions>
+DEPLOY sdc path=html/sdc prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/sdc
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-sdc.srk.ar>
+Unique deploy URL: <https://6ad0ffbb4e5400d7270280bf--arm2v4d-sdc.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-sdc/deploys/6ad0ffbb4e5400d7270280bf>
+Function logs: <https://app.netlify.com/projects/arm2v4d-sdc/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-sdc/logs/edge-functions>
+DEPLOY sha path=html/sha prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/sha
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-sha.srk.ar>
+Unique deploy URL: <https://6ad0ffc3d3d98a403efcfdd0--arm2v4d-sha.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-sha/deploys/6ad0ffc3d3d98a403efcfdd0>
+Function logs: <https://app.netlify.com/projects/arm2v4d-sha/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-sha/logs/edge-functions>
+DEPLOY srs path=html/srs prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-srs.srk.ar>
+Unique deploy URL: <https://6ad0ffcc19a05b1e80b92047--arm2v4d-srs.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-srs/deploys/6ad0ffcc19a05b1e80b92047>
+Function logs: <https://app.netlify.com/projects/arm2v4d-srs/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-srs/logs/edge-functions>
+DEPLOY at path=html/srs.at prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.at
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-at.srk.ar>
+Unique deploy URL: <https://6ad0ffd3a09388e876cdb51a--arm2v4d-at.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-at/deploys/6ad0ffd3a09388e876cdb51a>
+Function logs: <https://app.netlify.com/projects/arm2v4d-at/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-at/logs/edge-functions>
+DEPLOY vt path=html/srs.vt prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.vt
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-vt.srk.ar>
+Unique deploy URL: <https://6ad0ffdebbb8f5d29823466a--arm2v4d-vt.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-vt/deploys/6ad0ffdebbb8f5d29823466a>
+Function logs: <https://app.netlify.com/projects/arm2v4d-vt/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-vt/logs/edge-functions>
+DEPLOY dt path=html/srs.dt prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.dt
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-dt.srk.ar>
+Unique deploy URL: <https://6ad0ffe73946c2ed912345f4--arm2v4d-dt.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-dt/deploys/6ad0ffe73946c2ed912345f4>
+Function logs: <https://app.netlify.com/projects/arm2v4d-dt/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-dt/logs/edge-functions>
+DEPLOY ai path=html/srs.ai prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.ai
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-ai.srk.ar>
+Unique deploy URL: <https://6ad0fff2e8f09d79f6c2d233--arm2v4d-ai.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-ai/deploys/6ad0fff2e8f09d79f6c2d233>
+Function logs: <https://app.netlify.com/projects/arm2v4d-ai/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-ai/logs/edge-functions>
+DEPLOY cav path=html/srs.cav prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.cav
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-cav.srk.ar>
+Unique deploy URL: <https://6ad0ffff0b43d21a2e8adcc7--arm2v4d-cav.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-cav/deploys/6ad0ffff0b43d21a2e8adcc7>
+Function logs: <https://app.netlify.com/projects/arm2v4d-cav/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-cav/logs/edge-functions>
+DEPLOY cav5 path=html/srs.cav5 prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.cav5
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-cav5.srk.ar>
+Unique deploy URL: <https://6ad10009c5c66f76db5523be--arm2v4d-cav5.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-cav5/deploys/6ad10009c5c66f76db5523be>
+Function logs: <https://app.netlify.com/projects/arm2v4d-cav5/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-cav5/logs/edge-functions>
+DEPLOY psa path=html/srs.psa prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.psa
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-psa.srk.ar>
+Unique deploy URL: <https://6ad10016475525f71aea6203--arm2v4d-psa.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-psa/deploys/6ad10016475525f71aea6203>
+Function logs: <https://app.netlify.com/projects/arm2v4d-psa/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-psa/logs/edge-functions>
+DEPLOY psv path=html/srs.psv prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.psv
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-psv.srk.ar>
+Unique deploy URL: <https://6ad1001d9bedb1d510397d77--arm2v4d-psv.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-psv/deploys/6ad1001d9bedb1d510397d77>
+Function logs: <https://app.netlify.com/projects/arm2v4d-psv/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-psv/logs/edge-functions>
+DEPLOY sd path=html/srs.sd prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.sd
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-sd.srk.ar>
+Unique deploy URL: <https://6ad10026b6465f5fb6a69bc4--arm2v4d-sd.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-sd/deploys/6ad10026b6465f5fb6a69bc4>
+Function logs: <https://app.netlify.com/projects/arm2v4d-sd/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-sd/logs/edge-functions>
+DEPLOY its path=html/srs.its prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.its
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-its.srk.ar>
+Unique deploy URL: <https://6ad1002d09e22bb5050280a8--arm2v4d-its.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-its/deploys/6ad1002d09e22bb5050280a8>
+Function logs: <https://app.netlify.com/projects/arm2v4d-its/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-its/logs/edge-functions>
+DEPLOY ipsa path=html/srs.ipsa prod=TRUE
+
+Deploying to Netlify
+────────────────────────────────────────────────────────────────
+
+[32mDeploy path: [39m/Users/averrik/Cloud/github/projects/AR-M2V4D/html/srs.ipsa
+
+
+🚀 Deploy complete
+────────────────────────────────────────────────────────────────
+
+Production URL: <https://arm2v4d-ipsa.srk.ar>
+Unique deploy URL: <https://6ad1005ec7c98bb42385bb6d--arm2v4d-ipsa.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/arm2v4d-ipsa/deploys/6ad1005ec7c98bb42385bb6d>
+Function logs: <https://app.netlify.com/projects/arm2v4d-ipsa/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/arm2v4d-ipsa/logs/edge-functions>

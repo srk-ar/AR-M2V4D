@@ -1,0 +1,11 @@
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+
+Attaching package: ‘data.table’
+
+The following object is masked from ‘package:base’:
+
+    %notin%
+
+Candidate clauses knitted; magnitude map byte-identical; English ASCII; no remaining scalar magnitude in the four admitted English sources.

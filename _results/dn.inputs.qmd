@@ -9,9 +9,11 @@ Demands <- knitr::combine_words(prettyNum(sort(TR.gmdp), big.mark = ","), and = 
 Grid <- knitr::combine_words(.fmt(sort(DaH.gmdp), 2), and = " and ")
 ```
 
-The Newmark displacements were computed with the `ensemble` set of five formulations: `AM88`, `JB07`, and `SR08` for the rigid block, and `BT07` and `r BM.code` for the flexible block, `r BM.code` being the branch for projects with `r if (isTRUE(subduction)) "subduction" else "crustal"` control`r if (Equal) ", with equal weights" else ""`. Every formulation received the reference magnitude $M_w$ = `r .fmt(Mw.gmdp, 1)` as a constant input and the demand of each of the `r length(TR.gmdp)` return periods, `r Demands` years`r if (!is.null(MCETable) && nrow(MCETable)) ", and of the MCE" else ""`, with `r .fmti(NS)` realizations per demand, over the `r length(Hs)` slope heights from `r min(Hs)` to `r max(Hs)` m, the `r length(IDm)` material classes, and the relative displacement grid $D_a/H_s$ = `r Grid` %.
+The Newmark displacements were computed with the `ensemble` set of five formulations: `AM88`, `JB07`, and `SR08` for the rigid block, and `BT07` and `r BM.code` for the flexible block, `r BM.code` being the branch for projects with `r if (isTRUE(subduction)) "subduction" else "crustal"` control`r if (Equal) ", with equal weights" else ""`. Every formulation received the reference magnitude assigned to each seismic demand and the demand of each of the `r length(TR.gmdp)` return periods, `r Demands` years`r if (!is.null(MCETable) && nrow(MCETable)) ", and of the MCE" else ""`, with `r .fmti(NS)` realizations per demand, over the `r length(Hs)` slope heights from `r min(Hs)` to `r max(Hs)` m, the `r length(IDm)` material classes, and the relative displacement grid $D_a/H_s$ = `r Grid` %.
 
 ```{r}
 #| include: false
 rm(list = intersect(c("BM", "BM.code", "Models", "Weights", "Equal", "Demands", "Grid"), ls()))
 ```
+
+{{< include /_results/dn.magnitudes.qmd >}}

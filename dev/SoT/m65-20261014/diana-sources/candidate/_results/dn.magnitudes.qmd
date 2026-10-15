@@ -1,0 +1,27 @@
+```{r}
+#| include: false
+MagnitudeMap <- fread(file.path(DataRoot$newmark, "magnitude-map.csv"))
+stopifnot(!anyNA(MagnitudeMap), !anyDuplicated(MagnitudeMap$demand))
+MagnitudeContracts <- lapply(c("newmark-M55", "newmark-M65"), function(x) {
+  AUX <- .readContract(root, x)
+  data.table(source = AUX$path$products, Mw = .contractValue(AUX, "Mw.gmdp"))
+})
+MagnitudeContracts <- rbindlist(MagnitudeContracts)
+stopifnot(!anyDuplicated(MagnitudeContracts$source))
+MagnitudeMap <- MagnitudeContracts[MagnitudeMap, on = "source"]
+stopifnot(!anyNA(MagnitudeMap),
+          setequal(MagnitudeMap$demand, c(as.character(TR.gmdp), "MCE")))
+MagnitudeSummary <- MagnitudeMap[, {
+  AUX <- demand[demand != "MCE"]
+  AUX <- paste0("$T_R$ = ", knitr::combine_words(.fmti(sort(as.numeric(AUX))), and = " and "), " years")
+  if ("MCE" %in% demand) AUX <- paste0(AUX, " and the MCE")
+  .(text = paste0("$M_w$ = ", .fmt(Mw, 1), " for ", AUX))
+}, by = Mw]
+```
+
+The reference magnitudes assigned to the seismic demands were `r paste(MagnitudeSummary$text, collapse = "; ")`. Within each demand, the same magnitude was used for the geometry--material combinations.
+
+```{r}
+#| include: false
+rm(MagnitudeMap, MagnitudeContracts, MagnitudeSummary)
+```

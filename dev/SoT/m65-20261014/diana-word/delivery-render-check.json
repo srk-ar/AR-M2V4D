@@ -1,0 +1,23 @@
+{
+  "pages": 143,
+  "candidateSha256": "69eee3e499fde36cba7886ec8504114d164cc8d4942725a9bc8b9560226cfdc8",
+  "comparisons": {
+    "original-render": [
+      "page-79.png",
+      "page-80.png",
+      "page-81.png",
+      "page-82.png",
+      "page-83.png",
+      "page-84.png",
+      "page-85.png",
+      "page-86.png",
+      "page-87.png",
+      "page-88.png",
+      "page-89.png",
+      "page-90.png"
+    ],
+    "technical-render": [
+      "page-80.png"
+    ]
+  }
+}

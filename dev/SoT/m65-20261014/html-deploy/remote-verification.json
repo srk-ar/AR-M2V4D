@@ -1,0 +1,252 @@
+{
+  "verifiedAt": "2026-10-15",
+  "checks": [
+    {
+      "alias": "toc",
+      "url": "https://arm2v4d-toc.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "ae481f864c0f92624a19d8f69e5d3515c4c742f8e25c537f450f5f4caf88ece5",
+      "remoteSha256": "ae481f864c0f92624a19d8f69e5d3515c4c742f8e25c537f450f5f4caf88ece5",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/toc/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/toc.html"
+    },
+    {
+      "alias": "report",
+      "url": "https://arm2v4d-report.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "04e5a185b1c387de1c53f97835192655ca1e36fe82c46a635e338fcdba67a337",
+      "remoteSha256": "ccae11f34a8c2733afdb9d3326b0dff27942b0fefd5866dbb3fc2177dd9151ae",
+      "exactMatch": false,
+      "verification": "identical after removing anchor opening attributes; diff exit 0",
+      "localPath": "html/book/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/report.html"
+    },
+    {
+      "alias": "gmdp",
+      "url": "https://arm2v4d-gmdp.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "2d8fe22899fa2522c2ffea62f20c4199ac6175296710295eff4d2ec8c2dc03e4",
+      "remoteSha256": "2d8fe22899fa2522c2ffea62f20c4199ac6175296710295eff4d2ec8c2dc03e4",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/gmdp/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/gmdp.html"
+    },
+    {
+      "alias": "ts",
+      "url": "https://arm2v4d-ts.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "fb05e79c99a10d9041d956b620fd2582c1361d398e2c10c0e05f9cb86deedf8a",
+      "remoteSha256": "fb05e79c99a10d9041d956b620fd2582c1361d398e2c10c0e05f9cb86deedf8a",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/gmdp.ts/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/ts.html"
+    },
+    {
+      "alias": "dn",
+      "url": "https://arm2v4d-dn.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "f767541ee4d912b59ece6644ce14f6a0ab16cda728129de74153390ad34fbb92",
+      "remoteSha256": "f767541ee4d912b59ece6644ce14f6a0ab16cda728129de74153390ad34fbb92",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/gmdp.dn/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/dn.html"
+    },
+    {
+      "alias": "kmax",
+      "url": "https://arm2v4d-kmax.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "665684fbb02c7009b9613ea8723dd53b2b9d80d05f4e6d0384c1cce35cf8515a",
+      "remoteSha256": "665684fbb02c7009b9613ea8723dd53b2b9d80d05f4e6d0384c1cce35cf8515a",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/gmdp.kmax/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/kmax.html"
+    },
+    {
+      "alias": "kh",
+      "url": "https://arm2v4d-kh.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "38d7957ff79c53886827add0061f5cd8fdb50c498665081a4d2628f2b8ae67a9",
+      "remoteSha256": "38d7957ff79c53886827add0061f5cd8fdb50c498665081a4d2628f2b8ae67a9",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/gmdp.kh/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/kh.html"
+    },
+    {
+      "alias": "sdc",
+      "url": "https://arm2v4d-sdc.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "9ed68329eaac34e9135d6804639ba1517d19f0b4f8bb47ee595b1e1bcc9f00d0",
+      "remoteSha256": "9ed68329eaac34e9135d6804639ba1517d19f0b4f8bb47ee595b1e1bcc9f00d0",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/sdc/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/sdc.html"
+    },
+    {
+      "alias": "sha",
+      "url": "https://arm2v4d-sha.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "e333dff41d17b1817d6b71d52fe13b196bc0d37c47099f0660b5cf073bb9c8bb",
+      "remoteSha256": "e333dff41d17b1817d6b71d52fe13b196bc0d37c47099f0660b5cf073bb9c8bb",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/sha/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/sha.html"
+    },
+    {
+      "alias": "srs",
+      "url": "https://arm2v4d-srs.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "dca39edc2395a851ffe5a1a3cc6da372da1fa0cd4e198ce3a81844d3a19d7fd8",
+      "remoteSha256": "dca39edc2395a851ffe5a1a3cc6da372da1fa0cd4e198ce3a81844d3a19d7fd8",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/srs.html"
+    },
+    {
+      "alias": "at",
+      "url": "https://arm2v4d-at.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "a1d7dbee659fa7bb92d6cefde68d14030e4259059400ea9ea3c4f8f53772959e",
+      "remoteSha256": "a1d7dbee659fa7bb92d6cefde68d14030e4259059400ea9ea3c4f8f53772959e",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.at/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/at.html"
+    },
+    {
+      "alias": "vt",
+      "url": "https://arm2v4d-vt.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "c1a4f3fbc8f562758b7dc6c37e962e7f8474ed105c9cd138d6a7d424567a7015",
+      "remoteSha256": "c1a4f3fbc8f562758b7dc6c37e962e7f8474ed105c9cd138d6a7d424567a7015",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.vt/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/vt.html"
+    },
+    {
+      "alias": "dt",
+      "url": "https://arm2v4d-dt.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "be3c23ff1ae98e9d9807c5195e45ae2e7c7f2084d9a874d227c1487a0351381f",
+      "remoteSha256": "be3c23ff1ae98e9d9807c5195e45ae2e7c7f2084d9a874d227c1487a0351381f",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.dt/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/dt.html"
+    },
+    {
+      "alias": "ai",
+      "url": "https://arm2v4d-ai.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "3dc86e2a13c69225a1c1f2e6fc90b0e00633d9390015056f6b2934a7135baa29",
+      "remoteSha256": "3dc86e2a13c69225a1c1f2e6fc90b0e00633d9390015056f6b2934a7135baa29",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.ai/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/ai.html"
+    },
+    {
+      "alias": "cav",
+      "url": "https://arm2v4d-cav.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "e5237edb9cc6ad1de9af171fb7114ac8e7b2cbbacbf0b24c02637d1fb0fc63d1",
+      "remoteSha256": "e5237edb9cc6ad1de9af171fb7114ac8e7b2cbbacbf0b24c02637d1fb0fc63d1",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.cav/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/cav.html"
+    },
+    {
+      "alias": "cav5",
+      "url": "https://arm2v4d-cav5.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "bf9532ff381f1798c62ec7b43135184560c52cf7ed54b330199ba7e604610891",
+      "remoteSha256": "bf9532ff381f1798c62ec7b43135184560c52cf7ed54b330199ba7e604610891",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.cav5/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/cav5.html"
+    },
+    {
+      "alias": "psa",
+      "url": "https://arm2v4d-psa.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "e1a2cecbd7c5eefde4c7dc7ff3d52f7ddb25e2b27815d13fd2d5c81d2650b30c",
+      "remoteSha256": "e1a2cecbd7c5eefde4c7dc7ff3d52f7ddb25e2b27815d13fd2d5c81d2650b30c",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.psa/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/psa.html"
+    },
+    {
+      "alias": "psv",
+      "url": "https://arm2v4d-psv.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "5af2a2dd22903ed2f8c9838179812b67b9076529d2d24dfe8c4f490bb5634afa",
+      "remoteSha256": "5af2a2dd22903ed2f8c9838179812b67b9076529d2d24dfe8c4f490bb5634afa",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.psv/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/psv.html"
+    },
+    {
+      "alias": "sd",
+      "url": "https://arm2v4d-sd.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "f7d753361de008451eb8ffaca1be9efb0c2c244f5a3f577061977052b96c78b6",
+      "remoteSha256": "f7d753361de008451eb8ffaca1be9efb0c2c244f5a3f577061977052b96c78b6",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.sd/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/sd.html"
+    },
+    {
+      "alias": "its",
+      "url": "https://arm2v4d-its.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "6e6d9f6312976bfb89a37a1c0364fc6e0e99f91c5ef0a2f3a1b0e15801afb824",
+      "remoteSha256": "6e6d9f6312976bfb89a37a1c0364fc6e0e99f91c5ef0a2f3a1b0e15801afb824",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.its/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/its.html"
+    },
+    {
+      "alias": "ipsa",
+      "url": "https://arm2v4d-ipsa.srk.ar/",
+      "httpStatus": 200,
+      "localSha256": "73716731a62c432a1d7e79f04d0d15b784fbbc9600717a29137a3322ee2fbb9a",
+      "remoteSha256": "73716731a62c432a1d7e79f04d0d15b784fbbc9600717a29137a3322ee2fbb9a",
+      "exactMatch": true,
+      "verification": "SHA-256 byte equality",
+      "localPath": "html/srs.ipsa/index.html",
+      "remoteSnapshot": "/private/tmp/m2v4d-deploy-verify.O4Oi0Z/ipsa.html"
+    }
+  ],
+  "reportChapters": [
+    {
+      "path": "_book/dn.html",
+      "httpStatus": 200,
+      "localSha256": "57438978c185e0cfe7d5a2b581e3bde9e031d0ef58b4c83273715c9d724240ca",
+      "remoteSha256": "500fdcda1f9f399e14a1afb5ad39540ab7d7092fa9a3aa9096d022c9e832f69a",
+      "verification": "diff exit 0 after removing anchor opening attributes; new demand magnitudes and kh factor 100 present"
+    },
+    {
+      "path": "_book/executive.html",
+      "httpStatus": 200,
+      "localSha256": "9215bf13972eb9bf003e10121ea28ecef38eb6258c4981dc1defe87f3987974e",
+      "remoteSha256": "65e80320d241b8c17410ac23d398e409670d22911bc7805484ceac1e65baa62b",
+      "verification": "diff exit 0 after removing anchor opening attributes"
+    }
+  ]
+}

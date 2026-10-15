@@ -50,7 +50,7 @@ BM <- if (isTRUE(subduction)) "BM17" else "BM19"
 BM.code <- paste0(intToUtf8(96), BM, intToUtf8(96))
 ```
 
-The Newmark permanent displacement $D_n$ quantifies the displacement induced by an earthquake and accumulated in the sliding mass and is the performance measure from which the seismic coefficients are derived. The $D_n(k_y)$ curves relate, for each combination of geometry, material, and design scenario, the yield acceleration $k_y$ to the expected permanent displacement; they were computed with the `ensemble` set of `AM88`, `JB07`, `SR08`, `BT07`, and `r BM.code`, with the reference magnitude $M_w$ = `r .fmt(Mw.gmdp, 1)` and `r .fmti(NS)` realizations per demand and are read at the fractiles $q = 1 - p_e$. The horizontal pseudostatic coefficient $k_h$ is in turn derived from the allowable permanent displacement $D_a$ of the potentially sliding mass [@BrayTravasarou2009; @MacedoEtAl2018]; the coefficients are reported at four relative displacement limits, $D_a/H_s$ = `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`%, and the tables in Section [-@sec-kh-tables] report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA.
+The Newmark permanent displacement $D_n$ quantifies the displacement induced by an earthquake and accumulated in the sliding mass and is the performance measure from which the seismic coefficients are derived. The $D_n(k_y)$ curves relate, for each combination of geometry, material, and design scenario, the yield acceleration $k_y$ to the expected permanent displacement; they were computed with the `ensemble` set of `AM88`, `JB07`, `SR08`, `BT07`, and `r BM.code`, with the reference magnitude assigned to each seismic demand and `r .fmti(NS)` realizations per demand and are read at the fractiles $q = 1 - p_e$. The horizontal pseudostatic coefficient $k_h$ is in turn derived from the allowable permanent displacement $D_a$ of the potentially sliding mass [@BrayTravasarou2009; @MacedoEtAl2018]; the coefficients are reported at four relative displacement limits, $D_a/H_s$ = `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`%, and the tables in Section [-@sec-kh-tables] report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA.
 
 ```{r}
 #| include: false
@@ -177,6 +177,8 @@ NGR::knitBlock(
 
 ## Performance-Based Seismic Coefficient {#sec-coefficients}
 
+{{< include /_results/dn.magnitudes.qmd >}}
+
 <!-- sources: _chapters/dn.ensemble.md, _chapters/dn.model.md, _chapters/dn.uncertainty.md; introduction from 445c478~1:library/hazard/_chapters/coefficients.summary.md and displacements.summary.md -->
 
 Pseudostatic seismic design of slopes requires a horizontal coefficient representing earthquake loading on the sliding mass. In this memo the coefficient is derived from displacement-based performance: the Newmark permanent displacement $D_n$ is the slope-deformation performance measure, and the coefficient $k_{\max}$ is the lowest yield coefficient $k_y$ consistent with a performance objective defined by the allowable displacement $D_a$ and the target maximum probability $p_e$ that $D_n$ exceeds $D_a$. The normalized coefficient $k_h$ expresses $k_{\max}$ as a percentage of the site-condition PGA after site response is accounted for in each geometry--material combination, and the coefficients are reported by geometry, material and seismic demand. For the slopes considered, $D_n$ is estimated probabilistically by combining empirical regression models within a lognormal framework.
@@ -197,7 +199,7 @@ $$
 D_n=\exp\!\left(\mu_{\ln D}+\epsilon\sigma_{\ln D}\right), \qquad \epsilon\sim\mathcal N (0,1),
 $${#eq-newmark-lognormal}
 
-where $\mu_{\ln D}$ and $\sigma_{\ln D}$ are the mean and standard deviation of $\ln D_n$ defined by each model, and $\epsilon$ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch. In every formulation, $k_y$, PGA, and $S_a$ are expressed in units of $g$ -- the acceleration of gravity -- $I_A$ in m/s, and $T_s$ in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude of the project, $M_w=$ `r .fmt(Mw.gmdp, 1)`, is applied as a constant input to every demand, geometry, material and site evaluated. The published form of each formulation is reproduced in Section [-@sec-newmark-appendix]. The performance-based seismic coefficient is defined by
+where $\mu_{\ln D}$ and $\sigma_{\ln D}$ are the mean and standard deviation of $\ln D_n$ defined by each model, and $\epsilon$ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch. In every formulation, $k_y$, PGA, and $S_a$ are expressed in units of $g$ -- the acceleration of gravity -- $I_A$ in m/s, and $T_s$ in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude assigned to each seismic demand is applied to its geometry--material combinations. The published form of each formulation is reproduced in Section [-@sec-newmark-appendix]. The performance-based seismic coefficient is defined by
 
 $$
 k_{\max} (p_e\mid D_a)
@@ -207,7 +209,7 @@ $${#eq-kmax-criterion}
 where $p_e$ is the target probability that $D_n$ exceeds $D_a$: $k_{\max}$ is the smallest $k_y$ for which the probability of exceeding the allowable displacement is at most $p_e$. The normalized coefficient, reported as a percentage of the PGA [% of PGA], is calculated using the site-condition PGA transformed to the $V_{S30}$ of the geometry--material combination evaluated for each demand:
 
 $$
-k_h=\frac{k_{\max}}{\mathrm{PGA} (V_{S30})}.
+k_h=100\,\frac{k_{\max}}{\mathrm{PGA} (V_{S30})}.
 $${#eq-kh-normalization}
 
 $k_{\max}$ is expressed in units of $g$ and $k_h$ as a percentage of the PGA of the corresponding site condition. These two quantities express the displacement criterion as the horizontal action of the pseudostatic verification.

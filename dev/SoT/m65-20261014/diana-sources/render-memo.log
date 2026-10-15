@@ -1,0 +1,8 @@
+Render timestamp: 2026-10-15 12:48:17 -03
+[render] note: _local/gmdp.memo.en.qmd mentions parent-relative paths; resources resolve from the project root:
+150:CAP <- readCaption("../_local/tbl.SiteGo")
+173:  vars = list(CAP = readCaption("../_local/tbl.Ts")),
+245:        CAP = readCaption(paste0("../_local/fig.", x, if (d == "mce") ".MCE" else "")),
+[render] note: bib is beside _local/gmdp.memo.en.qmd; the master resolves resources from the project root.
+[render] docx -> docx/
+ngr: Render requires quarto on PATH.

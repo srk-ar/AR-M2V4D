@@ -1,0 +1,45 @@
+{
+  "baselineSha256": "76ddcf68f1afbb791d9bc50b8d1711a19355e7aa41a56cdf5235d36ff283a7cb",
+  "memoSha256": "51d650efe17df2ed0891109718324f0737443151cabf7989ec951f4ca546a63e",
+  "candidateSha256": "69eee3e499fde36cba7886ec8504114d164cc8d4942725a9bc8b9560226cfdc8",
+  "changedParagraphs": [
+    1572,
+    1573,
+    1582,
+    1583,
+    1616,
+    1619
+  ],
+  "corrections": [
+    {
+      "kind": "period-range",
+      "paragraph": 1553
+    },
+    {
+      "kind": "magnitude-summary",
+      "paragraph": 1554
+    },
+    {
+      "kind": "period-equation",
+      "paragraph": 1563
+    },
+    {
+      "kind": "apex-definition",
+      "paragraph": 1564
+    },
+    {
+      "kind": "magnitude-demands",
+      "paragraph": 1597
+    },
+    {
+      "kind": "percentage-equation",
+      "paragraph": 1600
+    }
+  ],
+  "allOtherPackagePartsIdentical": true,
+  "allOtherParagraphsIdentical": true,
+  "periodRangeFromMemo": [
+    "0.22",
+    "1.28"
+  ]
+}
