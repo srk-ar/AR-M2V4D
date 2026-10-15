@@ -1,19 +1,23 @@
 {
   "modelID": "M2V4D",
   "mode": "classical",
-  "description": "Crawford (AR-M2V4D), CAN with general TRT GMMs",
+  "description": "Crawford (AR-M2V4D), CAN with CanadaSHM6 NBCC 2020 GMM trees",
   "ssmDir": "~/kashimaDB/openquake/ssm/CAN/model",
   "ssmFile": "ssmLT_CAN.xml",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "gmmFile": "gmmLT_GMM.xml",
   "TRT": {
-    "ASC": "ASC",
-    "SCC": "SCC",
-    "SIF": "SIF",
-    "SIS30": "SIS30",
-    "SIS55": "SIS55"
+    "ASC": "NBCC",
+    "SCC": "NBCC",
+    "SIF": "NBCC",
+    "SIS30": "NBCC",
+    "SIS55": "NBCC"
   },
-  "imtl": {"min": 1e-05, "max": 5.0, "n": 40},
+  "imtl": {
+    "min": 1e-05,
+    "max": 5.0,
+    "n": 40
+  },
   "job": {
     "general": {
       "random_seed": 23,
@@ -28,7 +32,9 @@
     "calculation": {
       "investigation_time": 50.0,
       "minimum_magnitude": 4.5,
-      "maximum_distance": {"default": 1000.0},
+      "maximum_distance": {
+        "default": 1000.0
+      },
       "truncation_level": 3.0,
       "horiz_comp_to_geom_mean": true
     },
@@ -38,9 +44,20 @@
       "individual_curves": false,
       "hazard_maps": false,
       "uniform_hazard_spectra": true,
-      "quantiles": [0.05, 0.10, 0.16, 0.50, 0.84, 0.90, 0.95],
+      "quantiles": [
+        0.05,
+        0.1,
+        0.16,
+        0.5,
+        0.84,
+        0.9,
+        0.95
+      ],
       "poes": "0.39346934028736658 0.22119921692859512 0.095162581964040427 0.048770575499285991 0.024690087971667333 0.019801326693244699 0.0099501662508319471 0.0049875208073176863"
     }
   },
-  "sourceDisagg": {"enabled": true, "vs30": 760}
+  "sourceDisagg": {
+    "enabled": true,
+    "vs30": 760
+  }
 }

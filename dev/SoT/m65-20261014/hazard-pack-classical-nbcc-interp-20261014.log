@@ -1,0 +1,17 @@
+Pack: model=M2V4D site=CFD mode=classical vs30=180
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/classical/M2V4D/M2V4D.CFD.180.zip sig=8a8770049ba66bda
+Pack: model=M2V4D site=CFD mode=classical vs30=270
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/classical/M2V4D/M2V4D.CFD.270.zip sig=985363ee967f78e4
+Pack: model=M2V4D site=CFD mode=classical vs30=360
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/classical/M2V4D/M2V4D.CFD.360.zip sig=c30f962a3916c050
+Pack: model=M2V4D site=CFD mode=classical vs30=560
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/classical/M2V4D/M2V4D.CFD.560.zip sig=2ed6d2101a74bd14
+Pack: model=M2V4D site=CFD mode=classical vs30=760
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/classical/M2V4D/M2V4D.CFD.760.zip sig=33382d5708dbdc26
+Pack: model=M2V4D site=CFD mode=classical vs30=800
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/classical/M2V4D/M2V4D.CFD.800.zip sig=d3497d6801e5c1b7
+Pack: model=M2V4D site=CFD mode=classical vs30=1250
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/classical/M2V4D/M2V4D.CFD.1250.zip sig=8c1032743bdb187b
+Pack: model=M2V4D site=CFD mode=classical vs30=1500
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/classical/M2V4D/M2V4D.CFD.1500.zip sig=a6eb8244f8a9c15d
+Wrote 8 package(s) under data/hazard/run

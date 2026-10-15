@@ -1,0 +1,1327 @@
+start 2026-10-15 08:42:04 -0300: codex exec, sandbox read-only (stdin closed)
+WARNING: failed to clean up stale arg0 temp dirs: Permission denied (os error 13)
+Reading additional input from stdin...
+OpenAI Codex v0.161.0
+--------
+workdir: /Users/averrik/github/projects/AR-M2V4D
+model: gpt-6-astra
+provider: openai
+approval: on-request
+sandbox: read-only
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 01a13f5e-9204-78e0-abdc-2ab628935e7f
+--------
+user
+Sos un auditor independiente. Otro agente (Claude) afirma lo siguiente y el propietario del proyecto te pide verificarlo con escepticismo, SIN modificar ningún archivo (sólo lectura y comandos de inspección; podés correr Rscript con código que sólo lee).
+
+AFIRMACIÓN: En el proyecto AR-M2V4D (este directorio), `hazard process --steps mce` falla con «Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)» sobre las exportaciones nuevas de escenarios (data/hazard/output/scenario/*/CFD/*/), y la causa es que OpenQuake 3.26.2 escribe realizations_<id>.csv con el campo branch_path como campo entrecomillado multilínea cuando el GSIM tiene parámetros (CanadaSHM6_StableCrust_NGAEast con submodel), y que la función instalada hazard:::.readOqCsv (readLines + fread(text=...)) parte ese campo dejando rlz_id como carácter, por lo que la unión en hazard:::.buildBranch falla. Claude afirma además que NO modificó la librería hazard ni OpenQuake, y que con los árboles GMM de septiembre (clases sin parámetros, p. ej. [Atkinson2008prime]) el mismo paso funciona.
+
+Verificá cada punto con evidencia propia y citá comandos y salidas:
+1. ¿La librería hazard instalada (~/Library/R/arm64/4.6/library/hazard) fue modificada durante la tarea (14–15 oct 2026)? Mirá DESCRIPTION (Packaged/Built), fechas de archivos, y el checkout /Users/averrik/Cloud/github/libraries/hazard (git status, git diff, git log -3). ¿OpenQuake es la misma versión en ambas generaciones? (cabeceras de los CSV exportados: data/hazard/output/scenario/S1/CFD/760/realizations_66.csv y /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/output-committed-dddf10b-20261015/scenario/S1/CFD/760/realizations_22.csv).
+2. Reproducí la lectura: en Rscript, aplicá hazard:::.readOqCsv a ambos archivos realizations y mostrá str() de cada resultado. Mostrá también `print(hazard:::.readOqCsv)` y las líneas de `deparse(hazard:::.buildBranch)` donde se hace la unión por rlz_id.
+3. Leé la prueba de regresión que hizo Claude en /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/{old,new,newflat}/mce.log y decí si confirma: old (exportaciones de septiembre) exit 0, new (exportaciones nuevas) falla, newflat (nuevas con el salto de línea del campo reemplazado por espacio) exit 0. Verificá con `diff` que old/new/newflat sólo difieren en lo declarado (mismo hazard.json y specs; en newflat sólo cambian los realizations_*.csv).
+4. Señalá cualquier error, omisión o explicación alternativa (por ejemplo, otra causa posible de que rlz_id sea carácter, o algo que Claude haya cambiado en el proyecto que explique la falla). Considerá también si el aplanado del campo deja nombres de modelo con comillas raras en MCEBranchTable (/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/tables/MCEBranchTable.Rds).
+
+Entregá un veredicto breve en español: CONFIRMADO / REFUTADO / PARCIAL por punto, con la evidencia.
+warning: Under-development features enabled: local_thread_store_compression. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /Users/averrik/.codex/config.toml.
+hook: SessionStart
+hook: SessionStart
+hook: SessionStart Completed
+hook: SessionStart Completed
+codex
+Voy a auditar la instalación, los CSV y la prueba de regresión con comandos de sólo lectura. Usaré la skill de continuidad para reconciliar el estado; esta instrucción de auditoría reemplaza la continuación de cálculos pendiente.
+
+hook: PreToolUse
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc '/Library/Developer/CommandLineTools/usr/bin/python3 -B /Users/averrik/.codex/lifecycle/install.py --project /Users/averrik/Cloud/github/projects/AR-M2V4D --skill continuity' in /Users/averrik/github/projects/AR-M2V4D
+ exited 2 in 0ms:
+{"error":"[Errno 2] No usable temporary directory found in ['/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/', '/tmp', '/var/tmp', '/usr/tmp', '/Users/averrik/Cloud/github/projects/AR-M2V4D']","ok":false}
+
+codex
+La actualización de la skill falló con: `No usable temporary directory found in ['/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/', '/tmp', '/var/tmp', '/usr/tmp', '/Users/averrik/Cloud/github/projects/AR-M2V4D']`. No usaré otra copia ni modificaré el estado. Continúo con la auditoría de sólo lectura indicada en tu mensaje.
+
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc 'cat /Users/averrik/Library/R/arm64/4.6/library/hazard/DESCRIPTION' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+Package: hazard
+Type: Package
+Title: Seismic Hazard Processing and Engine Interfaces
+Version: 0.2.0
+Authors@R: 
+    person("Alejandro", "Verri Kozlowski", , "averri@fi.uba.ar",
+           role = c("aut", "cre", "cph"))
+Description: Processes seismic hazard curves, uniform-hazard spectra and
+    scenario ground-motion distributions. Provides analytic lognormal
+    mixture summaries, hazard-product validation and composition, and
+    adapters for 'OpenQuake' calculations. Site-response calculations use
+    the separately installed 'newmark' package where required.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Depends: R (>= 4.2)
+Imports: data.table, digest, jsonlite, stats, utils, xml2
+Suggests: newmark, knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+NeedsCompilation: no
+Config/roxygen2/version: 8.1.0
+Packaged: 2026-10-04 23:29:33 UTC; averrik
+Author: Alejandro Verri Kozlowski [aut, cre, cph]
+Maintainer: Alejandro Verri Kozlowski <averri@fi.uba.ar>
+Built: R 4.6.1; ; 2026-10-04 23:29:33 UTC; unix
+
+exec
+/bin/zsh -lc 'ls -ld /Users/averrik/Library/R/arm64/4.6/library/hazard /Users/averrik/Library/R/arm64/4.6/library/hazard/DESCRIPTION /Users/averrik/Library/R/arm64/4.6/library/hazard/R /usr/local/bin/hazard' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'ls -l data/hazard/output/scenario/S1/CFD/760/realizations_66.csv /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/output-committed-dddf10b-20261015/scenario/S1/CFD/760/realizations_22.csv /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/{old,new,newflat}/mce.log' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+drwxr-xr-x@ 14 averrik  staff   448 Oct  4 20:29 /Users/averrik/Library/R/arm64/4.6/library/hazard
+-rw-r--r--@  1 averrik  staff  1095 Oct  4 20:29 /Users/averrik/Library/R/arm64/4.6/library/hazard/DESCRIPTION
+drwxr-xr-x@  5 averrik  staff   160 Oct  4 20:29 /Users/averrik/Library/R/arm64/4.6/library/hazard/R
+-rwxr-xr-x@  1 root     wheel   274 Oct  4 20:29 /usr/local/bin/hazard
+
+ succeeded in 0ms:
+-rw-r--r--@ 1 averrik  wheel  2143 Oct 15 08:30 /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/mce.log
+-rw-r--r--@ 1 averrik  wheel  2234 Oct 15 08:35 /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/mce.log
+-rw-r--r--@ 1 averrik  wheel  2232 Oct 15 08:30 /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/old/mce.log
+-rw-r--r--@ 1 averrik  staff   375 Sep 22 09:36 /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/output-committed-dddf10b-20261015/scenario/S1/CFD/760/realizations_22.csv
+-rw-r--r--@ 1 averrik  staff  1280 Oct 15 01:26 data/hazard/output/scenario/S1/CFD/760/realizations_66.csv
+
+exec
+/bin/zsh -lc 'git --no-optional-locks -C /Users/averrik/Cloud/github/libraries/hazard diff --stat HEAD' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+git: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead
+git: error: couldn't create cache file '/tmp/xcrun_db-iKl2zItV' (errno=Operation not permitted)
+git: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead
+git: error: couldn't create cache file '/tmp/xcrun_db-UE9PyLuD' (errno=Operation not permitted)
+
+exec
+/bin/zsh -lc 'git --no-optional-locks -C /Users/averrik/Cloud/github/libraries/hazard status --short' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'git --no-optional-locks -C /Users/averrik/Cloud/github/libraries/hazard log -3 --format=fuller --stat' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+git: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead
+git: error: couldn't create cache file '/tmp/xcrun_db-tqWLDJL5' (errno=Operation not permitted)
+git: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead
+git: error: couldn't create cache file '/tmp/xcrun_db-FpEpWp4Z' (errno=Operation not permitted)
+?? .agents/
+?? .claude/
+?? bugs/
+?? dev/AUDITORIA-RUN-OQT-HAZARD-20260921.md
+?? dev/BRIEFING-QUE-PASO-20260921.md
+?? dev/BUG-CELDA-TRABADA-POR-ENVIO-FALLIDO-20260921.md
+?? dev/BUG-HAZARD-SIN-MODO-LOCAL-20260921.md
+?? dev/BUG-MOTOR-WARNING-FATAL-20260921.md
+?? dev/BUG-UNKNOWN-BLOQUEA-RECUPERACION-20260921.md
+?? dev/DELETE-untracked.txt
+?? dev/DIAGNOSTICO-Y-PLAN-RUN-20260921.md
+?? dev/HANDOFF-PROYECTOS-20260923.md
+?? dev/HANDOFF-RECUPERACION-LOCAL-20260921.md
+?? dev/PLAN-SOT-REMOTE-UNKNOWN-20260921.md
+?? dev/PLAN-TE-EXPLICITO-20260921.md
+?? dev/REVISION-PLAN-RUN-20260921.md
+?? dev/SoT/NOTICE-INSTALLER-FAMILY-STANDARD-20260918.md
+?? dev/SoT/aom-tool/
+?? dev/SoT/build-v1.log
+?? dev/SoT/build-v2.log
+?? dev/SoT/build-v3.log
+?? dev/SoT/check-v1.log
+?? dev/SoT/check-v2.log
+?? dev/SoT/check-v3.log
+?? dev/SoT/check-v4.log
+?? dev/SoT/cli-main-v1/
+?? dev/SoT/common-v1/
+?? dev/SoT/core-v4.log
+?? dev/SoT/deq-v1.log
+?? dev/SoT/document-v6.log
+?? dev/SoT/document-v7.log
+?? dev/SoT/document-v8.log
+?? dev/SoT/examples-data.log
+?? dev/SoT/functional-v1/
+?? dev/SoT/handoff-proyectos-review-20260923/
+?? dev/SoT/hazard-installed-check-20260921/
+?? dev/SoT/hazard-local27-stop-20260921/
+?? dev/SoT/hazard-newmark-repair-20260917/
+?? dev/SoT/hazard-publish-report-20260922/
+?? dev/SoT/hazard-remote-servidor-impl-20260923/
+?? dev/SoT/hazard-remote-servidor-plan-20260922/
+?? dev/SoT/hazard-s2p30-local-20260921/
+?? dev/SoT/hazard-server-queue-20260921/
+?? dev/SoT/hazard-tms-scenarios-20260921/
+?? dev/SoT/initial-publication-v1/
+?? dev/SoT/install-v2.log
+?? dev/SoT/lib/
+?? dev/SoT/pack-v1.json
+?? dev/SoT/pack-v1.log
+?? dev/SoT/pack-v2.json
+?? dev/SoT/pack-v2.log
+?? dev/SoT/pack-v3.json
+?? dev/SoT/pack-v3.log
+?? dev/SoT/process-baseline-v1.log
+?? dev/SoT/process-v1.log
+?? dev/SoT/process-v2.log
+?? dev/SoT/product-v1/
+?? dev/SoT/remote-v1.log
+?? dev/SoT/s2l1w-render-deploy-20260923/
+?? dev/SoT/scenario-v1.log
+?? dev/SoT/srmw-v1.log
+?? dev/SoT/srmw-v2.log
+?? dev/SoT/ssm-v1.log
+?? dev/SoT/test-adapters-v3.R
+?? dev/SoT/test-products-v3.R
+?? dev/SoT/tests-v1.log
+?? dev/SoT/tests-v2.log
+?? dev/SoT/tests-v3.log
+?? dev/SoT/tests-v4.log
+?? dev/SoT/windows-argv-v1/
+?? dev/SoT/windows-v1/
+?? dev/bugs/
+?? dev/migration/
+?? dev/tests/test_ssm_index.py
+
+ succeeded in 0ms:
+git: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead
+git: error: couldn't create cache file '/tmp/xcrun_db-8fYJ1gKU' (errno=Operation not permitted)
+git: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead
+git: error: couldn't create cache file '/tmp/xcrun_db-A3NmT1P3' (errno=Operation not permitted)
+commit d3ed80d86ce322cf5dc0c6d3e379035a86539ba2
+Author:     Alejandro Verri Kozlowski <averri@fi.uba.ar>
+AuthorDate: Thu Oct 15 00:10:48 2026 -0300
+Commit:     Alejandro Verri Kozlowski <averri@fi.uba.ar>
+CommitDate: Thu Oct 15 00:10:48 2026 -0300
+
+    Retire the CRAN scripts from install/: the package is maintained with devtools
+    
+    aom update removes install/cran-check.R, rhub-check.R, cran-release.R and cran-submit.R, which lived outside the root of the R package and could only be reached from RStudio with ../. The maintainer works from the package root (lib/) with devtools::install(), devtools::check(cran = TRUE), rhub::rhub_check() and devtools::submit_cran(), with no script, as this package was submitted before. Nothing else in install/ changes.
+
+ .aom.json              | 24 ++----------------------
+ install/cran-check.R   | 14 --------------
+ install/cran-release.R | 24 ------------------------
+ install/cran-submit.R  | 51 --------------------------------------------------
+ install/rhub-check.R   | 14 --------------
+ 5 files changed, 2 insertions(+), 125 deletions(-)
+
+commit 3a68fd0a1771e4b08d489010e96ed11c67dd5cbf
+Author:     Alejandro Verri Kozlowski <averri@fi.uba.ar>
+AuthorDate: Wed Oct 14 23:45:15 2026 -0300
+Commit:     Alejandro Verri Kozlowski <averri@fi.uba.ar>
+CommitDate: Wed Oct 14 23:45:15 2026 -0300
+
+    Update the AOM-managed installer to model 0.5.4
+    
+    aom update with AOM 0.5.4 replaces install/build.R, cran-check.R, rhub-check.R, cran-release.R and cran-submit.R: the scripts locate lib/ from their own path and run from any directory (Rscript install/cran-check.R TARBALL OUT; source("install/cran-submit.R")), instead of requiring lib/ as the working directory and ../install/ in their invocation.
+
+ .aom.json              | 14 +++++++-------
+ install/build.R        | 10 +++++++++-
+ install/cran-check.R   | 10 +++++++++-
+ install/cran-release.R | 24 ++++++++++++------------
+ install/cran-submit.R  | 23 +++++++++++++++--------
+ install/rhub-check.R   | 10 +++++++++-
+ 6 files changed, 61 insertions(+), 30 deletions(-)
+
+commit 3272f88fee9e572a01fe9373eff2b683739854ed
+Author:     Alejandro Verri Kozlowski <averri@fi.uba.ar>
+AuthorDate: Wed Oct 14 23:29:46 2026 -0300
+Commit:     Alejandro Verri Kozlowski <averri@fi.uba.ar>
+CommitDate: Wed Oct 14 23:29:46 2026 -0300
+
+    Update the AOM-managed installer to model 0.5.3: the CRAN flow
+    
+    aom update with AOM 0.5.3 adds install/cran-check.R, install/rhub-check.R, install/cran-release.R and install/cran-submit.R as managed files; the product copies inherited from the September kit, where present, leave first because the managed copy takes their place and adds .github/workflows/rhub.yaml as a product-owned workflow (workflow_dispatch only). Submission stays with devtools::submit_cran from main, the owner's decision of 2026-10-14.
+
+ .aom.json                   |  24 +++++++++-
+ .github/workflows/rhub.yaml | 109 ++++++++++++++++++++++++++++++++++++++++++++
+ install/cran-check.R        |   3 +-
+ install/cran-release.R      |  40 ++++++++--------
+ install/cran-submit.R       |  44 ++++++++++++++++++
+ install/rhub-check.R        |   3 +-
+ 6 files changed, 201 insertions(+), 22 deletions(-)
+
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc 'nl -ba /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/output-committed-dddf10b-20261015/scenario/S1/CFD/760/realizations_22.csv' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'nl -ba data/hazard/output/scenario/S1/CFD/760/realizations_66.csv' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+     1	#,,"generated_by='OpenQuake engine 3.26.2', start_date='2026-10-15T04:16:47', checksum=3676962081"
+     2	rlz_id,branch_path,weight
+     3	0,"[CanadaSHM6_StableCrust_NGAEast]
+     4	submodel = """"01""""",7.5700000e-02
+     5	1,"[CanadaSHM6_StableCrust_NGAEast]
+     6	submodel = """"02""""",6.4599998e-02
+     7	2,"[CanadaSHM6_StableCrust_NGAEast]
+     8	submodel = """"03""""",5.5100001e-02
+     9	3,"[CanadaSHM6_StableCrust_NGAEast]
+    10	submodel = """"04""""",2.4300000e-02
+    11	4,"[CanadaSHM6_StableCrust_NGAEast]
+    12	submodel = """"05""""",2.7700000e-02
+    13	5,"[CanadaSHM6_StableCrust_NGAEast]
+    14	submodel = """"06""""",4.8900001e-02
+    15	6,"[CanadaSHM6_StableCrust_NGAEast]
+    16	submodel = """"07""""",3.6550000e-02
+    17	7,"[CanadaSHM6_StableCrust_NGAEast]
+    18	submodel = """"08""""",3.4899998e-02
+    19	8,"[CanadaSHM6_StableCrust_NGAEast]
+    20	submodel = """"09""""",3.3300001e-02
+    21	9,"[CanadaSHM6_StableCrust_NGAEast]
+    22	submodel = 10",1.7200001e-02
+    23	10,"[CanadaSHM6_StableCrust_NGAEast]
+    24	submodel = 11",3.6950000e-02
+    25	11,"[CanadaSHM6_StableCrust_NGAEast]
+    26	submodel = 12",2.6400000e-02
+    27	12,"[CanadaSHM6_StableCrust_NGAEast]
+    28	submodel = 13",1.8400000e-02
+    29	13,"[CanadaSHM6_StableCrust_AA13]
+    30	submodel = """"high""""",1.5000001e-01
+    31	14,"[CanadaSHM6_StableCrust_AA13]
+    32	submodel = """"central",2.5000000e-01
+    33	15,"[CanadaSHM6_StableCrust_AA13]
+    34	submodel = """"low""""",1.0000000e-01
+
+ succeeded in 0ms:
+     1	#,,"generated_by='OpenQuake engine 3.26.2', start_date='2026-09-22T12:32:59', checksum=722610193"
+     2	rlz_id,branch_path,weight
+     3	0,[Atkinson2008prime],1.6666999e-01
+     4	1,[AtkinsonBoore2006Modified2011],1.6666999e-01
+     5	2,[PezeshkEtAl2011],1.6666999e-01
+     6	3,[ESHM20Craton],1.6666999e-01
+     7	4,[SomervilleEtAl2009YilgarnCraton_SS14],1.6666999e-01
+     8	5,[CollapsedNGAEastUSGS],1.6665000e-01
+
+exec
+/bin/zsh -lc 'cat /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/{old,new,newflat}/mce.log' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+Steps: mce
+[runUHS] MODEL_ID=S1 SITE_ID=CFD UHS_DIR=data/hazard/mce
+[runUHS] MODEL_ID=S1 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=2.7e-06 -> data/hazard/mce/S1/CFD.site/1250
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=4.33e-07 -> data/hazard/mce/S1/CFD.site/1500
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=1.93e-07 -> data/hazard/mce/S1/CFD.site/180
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=2.42e-06 -> data/hazard/mce/S1/CFD.site/270
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=4.74e-06 -> data/hazard/mce/S1/CFD.site/360
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=5.69e-06 -> data/hazard/mce/S1/CFD.site/560
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S1/CFD.site/760
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=1.03e-05 -> data/hazard/mce/S1/CFD.site/800
+[runUHS] MODEL_ID=S2 SITE_ID=CFD UHS_DIR=data/hazard/mce
+[runUHS] MODEL_ID=S2 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=0.00011 -> data/hazard/mce/S2/CFD.site/1250
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=3.06e-05 -> data/hazard/mce/S2/CFD.site/1500
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=2.09e-05 -> data/hazard/mce/S2/CFD.site/180
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=0.000122 -> data/hazard/mce/S2/CFD.site/270
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=0.000204 -> data/hazard/mce/S2/CFD.site/360
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=0.000247 -> data/hazard/mce/S2/CFD.site/560
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S2/CFD.site/760
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=0.000286 -> data/hazard/mce/S2/CFD.site/800
+[aggregateMCE] MCEBranchTable rows=3072
+[aggregateMCE] ScenarioTable rows=2
+[aggregateMCE] MCETable rows=16576
+[aggregateMCE] ScenarioGMPETable rows=1026
+Process complete
+Steps: mce
+MCE generation failed for model=S1 site=CFD vs30=1250: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S1 site=CFD vs30=1500: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S1 site=CFD vs30=180: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S1 site=CFD vs30=270: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S1 site=CFD vs30=360: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S1 site=CFD vs30=560: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S1 site=CFD vs30=760: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S1 site=CFD vs30=800: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S2 site=CFD vs30=1250: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S2 site=CFD vs30=1500: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S2 site=CFD vs30=180: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S2 site=CFD vs30=270: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S2 site=CFD vs30=360: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S2 site=CFD vs30=560: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S2 site=CFD vs30=760: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+MCE generation failed for model=S2 site=CFD vs30=800: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+mce failed: a producer failed; the global MCE tables were not replaced
+ERROR: Process completed with errors
+There were 32 warnings (use warnings() to see them)
+Steps: mce
+[runUHS] MODEL_ID=S1 SITE_ID=CFD UHS_DIR=data/hazard/mce
+[runUHS] MODEL_ID=S1 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=4.82e-10 -> data/hazard/mce/S1/CFD.site/1250
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=3.12e-11 -> data/hazard/mce/S1/CFD.site/1500
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=2.12e-11 -> data/hazard/mce/S1/CFD.site/180
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=7.45e-10 -> data/hazard/mce/S1/CFD.site/270
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=1.75e-09 -> data/hazard/mce/S1/CFD.site/360
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=2.64e-09 -> data/hazard/mce/S1/CFD.site/560
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S1/CFD.site/760
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=3.62e-09 -> data/hazard/mce/S1/CFD.site/800
+[runUHS] MODEL_ID=S2 SITE_ID=CFD UHS_DIR=data/hazard/mce
+[runUHS] MODEL_ID=S2 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=7.65e-10 -> data/hazard/mce/S2/CFD.site/1250
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=4.41e-11 -> data/hazard/mce/S2/CFD.site/1500
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=1.78e-11 -> data/hazard/mce/S2/CFD.site/180
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=8.43e-10 -> data/hazard/mce/S2/CFD.site/270
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=2.19e-09 -> data/hazard/mce/S2/CFD.site/360
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=3.33e-09 -> data/hazard/mce/S2/CFD.site/560
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S2/CFD.site/760
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=6.35e-09 -> data/hazard/mce/S2/CFD.site/800
+[aggregateMCE] MCEBranchTable rows=8192
+[aggregateMCE] ScenarioTable rows=2
+[aggregateMCE] MCETable rows=16576
+[aggregateMCE] ScenarioGMPETable rows=1776
+Process complete
+
+exec
+/bin/zsh -lc "stat -f '%N | size=%z | modified=%Sm | changed=%Sc | birth=%SB' -t '%Y-%m-%d %H:%M:%S %z' /Users/averrik/Library/R/arm64/4.6/library/hazard/DESCRIPTION /Users/averrik/Library/R/arm64/4.6/library/hazard/R/* /Users/averrik/Library/R/arm64/4.6/library/hazard/Meta/package.rds /usr/local/bin/hazard" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+/Users/averrik/Library/R/arm64/4.6/library/hazard/DESCRIPTION | size=1095 | modified=2026-10-04 20:29:33 -0300 | changed=2026-10-04 20:29:35 -0300 | birth=2026-10-04 20:29:33 -0300
+/Users/averrik/Library/R/arm64/4.6/library/hazard/R/hazard | size=1058 | modified=2026-10-04 20:29:35 -0300 | changed=2026-10-04 20:29:35 -0300 | birth=2026-10-04 20:29:33 -0300
+/Users/averrik/Library/R/arm64/4.6/library/hazard/R/hazard.rdb | size=362074 | modified=2026-10-04 20:29:35 -0300 | changed=2026-10-04 20:29:35 -0300 | birth=2026-10-04 20:29:34 -0300
+/Users/averrik/Library/R/arm64/4.6/library/hazard/R/hazard.rdx | size=3044 | modified=2026-10-04 20:29:35 -0300 | changed=2026-10-04 20:29:35 -0300 | birth=2026-10-04 20:29:35 -0300
+/Users/averrik/Library/R/arm64/4.6/library/hazard/Meta/package.rds | size=1132 | modified=2026-10-04 20:29:33 -0300 | changed=2026-10-04 20:29:35 -0300 | birth=2026-10-04 20:29:33 -0300
+/usr/local/bin/hazard | size=274 | modified=2026-10-04 20:29:36 -0300 | changed=2026-10-04 20:29:36 -0300 | birth=2026-10-04 20:29:36 -0300
+
+exec
+/bin/zsh -lc "Rscript --vanilla -e 'cat(\"LIBRARY=\", find.package(\"hazard\"), \"\\n\"); print(hazard:::.readOqCsv); b <- deparse(hazard:::.buildBranch); cat(sprintf(\"%3d %s\\n\", seq_along(b), b), sep=\"\"); for (f in c(\"data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\", \"/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/output-committed-dddf10b-20261015/scenario/S1/CFD/760/realizations_22.csv\")) { cat(\"FILE=\", f, \"\\n\"); str(hazard:::.readOqCsv(f)); }'" in /Users/averrik/github/projects/AR-M2V4D
+ exited 2 in 0ms:
+Fatal error: creating temporary file for '-e' failed
+
+hook: PreToolUse
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc "Rscript --vanilla -e 'cat(\"LIBRARY=\", find.package(\"hazard\"), \"\\n\"); print(hazard:::.readOqCsv); b <- deparse(hazard:::.buildBranch); cat(sprintf(\"%3d %s\\n\", seq_along(b), b), sep=\"\"); for (f in c(\"data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\", \"/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/output-committed-dddf10b-20261015/scenario/S1/CFD/760/realizations_22.csv\")) { cat(\"FILE=\", f, \"\\n\"); str(hazard:::.readOqCsv(f)); }'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 43ms:
+LIBRARY= /Users/averrik/Library/R/arm64/4.6/library/hazard 
+function (path) 
+{
+    FILE <- path
+    AUX <- readLines(FILE, warn = FALSE)
+    AUX <- AUX[!grepl("^#", AUX)]
+    fread(text = paste(AUX, collapse = "\n"))
+}
+<bytecode: 0xbe12af540>
+<environment: namespace:hazard>
+  1 function (inputDir, variantFile, distanceFile, modelID, scenarioID, 
+  2     siteID, vref) 
+  3 {
+  4     Calc <- .calcID(inputDir)
+  5     Gmf <- .readOqCsv(file.path(inputDir, paste0("gmf-data_", 
+  6         Calc, ".csv")))
+  7     Events <- .readOqCsv(file.path(inputDir, paste0("events_", 
+  8         Calc, ".csv")))
+  9     Rlz <- .readOqCsv(file.path(inputDir, paste0("realizations_", 
+ 10         Calc, ".csv")))
+ 11     Sites <- .readOqCsv(file.path(inputDir, paste0("site_model_", 
+ 12         Calc, ".csv")))
+ 13     Variants <- fread(variantFile)
+ 14     Distances <- fread(distanceFile)
+ 15     Sigmas <- .readSigmas(inputDir = inputDir, calc = Calc)
+ 16     Rlz[, `:=`(model = sub("^[(](.*)[)]$", "\\1", gsub("\\[|\\]", 
+ 17         "", branch_path)), weight = as.numeric(weight))]
+ 18     COLS <- grep("^gmv_", names(Gmf), value = TRUE)
+ 19     DT <- melt(Gmf, id.vars = c("event_id", "custom_site_id"), 
+ 20         measure.vars = COLS, variable.name = "IMT", value.name = "Sa", 
+ 21         variable.factor = FALSE)
+ 22     DT[, `:=`(IMT = sub("^gmv_", "", IMT), Sa = as.numeric(Sa))]
+ 23     DT[, `:=`(Tn, .imtTn(IMT))]
+ 24     DT[Events, on = "event_id", `:=`(rup.id = i.rup_id, rlz.id = i.rlz_id)]
+ 25     DT[Rlz, on = .(rlz.id = rlz_id), `:=`(model = i.model, weight = i.weight)]
+ 26     DT[Variants, on = "rup.id", `:=`(variant.id = i.variant.id, 
+ 27         TRT = i.TRT, rup.lon = i.rup.lon, rup.lat = i.rup.lat, 
+ 28         rup.dep = i.rup.dep, rup.mag = i.rup.mag, rup.rake = i.rup.rake, 
+ 29         rup.strike = i.rup.strike, rup.dip = i.rup.dip, rup.msr = i.rup.msr, 
+ 30         rup.occurrenceRate = i.rup.occurrenceRate, rup.multiplicity = i.rup.multiplicity)]
+ 31     DT[Sites, on = "custom_site_id", `:=`(site.id = i.custom_site_id, 
+ 32         lon = i.lon, lat = i.lat, Vs30 = as.numeric(i.vs30), 
+ 33         site.vs30measured = i.vs30measured, site.z1pt0 = i.z1pt0, 
+ 34         site.z2pt5 = i.z2pt5, site.backarc = i.backarc)]
+ 35     COLS <- c("rup.id", "site.id", "rup.repi", "rup.rhypo", "rup.rrup", 
+ 36         "rup.rjb")
+ 37     OK <- COLS %in% names(Distances)
+ 38     if (any(!OK)) 
+ 39         stop("Missing distance columns: ", paste(COLS[!OK], collapse = ", "))
+ 40     DT[Distances, on = .(rup.id, site.id), `:=`(rup.repi = i.rup.repi, 
+ 41         rup.rhypo = i.rup.rhypo, rup.rrup = i.rup.rrup, rup.rjb = i.rup.rjb)]
+ 42     if (any(!is.finite(DT$rup.repi)) || any(!is.finite(DT$rup.rhypo)) || 
+ 43         any(!is.finite(DT$rup.rrup)) || any(!is.finite(DT$rup.rjb))) {
+ 44         stop("Distance hydration left non-finite values")
+ 45     }
+ 46     DT[Sigmas, on = .(event_id, rlz.id = rlz_id, IMT), `:=`(sig.inter = i.sig.inter, 
+ 47         eps.inter = i.eps.inter)]
+ 48     DT[, `:=`(event.id = event_id, modelID = modelID, scenarioID = scenarioID, 
+ 49         siteID = siteID, Vref = vref, Sa.units = "g")]
+ 50     COLS <- c("TRT", "model", "weight", "variant.id", "rup.id", 
+ 51         "rup.lon", "rup.lat", "rup.dep", "rup.mag", "rup.rake", 
+ 52         "rup.strike", "rup.dip", "rup.msr", "rup.occurrenceRate", 
+ 53         "rup.multiplicity", "rup.repi", "rup.rhypo", "rup.rrup", 
+ 54         "rup.rjb", "rlz.id", "event.id", "site.id", "siteID", 
+ 55         "lon", "lat", "Vs30", "site.vs30measured", "site.z1pt0", 
+ 56         "site.z2pt5", "site.backarc", "IMT", "Tn", "Sa", "Sa.units", 
+ 57         "sig.inter", "eps.inter", "modelID", "scenarioID", "Vref")
+ 58     DT[, ..COLS][]
+ 59 }
+FILE= data/hazard/output/scenario/S1/CFD/760/realizations_66.csv 
+Classes ‘data.table’ and 'data.frame':	32 obs. of  3 variables:
+ $ rlz_id     : chr  "0" "submodel = \"\"\"\"01\"\"\"\"\"" "1" "submodel = \"\"\"\"02\"\"\"\"\"" ...
+ $ branch_path: chr  "\"[CanadaSHM6_StableCrust_NGAEast]" "7.5700000e-02" "\"[CanadaSHM6_StableCrust_NGAEast]" "6.4599998e-02" ...
+ $ weight     : logi  NA NA NA NA NA NA ...
+ - attr(*, ".internal.selfref")=<pointer: 0x10162c4d0> 
+FILE= /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/output-committed-dddf10b-20261015/scenario/S1/CFD/760/realizations_22.csv 
+Classes ‘data.table’ and 'data.frame':	6 obs. of  3 variables:
+ $ rlz_id     : int  0 1 2 3 4 5
+ $ branch_path: chr  "[Atkinson2008prime]" "[AtkinsonBoore2006Modified2011]" "[PezeshkEtAl2011]" "[ESHM20Craton]" ...
+ $ weight     : num  0.167 0.167 0.167 0.167 0.167 ...
+ - attr(*, ".internal.selfref")=<pointer: 0x10162c4d0> 
+Warning messages:
+1: In fread(text = paste(AUX, collapse = "\n")) :
+  Found and resolved improper quoting in first 100 rows. If the fields are not quoted (e.g. field separator does not appear within any field), try quote="" to avoid this warning.
+2: In fread(text = paste(AUX, collapse = "\n")) :
+  Detected 3 column names but the data has 2 columns. Filling rows automatically. Set fill=TRUE explicitly to avoid this warning.
+
+codex
+Reproduje la diferencia: el CSV nuevo se lee como 32 filas, con `rlz_id` carácter y todos los pesos `NA`; el antiguo da 6 filas, identificadores enteros y pesos numéricos. La instalación tiene fechas del 4 de octubre. El checkout sí registra commits del 14–15 en instaladores; eso impide afirmar que no cambió nada allí, aunque no demuestra cambios en la librería instalada.
+
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc "python3 -B -c 'from pathlib import Path; r=Path(\"/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression\"); print(\"\\n\".join(str(p.relative_to(r))+\" bytes=\"+str(p.stat().st_size) for p in sorted(r.iterdir()))); print(\"\\n\".join(str(p.relative_to(r))+\" bytes=\"+str(p.stat().st_size) for p in sorted(r.glob(\"*/*\"))))'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+new bytes=192
+newflat bytes=192
+old bytes=192
+new/data bytes=96
+new/hazard.json bytes=354
+new/mce.log bytes=2143
+new/specs bytes=128
+newflat/data bytes=96
+newflat/hazard.json bytes=354
+newflat/mce.log bytes=2234
+newflat/specs bytes=128
+old/data bytes=96
+old/hazard.json bytes=354
+old/mce.log bytes=2232
+old/specs bytes=128
+
+exec
+/bin/zsh -lc "python3 -B -c 'from pathlib import Path; import csv; p=Path(\"data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\"); raw=p.read_bytes(); print(\"bytes\",len(raw),\"LF\",raw.count(b\"\\n\"),\"CRLF\",raw.count(b\"\\r\\n\")); f=p.open(newline=\"\"); next(f); rows=list(csv.DictReader(f,strict=True)); print(\"records\",len(rows),\"ids\",[r[\"rlz_id\"] for r in rows]); print(\"first\",repr(rows[0])); print(\"central\",repr(rows[14])); print(\"sum(weights)\",sum(float(r[\"weight\"]) for r in rows))'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+bytes 1280 LF 34 CRLF 18
+records 16 ids ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15']
+first {'rlz_id': '0', 'branch_path': '[CanadaSHM6_StableCrust_NGAEast]\nsubmodel = ""01""', 'weight': '7.5700000e-02'}
+central {'rlz_id': '14', 'branch_path': '[CanadaSHM6_StableCrust_AA13]\nsubmodel = ""central', 'weight': '2.5000000e-01'}
+sum(weights) 1.00000001
+
+exec
+/bin/zsh -lc "python3 -B -c 'from pathlib import Path; from datetime import datetime; r=Path(\"/Users/averrik/Library/R/arm64/4.6/library/hazard\"); f=[p for p in r.rglob(\"*\") if p.is_file()]; print(\"files\",len(f)); print(\"\\n\".join(str(p.relative_to(r))+\" mtime=\"+datetime.fromtimestamp(p.stat().st_mtime).isoformat()+\" ctime=\"+datetime.fromtimestamp(p.stat().st_ctime).isoformat() for p in f if datetime.fromtimestamp(p.stat().st_mtime).date().isoformat()>=\"2026-10-14\" or datetime.fromtimestamp(p.stat().st_ctime).date().isoformat()>=\"2026-10-14\")); print(\"mtime range\",datetime.fromtimestamp(min(p.stat().st_mtime for p in f)),datetime.fromtimestamp(max(p.stat().st_mtime for p in f))); print(\"ctime range\",datetime.fromtimestamp(min(p.stat().st_ctime for p in f)),datetime.fromtimestamp(max(p.stat().st_ctime for p in f)))'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+files 32
+
+mtime range 2026-10-04 20:29:33.426097 2026-10-04 20:29:35.334007
+ctime range 2026-10-04 20:29:35.649573 2026-10-04 20:29:35.650334
+
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc 'diff -u /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/old/hazard.json /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/hazard.json' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'diff -u /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/hazard.json /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/hazard.json' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+ succeeded in 0ms:
+exec
+/bin/zsh -lc 'diff -qr /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/specs /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/specs' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'diff -qr /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/old/specs /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/specs' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+ succeeded in 0ms:
+exec
+/bin/zsh -lc '/Library/Developer/CommandLineTools/usr/bin/git --no-optional-locks -C /Users/averrik/Cloud/github/libraries/hazard diff HEAD --' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+exec
+/bin/zsh -lc 'diff -qr /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output' in /Users/averrik/github/projects/AR-M2V4D
+ exited 1 in 0ms:
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/1250/realizations_63.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/1250/realizations_63.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/1500/realizations_82.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/1500/realizations_82.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/180/realizations_64.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/180/realizations_64.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/270/realizations_83.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/270/realizations_83.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/360/realizations_65.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/360/realizations_65.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/560/realizations_84.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/560/realizations_84.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/800/realizations_85.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/800/realizations_85.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S2/CFD/1250/realizations_67.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S2/CFD/1250/realizations_67.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S2/CFD/1500/realizations_86.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S2/CFD/1500/realizations_86.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S2/CFD/180/realizations_68.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S2/CFD/180/realizations_68.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S2/CFD/270/realizations_87.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S2/CFD/270/realizations_87.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S2/CFD/360/realizations_69.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S2/CFD/360/realizations_69.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S2/CFD/560/realizations_88.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S2/CFD/560/realizations_88.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S2/CFD/760/realizations_70.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S2/CFD/760/realizations_70.csv differ
+Files /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S2/CFD/800/realizations_89.csv and /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S2/CFD/800/realizations_89.csv differ
+
+exec
+/bin/zsh -lc "python3 -B -c 'from pathlib import Path; r=Path(\"/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression\"); print((r/\"new/hazard.json\").read_text()); print(\"\\n\".join(str(p.relative_to(r))+\" bytes=\"+str(p.stat().st_size) for p in sorted(r.glob(\"new/specs/**/*\")) if p.is_file())); print(\"\\n\".join(str(p.relative_to(r))+\" bytes=\"+str(p.stat().st_size) for p in sorted(r.glob(\"*/data/hazard/tables/*\")) if p.is_file())); print(\"\\n\".join(str(p.relative_to(r))+\" bytes=\"+str(p.stat().st_size) for p in sorted(r.glob(\"new/data/hazard/output/scenario/S1/CFD/760/*\")) if p.is_file()))'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+{
+  "path": {
+    "output": "data/hazard/output",
+    "run": "data/hazard/run",
+    "uhs": "data/hazard/uhs",
+    "mce": "data/hazard/mce",
+    "disagg": "data/hazard/disagg",
+    "data": "data/hazard/tables",
+    "calcs": "specs/calcs",
+    "sites": "specs/sites"
+  },
+  "uhsOQWeight": 0.5,
+  "TR.gmdp": [100, 200, 500, 1000, 2000, 2500, 5000, 10000]
+}
+
+new/specs/calcs/classical/M2V4D.json bytes=1482
+new/specs/calcs/disaggregation/M2V4D.json bytes=1476
+new/specs/calcs/gmpe/GMPEASC.json bytes=519
+new/specs/calcs/gmpe/GMPESCC.json bytes=507
+new/specs/calcs/gmpe/GMPESIF.json bytes=531
+new/specs/calcs/gmpe/GMPESIS30.json bytes=544
+new/specs/calcs/scenario/CFD/S1.json bytes=985
+new/specs/calcs/scenario/CFD/S2.json bytes=985
+new/specs/sites/CFD.json bytes=209
+newflat/data/hazard/tables/MCEBranchTable.Rds bytes=84151
+newflat/data/hazard/tables/MCETable.Rds bytes=220174
+newflat/data/hazard/tables/ScenarioGMPETable.Rds bytes=15789
+newflat/data/hazard/tables/ScenarioTable.Rds bytes=628
+old/data/hazard/tables/MCEBranchTable.Rds bytes=29103
+old/data/hazard/tables/MCETable.Rds bytes=220204
+old/data/hazard/tables/ScenarioGMPETable.Rds bytes=9446
+old/data/hazard/tables/ScenarioTable.Rds bytes=628
+new/data/hazard/output/scenario/S1/CFD/760/.oqt-remote.json bytes=1583
+new/data/hazard/output/scenario/S1/CFD/760/avg_gmf_66.csv bytes=837
+new/data/hazard/output/scenario/S1/CFD/760/events_66.csv bytes=326
+new/data/hazard/output/scenario/S1/CFD/760/gmf-data_66.csv bytes=6813
+new/data/hazard/output/scenario/S1/CFD/760/gmm_stats.csv bytes=68580
+new/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv bytes=1280
+new/data/hazard/output/scenario/S1/CFD/760/rupture_distances.csv bytes=132
+new/data/hazard/output/scenario/S1/CFD/760/rupture_variants.csv bytes=211
+new/data/hazard/output/scenario/S1/CFD/760/sigma_epsilon_66.csv bytes=10409
+new/data/hazard/output/scenario/S1/CFD/760/site_model_66.csv bytes=254
+new/data/hazard/output/scenario/S1/CFD/760/sitemesh_66.csv bytes=148
+
+hook: PreToolUse
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc "Rscript --vanilla -e 'library(data.table); cat(\"R=\", R.version.string, \" data.table=\", as.character(packageVersion(\"data.table\")), \"\\n\"); p <- \"data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\"; cat(\"DIRECT FREAD\\n\"); a <- fread(file=p, skip=1L); str(a); cat(\"BASE READ.CSV\\n\"); z <- read.csv(p, skip=1L); str(z); cat(\"RECONSTRUCTED TEXT + BASE\\n\"); txt <- paste(readLines(p, warn=FALSE)[-1L], collapse=\"\\n\"); zz <- read.csv(text=txt); cat(\"identical direct/reconstructed base:\", identical(z,zz), \"\\n\"); cat(\"JOIN REPRODUCTION\\n\"); ev <- hazard:::.readOqCsv(\"data/hazard/output/scenario/S1/CFD/760/events_66.csv\"); rl <- hazard:::.readOqCsv(p); x <- data.table(rlz.id=ev"'$rlz_id); str(x); tryCatch(x[rl,on=.(rlz.id=rlz_id)], error=function(e) cat("ERROR:", conditionMessage(e), "'"\\n\")); root <- \"/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression\"; cat(\"FLAT READER\\n\"); fl <- hazard:::.readOqCsv(file.path(root,\"newflat/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\")); str(fl); cat(\"FLAT JOIN rows:\", nrow(x[fl,on=.(rlz.id=rlz_id)]), \"\\n\"); cat(\"RDS MODEL LABELS\\n\"); tab <- readRDS(file.path(root,\"newflat/data/hazard/tables/MCEBranchTable.Rds\")); cat(\"rows:\", nrow(tab), \"columns:\", paste(names(tab),collapse=\",\"), \"\\n\"); dput(unique(tab"'$model)); cat("weights: NA=",sum(is.na(tab$weight)), "'"\\n\"); print(unique(tab[,.(model,weight)]));'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 58ms:
+
+Attaching package: ‘data.table’
+
+The following object is masked from ‘package:base’:
+
+    %notin%
+
+R= R version 4.6.1 (2026-06-24)  data.table= 1.18.6.1 
+DIRECT FREAD
+Warning messages:
+1: In fread(file = p, skip = 1L) :
+  Found and resolved improper quoting in first 100 rows. If the fields are not quoted (e.g. field separator does not appear within any field), try quote="" to avoid this warning.
+2: In fread(file = p, skip = 1L) :
+  Detected 3 column names but the data has 2 columns. Filling rows automatically. Set fill=TRUE explicitly to avoid this warning.
+Classes ‘data.table’ and 'data.frame':	32 obs. of  3 variables:
+ $ rlz_id     : chr  "0" "submodel = \"\"\"\"01\"\"\"\"\"" "1" "submodel = \"\"\"\"02\"\"\"\"\"" ...
+ $ branch_path: chr  "\"[CanadaSHM6_StableCrust_NGAEast]" "7.5700000e-02" "\"[CanadaSHM6_StableCrust_NGAEast]" "6.4599998e-02" ...
+ $ weight     : logi  NA NA NA NA NA NA ...
+ - attr(*, ".internal.selfref")=<pointer: 0x101cbc990> 
+BASE READ.CSV
+'data.frame':	16 obs. of  3 variables:
+ $ rlz_id     : int  0 1 2 3 4 5 6 7 8 9 ...
+ $ branch_path: chr  "[CanadaSHM6_StableCrust_NGAEast]\nsubmodel = \"\"01\"\"" "[CanadaSHM6_StableCrust_NGAEast]\nsubmodel = \"\"02\"\"" "[CanadaSHM6_StableCrust_NGAEast]\nsubmodel = \"\"03\"\"" "[CanadaSHM6_StableCrust_NGAEast]\nsubmodel = \"\"04\"\"" ...
+ $ weight     : num  0.0757 0.0646 0.0551 0.0243 0.0277 ...
+RECONSTRUCTED TEXT + BASE
+identical direct/reconstructed base: TRUE 
+JOIN REPRODUCTION
+Warning messages:
+1: In fread(text = paste(AUX, collapse = "\n")) :
+  Found and resolved improper quoting in first 100 rows. If the fields are not quoted (e.g. field separator does not appear within any field), try quote="" to avoid this warning.
+2: In fread(text = paste(AUX, collapse = "\n")) :
+  Detected 3 column names but the data has 2 columns. Filling rows automatically. Set fill=TRUE explicitly to avoid this warning.
+Classes ‘data.table’ and 'data.frame':	16 obs. of  1 variable:
+ $ rlz.id: int  14 13 15 0 1 2 3 4 5 6 ...
+ - attr(*, ".internal.selfref")=<pointer: 0x101cbc990> 
+ERROR: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character) 
+FLAT READER
+Classes ‘data.table’ and 'data.frame':	16 obs. of  3 variables:
+ $ rlz_id     : int  0 1 2 3 4 5 6 7 8 9 ...
+ $ branch_path: chr  "[CanadaSHM6_StableCrust_NGAEast] submodel = \"\"\"\"01\"\"\"\"" "[CanadaSHM6_StableCrust_NGAEast] submodel = \"\"\"\"02\"\"\"\"" "[CanadaSHM6_StableCrust_NGAEast] submodel = \"\"\"\"03\"\"\"\"" "[CanadaSHM6_StableCrust_NGAEast] submodel = \"\"\"\"04\"\"\"\"" ...
+ $ weight     : num  0.0757 0.0646 0.0551 0.0243 0.0277 ...
+ - attr(*, ".internal.selfref")=<pointer: 0x101cbc990> 
+FLAT JOIN rows: 16 
+RDS MODEL LABELS
+rows: 8192 columns: TRT,model,weight,variant.id,rup.id,rup.lon,rup.lat,rup.dep,rup.mag,rup.rake,rup.strike,rup.dip,rup.msr,rup.occurrenceRate,rup.multiplicity,rup.repi,rup.rhypo,rup.rrup,rup.rjb,rlz.id,event.id,site.id,siteID,lon,lat,Vs30,site.vs30measured,site.z1pt0,site.z2pt5,site.backarc,IMT,Tn,Sa,Sa.units,sig.inter,eps.inter,modelID,scenarioID,Vref 
+c("CanadaSHM6_StableCrust_AA13 submodel = \"\"\"\"central", "CanadaSHM6_StableCrust_AA13 submodel = \"\"\"\"high\"\"\"\"", 
+"CanadaSHM6_StableCrust_AA13 submodel = \"\"\"\"low\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"01\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"02\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"03\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"04\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"05\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"06\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"07\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"08\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = \"\"\"\"09\"\"\"\"", 
+"CanadaSHM6_StableCrust_NGAEast submodel = 10", "CanadaSHM6_StableCrust_NGAEast submodel = 11", 
+"CanadaSHM6_StableCrust_NGAEast submodel = 12", "CanadaSHM6_StableCrust_NGAEast submodel = 13"
+)
+weights: NA= 0 
+                                                   model  weight
+                                                  <char>   <num>
+ 1:   CanadaSHM6_StableCrust_AA13 submodel = """"central 0.25000
+ 2:  CanadaSHM6_StableCrust_AA13 submodel = """"high"""" 0.15000
+ 3:   CanadaSHM6_StableCrust_AA13 submodel = """"low"""" 0.10000
+ 4: CanadaSHM6_StableCrust_NGAEast submodel = """"01"""" 0.07570
+ 5: CanadaSHM6_StableCrust_NGAEast submodel = """"02"""" 0.06460
+ 6: CanadaSHM6_StableCrust_NGAEast submodel = """"03"""" 0.05510
+ 7: CanadaSHM6_StableCrust_NGAEast submodel = """"04"""" 0.02430
+ 8: CanadaSHM6_StableCrust_NGAEast submodel = """"05"""" 0.02770
+ 9: CanadaSHM6_StableCrust_NGAEast submodel = """"06"""" 0.04890
+10: CanadaSHM6_StableCrust_NGAEast submodel = """"07"""" 0.03655
+11: CanadaSHM6_StableCrust_NGAEast submodel = """"08"""" 0.03490
+12: CanadaSHM6_StableCrust_NGAEast submodel = """"09"""" 0.03330
+13:         CanadaSHM6_StableCrust_NGAEast submodel = 10 0.01720
+14:         CanadaSHM6_StableCrust_NGAEast submodel = 11 0.03695
+15:         CanadaSHM6_StableCrust_NGAEast submodel = 12 0.02640
+16:         CanadaSHM6_StableCrust_NGAEast submodel = 13 0.01840
+
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc 'nl -ba hazard.json' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'nl -ba /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/mce.log' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'nl -ba /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/mce.log' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'diff -u /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'nl -ba /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/old/mce.log' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+     1	{
+     2	  "path": {
+     3	    "output": "data/hazard/output",
+     4	    "run": "data/hazard/run",
+     5	    "uhs": "data/hazard/uhs",
+     6	    "mce": "data/hazard/mce",
+     7	    "disagg": "data/hazard/disagg",
+     8	    "data": "data/hazard/tables",
+     9	    "calcs": "specs/calcs",
+    10	    "sites": "specs/sites"
+    11	  },
+    12	  "uhsOQWeight": 0.5,
+    13	  "TR.gmdp": [100, 200, 500, 1000, 2000, 2500, 5000, 10000]
+    14	}
+
+ succeeded in 0ms:
+     1	Steps: mce
+     2	MCE generation failed for model=S1 site=CFD vs30=1250: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+     3	MCE generation failed for model=S1 site=CFD vs30=1500: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+     4	MCE generation failed for model=S1 site=CFD vs30=180: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+     5	MCE generation failed for model=S1 site=CFD vs30=270: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+     6	MCE generation failed for model=S1 site=CFD vs30=360: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+     7	MCE generation failed for model=S1 site=CFD vs30=560: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+     8	MCE generation failed for model=S1 site=CFD vs30=760: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+     9	MCE generation failed for model=S1 site=CFD vs30=800: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    10	MCE generation failed for model=S2 site=CFD vs30=1250: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    11	MCE generation failed for model=S2 site=CFD vs30=1500: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    12	MCE generation failed for model=S2 site=CFD vs30=180: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    13	MCE generation failed for model=S2 site=CFD vs30=270: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    14	MCE generation failed for model=S2 site=CFD vs30=360: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    15	MCE generation failed for model=S2 site=CFD vs30=560: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    16	MCE generation failed for model=S2 site=CFD vs30=760: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    17	MCE generation failed for model=S2 site=CFD vs30=800: Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)
+    18	mce failed: a producer failed; the global MCE tables were not replaced
+    19	ERROR: Process completed with errors
+    20	There were 32 warnings (use warnings() to see them)
+
+ succeeded in 0ms:
+     1	Steps: mce
+     2	[runUHS] MODEL_ID=S1 SITE_ID=CFD UHS_DIR=data/hazard/mce
+     3	[runUHS] MODEL_ID=S1 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+     4	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=4.82e-10 -> data/hazard/mce/S1/CFD.site/1250
+     5	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=3.12e-11 -> data/hazard/mce/S1/CFD.site/1500
+     6	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=2.12e-11 -> data/hazard/mce/S1/CFD.site/180
+     7	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=7.45e-10 -> data/hazard/mce/S1/CFD.site/270
+     8	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=1.75e-09 -> data/hazard/mce/S1/CFD.site/360
+     9	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=2.64e-09 -> data/hazard/mce/S1/CFD.site/560
+    10	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S1/CFD.site/760
+    11	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=3.62e-09 -> data/hazard/mce/S1/CFD.site/800
+    12	[runUHS] MODEL_ID=S2 SITE_ID=CFD UHS_DIR=data/hazard/mce
+    13	[runUHS] MODEL_ID=S2 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+    14	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=7.65e-10 -> data/hazard/mce/S2/CFD.site/1250
+    15	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=4.41e-11 -> data/hazard/mce/S2/CFD.site/1500
+    16	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=1.78e-11 -> data/hazard/mce/S2/CFD.site/180
+    17	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=8.43e-10 -> data/hazard/mce/S2/CFD.site/270
+    18	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=2.19e-09 -> data/hazard/mce/S2/CFD.site/360
+    19	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=3.33e-09 -> data/hazard/mce/S2/CFD.site/560
+    20	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S2/CFD.site/760
+    21	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=6.35e-09 -> data/hazard/mce/S2/CFD.site/800
+    22	[aggregateMCE] MCEBranchTable rows=8192
+    23	[aggregateMCE] ScenarioTable rows=2
+    24	[aggregateMCE] MCETable rows=16576
+    25	[aggregateMCE] ScenarioGMPETable rows=1776
+    26	Process complete
+
+ exited 1 in 0ms:
+--- /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv	2026-10-15 08:26:56
++++ /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/newflat/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv	2026-10-15 08:26:56
+@@ -1,34 +1,18 @@
+-#,,"generated_by='OpenQuake engine 3.26.2', start_date='2026-10-15T04:16:47', checksum=3676962081"
+-rlz_id,branch_path,weight
+-0,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"01""""",7.5700000e-02
+-1,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"02""""",6.4599998e-02
+-2,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"03""""",5.5100001e-02
+-3,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"04""""",2.4300000e-02
+-4,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"05""""",2.7700000e-02
+-5,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"06""""",4.8900001e-02
+-6,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"07""""",3.6550000e-02
+-7,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"08""""",3.4899998e-02
+-8,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = """"09""""",3.3300001e-02
+-9,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = 10",1.7200001e-02
+-10,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = 11",3.6950000e-02
+-11,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = 12",2.6400000e-02
+-12,"[CanadaSHM6_StableCrust_NGAEast]
+-submodel = 13",1.8400000e-02
+-13,"[CanadaSHM6_StableCrust_AA13]
+-submodel = """"high""""",1.5000001e-01
+-14,"[CanadaSHM6_StableCrust_AA13]
+-submodel = """"central",2.5000000e-01
+-15,"[CanadaSHM6_StableCrust_AA13]
+-submodel = """"low""""",1.0000000e-01
++#,,"generated_by='OpenQuake engine 3.26.2', start_date='2026-10-15T04:16:47', checksum=3676962081"
++rlz_id,branch_path,weight
++0,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"01""""",7.5700000e-02
++1,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"02""""",6.4599998e-02
++2,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"03""""",5.5100001e-02
++3,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"04""""",2.4300000e-02
++4,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"05""""",2.7700000e-02
++5,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"06""""",4.8900001e-02
++6,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"07""""",3.6550000e-02
++7,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"08""""",3.4899998e-02
++8,"[CanadaSHM6_StableCrust_NGAEast] submodel = """"09""""",3.3300001e-02
++9,[CanadaSHM6_StableCrust_NGAEast] submodel = 10,1.7200001e-02
++10,[CanadaSHM6_StableCrust_NGAEast] submodel = 11,3.6950000e-02
++11,[CanadaSHM6_StableCrust_NGAEast] submodel = 12,2.6400000e-02
++12,[CanadaSHM6_StableCrust_NGAEast] submodel = 13,1.8400000e-02
++13,"[CanadaSHM6_StableCrust_AA13] submodel = """"high""""",1.5000001e-01
++14,"[CanadaSHM6_StableCrust_AA13] submodel = """"central",2.5000000e-01
++15,"[CanadaSHM6_StableCrust_AA13] submodel = """"low""""",1.0000000e-01
+
+ succeeded in 0ms:
+     1	Steps: mce
+     2	[runUHS] MODEL_ID=S1 SITE_ID=CFD UHS_DIR=data/hazard/mce
+     3	[runUHS] MODEL_ID=S1 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+     4	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=2.7e-06 -> data/hazard/mce/S1/CFD.site/1250
+     5	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=4.33e-07 -> data/hazard/mce/S1/CFD.site/1500
+     6	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=1.93e-07 -> data/hazard/mce/S1/CFD.site/180
+     7	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=2.42e-06 -> data/hazard/mce/S1/CFD.site/270
+     8	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=4.74e-06 -> data/hazard/mce/S1/CFD.site/360
+     9	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=5.69e-06 -> data/hazard/mce/S1/CFD.site/560
+    10	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S1/CFD.site/760
+    11	[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=1.03e-05 -> data/hazard/mce/S1/CFD.site/800
+    12	[runUHS] MODEL_ID=S2 SITE_ID=CFD UHS_DIR=data/hazard/mce
+    13	[runUHS] MODEL_ID=S2 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+    14	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=0.00011 -> data/hazard/mce/S2/CFD.site/1250
+    15	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=3.06e-05 -> data/hazard/mce/S2/CFD.site/1500
+    16	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=2.09e-05 -> data/hazard/mce/S2/CFD.site/180
+    17	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=0.000122 -> data/hazard/mce/S2/CFD.site/270
+    18	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=0.000204 -> data/hazard/mce/S2/CFD.site/360
+    19	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=0.000247 -> data/hazard/mce/S2/CFD.site/560
+    20	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S2/CFD.site/760
+    21	[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=0.000286 -> data/hazard/mce/S2/CFD.site/800
+    22	[aggregateMCE] MCEBranchTable rows=3072
+    23	[aggregateMCE] ScenarioTable rows=2
+    24	[aggregateMCE] MCETable rows=16576
+    25	[aggregateMCE] ScenarioGMPETable rows=1026
+    26	Process complete
+
+exec
+/bin/zsh -lc '/Library/Developer/CommandLineTools/usr/bin/git --no-optional-locks -c filter.lfs.process= -c filter.lfs.required=false diff HEAD -- hazard.json specs/calcs/scenario/CFD/S1.json specs/calcs/scenario/CFD/S2.json' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+diff --git a/specs/calcs/scenario/CFD/S1.json b/specs/calcs/scenario/CFD/S1.json
+index f27cc64..e69690e 100644
+--- a/specs/calcs/scenario/CFD/S1.json
++++ b/specs/calcs/scenario/CFD/S1.json
+@@ -4,7 +4,7 @@
+   "description": "Crawford official S1, approved 2026-09-22: SCC Mw6.5, Repi100km, depth15km; synthetic regional design scenario, Timiskaming plane analogue324/46/100. See data/hazard/dsha/RATIONALE.md.",
+   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
+   "TRT": {
+-    "SCC": "SCC"
++    "SCC": "NBCC"
+   },
+   "ruptureBase": {
+     "lon": -80.5122632102849,
+diff --git a/specs/calcs/scenario/CFD/S2.json b/specs/calcs/scenario/CFD/S2.json
+index 0f0bb9d..837c409 100644
+--- a/specs/calcs/scenario/CFD/S2.json
++++ b/specs/calcs/scenario/CFD/S2.json
+@@ -4,7 +4,7 @@
+   "description": "Crawford official S2, approved 2026-09-22: SCC Mw4.5, Repi5km, depth2.5km; synthetic near-site design scenario, idealized North G plane112.5/80/90. See data/hazard/dsha/RATIONALE.md.",
+   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
+   "TRT": {
+-    "SCC": "SCC"
++    "SCC": "NBCC"
+   },
+   "ruptureBase": {
+     "lon": -81.3261110877116,
+
+exec
+/bin/zsh -lc "python3 -B -c 'from pathlib import Path; r=Path(\"/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression\"); [print(n,\"files\",len(fs),\"bytes\",sum(p.stat().st_size for p in fs),\"maxbytes\",max(p.stat().st_size for p in fs)) for n in (\"old\",\"new\",\"newflat\") for fs in [[p for p in (r/n/\"data/hazard/output\").rglob(\"*\") if p.is_file()]]]'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+old files 176 bytes 517531 maxbytes 20438
+new files 176 bytes 1449451 maxbytes 68643
+newflat files 176 bytes 1449035 maxbytes 68643
+
+codex
+Encontré una precisión importante: `fread(file=..., skip=1)` falla igual, sin pasar por `readLines`. En cambio, `read.csv` y el lector CSV de Python recuperan las 16 realizaciones. Además, `newflat` conserva comillas defectuosas en las etiquetas y también cambia finales de línea y algunas comillas exteriores; estoy comprobando si el salto de línea, por sí solo, explica el fallo.
+
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc 'nl -ba /Users/averrik/Library/R/arm64/4.6/library/hazard/DESCRIPTION' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'nl -ba specs/calcs/scenario/CFD/S2.json' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'nl -ba specs/calcs/scenario/CFD/S1.json' in /Users/averrik/github/projects/AR-M2V4D
+exec
+/bin/zsh -lc 'diff -u hazard.json /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/hazard.json' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+     1	Package: hazard
+     2	Type: Package
+     3	Title: Seismic Hazard Processing and Engine Interfaces
+     4	Version: 0.2.0
+     5	Authors@R: 
+     6	    person("Alejandro", "Verri Kozlowski", , "averri@fi.uba.ar",
+     7	           role = c("aut", "cre", "cph"))
+     8	Description: Processes seismic hazard curves, uniform-hazard spectra and
+     9	    scenario ground-motion distributions. Provides analytic lognormal
+    10	    mixture summaries, hazard-product validation and composition, and
+    11	    adapters for 'OpenQuake' calculations. Site-response calculations use
+    12	    the separately installed 'newmark' package where required.
+    13	License: MIT + file LICENSE
+    14	Encoding: UTF-8
+    15	Language: en-US
+    16	Depends: R (>= 4.2)
+    17	Imports: data.table, digest, jsonlite, stats, utils, xml2
+    18	Suggests: newmark, knitr, rmarkdown, testthat (>= 3.0.0)
+    19	VignetteBuilder: knitr
+    20	Config/testthat/edition: 3
+    21	Roxygen: list(markdown = TRUE)
+    22	NeedsCompilation: no
+    23	Config/roxygen2/version: 8.1.0
+    24	Packaged: 2026-10-04 23:29:33 UTC; averrik
+    25	Author: Alejandro Verri Kozlowski [aut, cre, cph]
+    26	Maintainer: Alejandro Verri Kozlowski <averri@fi.uba.ar>
+    27	Built: R 4.6.1; ; 2026-10-04 23:29:33 UTC; unix
+
+ succeeded in 0ms:
+     1	{
+     2	  "modelID": "S2",
+     3	  "mode": "scenario",
+     4	  "description": "Crawford official S2, approved 2026-09-22: SCC Mw4.5, Repi5km, depth2.5km; synthetic near-site design scenario, idealized North G plane112.5/80/90. See data/hazard/dsha/RATIONALE.md.",
+     5	  "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
+     6	  "TRT": {
+     7	    "SCC": "NBCC"
+     8	  },
+     9	  "ruptureBase": {
+    10	    "lon": -81.3261110877116,
+    11	    "lat": 48.7509762261612,
+    12	    "dep": 2.5,
+    13	    "mag": 4.5,
+    14	    "rake": 90,
+    15	    "strike": 112.5,
+    16	    "dip": 80,
+    17	    "msr": "WC1994",
+    18	    "occurrenceRate": 1,
+    19	    "multiplicity": 1
+    20	  },
+    21	  "ruptureVariants": [
+    22	    {
+    23	      "variantID": "base"
+    24	    }
+    25	  ],
+    26	  "job": {
+    27	    "general": {
+    28	      "concurrent_tasks": 0
+    29	    },
+    30	    "erf": {
+    31	      "rupture_mesh_spacing": 2
+    32	    },
+    33	    "calculation": {
+    34	      "random_seed": 42,
+    35	      "maximum_distance": {
+    36	        "default": 1000
+    37	      },
+    38	      "truncation_level": 3,
+    39	      "number_of_ground_motion_fields": 1
+    40	    },
+    41	    "output": {
+    42	      "export_dir": "outputs/"
+    43	    }
+    44	  }
+    45	}
+
+ succeeded in 0ms:
+ succeeded in 0ms:
+     1	{
+     2	  "modelID": "S1",
+     3	  "mode": "scenario",
+     4	  "description": "Crawford official S1, approved 2026-09-22: SCC Mw6.5, Repi100km, depth15km; synthetic regional design scenario, Timiskaming plane analogue324/46/100. See data/hazard/dsha/RATIONALE.md.",
+     5	  "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
+     6	  "TRT": {
+     7	    "SCC": "NBCC"
+     8	  },
+     9	  "ruptureBase": {
+    10	    "lon": -80.5122632102849,
+    11	    "lat": 48.0830199430787,
+    12	    "dep": 15,
+    13	    "mag": 6.5,
+    14	    "rake": 100,
+    15	    "strike": 324,
+    16	    "dip": 46,
+    17	    "msr": "WC1994",
+    18	    "occurrenceRate": 1,
+    19	    "multiplicity": 1
+    20	  },
+    21	  "ruptureVariants": [
+    22	    {
+    23	      "variantID": "base"
+    24	    }
+    25	  ],
+    26	  "job": {
+    27	    "general": {
+    28	      "concurrent_tasks": 0
+    29	    },
+    30	    "erf": {
+    31	      "rupture_mesh_spacing": 2
+    32	    },
+    33	    "calculation": {
+    34	      "random_seed": 42,
+    35	      "maximum_distance": {
+    36	        "default": 1000
+    37	      },
+    38	      "truncation_level": 3,
+    39	      "number_of_ground_motion_fields": 1
+    40	    },
+    41	    "output": {
+    42	      "export_dir": "outputs/"
+    43	    }
+    44	  }
+    45	}
+
+exec
+/bin/zsh -lc 'diff -qr data/hazard/output/scenario /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/new/data/hazard/output/scenario' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+exec
+/bin/zsh -lc 'diff -qr /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/output-committed-dddf10b-20261015/scenario /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression/old/data/hazard/output/scenario' in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+exec
+/bin/zsh -lc "python3 -B -c 'from pathlib import Path; import csv,io; r=Path(\"/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/mce-regression\"); base=Path.cwd(); specs=[p for p in (r/\"new/specs\").rglob(\"*\") if p.is_file()]; print(\"project specs identical\",sum(p.read_bytes()==(base/p.relative_to(r/\"new\")).read_bytes() for p in specs),\"/\",len(specs)); fs=list((r/\"new/data/hazard/output\").rglob(\"realizations_*.csv\")); ok=[]; pure=[]; rows=[]; parse=lambda p:list(csv.reader(io.StringIO(p.read_text(),newline=\"\"),strict=True)); [(rows.append((p,parse(p),parse(r/\"newflat\"/p.relative_to(r/\"new\"))))) for p in fs]; [(ok.append(all([a==b if i<2 else a[0]==b[0] and a[2]==b[2] and a[1].replace(\"\\n\",\" \")==b[1] for i,(a,b) in enumerate(zip(old,new))]) and len(old)==len(new))) for p,old,new in rows]; print(\"semantic change only newline->space\",sum(ok),\"/\",len(ok)); print(\"all other fields same\",all(ok)); print(\"source LF/CRLF\",[(n,(r/n/\"data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\").read_bytes().count(b\"\\n\"),(r/n/\"data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\").read_bytes().count(b\"\\r\\n\")) for n in (\"new\",\"newflat\")])'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+project specs identical 9 / 9
+semantic change only newline->space 16 / 16
+all other fields same True
+source LF/CRLF [('new', 34, 18), ('newflat', 18, 0)]
+
+hook: PreToolUse
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc "Rscript --vanilla -e 'library(data.table); p <- \"data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\"; lines <- readLines(p,warn=FALSE); txt <- paste(lines[-1L],collapse=\"\\n\"); inspect <- function(label,s) { cat(label,\"\\n\"); q <- withCallingHandlers(fread(text=s),warning=function(w) {cat(\"WARNING:\",conditionMessage(w),\"\\n\"); invokeRestart(\"muffleWarning\")}); cat(\"rows=\",nrow(q),\"rlz_id=\",typeof(q"'$rlz_id),"weight=",typeof(q$weight),"NAweights=",sum(is.na(q$weight)),"'"\\n\"); }; inspect(\"ONLY EMBEDDED LF REPLACED, ORIGINAL QUOTING\",gsub(\"\\nsubmodel\", \" submodel\",txt,fixed=TRUE)); inspect(\"ONE ORIGINAL RECORD: NUMERIC SUBMODEL 10\",paste(lines[c(2L,21L,22L)],collapse=\"\\n\")); inspect(\"ONE ORIGINAL RECORD: QUOTED SUBMODEL 01\",paste(lines[c(2L,3L,4L)],collapse=\"\\n\")); fs <- list.files(\"data/hazard/output/scenario\",pattern=\""'^realizations_[0-9]+[.]csv$",recursive=TRUE,full.names=TRUE); res <- lapply(fs,function(f) {q <- suppressWarnings(hazard:::.readOqCsv(f)); good <- read.csv(f,skip=1L); data.frame(file=f,badRows=nrow(q),badId=typeof(q$rlz_id),NAweights=sum(is.na(q$weight)),goodRows=nrow(good),goodId=typeof(good$rlz_id))}); cat("ALL NEW FILES'"\\n\"); print(do.call(rbind,res),row.names=FALSE);'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 65ms:
+
+Attaching package: ‘data.table’
+
+The following object is masked from ‘package:base’:
+
+    %notin%
+
+ONLY EMBEDDED LF REPLACED, ORIGINAL QUOTING 
+rows= 16 rlz_id= integer weight= double NAweights= 0 
+ONE ORIGINAL RECORD: NUMERIC SUBMODEL 10 
+rows= 1 rlz_id= integer weight= double NAweights= 0 
+ONE ORIGINAL RECORD: QUOTED SUBMODEL 01 
+rows= 1 rlz_id= integer weight= double NAweights= 0 
+ALL NEW FILES
+                                                        file badRows     badId
+ data/hazard/output/scenario/S1/CFD/1250/realizations_63.csv      32 character
+ data/hazard/output/scenario/S1/CFD/1500/realizations_82.csv      32 character
+  data/hazard/output/scenario/S1/CFD/180/realizations_64.csv      32 character
+  data/hazard/output/scenario/S1/CFD/270/realizations_83.csv      32 character
+  data/hazard/output/scenario/S1/CFD/360/realizations_65.csv      32 character
+  data/hazard/output/scenario/S1/CFD/560/realizations_84.csv      32 character
+  data/hazard/output/scenario/S1/CFD/760/realizations_66.csv      32 character
+  data/hazard/output/scenario/S1/CFD/800/realizations_85.csv      32 character
+ data/hazard/output/scenario/S2/CFD/1250/realizations_67.csv      32 character
+ data/hazard/output/scenario/S2/CFD/1500/realizations_86.csv      32 character
+  data/hazard/output/scenario/S2/CFD/180/realizations_68.csv      32 character
+  data/hazard/output/scenario/S2/CFD/270/realizations_87.csv      32 character
+  data/hazard/output/scenario/S2/CFD/360/realizations_69.csv      32 character
+  data/hazard/output/scenario/S2/CFD/560/realizations_88.csv      32 character
+  data/hazard/output/scenario/S2/CFD/760/realizations_70.csv      32 character
+  data/hazard/output/scenario/S2/CFD/800/realizations_89.csv      32 character
+ NAweights goodRows  goodId
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+        32       16 integer
+
+hook: PreToolUse
+hook: PreToolUse Completed
+exec
+/bin/zsh -lc "Rscript --vanilla -e 'library(data.table); p <- \"data/hazard/output/scenario/S1/CFD/760/realizations_66.csv\"; l <- readLines(p,warn=FALSE); sets <- list(first13=l[2:28],first14=l[2:30],first15=l[2:32],withoutCentral=l[c(2:30,33:34)],centralOnly=l[c(2L,31L,32L)]); for(nm in names(sets)) {cat(nm,\": \"); d <- withCallingHandlers(fread(text=paste(sets[[nm]],collapse=\"\\n\")),warning=function(w) invokeRestart(\"muffleWarning\")); cat(\"rows=\",nrow(d),\"id=\",typeof(d"'$rlz_id),"NAweights=",sum(is.na(d$weight)),"'"\\n\");};'" in /Users/averrik/github/projects/AR-M2V4D
+ succeeded in 0ms:
+
+Attaching package: ‘data.table’
+
+The following object is masked from ‘package:base’:
+
+    %notin%
+
+first13 : rows= 26 id= character NAweights= 26 
+first14 : rows= 28 id= character NAweights= 28 
+first15 : rows= 30 id= character NAweights= 30 
+withoutCentral : rows= 30 id= character NAweights= 30 
+centralOnly : rows= 1 id= integer NAweights= 0 
+
+codex
+**Veredicto global: PARCIAL.** El fallo está confirmado y lo reproduje en memoria. La explicación de Claude requiere precisiones sobre el lector, los códigos de salida y las modificaciones históricas.
+
+1. **PARCIAL — instalación sin indicios de modificación; OpenQuake declara la misma versión.**
+
+   `cat DESCRIPTION` muestra `hazard 0.2.0`, con `Packaged` y `Built: 2026-10-04 23:29:33 UTC`. Revisé los 32 archivos instalados: **todos sus mtime y ctime son del 4 de octubre**, incluidos `hazard.rdb` y `hazard.rdx`. El ejecutable `/usr/local/bin/hazard` también tiene fecha del 4. [DESCRIPTION leído](/Users/averrik/Library/R/arm64/4.6/library/hazard/DESCRIPTION:24).
+
+   En el checkout, `git status --short` muestra únicamente entradas `??`; `git diff HEAD --` no produce diferencias. Sin embargo, `git log -3 --stat` muestra commits **3272f88, 3a68fd0 y d3ed80d del 14–15 de octubre**, sobre instaladores, configuración AOM y workflow. Por tanto, el checkout sí tuvo cambios; no prueban una modificación de la librería instalada ni permiten atribuirlos a Claude.
+
+   `nl -ba realizations_22.csv` y `nl -ba realizations_66.csv` muestran **`OpenQuake engine 3.26.2`** en ambas cabeceras. Esto confirma la versión declarada, pero no demuestra por sí solo que nadie modificó su código.
+
+2. **CONFIRMADO — lectura corrupta y unión fallida; PARCIAL la atribución a `readLines`.**
+
+   `Rscript --vanilla -e 'print(hazard:::.readOqCsv)'` devuelve:
+
+   ```r
+   function (path) {
+       FILE <- path
+       AUX <- readLines(FILE, warn = FALSE)
+       AUX <- AUX[!grepl("^#", AUX)]
+       fread(text = paste(AUX, collapse = "\n"))
+   }
+   ```
+
+   Al ejecutar `str(hazard:::.readOqCsv(...))`:
+
+   | Archivo | Filas | `rlz_id` | `weight` |
+   |---|---:|---|---|
+   | Septiembre, `realizations_22.csv` | 6 | `int 0 1 2 3 4 5` | numérico |
+   | Octubre, `realizations_66.csv` | 32 | `chr`, incluye `"submodel = …"` | lógico, todos `NA` |
+
+   **Los 16 CSV nuevos presentan el mismo defecto.** El archivo 66 contiene realmente 16 registros con campos multilínea entrecomillados. [CSV leído](/Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv:3).
+
+   Las líneas 24–25 de `deparse(hazard:::.buildBranch)` son:
+
+   ```r
+   DT[Events, on = "event_id", `:=`(rup.id = i.rup_id, rlz.id = i.rlz_id)]
+   DT[Rlz, on = .(rlz.id = rlz_id), `:=`(model = i.model, weight = i.weight)]
+   ```
+
+   Reproduje esa unión con los identificadores leídos: **`Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)`**.
+
+   La precisión causal: **`fread(file=p, skip=1)` también falla**, sin `readLines`. Con `data.table 1.18.6.1`, el problema se reproduce al interpretar este formato concreto. `read.csv(p, skip=1)` y Python `csv` recuperan correctamente las 16 filas; `read.csv` también funciona sobre el texto reconstruido por `readLines` + `paste`.
+
+3. **PARCIAL — regresión coherente, sin constancia explícita de los exit codes.**
+
+   `nl -ba .../{old,new,newflat}/mce.log` muestra:
+
+   | Caso | Evidencia del log |
+   |---|---|
+   | `old` | `MCETable rows=16576`; `Process complete` |
+   | `new` | 16 errores de unión; `ERROR: Process completed with errors` |
+   | `newflat` | `MCETable rows=16576`; `Process complete` |
+
+   Esto respalda éxito/fallo/éxito, pero **los logs no registran literalmente los códigos de salida 0/1/0**.
+
+   Los `diff` de `hazard.json` y `specs` entre los tres casos terminaron en **0, sin diferencias**. También coinciden las copias `old` y `new` con sus respectivas exportaciones originales.
+
+   `diff -qr new/data/hazard/output newflat/data/hazard/output` identifica **únicamente los 16 `realizations_*.csv`**: los otros 160 archivos son idénticos. Dentro de esos CSV también se normalizó CRLF→LF y se quitaron algunas comillas exteriores. Comparando los campos mediante un lector CSV, el único cambio de contenido es salto de línea→espacio, en los 16 archivos.
+
+4. **CONFIRMADO — hay omisiones y etiquetas defectuosas.**
+
+   Sustituir **sólo** `"\nsubmodel"` por `" submodel"` en memoria, conservando las comillas originales, produce **16 filas, identificadores enteros y pesos numéricos sin NA**. Esto confirma que el aplanado evita el fallo observado.
+
+   Sin embargo, `readRDS(.../MCEBranchTable.Rds)` muestra 8192 filas y etiquetas como:
+
+   ```text
+   CanadaSHM6_StableCrust_NGAEast submodel = """"01""""
+   CanadaSHM6_StableCrust_AA13 submodel = """"central
+   ```
+
+   Parte de esas comillas anómalas ya está en el CSV original; el aplanado **no resuelve la representación de los nombres**.
+
+   Además, `git diff HEAD -- specs/calcs/scenario/CFD/{S1,S2}.json` muestra el cambio **`"SCC": "SCC"` → `"SCC": "NBCC"`**. Es un cambio relevante del proyecto que introduce los modelos parametrizados y expone el defecto del lector; no hace falta suponer una actualización de OpenQuake para explicar la diferencia.
+
+No modifiqué archivos del proyecto ni de las instalaciones, ni volví a ejecutar `hazard process`.
+hook: Stop
+hook: Stop Completed
+tokens used
+55,528
+**Veredicto global: PARCIAL.** El fallo está confirmado y lo reproduje en memoria. La explicación de Claude requiere precisiones sobre el lector, los códigos de salida y las modificaciones históricas.
+
+1. **PARCIAL — instalación sin indicios de modificación; OpenQuake declara la misma versión.**
+
+   `cat DESCRIPTION` muestra `hazard 0.2.0`, con `Packaged` y `Built: 2026-10-04 23:29:33 UTC`. Revisé los 32 archivos instalados: **todos sus mtime y ctime son del 4 de octubre**, incluidos `hazard.rdb` y `hazard.rdx`. El ejecutable `/usr/local/bin/hazard` también tiene fecha del 4. [DESCRIPTION leído](/Users/averrik/Library/R/arm64/4.6/library/hazard/DESCRIPTION:24).
+
+   En el checkout, `git status --short` muestra únicamente entradas `??`; `git diff HEAD --` no produce diferencias. Sin embargo, `git log -3 --stat` muestra commits **3272f88, 3a68fd0 y d3ed80d del 14–15 de octubre**, sobre instaladores, configuración AOM y workflow. Por tanto, el checkout sí tuvo cambios; no prueban una modificación de la librería instalada ni permiten atribuirlos a Claude.
+
+   `nl -ba realizations_22.csv` y `nl -ba realizations_66.csv` muestran **`OpenQuake engine 3.26.2`** en ambas cabeceras. Esto confirma la versión declarada, pero no demuestra por sí solo que nadie modificó su código.
+
+2. **CONFIRMADO — lectura corrupta y unión fallida; PARCIAL la atribución a `readLines`.**
+
+   `Rscript --vanilla -e 'print(hazard:::.readOqCsv)'` devuelve:
+
+   ```r
+   function (path) {
+       FILE <- path
+       AUX <- readLines(FILE, warn = FALSE)
+       AUX <- AUX[!grepl("^#", AUX)]
+       fread(text = paste(AUX, collapse = "\n"))
+   }
+   ```
+
+   Al ejecutar `str(hazard:::.readOqCsv(...))`:
+
+   | Archivo | Filas | `rlz_id` | `weight` |
+   |---|---:|---|---|
+   | Septiembre, `realizations_22.csv` | 6 | `int 0 1 2 3 4 5` | numérico |
+   | Octubre, `realizations_66.csv` | 32 | `chr`, incluye `"submodel = …"` | lógico, todos `NA` |
+
+   **Los 16 CSV nuevos presentan el mismo defecto.** El archivo 66 contiene realmente 16 registros con campos multilínea entrecomillados. [CSV leído](/Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/output/scenario/S1/CFD/760/realizations_66.csv:3).
+
+   Las líneas 24–25 de `deparse(hazard:::.buildBranch)` son:
+
+   ```r
+   DT[Events, on = "event_id", `:=`(rup.id = i.rup_id, rlz.id = i.rlz_id)]
+   DT[Rlz, on = .(rlz.id = rlz_id), `:=`(model = i.model, weight = i.weight)]
+   ```
+
+   Reproduje esa unión con los identificadores leídos: **`Incompatible join types: x.rlz.id (integer) and i.rlz_id (character)`**.
+
+   La precisión causal: **`fread(file=p, skip=1)` también falla**, sin `readLines`. Con `data.table 1.18.6.1`, el problema se reproduce al interpretar este formato concreto. `read.csv(p, skip=1)` y Python `csv` recuperan correctamente las 16 filas; `read.csv` también funciona sobre el texto reconstruido por `readLines` + `paste`.
+
+3. **PARCIAL — regresión coherente, sin constancia explícita de los exit codes.**
+
+   `nl -ba .../{old,new,newflat}/mce.log` muestra:
+
+   | Caso | Evidencia del log |
+   |---|---|
+   | `old` | `MCETable rows=16576`; `Process complete` |
+   | `new` | 16 errores de unión; `ERROR: Process completed with errors` |
+   | `newflat` | `MCETable rows=16576`; `Process complete` |
+
+   Esto respalda éxito/fallo/éxito, pero **los logs no registran literalmente los códigos de salida 0/1/0**.
+
+   Los `diff` de `hazard.json` y `specs` entre los tres casos terminaron en **0, sin diferencias**. También coinciden las copias `old` y `new` con sus respectivas exportaciones originales.
+
+   `diff -qr new/data/hazard/output newflat/data/hazard/output` identifica **únicamente los 16 `realizations_*.csv`**: los otros 160 archivos son idénticos. Dentro de esos CSV también se normalizó CRLF→LF y se quitaron algunas comillas exteriores. Comparando los campos mediante un lector CSV, el único cambio de contenido es salto de línea→espacio, en los 16 archivos.
+
+4. **CONFIRMADO — hay omisiones y etiquetas defectuosas.**
+
+   Sustituir **sólo** `"\nsubmodel"` por `" submodel"` en memoria, conservando las comillas originales, produce **16 filas, identificadores enteros y pesos numéricos sin NA**. Esto confirma que el aplanado evita el fallo observado.
+
+   Sin embargo, `readRDS(.../MCEBranchTable.Rds)` muestra 8192 filas y etiquetas como:
+
+   ```text
+   CanadaSHM6_StableCrust_NGAEast submodel = """"01""""
+   CanadaSHM6_StableCrust_AA13 submodel = """"central
+   ```
+
+   Parte de esas comillas anómalas ya está en el CSV original; el aplanado **no resuelve la representación de los nombres**.
+
+   Además, `git diff HEAD -- specs/calcs/scenario/CFD/{S1,S2}.json` muestra el cambio **`"SCC": "SCC"` → `"SCC": "NBCC"`**. Es un cambio relevante del proyecto que introduce los modelos parametrizados y expone el defecto del lector; no hace falta suponer una actualización de OpenQuake para explicar la diferencia.
+
+No modifiqué archivos del proyecto ni de las instalaciones, ni volví a ejecutar `hazard process`.
+codex exit=0

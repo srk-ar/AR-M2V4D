@@ -1,0 +1,49 @@
+command: hazard run --root . --server http://127.0.0.1:18800 --mode classical --model M2V4D --site CFD --vs30 760
+package sig: 560736bb652dc426 (CAN dedup + NBCC seeds)
+start: 2026-10-14 20:41:24 -0300
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+Server calculation 35 created classical/M2V4D/CFD/760
+run exit=0
+calc id: 35
+20:41:55 calc 35 status=executing
+20:42:25 calc 35 status=executing
+20:42:56 calc 35 status=executing
+20:43:26 calc 35 status=executing
+20:43:57 calc 35 status=executing
+20:44:27 calc 35 status=executing
+20:44:57 calc 35 status=executing
+20:45:28 calc 35 status=executing
+20:45:58 calc 35 status=executing
+20:46:28 calc 35 status=executing
+20:46:59 calc 35 status=executing
+20:47:29 calc 35 status=executing
+20:47:59 calc 35 status=executing
+20:48:30 calc 35 status=executing
+20:49:00 calc 35 status=executing
+20:49:31 calc 35 status=executing
+20:50:01 calc 35 status=executing
+20:50:31 calc 35 status=executing
+20:51:02 calc 35 status=executing
+20:51:32 calc 35 status=executing
+20:52:02 calc 35 status=executing
+20:52:33 calc 35 status=executing
+20:53:03 calc 35 status=executing
+20:53:33 calc 35 status=executing
+20:54:04 calc 35 status=executing
+20:54:34 calc 35 status=executing
+20:55:04 calc 35 status=executing
+20:55:35 calc 35 status=executing
+20:56:05 calc 35 status=executing
+20:56:35 calc 35 status=executing
+20:57:06 calc 35 status=executing
+20:57:36 calc 35 status=executing
+20:58:07 calc 35 status=executing
+20:58:37 calc 35 status=executing
+20:59:07 calc 35 status=executing
+20:59:38 calc 35 status=executing
+21:00:08 calc 35 status=executing
+21:00:38 calc 35 status=executing
+21:01:09 calc 35 status=executing
+21:01:39 calc 35 status=executing
+21:02:10 calc 35 status=complete
+end: 2026-10-14 21:02:10 -0300 status=complete

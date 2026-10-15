@@ -71,3 +71,27 @@ Modelo `ssm/CAN` reescrito en su lugar (rama `issue/CAN-dedup-backgrounds` del r
 | 10000 | 0.949 | 0.949 | 0.955 | 0.954 | 0.958 | 0.961 | 0.954 |
 
 A TR 2475 coincide con la predicción del reparto por fuentes (0.930 a 0.947), lo que confirma que el 7 % venía de las copias duplicadas y de nada más. El efecto es mayor a períodos de retorno cortos, donde el fondo pesa más, y menor a 10 000 años. Tablas en `pilot-vs-committed-760.txt`; logs `hazard-ssm-20261014.log`, `hazard-pack-760-20261014.log`, `hazard-run-760-20261014.log`, `hazard-extract-760-20261014.log`.
+
+## 6. Piloto GMM NBCC a 760 (cálculo 35 en tms9900, 2026-10-14)
+
+Fuentes deduplicadas más seeds `NBCC` en los cinco TRT, con el seed SCC restaurado desde su `.bak` (pesos por período). Comparación con la corrida 2024 en los 23 períodos comunes: `nbcc-vs-nrc2024-760.txt`.
+
+- **PGA**, única IMT cuyo peso por período es igual al peso base: cociente 1.21, 1.17, 1.10, 1.05 y 1.00 a TR 475, 975, 2475, 5000 y 10 000. Decrece con el período de retorno: es la firma de fuentes lejanas añadidas, coherente con la distancia máxima de 1000 km de la receta actual frente a 600 km en 2024, y con la discretización más fina (5 km frente a 10). No es efecto del árbol GMM.
+- **Períodos listados en el árbol** (0.05, 0.1, 0.2, 0.3, 0.5, 1, 2 s), donde OpenQuake 3.26.2 aplica los pesos específicos: cocientes 0.70 a 0.92, es decir, 10 a 30 % por debajo de 2024.
+- **Períodos no listados** (0.12, 0.15, 0.22, 0.25, 0.35, 0.4, 0.45, 0.6, 0.7, 0.9, 1.5, 2.5 s y más), donde se aplica el peso base: cocientes iguales a los de la PGA.
+- Consecuencia: el espectro nuevo tiene dientes de sierra (Sa(0.12) > Sa(0.1), Sa(0.22) > Sa(0.2)); el de 2024 es liso.
+
+Conclusión: la corrida 2024 (OpenQuake 3.19.1, job con `SA(0.10)` frente a `imt="SA(0.1)"` en el árbol) no aplicó los pesos por período en ningún IMT; usó el peso base, el de PGA, en todos. Los valores que tiene el cliente corresponden al árbol NBCC con pesos base. Con el motor 3.26.2 y el seed con pesos por período, los IMT listados bajan y aparecen los dientes de sierra. Replicar 2024 exige el seed con pesos base (la versión del 1 de mayo, guardada en el scratchpad de la sesión como `gmmLT_NBCC.scc.pga-weights-20260501.xml`) y, para la PGA, alinear distancia máxima y discretización con la receta de 2024. Mantener los pesos por período es fiel al modelo oficial pero no reproduce al cliente y produce un espectro no liso sobre la grilla densa. Decisión del propietario.
+
+## 7. Corrección del espectro aserrado y relanzamiento (2026-10-14)
+
+El propietario rechazó la generación aserrada («no podemos tener un espectro aserrado. no podemos tener otros periodos que no sean los interpolados del IMT de NBCC») y preguntó si al usar NBCC hay que cambiar también los períodos del IMT. No hace falta: las tablas de NGA-East (0.01 a 10 s) y AA13 (0.05 a 10 s) cubren toda la grilla de la casa y OpenQuake interpola el movimiento en período; lo que faltaba eran los pesos del árbol en los 21 períodos de la casa que NBCC no lista.
+
+- **Corrección**: `scripts/interpolateNBCCWeights.R` agrega a cada rama NGA-East del seed `gmm/TRT/SCC/gmmLT_NBCC.xml` un peso por período de la casa, interpolado en log(T) entre los nodos oficiales. Nodos oficiales intactos, ramas AA13 con su peso base, 32 períodos SA cubiertos. La primera versión del script dejaba residuos de redondeo de 1 a 2 × 10⁻⁶ en 13 períodos y OpenQuake la rechazó al empaquetar los escenarios (`AssertionError … is_one`, tolerancia 10⁻⁷); la versión definitiva trabaja en micro-unidades y asigna el residuo al mayor peso, con suma exacta 0.5 por período verificada en decimal y con `GsimLogicTree` del motor 3.26.2.
+- **Grilla de IMT**: no cambia. La receta de desagregación pasó también a NBCC (TRT y descripción).
+- **Colas**: las 46 corridas aserradas se abortaron con el endpoint `abort` del motor en ambos servidores (hazard no tiene abort); los paquetes aserrados quedan resguardados en el scratchpad. Reempaquetadas 25 celdas y lanzadas a las 23:51 según la palabra del propietario: tms9900 cálculos 59–62 (classical 1250, 180, 360, 760), 63–70 (S1 y S2 en los mismos Vs30) y 71 (desagregación); motor local 78–81 (classical 1500, 270, 560, 800) y 82–89 (S1 y S2 en los mismos Vs30).
+- **Documentación**: `gmm/docs/gmmLT_NBCC.md` describe el seed interpolado y cómo regenerarlo si cambia la grilla de la casa.
+
+### 7.1 Resultado de la generación interpolada a 760 (cálculo 62 en tms9900, 2026-10-15)
+
+Comparación en `nbcc-interp-vs-nrc2024-760.txt` (columna `nbcc`). El espectro es liso en los 32 períodos: tras el pico en 0.1 s, el cociente entre períodos vecinos va de 0.69 a 0.94, sin ningún tramo creciente. En los nodos oficiales los valores coinciden con la generación aserrada (mismos pesos allí); en los períodos interpolados bajan 25 a 35 % respecto de ella. Frente a la corrida 2024 a TR 2475 y Vs30 760: PGA 0.116 frente a 0.106 g (1.10); SA de 0.05 a 0.3 s entre 0.80 y 0.94; SA de 0.35 a 4 s entre 0.79 y 0.89. Los 25 cálculos (clásicos, escenarios y desagregación) terminaron entre las 00:57 y la 01:24 del 2026-10-15, en 1.5 h desde el lanzamiento.

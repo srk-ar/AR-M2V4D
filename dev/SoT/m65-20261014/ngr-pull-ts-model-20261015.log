@@ -1,0 +1,27 @@
+start 2026-10-15 09:19:22 -0300; owner's word: «hidrata los dos ts.model»
+--- before: sha256
+e515daa452bd038e5b6f9131950de5a4e59d0c3fb6f0e14306bee4bd376c0b7c  _chapters/ts.model.md
+425053b977aa58be507c826fa014634d6cbb311f0a43c567586447e572b69046  _chapters/ts.model.es.md
+--- dry-run
+ngr: Local differences require --force: _chapters/ts.model.es.md, _chapters/ts.model.md
+dry-run exit=1
+--- pull
+ngr: Local differences require --force: _chapters/ts.model.es.md, _chapters/ts.model.md
+pull exit=1
+--- pull refused; retry with --force on the exact two paths (owner's word covers the replacement)
+sha	replace	_chapters/ts.model.es.md
+sha	replace	_chapters/ts.model.md
+[pull] complete: 2 resource contributions
+force exit=0
+--- after: sha256 and diff vs scaffold
+58de3be2a981e8585694adaf9afe5fa8e7a3f7e6e43173b2d5395fd960bdb445  _chapters/ts.model.md
+23bd22b888e118b653377c99d34299622aa2f4b12aab62f4f9bdd9ebc48637b3  _chapters/ts.model.es.md
+ts.model.md vs scaffold: 0 differing lines
+ts.model.es.md vs scaffold: 0 differing lines
+--- ngr status for the two paths
+sha	equal	_chapters/ts.model.es.md
+sha	equal	_chapters/ts.model.md
+--- git status
+ M _chapters/ts.model.es.md
+ M _chapters/ts.model.md
+ M manifest.json

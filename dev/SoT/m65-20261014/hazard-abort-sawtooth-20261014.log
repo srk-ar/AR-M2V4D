@@ -1,0 +1,52 @@
+abort sawtooth queues, owner's word 2026-10-14 («1.ok»): 2026-10-14 23:45:47 -0300
+=== local http://127.0.0.1:8800 ids 54-77 ===
+54 {'error': 'Job 54 is not running'}
+55 {'success': 'Killing job 55'}
+56 {'success': 'Killing job 56'}
+57 {'success': 'Killing job 57'}
+58 {'success': 'Killing job 58'}
+59 {'success': 'Killing job 59'}
+60 {'success': 'Killing job 60'}
+61 {'success': 'Killing job 61'}
+62 {'success': 'Killing job 62'}
+63 {'success': 'Killing job 63'}
+64 {'success': 'Killing job 64'}
+65 {'success': 'Killing job 65'}
+66 {'success': 'Killing job 66'}
+67 {'success': 'Killing job 67'}
+68 {'success': 'Killing job 68'}
+69 {'success': 'Killing job 69'}
+70 {'success': 'Killing job 70'}
+71 {'success': 'Killing job 71'}
+72 {'success': 'Killing job 72'}
+73 {'success': 'Killing job 73'}
+74 {'success': 'Killing job 74'}
+75 {'success': 'Killing job 75'}
+76 {'success': 'Killing job 76'}
+77 {'success': 'Killing job 77'}
+not aborted: [(55, 'failed'), (54, 'complete')]
+=== tms9900 http://127.0.0.1:18800 ids 36-58 ===
+36 {'success': 'Killing job 36'}
+37 {'success': 'Killing job 37'}
+38 {'success': 'Killing job 38'}
+39 {'success': 'Killing job 39'}
+40 {'success': 'Killing job 40'}
+41 {'success': 'Killing job 41'}
+42 {'success': 'Killing job 42'}
+43 {'success': 'Killing job 43'}
+44 {'success': 'Killing job 44'}
+45 {'success': 'Killing job 45'}
+46 {'success': 'Killing job 46'}
+47 {'success': 'Killing job 47'}
+48 {'success': 'Killing job 48'}
+49 {'success': 'Killing job 49'}
+50 {'success': 'Killing job 50'}
+51 {'success': 'Killing job 51'}
+52 {'success': 'Killing job 52'}
+53 {'success': 'Killing job 53'}
+54 {'success': 'Killing job 54'}
+55 {'success': 'Killing job 55'}
+56 {'success': 'Killing job 56'}
+57 {'success': 'Killing job 57'}
+58 {'success': 'Killing job 58'}
+not aborted: [(36, 'failed')]

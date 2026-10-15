@@ -1,0 +1,41 @@
+start 2026-10-15 01:26:25 -0300
+=== tms9900 classical 760,180,360,1250 ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+SUCCESS: complete server export family published: data/hazard/output/classical/M2V4D/CFD/1250
+SUCCESS: complete server export family published: data/hazard/output/classical/M2V4D/CFD/180
+SUCCESS: complete server export family published: data/hazard/output/classical/M2V4D/CFD/360
+SUCCESS: complete server export family published: data/hazard/output/classical/M2V4D/CFD/760
+exit=0
+=== tms9900 scenario S1,S2 180,360,760,1250 ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/1250
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/180
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/360
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/760
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/1250
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/180
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/360
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/760
+exit=0
+=== tms9900 disaggregation ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+SUCCESS: complete server export family published: data/hazard/output/disaggregation/M2V4D/CFD
+exit=0
+=== local classical 270,560,800,1500 ===
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+SUCCESS: complete server export family published: data/hazard/output/classical/M2V4D/CFD/1500
+SUCCESS: complete server export family published: data/hazard/output/classical/M2V4D/CFD/270
+SUCCESS: complete server export family published: data/hazard/output/classical/M2V4D/CFD/560
+SUCCESS: complete server export family published: data/hazard/output/classical/M2V4D/CFD/800
+exit=0
+=== local scenario S1,S2 270,560,800,1500 ===
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/1500
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/270
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/560
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/800
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/1500
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/270
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/560
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/800
+exit=0

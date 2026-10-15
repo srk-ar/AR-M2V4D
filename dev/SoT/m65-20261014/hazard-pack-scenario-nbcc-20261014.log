@@ -1,0 +1,34 @@
+Pack: model=S1 site=CFD mode=scenario vs30=180
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.180.zip sig=7e99402480041b13
+Pack: model=S1 site=CFD mode=scenario vs30=270
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.270.zip sig=d26987d502395d32
+Pack: model=S1 site=CFD mode=scenario vs30=360
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.360.zip sig=2179df41fcf0d404
+Pack: model=S1 site=CFD mode=scenario vs30=560
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.560.zip sig=6eb83c8535e452cc
+Pack: model=S1 site=CFD mode=scenario vs30=760
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.760.zip sig=7c1d192da59ac6a9
+Pack: model=S1 site=CFD mode=scenario vs30=800
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.800.zip sig=29e1b1418cb932fe
+Pack: model=S1 site=CFD mode=scenario vs30=1250
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.1250.zip sig=c6f953ae536b2b76
+Pack: model=S1 site=CFD mode=scenario vs30=1500
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.1500.zip sig=8b9a32f82f540748
+Wrote 8 package(s) under data/hazard/run
+Pack: model=S2 site=CFD mode=scenario vs30=180
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.180.zip sig=054c252bce4eb887
+Pack: model=S2 site=CFD mode=scenario vs30=270
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.270.zip sig=ab962476f86e68c5
+Pack: model=S2 site=CFD mode=scenario vs30=360
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.360.zip sig=04be207332ab36e9
+Pack: model=S2 site=CFD mode=scenario vs30=560
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.560.zip sig=fd10eb270a5a1443
+Pack: model=S2 site=CFD mode=scenario vs30=760
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.760.zip sig=dd36bfbf4e6dc15a
+Pack: model=S2 site=CFD mode=scenario vs30=800
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.800.zip sig=5a5042c788d7f03b
+Pack: model=S2 site=CFD mode=scenario vs30=1250
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.1250.zip sig=3f63f633802ab3d7
+Pack: model=S2 site=CFD mode=scenario vs30=1500
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.1500.zip sig=f5f322f38c62e0c3
+Wrote 8 package(s) under data/hazard/run

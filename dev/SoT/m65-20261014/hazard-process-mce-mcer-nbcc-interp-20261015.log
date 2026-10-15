@@ -1,0 +1,31 @@
+start: 2026-10-15 09:41:15 -0300 (tmux m2v4d-process2; hazard 0.2.0 packaged 2026-10-15 12:35 UTC, commit 88d3aee)
+=== hazard process --steps mce,mcer ===
+Steps: mce,mcer
+[runUHS] MODEL_ID=S1 SITE_ID=CFD UHS_DIR=data/hazard/mce
+[runUHS] MODEL_ID=S1 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=4.82e-10 -> data/hazard/mce/S1/CFD.site/1250
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=3.12e-11 -> data/hazard/mce/S1/CFD.site/1500
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=2.12e-11 -> data/hazard/mce/S1/CFD.site/180
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=7.45e-10 -> data/hazard/mce/S1/CFD.site/270
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=1.75e-09 -> data/hazard/mce/S1/CFD.site/360
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=2.64e-09 -> data/hazard/mce/S1/CFD.site/560
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S1/CFD.site/760
+[runUHS] MODEL_ID=S1 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=3.62e-09 -> data/hazard/mce/S1/CFD.site/800
+[runUHS] MODEL_ID=S2 SITE_ID=CFD UHS_DIR=data/hazard/mce
+[runUHS] MODEL_ID=S2 SITE_ID=CFD: Vs30 targets: 1250,1500,180,270,360,560,760,800
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1250: 296 rows; nq32/64 delta=7.65e-10 -> data/hazard/mce/S2/CFD.site/1250
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=1500: 296 rows; nq32/64 delta=4.41e-11 -> data/hazard/mce/S2/CFD.site/1500
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=180: 296 rows; nq32/64 delta=1.78e-11 -> data/hazard/mce/S2/CFD.site/180
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=270: 296 rows; nq32/64 delta=8.43e-10 -> data/hazard/mce/S2/CFD.site/270
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=360: 296 rows; nq32/64 delta=2.19e-09 -> data/hazard/mce/S2/CFD.site/360
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=560: 296 rows; nq32/64 delta=3.33e-09 -> data/hazard/mce/S2/CFD.site/560
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=760: 296 rows; nq128/256 delta=0 -> data/hazard/mce/S2/CFD.site/760
+[runUHS] MODEL_ID=S2 SITE_ID=CFD Vs30=800: 296 rows; nq32/64 delta=6.35e-09 -> data/hazard/mce/S2/CFD.site/800
+[aggregateMCE] MCEBranchTable rows=8192
+[aggregateMCE] ScenarioTable rows=2
+[aggregateMCE] MCETable rows=16576
+[aggregateMCE] ScenarioGMPETable rows=1776
+MCER rows=768 -> data/hazard/tables/ASCETable.Rds
+Process complete
+exit(mce,mcer)=0
+PROCESS DONE 2026-10-15 09:47:39

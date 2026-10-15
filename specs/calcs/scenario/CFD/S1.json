@@ -4,7 +4,7 @@
   "description": "Crawford official S1, approved 2026-09-22: SCC Mw6.5, Repi100km, depth15km; synthetic regional design scenario, Timiskaming plane analogue324/46/100. See data/hazard/dsha/RATIONALE.md.",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "TRT": {
-    "SCC": "SCC"
+    "SCC": "NBCC"
   },
   "ruptureBase": {
     "lon": -80.5122632102849,

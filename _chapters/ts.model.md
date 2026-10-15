@@ -1,10 +1,10 @@
 Flexible sliding-block models account for the dynamic response of the potential sliding mass through spectral acceleration evaluated at a period proportional to its fundamental period, so each slope geometry--material combination needs $T_s$, which is derived from the geometry and the depth-dependent small-strain shear stiffness, described by $G_o$, $m_o$, and $V_S^o$; the mean values of $T_s$ and $V_{S30}$ provide the dynamic inputs to the permanent-displacement models. The fundamental period of the potential sliding mass is estimated from the first mode of the truncated inhomogeneous shear-beam model of Dakoulas and Gazetas [-@DakoulasGazetas1985Inhomogeneous] as
 
 $$
-T_s=\frac{4\pi H_s}{a_1(2-m_o)V_S^o},
+T_s=\frac{4\pi H}{a_1(2-m_o)V_S^o},
 $${#eq-slope-period}
 
-where $H_s$ is the slope height, $V_S^o$ is the basal shear-wave velocity associated with $G_o$, $m_o$ is the inhomogeneity factor governing the shear-modulus profile, and $a_1$ is the first modal root of the characteristic equation. The modal root depends jointly on $m_o$ and the truncation ratio $\lambda_o$, which geometric similarity gives as
+where $H=H_s/(1-\lambda_o)$ is the height of the truncated wedge from the apex of the extended slopes to the base, $H_s$ is the slope height, $V_S^o$ is the basal shear-wave velocity associated with $G_o$, $m_o$ is the inhomogeneity factor governing the shear-modulus profile, and $a_1$ is the first modal root of the characteristic equation. The modal root depends jointly on $m_o$ and the truncation ratio $\lambda_o$, which geometric similarity gives as
 
 $$
 \lambda_o=\frac{b}{b_{\max}},
@@ -34,7 +34,7 @@ $$
 G(z)=G_o\left(\frac{z}{H_s}\right)^{m_o},
 $${#eq-slope-profile}
 
-where $z$ is depth below the crest, $G_o$ is the fitted shear modulus at the base ($z/H_s=1$), and $m_o$ is obtained from a logarithmic fit to the layer moduli $G_m^{(k)}$. The layer moduli come from the soil classification: the USCS classification assigned to layer $k$ selects its soil family and the associated set of $J^{(k)}$ small-strain shear-modulus correlations compiled by Ishihara [-@Ishihara1996], and the layer modulus is taken as their arithmetic mean,
+where $z$ is depth below the crest, $G_o$ is the fitted shear modulus at the base ($z/H_s=1$), and $m_o$ is obtained from a logarithmic fit to the layer moduli $G_m^{(k)}$; the characteristic equation corresponds to the power law with depth measured from the apex of the extended slopes and normalized by $H$ [-@DakoulasGazetas1985Inhomogeneous], so evaluating $a_1$ with the exponent fitted from the crest is an approximation. The layer moduli come from the soil classification: the USCS classification assigned to layer $k$ selects its soil family and the associated set of $J^{(k)}$ small-strain shear-modulus correlations compiled by Ishihara [-@Ishihara1996], and the layer modulus is taken as their arithmetic mean,
 
 $$
 G_m^{(k)}=\frac{1}{J^{(k)}}\sum_{j=1}^{J^{(k)}}

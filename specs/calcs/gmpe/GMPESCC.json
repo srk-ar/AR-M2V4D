@@ -1,10 +1,10 @@
 {
   "modelID": "GMPESCC",
   "mode": "gmpe",
-  "description": "SCC attenuation grid: per-GMPE behavior vs ensemble",
+  "description": "SCC attenuation grid: CanadaSHM6 NBCC 2020 tree, per-GMPE behavior vs ensemble",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "TRT": {
-    "SCC": "SCC"
+    "SCC": "NBCC"
   },
   "grid": {
     "Mw": {

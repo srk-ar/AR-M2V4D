@@ -1,0 +1,44 @@
+start: 2026-10-14 23:51:21 -0300 (tmux m2v4d-local2, server http://127.0.0.1:8800, interpolated SCC seed)
+=== run classical M2V4D CFD vs30 270,560,800,1500 ===
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+Server calculation 78 created classical/M2V4D/CFD/1500
+Server calculation 79 created classical/M2V4D/CFD/270
+Server calculation 80 created classical/M2V4D/CFD/560
+Server calculation 81 created classical/M2V4D/CFD/800
+run classical exit=0
+=== run scenario S1,S2 CFD vs30 270,560,800,1500 ===
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+Server calculation 82 created scenario/S1/CFD/1500
+Server calculation 83 created scenario/S1/CFD/270
+Server calculation 84 created scenario/S1/CFD/560
+Server calculation 85 created scenario/S1/CFD/800
+Server calculation 86 created scenario/S2/CFD/1500
+Server calculation 87 created scenario/S2/CFD/270
+Server calculation 88 created scenario/S2/CFD/560
+Server calculation 89 created scenario/S2/CFD/800
+run scenario exit=0
+=== polling ===
+2026-10-14 23:51:23 ids 78 .. 89 | 78:created 79:created 80:created 81:created 82:created 83:created 84:created 85:created 86:created 87:created 88:created 89:created
+2026-10-14 23:54:23 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-14 23:57:24 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:00:24 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:03:24 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:06:24 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:09:24 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:12:25 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:15:25 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:18:25 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:21:25 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:24:25 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:27:25 ids 78 .. 89 | 78:executing 79:executing 80:submitted 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:30:26 ids 78 .. 89 | 78:complete 79:complete 80:executing 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:33:26 ids 78 .. 89 | 78:complete 79:complete 80:executing 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:36:26 ids 78 .. 89 | 78:complete 79:complete 80:executing 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:39:26 ids 78 .. 89 | 78:complete 79:complete 80:executing 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:42:26 ids 78 .. 89 | 78:complete 79:complete 80:executing 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:45:26 ids 78 .. 89 | 78:complete 79:complete 80:executing 81:submitted 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:48:27 ids 78 .. 89 | 78:complete 79:complete 80:complete 81:executing 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:51:27 ids 78 .. 89 | 78:complete 79:complete 80:complete 81:executing 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:54:27 ids 78 .. 89 | 78:complete 79:complete 80:complete 81:executing 82:submitted 83:submitted 84:submitted 85:submitted 86:submitted 87:submitted 88:submitted 89:submitted
+2026-10-15 00:57:27 ids 78 .. 89 | 78:complete 79:complete 80:complete 81:complete 82:complete 83:complete 84:complete 85:complete 86:complete 87:complete 88:complete 89:complete
+ALL DONE 2026-10-15 00:57:27

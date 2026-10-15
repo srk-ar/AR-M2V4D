@@ -1,10 +1,10 @@
 {
   "modelID": "GMPESIS30",
   "mode": "gmpe",
-  "description": "SIS30 attenuation grid: per-GMPE behavior vs ensemble",
+  "description": "SIS30 attenuation grid: CanadaSHM6 NBCC 2020 tree, per-GMPE behavior vs ensemble",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "TRT": {
-    "SIS30": "SIS30"
+    "SIS30": "NBCC"
   },
   "grid": {
     "Mw": {

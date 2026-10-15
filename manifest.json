@@ -6564,16 +6564,16 @@
           "sha256": "4850f4ee8bd15f388380b601d83c2204ec0b80281e0534717883de7a280a08db"
         },
         "_chapters/ts.model.es.md": {
-          "commit": "476079b940d29469c9b18bab7285b88d8699336f",
-          "dirty": false,
-          "md5": "8aa8f782e0a23407db3b7b11f55c4c61",
-          "sha256": "425053b977aa58be507c826fa014634d6cbb311f0a43c567586447e572b69046"
+          "commit": "726600cf9d0b278abfd8b84a9dcce2ec60fae099",
+          "dirty": true,
+          "md5": "6057e8e3e9970ca96ea30db8602b8ad0",
+          "sha256": "23bd22b888e118b653377c99d34299622aa2f4b12aab62f4f9bdd9ebc48637b3"
         },
         "_chapters/ts.model.md": {
-          "commit": "476079b940d29469c9b18bab7285b88d8699336f",
-          "dirty": false,
-          "md5": "7b79b9df0f55e052843ff3f96117e233",
-          "sha256": "e515daa452bd038e5b6f9131950de5a4e59d0c3fb6f0e14306bee4bd376c0b7c"
+          "commit": "726600cf9d0b278abfd8b84a9dcce2ec60fae099",
+          "dirty": true,
+          "md5": "691450911ddc5c561552ec352d7cd1a4",
+          "sha256": "58de3be2a981e8585694adaf9afe5fa8e7a3f7e6e43173b2d5395fd960bdb445"
         },
         "_chapters/ts.summary.es.md": {
           "commit": "c1483f36ac5ea09e0c75f283172e1b6b89f5fe32",
@@ -10548,11 +10548,11 @@
           "ownership": "managed"
         },
         "_chapters/ts.model.es.md": {
-          "sha256": "425053b977aa58be507c826fa014634d6cbb311f0a43c567586447e572b69046",
+          "sha256": "23bd22b888e118b653377c99d34299622aa2f4b12aab62f4f9bdd9ebc48637b3",
           "ownership": "managed"
         },
         "_chapters/ts.model.md": {
-          "sha256": "e515daa452bd038e5b6f9131950de5a4e59d0c3fb6f0e14306bee4bd376c0b7c",
+          "sha256": "58de3be2a981e8585694adaf9afe5fa8e7a3f7e6e43173b2d5395fd960bdb445",
           "ownership": "managed"
         },
         "_chapters/ts.summary.es.md": {

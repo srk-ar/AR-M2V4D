@@ -1,0 +1,8 @@
+start 2026-10-15 09:13:30 -0300 tmp=/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/pdf2md-crawford-final-20261015
+pdf2md 1.0.0
+   2.108  rules    doc        R12: 138 pandoc escapes of brackets undone outside LaTeX and code
+   2.109  write    doc        Wrote: /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/pdf2md-crawford-final-20261015/out/CAPR003324_Crawford_SeismicHazard_Final.md
+   2.306  write    doc        Wrote: /private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/pdf2md-crawford-final-20261015/out/CAPR003324_Crawford_SeismicHazard_Final.assets.json
+   2.306  write    doc        OK
+exit=0
+end 2026-10-15 09:13:34

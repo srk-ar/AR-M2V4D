@@ -1,10 +1,10 @@
 {
   "modelID": "GMPESIF",
   "mode": "gmpe",
-  "description": "SIF attenuation grid: per-GMPE behavior vs ensemble",
+  "description": "SIF attenuation grid: CanadaSHM6 NBCC 2020 tree, per-GMPE behavior vs ensemble",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "TRT": {
-    "SIF": "SIF"
+    "SIF": "NBCC"
   },
   "grid": {
     "Mw": {

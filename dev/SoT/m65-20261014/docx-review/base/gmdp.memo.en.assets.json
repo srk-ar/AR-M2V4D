@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "tool": "pdf2md",
+  "started_at_utc": "2026-10-15T12:40:14Z",
+  "finished_at_utc": "2026-10-15T12:40:15Z",
+  "duration_ms": 718,
+  "input_kind": "docx",
+  "input_path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/gmdp.memo.en.docx",
+  "input_size_bytes": 1957284,
+  "page_count": null,
+  "timings_ms": {
+    "extract_text_ms": 718
+  },
+  "metrics": {
+    "raw_text_bytes": 0,
+    "raw_text_lines": 0,
+    "tables_count": 0
+  },
+  "extractor": "D1 pandoc + D2 python-docx",
+  "md_out": "/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/pdf2md-gmdp-memo-20261015/out/gmdp.memo.en.md",
+  "outputs": {
+    "text_md": "/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/pdf2md-gmdp-memo-20261015/out/gmdp.memo.en.md",
+    "media_dir": "/private/tmp/claude-501/-Users-averrik-Cloud-github-projects-AR-M2V4D/bc6bc387-e4e1-4ab5-a8cb-3e5e18735788/scratchpad/pdf2md-gmdp-memo-20261015/out/media"
+  },
+  "toolchain": {
+    "python": {
+      "executable": "/usr/local/libexec/pdf2md/runtimes/app-8_r692kx/venv/bin/python",
+      "version": "3.12.11"
+    },
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "commands": {
+      "qpdf": {
+        "path": "/opt/homebrew/bin/qpdf",
+        "version": "qpdf version 12.4.2"
+      },
+      "pdftotext": {
+        "path": "/opt/homebrew/bin/pdftotext",
+        "version": "pdftotext version 26.10.0"
+      },
+      "pandoc": {
+        "path": "/opt/homebrew/bin/pandoc",
+        "version": "pandoc 3.12"
+      }
+    },
+    "python_packages": {
+      "pdf2md": "1.0.0",
+      "PyMuPDF": "1.27.2",
+      "pdfplumber": "0.11.9",
+      "pdfminer.six": "20251230",
+      "pypdfium2": "5.10.1",
+      "pdftext": "0.7.1",
+      "camelot-py": "2.0.0",
+      "python-docx": "1.2.0",
+      "pymupdf4llm": null
+    }
+  }
+}

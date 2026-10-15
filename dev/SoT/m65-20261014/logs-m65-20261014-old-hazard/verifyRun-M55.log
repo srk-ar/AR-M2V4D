@@ -1,0 +1,89 @@
+verifyRun.R ORIG=<copia Mw 7 de data/newmark antes de combinar, scratchpad> RUN=data/newmark-M55 (las etiquetas 'M65' del script designan la corrida verificada, aquí Mw 5.5)
+== ShearTable ==
+sha orig: 334359667159dd8f928c54d4f40484af1162372a0e4114aee666691104b3cf29 
+sha M65 : 334359667159dd8f928c54d4f40484af1162372a0e4114aee666691104b3cf29 
+
+== PGATable.csv ==
+sha orig: 325fb141ea5126a46bd0baf82b89a76d03a4cc86adc36f3b74ac770f9b6c8cbf 
+sha M65 : 325fb141ea5126a46bd0baf82b89a76d03a4cc86adc36f3b74ac770f9b6c8cbf 
+identical content: TRUE 
+
+== DnTable.Rds ==
+dim orig: 691200x12  dim M65: 691200x12 
+same names: TRUE  same classes: TRUE  same key: TRUE 
+same attribute names: TRUE 
+rows matched by key: 691200 of 691200 
+       ID TRlabel     n nDiff    maxRel
+   <char>  <char> <int> <int>     <num>
+1:  M2V4D     100 76800 33958 0.5952558
+2:  M2V4D    1000 76800 35779 0.5952558
+3:  M2V4D   10000 76800 36208 0.5952558
+4:  M2V4D     200 76800 34191 0.5952558
+5:  M2V4D    2000 76800 36084 0.5952558
+6:  M2V4D    2500 76800 36140 0.5952558
+7:  M2V4D     500 76800 35139 0.5952558
+8:  M2V4D    5000 76800 36244 0.5952558
+9:    MCE     MCE 76800 34531 0.5952558
+
+== kmaxTable.Rds ==
+dim orig: 737280x18  dim M65: 737280x18 
+same names: TRUE  same classes: TRUE  same key: TRUE 
+same attribute names: TRUE 
+rows matched by key: 737280 of 737280 
+       ID TRlabel     n nDiff maxRel
+   <char>  <char> <int> <int>  <num>
+1:  M2V4D     100 81920  6801      1
+2:  M2V4D    1000 81920 22830      1
+3:  M2V4D   10000 81920 33458      1
+4:  M2V4D     200 81920 10294      1
+5:  M2V4D    2000 81920 26519      1
+6:  M2V4D    2500 81920 27748      1
+7:  M2V4D     500 81920 17526      1
+8:  M2V4D    5000 81920 30999      1
+9:    MCE     MCE 81920 20634      1
+
+== DnPlotTable.Rds ==
+dim orig: 64943x8  dim M65: 64361x8 
+same names: TRUE  same classes: TRUE  same key: TRUE 
+same attribute names: TRUE 
+rows matched by key: 55034 of 64943 
+       ID TRlabel     n nDiff    maxRel
+   <char>  <char> <int> <int>     <num>
+1:  M2V4D     100  1753  1011 0.5952558
+2:  M2V4D    1000  6178  3196 0.5952558
+3:  M2V4D   10000  8766  4464 0.5952558
+4:  M2V4D     200  2929  1467 0.5952558
+5:  M2V4D    2000  7397  3895 0.5952558
+6:  M2V4D    2500  7694  4052 0.5952558
+7:  M2V4D     500  4907  2556 0.5952558
+8:  M2V4D    5000  8228  4224 0.5952558
+9:    MCE     MCE  7182  2860 0.5952558
+
+== ky grids per cell identical between runs? ==
+cells: 360  identical ky grids: 360 
+one common grid across all cells (orig): TRUE 
+
+== DnDraws: sampled PGA.s identical between runs (same random stream)? ==
+dim orig: 16200000x11  dim M65: 16200000x11  same key: TRUE 
+       ID TRlabel     n samePGAs sameDnAM88
+   <char>  <char> <int>    <int>      <int>
+1:  M2V4D     100 12000    12000      12000
+2:  M2V4D    1000 12000    12000      12000
+3:  M2V4D   10000 12000    12000      12000
+4:  M2V4D     200 12000    12000      12000
+5:  M2V4D    2000 12000    12000      12000
+6:  M2V4D    2500 12000    12000      12000
+7:  M2V4D     500 12000    12000      12000
+8:  M2V4D    5000 12000    12000      12000
+9:    MCE     MCE 12000    12000      12000
+       ID TRlabel     n sameDnBM19    maxRel
+   <char>  <char> <int>      <int>     <num>
+1:  M2V4D     100 12000          0 0.5952558
+2:  M2V4D    1000 12000          0 0.5952558
+3:  M2V4D   10000 12000          0 0.5952558
+4:  M2V4D     200 12000          0 0.5952558
+5:  M2V4D    2000 12000          0 0.5952558
+6:  M2V4D    2500 12000          0 0.5952558
+7:  M2V4D     500 12000          0 0.5952558
+8:  M2V4D    5000 12000          0 0.5952558
+9:    MCE     MCE 12000          0 0.5952558

@@ -1,0 +1,54 @@
+command: hazard process --root . --steps gmpe
+recipes: specs/calcs/gmpe/GMPE{ASC,SCC,SIF,SIS30}.json with TRT token NBCC
+start: 2026-10-14 23:16:49 -0300
+9a43b757f82441fde1474fa74a2d800b36224bcebed148cc8a850551d1769066  data/hazard/tables/GMPETable.Rds
+Steps: gmpe
+Traceback (most recent call last):
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 178, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 173, in main
+    return buildGrid(calcJson=Args.calcJson, outputCsv=Args.output,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 84, in buildGrid
+    raise FileNotFoundError(f"GMPE logic-tree file not found: {TreePath}")
+FileNotFoundError: GMPE logic-tree file not found: /Users/averrik/kashimaDB/openquake/gmm/TRT/NBCC/gmmLT_NBCC.xml 
+GMPE generation failed for specs/calcs/gmpe/GMPEASC.json: gmpe_grid.py failed
+Traceback (most recent call last):
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 178, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 173, in main
+    return buildGrid(calcJson=Args.calcJson, outputCsv=Args.output,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 84, in buildGrid
+    raise FileNotFoundError(f"GMPE logic-tree file not found: {TreePath}")
+FileNotFoundError: GMPE logic-tree file not found: /Users/averrik/kashimaDB/openquake/gmm/TRT/NBCC/gmmLT_NBCC.xml 
+GMPE generation failed for specs/calcs/gmpe/GMPESCC.json: gmpe_grid.py failed
+Traceback (most recent call last):
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 178, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 173, in main
+    return buildGrid(calcJson=Args.calcJson, outputCsv=Args.output,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 84, in buildGrid
+    raise FileNotFoundError(f"GMPE logic-tree file not found: {TreePath}")
+FileNotFoundError: GMPE logic-tree file not found: /Users/averrik/kashimaDB/openquake/gmm/TRT/NBCC/gmmLT_NBCC.xml 
+GMPE generation failed for specs/calcs/gmpe/GMPESIF.json: gmpe_grid.py failed
+Traceback (most recent call last):
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 178, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 173, in main
+    return buildGrid(calcJson=Args.calcJson, outputCsv=Args.output,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/averrik/Library/R/arm64/4.6/library/hazard/exec/gmpe_grid.py", line 84, in buildGrid
+    raise FileNotFoundError(f"GMPE logic-tree file not found: {TreePath}")
+FileNotFoundError: GMPE logic-tree file not found: /Users/averrik/kashimaDB/openquake/gmm/TRT/NBCC/gmmLT_NBCC.xml 
+GMPE generation failed for specs/calcs/gmpe/GMPESIS30.json: gmpe_grid.py failed
+gmpe failed: a producer failed
+ERROR: Process completed with errors
+end: 2026-10-14 23:17:11 -0300
+exit=1
+9a43b757f82441fde1474fa74a2d800b36224bcebed148cc8a850551d1769066  data/hazard/tables/GMPETable.Rds

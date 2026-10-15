@@ -1,0 +1,57 @@
+start: 2026-10-14 23:51:21 -0300 (tmux m2v4d-remote2, server http://127.0.0.1:18800 -> tms9900, interpolated SCC seed)
+=== run classical M2V4D CFD vs30 760,180,360,1250 ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+Server calculation 59 created classical/M2V4D/CFD/1250
+Server calculation 60 created classical/M2V4D/CFD/180
+Server calculation 61 created classical/M2V4D/CFD/360
+Server calculation 62 created classical/M2V4D/CFD/760
+run classical exit=0
+=== run scenario S1,S2 CFD vs30 180,360,760,1250 ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+Server calculation 63 created scenario/S1/CFD/1250
+Server calculation 64 created scenario/S1/CFD/180
+Server calculation 65 created scenario/S1/CFD/360
+Server calculation 66 created scenario/S1/CFD/760
+Server calculation 67 created scenario/S2/CFD/1250
+Server calculation 68 created scenario/S2/CFD/180
+Server calculation 69 created scenario/S2/CFD/360
+Server calculation 70 created scenario/S2/CFD/760
+run scenario exit=0
+=== run disaggregation M2V4D CFD ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+Server calculation 71 created disaggregation/M2V4D/CFD/760
+run disaggregation exit=0
+=== polling ===
+2026-10-14 23:51:27 ids 59 .. 71 | 59:executing 60:submitted 61:submitted 62:submitted 63:created 64:created 65:created 66:created 67:created 68:created 69:created 70:created 71:created
+2026-10-14 23:54:27 ids 59 .. 71 | 59:executing 60:submitted 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-14 23:57:27 ids 59 .. 71 | 59:executing 60:submitted 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:00:28 ids 59 .. 71 | 59:executing 60:submitted 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:03:28 ids 59 .. 71 | 59:executing 60:submitted 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:06:28 ids 59 .. 71 | 59:executing 60:submitted 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:09:28 ids 59 .. 71 | 59:executing 60:submitted 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:12:28 ids 59 .. 71 | 59:complete 60:executing 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:15:29 ids 59 .. 71 | 59:complete 60:executing 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:18:29 ids 59 .. 71 | 59:complete 60:executing 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:21:29 ids 59 .. 71 | 59:complete 60:executing 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:24:29 ids 59 .. 71 | 59:complete 60:executing 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:27:29 ids 59 .. 71 | 59:complete 60:executing 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:30:30 ids 59 .. 71 | 59:complete 60:executing 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:33:30 ids 59 .. 71 | 59:complete 60:executing 61:submitted 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:36:30 ids 59 .. 71 | 59:complete 60:complete 61:executing 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:39:30 ids 59 .. 71 | 59:complete 60:complete 61:executing 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:42:30 ids 59 .. 71 | 59:complete 60:complete 61:executing 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:45:30 ids 59 .. 71 | 59:complete 60:complete 61:executing 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:48:31 ids 59 .. 71 | 59:complete 60:complete 61:executing 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:51:31 ids 59 .. 71 | 59:complete 60:complete 61:executing 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:54:31 ids 59 .. 71 | 59:complete 60:complete 61:executing 62:submitted 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 00:57:31 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:executing 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 01:00:31 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:executing 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 01:03:31 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:executing 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 01:06:32 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:executing 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 01:09:32 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:executing 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 01:12:32 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:executing 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 01:15:32 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:executing 63:submitted 64:submitted 65:submitted 66:submitted 67:submitted 68:submitted 69:submitted 70:submitted 71:submitted
+2026-10-15 01:18:32 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:complete 63:complete 64:complete 65:complete 66:complete 67:complete 68:complete 69:complete 70:complete 71:executing
+2026-10-15 01:21:33 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:complete 63:complete 64:complete 65:complete 66:complete 67:complete 68:complete 69:complete 70:complete 71:executing
+2026-10-15 01:24:33 ids 59 .. 71 | 59:complete 60:complete 61:complete 62:complete 63:complete 64:complete 65:complete 66:complete 67:complete 68:complete 69:complete 70:complete 71:complete
+ALL DONE 2026-10-15 01:24:33

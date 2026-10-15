@@ -1,0 +1,77 @@
+start: 2026-10-14 23:28:18 -0300 (tmux m2v4d-remote, server http://127.0.0.1:18800 -> tms9900)
+=== run classical M2V4D CFD (760 expected skipped: calc 35 done) ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+Server calculation 36 created classical/M2V4D/CFD/1250
+Server calculation 37 created classical/M2V4D/CFD/1500
+Server calculation 38 created classical/M2V4D/CFD/180
+Server calculation 39 created classical/M2V4D/CFD/270
+Server calculation 40 created classical/M2V4D/CFD/360
+Server calculation 41 created classical/M2V4D/CFD/560
+SKIP: server calculation complete: classical/M2V4D/CFD/760 35
+Server calculation 42 created classical/M2V4D/CFD/800
+run classical exit=0
+=== run scenario S1,S2 CFD ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+Server calculation 43 created scenario/S1/CFD/1250
+Server calculation 44 created scenario/S1/CFD/1500
+Server calculation 45 created scenario/S1/CFD/180
+Server calculation 46 created scenario/S1/CFD/270
+Server calculation 47 created scenario/S1/CFD/360
+Server calculation 48 created scenario/S1/CFD/560
+Server calculation 49 created scenario/S1/CFD/760
+Server calculation 50 created scenario/S1/CFD/800
+Server calculation 51 created scenario/S2/CFD/1250
+Server calculation 52 created scenario/S2/CFD/1500
+Server calculation 53 created scenario/S2/CFD/180
+Server calculation 54 created scenario/S2/CFD/270
+Server calculation 55 created scenario/S2/CFD/360
+Server calculation 56 created scenario/S2/CFD/560
+Server calculation 57 created scenario/S2/CFD/760
+Server calculation 58 created scenario/S2/CFD/800
+run scenario exit=0
+23:29:30 active=23
+23:30:30 active=23
+23:31:30 active=23
+23:32:30 active=23
+23:33:31 active=23
+23:34:31 active=23
+23:35:31 active=23
+23:36:31 active=23
+23:37:31 active=23
+23:38:31 active=23
+23:39:32 active=23
+23:40:32 active=23
+23:41:32 active=23
+23:42:32 active=23
+23:43:32 active=23
+23:44:33 active=23
+23:45:33 active=23
+23:46:33 active=0
+=== final list ===
+Server: http://127.0.0.1:18800 Engine: 3.26.2
+{"cell": "classical/M2V4D/CFD/1250", "server": "http://127.0.0.1:18800", "oqt_sig": "816173d328e422e6", "state": "none", "calculations": [{"id": 36, "status": "failed"}]}
+{"cell": "classical/M2V4D/CFD/1500", "server": "http://127.0.0.1:18800", "oqt_sig": "6bfeb787a789f746", "state": "none", "calculations": [{"id": 37, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/180", "server": "http://127.0.0.1:18800", "oqt_sig": "56e88b4507ced85d", "state": "none", "calculations": [{"id": 38, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/270", "server": "http://127.0.0.1:18800", "oqt_sig": "03fd15573515a7ac", "state": "none", "calculations": [{"id": 39, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/360", "server": "http://127.0.0.1:18800", "oqt_sig": "2de0dffaaa003efd", "state": "none", "calculations": [{"id": 40, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/560", "server": "http://127.0.0.1:18800", "oqt_sig": "3cb2c3c8f1640bf3", "state": "none", "calculations": [{"id": 41, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/760", "server": "http://127.0.0.1:18800", "oqt_sig": "560736bb652dc426", "state": "done", "calculations": [{"id": 35, "status": "complete"}]}
+{"cell": "classical/M2V4D/CFD/800", "server": "http://127.0.0.1:18800", "oqt_sig": "bb4bce34b33d4edd", "state": "none", "calculations": [{"id": 42, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/1250", "server": "http://127.0.0.1:18800", "oqt_sig": "c6f953ae536b2b76", "state": "none", "calculations": [{"id": 43, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/1500", "server": "http://127.0.0.1:18800", "oqt_sig": "8b9a32f82f540748", "state": "none", "calculations": [{"id": 44, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/180", "server": "http://127.0.0.1:18800", "oqt_sig": "7e99402480041b13", "state": "none", "calculations": [{"id": 45, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/270", "server": "http://127.0.0.1:18800", "oqt_sig": "d26987d502395d32", "state": "none", "calculations": [{"id": 46, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/360", "server": "http://127.0.0.1:18800", "oqt_sig": "2179df41fcf0d404", "state": "none", "calculations": [{"id": 47, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/560", "server": "http://127.0.0.1:18800", "oqt_sig": "6eb83c8535e452cc", "state": "none", "calculations": [{"id": 48, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/760", "server": "http://127.0.0.1:18800", "oqt_sig": "7c1d192da59ac6a9", "state": "none", "calculations": [{"id": 49, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/800", "server": "http://127.0.0.1:18800", "oqt_sig": "29e1b1418cb932fe", "state": "none", "calculations": [{"id": 50, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/1250", "server": "http://127.0.0.1:18800", "oqt_sig": "3f63f633802ab3d7", "state": "none", "calculations": [{"id": 51, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/1500", "server": "http://127.0.0.1:18800", "oqt_sig": "f5f322f38c62e0c3", "state": "none", "calculations": [{"id": 52, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/180", "server": "http://127.0.0.1:18800", "oqt_sig": "054c252bce4eb887", "state": "none", "calculations": [{"id": 53, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/270", "server": "http://127.0.0.1:18800", "oqt_sig": "ab962476f86e68c5", "state": "none", "calculations": [{"id": 54, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/360", "server": "http://127.0.0.1:18800", "oqt_sig": "04be207332ab36e9", "state": "none", "calculations": [{"id": 55, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/560", "server": "http://127.0.0.1:18800", "oqt_sig": "fd10eb270a5a1443", "state": "none", "calculations": [{"id": 56, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/760", "server": "http://127.0.0.1:18800", "oqt_sig": "dd36bfbf4e6dc15a", "state": "none", "calculations": [{"id": 57, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/800", "server": "http://127.0.0.1:18800", "oqt_sig": "5a5042c788d7f03b", "state": "none", "calculations": [{"id": 58, "status": "aborted"}]}
+{"cell": "disaggregation/M2V4D/CFD/760", "server": "http://127.0.0.1:18800", "oqt_sig": "ed0134c6288ab014", "state": "none", "calculations": []}
+ALL DONE 2026-10-14 23:46:33 -0300

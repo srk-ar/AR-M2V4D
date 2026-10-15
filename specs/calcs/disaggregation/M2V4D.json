@@ -1,17 +1,17 @@
 {
   "modelID": "M2V4D",
   "mode": "disaggregation",
-  "description": "Crawford (AR-M2V4D), CAN with general TRT GMMs",
+  "description": "Crawford (AR-M2V4D), CAN with CanadaSHM6 NBCC 2020 GMM trees",
   "ssmDir": "~/kashimaDB/openquake/ssm/CAN/model",
   "ssmFile": "ssmLT_CAN.xml",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "gmmFile": "gmmLT_GMM.xml",
   "TRT": {
-    "ASC": "ASC",
-    "SCC": "SCC",
-    "SIF": "SIF",
-    "SIS30": "SIS30",
-    "SIS55": "SIS55"
+    "ASC": "NBCC",
+    "SCC": "NBCC",
+    "SIF": "NBCC",
+    "SIS30": "NBCC",
+    "SIS55": "NBCC"
   },
   "imtl": {"min": 1e-05, "max": 5.0, "n": 40},
   "vs30": 760,

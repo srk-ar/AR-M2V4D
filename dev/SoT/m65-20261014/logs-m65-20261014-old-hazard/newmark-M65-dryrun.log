@@ -1,0 +1,12 @@
+>> Dn models: subduction = FALSE -> BM17 off, BM19 on
+dry run: /Users/averrik/Cloud/github/projects/AR-M2V4D/newmark-M65.json
+steps: dn, kmax
+sites: CFD
+dn: writes /Users/averrik/Cloud/github/projects/AR-M2V4D/data/newmark-M65/M2V4D/CFD/DnDraws.Rds
+dn: writes /Users/averrik/Cloud/github/projects/AR-M2V4D/data/newmark-M65/M2V4D/CFD/PGATable.csv
+dn: writes /Users/averrik/Cloud/github/projects/AR-M2V4D/data/newmark-M65/M2V4D/CFD/DnTable.Rds
+dn: writes /Users/averrik/Cloud/github/projects/AR-M2V4D/data/newmark-M65/DnPlotTable.Rds
+dn: writes /Users/averrik/Cloud/github/projects/AR-M2V4D/data/newmark-M65/DnTable.Rds
+kmax: writes /Users/averrik/Cloud/github/projects/AR-M2V4D/data/newmark-M65/M2V4D/CFD/kmaxTable.Rds
+kmax: writes /Users/averrik/Cloud/github/projects/AR-M2V4D/data/newmark-M65/kmaxTable.Rds
+dry-run exit=0

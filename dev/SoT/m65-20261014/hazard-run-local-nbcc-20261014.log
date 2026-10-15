@@ -1,0 +1,82 @@
+start: 2026-10-14 23:23:20 -0300 (tmux m2v4d-local, server http://127.0.0.1:8800)
+=== run classical M2V4D CFD, 8 Vs30 ===
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+Server calculation 54 created classical/M2V4D/CFD/1250
+Server calculation 55 created classical/M2V4D/CFD/1500
+Server calculation 56 created classical/M2V4D/CFD/180
+Server calculation 57 created classical/M2V4D/CFD/270
+Server calculation 58 created classical/M2V4D/CFD/360
+Server calculation 59 created classical/M2V4D/CFD/560
+Server calculation 60 created classical/M2V4D/CFD/760
+Server calculation 61 created classical/M2V4D/CFD/800
+run classical exit=0
+=== run scenario S1,S2 CFD, 16 cells ===
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+Server calculation 62 created scenario/S1/CFD/1250
+Server calculation 63 created scenario/S1/CFD/1500
+Server calculation 64 created scenario/S1/CFD/180
+Server calculation 65 created scenario/S1/CFD/270
+Server calculation 66 created scenario/S1/CFD/360
+Server calculation 67 created scenario/S1/CFD/560
+Server calculation 68 created scenario/S1/CFD/760
+Server calculation 69 created scenario/S1/CFD/800
+Server calculation 70 created scenario/S2/CFD/1250
+Server calculation 71 created scenario/S2/CFD/1500
+Server calculation 72 created scenario/S2/CFD/180
+Server calculation 73 created scenario/S2/CFD/270
+Server calculation 74 created scenario/S2/CFD/360
+Server calculation 75 created scenario/S2/CFD/560
+Server calculation 76 created scenario/S2/CFD/760
+Server calculation 77 created scenario/S2/CFD/800
+run scenario exit=0
+23:24:24 active=24
+23:25:24 active=24
+23:26:24 active=24
+23:27:24 active=24
+23:28:24 active=24
+23:29:25 active=24
+23:30:25 active=24
+23:31:25 active=24
+23:32:25 active=24
+23:33:25 active=23
+23:34:25 active=23
+23:35:25 active=23
+23:36:26 active=23
+23:37:26 active=23
+23:38:26 active=23
+23:39:26 active=23
+23:40:26 active=23
+23:41:27 active=23
+23:42:27 active=23
+23:43:27 active=23
+23:44:27 active=23
+23:45:27 active=23
+23:46:28 active=0
+=== final list ===
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+{"cell": "classical/M2V4D/CFD/1250", "server": "http://127.0.0.1:8800", "oqt_sig": "816173d328e422e6", "state": "done", "calculations": [{"id": 54, "status": "complete"}]}
+{"cell": "classical/M2V4D/CFD/1500", "server": "http://127.0.0.1:8800", "oqt_sig": "6bfeb787a789f746", "state": "none", "calculations": [{"id": 55, "status": "failed"}]}
+{"cell": "classical/M2V4D/CFD/180", "server": "http://127.0.0.1:8800", "oqt_sig": "56e88b4507ced85d", "state": "none", "calculations": [{"id": 56, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/270", "server": "http://127.0.0.1:8800", "oqt_sig": "03fd15573515a7ac", "state": "none", "calculations": [{"id": 57, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/360", "server": "http://127.0.0.1:8800", "oqt_sig": "2de0dffaaa003efd", "state": "none", "calculations": [{"id": 58, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/560", "server": "http://127.0.0.1:8800", "oqt_sig": "3cb2c3c8f1640bf3", "state": "none", "calculations": [{"id": 59, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/760", "server": "http://127.0.0.1:8800", "oqt_sig": "560736bb652dc426", "state": "none", "calculations": [{"id": 60, "status": "aborted"}]}
+{"cell": "classical/M2V4D/CFD/800", "server": "http://127.0.0.1:8800", "oqt_sig": "bb4bce34b33d4edd", "state": "none", "calculations": [{"id": 61, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/1250", "server": "http://127.0.0.1:8800", "oqt_sig": "c6f953ae536b2b76", "state": "none", "calculations": [{"id": 62, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/1500", "server": "http://127.0.0.1:8800", "oqt_sig": "8b9a32f82f540748", "state": "none", "calculations": [{"id": 63, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/180", "server": "http://127.0.0.1:8800", "oqt_sig": "7e99402480041b13", "state": "none", "calculations": [{"id": 64, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/270", "server": "http://127.0.0.1:8800", "oqt_sig": "d26987d502395d32", "state": "none", "calculations": [{"id": 65, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/360", "server": "http://127.0.0.1:8800", "oqt_sig": "2179df41fcf0d404", "state": "none", "calculations": [{"id": 66, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/560", "server": "http://127.0.0.1:8800", "oqt_sig": "6eb83c8535e452cc", "state": "none", "calculations": [{"id": 67, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/760", "server": "http://127.0.0.1:8800", "oqt_sig": "7c1d192da59ac6a9", "state": "none", "calculations": [{"id": 68, "status": "aborted"}]}
+{"cell": "scenario/S1/CFD/800", "server": "http://127.0.0.1:8800", "oqt_sig": "29e1b1418cb932fe", "state": "none", "calculations": [{"id": 69, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/1250", "server": "http://127.0.0.1:8800", "oqt_sig": "3f63f633802ab3d7", "state": "none", "calculations": [{"id": 70, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/1500", "server": "http://127.0.0.1:8800", "oqt_sig": "f5f322f38c62e0c3", "state": "none", "calculations": [{"id": 71, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/180", "server": "http://127.0.0.1:8800", "oqt_sig": "054c252bce4eb887", "state": "none", "calculations": [{"id": 72, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/270", "server": "http://127.0.0.1:8800", "oqt_sig": "ab962476f86e68c5", "state": "none", "calculations": [{"id": 73, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/360", "server": "http://127.0.0.1:8800", "oqt_sig": "04be207332ab36e9", "state": "none", "calculations": [{"id": 74, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/560", "server": "http://127.0.0.1:8800", "oqt_sig": "fd10eb270a5a1443", "state": "none", "calculations": [{"id": 75, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/760", "server": "http://127.0.0.1:8800", "oqt_sig": "dd36bfbf4e6dc15a", "state": "none", "calculations": [{"id": 76, "status": "aborted"}]}
+{"cell": "scenario/S2/CFD/800", "server": "http://127.0.0.1:8800", "oqt_sig": "5a5042c788d7f03b", "state": "none", "calculations": [{"id": 77, "status": "aborted"}]}
+{"cell": "disaggregation/M2V4D/CFD/760", "server": "http://127.0.0.1:8800", "oqt_sig": "ed0134c6288ab014", "state": "none", "calculations": [{"id": 13, "status": "failed"}, {"id": 14, "status": "failed"}]}
+ALL DONE 2026-10-14 23:46:28 -0300

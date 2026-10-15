@@ -4,7 +4,7 @@
   "description": "Crawford official S2, approved 2026-09-22: SCC Mw4.5, Repi5km, depth2.5km; synthetic near-site design scenario, idealized North G plane112.5/80/90. See data/hazard/dsha/RATIONALE.md.",
   "gmmDir": "~/kashimaDB/openquake/gmm/TRT",
   "TRT": {
-    "SCC": "SCC"
+    "SCC": "NBCC"
   },
   "ruptureBase": {
     "lon": -81.3261110877116,
