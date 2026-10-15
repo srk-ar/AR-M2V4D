@@ -11,7 +11,7 @@ k_{\max} (p_e\mid D_a)
 =\inf\left\{k_y:P[D_n (k_y)>D_a]\leq p_e\right\}.
 $${#eq-kmax-criterion}
 
-where $p_e$ is the target probability that $D_n$ exceeds $D_a$: $k_{\max}$ is the smallest $k_y$ for which the probability of exceeding the allowable displacement is at most $p_e$. The normalized coefficient, reported as a percentage of the PGA [% of PGA], is calculated with the PGA transformed to the $V_{S30}$ of the geometry--material combination evaluated for each demand:
+where $p_e$ is the target probability that $D_n$ exceeds $D_a$: $k_{\max}$ is the smallest $k_y$ for which the probability of exceeding the allowable displacement is at most $p_e$. The normalized coefficient, reported as a percentage of the PGA [% of PGA], is calculated using the site-condition PGA transformed to the $V_{S30}$ of the geometry--material combination evaluated for each demand:
 
 $$
 k_h=\frac{k_{\max}}{\mathrm{PGA} (V_{S30})}.

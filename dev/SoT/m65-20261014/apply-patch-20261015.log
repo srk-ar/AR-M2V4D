@@ -1,0 +1,67 @@
+blocks parsed: 54
+B01   _results/dn.results.qmd:7  ok
+B02   _results/dn.results.qmd:7  ok
+B03   _results/kmax.results.qmd:6  ok
+B05   _chapters/deq.kmax.md:1  ok
+B06   _chapters/deq.kmax.md:1  ok
+B07   _chapters/deq.kmax.md:1  ok
+B10   _chapters/deq.kmax.md:5  ok
+B11   _chapters/deq.kmax.md:5  ok
+B12   _chapters/deq.kmax.md:5  ok
+B15   _chapters/ts.model.md:13  ok
+B16   _chapters/ts.model.md:31  ok
+B21   _chapters/ts.model.md:82  ok
+B25   _chapters/dn.ensemble.md:1  ok
+B26   _chapters/dn.ensemble.md:1  ok
+B27   _chapters/dn.ensemble.md:3  ok
+B28   _chapters/dn.ensemble.md:3  ok
+B30   _chapters/dn.ensemble.md:5  ok
+B33   _chapters/dn.ensemble.md:7  ok
+B35   _chapters/dn.ensemble.md:11  ok
+B37   _chapters/dn.model.md:14  ok
+B38   _chapters/dn.uncertainty.md:1  ok
+B39   _chapters/dn.uncertainty.md:3  ok
+B40   _chapters/dn.uncertainty.md:3  ok
+B41   _chapters/dn.uncertainty.md:5  ok
+B42   _chapters/dn.uncertainty.md:5  ok
+B44   _chapters/dn.uncertainty.md:11  ok
+B45   _local/gmdp.memo.en.qmd:45  ok
+B01   _local/gmdp.memo.en.qmd:53  ok
+B02   _local/gmdp.memo.en.qmd:53  ok
+B03   _local/gmdp.memo.en.qmd:53  ok
+B05   _local/gmdp.memo.en.qmd:66  ok
+B06   _local/gmdp.memo.en.qmd:66  ok
+B07   _local/gmdp.memo.en.qmd:66  ok
+B10   _local/gmdp.memo.en.qmd:70  ok
+B11   _local/gmdp.memo.en.qmd:70  ok
+B12   _local/gmdp.memo.en.qmd:70  ok
+B15   _local/gmdp.memo.en.qmd:88  ok
+B16   _local/gmdp.memo.en.qmd:106  ok
+B21   _local/gmdp.memo.en.qmd:157  ok
+B25   _local/gmdp.memo.en.qmd:182  ok
+B26   _local/gmdp.memo.en.qmd:182  ok
+B27   _local/gmdp.memo.en.qmd:184  ok
+B28   _local/gmdp.memo.en.qmd:184  ok
+B30   _local/gmdp.memo.en.qmd:186  ok
+B33   _local/gmdp.memo.en.qmd:188  ok
+B35   _local/gmdp.memo.en.qmd:192  ok
+B37   _local/gmdp.memo.en.qmd:207  ok
+B38   _local/gmdp.memo.en.qmd:215  ok
+B39   _local/gmdp.memo.en.qmd:217  ok
+B40   _local/gmdp.memo.en.qmd:217  ok
+B41   _local/gmdp.memo.en.qmd:219  ok
+B42   _local/gmdp.memo.en.qmd:219  ok
+B44   _local/gmdp.memo.en.qmd:227  ok
+B46   _local/tbl.Ts.md:1  ok
+applied 54 | not applied 0
+memo apex line 4: occurrences of old text = 1; replaced
+memo apex line 7: occurrences of old text = 1; replaced
+memo apex line 37: occurrences of old text = 0; NOT replaced
+memo still mentions 4\pi H_s: False
+ts.model.es.md lines changed by the apex commit: [4, 7, 29]
+memo es line 4: occurrences of old text = 1; replaced
+memo es line 7: occurrences of old text = 1; replaced
+memo es line 29: occurrences of old text = 1; replaced
+memo es still has 4\pi H_s: False
+memo en line 112 apex caveat: occurrences of anchor = 1 -> inserted
+memo bib already has DakoulasGazetas1985Inhomogeneous

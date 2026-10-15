@@ -1,0 +1,15 @@
+start 2026-10-15 10:22:15 -0300 (hazard reinstalada por el propietario; gmpe con tokens NBCC)
+Steps: gmpe
+WARNING: 5 (Mw, dep) cells skipped — rupture plane does not fit above the surface at that depth: Mw 8.6-9.0
+gmpe grid rows=220416 -> /var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpYjJ7Y7/gmpe-grid-111fa46a96de1.csv 
+[runGMPE] ID=GMPEASC rows=1102080 total=11741184 -> data/hazard/tables/GMPETable.Rds
+WARNING: 9 (Mw, dep) cells skipped — rupture plane does not fit above the surface at that depth: Mw 8.2-9.0
+gmpe grid rows=795648 -> /var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpYjJ7Y7/gmpe-grid-111fa1d6cf305.csv 
+[runGMPE] ID=GMPESCC rows=2784768 total=13233024 -> data/hazard/tables/GMPETable.Rds
+gmpe grid rows=247296 -> /var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpYjJ7Y7/gmpe-grid-111fa5bc6dc5a.csv 
+[runGMPE] ID=GMPESIF rows=1236480 total=12120192 -> data/hazard/tables/GMPETable.Rds
+WARNING: 1 (Mw, dep) cells skipped — rupture plane does not fit above the surface at that depth: Mw 9.0-9.0
+gmpe grid rows=736512 -> /var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpYjJ7Y7/gmpe-grid-111fa5cacc7c8.csv 
+[runGMPE] ID=GMPESIS30 rows=3682560 total=8805888 -> data/hazard/tables/GMPETable.Rds
+Process complete
+exit=0

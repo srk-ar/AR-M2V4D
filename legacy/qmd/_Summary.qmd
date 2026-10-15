@@ -1,5 +1,0 @@
-## Summary
-
-{{< include qmd/chapters/_Summary.qmd >}}
-
-

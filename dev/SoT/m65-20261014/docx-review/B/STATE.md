@@ -15,13 +15,16 @@ Hijo B (reconciliación y mapeo): a partir de los dos inventarios independientes
 
 ## Evidence and no-repeat
 
-- 2026-10-15: locator DELEGATION validado contra `dev/SoT/m65-20261014/STATE.md` («## Delegations», mission y state idénticos; revalidado tras un cambio del archivo del coordinador). Skills `continuity` y `writing` traídas con el comando del catálogo (`unchanged`) y leídas (`writing`: SKILL.md y references/cases.md).
-- Insumos leídos completos en esta sesión (sha256 16, bytes): DOCX editado `a1039d4829249121` 30789; memo base convertido `f02d6d0a5712f1f4` 106060; A1/EDITS `6f06854cc56a9ac0` 67763; A1/SUMMARY `6d16441a746e7177` 24231; A2/EDITS `d8e5228bb7287726` 83044; A2/SUMMARY `4b1f86453e837dbc` 8875; deq.criteria `4cba543a0280505e`; deq.kmax `385c18cb8f839fc9`; ts.model `58de3be2a981e858` 6406; dn.ensemble `b8fd331e9dda05ad`; dn.model `04961b5912ccf7c7`; dn.uncertainty `d62795bf18df6626`; dn.appendix `c742fc249db84b6b`; dn.inputs `8fc427c0994b5526`; dn.results `61ce786f89507979`; kmax.results `90bfd1474ac3c260`; ts.results `fbd266ec8ce58fa5`; _local/gmdp.memo.en.qmd `7e0a6a04822551a4`; _captions/tbl.Ts.md `5e3762fd1c18cf32`; _docx/sdc.qmd `90a33867602334e7`; _docx/gmdp.qmd `017c66d8c98c51fa`; además _local/tbl.Ts.md, _local/fig.kh.md, _local/tbl.kh.md, _captions/fig.kh.md, _captions/tbl.kh.md, _captions/tbl.kh.sites.md, _local/gmdp.memo.scenarios.csv y _chapters/notation.md:105,109.
-- Comparación directa DOCX↔memo base por oración (script en el scratchpad de la sesión, sin escritura en el proyecto): confirma la cobertura de A1 y A2 y agrega una edición de números que ninguno registró (Tabla 10-1: $a_1$ redondeado de 3.6559, 3.3699, 3.1162, 3.1052, 2.9759 a 3.656, 3.370, 3.116, 3.105, 2.976).
+- 2026-10-15: locator DELEGATION validado contra `dev/SoT/m65-20261014/STATE.md` («## Delegations», mission y state idénticos; revalidado tras un cambio del archivo del coordinador). Skills `continuity` y `writing` traídas con el comando del catálogo (`unchanged`) y leídas.
+- Insumos leídos en esta sesión, con sha256 (16) y bytes, en `SUMMARY.md` («Insumos leídos»); ninguna fuente cambió entre las lecturas de A1/A2 y las de B (hashes iguales a los de A1/SUMMARY y A2/EDITS).
+- Entregables escritos en el write root (sha256 16, bytes): `MAP.md` `c06e02ef23f4a00e` 99009; `PATCH.md` `b34c39840c47d4b8` 41997; `DECISIONES-PROPIETARIO.md` `ef7ea8259a485052` 27970; `SUMMARY.md` `3848d569ee82668d` 13574. Generados por scripts del scratchpad de la sesión que extraen cada oración de su archivo y verifican fragmentos y reemplazos.
+- Veredicto B (propuesta, sin aplicar): 109 ediciones (102 en 54 oraciones o elementos y 7 transversales): portar 40, portar corregida 10, no portar: contenido 35, no portar: números 6, no portar: artefacto 16, superada 2. PATCH: 54 bloques (26 en fuentes del Word, 28 en el memo). DECISIONES: 16 puntos con 41 ediciones. Edición nueva frente a A1/A2: B47a (redondeo de $a_1$ en su Tabla 10-1).
+- `check_entities.py` (skill writing) sobre las 54 oraciones propuestas: 0 siglas, nombres o números sin fuente; 9 marcas de registro ya presentes en las oraciones actuales; propuestas ASCII. Sin libro de procedencia ni `audit.py deliver`: ninguna propuesta declarada lista.
+- NEXT-CLOSED {"evidence":"MAP.md, PATCH.md, DECISIONES-PROPIETARIO.md y SUMMARY.md escritos en dev/SoT/m65-20261014/docx-review/B/ (hashes arriba); estado validado con continuity.py","id":"m65-20261014.docx-review.B.v1"}
 
 ## Effects
 
-none yet
+- Escritura sólo en el write root `dev/SoT/m65-20261014/docx-review/B/`: los cuatro entregables y este STATE.md. Sin cambios en fuentes, inventarios A1/A2, docx/, scaffold ni Git. La copia de las skills `continuity` y `writing` en `.claude/skills/` quedó `unchanged`.
 
 ## Blocker
 
@@ -29,7 +32,7 @@ none
 
 ## Next
 
-NEXT-ID {"action":"Leer completos los insumos, reconciliar A1 y A2 contra el memo base, decidir y ubicar cada edición, escribir MAP.md, PATCH.md, DECISIONES-PROPIETARIO.md y SUMMARY.md en dev/SoT/m65-20261014/docx-review/B/, reescribir y validar este estado, e informar al coordinador.","id":"m65-20261014.docx-review.B.v1"}
+NEXT-ID {"action":"Entregar el informe final al coordinador","id":"m65-20261014.docx-review.B.report.v1"}
 
 ## Status
 

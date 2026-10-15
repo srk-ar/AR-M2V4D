@@ -10,7 +10,7 @@ $$
 \lambda_o=\frac{b}{b_{\max}},
 $${#eq-slope-truncation}
 
-where $b$ and $b_{\max}$ are the berm and base widths, respectively. The equivalent truncated section in the Dakoulas--Gazetas model [-@DakoulasGazetas1985Inhomogeneous] is specified by the height $H_s$, slope ratio $s$, and truncation ratio $\lambda_o$; with $\tan\beta=1/s$, where $\beta$ is the slope angle, the berm width is
+where $b$ and $b_{\max}$ are the berm and base widths, respectively. The equivalent truncated section in the Dakoulas--Gazetas model [-@DakoulasGazetas1985Inhomogeneous] is specified by the height $H_s$, slope ratio $s$, and truncation ratio $\lambda_o$; with $\tan\beta=1/s$, where $\beta$ is the slope angle, the berm width is given by
 
 $$
 b=\frac{2H_s s}{1/\lambda_o-1}.
@@ -28,7 +28,7 @@ $$
 V_S^o=\left(\frac{gG_o}{\gamma_{\mathrm{sat}}^{(k_{\mathrm{b}})}}\right)^{1/2},
 $${#eq-slope-basal-velocity}
 
-where $G_o$ is the fitted small-strain shear modulus at the base, $g$ is the acceleration of gravity, and $\gamma_{\mathrm{sat}}^{(k_{\mathrm{b}})}$ is the saturated unit weight of the basal layer, whose index is $k_{\mathrm{b}}$; all quantities are expressed in consistent units. The depth dependence of small-strain shear stiffness is represented for each realization by the power-law profile
+where $G_o$ is the fitted small-strain shear modulus at the base, $g$ is the acceleration of gravity, and $\gamma_{\mathrm{sat}}^{(k_{\mathrm{b}})}$ is the saturated unit weight of the basal layer, indexed by $k_{\mathrm{b}}$; all quantities are expressed in consistent units. The depth dependence of small-strain shear stiffness is represented for each realization by the power-law profile
 
 $$
 G(z)=G_o\left(\frac{z}{H_s}\right)^{m_o},
@@ -79,7 +79,7 @@ SiteGo.groups <- c(Sands = "Sands", Fines = "Fines", Gravels = "Gravels")
 
 {{< include /_tbl/SiteGo.qmd >}}
 
-For each geometry--material combination, the analysis generates $N$ synthetic realizations of the layered profile, and each of $G_o$, $m_o$, $V_S^o$, and $V_{S30}$ is summarized by its mean and selected marginal fractiles; for the mean and for each reported fractile, $a_1$ and $T_s$ are evaluated from the corresponding $m_o$ and $V_S^o$ values, and the mean estimates provide the dynamic properties used in the displacement analysis. $V_{S30}$ is the travel-time-averaged shear-wave velocity in the uppermost 30 m:
+For each geometry--material combination, the analysis generates $N$ synthetic realizations of the layered profile, and each of $G_o$, $m_o$, $V_S^o$, and $V_{S30}$ is summarized by its mean and selected marginal fractiles; for the mean and for each reported fractile, $a_1$ and $T_s$ are evaluated from the corresponding $m_o$ and $V_S^o$ values, and the estimates calculated from the mean parameter values provide the dynamic properties used in the displacement analysis. $V_{S30}$ is the travel-time-averaged shear-wave velocity in the uppermost 30 m:
 
 $$
 V_{S30}=\frac{30}{

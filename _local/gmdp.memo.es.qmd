@@ -76,10 +76,10 @@ Ese objetivo se expresa como un desplazamiento permanente admisible relativo a l
 Los modelos de desplazamiento de bloque flexible evalúan la demanda espectral en períodos proporcionales al período fundamental de la masa potencialmente deslizante, de modo que cada combinación de geometría y material necesita $T_s$, que se obtiene a partir de la geometría del talud y de la variación del módulo de corte de pequeña deformación con la profundidad, representada por $G_o$, $m_o$ y $V_S^o$; los valores medios de $T_s$ y $V_{S30}$ caracterizan la respuesta dinámica empleada en los modelos de desplazamiento de la sección dedicada a los desplazamientos permanentes. El período fundamental de la masa potencialmente deslizante se representa mediante el primer modo de una viga de corte inhomogénea truncada [-@DakoulasGazetas1985Inhomogeneous]:
 
 $$
-T_s=\frac{4\pi H_s}{a_1(2-m_o)V_S^o}.
+T_s=\frac{4\pi H}{a_1(2-m_o)V_S^o}.
 $${#eq-slope-period}
 
-En la expresión [-@eq-slope-period], $H_s$ es la altura del talud; $V_S^o$ es la velocidad de onda de corte correspondiente al módulo basal $G_o$; $m_o$ es el exponente del perfil de rigidez; y $a_1$ es la primera raíz de la ecuación característica. El valor de $a_1$ depende conjuntamente de $m_o$ y de la razón de truncamiento $\lambda_o$, que puede expresarse, por semejanza geométrica, según la expresión [-@eq-slope-truncation], donde $b$ es el ancho de la berma y $b_{\max}$ es el ancho de la base.
+En la expresión [-@eq-slope-period], $H=H_s/(1-\lambda_o)$ es la altura de la cuña truncada desde el vértice de los taludes prolongados hasta la base y $H_s$ es la altura del talud; $V_S^o$ es la velocidad de onda de corte correspondiente al módulo basal $G_o$; $m_o$ es el exponente del perfil de rigidez; y $a_1$ es la primera raíz de la ecuación característica. El valor de $a_1$ depende conjuntamente de $m_o$ y de la razón de truncamiento $\lambda_o$, que puede expresarse, por semejanza geométrica, según la expresión [-@eq-slope-truncation], donde $b$ es el ancho de la berma y $b_{\max}$ es el ancho de la base.
 
 $$
 \lambda_o=\frac{b}{b_{\max}}.
@@ -101,7 +101,7 @@ $$
 V_S^o=\left(\frac{gG_o}{\gamma_{\mathrm{sat}}^{(k_{\mathrm{b}})}}\right)^{1/2}.
 $${#eq-slope-basal-velocity}
 
-El perfil de rigidez de cada realización se representa según la expresión [-@eq-slope-profile], donde $z$ es la profundidad medida desde la coronación, $G_o$ es el módulo ajustado en $z/H_s=1$ y $m_o$ es el exponente obtenido del ajuste logarítmico de los módulos de capa $G_m^{(k)}$.
+El perfil de rigidez de cada realización se representa según la expresión [-@eq-slope-profile], donde $z$ es la profundidad medida desde la coronación, $G_o$ es el módulo ajustado en $z/H_s=1$ y $m_o$ es el exponente obtenido del ajuste logarítmico de los módulos de capa $G_m^{(k)}$; la ecuación característica corresponde a la ley de potencia con la profundidad medida desde el vértice de los taludes prolongados y normalizada por $H$ [-@DakoulasGazetas1985Inhomogeneous], de modo que evaluar $a_1$ con el exponente ajustado desde la coronación es una aproximación.
 
 $$
 G(z)=G_o\left(\frac{z}{H_s}\right)^{m_o}.

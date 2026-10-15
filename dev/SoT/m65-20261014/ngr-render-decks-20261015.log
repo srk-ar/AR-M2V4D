@@ -1,0 +1,895 @@
+start: 2026-10-15 11:03:14 -0300 (tmux m2v4d-render3; --only gmdp,ts,dn,kmax,kh,sdc tras las ediciones aprobadas; luego docx.en)
+[render manifest] gmdp source=_master/gmdp.en.qmd profile=revealjs path=html/gmdp
+Render timestamp: 2026-10-15 11:03:15 -03
+[render] revealjs -> html/gmdp/
+[31m
+
+processing file: gmdp.en.qmd
+[39m1/11                  
+2/11 [setup]          
+3/11                  
+4/11 [unnamed-chunk-1]
+5/11                  
+6/11 [unnamed-chunk-2]
+7/11                  
+8/11 [toc-decks]      
+9/11                  
+10/11 [unnamed-chunk-3]
+11/11                  
+[31moutput file: gmdp.en.knit.md
+
+[39m[1mpandoc [22m
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpQTKpIT/ngr-render-291a4fc62803/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+[1mmetadata[22m
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  
+Output created: _ngr-output/index.html
+
+[render manifest] ts source=_master/gmdp.ts.en.qmd profile=revealjs path=html/gmdp.ts
+Render timestamp: 2026-10-15 11:03:24 -03
+[render] revealjs -> html/gmdp.ts/
+[31m
+
+processing file: gmdp.ts.en.qmd
+[39m1/15                  
+2/15 [setup]          
+3/15                  
+4/15 [unnamed-chunk-1]
+5/15                  
+6/15 [unnamed-chunk-2]
+7/15                  
+8/15 [unnamed-chunk-3]
+9/15                  
+10/15 [tbl-idg-0]      
+11/15                  
+12/15 [unnamed-chunk-4]
+13/15                  
+14/15 [unnamed-chunk-5]
+15/15                  
+[31moutput file: gmdp.ts.en.knit.md
+
+[39m[1mpandoc [22m
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpQTKpIT/ngr-render-291a5a6d05df/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+[1mmetadata[22m
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  author:
+    - name: Alejandro Verri Kozlowski, PEng
+      position: Corporate Consultant (Geotechnical Earthquake Engineering)
+      affiliation: SRK Consulting
+      email: averri@srk.com.ar
+  bibliography:
+    - bib/references.bib
+    - _local/bib/references.bib
+  csl: bib/apa.csl
+  
+Output created: _ngr-output/index.html
+
+[render manifest] dn source=_master/gmdp.dn.en.qmd profile=revealjs path=html/gmdp.dn
+Render timestamp: 2026-10-15 11:03:34 -03
+[render] revealjs -> html/gmdp.dn/
+[31m
+
+processing file: gmdp.dn.en.qmd
+[39m1/7                  
+2/7 [setup]          
+3/7                  
+4/7 [unnamed-chunk-1]
+5/7                  
+6/7 [unnamed-chunk-2]
+7/7                  
+[31moutput file: gmdp.dn.en.knit.md
+
+[39m[1mpandoc [22m
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpQTKpIT/ngr-render-291a2b9ca1da/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+[1mmetadata[22m
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  author:
+    - name: Alejandro Verri Kozlowski, PEng
+      position: Corporate Consultant (Geotechnical Earthquake Engineering)
+      affiliation: SRK Consulting
+      email: averri@srk.com.ar
+  bibliography:
+    - bib/references.bib
+    - _local/bib/references.bib
+  csl: bib/apa.csl
+  
+Output created: _ngr-output/index.html
+
+[render manifest] kmax source=_master/gmdp.kmax.en.qmd profile=revealjs path=html/gmdp.kmax
+Render timestamp: 2026-10-15 11:04:02 -03
+[render] revealjs -> html/gmdp.kmax/
+[31m
+
+processing file: gmdp.kmax.en.qmd
+[39m1/7                  
+2/7 [setup]          
+3/7                  
+4/7 [unnamed-chunk-1]
+5/7                  
+6/7 [unnamed-chunk-2]
+7/7                  
+[31moutput file: gmdp.kmax.en.knit.md
+
+[39m[1mpandoc [22m
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpQTKpIT/ngr-render-291a38460594/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+[1mmetadata[22m
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  author:
+    - name: Alejandro Verri Kozlowski, PEng
+      position: Corporate Consultant (Geotechnical Earthquake Engineering)
+      affiliation: SRK Consulting
+      email: averri@srk.com.ar
+  bibliography:
+    - bib/references.bib
+    - _local/bib/references.bib
+  csl: bib/apa.csl
+  
+Output created: _ngr-output/index.html
+
+[render manifest] kh source=_master/gmdp.kh.en.qmd profile=revealjs path=html/gmdp.kh
+Render timestamp: 2026-10-15 11:04:52 -03
+[render] revealjs -> html/gmdp.kh/
+[31m
+
+processing file: gmdp.kh.en.qmd
+[39m1/7                  
+2/7 [setup]          
+3/7                  
+4/7 [unnamed-chunk-1]
+5/7                  
+6/7 [unnamed-chunk-2]
+7/7                  
+[31moutput file: gmdp.kh.en.knit.md
+
+[39m[1mpandoc [22m
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpQTKpIT/ngr-render-291a7d185468/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+[1mmetadata[22m
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  author:
+    - name: Alejandro Verri Kozlowski, PEng
+      position: Corporate Consultant (Geotechnical Earthquake Engineering)
+      affiliation: SRK Consulting
+      email: averri@srk.com.ar
+  bibliography:
+    - bib/references.bib
+    - _local/bib/references.bib
+  csl: bib/apa.csl
+  
+Output created: _ngr-output/index.html
+
+[render manifest] sdc source=_master/sdc.qmd profile=revealjs path=html/sdc
+Render timestamp: 2026-10-15 11:05:39 -03
+[render] revealjs -> html/sdc/
+[31m
+
+processing file: sdc.qmd
+[39m1/9                  
+2/9 [setup]          
+3/9                  
+4/9 [unnamed-chunk-1]
+5/9                  
+6/9 [unnamed-chunk-2]
+7/9                  
+8/9 [unnamed-chunk-3]
+9/9                  
+[31moutput file: sdc.knit.md
+
+[39m[1mpandoc [22m
+  to: revealjs
+  output-file: >-
+    /private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpQTKpIT/ngr-render-291a484db801/index.html
+  standalone: true
+  wrap: none
+  default-image-extension: png
+  html-math-method:
+    method: mathjax
+    url: >-
+      https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS_HTML-full
+  slide-level: 2
+  reference-location: document
+  css:
+    - styles/styles.css
+  number-sections: false
+  toc: false
+  variables: {}
+  
+[1mmetadata[22m
+  link-citations: true
+  width: 1050
+  height: 700
+  margin: 0
+  center: false
+  navigationMode: linear
+  controlsLayout: edges
+  controlsTutorial: false
+  hash: true
+  history: false
+  hashOneBasedIndex: false
+  fragmentInURL: true
+  transition: fade
+  backgroundTransition: fade
+  pdfSeparateFragments: false
+  lang: en
+  auto-stretch: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  theme: simple
+  revealOptions:
+    width: 1920
+    height: 1080
+    autoScale: true
+  scrollable: true
+  controls: true
+  progress: true
+  keyboard: true
+  touch: true
+  loop: false
+  transitionSpeed: default
+  fragments: true
+  code-copy: false
+  slideNumber: c/t
+  plugins:
+    - search
+    - chalkboard
+    - zoom
+    - menu
+  chalkboard: true
+  search: true
+  menu: true
+  zoom: true
+  title-slide: false
+  logo: styles/logo.png
+  title: ''
+  listing: false
+  author:
+    - name: Alejandro Verri Kozlowski, PEng
+      position: Corporate Consultant (Geotechnical Earthquake Engineering)
+      affiliation: SRK Consulting
+      email: averri@srk.com.ar
+  bibliography:
+    - bib/references.bib
+    - _local/bib/references.bib
+  csl: bib/apa.csl
+  
+Output created: _ngr-output/index.html
+
+[render manifest] complete
+exit(decks)=0
+Render timestamp: 2026-10-15 11:06:02 -03
+[render] DOCX book: no appendices declared; CAN separators require appendices in the master.
+[render] docx book -> docx/
+[1m[34m[1/8] index.qmd[39m[22m
+[31m
+
+processing file: index.qmd
+[39m1/3                  
+2/3 [unnamed-chunk-1]
+3/3                  
+[31moutput file: index.knit.md
+
+[39m[1m[34m[2/8] _docx/executive.qmd[39m[22m
+[31m
+
+processing file: executive.qmd
+[39m1/48 [unnamed-chunk-1] 
+2/48                   
+3/48 [unnamed-chunk-2] 
+4/48                   
+5/48 [unnamed-chunk-3] 
+6/48                   
+7/48 [unnamed-chunk-4] 
+8/48                   
+9/48 [unnamed-chunk-5] 
+10/48                   
+11/48 [unnamed-chunk-6] 
+12/48                   
+13/48 [unnamed-chunk-7] 
+14/48                   
+15/48 [unnamed-chunk-8] 
+16/48                   
+17/48 [unnamed-chunk-9] 
+18/48                   
+19/48 [unnamed-chunk-10]
+20/48                   
+21/48 [unnamed-chunk-11]
+22/48                   
+23/48 [unnamed-chunk-12]
+24/48                   
+25/48 [unnamed-chunk-13]
+26/48                   
+27/48 [unnamed-chunk-14]
+28/48                   
+29/48 [unnamed-chunk-15]
+30/48                   
+31/48 [unnamed-chunk-16]
+32/48                   
+33/48 [unnamed-chunk-17]
+34/48                   
+35/48 [unnamed-chunk-18]
+36/48                   
+37/48 [unnamed-chunk-19]
+38/48                   
+39/48 [unnamed-chunk-20]
+40/48                   
+41/48 [unnamed-chunk-21]
+42/48                   
+43/48 [unnamed-chunk-22]
+44/48                   
+45/48 [unnamed-chunk-23]
+46/48                   
+47/48 [unnamed-chunk-24]
+48/48                   
+[31moutput file: executive.knit.md
+
+[39m[1m[34m[3/8] _docx/intro.qmd[39m[22m
+[31m
+
+processing file: intro.qmd
+[39m1/6 [unnamed-chunk-1]
+2/6                  
+3/6 [unnamed-chunk-2]
+4/6                  
+5/6 [unnamed-chunk-3]
+6/6                  
+[31moutput file: intro.knit.md
+
+[39m[1m[34m[4/8] _docx/sha.qmd[39m[22m
+[31m
+
+processing file: sha.qmd
+[39m1/27                   
+2/27 [unnamed-chunk-1] 
+3/27                   
+4/27 [unnamed-chunk-2] 
+5/27                   
+6/27 [unnamed-chunk-3] 
+7/27                   
+8/27 [unnamed-chunk-4] 
+9/27                   
+10/27 [unnamed-chunk-5] 
+11/27                   
+12/27 [unnamed-chunk-6] 
+13/27                   
+14/27 [unnamed-chunk-7] 
+15/27                   
+16/27 [unnamed-chunk-8] 
+17/27                   
+18/27 [unnamed-chunk-9] 
+19/27                   
+20/27 [unnamed-chunk-10]
+21/27                   
+22/27 [unnamed-chunk-11]
+23/27                   
+24/27 [unnamed-chunk-12]
+25/27                   
+26/27 [unnamed-chunk-13]
+27/27                   
+[31moutput file: sha.knit.md
+
+[39m[1m[34m[5/8] _docx/sdc.qmd[39m[22m
+[31m
+
+processing file: sdc.qmd
+[39m1/23                   
+2/23 [unnamed-chunk-1] 
+3/23                   
+4/23 [unnamed-chunk-2] 
+5/23                   
+6/23 [unnamed-chunk-3] 
+7/23                   
+8/23 [unnamed-chunk-4] 
+9/23                   
+10/23 [unnamed-chunk-5] 
+11/23                   
+12/23 [unnamed-chunk-6] 
+13/23                   
+14/23 [unnamed-chunk-7] 
+15/23                   
+16/23 [unnamed-chunk-8] 
+17/23                   
+18/23 [unnamed-chunk-9] 
+19/23                   
+20/23 [unnamed-chunk-10]
+21/23                   
+22/23 [unnamed-chunk-11]
+23/23                   
+[31moutput file: sdc.knit.md
+
+[39m[1m[34m[6/8] _docx/gmdp.qmd[39m[22m
+[31m
+
+processing file: gmdp.qmd
+[39m1/29                   
+2/29 [unnamed-chunk-1] 
+3/29                   
+4/29 [unnamed-chunk-2] 
+5/29                   
+6/29 [tbl-ish1]        
+7/29                   
+8/29 [unnamed-chunk-3] 
+9/29                   
+10/29 [unnamed-chunk-4] 
+11/29                   
+12/29 [unnamed-chunk-5] 
+13/29                   
+14/29 [tbl-idm-docx]    
+15/29                   
+16/29 [tbl-idm]         
+17/29                   
+18/29 [unnamed-chunk-6] 
+19/29                   
+20/29 [unnamed-chunk-7] 
+21/29                   
+22/29 [unnamed-chunk-8] 
+23/29                   
+24/29 [unnamed-chunk-9] 
+25/29                   
+26/29 [unnamed-chunk-10]
+27/29                   
+28/29 [unnamed-chunk-11]
+29/29                   
+[31moutput file: gmdp.knit.md
+
+[39m[1m[34m[7/8] _docx/references.qmd[39m[22m
+[1m[34m[8/8] _docx/appendices.qmd[39m[22m
+[31m
+
+processing file: appendices.qmd
+[39m1/51                   
+2/51 [unnamed-chunk-1] 
+3/51                   
+4/51 [unnamed-chunk-2] 
+5/51                   
+6/51 [unnamed-chunk-3] 
+7/51                   
+8/51 [tbl-gistm]       
+9/51                   
+10/51 [unnamed-chunk-4] 
+11/51                   
+12/51 [unnamed-chunk-5] 
+13/51                   
+14/51 [unnamed-chunk-6] 
+15/51                   
+16/51 [tbl-cda]         
+17/51                   
+18/51 [unnamed-chunk-7] 
+19/51                   
+20/51 [unnamed-chunk-8] 
+21/51                   
+22/51 [unnamed-chunk-9] 
+23/51                   
+24/51 [tbl-ancold]      
+25/51                   
+26/51 [unnamed-chunk-10]
+27/51                   
+28/51 [unnamed-chunk-11]
+29/51                   
+30/51 [unnamed-chunk-12]
+31/51                   
+32/51 [tbl-scasce]      
+33/51                   
+34/51 [unnamed-chunk-13]
+35/51                   
+36/51 [unnamed-chunk-14]
+37/51                   
+38/51 [unnamed-chunk-15]
+39/51                   
+40/51 [tbl-scas]        
+41/51                   
+42/51 [unnamed-chunk-16]
+43/51                   
+44/51 [unnamed-chunk-17]
+45/51                   
+46/51 [unnamed-chunk-18]
+47/51                   
+48/51 [tbl-scnbc]       
+49/51                   
+50/51 [unnamed-chunk-19]
+51/51                   
+[31moutput file: appendices.knit.md
+
+[39m
+[1mpandoc --output docx.en.docx[22m
+  to: docx
+  output-file: Seismic-Hazard-Study.docx
+  toc: true
+  number-sections: true
+  default-image-extension: png
+  reference-doc: styles/reference.docx
+  variables: {}
+  
+[1mmetadata[22m
+  crossref:
+    chapters: true
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  link-citations: true
+  colorlinks: true
+  toc-title: Table of Contents
+  bibliography:
+    - bib/references.bib
+    - _local/bib/references.bib
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  number-depth: 4
+  title: Seismic Hazard Study
+  csl: bib/apa.csl
+  
+Output created: _ngr-output/docx.en.docx
+
+{"output": "/private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/RtmpXt0GO9/ngr-render-3a1e720dca6e/_ngr-output/docx.en.docx.composed", "sha256": "4a05922f853bf1548680dc178d4325d8511dce59a1842ca7790f894a2a1c4421"}
+exit(docx)=0
+RENDER3 DONE 2026-10-15 11:07:06
