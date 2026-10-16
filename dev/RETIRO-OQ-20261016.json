@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-16",
+  "ownerInstruction": "Elimina la carpeta oq obsoleta de AR-M2V4D, sin tocar data/hazard ni data/newmark; documenta en dev lo retirado; commit y push.",
+  "removedDirectory": "oq",
+  "parentCommit": "c5e060e6afdedcb6825ba9b4fb4e21458c9ecca5",
+  "provenance": {
+    "historicalRun": "OQT classical/M2V4D/CFD/180 del 2026-09-15; temporal .tmp.classical.M2V4D.CFD.180.nJu8R2",
+    "introducedToGit": "426a9261deaf9347dfb1fc26542723124c08bb67",
+    "retention": "El commit del 20/09 migro los productos a data/hazard y data/newmark, retiro el ignore del temporal antiguo e incorporo esos archivos.",
+    "archivedPackageSha256": "e39ade2e0e8d821c5be743334548ec849d5d332162ab978d76c99fe54f33ed71",
+    "allRemovedFilesMatchedAuditedHistoricalPackage": true
+  },
+  "removedFiles": [
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/gmmLT_GMM.xml",
+      "bytes": 10456,
+      "sha256": "2ae726ded98b33721dbf679f9b63133d124ec4154eaa51f8cd8e5a5102acee6f",
+      "kind": "arbol logico NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/job.ini",
+      "bytes": 3304,
+      "sha256": "3e3046f1c2e6256afcaf47af60516014f91b7342916a4a16e17c169bc725acc8",
+      "kind": "receta OpenQuake"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssmLT_CAN.xml",
+      "bytes": 4177,
+      "sha256": "a878c7cdeadf7abd9d46fc659e1fc10e2734fdac7c4c5015b0e26e191d53fa89",
+      "kind": "arbol logico NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_EasternArctic_H.xml",
+      "bytes": 33779,
+      "sha256": "545f007a571f87515f92d7f2486825a695685d47a1da0cf6f7e6e1ec7fb796f3",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_EasternArctic_H_collapsed.xml",
+      "bytes": 48682,
+      "sha256": "a59970e0746e690391b43198496364d0cdc01d91066d797a260e8a413fd1c4b4",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_EasternArctic_R.xml",
+      "bytes": 21235,
+      "sha256": "785b86afddd2a9c6a9eb1100fb5d0b0d212e372bb991568815d7aa4bf79f11d9",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_EasternArctic_R_collapsed.xml",
+      "bytes": 30232,
+      "sha256": "62871069daee67837c5e434c244b2bc558a42524635e84014679477a0b31357f",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_SouthEasternCanada_H2.xml",
+      "bytes": 58155,
+      "sha256": "e0db81c90acdf5d6939d212a8fb4136d9a4b0e664852994db36c6c90481ae6f4",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_SouthEasternCanada_H2_collapsed.xml",
+      "bytes": 87042,
+      "sha256": "357a6d8444c985fe74b9359b008ffa2ed241f8efdbe70392f4ff843aa4cadd54",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_SouthEasternCanada_HY.xml",
+      "bytes": 72429,
+      "sha256": "4a74eed14742f3cc83b98cea31fdd307823ef8f4c7349014661889a8022cf48a",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_SouthEasternCanada_HY_collapsed.xml",
+      "bytes": 97775,
+      "sha256": "e2381f2622df0f36dc1ffe3b164e098844c12e37d9b4eafef9f37000d8432a7e",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_SouthEasternCanada_R2.xml",
+      "bytes": 26697,
+      "sha256": "7e4f9b2d321c33fe366690f0e04b07e82a59a419d57c734580c7f8d94c02c245",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_SouthEasternCanada_R2_collapsed.xml",
+      "bytes": 39680,
+      "sha256": "e2dda61c253fe52d7e4159d3897fc07071d483397067185cd8ce76d04d183ab4",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_WesternCanada.xml",
+      "bytes": 158316,
+      "sha256": "ec04c13169ce6e63bf64a7ef636b08b411feb15a50bb9cb185b2768594b26c22",
+      "kind": "modelo de fuentes NRML"
+    },
+    {
+      "path": "oq/.tmp.classical.M2V4D.CFD.180.nJu8R2/ssm_CAN/CanadaSHM6_NBCC2020_WesternCanada_collapsed.xml",
+      "bytes": 193999,
+      "sha256": "aa725c2319ecb97209270484725de5351c5a2f9c86bdbcaf21fa78e78bd1438a",
+      "kind": "modelo de fuentes NRML"
+    }
+  ],
+  "removedFileCount": 15,
+  "removedBytes": 885958,
+  "removedEmptyDirectories": [
+    "oq/dsha"
+  ],
+  "protectedVerification": {
+    "method": "Comparacion antes/despues de rutas, tipos, modos, mtime y SHA256 de cada archivo; sin ejecutar Hazard ni Newmark.",
+    "trees": {
+      "data/hazard": {
+        "files": 774,
+        "bytes": 96765569,
+        "unchanged": true,
+        "manifestSha256": "2b868128692af8cb9742c702811ef17f4366a3d90535a548d77c4be561a45c04"
+      },
+      "data/newmark": {
+        "files": 10,
+        "bytes": 135174312,
+        "unchanged": true,
+        "manifestSha256": "eaedbd4699c758aa8fc5c94b1ad207e72ee82c3d0c2697002c79dc9346ef2f15"
+      }
+    }
+  },
+  "result": {
+    "oqAbsent": true,
+    "projectDataUnchanged": true,
+    "calculationOrProductExecution": false
+  }
+}
