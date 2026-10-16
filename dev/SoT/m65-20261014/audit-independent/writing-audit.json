@@ -1,0 +1,354 @@
+{
+  "candidate_sha256": "92f5f1825daf0597bf8838ecf64b5618faf324d6ccbd531f3e6d7097f83f6061",
+  "reviewer": "/root/audit_independent",
+  "records": {
+    "contract": {
+      "path": "writing-contract.md",
+      "sha256": "0e5b7b5de235eabd23e1c19ab0414b01c390c161f2716eaf9bb41da843d6a521"
+    },
+    "provenance": {
+      "path": "provenance.md",
+      "sha256": "4bb100195ab2863f66845e39aa85c64dc28b026bcacd6d70434c906eeab15784"
+    },
+    "entities": {
+      "path": "entities.txt",
+      "sha256": "925bd127b5f3e96a3155c214d1ef8b0c44aff1bfd1458ce3b1adb99497add41c"
+    },
+    "formal": {
+      "path": "formal.md",
+      "sha256": "b37c72326c064ebc8fb1bfbfda2a9255cb0838ebc7c1637ac1bb1ce52631d20a"
+    }
+  },
+  "baseline": {
+    "path": "result-draft01.md",
+    "sha256": "a67ea5d998a76071a49da2a1e91f902395d76483fa36d02ee5984adee3144caf"
+  },
+  "units": [
+    {
+      "text": "# Auditoría independiente de AVK y R02",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "El título usa AVK y R02, los nombres de los dos DOCX validados en STATE y en las fuentes primarias; no contiene resultado científico."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Identifica el dictamen como independiente y delimita sus dos objetos; sin él el lector perdería la identidad de las entregas."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "El título corresponde exactamente a la misión de auditoría, sin prometer actualización de los documentos."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Auditoría es un sustantivo común en español; AVK/R02 son nombres de archivos, resueltos en provenance."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Se conserva el título del borrador sin agregar ámbito ni una declaración de aceptación del propietario."
+        }
+      }
+    },
+    {
+      "text": "Las dos entregas conservan la secuencia prevista: AVK actualiza los resultados de taludes y R02 conserva esos cambios y agrega Hazard. La comparación numérica no encontró omisiones en las tablas transferidas. La actualización no puede considerarse un cierre documental completo: quedan referencias a un apéndice eliminado, diferencias entre el resumen y el método, y ausencia de revisiones nuevas en Word.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 1.1–1.3: la igualdad del capítulo 10 sostiene acumulación; las matrices sostienen ausencia de omisiones numéricas; w:delText, resumen y marcas sostienen los tres límites."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración responde si las versiones son acumulativas; la segunda responde si las tablas se transfirieron; la tercera evita confundir esa cobertura con cierre documental."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "El juicio se limita a estas dos entregas y a tablas transferidas. La comparación fue ordenada por el propietario, sin alcance de validación de modelos."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "La negación de cierre es necesaria para distinguir coincidencia numérica de omisiones documentales efectivas; no es promoción ni contraste ornamental."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Mantiene el alcance de tablas y los tres límites del borrador. Apéndice eliminado se desarrolla después como contenido marcado para borrado, no ausencia del archivo."
+        }
+      }
+    },
+    {
+      "text": "**AVK.** Frente al original cambian seis párrafos, dos tablas y tres imágenes del capítulo 10; las otras partes del archivo permanecen idénticas. La tabla 10-1 coincide con las 72 celdas de la tabla de propiedades del memo NGR, incluidos encabezados. En la tabla 10-2 coinciden los 40 coeficientes y las 20 celdas de período y velocidad con el memo. Las dos tablas contienen 89 celdas modificadas frente al original. Las ecuaciones 10-1 y 10-15 incorporan, respectivamente, la altura H de la cuña y el factor 100 de la expresión porcentual; el texto incorpora el rango 0.22 a 1.28 s y las magnitudes 5.5/6.5 por demanda.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 2.1–2.5 enlaza los ocho nodos, tres imágenes, las dos matrices y ecuaciones exactas; 72,40,20,89 son conteos de comparación y H/100/rango/magnitudes están en los pasajes primarios."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Las cinco oraciones identifican superficie cambiada, prueba completa de propiedades, prueba de coeficientes, volumen efectivo de celdas modificadas y correcciones de ecuaciones/prosa; ninguna sustituye el dato de otra."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "La unidad es cada objeto transferido de capítulo 10; distingue celdas totales de celdas modificadas y excluye recalcular ingeniería."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "El bloque es declarativo. Memo NGR identifica la fuente validada; H sólo identifica una variable ya definida por el Word, sin inventar formulación."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Se corrigieron espacios y rango tipográfico a 0.22 a 1.28 s. Permanecen todos los valores, unidades, ecuaciones y la asignación por demanda, sin modificar sus condiciones."
+        }
+      }
+    },
+    {
+      "text": "**R02 acumulativa.** Los 85 nodos del capítulo 10 y sus tres imágenes permanecen idénticos a AVK. Las nueve tablas de Hazard coinciden celda por celda con hazard.diana.en.docx: 594 celdas de datos y rótulos, distribuidas en las tablas 9-1 a 9-4 y D1-1 a D1-5. Las 77 imágenes agregadas coinciden por SHA256 con la figura correspondiente de esa transferencia NGR y cada una tiene un vínculo en el cuerpo del Word. Se conservan los Vs30 de 220, 580, 760, 910 y 1500 m/s.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 3.1–3.4: 85 nodos canónicos iguales; nueve matrices con 594 celdas; 77 payloads iguales por rótulo y un uso cada uno; cinco Vs30 en encabezados primarios."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Cada oración resuelve una dimensión diferente: conservación previa, tablas nuevas, figuras enlazadas y condiciones de sitio preservadas."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "594 incluye datos y rótulos, no se presenta como 594 aceleraciones. Los encabezados de presentación diferentes quedan fuera del corte explícito del registro."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Cada una está justificado por los 77 conteos de uso; SHA256 expresa la prueba efectuada. No se infiere exactitud científica de la igualdad binaria."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Se conservan número de nodos, tablas, celdas e imágenes, y los cinco Vs30; el cambio del borrador es sólo espaciado legible."
+        }
+      }
+    },
+    {
+      "text": "**Prosa de Hazard.** El resumen ejecutivo, la sección 9.1 y las conclusiones contienen los valores 0.312/0.442 g para TR 10000 y 0.159/0.229 g para TR 2500, con sus estadísticas media/P84. Coinciden con la transferencia NGR. También se incorporaron la versión 3.26.2, la distinción entre curvas directas y demandas combinadas con ST20, el rango 0.70 a 1.30 de la comparación NRC 2020 y los resultados actualizados de desagregación. El reporte completo usa otra selección de Vs30 y geometrías; su tabla de propiedades con altura 50 m no es la tabla de los cinco escenarios de Diana.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 4.1–4.4: los pasajes r02 y hazard muestran los cuatro PGA y media/P84, versión/ST20/NRC; report body460 y memo53 muestran cortes diferentes."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Las dos primeras oraciones prueban que los números fuera de tablas también se actualizaron; la tercera identifica otros resultados de prosa; la cuarta impide comparar la geometría equivocada del full report."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "TR2500 es la referencia numérica validada; los rótulos AEP2475 no se interpretan como cálculo nuevo. La última oración distingue el corte del reporte completo frente al memo."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "NGR, ST20 y NRC provienen de la misión o los textos. La comparación de tablas distintas es técnicamente necesaria para el dictamen pedido."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Se mantienen g, estadísticas, TR, versión y rango. No se sustituye P84 por otro fractil ni se cambian los escenarios del producto."
+        }
+      }
+    },
+    {
+      "text": "**Track Changes.** Ninguna etapa agrega inserciones ni borrados registrados. AVK retira 13 marcas de inserción y 5 de borrado que existían en los elementos reemplazados; R02 retira 149 de cada tipo adicionales. La opción trackRevisions sigue activada, pero esa opción no convierte retrospectivamente las sustituciones en revisiones. Los conteos globales de inserciones/borrados son 1644/5617 en el original, 1631/5612 en AVK y 1482/5463 en R02. Los 451 marcadores de inicio y 451 de fin conservan sus identificadores.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 5.1–5.5 y relectura directa actual de settings.xml: cero adiciones; retiros13/5 y149/149; elemento trackRevisions vacío activo; conteos globales y451 identificadores de cada extremo."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración responde a registro de cambios; la segunda cuantifica pérdida de marcas anteriores; la tercera evita inferir tracking retroactivo; la cuarta distingue alcance global; la quinta verifica referencias internas."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Los conteos globales incluyen historias externas; los retiros son diferencias de nodos w:ins/w:del, no número de palabras o cambios humanos."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Ninguna tiene alcance cerrado y prueba de cero. Track Changes es la función inspeccionada y no un término científico nuevo. El contraste con la opción activa resuelve una ambigüedad real."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Se conservan ambos tipos de marcas, todas las cifras y la distinción activación/registro efectivo. No se acusa autoría ni una eliminación deliberada."
+        }
+      }
+    },
+    {
+      "text": "**Apéndice E pendiente.** El capítulo 10 remite al apéndice E para las formulaciones, la excepción AM88 y los coeficientes rígidos/flexibles y en unidades de aceleración. Sin embargo, las diez tablas finales permanecen iguales al original y conservan sus valores antiguos como texto marcado para borrado, sin datos visibles actualizados. Por ejemplo, la tabla de coeficientes de S135 conserva en borrados Ts=0.835 y 18.1/7.4/3.6/1.9 para TR 2475; la tabla 10-2 vigente contiene Ts=1.278 y 14.3/5.8/2.9/1.4. Es una limitación heredada y preservada, no una pérdida introducida por R02. Los PNG auxiliares examinados de las páginas 141 y 143 muestran rótulos de apéndices superpuestos y ecuaciones vacías.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 6.1–6.5: remisiones explícitas; diez nodos finales iguales; ejemplo S135 en w:delText versus tabla766; PNG auxiliares examinados. La herencia se prueba contra original."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Las cinco oraciones dan obligación documental, estado incumplido, ejemplo comprobable, origen heredado y observación visual acotada. Quitar cualquiera perdería una diferencia material."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Se distingue texto borrado de tabla vigente y se acota QA a dos páginas auxiliares. No se convierte un defecto original en regresión de R02."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Sin embargo y no una pérdida expresan discrepancias reales. El ejemplo numérico está circunscrito a S135 y rótulo histórico2475, sin nueva recomendación."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Mantiene ambas series de valores, su temporalidad vigente/borrado y su origen heredado. TR2475 sólo localiza el rótulo de Diana, con TR2500 como referencia del cotejo."
+        }
+      }
+    },
+    {
+      "text": "**Resumen de taludes pendiente.** En ambos Word, el resumen ejecutivo conserva la descripción de un método empírico singular y de coeficientes para distintas clases de sitio y niveles de confianza. El capítulo 10 y el memo NGR describen un conjunto de cinco formulaciones y los cinco escenarios de geometría/material de la entrega. El párrafo del resumen permanece idéntico al original; no fue reconciliado con el capítulo actualizado.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 7.1–7.3: resumen183 leído, capítulo1380–1382 y memo39–41; mismo párrafo original/AVK/R02. El full report tiene ocho materiales y por eso no sustenta cinco escenarios."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración identifica la descripción heredada; la segunda muestra el alcance actualizado concreto; la tercera establece que esa discrepancia quedó sin reconciliar."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Cinco formulaciones y cinco escenarios se atribuyen al capítulo y al memo. La corrección elimina la generalización a todas las fuentes NGR."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Pendiente expresa un hallazgo documental de la misión, sin ordenar escritura adicional ni atribuir culpa. La lectura en paralelo justifica el contraste."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "La sustitución de las fuentes NGR por el memo NGR reduce el alcance al soporte leído, preservando el hecho y los cinco casos que corresponden a Diana."
+        }
+      }
+    },
+    {
+      "text": "**MCE pendiente de coherencia.** El párrafo actualizado de magnitudes menciona MCE, mientras la explicación local de las demandas enumera sólo los espectros probabilísticos y el resumen ejecutivo mantiene que DSHA no es necesaria. El reporte NGR sí contiene DSHA y MCE. La auditoría identifica esa diferencia de alcance; no establece que deba incorporarse automáticamente todo el contenido determinístico de NGR al Word de Diana.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 8.1–8.3: párrafo de magnitudes incluye MCE; método local define demandas probabilísticas; resumen excluye DSHA; report66–69 contiene DSHA y MCE."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración expone incoherencia interna; la segunda identifica alcance mayor del documento de comparación; la tercera impide que el lector confunda el hallazgo con autorización de incorporación."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "No establece que MCE deba entrar en Diana ni que esté mal calculado. Se limita a coherencia entre los documentos que el propietario señaló."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Sólo se circunscribe al párrafo de demandas; todo aparece dentro de una exclusión de alcance. La explicación del límite es necesaria para no introducir un cambio científico no pedido."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Se conserva la mención MCE, la negación DSHA de la fuente y la ausencia de resolución automática. Ningún escenario determinístico se añade al producto."
+        }
+      }
+    },
+    {
+      "text": "**Figuras de coeficientes.** Las figuras 10-1, 10-2 y 10-3 tienen los mismos rótulos, leyendas y trazados discernibles que las figuras 5, 6 y 7 del memo actual, pero no son idénticas en bytes: difieren 60, 5148 y 426 píxeles, respectivamente, de 2680020 por imagen. R02 conserva exactamente las imágenes de AVK. No se atribuye una causa a esas diferencias ni se infiere equivalencia numérica subpíxel.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 9.1–9.3: seis imágenes primarias abiertas; comparación RGB y conteos60/5148/426 sobre2680020; hashesAVK/R02 iguales. La equivalencia subpíxel no está acreditada."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración separa apariencia legible de identidad exacta y cuantifica diferencia; la segunda confirma acumulación; la tercera evita atribuir causa sin evidencia."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "El objeto es cada imagen raster, no los valores calculados por los modelos. No se declara identidad exacta entre memo y AVK."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Discernibles delimita la evidencia visual. La negación de identidad y causa es técnica y necesaria, no retórica."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserva correspondenciasfig10-1/2/3 con5/6/7, conteos y tamaño. No convierte diferencias pequeñas en cero ni atribuye causa probable."
+        }
+      }
+    },
+    {
+      "text": "**Cobertura y límites.** Se compararon los seis DOCX validados mediante hidratación pública con pdf2md y revisión estructural OOXML, sin modificar documentos ni recalcular productos. La comprobación cubre las partes ZIP, la conservación acumulativa, las tablas indicadas, los vínculos de las figuras, las marcas de revisión y los pasajes citados en el registro de evidencia. La revisión visual fue acotada; no constituye una nueva aceptación de las 143 páginas ni una auditoría de la ciencia de los modelos.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 10.1–10.3: manifiestos de seis conversiones exit0, scripts de lectura estructural, hashes actuales iguales y alcance visual observado."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Las tres oraciones identifican método, dimensiones cubiertas y límites de validez. Son necesarias para interpretar la auditoría y no describen pasos futuros."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "La misión examina transferencia documental; no hay recalculo, render nuevo ni aceptación científica o visual integral de143páginas."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "OOXML/ZIP/pdf2md designan las operaciones observadas y autorizadas; el registro operacional resulta pertinente porque el producto es un dictamen de auditoría."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Mantiene seis fuentes, ausencia de modificación/recalculo y límites visuales. No transforma los PNG auxiliares en aceptación formal de los DOCX."
+        }
+      }
+    },
+    {
+      "text": "Evidencia reproducible: `audit_structure.py`, `check_coverage.py`, `comparison.json`, `coverage.json`, `anchors-revisions.json`, `slope-image-diff.json` y `provenance.md`, en esta carpeta. Los índices de cuerpo usados por esta auditoría empiezan en 1.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance 11.1–11.2: siete archivos de evidencia presentes y enumerate(Body,start=1) leído en el script."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "La primera oración da al coordinador objetos reproducibles para reabrir; la segunda evita una interpretación desplazada de los índices."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Es evidencia de esta auditoría guardada en su raíz propia, sin escribir en fuentes o productos."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Los nombres de archivos son localizadores operativos, no acrónimos científicos nuevos ni narración de investigación ajena al lector."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Conserva los mismos nombres y la base1; sólo se corrigió espacio antes de1."
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "spacing",
+      "fragment": "capítulo10",
+      "rule": "register",
+      "diagnosis": "El borrador adhiere nombres y cifras; el mismo patrón afecta varias unidades y cantidades.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "capítulo 10",
+        "evidence": "Releído el candidato completo tras restituir espacios y expresar el rango como 0.22 a 1.28 s. Se preservan las cantidades y correspondencias documentadas en provenance2–11; el fragmento original quedó sólo en el baseline.",
+        "verified": true
+      }
+    },
+    {
+      "id": "memo-scope",
+      "fragment": "las fuentes NGR describen",
+      "rule": "scope",
+      "diagnosis": "La frase generaliza cinco casos a todas las fuentes; el reporte completo describe ocho materiales.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "el memo NGR describen",
+        "evidence": "Releídos memo39–41, report60–85 y el párrafo corregido. El sujeto compuesto capítulo10 y memo se limita a los cinco casos de Diana; provenance7.2 y formal.md.",
+        "verified": true
+      }
+    }
+  ]
+}

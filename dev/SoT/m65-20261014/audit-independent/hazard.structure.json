@@ -1,0 +1,3194 @@
+{
+  "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/hazard.diana.en.docx",
+  "bytes": 13891064,
+  "sha256": "a3d5fa6667e4be7c138760c833746c9708fa17b5fc18d12c11ae3d09ceaf42ee",
+  "parts": {
+    "[Content_Types].xml": "9a1c533b3c5eb70fa3ad44647102b2217ec35036f215399f9612fa862ff41743",
+    "_rels/.rels": "ac6a012040a82c3b23f19cf36dd8d10cad16e2fe442c8665f53dde2b9836178e",
+    "docProps/app.xml": "3af512c1d965d98f87dfdb9d3638ab668264dea6f73aed3ea005f1aa6b533359",
+    "docProps/core.xml": "df70c42fd14a716ac575d15c5a7497436a65b48f0cd0a0830a9cf60691ff94dc",
+    "docProps/custom.xml": "71b4b91fd89f60454e6c35b6f334e92f4eac13490aba3598a2bc9747a56ecabf",
+    "word/_rels/document.xml.rels": "35974090f9ce9b80d5575198dc12b30a47a3772a8c9c3f6fa1f162aa235a2c53",
+    "word/_rels/footnotes.xml.rels": "81a8f2f71ac53d7c27a4b4086c521224ee37772dfe36a8f5016851ede2639b32",
+    "word/comments.xml": "7b87229d5af1f34f0fad2e50382eb6c8080c9afa29b641c4ae93e98529d0a320",
+    "word/document.xml": "e419d8a26edfbae501bfeb2196c6231d27450e401e6afb5eee9a348be0d61a73",
+    "word/fontTable.xml": "f9882f6889e3e73231adcc178b4ecc40f8783693d135dc8cc4b4e4f2b8b05db9",
+    "word/footer1.xml": "1f571496235857ef59751aca9645d7825768e68462c1ae9abb6fc828f6ff821d",
+    "word/footnotes.xml": "0862050ac498039adcb369c821645a486c0dd66d3edf3ed464eb7da29ca4b67a",
+    "word/header1.xml": "a4c2be2c0298056630c3de0ba441215e5cb0cccb6ad324d51e5eb1622b79fbb9",
+    "word/media/rId103.png": "143ddb542bc7fb9486bfd50dddd7f221411efba06476594c5da6509c32946d5e",
+    "word/media/rId107.png": "a5996813985de9818136f2f9dced0bb2888260f7321ec08a2a66c60717496c89",
+    "word/media/rId111.png": "54144398a4d5ae97e24b8a952537c89d86c0bc53d40676f967695838460e9fe9",
+    "word/media/rId115.png": "09bf5530a71482520277eafc80731753be2e9c13b67d1302eeaba7396214ae29",
+    "word/media/rId119.png": "d055858be21eee4876a4960ab73f81813c6c8fdddb80d59e3ace018af852713c",
+    "word/media/rId123.png": "d052e23fef93d964526dca36c47bd68ec79f761dd52b8f5afa43f3e4e313e1f0",
+    "word/media/rId127.png": "4ef3dbb7da04f5f894bf2ef6a65b73e16c5ebf4f7f1ffea9b63768b7b9be1567",
+    "word/media/rId131.png": "e519bea21fc68dcfddb72a3b73aac0944c9f5f231a2239a9d3194ab7f3276252",
+    "word/media/rId135.png": "d9461d3956cf4e71f9ae24b21c13b1863208010f2f37317bbd605f6956571c1b",
+    "word/media/rId139.png": "99ee62943bd64aa0c0727e1e5d7159c0e65e06a6e68efc3d2bd0b6e637c9ef73",
+    "word/media/rId143.png": "74381d3193b4063b23fd7eed6fdff3810a11586e2d7d70e0a0df5c09186a0ca3",
+    "word/media/rId147.png": "a31e4c422c52d3c5890e7037ae02458bbeee3fe84b2aee8dc6bf482ccb6db117",
+    "word/media/rId151.png": "06d3110abf2409132f8d71c4ced9eda66a00b3494c1bee4f2b0624c87ff235cb",
+    "word/media/rId155.png": "c6ab007776cd9eade1ccb1c901bae42f71ab81449006cd65269a1db08057fc82",
+    "word/media/rId159.png": "c1379c64dee31ac0e20750a9ff7248c8e750492d7c1ddb220d7c839af84b04ba",
+    "word/media/rId163.png": "a1284d4b213e6beabf6929451f120aae0f0f895dfcda55c9738ca0e296c98a65",
+    "word/media/rId167.png": "da63b703462fa8e3ab7152f9453558960a9e647bde7b7ad52ddb00409761eb31",
+    "word/media/rId171.png": "6f2e278ed7d7b25dd234549b210ff8b051cf5ff66077339f12813e8e7575abe6",
+    "word/media/rId175.png": "d876065ae9d2d1bb37c35377d36234a66203dc01253a9839de6c640d788cda7a",
+    "word/media/rId179.png": "a71a65d861963c2987809b9913e041857511c73e69f0b9710111760f0ec8ce91",
+    "word/media/rId183.png": "76d0459617b2c9eb892edf2aa3807f534f84886cb1144586d36069758eab3813",
+    "word/media/rId187.png": "625992f622bfa82eb997e844b501fc93b408760614a7fe2bfedd6fb35d33db42",
+    "word/media/rId191.png": "dc8ee1196be7b792b875069507f60efc3feb3fe6e422cfd577d63d18fd381a1b",
+    "word/media/rId195.png": "57c5c5c0129f1c5da34978f68c8d98b767811010b632c09e6c4ccf2cf4e3be4e",
+    "word/media/rId199.png": "99a834fb96657315c2eee43f0f6048689173455b0817761200eb72e585c2ef04",
+    "word/media/rId203.png": "27d3d197895855a4ab4ffa1d20cd95c5fec612c7a4d216a2dc2871d69ed53d29",
+    "word/media/rId207.png": "44c48551dd09a82f870620200a3bbf0996987f883932aa35bb643e2a1359b131",
+    "word/media/rId211.png": "e2da843c9de694866f6869bada56df07cf1729a85ba3a2b1b5be8dc8edceb4b2",
+    "word/media/rId215.png": "af2f843c51337a7cf97689c480ded32b389753d5d9f10d62a66e774a05127176",
+    "word/media/rId219.png": "6798b99270950aa02d65ec697f0de3a744b971b373114c922bdcef68ff36fac0",
+    "word/media/rId223.png": "015e01c730c4d153fd66fe7f97da76c1639cf4aed71e22aeadd193c0781a3056",
+    "word/media/rId227.png": "427cd0d6be1e1d5521aed141e57880d487f2f8c1899fa1c67aae3a13d08c5e6f",
+    "word/media/rId231.png": "4e968357af4ddc0d05243002c8781c7b69139dfe2b715ae535e9292ada600765",
+    "word/media/rId235.png": "71daff2e6f05afcfb9ebe73e78ea8c496c37b28935403add8e722af8d696db98",
+    "word/media/rId239.png": "6b18ba8c185a14b23d800cc0ea70d9992d9b7e21f3a4bf39df96818589f3d484",
+    "word/media/rId243.png": "228ad6068961c2bba2c93faba0e38fd890585b3ac02c64058cd8a0e2184333b1",
+    "word/media/rId247.png": "36d2cf26e562021cf97e8ea13020cb7548f1515ba2b09bf4297fbf4d03bc98f4",
+    "word/media/rId251.png": "d2812a89a59cac0fb2ab6a65e0f1f4ec8e992f80a4c348eb0afe083d8185e997",
+    "word/media/rId255.png": "4dc8c64cb8f560117875202d94e9b708686ffa5b7a05253b70ee6031514d7da0",
+    "word/media/rId259.png": "27b10315857ead7d47559df569e9e234582ebc3ecf93422b5bb0ec0382560443",
+    "word/media/rId263.png": "616a082b495891dfce05fa68e3355d8c2c0269a6ae26e87d9256a02a8f4156f7",
+    "word/media/rId267.png": "7c23f337becb581dad9213e17448f9a3c3aeb6507976467b1b89d1da4a5090bc",
+    "word/media/rId27.png": "97201d54632b43d008584699f0d76de87ec77444f3a96c8ae69a73e4f832e3c1",
+    "word/media/rId271.png": "5fbd10537458bef3f32d6ef01fc1ba931bf28ac0b90216230d11a764ad150439",
+    "word/media/rId275.png": "6ac13d3812eb12aa24d73400c0d6b1bea085a2da208028eab82c17e2a0fea21f",
+    "word/media/rId279.png": "c63428771df473e16413f2ad42551766e1b0cd1f2258a61fe286e5047604124d",
+    "word/media/rId283.png": "22c30b21378ed561e90784e03da4e78219b5bcf0483036820f4c599674889ad2",
+    "word/media/rId287.png": "8796b513cb54bd2a146810e0a129811419996b4d239af9418d6434ed920e096a",
+    "word/media/rId291.png": "80fc1810bb572c2067e40459338336f213a5439820f5acada60c8628606f1987",
+    "word/media/rId295.png": "347357830787d7ca8397197c0b0559739e59b13ff170322ee6ab23f128186034",
+    "word/media/rId299.png": "36acef6e9681eba1f79e8633e4d87c88b84b60a645d5167ef1e977cab837a27d",
+    "word/media/rId303.png": "d4f98e98e97a04b84ef1056d9bf079ed97065d8a1580be4a5f44148f11d782b6",
+    "word/media/rId307.png": "bea21ff181f15f75f4f9163ac2f8dec70ec8ced3dac0b5735ab2ff61a3057059",
+    "word/media/rId31.png": "77a95f8ca18a0a65cba9284be1314bee139742b917377e3ef41c743f01f9e90f",
+    "word/media/rId311.png": "7a375c3301f7ce131a778d0d7ed3b96440fc1c1ddb35a307569f64c57c3bed4f",
+    "word/media/rId315.png": "c0b4e879e19c8b01577e77a3ec7e0534559ae3de89e2f0d3b6aa4b87c2c54248",
+    "word/media/rId319.png": "d1c6ed46411ef76ecb960ab593daba0bc669e576234476578a7aad40c00da559",
+    "word/media/rId323.png": "1e6688e6c061911f57057a8107322ce7b100a2946a67a839de2ce1bb35a991f1",
+    "word/media/rId327.png": "248d5c6c88b956111707c63eaa43f5a32d7fcb14fc7097f44289f8d1cc79fb70",
+    "word/media/rId331.png": "513459c47474350b67f3530060176584085cfccdf3bbe74d03fd3832e7d3f0de",
+    "word/media/rId35.png": "3c910ac8ae122b4523df204eafbb267af43f763dcacdc9cc38006b7b3785103c",
+    "word/media/rId39.png": "1ac53d7f633528b18942fe5917f9b8fd827aa06f42c27303ee021689a89341b6",
+    "word/media/rId43.png": "b1f837d378326d7a7abdf298e9b56616b3680d3bd7429c78ca96aec6554b7893",
+    "word/media/rId47.png": "f488769f3d232ce41dc9d488ae6b3b67b31e40c770eee6c0f51592a55276bc50",
+    "word/media/rId51.png": "7497bd2b2c7149d9d9a97535d9d8160eeba99d5b493d291a241ebeee666a3ebc",
+    "word/media/rId55.png": "1e0ffeac34b656aa1086ebc277dfa9ad0c52df89295c4cecf7ad098de5dadd0e",
+    "word/media/rId59.png": "65f91905b86c8b039c7597b0b23ab9b422874cd9cf21e86069bd7952f57c184d",
+    "word/media/rId63.png": "fd6709c34651463663ea42f607f6c7c83c71e1d756e930d5fc775630fc1f5f5d",
+    "word/media/rId67.png": "bb8087a5654ce66d6882ec3b52df45584ba159c9c661b754fe0630af8fa52516",
+    "word/media/rId71.png": "f14a0060ddeb61506e264cba11138292b65961ad702c4683f737e9ced2f21ced",
+    "word/media/rId75.png": "56d5024f2819effe3488215fd5001ff82d6ebc097d110e527af325e723d8e61e",
+    "word/media/rId79.png": "51c10c4bcf722a65baa7f7e79eed84cc49ed0510f1b8a8ea7ee28ae1bca7b3a3",
+    "word/media/rId83.png": "91c68215f23429ea7f0ca5dd29b3b03c7ea5a4941c9f6e10869a7b99db7035c8",
+    "word/media/rId87.png": "9b35b52a457f141b2f266bef72705241631af848306b9d7bf82040c07e53ece6",
+    "word/media/rId91.png": "7a2242869aa2bca1f9d3434bb898c638ab216661ccb26f235470801503f58791",
+    "word/media/rId95.png": "7d737c8eefa85ad3a23238d31f2e96f5d483a639d0d2a7bf0f41488e24fec80d",
+    "word/media/rId99.png": "0dbdbb5075594274dea4244465e3c2f9c36b2475f549f1fdc9a29f0259fc70be",
+    "word/media/srk-na-logo.wmf": "c5e94914920e7c7d7a0038fb140449960fdb00173dd9dfea71ffca5240ab82db",
+    "word/numbering.xml": "bdafb55791c638a32965f46b3e491051c1fdc90a5b7155bc219695ea85f519bd",
+    "word/settings.xml": "78845bee5614156e3129e4bd72a0c855fc2f2135d75a1a07954eb967c44f6576",
+    "word/srk-composition.json": "01971c23b09a3a6e25d506ec15a3dfce56e3698d8ff735cc49dd63475244270b",
+    "word/srk-cover-footer.xml": "72b76446212b6ebeb4b54c15f3e4e31dc0f3aa54b8e273d54939366f38c7eefd",
+    "word/srk-empty-footer.xml": "72b76446212b6ebeb4b54c15f3e4e31dc0f3aa54b8e273d54939366f38c7eefd",
+    "word/srk-empty-header.xml": "1c6b4fcc889f753bc6155bf576d80520fb47f620a8166d03f18fa05cfea2f70f",
+    "word/styles.xml": "2f6250253819f56c27b4533d59f837641c616be7e27f5a3e9deeb5f890f23212",
+    "word/theme/theme1.xml": "488a401645c6030b741d7e912aa55ad9ec6b219d36a3247332454c0de867b827",
+    "word/webSettings.xml": "bc4ba4918aa343b54d91100c8e606be38048c22c160be89c585ac598034fa0de"
+  },
+  "bodyCount": 169,
+  "nodes": [
+    {
+      "bodyIndex": 1,
+      "tag": "p",
+      "sha256": "5e75dea94daf4718c297e812971858d29b68ef1783bf1d90870d9332239179cd",
+      "text": ""
+    },
+    {
+      "bodyIndex": 2,
+      "tag": "p",
+      "sha256": "a5a35ddc61a075b615365cc38c0c9f2a869a72e4d9aa9cc03ceb0fe2f1196ad1",
+      "text": ""
+    },
+    {
+      "bodyIndex": 3,
+      "tag": "tbl",
+      "sha256": "6f8ae47f140574b893205e8eff5da4db7a5fa41217add3e0a063235939aea754",
+      "text": "Seismic HazardPrepared forCanada Nickel Co.Prepared bySRK Consulting (Canada), Inc. and Paterson & CookeAR-M2V4D15/10/2026"
+    },
+    {
+      "bodyIndex": 4,
+      "tag": "p",
+      "sha256": "7bcef469b80811a9cf42926e8741ed7671111da59558f99d6a658dbb9d13279d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 5,
+      "tag": "tbl",
+      "sha256": "ef5efbf95ddb53b473bba7f53f44baeb8c4f2493175098aaf3f816816141e466",
+      "text": "Seismic Hazard15/10/2026Prepared forPrepared byCanada Nickel Co.SRK Consulting (Canada), Inc. and Paterson & CookeWeb:https://www.srk.com/Project No.:AR-M2V4DFile Name:hazard.diana.en.docx"
+    },
+    {
+      "bodyIndex": 6,
+      "tag": "p",
+      "sha256": "9fe6fc5fea31122411747af26be90f81fc569f91b9e224315d7266034ad360e3",
+      "text": ""
+    },
+    {
+      "bodyIndex": 7,
+      "tag": "bookmarkStart",
+      "sha256": "eff0d8a8e8485d68dc2ea9123b69abe139dd716e16f0f288b49d43272dd9e8b5",
+      "text": ""
+    },
+    {
+      "bodyIndex": 8,
+      "tag": "p",
+      "sha256": "c575b8bb4763c93552f474a436639d65b8096543f4af7c3556f43ac8a770b549",
+      "text": "Engine"
+    },
+    {
+      "bodyIndex": 9,
+      "tag": "p",
+      "sha256": "040e495dfe5d884ce592a983d8ec0331ab917d702d87b8c285fb63f7df00c405",
+      "text": "3.26.2"
+    },
+    {
+      "bodyIndex": 10,
+      "tag": "bookmarkEnd",
+      "sha256": "b768630150ef1cfe3a0351023c6bf497ad6d37b28e09db138b119d68f66e791a",
+      "text": ""
+    },
+    {
+      "bodyIndex": 11,
+      "tag": "bookmarkStart",
+      "sha256": "7f0a9bb3445e6006b334b6363fac67b5b08a223e3a2f79f632a143fdcf02267a",
+      "text": ""
+    },
+    {
+      "bodyIndex": 12,
+      "tag": "p",
+      "sha256": "b8e4071e784ebe4029515996e8ecf7fdd8d399d9170bae0c7104af452704944f",
+      "text": "PGA 10000 mean"
+    },
+    {
+      "bodyIndex": 13,
+      "tag": "p",
+      "sha256": "68637c28c93cf935d51f2d27af28556a02a83296b5cccec6441cf28856a23523",
+      "text": "0.312"
+    },
+    {
+      "bodyIndex": 14,
+      "tag": "bookmarkEnd",
+      "sha256": "908343e47262b63177999848f556074a5a2ba1c9a763be23d829633083683cfa",
+      "text": ""
+    },
+    {
+      "bodyIndex": 15,
+      "tag": "bookmarkStart",
+      "sha256": "26b45c4dfca17c752a76cd1cb30e3538dd683139a5901d99b2e641e3304b9c62",
+      "text": ""
+    },
+    {
+      "bodyIndex": 16,
+      "tag": "p",
+      "sha256": "f9bbc0e4d924beb830a65b37f205258a6f77b5d0890b926a36a3b4d7ba46ae24",
+      "text": "PGA 10000 P84"
+    },
+    {
+      "bodyIndex": 17,
+      "tag": "p",
+      "sha256": "e6b6a821ac176f3e74c167a90350ed1d3eb25c670e147dde05d1e05400711c14",
+      "text": "0.442"
+    },
+    {
+      "bodyIndex": 18,
+      "tag": "bookmarkEnd",
+      "sha256": "b682393341c7158f79ad361b0f5715f3af0d38a871bc76cd3dca18de0bba9a98",
+      "text": ""
+    },
+    {
+      "bodyIndex": 19,
+      "tag": "bookmarkStart",
+      "sha256": "b6b2c805660bf27f37a595a9cf529d964a1d19e40262fc86de0ad1b001fd4e21",
+      "text": ""
+    },
+    {
+      "bodyIndex": 20,
+      "tag": "p",
+      "sha256": "a74589815f2ffe0b878fdd281f58f24656506f8a80525bb5209168f17984f396",
+      "text": "PGA 2500 mean"
+    },
+    {
+      "bodyIndex": 21,
+      "tag": "p",
+      "sha256": "4cdcffb76ac62defd03e71e40ec628b6055358c7f35ec8e75d7cff33191073d0",
+      "text": "0.159"
+    },
+    {
+      "bodyIndex": 22,
+      "tag": "bookmarkEnd",
+      "sha256": "f0cab309e2f22023b17fdfddf9523a80bb8024e74c8904c0d4437287a0b9de2d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 23,
+      "tag": "bookmarkStart",
+      "sha256": "73a07ceb6b4935cf40049d617a38d7a867ee325301151e68e4126eee3708d20e",
+      "text": ""
+    },
+    {
+      "bodyIndex": 24,
+      "tag": "p",
+      "sha256": "4bed03a0de27704b2e53e7da909d9d02a9500313364e30121a3e783e477fee41",
+      "text": "PGA 2500 P84"
+    },
+    {
+      "bodyIndex": 25,
+      "tag": "p",
+      "sha256": "eeaaf4af7096e319bdfdaf19577b9ca9cdbe92bb049a36dec677943cdd40c346",
+      "text": "0.229"
+    },
+    {
+      "bodyIndex": 26,
+      "tag": "bookmarkEnd",
+      "sha256": "218fbd70522731c75b5a7fd58d76bd81e6fd108942ecf24c33ca0d639c24c513",
+      "text": ""
+    },
+    {
+      "bodyIndex": 27,
+      "tag": "bookmarkStart",
+      "sha256": "21974e7e70afeadfd674545f52df067fee2e71c0e6aa50a47a1cbaac461ecadc",
+      "text": ""
+    },
+    {
+      "bodyIndex": 28,
+      "tag": "p",
+      "sha256": "7355185fef68d75eba566506eddc0815e1ab8721fda502ac7277cfc4dce84ad2",
+      "text": "Site amplification"
+    },
+    {
+      "bodyIndex": 29,
+      "tag": "p",
+      "sha256": "1556b5b904adb92156d3ac1fd76b1bc26112ecbf0b6b56d28eb0908a006d9c4a",
+      "text": "The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization."
+    },
+    {
+      "bodyIndex": 30,
+      "tag": "bookmarkEnd",
+      "sha256": "40efe8cb9db7c74ae9c31064d4b170cfd48a3e4ad1a6d2818aac0b4e148c8e4d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 31,
+      "tag": "bookmarkStart",
+      "sha256": "ee35e849ef140fbd81782a1b6034acba2aaed4a8dcf2e269f211847ed8d54f48",
+      "text": ""
+    },
+    {
+      "bodyIndex": 32,
+      "tag": "p",
+      "sha256": "046ce206d9e4a51c6a2d7a913f8a47bac34416b96ce75724624343b1a1c1b1ed",
+      "text": "AEP method"
+    },
+    {
+      "bodyIndex": 33,
+      "tag": "p",
+      "sha256": "6cf6f2c4c4c1648814f09cc661e8264ff8d8539f3650e2b86dcd988bc9def4c1",
+      "text": "The AEP curves present the direct logic-tree calculation. The tabulated design values and UHS combine this evaluation with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization."
+    },
+    {
+      "bodyIndex": 34,
+      "tag": "bookmarkEnd",
+      "sha256": "ea9d3e575260a1b00c8d54dd4e93ea3e8e23e571a8b6f8aa1a8862458a41f911",
+      "text": ""
+    },
+    {
+      "bodyIndex": 35,
+      "tag": "bookmarkStart",
+      "sha256": "c1fd876c3554e4cb4aa6e39252d78213a69bef1dd870e4e94f77a68bb94bf779",
+      "text": ""
+    },
+    {
+      "bodyIndex": 36,
+      "tag": "p",
+      "sha256": "f0a8c9cd8f2f9a8cf31f28d610a67167c5c79a58c02d834df01e56ff14028584",
+      "text": "NRC comparison"
+    },
+    {
+      "bodyIndex": 37,
+      "tag": "p",
+      "sha256": "ae7a4bcfac23f798b3f38caa70b71b4cc2ec5aeba8acd10c76ea1810374f2c96",
+      "text": "The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared."
+    },
+    {
+      "bodyIndex": 38,
+      "tag": "bookmarkEnd",
+      "sha256": "74380a6b7250366546ae5126f46daec07ea819b7274745e3379a8c18474f6f31",
+      "text": ""
+    },
+    {
+      "bodyIndex": 39,
+      "tag": "bookmarkStart",
+      "sha256": "5ca1c6697a91e75f98106ae1337b7cb702305c111a7c0d0e9269c1ef8d91a5a7",
+      "text": ""
+    },
+    {
+      "bodyIndex": 40,
+      "tag": "p",
+      "sha256": "c9883e65d59f33198b9f3f5fde9cee646c46665fc339631030456e40cde78261",
+      "text": "Controlling scenarios"
+    },
+    {
+      "bodyIndex": 41,
+      "tag": "p",
+      "sha256": "ee87f0f04d65771ebca4c440ef13bc6c99a672381df2eb64ecf77d3de7e1d490",
+      "text": "The deaggregation plots show that the largest joint contributions to the seismic hazard for PGA occur at magnitude bin centers ranging between 4.875 and 5.125 and distance bin centers ranging between 18.75 and 31.25 km. The magnitudes at the peaks of the marginal distributions range from 5.125 to 6.875."
+    },
+    {
+      "bodyIndex": 42,
+      "tag": "bookmarkEnd",
+      "sha256": "f44ac1e0e958ac7da4bcd7affac568e426cf4696512ab6cc2cb99ad51e5dfe3d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 43,
+      "tag": "bookmarkStart",
+      "sha256": "06ffd12f435f8d71452c826addd84a3c9dc2a913c5c791724a4b5275e649b19f",
+      "text": ""
+    },
+    {
+      "bodyIndex": 44,
+      "tag": "p",
+      "sha256": "37e8682aacdeb89f5aef75ddb0f7a6259f5c888e198ca686299e0ad45f7d2764",
+      "text": "NRC periods"
+    },
+    {
+      "bodyIndex": 45,
+      "tag": "p",
+      "sha256": "f85339bc88a27b91e4c9b8532f19aa073ca531ef40671e525708962276133110",
+      "text": "Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+    },
+    {
+      "bodyIndex": 46,
+      "tag": "bookmarkStart",
+      "sha256": "4a3052c2420a770c13b03429a1a204cb3daa3edf8385633a1b3f885dc81d0a67",
+      "text": ""
+    },
+    {
+      "bodyIndex": 47,
+      "tag": "p",
+      "sha256": "c53aedf871929079ed2c6a88a9b62c0f37c7d970cc0847f7f2136c4c095dbbbd",
+      "text": "Table 1: Table 9-1"
+    },
+    {
+      "bodyIndex": 48,
+      "tag": "tbl",
+      "sha256": "41a7e1b82b12aa3b84aef6a065ebf76c9efaf0d86860503c239f6f96e835e5b1",
+      "text": "Row15009107605802204750.03740.03610.03510.03880.05159750.06530.06290.06100.06710.08762,4750.12610.12100.11710.12780.15885,0000.19430.18620.18000.19480.228810,0000.28520.27260.26320.28280.3123"
+    },
+    {
+      "bodyIndex": 49,
+      "tag": "bookmarkEnd",
+      "sha256": "575fff083cc2ee4b6364eda0902b5b9a552c18512039485a74c6450272c46613",
+      "text": ""
+    },
+    {
+      "bodyIndex": 50,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 51,
+      "tag": "bookmarkStart",
+      "sha256": "24059351effb6a4eed6e182eee6a3c314cfe5f70e9ee02492786a26fdbd47cdf",
+      "text": ""
+    },
+    {
+      "bodyIndex": 52,
+      "tag": "p",
+      "sha256": "6d52054a925d71a1ce7dfc7e22d95abcfbc8fd0307afe746732f77ce3670480d",
+      "text": "Table 2: Table 9-2"
+    },
+    {
+      "bodyIndex": 53,
+      "tag": "tbl",
+      "sha256": "ce2d28ddc6c3f628482e10626f5a422882ef8ff8b2147d68546071334ca2b22b",
+      "text": "Row15009107605802204750.05240.05010.04740.05390.07369750.09290.08870.08400.09470.12642,4750.18030.17170.16230.18120.22885,0000.27940.26540.25090.27730.327110,0000.41220.38990.36840.40400.4424"
+    },
+    {
+      "bodyIndex": 54,
+      "tag": "bookmarkEnd",
+      "sha256": "3e88d961ede2baed2d772338391619fe1a8ae939b56557a6ef790aa354f3f293",
+      "text": ""
+    },
+    {
+      "bodyIndex": 55,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 56,
+      "tag": "bookmarkStart",
+      "sha256": "38c30225db4fdae6586b981aa6351bf26dd183882ffcce512950a2804bfe9424",
+      "text": ""
+    },
+    {
+      "bodyIndex": 57,
+      "tag": "p",
+      "sha256": "4972fb59d34b7f5a5e499935c58f3de279c1b0680a6ed6cc046dde9ac409e047",
+      "text": "Table 3: Table 9-3"
+    },
+    {
+      "bodyIndex": 58,
+      "tag": "tbl",
+      "sha256": "90167d8f8755129fade70a284555982a53a8758aaec174b2f17c23085acc95da",
+      "text": "Row15009107605802200.0000.2850.2730.2630.2830.3120.0500.5930.5990.6020.6200.5570.0750.5580.6200.6320.6530.5680.1000.5200.6010.6190.6500.5920.1200.4710.5500.5690.6020.5610.1500.4050.4870.5090.5450.5260.1800.3740.4320.4570.4990.5160.2000.3610.4030.4280.4740.5120.2200.3280.3600.3840.4300.4860.2500.2910.3140.3320.3780.4540.2800.2640.2830.2980.3400.4300.3000.2500.2690.2810.3190.4180.3500.2180.2340.2450.2790.3800.4000.1940.2090.2170.2500.3560.4500.1740.1870.1940.2260.3360.5000.1570.1690.1750.2060.3240.6000.1240.1330.1370.1630.2680.7000.1030.1110.1140.1370.2340.7500.0960.1020.1050.1260.2230.8500.0840.0890.0910.1100.1950.9000.0790.0830.0860.1030.1841.0000.0710.0750.0760.0920.1691.2500.0540.0570.0580.0710.1291.5000.0440.0460.0470.0570.1071.7500.0370.0390.0390.0480.0882.0000.0320.0330.0340.0410.0752.5000.0230.0240.0240.0300.0543.0000.0180.0180.0190.0230.0413.5000.0140.0150.0150.0180.0334.0000.0120.0120.0120.0150.0274.5000.0100.0100.0100.0130.0235.0000.0090.0090.0090.0110.019"
+    },
+    {
+      "bodyIndex": 59,
+      "tag": "bookmarkEnd",
+      "sha256": "1192451c6724b41077d02c0d07aa4e38654a262c872a5aa9072119737a8cb367",
+      "text": ""
+    },
+    {
+      "bodyIndex": 60,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 61,
+      "tag": "bookmarkStart",
+      "sha256": "6a38dcd4a93188988f2fa418c6735a61b6b5b12a8aa1f7acfd6aebfbc7941546",
+      "text": ""
+    },
+    {
+      "bodyIndex": 62,
+      "tag": "p",
+      "sha256": "b017e10d641db9c3f2f9fd1ac26b3a5b2465e1f31acbf427bf32daf03fcace23",
+      "text": "Table 4: Table 9-4"
+    },
+    {
+      "bodyIndex": 63,
+      "tag": "tbl",
+      "sha256": "9b0e8843b6f6d8a99da7dcc58397e5f0e41c69b1051ecab130fe70b009aea07f",
+      "text": "Row15009107605802200.0000.1260.1210.1170.1280.1590.0500.2450.2440.2460.2590.2690.0750.2380.2610.2660.2810.2840.1000.2280.2610.2690.2880.3040.1200.2070.2410.2490.2680.2890.1500.1800.2150.2240.2440.2720.1800.1660.1920.2030.2240.2670.2000.1610.1800.1910.2140.2660.2200.1470.1610.1720.1940.2530.2500.1300.1400.1490.1700.2360.2800.1180.1270.1340.1530.2230.3000.1120.1200.1260.1440.2160.3500.0970.1040.1090.1250.1950.4000.0870.0930.0970.1120.1800.4500.0780.0830.0870.1010.1690.5000.0700.0750.0780.0920.1620.6000.0560.0600.0620.0730.1340.7000.0470.0500.0520.0620.1150.7500.0430.0460.0480.0570.1090.8500.0380.0410.0420.0500.0950.9000.0360.0380.0390.0470.0901.0000.0330.0350.0350.0430.0821.2500.0250.0260.0270.0330.0631.5000.0200.0220.0220.0270.0511.7500.0170.0180.0180.0220.0422.0000.0150.0160.0160.0190.0362.5000.0110.0110.0110.0140.0263.0000.0080.0080.0090.0110.0193.5000.0060.0070.0070.0080.0154.0000.0050.0050.0060.0070.0124.5000.0040.0050.0050.0060.0105.0000.0040.0040.0040.0050.009"
+    },
+    {
+      "bodyIndex": 64,
+      "tag": "bookmarkEnd",
+      "sha256": "63cae8497edde97bba401380f003f25531e78e1f46c82f627d9a7437b688e6d2",
+      "text": ""
+    },
+    {
+      "bodyIndex": 65,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 66,
+      "tag": "bookmarkStart",
+      "sha256": "9027640ad3a7897efa2e845e4c272c37119107754b6e19d942705336ddc9f274",
+      "text": ""
+    },
+    {
+      "bodyIndex": 67,
+      "tag": "p",
+      "sha256": "b81d7c80066d253b0ce3c357a35411aa67337e4af3e630fd3d67a5e8db83e4ab",
+      "text": "Table 5: Table D1-1"
+    },
+    {
+      "bodyIndex": 68,
+      "tag": "tbl",
+      "sha256": "41a7e1b82b12aa3b84aef6a065ebf76c9efaf0d86860503c239f6f96e835e5b1",
+      "text": "Row15009107605802204750.03740.03610.03510.03880.05159750.06530.06290.06100.06710.08762,4750.12610.12100.11710.12780.15885,0000.19430.18620.18000.19480.228810,0000.28520.27260.26320.28280.3123"
+    },
+    {
+      "bodyIndex": 69,
+      "tag": "bookmarkEnd",
+      "sha256": "e50b8bff6688996289214de5ffd3c469a359742d634250154c96c901cca5c8db",
+      "text": ""
+    },
+    {
+      "bodyIndex": 70,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 71,
+      "tag": "bookmarkStart",
+      "sha256": "542ff969e43fd7131baa3d86c9fbc06e2a90776aff571de67d794eca7a759ac4",
+      "text": ""
+    },
+    {
+      "bodyIndex": 72,
+      "tag": "p",
+      "sha256": "67f7e44fe7ac9ee475fd69b466a295b1a68b5d04444b098efaa377413566ad19",
+      "text": "Table 6: Table D1-2"
+    },
+    {
+      "bodyIndex": 73,
+      "tag": "tbl",
+      "sha256": "6896ac6dae3024d16884a4a8861ea7ab32133392f72f632844ffad16a931b2f8",
+      "text": "Row15009107605802204750.03400.03300.03280.03540.04749750.05860.05670.05620.06070.08012,4750.11270.10860.10740.11530.14565,0000.17290.16650.16450.17510.212010,0000.25250.24300.23980.25350.2919"
+    },
+    {
+      "bodyIndex": 74,
+      "tag": "bookmarkEnd",
+      "sha256": "b74dfeb1fd82e7818fdce5b6a20220367a4c89f79982a528ba25af433ed6bbc0",
+      "text": ""
+    },
+    {
+      "bodyIndex": 75,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 76,
+      "tag": "bookmarkStart",
+      "sha256": "2e03b51a7c4873eefe1557d8d885c22ca7e65be036cbacb748332162bf52a610",
+      "text": ""
+    },
+    {
+      "bodyIndex": 77,
+      "tag": "p",
+      "sha256": "cf55b7a382e0163b4173ffca81ab4ce36a8531e1d5a665e966a9424e6c634294",
+      "text": "Table 7: Table D1-3"
+    },
+    {
+      "bodyIndex": 78,
+      "tag": "tbl",
+      "sha256": "ce2d28ddc6c3f628482e10626f5a422882ef8ff8b2147d68546071334ca2b22b",
+      "text": "Row15009107605802204750.05240.05010.04740.05390.07369750.09290.08870.08400.09470.12642,4750.18030.17170.16230.18120.22885,0000.27940.26540.25090.27730.327110,0000.41220.38990.36840.40400.4424"
+    },
+    {
+      "bodyIndex": 79,
+      "tag": "bookmarkEnd",
+      "sha256": "71183d608c33cac96169eb921d192dd0a4fe964d187f57f8ac9ea49e66b70a0a",
+      "text": ""
+    },
+    {
+      "bodyIndex": 80,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 81,
+      "tag": "bookmarkStart",
+      "sha256": "a871530c6c4870a793888d1afc62f645ef4083787ee067ce19cc9fc4dc1ab2e2",
+      "text": ""
+    },
+    {
+      "bodyIndex": 82,
+      "tag": "p",
+      "sha256": "a2dd971040c04fc18a648127ae906f9756a663b676fd7c48cbdcbdcd35c8b7a6",
+      "text": "Table 8: Table D1-4"
+    },
+    {
+      "bodyIndex": 83,
+      "tag": "tbl",
+      "sha256": "40a7f738f476c2422fd4f75ec2624c42084165fa45779e9f2d6cc220b79b2851",
+      "text": "Row15009107605802204750.05960.05670.05280.06100.08319750.10630.10120.09430.10770.14332,4750.20700.19630.18290.20660.25895,0000.32150.30410.28340.31690.368310,0000.47540.44770.41700.46240.4958"
+    },
+    {
+      "bodyIndex": 84,
+      "tag": "bookmarkEnd",
+      "sha256": "1d9545db73df437b1ee02bbc22b92bb65bdc321b2c5f1bfa9ba1f01acc21ffce",
+      "text": ""
+    },
+    {
+      "bodyIndex": 85,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 86,
+      "tag": "bookmarkStart",
+      "sha256": "5c5bed714ce479a889c263582b9aff4648d5c8ba706a3f24d449d576f9c480b7",
+      "text": ""
+    },
+    {
+      "bodyIndex": 87,
+      "tag": "p",
+      "sha256": "fd75c175015714184ede5dbb800097393222e62b379e3d6275cc466a38e31695",
+      "text": "Table 9: Table D1-5"
+    },
+    {
+      "bodyIndex": 88,
+      "tag": "tbl",
+      "sha256": "c19240ee2dbc329127ec4f157342cee9fc95b3e497b2a344885c6f82f131173b",
+      "text": "Row15009107605802204750.07050.06650.06040.07150.09689750.12670.11980.10920.12720.16752,4750.24720.23310.21280.24430.30215,0000.38510.36210.33070.37550.427210,0000.57090.53430.48770.54900.5723"
+    },
+    {
+      "bodyIndex": 89,
+      "tag": "bookmarkEnd",
+      "sha256": "5647c78945bf40872717b80b14dedcbdae479b3e5147ee99ff47b8737ee30c97",
+      "text": ""
+    },
+    {
+      "bodyIndex": 90,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 91,
+      "tag": "tbl",
+      "sha256": "f2317f9cd4cf3cfe3c4cfa942b88e2724ee3a1455b5df8d45fd49989521b5cf2",
+      "text": "Fig. 1: Figure 6-1"
+    },
+    {
+      "bodyIndex": 92,
+      "tag": "tbl",
+      "sha256": "b5d346c6524e3496300326c12ed6516d5f6957ec4255b958546d1cd7f332ae2d",
+      "text": "Fig. 2: Figure 6-2"
+    },
+    {
+      "bodyIndex": 93,
+      "tag": "tbl",
+      "sha256": "81461acc5a4a1f69b58b99b08ef4ece9e4f78db7113c53595bb08fb0d7c9eebc",
+      "text": "Fig. 3: Figure 6-3"
+    },
+    {
+      "bodyIndex": 94,
+      "tag": "tbl",
+      "sha256": "91ee76a97b2ff04a73b4b79bac02475cb1acec261066773f51bb61eb1fb261db",
+      "text": "Fig. 4: Figure 6-4"
+    },
+    {
+      "bodyIndex": 95,
+      "tag": "tbl",
+      "sha256": "fbdc63510dd0ae6644ec89f507172f88a4a55e21804cf926be24317ef080818c",
+      "text": "Fig. 5: Figure 6-5"
+    },
+    {
+      "bodyIndex": 96,
+      "tag": "tbl",
+      "sha256": "e4691a23f0cfaecafe04e526053af11065278fa291c1f4fe6b6464cdedbf85b1",
+      "text": "Fig. 6: Figure 6-6"
+    },
+    {
+      "bodyIndex": 97,
+      "tag": "tbl",
+      "sha256": "a484c467e2a21969667492e0f0d3b39fdb6ecd8071501f74eee3c724ff9d93e1",
+      "text": "Fig. 7: Figure 6-7"
+    },
+    {
+      "bodyIndex": 98,
+      "tag": "tbl",
+      "sha256": "51ef6a7cae13f38afa0a5500e37558fa9988a9011b0fbbc84a1ba4f292f376d8",
+      "text": "Fig. 8: Figure 6-8"
+    },
+    {
+      "bodyIndex": 99,
+      "tag": "tbl",
+      "sha256": "94524df27a68fbac5f0d3b88c211b3500712ac5265b996d07af60d3aba33b624",
+      "text": "Fig. 9: Figure 6-9"
+    },
+    {
+      "bodyIndex": 100,
+      "tag": "tbl",
+      "sha256": "df45d3022dda2b1e1acc105671fee782123c4a2b4d660bf4ffebb85f6fe2d977",
+      "text": "Fig. 10: Figure 6-10"
+    },
+    {
+      "bodyIndex": 101,
+      "tag": "tbl",
+      "sha256": "1d749b1ac17103b3b8273a65f25e83870b05f6388aafd58b8a1be0358352d0ea",
+      "text": "Fig. 11: Figure 6-11"
+    },
+    {
+      "bodyIndex": 102,
+      "tag": "tbl",
+      "sha256": "9a2e95f5064f1106d8261a315fc5d3aeab679de16e4b62e0c2b0394b9f2450ae",
+      "text": "Fig. 12: Figure 6-12"
+    },
+    {
+      "bodyIndex": 103,
+      "tag": "tbl",
+      "sha256": "b719a822cc2fca1bab9402ac4b7f5f4c95e4e4cd0ce10060486d473f6c1bf679",
+      "text": "Fig. 13: Figure 6-13"
+    },
+    {
+      "bodyIndex": 104,
+      "tag": "tbl",
+      "sha256": "f5b3972ec56a987f18e0fc2d78686ddc604211ff9022c2c04ab15a5ba18af968",
+      "text": "Fig. 14: Figure 7-7"
+    },
+    {
+      "bodyIndex": 105,
+      "tag": "tbl",
+      "sha256": "03bdeae0e3fd33600df7ec16dcf20043be0d88c9d2f34f21b4cc4dea4d4ebfd2",
+      "text": "Fig. 15: Figure 7-8"
+    },
+    {
+      "bodyIndex": 106,
+      "tag": "tbl",
+      "sha256": "90f51ff5582ad58577699239a01c5ba3aa30b1a8e9de391220f41fb2fe403b55",
+      "text": "Fig. 16: Figure 8-1"
+    },
+    {
+      "bodyIndex": 107,
+      "tag": "tbl",
+      "sha256": "28e208c85d5daf9d490253a098d3201c6ee9f3053b8dad4f6ed8f2cb1d0ff07c",
+      "text": "Fig. 17: Figure 8-2"
+    },
+    {
+      "bodyIndex": 108,
+      "tag": "tbl",
+      "sha256": "0f22b6cef0f82c6f0dee43e1161c379e789d491d7948756401256b2b55080bcc",
+      "text": "Fig. 18: Figure 8-3"
+    },
+    {
+      "bodyIndex": 109,
+      "tag": "tbl",
+      "sha256": "5c5cc0503182ca878e3aeeefde2e078f8ad2be236ac58cf03bf0eaa68d0d0eb0",
+      "text": "Fig. 19: Figure 9-1"
+    },
+    {
+      "bodyIndex": 110,
+      "tag": "tbl",
+      "sha256": "4c16778a12ce6d27992eeec9e1ec193df8e16952d276de5381c5433e90de0c60",
+      "text": "Fig. 20: Figure 9-2"
+    },
+    {
+      "bodyIndex": 111,
+      "tag": "tbl",
+      "sha256": "ff619c5be8d2667968aa885e2421a927ebbc7082b85f380496aaa5343414adda",
+      "text": "Fig. 21: Figure 9-3"
+    },
+    {
+      "bodyIndex": 112,
+      "tag": "tbl",
+      "sha256": "2f27f27d34eb4efcb911e9943b07915f7023ab2a4575e28342b6487df0d7cff3",
+      "text": "Fig. 22: Figure 9-4"
+    },
+    {
+      "bodyIndex": 113,
+      "tag": "tbl",
+      "sha256": "981d02d8e78f204cc67e5bb7a9be72b6a06b39371887251bbd35964da1fdb325",
+      "text": "Fig. 23: Figure C1-1"
+    },
+    {
+      "bodyIndex": 114,
+      "tag": "tbl",
+      "sha256": "4317d5c132e23359036443dbf3f414825a311cf6b52232e9e7913bf7ceb249ad",
+      "text": "Fig. 24: Figure C1-2"
+    },
+    {
+      "bodyIndex": 115,
+      "tag": "tbl",
+      "sha256": "406e454e5fc1975313ceeed5de822c2a4ad7da1414461c7dd128c6b69dc96146",
+      "text": "Fig. 25: Figure C1-3"
+    },
+    {
+      "bodyIndex": 116,
+      "tag": "tbl",
+      "sha256": "9080d335f45bfac3aa094e32d3056869f8daf90f386e364c3f069b3c6cc53cd8",
+      "text": "Fig. 26: Figure C1-4"
+    },
+    {
+      "bodyIndex": 117,
+      "tag": "tbl",
+      "sha256": "256a1475bbbcf044e089490ab93569e546687922cfd38e9255831eba269ffcec",
+      "text": "Fig. 27: Figure C1-5"
+    },
+    {
+      "bodyIndex": 118,
+      "tag": "tbl",
+      "sha256": "13682ea5a019f3ba021b615cc8df33dca01841e8da45fac0252397a7877e0053",
+      "text": "Fig. 28: Figure C1-6"
+    },
+    {
+      "bodyIndex": 119,
+      "tag": "tbl",
+      "sha256": "3ffd62c1017aa454480cd8a22a82ccb84ff991da999acb4ec061a2b0b3a7960a",
+      "text": "Fig. 29: Figure C1-7"
+    },
+    {
+      "bodyIndex": 120,
+      "tag": "tbl",
+      "sha256": "8a86c5bf07e5fd0592f156cf9077d66d8ec31b64fb4edf607c0741772fb67d3d",
+      "text": "Fig. 30: Figure C1-8"
+    },
+    {
+      "bodyIndex": 121,
+      "tag": "tbl",
+      "sha256": "0092778d68db302f94a8543f6fc0b063fcb497aeadcddab1f31940beee59b9a6",
+      "text": "Fig. 31: Figure C1-9"
+    },
+    {
+      "bodyIndex": 122,
+      "tag": "tbl",
+      "sha256": "3371423065ca59f53e5c60bcbda8a7e35dc62b953ebac9cefdd3e62dabd9f982",
+      "text": "Fig. 32: Figure C1-10"
+    },
+    {
+      "bodyIndex": 123,
+      "tag": "tbl",
+      "sha256": "dbebe5fc6c1e9fb1c43db20549f4f14cd1f7018370be1a806b6ddb1c0159cacc",
+      "text": "Fig. 33: Figure C1-11"
+    },
+    {
+      "bodyIndex": 124,
+      "tag": "tbl",
+      "sha256": "bbbb275ec2be02c432434506e29eb247ac923908cc29c84c44263a870960dd98",
+      "text": "Fig. 34: Figure C1-12"
+    },
+    {
+      "bodyIndex": 125,
+      "tag": "tbl",
+      "sha256": "8af990fcacafafadad7584449a51dc3cc79a03ff6d5940482478ed76663f2861",
+      "text": "Fig. 35: Figure C1-13"
+    },
+    {
+      "bodyIndex": 126,
+      "tag": "tbl",
+      "sha256": "13e5441820a4ad18c890bc1200a667a7c56abb34427ed144031e83eeba067c2b",
+      "text": "Fig. 36: Figure C1-14"
+    },
+    {
+      "bodyIndex": 127,
+      "tag": "tbl",
+      "sha256": "16c6f5c0c0e41a41cb0686085e759f521159602d00cd474c85b0c0c90c7c178a",
+      "text": "Fig. 37: Figure C1-15"
+    },
+    {
+      "bodyIndex": 128,
+      "tag": "tbl",
+      "sha256": "7e346d102185fbed45e68718c3c9b444278af3e81a21beea3398b678103a6b16",
+      "text": "Fig. 38: Figure C1-16"
+    },
+    {
+      "bodyIndex": 129,
+      "tag": "tbl",
+      "sha256": "c9693f3d445c1445f19ff5d2601d8ba9e209f8e8fd675bbed24f98b50f2e5c6b",
+      "text": "Fig. 39: Figure C1-17"
+    },
+    {
+      "bodyIndex": 130,
+      "tag": "tbl",
+      "sha256": "39dff786d6ea37777be3da861dd6a2269588639d1cedde619561a6bbe614a997",
+      "text": "Fig. 40: Figure C1-18"
+    },
+    {
+      "bodyIndex": 131,
+      "tag": "tbl",
+      "sha256": "a3086ac726b92113ae1ed09fa733ef03675f81f99fbe37b1c6056225a5155d03",
+      "text": "Fig. 41: Figure C1-19"
+    },
+    {
+      "bodyIndex": 132,
+      "tag": "tbl",
+      "sha256": "866aaf7d7399e20544459ed6a4fa12acfe9e02f2f6555ca6516d8175b57e71d0",
+      "text": "Fig. 42: Figure C1-20"
+    },
+    {
+      "bodyIndex": 133,
+      "tag": "tbl",
+      "sha256": "fd5e0d3d19a5ae0bd03aff8ec757710d3c1e35986422a23b75ee468bbb99f832",
+      "text": "Fig. 43: Figure C1-21"
+    },
+    {
+      "bodyIndex": 134,
+      "tag": "tbl",
+      "sha256": "bf5f20acba3f0a850310acf9693a7401a9d73ef37cd397b45adf3eee457b108a",
+      "text": "Fig. 44: Figure C1-22"
+    },
+    {
+      "bodyIndex": 135,
+      "tag": "tbl",
+      "sha256": "62ee7af207863957c5ecc796f4276b6077d05360b5bff32d58194908970cc37e",
+      "text": "Fig. 45: Figure C1-23"
+    },
+    {
+      "bodyIndex": 136,
+      "tag": "tbl",
+      "sha256": "3cc09127f779bca2fe34664a8254de45dd5f36ec87b4a9df0dbdae2947e21831",
+      "text": "Fig. 46: Figure C1-24"
+    },
+    {
+      "bodyIndex": 137,
+      "tag": "tbl",
+      "sha256": "566b3a767bcfb555c5fbbc47ad2ad5e74eda95153e9361cf2e1fa59bcc31b869",
+      "text": "Fig. 47: Figure C1-25"
+    },
+    {
+      "bodyIndex": 138,
+      "tag": "tbl",
+      "sha256": "859947df5f7fd7ff50a07ab36f00ae600bf419aacc72911a3e30fee7c4bfdb89",
+      "text": "Fig. 48: Figure C2-1"
+    },
+    {
+      "bodyIndex": 139,
+      "tag": "tbl",
+      "sha256": "644b3e4bfcfd54b15bd5a42793ecf33ed2ca6a28102c0f6ffb441a63ed0e1a07",
+      "text": "Fig. 49: Figure C2-2"
+    },
+    {
+      "bodyIndex": 140,
+      "tag": "tbl",
+      "sha256": "f6ca5fe2401e44dedcd8bf1a9b59a38081b553beea68a34bfc6b765da2ef1532",
+      "text": "Fig. 50: Figure C2-3"
+    },
+    {
+      "bodyIndex": 141,
+      "tag": "tbl",
+      "sha256": "0c76c142bbf85caf0132d080dddd85a5ab82706b9ff492c0ffc84ecce1e860b9",
+      "text": "Fig. 51: Figure C2-4"
+    },
+    {
+      "bodyIndex": 142,
+      "tag": "tbl",
+      "sha256": "67f0961cca4e2cc172a5cfd27e6b8b20f30e01100766ff633690b0dab73efa32",
+      "text": "Fig. 52: Figure C2-5"
+    },
+    {
+      "bodyIndex": 143,
+      "tag": "tbl",
+      "sha256": "43984562a9ffbba6af10bde9d7b901c3c421e7cd146f11733c364e8ea55a9e25",
+      "text": "Fig. 53: Figure C2-6"
+    },
+    {
+      "bodyIndex": 144,
+      "tag": "tbl",
+      "sha256": "4e296a5cca97790f71fac59abd0e4f0e4c766dac04ad85dfdf32b32bd913ed96",
+      "text": "Fig. 54: Figure C2-7"
+    },
+    {
+      "bodyIndex": 145,
+      "tag": "tbl",
+      "sha256": "cb4a7aefed2e69e28f5104f03f50407cf79bbf8431bc933c46a97cc45fdb4217",
+      "text": "Fig. 55: Figure C2-8"
+    },
+    {
+      "bodyIndex": 146,
+      "tag": "tbl",
+      "sha256": "a6c723229a57a843ef390de7a3d1ac1f0bb28c7aef3034d377df68c738d45b5c",
+      "text": "Fig. 56: Figure C2-9"
+    },
+    {
+      "bodyIndex": 147,
+      "tag": "tbl",
+      "sha256": "0df2784881d252457243c8f0caab5d9bc1ae5835ef188d3067208a85a2e7dc14",
+      "text": "Fig. 57: Figure C2-10"
+    },
+    {
+      "bodyIndex": 148,
+      "tag": "tbl",
+      "sha256": "59775e94063b34a92cfce1a9b1a2a6a41b929ca9277683ac53b252b2981f94d4",
+      "text": "Fig. 58: Figure C2-11"
+    },
+    {
+      "bodyIndex": 149,
+      "tag": "tbl",
+      "sha256": "7a27b1d55a38b26db2fdd015134a7828f612cc5341108608b51be8eb040847be",
+      "text": "Fig. 59: Figure C2-12"
+    },
+    {
+      "bodyIndex": 150,
+      "tag": "tbl",
+      "sha256": "b55f28ed77fceb35f2cabf651e970e5b6391fb86e07cfdda52d554a66e98c92e",
+      "text": "Fig. 60: Figure C2-13"
+    },
+    {
+      "bodyIndex": 151,
+      "tag": "tbl",
+      "sha256": "a9279fae169ec78c45b5deed5483f3bb80a11acd8fe0eb76e5146bf70a053f78",
+      "text": "Fig. 61: Figure C2-14"
+    },
+    {
+      "bodyIndex": 152,
+      "tag": "tbl",
+      "sha256": "ef1f0fe8703c48cd54e9de85de907780de3fdd73fbe975e719dd60c712b21be0",
+      "text": "Fig. 62: Figure C2-15"
+    },
+    {
+      "bodyIndex": 153,
+      "tag": "tbl",
+      "sha256": "10e796ab1bc1abd2e5271bcc68da8545b90136869398857577ad6e88953aef4a",
+      "text": "Fig. 63: Figure C2-16"
+    },
+    {
+      "bodyIndex": 154,
+      "tag": "tbl",
+      "sha256": "c159e05f0d8b64130c5acea9252c5b54017836cd972ac9ef14bef584dbce568b",
+      "text": "Fig. 64: Figure C2-17"
+    },
+    {
+      "bodyIndex": 155,
+      "tag": "tbl",
+      "sha256": "b2b9918012c2bba8571efe1030d1b1ce463eb74814ba53bf1d7f71d3dad66598",
+      "text": "Fig. 65: Figure C2-18"
+    },
+    {
+      "bodyIndex": 156,
+      "tag": "tbl",
+      "sha256": "0709bd724ecd1b3d2d1a918ae32c65cc698075c8a4ae085224b49bc098d48776",
+      "text": "Fig. 66: Figure C2-19"
+    },
+    {
+      "bodyIndex": 157,
+      "tag": "tbl",
+      "sha256": "2d49efcf87c2bd6340053e6add105e6051352339cfbfb5485db20c73a0badf09",
+      "text": "Fig. 67: Figure C2-20"
+    },
+    {
+      "bodyIndex": 158,
+      "tag": "tbl",
+      "sha256": "9afacbe765ecbabda1db6abcd219e9a7017bada1dcf97c257d417bbc5f33e68c",
+      "text": "Fig. 68: Figure C2-21"
+    },
+    {
+      "bodyIndex": 159,
+      "tag": "tbl",
+      "sha256": "200e9393a430246c44328a680139174b6156756d273d5733f010e21effb6f3d3",
+      "text": "Fig. 69: Figure C2-22"
+    },
+    {
+      "bodyIndex": 160,
+      "tag": "tbl",
+      "sha256": "3fb1a03e6fd4491ed5ddf0a3b1b7617fc5d7fbcaaa0caa1d7be5b144666c9ae0",
+      "text": "Fig. 70: Figure C2-23"
+    },
+    {
+      "bodyIndex": 161,
+      "tag": "tbl",
+      "sha256": "9db8a1ab266792895be2b44d8cd9b9faf0b22d84450c32d487808daad58de837",
+      "text": "Fig. 71: Figure C2-24"
+    },
+    {
+      "bodyIndex": 162,
+      "tag": "tbl",
+      "sha256": "0e59bf055b5069b62021ffe8fcac2689437614666883a2183b45498007660c51",
+      "text": "Fig. 72: Figure C2-25"
+    },
+    {
+      "bodyIndex": 163,
+      "tag": "tbl",
+      "sha256": "2f2a47d5cb177a5b398b7039d46c748b521d3372c30ed9342a400a9f16dc768a",
+      "text": "Fig. 73: Figure D2-1"
+    },
+    {
+      "bodyIndex": 164,
+      "tag": "tbl",
+      "sha256": "95864df01a485b89f16901615b55a2b6c1c821bd8510617d5d5bb71da3ccfd44",
+      "text": "Fig. 74: Figure D2-2"
+    },
+    {
+      "bodyIndex": 165,
+      "tag": "tbl",
+      "sha256": "c6220690840db5cde08b4a0f8de875636b370ac49327be3c9950c0d64dc964f4",
+      "text": "Fig. 75: Figure D2-3"
+    },
+    {
+      "bodyIndex": 166,
+      "tag": "tbl",
+      "sha256": "f205065efc6c5eab1358c4f10512d5441706ca5b894fe2ad27bc5c55daa85c83",
+      "text": "Fig. 76: Figure D2-4"
+    },
+    {
+      "bodyIndex": 167,
+      "tag": "tbl",
+      "sha256": "abeafa17796ff5d536f0dc4aab4dda70f4389372b19a58b49c076b4a90c483b9",
+      "text": "Fig. 77: Figure D2-5"
+    },
+    {
+      "bodyIndex": 168,
+      "tag": "bookmarkEnd",
+      "sha256": "0eb6c463e6f0c95792bf51f849e2cbef87451a8782606270b51bf85f65b7f742",
+      "text": ""
+    },
+    {
+      "bodyIndex": 169,
+      "tag": "sectPr",
+      "sha256": "099471c3ca58bab642e7f0ad5a24312fff9938cd5ff117f5d8ed5684b0e7fb59",
+      "text": ""
+    }
+  ],
+  "tables": [
+    {
+      "bodyIndex": 3,
+      "rows": [
+        [
+          "",
+          "Seismic Hazard",
+          ""
+        ],
+        [
+          "",
+          "Prepared forCanada Nickel Co."
+        ],
+        [
+          "",
+          "Prepared bySRK Consulting (Canada), Inc. and Paterson & CookeAR-M2V4D15/10/2026"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 5,
+      "rows": [
+        [
+          "",
+          "Seismic Hazard"
+        ],
+        [
+          "",
+          "15/10/2026"
+        ],
+        [
+          "",
+          "Prepared for",
+          "Prepared by"
+        ],
+        [
+          "",
+          "Canada Nickel Co.",
+          "SRK Consulting (Canada), Inc. and Paterson & Cooke"
+        ],
+        [
+          "",
+          "",
+          "Web:https://www.srk.com/"
+        ],
+        [
+          "",
+          "Project No.:AR-M2V4DFile Name:hazard.diana.en.docx"
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 48,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "475",
+          "0.0374",
+          "0.0361",
+          "0.0351",
+          "0.0388",
+          "0.0515"
+        ],
+        [
+          "975",
+          "0.0653",
+          "0.0629",
+          "0.0610",
+          "0.0671",
+          "0.0876"
+        ],
+        [
+          "2,475",
+          "0.1261",
+          "0.1210",
+          "0.1171",
+          "0.1278",
+          "0.1588"
+        ],
+        [
+          "5,000",
+          "0.1943",
+          "0.1862",
+          "0.1800",
+          "0.1948",
+          "0.2288"
+        ],
+        [
+          "10,000",
+          "0.2852",
+          "0.2726",
+          "0.2632",
+          "0.2828",
+          "0.3123"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 53,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "475",
+          "0.0524",
+          "0.0501",
+          "0.0474",
+          "0.0539",
+          "0.0736"
+        ],
+        [
+          "975",
+          "0.0929",
+          "0.0887",
+          "0.0840",
+          "0.0947",
+          "0.1264"
+        ],
+        [
+          "2,475",
+          "0.1803",
+          "0.1717",
+          "0.1623",
+          "0.1812",
+          "0.2288"
+        ],
+        [
+          "5,000",
+          "0.2794",
+          "0.2654",
+          "0.2509",
+          "0.2773",
+          "0.3271"
+        ],
+        [
+          "10,000",
+          "0.4122",
+          "0.3899",
+          "0.3684",
+          "0.4040",
+          "0.4424"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 58,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "0.000",
+          "0.285",
+          "0.273",
+          "0.263",
+          "0.283",
+          "0.312"
+        ],
+        [
+          "0.050",
+          "0.593",
+          "0.599",
+          "0.602",
+          "0.620",
+          "0.557"
+        ],
+        [
+          "0.075",
+          "0.558",
+          "0.620",
+          "0.632",
+          "0.653",
+          "0.568"
+        ],
+        [
+          "0.100",
+          "0.520",
+          "0.601",
+          "0.619",
+          "0.650",
+          "0.592"
+        ],
+        [
+          "0.120",
+          "0.471",
+          "0.550",
+          "0.569",
+          "0.602",
+          "0.561"
+        ],
+        [
+          "0.150",
+          "0.405",
+          "0.487",
+          "0.509",
+          "0.545",
+          "0.526"
+        ],
+        [
+          "0.180",
+          "0.374",
+          "0.432",
+          "0.457",
+          "0.499",
+          "0.516"
+        ],
+        [
+          "0.200",
+          "0.361",
+          "0.403",
+          "0.428",
+          "0.474",
+          "0.512"
+        ],
+        [
+          "0.220",
+          "0.328",
+          "0.360",
+          "0.384",
+          "0.430",
+          "0.486"
+        ],
+        [
+          "0.250",
+          "0.291",
+          "0.314",
+          "0.332",
+          "0.378",
+          "0.454"
+        ],
+        [
+          "0.280",
+          "0.264",
+          "0.283",
+          "0.298",
+          "0.340",
+          "0.430"
+        ],
+        [
+          "0.300",
+          "0.250",
+          "0.269",
+          "0.281",
+          "0.319",
+          "0.418"
+        ],
+        [
+          "0.350",
+          "0.218",
+          "0.234",
+          "0.245",
+          "0.279",
+          "0.380"
+        ],
+        [
+          "0.400",
+          "0.194",
+          "0.209",
+          "0.217",
+          "0.250",
+          "0.356"
+        ],
+        [
+          "0.450",
+          "0.174",
+          "0.187",
+          "0.194",
+          "0.226",
+          "0.336"
+        ],
+        [
+          "0.500",
+          "0.157",
+          "0.169",
+          "0.175",
+          "0.206",
+          "0.324"
+        ],
+        [
+          "0.600",
+          "0.124",
+          "0.133",
+          "0.137",
+          "0.163",
+          "0.268"
+        ],
+        [
+          "0.700",
+          "0.103",
+          "0.111",
+          "0.114",
+          "0.137",
+          "0.234"
+        ],
+        [
+          "0.750",
+          "0.096",
+          "0.102",
+          "0.105",
+          "0.126",
+          "0.223"
+        ],
+        [
+          "0.850",
+          "0.084",
+          "0.089",
+          "0.091",
+          "0.110",
+          "0.195"
+        ],
+        [
+          "0.900",
+          "0.079",
+          "0.083",
+          "0.086",
+          "0.103",
+          "0.184"
+        ],
+        [
+          "1.000",
+          "0.071",
+          "0.075",
+          "0.076",
+          "0.092",
+          "0.169"
+        ],
+        [
+          "1.250",
+          "0.054",
+          "0.057",
+          "0.058",
+          "0.071",
+          "0.129"
+        ],
+        [
+          "1.500",
+          "0.044",
+          "0.046",
+          "0.047",
+          "0.057",
+          "0.107"
+        ],
+        [
+          "1.750",
+          "0.037",
+          "0.039",
+          "0.039",
+          "0.048",
+          "0.088"
+        ],
+        [
+          "2.000",
+          "0.032",
+          "0.033",
+          "0.034",
+          "0.041",
+          "0.075"
+        ],
+        [
+          "2.500",
+          "0.023",
+          "0.024",
+          "0.024",
+          "0.030",
+          "0.054"
+        ],
+        [
+          "3.000",
+          "0.018",
+          "0.018",
+          "0.019",
+          "0.023",
+          "0.041"
+        ],
+        [
+          "3.500",
+          "0.014",
+          "0.015",
+          "0.015",
+          "0.018",
+          "0.033"
+        ],
+        [
+          "4.000",
+          "0.012",
+          "0.012",
+          "0.012",
+          "0.015",
+          "0.027"
+        ],
+        [
+          "4.500",
+          "0.010",
+          "0.010",
+          "0.010",
+          "0.013",
+          "0.023"
+        ],
+        [
+          "5.000",
+          "0.009",
+          "0.009",
+          "0.009",
+          "0.011",
+          "0.019"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 63,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "0.000",
+          "0.126",
+          "0.121",
+          "0.117",
+          "0.128",
+          "0.159"
+        ],
+        [
+          "0.050",
+          "0.245",
+          "0.244",
+          "0.246",
+          "0.259",
+          "0.269"
+        ],
+        [
+          "0.075",
+          "0.238",
+          "0.261",
+          "0.266",
+          "0.281",
+          "0.284"
+        ],
+        [
+          "0.100",
+          "0.228",
+          "0.261",
+          "0.269",
+          "0.288",
+          "0.304"
+        ],
+        [
+          "0.120",
+          "0.207",
+          "0.241",
+          "0.249",
+          "0.268",
+          "0.289"
+        ],
+        [
+          "0.150",
+          "0.180",
+          "0.215",
+          "0.224",
+          "0.244",
+          "0.272"
+        ],
+        [
+          "0.180",
+          "0.166",
+          "0.192",
+          "0.203",
+          "0.224",
+          "0.267"
+        ],
+        [
+          "0.200",
+          "0.161",
+          "0.180",
+          "0.191",
+          "0.214",
+          "0.266"
+        ],
+        [
+          "0.220",
+          "0.147",
+          "0.161",
+          "0.172",
+          "0.194",
+          "0.253"
+        ],
+        [
+          "0.250",
+          "0.130",
+          "0.140",
+          "0.149",
+          "0.170",
+          "0.236"
+        ],
+        [
+          "0.280",
+          "0.118",
+          "0.127",
+          "0.134",
+          "0.153",
+          "0.223"
+        ],
+        [
+          "0.300",
+          "0.112",
+          "0.120",
+          "0.126",
+          "0.144",
+          "0.216"
+        ],
+        [
+          "0.350",
+          "0.097",
+          "0.104",
+          "0.109",
+          "0.125",
+          "0.195"
+        ],
+        [
+          "0.400",
+          "0.087",
+          "0.093",
+          "0.097",
+          "0.112",
+          "0.180"
+        ],
+        [
+          "0.450",
+          "0.078",
+          "0.083",
+          "0.087",
+          "0.101",
+          "0.169"
+        ],
+        [
+          "0.500",
+          "0.070",
+          "0.075",
+          "0.078",
+          "0.092",
+          "0.162"
+        ],
+        [
+          "0.600",
+          "0.056",
+          "0.060",
+          "0.062",
+          "0.073",
+          "0.134"
+        ],
+        [
+          "0.700",
+          "0.047",
+          "0.050",
+          "0.052",
+          "0.062",
+          "0.115"
+        ],
+        [
+          "0.750",
+          "0.043",
+          "0.046",
+          "0.048",
+          "0.057",
+          "0.109"
+        ],
+        [
+          "0.850",
+          "0.038",
+          "0.041",
+          "0.042",
+          "0.050",
+          "0.095"
+        ],
+        [
+          "0.900",
+          "0.036",
+          "0.038",
+          "0.039",
+          "0.047",
+          "0.090"
+        ],
+        [
+          "1.000",
+          "0.033",
+          "0.035",
+          "0.035",
+          "0.043",
+          "0.082"
+        ],
+        [
+          "1.250",
+          "0.025",
+          "0.026",
+          "0.027",
+          "0.033",
+          "0.063"
+        ],
+        [
+          "1.500",
+          "0.020",
+          "0.022",
+          "0.022",
+          "0.027",
+          "0.051"
+        ],
+        [
+          "1.750",
+          "0.017",
+          "0.018",
+          "0.018",
+          "0.022",
+          "0.042"
+        ],
+        [
+          "2.000",
+          "0.015",
+          "0.016",
+          "0.016",
+          "0.019",
+          "0.036"
+        ],
+        [
+          "2.500",
+          "0.011",
+          "0.011",
+          "0.011",
+          "0.014",
+          "0.026"
+        ],
+        [
+          "3.000",
+          "0.008",
+          "0.008",
+          "0.009",
+          "0.011",
+          "0.019"
+        ],
+        [
+          "3.500",
+          "0.006",
+          "0.007",
+          "0.007",
+          "0.008",
+          "0.015"
+        ],
+        [
+          "4.000",
+          "0.005",
+          "0.005",
+          "0.006",
+          "0.007",
+          "0.012"
+        ],
+        [
+          "4.500",
+          "0.004",
+          "0.005",
+          "0.005",
+          "0.006",
+          "0.010"
+        ],
+        [
+          "5.000",
+          "0.004",
+          "0.004",
+          "0.004",
+          "0.005",
+          "0.009"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 68,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "475",
+          "0.0374",
+          "0.0361",
+          "0.0351",
+          "0.0388",
+          "0.0515"
+        ],
+        [
+          "975",
+          "0.0653",
+          "0.0629",
+          "0.0610",
+          "0.0671",
+          "0.0876"
+        ],
+        [
+          "2,475",
+          "0.1261",
+          "0.1210",
+          "0.1171",
+          "0.1278",
+          "0.1588"
+        ],
+        [
+          "5,000",
+          "0.1943",
+          "0.1862",
+          "0.1800",
+          "0.1948",
+          "0.2288"
+        ],
+        [
+          "10,000",
+          "0.2852",
+          "0.2726",
+          "0.2632",
+          "0.2828",
+          "0.3123"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 73,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "475",
+          "0.0340",
+          "0.0330",
+          "0.0328",
+          "0.0354",
+          "0.0474"
+        ],
+        [
+          "975",
+          "0.0586",
+          "0.0567",
+          "0.0562",
+          "0.0607",
+          "0.0801"
+        ],
+        [
+          "2,475",
+          "0.1127",
+          "0.1086",
+          "0.1074",
+          "0.1153",
+          "0.1456"
+        ],
+        [
+          "5,000",
+          "0.1729",
+          "0.1665",
+          "0.1645",
+          "0.1751",
+          "0.2120"
+        ],
+        [
+          "10,000",
+          "0.2525",
+          "0.2430",
+          "0.2398",
+          "0.2535",
+          "0.2919"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 78,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "475",
+          "0.0524",
+          "0.0501",
+          "0.0474",
+          "0.0539",
+          "0.0736"
+        ],
+        [
+          "975",
+          "0.0929",
+          "0.0887",
+          "0.0840",
+          "0.0947",
+          "0.1264"
+        ],
+        [
+          "2,475",
+          "0.1803",
+          "0.1717",
+          "0.1623",
+          "0.1812",
+          "0.2288"
+        ],
+        [
+          "5,000",
+          "0.2794",
+          "0.2654",
+          "0.2509",
+          "0.2773",
+          "0.3271"
+        ],
+        [
+          "10,000",
+          "0.4122",
+          "0.3899",
+          "0.3684",
+          "0.4040",
+          "0.4424"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 83,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "475",
+          "0.0596",
+          "0.0567",
+          "0.0528",
+          "0.0610",
+          "0.0831"
+        ],
+        [
+          "975",
+          "0.1063",
+          "0.1012",
+          "0.0943",
+          "0.1077",
+          "0.1433"
+        ],
+        [
+          "2,475",
+          "0.2070",
+          "0.1963",
+          "0.1829",
+          "0.2066",
+          "0.2589"
+        ],
+        [
+          "5,000",
+          "0.3215",
+          "0.3041",
+          "0.2834",
+          "0.3169",
+          "0.3683"
+        ],
+        [
+          "10,000",
+          "0.4754",
+          "0.4477",
+          "0.4170",
+          "0.4624",
+          "0.4958"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 88,
+      "rows": [
+        [
+          "Row",
+          "1500",
+          "910",
+          "760",
+          "580",
+          "220"
+        ],
+        [
+          "475",
+          "0.0705",
+          "0.0665",
+          "0.0604",
+          "0.0715",
+          "0.0968"
+        ],
+        [
+          "975",
+          "0.1267",
+          "0.1198",
+          "0.1092",
+          "0.1272",
+          "0.1675"
+        ],
+        [
+          "2,475",
+          "0.2472",
+          "0.2331",
+          "0.2128",
+          "0.2443",
+          "0.3021"
+        ],
+        [
+          "5,000",
+          "0.3851",
+          "0.3621",
+          "0.3307",
+          "0.3755",
+          "0.4272"
+        ],
+        [
+          "10,000",
+          "0.5709",
+          "0.5343",
+          "0.4877",
+          "0.5490",
+          "0.5723"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 91,
+      "rows": [
+        [
+          "Fig. 1: Figure 6-1"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 92,
+      "rows": [
+        [
+          "Fig. 2: Figure 6-2"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 93,
+      "rows": [
+        [
+          "Fig. 3: Figure 6-3"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 94,
+      "rows": [
+        [
+          "Fig. 4: Figure 6-4"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 95,
+      "rows": [
+        [
+          "Fig. 5: Figure 6-5"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 96,
+      "rows": [
+        [
+          "Fig. 6: Figure 6-6"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 97,
+      "rows": [
+        [
+          "Fig. 7: Figure 6-7"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 98,
+      "rows": [
+        [
+          "Fig. 8: Figure 6-8"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 99,
+      "rows": [
+        [
+          "Fig. 9: Figure 6-9"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 100,
+      "rows": [
+        [
+          "Fig. 10: Figure 6-10"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 101,
+      "rows": [
+        [
+          "Fig. 11: Figure 6-11"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 102,
+      "rows": [
+        [
+          "Fig. 12: Figure 6-12"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 103,
+      "rows": [
+        [
+          "Fig. 13: Figure 6-13"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 104,
+      "rows": [
+        [
+          "Fig. 14: Figure 7-7"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 105,
+      "rows": [
+        [
+          "Fig. 15: Figure 7-8"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 106,
+      "rows": [
+        [
+          "Fig. 16: Figure 8-1"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 107,
+      "rows": [
+        [
+          "Fig. 17: Figure 8-2"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 108,
+      "rows": [
+        [
+          "Fig. 18: Figure 8-3"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 109,
+      "rows": [
+        [
+          "Fig. 19: Figure 9-1"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 110,
+      "rows": [
+        [
+          "Fig. 20: Figure 9-2"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 111,
+      "rows": [
+        [
+          "Fig. 21: Figure 9-3"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 112,
+      "rows": [
+        [
+          "Fig. 22: Figure 9-4"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 113,
+      "rows": [
+        [
+          "Fig. 23: Figure C1-1"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 114,
+      "rows": [
+        [
+          "Fig. 24: Figure C1-2"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 115,
+      "rows": [
+        [
+          "Fig. 25: Figure C1-3"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 116,
+      "rows": [
+        [
+          "Fig. 26: Figure C1-4"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 117,
+      "rows": [
+        [
+          "Fig. 27: Figure C1-5"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 118,
+      "rows": [
+        [
+          "Fig. 28: Figure C1-6"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 119,
+      "rows": [
+        [
+          "Fig. 29: Figure C1-7"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 120,
+      "rows": [
+        [
+          "Fig. 30: Figure C1-8"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 121,
+      "rows": [
+        [
+          "Fig. 31: Figure C1-9"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 122,
+      "rows": [
+        [
+          "Fig. 32: Figure C1-10"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 123,
+      "rows": [
+        [
+          "Fig. 33: Figure C1-11"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 124,
+      "rows": [
+        [
+          "Fig. 34: Figure C1-12"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 125,
+      "rows": [
+        [
+          "Fig. 35: Figure C1-13"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 126,
+      "rows": [
+        [
+          "Fig. 36: Figure C1-14"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 127,
+      "rows": [
+        [
+          "Fig. 37: Figure C1-15"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 128,
+      "rows": [
+        [
+          "Fig. 38: Figure C1-16"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 129,
+      "rows": [
+        [
+          "Fig. 39: Figure C1-17"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 130,
+      "rows": [
+        [
+          "Fig. 40: Figure C1-18"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 131,
+      "rows": [
+        [
+          "Fig. 41: Figure C1-19"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 132,
+      "rows": [
+        [
+          "Fig. 42: Figure C1-20"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 133,
+      "rows": [
+        [
+          "Fig. 43: Figure C1-21"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 134,
+      "rows": [
+        [
+          "Fig. 44: Figure C1-22"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 135,
+      "rows": [
+        [
+          "Fig. 45: Figure C1-23"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 136,
+      "rows": [
+        [
+          "Fig. 46: Figure C1-24"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 137,
+      "rows": [
+        [
+          "Fig. 47: Figure C1-25"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 138,
+      "rows": [
+        [
+          "Fig. 48: Figure C2-1"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 139,
+      "rows": [
+        [
+          "Fig. 49: Figure C2-2"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 140,
+      "rows": [
+        [
+          "Fig. 50: Figure C2-3"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 141,
+      "rows": [
+        [
+          "Fig. 51: Figure C2-4"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 142,
+      "rows": [
+        [
+          "Fig. 52: Figure C2-5"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 143,
+      "rows": [
+        [
+          "Fig. 53: Figure C2-6"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 144,
+      "rows": [
+        [
+          "Fig. 54: Figure C2-7"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 145,
+      "rows": [
+        [
+          "Fig. 55: Figure C2-8"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 146,
+      "rows": [
+        [
+          "Fig. 56: Figure C2-9"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 147,
+      "rows": [
+        [
+          "Fig. 57: Figure C2-10"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 148,
+      "rows": [
+        [
+          "Fig. 58: Figure C2-11"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 149,
+      "rows": [
+        [
+          "Fig. 59: Figure C2-12"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 150,
+      "rows": [
+        [
+          "Fig. 60: Figure C2-13"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 151,
+      "rows": [
+        [
+          "Fig. 61: Figure C2-14"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 152,
+      "rows": [
+        [
+          "Fig. 62: Figure C2-15"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 153,
+      "rows": [
+        [
+          "Fig. 63: Figure C2-16"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 154,
+      "rows": [
+        [
+          "Fig. 64: Figure C2-17"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 155,
+      "rows": [
+        [
+          "Fig. 65: Figure C2-18"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 156,
+      "rows": [
+        [
+          "Fig. 66: Figure C2-19"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 157,
+      "rows": [
+        [
+          "Fig. 67: Figure C2-20"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 158,
+      "rows": [
+        [
+          "Fig. 68: Figure C2-21"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 159,
+      "rows": [
+        [
+          "Fig. 69: Figure C2-22"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 160,
+      "rows": [
+        [
+          "Fig. 70: Figure C2-23"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 161,
+      "rows": [
+        [
+          "Fig. 71: Figure C2-24"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 162,
+      "rows": [
+        [
+          "Fig. 72: Figure C2-25"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 163,
+      "rows": [
+        [
+          "Fig. 73: Figure D2-1"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 164,
+      "rows": [
+        [
+          "Fig. 74: Figure D2-2"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 165,
+      "rows": [
+        [
+          "Fig. 75: Figure D2-3"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 166,
+      "rows": [
+        [
+          "Fig. 76: Figure D2-4"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 167,
+      "rows": [
+        [
+          "Fig. 77: Figure D2-5"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "bodyIndex": 3,
+      "relationship": "rId9",
+      "part": "word/media/srk-na-logo.wmf",
+      "sha256": "c5e94914920e7c7d7a0038fb140449960fdb00173dd9dfea71ffca5240ab82db"
+    },
+    {
+      "bodyIndex": 5,
+      "relationship": "rId9",
+      "part": "word/media/srk-na-logo.wmf",
+      "sha256": "c5e94914920e7c7d7a0038fb140449960fdb00173dd9dfea71ffca5240ab82db"
+    },
+    {
+      "bodyIndex": 91,
+      "relationship": "rId27",
+      "part": "word/media/rId27.png",
+      "sha256": "97201d54632b43d008584699f0d76de87ec77444f3a96c8ae69a73e4f832e3c1"
+    },
+    {
+      "bodyIndex": 92,
+      "relationship": "rId31",
+      "part": "word/media/rId31.png",
+      "sha256": "77a95f8ca18a0a65cba9284be1314bee139742b917377e3ef41c743f01f9e90f"
+    },
+    {
+      "bodyIndex": 93,
+      "relationship": "rId35",
+      "part": "word/media/rId35.png",
+      "sha256": "3c910ac8ae122b4523df204eafbb267af43f763dcacdc9cc38006b7b3785103c"
+    },
+    {
+      "bodyIndex": 94,
+      "relationship": "rId39",
+      "part": "word/media/rId39.png",
+      "sha256": "1ac53d7f633528b18942fe5917f9b8fd827aa06f42c27303ee021689a89341b6"
+    },
+    {
+      "bodyIndex": 95,
+      "relationship": "rId43",
+      "part": "word/media/rId43.png",
+      "sha256": "b1f837d378326d7a7abdf298e9b56616b3680d3bd7429c78ca96aec6554b7893"
+    },
+    {
+      "bodyIndex": 96,
+      "relationship": "rId47",
+      "part": "word/media/rId47.png",
+      "sha256": "f488769f3d232ce41dc9d488ae6b3b67b31e40c770eee6c0f51592a55276bc50"
+    },
+    {
+      "bodyIndex": 97,
+      "relationship": "rId51",
+      "part": "word/media/rId51.png",
+      "sha256": "7497bd2b2c7149d9d9a97535d9d8160eeba99d5b493d291a241ebeee666a3ebc"
+    },
+    {
+      "bodyIndex": 98,
+      "relationship": "rId55",
+      "part": "word/media/rId55.png",
+      "sha256": "1e0ffeac34b656aa1086ebc277dfa9ad0c52df89295c4cecf7ad098de5dadd0e"
+    },
+    {
+      "bodyIndex": 99,
+      "relationship": "rId59",
+      "part": "word/media/rId59.png",
+      "sha256": "65f91905b86c8b039c7597b0b23ab9b422874cd9cf21e86069bd7952f57c184d"
+    },
+    {
+      "bodyIndex": 100,
+      "relationship": "rId63",
+      "part": "word/media/rId63.png",
+      "sha256": "fd6709c34651463663ea42f607f6c7c83c71e1d756e930d5fc775630fc1f5f5d"
+    },
+    {
+      "bodyIndex": 101,
+      "relationship": "rId67",
+      "part": "word/media/rId67.png",
+      "sha256": "bb8087a5654ce66d6882ec3b52df45584ba159c9c661b754fe0630af8fa52516"
+    },
+    {
+      "bodyIndex": 102,
+      "relationship": "rId71",
+      "part": "word/media/rId71.png",
+      "sha256": "f14a0060ddeb61506e264cba11138292b65961ad702c4683f737e9ced2f21ced"
+    },
+    {
+      "bodyIndex": 103,
+      "relationship": "rId75",
+      "part": "word/media/rId75.png",
+      "sha256": "56d5024f2819effe3488215fd5001ff82d6ebc097d110e527af325e723d8e61e"
+    },
+    {
+      "bodyIndex": 104,
+      "relationship": "rId79",
+      "part": "word/media/rId79.png",
+      "sha256": "51c10c4bcf722a65baa7f7e79eed84cc49ed0510f1b8a8ea7ee28ae1bca7b3a3"
+    },
+    {
+      "bodyIndex": 105,
+      "relationship": "rId83",
+      "part": "word/media/rId83.png",
+      "sha256": "91c68215f23429ea7f0ca5dd29b3b03c7ea5a4941c9f6e10869a7b99db7035c8"
+    },
+    {
+      "bodyIndex": 106,
+      "relationship": "rId87",
+      "part": "word/media/rId87.png",
+      "sha256": "9b35b52a457f141b2f266bef72705241631af848306b9d7bf82040c07e53ece6"
+    },
+    {
+      "bodyIndex": 107,
+      "relationship": "rId91",
+      "part": "word/media/rId91.png",
+      "sha256": "7a2242869aa2bca1f9d3434bb898c638ab216661ccb26f235470801503f58791"
+    },
+    {
+      "bodyIndex": 108,
+      "relationship": "rId95",
+      "part": "word/media/rId95.png",
+      "sha256": "7d737c8eefa85ad3a23238d31f2e96f5d483a639d0d2a7bf0f41488e24fec80d"
+    },
+    {
+      "bodyIndex": 109,
+      "relationship": "rId99",
+      "part": "word/media/rId99.png",
+      "sha256": "0dbdbb5075594274dea4244465e3c2f9c36b2475f549f1fdc9a29f0259fc70be"
+    },
+    {
+      "bodyIndex": 110,
+      "relationship": "rId103",
+      "part": "word/media/rId103.png",
+      "sha256": "143ddb542bc7fb9486bfd50dddd7f221411efba06476594c5da6509c32946d5e"
+    },
+    {
+      "bodyIndex": 111,
+      "relationship": "rId107",
+      "part": "word/media/rId107.png",
+      "sha256": "a5996813985de9818136f2f9dced0bb2888260f7321ec08a2a66c60717496c89"
+    },
+    {
+      "bodyIndex": 112,
+      "relationship": "rId111",
+      "part": "word/media/rId111.png",
+      "sha256": "54144398a4d5ae97e24b8a952537c89d86c0bc53d40676f967695838460e9fe9"
+    },
+    {
+      "bodyIndex": 113,
+      "relationship": "rId115",
+      "part": "word/media/rId115.png",
+      "sha256": "09bf5530a71482520277eafc80731753be2e9c13b67d1302eeaba7396214ae29"
+    },
+    {
+      "bodyIndex": 114,
+      "relationship": "rId119",
+      "part": "word/media/rId119.png",
+      "sha256": "d055858be21eee4876a4960ab73f81813c6c8fdddb80d59e3ace018af852713c"
+    },
+    {
+      "bodyIndex": 115,
+      "relationship": "rId123",
+      "part": "word/media/rId123.png",
+      "sha256": "d052e23fef93d964526dca36c47bd68ec79f761dd52b8f5afa43f3e4e313e1f0"
+    },
+    {
+      "bodyIndex": 116,
+      "relationship": "rId127",
+      "part": "word/media/rId127.png",
+      "sha256": "4ef3dbb7da04f5f894bf2ef6a65b73e16c5ebf4f7f1ffea9b63768b7b9be1567"
+    },
+    {
+      "bodyIndex": 117,
+      "relationship": "rId131",
+      "part": "word/media/rId131.png",
+      "sha256": "e519bea21fc68dcfddb72a3b73aac0944c9f5f231a2239a9d3194ab7f3276252"
+    },
+    {
+      "bodyIndex": 118,
+      "relationship": "rId135",
+      "part": "word/media/rId135.png",
+      "sha256": "d9461d3956cf4e71f9ae24b21c13b1863208010f2f37317bbd605f6956571c1b"
+    },
+    {
+      "bodyIndex": 119,
+      "relationship": "rId139",
+      "part": "word/media/rId139.png",
+      "sha256": "99ee62943bd64aa0c0727e1e5d7159c0e65e06a6e68efc3d2bd0b6e637c9ef73"
+    },
+    {
+      "bodyIndex": 120,
+      "relationship": "rId143",
+      "part": "word/media/rId143.png",
+      "sha256": "74381d3193b4063b23fd7eed6fdff3810a11586e2d7d70e0a0df5c09186a0ca3"
+    },
+    {
+      "bodyIndex": 121,
+      "relationship": "rId147",
+      "part": "word/media/rId147.png",
+      "sha256": "a31e4c422c52d3c5890e7037ae02458bbeee3fe84b2aee8dc6bf482ccb6db117"
+    },
+    {
+      "bodyIndex": 122,
+      "relationship": "rId151",
+      "part": "word/media/rId151.png",
+      "sha256": "06d3110abf2409132f8d71c4ced9eda66a00b3494c1bee4f2b0624c87ff235cb"
+    },
+    {
+      "bodyIndex": 123,
+      "relationship": "rId155",
+      "part": "word/media/rId155.png",
+      "sha256": "c6ab007776cd9eade1ccb1c901bae42f71ab81449006cd65269a1db08057fc82"
+    },
+    {
+      "bodyIndex": 124,
+      "relationship": "rId159",
+      "part": "word/media/rId159.png",
+      "sha256": "c1379c64dee31ac0e20750a9ff7248c8e750492d7c1ddb220d7c839af84b04ba"
+    },
+    {
+      "bodyIndex": 125,
+      "relationship": "rId163",
+      "part": "word/media/rId163.png",
+      "sha256": "a1284d4b213e6beabf6929451f120aae0f0f895dfcda55c9738ca0e296c98a65"
+    },
+    {
+      "bodyIndex": 126,
+      "relationship": "rId167",
+      "part": "word/media/rId167.png",
+      "sha256": "da63b703462fa8e3ab7152f9453558960a9e647bde7b7ad52ddb00409761eb31"
+    },
+    {
+      "bodyIndex": 127,
+      "relationship": "rId171",
+      "part": "word/media/rId171.png",
+      "sha256": "6f2e278ed7d7b25dd234549b210ff8b051cf5ff66077339f12813e8e7575abe6"
+    },
+    {
+      "bodyIndex": 128,
+      "relationship": "rId175",
+      "part": "word/media/rId175.png",
+      "sha256": "d876065ae9d2d1bb37c35377d36234a66203dc01253a9839de6c640d788cda7a"
+    },
+    {
+      "bodyIndex": 129,
+      "relationship": "rId179",
+      "part": "word/media/rId179.png",
+      "sha256": "a71a65d861963c2987809b9913e041857511c73e69f0b9710111760f0ec8ce91"
+    },
+    {
+      "bodyIndex": 130,
+      "relationship": "rId183",
+      "part": "word/media/rId183.png",
+      "sha256": "76d0459617b2c9eb892edf2aa3807f534f84886cb1144586d36069758eab3813"
+    },
+    {
+      "bodyIndex": 131,
+      "relationship": "rId187",
+      "part": "word/media/rId187.png",
+      "sha256": "625992f622bfa82eb997e844b501fc93b408760614a7fe2bfedd6fb35d33db42"
+    },
+    {
+      "bodyIndex": 132,
+      "relationship": "rId191",
+      "part": "word/media/rId191.png",
+      "sha256": "dc8ee1196be7b792b875069507f60efc3feb3fe6e422cfd577d63d18fd381a1b"
+    },
+    {
+      "bodyIndex": 133,
+      "relationship": "rId195",
+      "part": "word/media/rId195.png",
+      "sha256": "57c5c5c0129f1c5da34978f68c8d98b767811010b632c09e6c4ccf2cf4e3be4e"
+    },
+    {
+      "bodyIndex": 134,
+      "relationship": "rId199",
+      "part": "word/media/rId199.png",
+      "sha256": "99a834fb96657315c2eee43f0f6048689173455b0817761200eb72e585c2ef04"
+    },
+    {
+      "bodyIndex": 135,
+      "relationship": "rId203",
+      "part": "word/media/rId203.png",
+      "sha256": "27d3d197895855a4ab4ffa1d20cd95c5fec612c7a4d216a2dc2871d69ed53d29"
+    },
+    {
+      "bodyIndex": 136,
+      "relationship": "rId207",
+      "part": "word/media/rId207.png",
+      "sha256": "44c48551dd09a82f870620200a3bbf0996987f883932aa35bb643e2a1359b131"
+    },
+    {
+      "bodyIndex": 137,
+      "relationship": "rId211",
+      "part": "word/media/rId211.png",
+      "sha256": "e2da843c9de694866f6869bada56df07cf1729a85ba3a2b1b5be8dc8edceb4b2"
+    },
+    {
+      "bodyIndex": 138,
+      "relationship": "rId215",
+      "part": "word/media/rId215.png",
+      "sha256": "af2f843c51337a7cf97689c480ded32b389753d5d9f10d62a66e774a05127176"
+    },
+    {
+      "bodyIndex": 139,
+      "relationship": "rId219",
+      "part": "word/media/rId219.png",
+      "sha256": "6798b99270950aa02d65ec697f0de3a744b971b373114c922bdcef68ff36fac0"
+    },
+    {
+      "bodyIndex": 140,
+      "relationship": "rId223",
+      "part": "word/media/rId223.png",
+      "sha256": "015e01c730c4d153fd66fe7f97da76c1639cf4aed71e22aeadd193c0781a3056"
+    },
+    {
+      "bodyIndex": 141,
+      "relationship": "rId227",
+      "part": "word/media/rId227.png",
+      "sha256": "427cd0d6be1e1d5521aed141e57880d487f2f8c1899fa1c67aae3a13d08c5e6f"
+    },
+    {
+      "bodyIndex": 142,
+      "relationship": "rId231",
+      "part": "word/media/rId231.png",
+      "sha256": "4e968357af4ddc0d05243002c8781c7b69139dfe2b715ae535e9292ada600765"
+    },
+    {
+      "bodyIndex": 143,
+      "relationship": "rId235",
+      "part": "word/media/rId235.png",
+      "sha256": "71daff2e6f05afcfb9ebe73e78ea8c496c37b28935403add8e722af8d696db98"
+    },
+    {
+      "bodyIndex": 144,
+      "relationship": "rId239",
+      "part": "word/media/rId239.png",
+      "sha256": "6b18ba8c185a14b23d800cc0ea70d9992d9b7e21f3a4bf39df96818589f3d484"
+    },
+    {
+      "bodyIndex": 145,
+      "relationship": "rId243",
+      "part": "word/media/rId243.png",
+      "sha256": "228ad6068961c2bba2c93faba0e38fd890585b3ac02c64058cd8a0e2184333b1"
+    },
+    {
+      "bodyIndex": 146,
+      "relationship": "rId247",
+      "part": "word/media/rId247.png",
+      "sha256": "36d2cf26e562021cf97e8ea13020cb7548f1515ba2b09bf4297fbf4d03bc98f4"
+    },
+    {
+      "bodyIndex": 147,
+      "relationship": "rId251",
+      "part": "word/media/rId251.png",
+      "sha256": "d2812a89a59cac0fb2ab6a65e0f1f4ec8e992f80a4c348eb0afe083d8185e997"
+    },
+    {
+      "bodyIndex": 148,
+      "relationship": "rId255",
+      "part": "word/media/rId255.png",
+      "sha256": "4dc8c64cb8f560117875202d94e9b708686ffa5b7a05253b70ee6031514d7da0"
+    },
+    {
+      "bodyIndex": 149,
+      "relationship": "rId259",
+      "part": "word/media/rId259.png",
+      "sha256": "27b10315857ead7d47559df569e9e234582ebc3ecf93422b5bb0ec0382560443"
+    },
+    {
+      "bodyIndex": 150,
+      "relationship": "rId263",
+      "part": "word/media/rId263.png",
+      "sha256": "616a082b495891dfce05fa68e3355d8c2c0269a6ae26e87d9256a02a8f4156f7"
+    },
+    {
+      "bodyIndex": 151,
+      "relationship": "rId267",
+      "part": "word/media/rId267.png",
+      "sha256": "7c23f337becb581dad9213e17448f9a3c3aeb6507976467b1b89d1da4a5090bc"
+    },
+    {
+      "bodyIndex": 152,
+      "relationship": "rId271",
+      "part": "word/media/rId271.png",
+      "sha256": "5fbd10537458bef3f32d6ef01fc1ba931bf28ac0b90216230d11a764ad150439"
+    },
+    {
+      "bodyIndex": 153,
+      "relationship": "rId275",
+      "part": "word/media/rId275.png",
+      "sha256": "6ac13d3812eb12aa24d73400c0d6b1bea085a2da208028eab82c17e2a0fea21f"
+    },
+    {
+      "bodyIndex": 154,
+      "relationship": "rId279",
+      "part": "word/media/rId279.png",
+      "sha256": "c63428771df473e16413f2ad42551766e1b0cd1f2258a61fe286e5047604124d"
+    },
+    {
+      "bodyIndex": 155,
+      "relationship": "rId283",
+      "part": "word/media/rId283.png",
+      "sha256": "22c30b21378ed561e90784e03da4e78219b5bcf0483036820f4c599674889ad2"
+    },
+    {
+      "bodyIndex": 156,
+      "relationship": "rId287",
+      "part": "word/media/rId287.png",
+      "sha256": "8796b513cb54bd2a146810e0a129811419996b4d239af9418d6434ed920e096a"
+    },
+    {
+      "bodyIndex": 157,
+      "relationship": "rId291",
+      "part": "word/media/rId291.png",
+      "sha256": "80fc1810bb572c2067e40459338336f213a5439820f5acada60c8628606f1987"
+    },
+    {
+      "bodyIndex": 158,
+      "relationship": "rId295",
+      "part": "word/media/rId295.png",
+      "sha256": "347357830787d7ca8397197c0b0559739e59b13ff170322ee6ab23f128186034"
+    },
+    {
+      "bodyIndex": 159,
+      "relationship": "rId299",
+      "part": "word/media/rId299.png",
+      "sha256": "36acef6e9681eba1f79e8633e4d87c88b84b60a645d5167ef1e977cab837a27d"
+    },
+    {
+      "bodyIndex": 160,
+      "relationship": "rId303",
+      "part": "word/media/rId303.png",
+      "sha256": "d4f98e98e97a04b84ef1056d9bf079ed97065d8a1580be4a5f44148f11d782b6"
+    },
+    {
+      "bodyIndex": 161,
+      "relationship": "rId307",
+      "part": "word/media/rId307.png",
+      "sha256": "bea21ff181f15f75f4f9163ac2f8dec70ec8ced3dac0b5735ab2ff61a3057059"
+    },
+    {
+      "bodyIndex": 162,
+      "relationship": "rId311",
+      "part": "word/media/rId311.png",
+      "sha256": "7a375c3301f7ce131a778d0d7ed3b96440fc1c1ddb35a307569f64c57c3bed4f"
+    },
+    {
+      "bodyIndex": 163,
+      "relationship": "rId315",
+      "part": "word/media/rId315.png",
+      "sha256": "c0b4e879e19c8b01577e77a3ec7e0534559ae3de89e2f0d3b6aa4b87c2c54248"
+    },
+    {
+      "bodyIndex": 164,
+      "relationship": "rId319",
+      "part": "word/media/rId319.png",
+      "sha256": "d1c6ed46411ef76ecb960ab593daba0bc669e576234476578a7aad40c00da559"
+    },
+    {
+      "bodyIndex": 165,
+      "relationship": "rId323",
+      "part": "word/media/rId323.png",
+      "sha256": "1e6688e6c061911f57057a8107322ce7b100a2946a67a839de2ce1bb35a991f1"
+    },
+    {
+      "bodyIndex": 166,
+      "relationship": "rId327",
+      "part": "word/media/rId327.png",
+      "sha256": "248d5c6c88b956111707c63eaa43f5a32d7fcb14fc7097f44289f8d1cc79fb70"
+    },
+    {
+      "bodyIndex": 167,
+      "relationship": "rId331",
+      "part": "word/media/rId331.png",
+      "sha256": "513459c47474350b67f3530060176584085cfccdf3bbe74d03fd3832e7d3f0de"
+    }
+  ],
+  "revisions": {
+    "ins": [],
+    "del": [],
+    "rPrChange": [],
+    "pPrChange": [],
+    "tblPrChange": [],
+    "trPrChange": [],
+    "tcPrChange": [],
+    "moveFrom": [],
+    "moveTo": []
+  },
+  "trackRevisions": false,
+  "math": []
+}

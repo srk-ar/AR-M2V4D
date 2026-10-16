@@ -77,3 +77,8 @@ report/data/
 
 # Local Netlify folder
 .netlify
+
+# Generated Word reports and client deliveries remain local.
+/docx/
+*.docx
+*.DOCX

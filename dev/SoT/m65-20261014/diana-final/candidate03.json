@@ -1,0 +1,604 @@
+{
+  "output": "/private/tmp/diana-final-20261016/R03-candidate03.docx",
+  "sha256": "408de7c27583671f057e8c36bba2a0ff97422f6fea5028b4b69289f40fb05dff",
+  "changes": [
+    {
+      "bodyIndex": 28,
+      "source": "docx.en.docx: executive Newmark paragraph; method and simulated realizations retained exactly",
+      "text": "The Newmark permanent displacement Dn quantifies the displacement induced by an earthquake and accumulated in the sliding mass and is the performance measure from which the seismic coefficients are derived. The Dn(ky) curves relate, for each combination of geometry, material, and design scenario, the yield acceleration ky to the expected permanent displacement; they were computed with the ensemble set of AM88, JB07, SR08, BT07, and BM19, with the reference magnitude assigned to each seismic demand and 300 realizations per demand and are read at the fractiles q=1\u2212pe."
+    },
+    {
+      "bodyIndex": 740,
+      "source": "owner PSHA-only decision; existing chapter 10 magnitude allocation retained",
+      "text": "where \u03bclnD and \u03c3lnD are the mean and standard deviation of lnDn defined by each model, and \u03f5 is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch, conditional on displacement exceeding the model\u2019s zero-or-negligible-displacement threshold. In every formulation, ky, PGA, and Sa are expressed in units of g \u2013 the acceleration of gravity \u2013 IA in m/s, and Ts in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude is Mw= 5.5 for return periods up to 2,500 years and Mw= 6.5 for return periods of 5,000 and 10,000 years. Within each demand, that magnitude is common to the geometry, material and site combinations evaluated. The published form of each formulation is reproduced in 11Appendix E. The performance-based seismic coefficient is defined by"
+    },
+    {
+      "bodyIndex": 990,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "\u2013 Seismic Coefficients"
+    },
+    {
+      "bodyIndex": 991,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": ""
+    },
+    {
+      "bodyIndex": 992,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E1: Shear Stiffness Parameters for Gravels, Sands, and Fines"
+    },
+    {
+      "bodyIndex": 993,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "MaterialAuthor (Reference)ACeneminemaxRound-grain Ottawa sandHardin & Richart (1963)7.002.1740.500.300.8Angular-grain crushed sandHardin & Richart (1963)3.272.9730.500.601.3Several sandsShibata-Soelarno (1975)42.000.6700.500.600.9Several sandsIwasaki et al.(1978)9.002.1740.380.600.9Toyoura sandKokusho (1980)8.402.1730.500.600.8Several sandsYu-Richart (1984)7.002.1730.500.600.9Ticino sandsLo Presti et.al (1993)7.102.2700.430.600.9Several undisturbed NC ClaysHardin & Black (1968)3.272.9730.500.501.7Reconstituted NC KaolineMarcuson & Wahls (1972)4.502.9730.501.101.3Reconstituted NC BentoniteMarcuson & Wahls (1972)0.454.4000.501.602.5Clay remolded IP=0-50%Zen-Umehara (1978)2.002.9730.501.602.5Clay remolded IP=0-50%Zen-Umehara (1978)3.002.9730.501.602.5Clay remolded IP=0-50%Zen-Umehara (1978)4.002.9730.501.602.5Undisturbed NC ClayKokusho et al.(1982)0.147.3200.601.703.8BalastPrange (1981)7.232.9700.380.250.7Crushed RockKokusho-Esashi (1981)13.002.1700.550.250.7Rounded GravelKokusho-Esashi (1981)8.402.1700.600.250.7GravelTanaka et al.(1987)3.082.1700.600.250.7GravelGoto et al.(1987)1.222.1700.850.250.7GravelNishio et al.(1985)9.362.1700.440.250.7"
+    },
+    {
+      "bodyIndex": 994,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": ""
+    },
+    {
+      "bodyIndex": 995,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": ""
+    },
+    {
+      "bodyIndex": 996,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "- Newmark Permanent-Displacement Formulations"
+    },
+    {
+      "bodyIndex": 997,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The seismic-coefficient section applies five Newmark permanent-displacement formulations: three rigid-block models, two flexible-block models and, among the latter, the BM branch selected by the tectonic control of the project. This section reproduces the published form of each formulation, including both BM branches, and states the rule that defines the active configuration. The rigid-block formulations relate the displacement to measures of the base excitation, whereas the flexible-block formulations additionally incorporate the dynamic response of the sliding mass through its fundamental period Ts and the spectral acceleration evaluated at a period proportional to Ts."
+    },
+    {
+      "bodyIndex": 998,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Rigid-Block Models"
+    },
+    {
+      "bodyIndex": 999,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The AM88 formulation (Ambraseys & Menu, 1988)(Ambraseys & Menu, 1988) uses the ratio of yield acceleration to PGA, capped to preserve the logarithmic domain, r\u22c6=min(ky/PGA,0.9999):"
+    },
+    {
+      "bodyIndex": 1000,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "\u03bclnD&=ln(10)0.90+log10\u200b(1-r\u22c6)2.53(r\u22c6)-1.09,\u03c3lnD&=0.30ln(10).[Eq. E11]"
+    },
+    {
+      "bodyIndex": 1001,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The two remaining rigid-block formulations, JB07 and SR08, use the Arias intensity, which is estimated for each realization from the PGA; IA is expressed in m/s and PGA in units of g, and the estimate is applied deterministically, so that each PGA realization determines a single value of IA and the displacement sample propagates the PGA variability. The JB07 formulation (Jibson, 2007)(Jibson, 2007) incorporates the Arias intensity and the ratio ky/PGA:"
+    },
+    {
+      "bodyIndex": 1002,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "\u03bclnD&=ln(10)0.561log10IA-3.833log10\u200bkyPGA-1.474,\u03c3lnD&=0.616ln(10).[Eq. E12]"
+    },
+    {
+      "bodyIndex": 1003,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The SR08 formulation (Saygili & Rathje, 2008)(Saygili & Rathje, 2008) defines r=ky/PGA and combines PGA and Arias intensity:"
+    },
+    {
+      "bodyIndex": 1004,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "\u03bclnD=\u200b&2.39-5.24r-18.78r2+42.01r3-29.15r4&-1.56lnPGA+1.38lnIA,\u03c3lnD=\u200b&0.46+0.56r.[Eq. E13]"
+    },
+    {
+      "bodyIndex": 1005,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The logarithmic extension of the Dn(ky) relations beyond their computed support has one exception, the AM88 limit. If the sampled PGA of a realization, PGAs, is smaller than the lower end of the grid, all stored points may satisfy ky/PGAs\u2265rmax=0.9999 and form a plateau D0,s. In that case the physical branch 0<r<rmax of Eq. E11 is solved for Da>D0,s, instead of extrapolating the plateau or assigning kmax=0:"
+    },
+    {
+      "bodyIndex": 1006,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "\u03bclnD(r)=lnDa-lnD0,s+\u03bclnD(rmax),\u2001\u2001kmax,s=PGAsr.[Eq. E14]"
+    },
+    {
+      "bodyIndex": 1007,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The random residual cancels between Da and D0,s, and d\u03bclnD/dr=-2.53/(1-r)-1.09/r<0, so the root is unique. An AM88 plateau is accepted only when the original curve is exactly constant and PGAs itself shows that the entire grid reached that limit; a flat curve from another model, or a target Da\u2264D0,s, is rejected as non-identifiable support."
+    },
+    {
+      "bodyIndex": 1008,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Flexible-Block Models"
+    },
+    {
+      "bodyIndex": 1009,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The flexible-block formulations evaluate the spectral acceleration at a period proportional to the fundamental period Ts of the sliding mass. The BT07 formulation (Bray & Travasarou, Simplified Procedure for Estimating Earthquake-Induced Deviatoric Slope Displacements, 2007)(Bray & Travasarou, 2007) employs Sa=Sa(1.5Ts) and Mw:"
+    },
+    {
+      "bodyIndex": 1010,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "\u03bclnD=\u200b&a0-2.83lnky-0.333(lnky)2+0.566lnkylnSa&+3.04lnSa-0.244(lnSa)2+1.50Ts+0.278(Mw-7),a0=\u200b&-0.22,Ts<0.05\u2005s,-1.10,Ts\u22650.05\u2005s,\u03c3lnD=\u200b&0.66.[Eq. E15]"
+    },
+    {
+      "bodyIndex": 1011,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The BM17 formulation (Bray, Macedo, & Travasauro, Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes, 2018)(Bray, Macedo, & Travasauro, 2018) represents subduction-interface motions with Sa=Sa(1.5Ts):"
+    },
+    {
+      "bodyIndex": 1012,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "\u03bclnD&=a0+a1lnSa-0.225(lnSa)2,a1&=3.060+0.538lnky,a0,<=\u200b&-5.864+0.550Mw-9.421Ts&-3.353lnky-0.390(lnky)2,a0,\u2265=\u200b&-6.896+0.550Mw+3.081Ts-0.803Ts2&-3.353lnky-0.390(lnky)2,a0&=a0,<,Ts<0.1\u2005s,a0,\u2265,Ts\u22650.1\u2005s,\u03c3lnD&=0.73.[Eq. E16]"
+    },
+    {
+      "bodyIndex": 1013,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The BM19 formulation (Bray & Macedo, Procedure for Estimating Shear-Induced Seismic Slope Displacement for Shallow Crustal Earthquakes, 2019)(Bray & Macedo, 2019) represents ordinary shallow crustal motions with Sa=Sa(1.3Ts):"
+    },
+    {
+      "bodyIndex": 1014,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "\u03bclnD&=a0+2.649+0.344lnkylnSa-0.090(lnSa)2,a0,<=\u200b&-4.684+0.603Mw-9.471Ts&-2.482lnky-0.244(lnky)2,a0,\u2265=\u200b&-5.981+0.603Mw+3.223Ts-0.945Ts2&-2.482lnky-0.244(lnky)2,a0&=a0,<,Ts<0.1\u2005s,a0,\u2265,Ts\u22650.1\u2005s,\u03c3lnD&=0.72.[Eq. E17]"
+    },
+    {
+      "bodyIndex": 1015,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Ensemble"
+    },
+    {
+      "bodyIndex": 1016,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "The active configuration applies five formulations: AM88, JB07, SR08, BT07, and one BM branch \u2013 BM17 when the project declares subduction control, BM19 when it declares crustal control; each evaluation therefore applies five formulations, never both BM branches at once. The predictors and dispersions are applied in the published form of each model, and the five formulations are combined with the equal weights and the rigid and flexible families defined in Section 10.1.3."
+    },
+    {
+      "bodyIndex": 1017,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "- Seismic Coefficient in Acceleration Units"
+    },
+    {
+      "bodyIndex": 1018,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Figure E21Figure E21 to Figure E23Figure E23 show the horizontal seismic coefficient in units of g, as a function of the allowable permanent displacement relative to the slope height, for design earthquakes with AEPs of 1:475, 1:2,475, and 1:10,000 years. Table E21Table E21 to Table E25Table E25 list the coefficient in cm/s\u00b2 for each scenario at the four relative displacement limits. The tables include the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 1019,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": ""
+    },
+    {
+      "bodyIndex": 1020,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Figure E21: Mean values of kmax [g] for return period TR=475 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 1021,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1022,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds Da/H=0.1,0.4,1.0,2.5 %."
+    },
+    {
+      "bodyIndex": 1023,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": ""
+    },
+    {
+      "bodyIndex": 1024,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Figure E22: Mean values of kmax [g] for return period TR=2,475 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 1025,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1026,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds Da/H=0.1,0.4,1.0,2.5 %."
+    },
+    {
+      "bodyIndex": 1027,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": ""
+    },
+    {
+      "bodyIndex": 1028,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Figure E23: Mean values of kmax [g] for return period TR=10,000 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 1029,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1030,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds Da/H=0.1,0.4,1.0,2.5 %."
+    },
+    {
+      "bodyIndex": 1031,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E21: Mean values of kmax [cm/s\u00b2] for scenario S135 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1032,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.8351935100TR 475 yrflexible0.8351933000TR 475 yrrigid0.8351936100TR 2,475 yrensemble0.835193311363TR 2,475 yrflexible0.83519317410TR 2,475 yrrigid0.8351934018105TR 10,000 yrensemble0.83519375361910TR 10,000 yrflexible0.835193421441TR 10,000 yrrigid0.83519397512816"
+    },
+    {
+      "bodyIndex": 1033,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1034,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section."
+    },
+    {
+      "bodyIndex": 1035,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E22: Mean values of kmax [cm/s\u00b2] for scenario S50 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1036,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.377217.513410TR 475 yrflexible0.377217.516300TR 475 yrrigid0.377217.512520TR 2,475 yrensemble0.377217.55326136TR 2,475 yrflexible0.377217.5481751TR 2,475 yrrigid0.377217.55732199TR 10,000 yrensemble0.377217.5125694121TR 10,000 yrflexible0.377217.510144206TR 10,000 yrrigid0.377217.5140865531"
+    },
+    {
+      "bodyIndex": 1037,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1038,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section."
+    },
+    {
+      "bodyIndex": 1039,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E23: Mean values of kmax [cm/s\u00b2] for scenario S32 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1040,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.308205.620831TR 475 yrflexible0.308205.626820TR 475 yrrigid0.308205.615731TR 2,475 yrensemble0.308205.66736209TR 2,475 yrflexible0.308205.66829123TR 2,475 yrrigid0.308205.667412514TR 10,000 yrensemble0.308205.6151885631TR 10,000 yrflexible0.308205.6134623212TR 10,000 yrrigid0.308205.61621057244"
+    },
+    {
+      "bodyIndex": 1041,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1042,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section."
+    },
+    {
+      "bodyIndex": 1043,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E24: Mean values of kmax [cm/s\u00b2] for scenario S27 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1044,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.187310.621831TR 475 yrflexible0.187310.629920TR 475 yrrigid0.187310.615731TR 2,475 yrensemble0.187310.683452713TR 2,475 yrflexible0.187310.69744216TR 2,475 yrrigid0.187310.674473017TR 10,000 yrensemble0.187310.61941137341TR 10,000 yrflexible0.187310.62071005423TR 10,000 yrrigid0.187310.61851228554"
+    },
+    {
+      "bodyIndex": 1045,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1046,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section."
+    },
+    {
+      "bodyIndex": 1047,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E25: Mean values of kmax [cm/s\u00b2] for scenario S35 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1048,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.28251.418621TR 475 yrflexible0.28251.424610TR 475 yrrigid0.28251.414731TR 2,475 yrensemble0.28251.46635199TR 2,475 yrflexible0.28251.46728113TR 2,475 yrrigid0.28251.466402413TR 10,000 yrensemble0.28251.4155895630TR 10,000 yrflexible0.28251.4143663412TR 10,000 yrrigid0.28251.41631047143"
+    },
+    {
+      "bodyIndex": 1049,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1050,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section."
+    },
+    {
+      "bodyIndex": 1051,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "- Seismic Coefficient as a Percentage of PGA"
+    },
+    {
+      "bodyIndex": 1052,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E31Table E31 to Table E35Table E35 list the horizontal seismic coefficient, expressed as a percentage of the PGA, for each scenario at the four relative displacement limits. The tables include the rigid, ensemble, and flexible sets. The coefficients of the ensemble set for the 1:2,475 and 1:10,000 year design earthquakes are also summarized in Table 102Table 102."
+    },
+    {
+      "bodyIndex": 1053,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E31: Mean values of kh [% of PGA] for scenario S135 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1054,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.8351939.01.60.40.1TR 475 yrflexible0.8351935.40.30.00.0TR 475 yrrigid0.83519311.32.40.60.2TR 2,475 yrensemble0.83519318.17.43.61.9TR 2,475 yrflexible0.8351939.82.10.40.0TR 2,475 yrrigid0.83519323.710.95.73.1TR 10,000 yrensemble0.83519321.310.35.32.7TR 10,000 yrflexible0.83519311.94.01.20.2TR 10,000 yrrigid0.83519327.514.48.04.4"
+    },
+    {
+      "bodyIndex": 1055,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1056,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30)."
+    },
+    {
+      "bodyIndex": 1057,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E32: Mean values of kh [% of PGA] for scenario S50 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1058,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.377217.524.87.22.10.4TR 475 yrflexible0.377217.529.35.30.50.0TR 475 yrrigid0.377217.521.88.53.10.7TR 2,475 yrensemble0.377217.531.315.37.73.3TR 2,475 yrflexible0.377217.527.810.03.00.3TR 2,475 yrrigid0.377217.533.618.810.95.4TR 10,000 yrensemble0.377217.534.719.211.45.8TR 10,000 yrflexible0.377217.528.212.25.51.5TR 10,000 yrrigid0.377217.539.023.815.48.6"
+    },
+    {
+      "bodyIndex": 1059,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1060,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30)."
+    },
+    {
+      "bodyIndex": 1061,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E33: Mean values of kh [% of PGA] for scenario S32 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1062,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.308205.636.514.05.21.2TR 475 yrflexible0.308205.648.915.13.70.3TR 475 yrrigid0.308205.628.213.36.21.9TR 2,475 yrensemble0.308205.639.421.111.85.5TR 2,475 yrflexible0.308205.639.816.97.11.7TR 2,475 yrrigid0.308205.639.223.914.98.0TR 10,000 yrensemble0.308205.642.224.615.68.7TR 10,000 yrflexible0.308205.637.517.59.03.3TR 10,000 yrrigid0.308205.645.429.420.112.2"
+    },
+    {
+      "bodyIndex": 1063,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1064,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30)."
+    },
+    {
+      "bodyIndex": 1065,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E34: Mean values of kh [% of PGA] for scenario S27 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1066,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.187310.638.815.05.31.4TR 475 yrflexible0.187310.654.517.04.00.3TR 475 yrrigid0.187310.628.313.66.22.2TR 2,475 yrensemble0.187310.647.325.815.17.2TR 2,475 yrflexible0.187310.655.124.711.83.6TR 2,475 yrrigid0.187310.642.126.517.29.6TR 10,000 yrensemble0.187310.650.629.619.010.8TR 10,000 yrflexible0.187310.654.026.014.16.0TR 10,000 yrrigid0.187310.648.331.922.314.1"
+    },
+    {
+      "bodyIndex": 1067,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1068,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30)."
+    },
+    {
+      "bodyIndex": 1069,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Table E35: Mean values of kh [% of PGA] for scenario S35 and return periods TR=475, 2,475, 10,000 yr."
+    },
+    {
+      "bodyIndex": 1070,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 475 yrensemble0.28251.433.612.04.01.2TR 475 yrflexible0.28251.443.611.42.10.1TR 475 yrrigid0.28251.426.812.45.31.9TR 2,475 yrensemble0.28251.438.420.211.05.1TR 2,475 yrflexible0.28251.438.816.16.31.5TR 2,475 yrrigid0.28251.438.122.914.27.4TR 10,000 yrensemble0.28251.442.124.315.28.3TR 10,000 yrflexible0.28251.438.918.19.23.3TR 10,000 yrrigid0.28251.444.328.419.311.6"
+    },
+    {
+      "bodyIndex": 1071,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "Notes:"
+    },
+    {
+      "bodyIndex": 1072,
+      "source": "Diana Appendix E wording restored from deleted content",
+      "text": "ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30)."
+    },
+    {
+      "bodyIndex": 993,
+      "source": "gmdp.memo.en.docx: body 43, full table",
+      "text": "FormulationFamilyReference materialAuthorACenHR63ASandsAngular-grain crushed sandHardin & Richart (1963)3.272.9730.50HR63RSandsRound-grain Ottawa sandHardin & Richart (1963)7.002.1740.50IW78SandsSeveral sandsIwasaki et al.(1978)9.002.1740.38KO80SandsToyoura sandKokusho (1980)8.402.1730.50LO93SandsTicino sandsLo Presti et.al (1993)7.102.2700.43SS75SandsSeveral sandsShibata-Soelarno (1975)42.000.6700.50YR84SandsSeveral sandsYu-Richart (1984)7.002.1730.50HB68FinesSeveral undisturbed NC ClaysHardin & Black (1968)3.272.9730.50KU82CFinesUndisturbed NC ClayKokusho et al.(1982)0.147.3200.60MW72BFinesReconstituted NC BentoniteMarcuson & Wahls (1972)0.454.4000.50MW72KFinesReconstituted NC KaolineMarcuson & Wahls (1972)4.502.9730.50ZU78AFinesClay remolded IP=0-50%Zen-Umehara (1978)2.002.9730.50ZU78BFinesClay remolded IP=0-50%Zen-Umehara (1978)3.002.9730.50ZU78CFinesClay remolded IP=0-50%Zen-Umehara (1978)4.002.9730.50GO87GravelsGravelGoto et al.(1987)1.222.1700.85KE81GGravelsRounded GravelKokusho-Esashi (1981)8.402.1700.60KE81RGravelsCrushed RockKokusho-Esashi (1981)13.002.1700.55NI85GravelsGravelNishio et al.(1985)9.362.1700.44PR81GravelsBalastPrange (1981)7.232.9700.38TA87GravelsGravelTanaka et al.(1987)3.082.1700.60"
+    },
+    {
+      "bodyIndex": 1000,
+      "source": "gmdp.memo.en.docx: body 170; equation label adapted, alignment tokens removed",
+      "text": "\u03bclnD=ln(10)0.90+log10\u200b(1\u2212r\u22c6)2.53(r\u22c6)\u22121.09,\u03c3lnD=0.30ln(10).  (E1-1)"
+    },
+    {
+      "bodyIndex": 1002,
+      "source": "gmdp.memo.en.docx: body 172; equation label adapted, alignment tokens removed",
+      "text": "\u03bclnD=ln(10)0.561log10IA\u22123.833log10\u200bkyPGA\u22121.474,\u03c3lnD=0.616ln(10).  (E1-2)"
+    },
+    {
+      "bodyIndex": 1004,
+      "source": "gmdp.memo.en.docx: body 174; equation label adapted, alignment tokens removed",
+      "text": "\u03bclnD=\u200b2.39\u22125.24r\u221218.78r2+42.01r3\u221229.15r4\u22121.56lnPGA+1.38lnIA,\u03c3lnD=\u200b0.46+0.56r.  (E1-3)"
+    },
+    {
+      "bodyIndex": 1006,
+      "source": "gmdp.memo.en.docx: body 176; equation label adapted, alignment tokens removed",
+      "text": "\u03bclnD(r)=lnDa\u2212lnD0,s+\u03bclnD(rmax),\u2001\u2001kmax,s=PGAsr.  (E1-4)"
+    },
+    {
+      "bodyIndex": 1010,
+      "source": "gmdp.memo.en.docx: body 182; equation label adapted, alignment tokens removed",
+      "text": "\u03bclnD=\u200ba0\u22122.83lnky\u22120.333(lnky)2+0.566lnkylnSa+3.04lnSa\u22120.244(lnSa)2+1.50Ts+0.278(Mw\u22127),a0=\u200b\u22120.22,Ts<0.05\u2005s,\u22121.10,Ts\u22650.05\u2005s,\u03c3lnD=\u200b0.66.  (E1-5)"
+    },
+    {
+      "bodyIndex": 1012,
+      "source": "gmdp.memo.en.docx: body 184; equation label adapted, alignment tokens removed",
+      "text": "\u03bclnD=a0+a1lnSa\u22120.225(lnSa)2,a1=3.060+0.538lnky,a0,<=\u200b\u22125.864+0.550Mw\u22129.421Ts\u22123.353lnky\u22120.390(lnky)2,a0,\u2265=\u200b\u22126.896+0.550Mw+3.081Ts\u22120.803Ts2\u22123.353lnky\u22120.390(lnky)2,a0=a0,<,Ts<0.1\u2005s,a0,\u2265,Ts\u22650.1\u2005s,\u03c3lnD=0.73.  (E1-6)"
+    },
+    {
+      "bodyIndex": 1014,
+      "source": "gmdp.memo.en.docx: body 186; equation label adapted, alignment tokens removed",
+      "text": "\u03bclnD=a0+2.649+0.344lnkylnSa\u22120.090(lnSa)2,a0,<=\u200b\u22124.684+0.603Mw\u22129.471Ts\u22122.482lnky\u22120.244(lnky)2,a0,\u2265=\u200b\u22125.981+0.603Mw+3.223Ts\u22120.945Ts2\u22122.482lnky\u22120.244(lnky)2,a0=a0,<,Ts<0.1\u2005s,a0,\u2265,Ts\u22650.1\u2005s,\u03c3lnD=0.72.  (E1-7)"
+    },
+    {
+      "bodyIndex": 1032,
+      "source": "gmdp.memo.en.docx: body 88, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble1.2781942000TR 500 yrflexible1.2781940000TR 500 yrrigid1.2781944100TR 2,500 yrensemble1.27819418742TR 2,500 yrflexible1.2781944100TR 2,500 yrrigid1.278194281263TR 10,000 yrensemble1.2781944822116TR 10,000 yrflexible1.27819421610TR 10,000 yrrigid1.27819465321710"
+    },
+    {
+      "bodyIndex": 1036,
+      "source": "gmdp.memo.en.docx: body 95, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.5262186210TR 500 yrflexible0.5262184000TR 500 yrrigid0.5262188310TR 2,500 yrensemble0.526218321573TR 2,500 yrflexible0.52621820410TR 2,500 yrrigid0.5262184122126TR 10,000 yrensemble0.52621884452512TR 10,000 yrflexible0.5262186828113TR 10,000 yrrigid0.52621895573519"
+    },
+    {
+      "bodyIndex": 1040,
+      "source": "gmdp.memo.en.docx: body 102, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.392205.711310TR 500 yrflexible0.392205.710200TR 500 yrrigid0.392205.711521TR 2,500 yrensemble0.392205.74321115TR 2,500 yrflexible0.392205.7351130TR 2,500 yrrigid0.392205.74828179TR 10,000 yrensemble0.392205.7107603719TR 10,000 yrflexible0.392205.710145227TR 10,000 yrrigid0.392205.7111704727"
+    },
+    {
+      "bodyIndex": 1044,
+      "source": "gmdp.memo.en.docx: body 109, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.219309.911410TR 500 yrflexible0.219309.912200TR 500 yrrigid0.219309.911521TR 2,500 yrensemble0.219309.95227157TR 2,500 yrflexible0.219309.9511971TR 2,500 yrrigid0.219309.953322011TR 10,000 yrensemble0.219309.9134764725TR 10,000 yrflexible0.219309.9148693513TR 10,000 yrrigid0.219309.9125815533"
+    },
+    {
+      "bodyIndex": 1048,
+      "source": "gmdp.memo.en.docx: body 116, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.305251.610310TR 500 yrflexible0.305251.610100TR 500 yrrigid0.305251.610421TR 2,500 yrensemble0.305251.64321115TR 2,500 yrflexible0.305251.6381241TR 2,500 yrrigid0.305251.64727168TR 10,000 yrensemble0.305251.6112623719TR 10,000 yrflexible0.305251.611552258TR 10,000 yrrigid0.305251.6110694626"
+    },
+    {
+      "bodyIndex": 1054,
+      "source": "gmdp.memo.en.docx: body 130, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble1.2781945.61.00.30.1TR 500 yrflexible1.2781940.70.00.00.0TR 500 yrrigid1.2781948.91.60.40.1TR 2,500 yrensemble1.27819414.35.82.91.4TR 2,500 yrflexible1.2781943.20.50.00.0TR 2,500 yrrigid1.27819421.79.34.82.4TR 10,000 yrensemble1.27819418.68.54.32.3TR 10,000 yrflexible1.2781948.12.30.60.1TR 10,000 yrrigid1.27819425.512.76.73.8"
+    },
+    {
+      "bodyIndex": 1058,
+      "source": "gmdp.memo.en.docx: body 137, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.52621814.84.11.30.2TR 500 yrflexible0.5262188.90.40.00.0TR 500 yrrigid0.52621818.86.62.10.4TR 2,500 yrensemble0.52621825.211.45.62.6TR 2,500 yrflexible0.52621815.83.40.50.0TR 2,500 yrrigid0.52621831.516.89.14.4TR 10,000 yrensemble0.52621832.517.49.84.8TR 10,000 yrflexible0.52621826.310.84.41.1TR 10,000 yrrigid0.52621836.721.813.47.2"
+    },
+    {
+      "bodyIndex": 1062,
+      "source": "gmdp.memo.en.docx: body 144, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.392205.724.78.02.90.9TR 500 yrflexible0.392205.724.54.10.50.0TR 500 yrrigid0.392205.724.910.64.51.4TR 2,500 yrensemble0.392205.733.116.68.84.2TR 2,500 yrflexible0.392205.727.38.92.60.4TR 2,500 yrrigid0.392205.737.121.813.06.7TR 10,000 yrensemble0.392205.741.523.514.37.5TR 10,000 yrflexible0.392205.739.217.68.42.8TR 10,000 yrrigid0.392205.743.027.318.110.7"
+    },
+    {
+      "bodyIndex": 1066,
+      "source": "gmdp.memo.en.docx: body 151, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.219309.925.78.63.00.9TR 500 yrflexible0.219309.927.24.70.40.0TR 500 yrrigid0.219309.924.811.34.71.5TR 2,500 yrensemble0.219309.939.420.411.25.2TR 2,500 yrflexible0.219309.938.714.45.20.9TR 2,500 yrrigid0.219309.939.924.415.28.1TR 10,000 yrensemble0.219309.949.327.917.39.3TR 10,000 yrflexible0.219309.954.525.212.94.7TR 10,000 yrrigid0.219309.945.829.720.312.3"
+    },
+    {
+      "bodyIndex": 1070,
+      "source": "gmdp.memo.en.docx: body 158, header and all TR rows; MCE rows excluded",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.305251.623.07.22.60.8TR 500 yrflexible0.305251.622.73.20.30.0TR 500 yrrigid0.305251.623.210.04.11.3TR 2,500 yrensemble0.305251.633.316.28.43.8TR 2,500 yrflexible0.305251.629.39.52.80.4TR 2,500 yrrigid0.305251.636.020.712.26.1TR 10,000 yrensemble0.305251.642.623.614.17.2TR 10,000 yrflexible0.305251.643.719.69.33.0TR 10,000 yrrigid0.305251.641.826.317.39.9"
+    },
+    {
+      "bodyIndex": 990,
+      "source": "Diana existing appendix headings; explicit numbering for restored section",
+      "text": "Appendix E Seismic Coefficients"
+    },
+    {
+      "bodyIndex": 996,
+      "source": "Diana existing appendix headings; explicit numbering for restored section",
+      "text": "E1 Newmark Permanent-Displacement Formulations"
+    },
+    {
+      "bodyIndex": 1017,
+      "source": "Diana existing appendix headings; explicit numbering for restored section",
+      "text": "E2 Seismic Coefficient in Acceleration Units"
+    },
+    {
+      "bodyIndex": 1051,
+      "source": "Diana existing appendix headings; explicit numbering for restored section",
+      "text": "E3 Seismic Coefficient as a Percentage of PGA"
+    },
+    {
+      "bodyIndex": 697,
+      "source": "restore live reference to Appendix E",
+      "text": "The Newmark permanent displacement Dn quantifies the displacement induced by an earthquake accumulates in the sliding mass and is the performance measure from which the seismic coefficients are derived. The Dn(ky) curves relate, for each combination of geometry, material, and design scenario, the yield acceleration ky to the expected permanent displacement; they were computed with an ensemble set of AM88 (Ambraseys & Menu, 1988), JB07 (Jibson, 2007), SR08 (Saygili & Rathje, 2008), BT07 (Bray & Travasarou, 2007), and BM19 (Bray, Macedo, & Travasauro, 2018), with reference magnitudes Mw = 5.5 and Mw = 6.5 assigned according to the seismic demand and 300 realizations per demand and are read at the fractiles q=1-pe. The horizontal pseudostatic coefficient kh is in turn derived from the allowable permanent displacement Da of the potentially sliding mass (Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009; Macedo, Bray, Abrahamson, & Travasarou, 2018); the coefficients are reported at four relative displacement limits, Da/Hs = 0.1, 0.4, 1.0, 2.5%, and the tables in Section 10.3 and 11Appendix E report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA."
+    },
+    {
+      "bodyIndex": 740,
+      "source": "restore live reference to Appendix E",
+      "text": "where \u03bclnD and \u03c3lnD are the mean and standard deviation of lnDn defined by each model, and \u03f5 is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch, conditional on displacement exceeding the model\u2019s zero-or-negligible-displacement threshold. In every formulation, ky, PGA, and Sa are expressed in units of g \u2013 the acceleration of gravity \u2013 IA in m/s, and Ts in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude is Mw= 5.5 for return periods up to 2,500 years and Mw= 6.5 for return periods of 5,000 and 10,000 years. Within each demand, that magnitude is common to the geometry, material and site combinations evaluated. The published form of each formulation is reproduced in 11Appendix E. The performance-based seismic coefficient is defined by"
+    },
+    {
+      "bodyIndex": 747,
+      "source": "restore live reference to Appendix E",
+      "text": "For each model and realization, the computed Dn(ky) relation is projected onto a non-increasing curve and inverted in the (lnDn,lnky) plane to solve the criterion of Eq. 1014; when Da falls outside the calculated range, the relation is extrapolated in that plane from the two points at the corresponding end, with the single exception of the AM88 limit treated in 11Appendix E. The inversion is performed first for each model within each realization."
+    },
+    {
+      "bodyIndex": 763,
+      "source": "restore live reference to Appendix E",
+      "text": "Figure 101 through Figure 103 show the performance-based horizontal seismic coefficient, expressed as a percentage of the PGA, as a function of the allowable permanent displacement relative to the slope height, for design earthquakes with AEPs of 1:475, 1:2,475, and 1:10,000 years. Table 102 lists the coefficients of the ensemble set at the four relative displacement limits for the 1:2,475 and 1:10,000-year return period design earthquakes. The coefficients of the rigid and flexible sets, and the coefficients in acceleration units, are included in 11Appendix E."
+    }
+  ],
+  "media": [
+    {
+      "bodyIndex": 768,
+      "target": "word/media/image41.png",
+      "source": "word/media/rId61.png",
+      "sha256": "ccf08047763ae42c2412df9b8b431c98b54ec1799347135dea9561e487aab15f"
+    },
+    {
+      "bodyIndex": 772,
+      "target": "word/media/image42.png",
+      "source": "word/media/rId66.png",
+      "sha256": "f1c5368bd1692f46ae46170ce5b73187c1a80b4ec6841a149e85294a8ba4c194"
+    },
+    {
+      "bodyIndex": 776,
+      "target": "word/media/image43.png",
+      "source": "word/media/rId71.png",
+      "sha256": "1c4e7cccc9e9dd082beb0d78abec283610052a06fc7988470ee3188f02f38063"
+    },
+    {
+      "bodyIndex": 1019,
+      "target": "word/media/image101.png",
+      "source": "word/media/rId30.png",
+      "sha256": "ea24317bbeeb6cdd476d3449adf83a8659788c5a836dc1687c4d4660fea1b53d"
+    },
+    {
+      "bodyIndex": 1023,
+      "target": "word/media/image102.png",
+      "source": "word/media/rId35.png",
+      "sha256": "08c8d6d074ca34e6f477f4d70c142f9dda14c2d6f6fcac649de876c7a6e2abab"
+    },
+    {
+      "bodyIndex": 1027,
+      "target": "word/media/image103.png",
+      "source": "word/media/rId40.png",
+      "sha256": "dc33fb4761b04a852a6c86fc9dcd87c3d5eec8be7e608814732e9aa07f7fbae5"
+    }
+  ],
+  "sourceHashes": {
+    "r02": "86dd4a5e7631e1abc5db539176fdf0da118904690a86be77a03187bd501a180e",
+    "memo": "9812e23c42a59a5be3738723e8e1e06684f2aa84287870c3f06472a03c92a329",
+    "report": "7b1096f0f6223b024f3b2c2a3dd9af50835743fdfa1154848fe447a94418c760"
+  }
+}

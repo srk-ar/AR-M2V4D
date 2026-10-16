@@ -1,0 +1,72 @@
+990: – Seismic Coefficients
+991: 
+992: Table E1: Shear Stiffness Parameters for Gravels, Sands, and Fines
+994: 
+995: 
+996: - Newmark Permanent-Displacement Formulations
+997: The seismic-coefficient section applies five Newmark permanent-displacement formulations: three rigid-block models, two flexible-block models and, among the latter, the BM branch selected by the tectonic control of the project. This section reproduces the published form of each formulation, including both BM branches, and states the rule that defines the active configuration. The rigid-block formulations relate the displacement to measures of the base excitation, whereas the flexible-block formulations additionally incorporate the dynamic response of the sliding mass through its fundamental period Ts and the spectral acceleration evaluated at a period proportional to Ts.
+998: Rigid-Block Models
+999: The AM88 formulation (Ambraseys & Menu, 1988)(Ambraseys & Menu, 1988) uses the ratio of yield acceleration to PGA, capped to preserve the logarithmic domain, r⋆=min(ky/PGA,0.9999):
+1000: μlnD&=ln(10)0.90+log10​(1-r⋆)2.53(r⋆)-1.09,σlnD&=0.30ln(10).[Eq. E11]
+1001: The two remaining rigid-block formulations, JB07 and SR08, use the Arias intensity, which is estimated for each realization from the PGA; IA is expressed in m/s and PGA in units of g, and the estimate is applied deterministically, so that each PGA realization determines a single value of IA and the displacement sample propagates the PGA variability. The JB07 formulation (Jibson, 2007)(Jibson, 2007) incorporates the Arias intensity and the ratio ky/PGA:
+1002: μlnD&=ln(10)0.561log10IA-3.833log10​kyPGA-1.474,σlnD&=0.616ln(10).[Eq. E12]
+1003: The SR08 formulation (Saygili & Rathje, 2008)(Saygili & Rathje, 2008) defines r=ky/PGA and combines PGA and Arias intensity:
+1004: μlnD=​&2.39-5.24r-18.78r2+42.01r3-29.15r4&-1.56lnPGA+1.38lnIA,σlnD=​&0.46+0.56r.[Eq. E13]
+1005: The logarithmic extension of the Dn(ky) relations beyond their computed support has one exception, the AM88 limit. If the sampled PGA of a realization, PGAs, is smaller than the lower end of the grid, all stored points may satisfy ky/PGAs≥rmax=0.9999 and form a plateau D0,s. In that case the physical branch 0<r<rmax of Eq. E11 is solved for Da>D0,s, instead of extrapolating the plateau or assigning kmax=0:
+1006: μlnD(r)=lnDa-lnD0,s+μlnD(rmax),  kmax,s=PGAsr.[Eq. E14]
+1007: The random residual cancels between Da and D0,s, and dμlnD/dr=-2.53/(1-r)-1.09/r<0, so the root is unique. An AM88 plateau is accepted only when the original curve is exactly constant and PGAs itself shows that the entire grid reached that limit; a flat curve from another model, or a target Da≤D0,s, is rejected as non-identifiable support.
+1008: Flexible-Block Models
+1009: The flexible-block formulations evaluate the spectral acceleration at a period proportional to the fundamental period Ts of the sliding mass. The BT07 formulation (Bray & Travasarou, Simplified Procedure for Estimating Earthquake-Induced Deviatoric Slope Displacements, 2007)(Bray & Travasarou, 2007) employs Sa=Sa(1.5Ts) and Mw:
+1010: μlnD=​&a0-2.83lnky-0.333(lnky)2+0.566lnkylnSa&+3.04lnSa-0.244(lnSa)2+1.50Ts+0.278(Mw-7),a0=​&-0.22,Ts<0.05 s,-1.10,Ts≥0.05 s,σlnD=​&0.66.[Eq. E15]
+1011: The BM17 formulation (Bray, Macedo, & Travasauro, Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes, 2018)(Bray, Macedo, & Travasauro, 2018) represents subduction-interface motions with Sa=Sa(1.5Ts):
+1012: μlnD&=a0+a1lnSa-0.225(lnSa)2,a1&=3.060+0.538lnky,a0,<=​&-5.864+0.550Mw-9.421Ts&-3.353lnky-0.390(lnky)2,a0,≥=​&-6.896+0.550Mw+3.081Ts-0.803Ts2&-3.353lnky-0.390(lnky)2,a0&=a0,<,Ts<0.1 s,a0,≥,Ts≥0.1 s,σlnD&=0.73.[Eq. E16]
+1013: The BM19 formulation (Bray & Macedo, Procedure for Estimating Shear-Induced Seismic Slope Displacement for Shallow Crustal Earthquakes, 2019)(Bray & Macedo, 2019) represents ordinary shallow crustal motions with Sa=Sa(1.3Ts):
+1014: μlnD&=a0+2.649+0.344lnkylnSa-0.090(lnSa)2,a0,<=​&-4.684+0.603Mw-9.471Ts&-2.482lnky-0.244(lnky)2,a0,≥=​&-5.981+0.603Mw+3.223Ts-0.945Ts2&-2.482lnky-0.244(lnky)2,a0&=a0,<,Ts<0.1 s,a0,≥,Ts≥0.1 s,σlnD&=0.72.[Eq. E17]
+1015: Ensemble
+1016: The active configuration applies five formulations: AM88, JB07, SR08, BT07, and one BM branch – BM17 when the project declares subduction control, BM19 when it declares crustal control; each evaluation therefore applies five formulations, never both BM branches at once. The predictors and dispersions are applied in the published form of each model, and the five formulations are combined with the equal weights and the rigid and flexible families defined in Section 10.1.3.
+1017: - Seismic Coefficient in Acceleration Units
+1018: Figure E21Figure E21 to Figure E23Figure E23 show the horizontal seismic coefficient in units of g, as a function of the allowable permanent displacement relative to the slope height, for design earthquakes with AEPs of 1:475, 1:2,475, and 1:10,000 years. Table E21Table E21 to Table E25Table E25 list the coefficient in cm/s² for each scenario at the four relative displacement limits. The tables include the rigid, ensemble, and flexible sets.
+1019: 
+1020: Figure E21: Mean values of kmax [g] for return period TR=475 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.
+1021: Notes:
+1022: Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds Da/H=0.1,0.4,1.0,2.5 %.
+1023: 
+1024: Figure E22: Mean values of kmax [g] for return period TR=2,475 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.
+1025: Notes:
+1026: Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds Da/H=0.1,0.4,1.0,2.5 %.
+1027: 
+1028: Figure E23: Mean values of kmax [g] for return period TR=10,000 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.
+1029: Notes:
+1030: Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds Da/H=0.1,0.4,1.0,2.5 %.
+1031: Table E21: Mean values of kmax [cm/s²] for scenario S135 and return periods TR=475, 2,475, 10,000 yr.
+1033: Notes:
+1034: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section.
+1035: Table E22: Mean values of kmax [cm/s²] for scenario S50 and return periods TR=475, 2,475, 10,000 yr.
+1037: Notes:
+1038: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section.
+1039: Table E23: Mean values of kmax [cm/s²] for scenario S32 and return periods TR=475, 2,475, 10,000 yr.
+1041: Notes:
+1042: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section.
+1043: Table E24: Mean values of kmax [cm/s²] for scenario S27 and return periods TR=475, 2,475, 10,000 yr.
+1045: Notes:
+1046: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section.
+1047: Table E25: Mean values of kmax [cm/s²] for scenario S35 and return periods TR=475, 2,475, 10,000 yr.
+1049: Notes:
+1050: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, Da/H [%]. The fractiles associated with the exceedance target pe are defined in the seismic-coefficient section.
+1051: - Seismic Coefficient as a Percentage of PGA
+1052: Table E31Table E31 to Table E35Table E35 list the horizontal seismic coefficient, expressed as a percentage of the PGA, for each scenario at the four relative displacement limits. The tables include the rigid, ensemble, and flexible sets. The coefficients of the ensemble set for the 1:2,475 and 1:10,000 year design earthquakes are also summarized in Table 102Table 102.
+1053: Table E31: Mean values of kh [% of PGA] for scenario S135 and return periods TR=475, 2,475, 10,000 yr.
+1055: Notes:
+1056: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30).
+1057: Table E32: Mean values of kh [% of PGA] for scenario S50 and return periods TR=475, 2,475, 10,000 yr.
+1059: Notes:
+1060: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30).
+1061: Table E33: Mean values of kh [% of PGA] for scenario S32 and return periods TR=475, 2,475, 10,000 yr.
+1063: Notes:
+1064: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30).
+1065: Table E34: Mean values of kh [% of PGA] for scenario S27 and return periods TR=475, 2,475, 10,000 yr.
+1067: Notes:
+1068: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30).
+1069: Table E35: Mean values of kh [% of PGA] for scenario S35 and return periods TR=475, 2,475, 10,000 yr.
+1071: Notes:
+1072: ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). Ts is the fundamental period of the slope [s] and VS30 the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, Da/H [%], expressed as 100,kmax/PGA(VS30).

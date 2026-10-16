@@ -1,0 +1,58 @@
+{
+  "output": "/private/tmp/diana-final-20261016/delivery/CAPR003324_Diana_R03.docx",
+  "sha256": "0883fc9824318119bfc207a38d5f0ec5e9c077ef31d81b4e468d1f3e45bd5073",
+  "changes": [
+    {
+      "bodyIndex": 773,
+      "change": "remove empty equation placeholder"
+    },
+    {
+      "bodyIndex": 773,
+      "change": "remove empty equation placeholder"
+    },
+    {
+      "bodyIndex": 773,
+      "change": "remove empty equation placeholder"
+    },
+    {
+      "bodyIndex": 777,
+      "change": "remove empty equation placeholder"
+    },
+    {
+      "bodyIndex": 777,
+      "change": "remove empty equation placeholder"
+    },
+    {
+      "bodyIndex": 777,
+      "change": "remove empty equation placeholder"
+    },
+    {
+      "bodyIndex": 992,
+      "change": "E -> E-"
+    },
+    {
+      "bodyIndex": 1052,
+      "change": "Table 102 -> Table 10-2"
+    },
+    {
+      "bodyIndex": 1056,
+      "change": "remove comma between 100 and kmax; memo equation 14 defines multiplication"
+    },
+    {
+      "bodyIndex": 1060,
+      "change": "remove comma between 100 and kmax; memo equation 14 defines multiplication"
+    },
+    {
+      "bodyIndex": 1064,
+      "change": "remove comma between 100 and kmax; memo equation 14 defines multiplication"
+    },
+    {
+      "bodyIndex": 1068,
+      "change": "remove comma between 100 and kmax; memo equation 14 defines multiplication"
+    },
+    {
+      "bodyIndex": 1072,
+      "change": "remove comma between 100 and kmax; memo equation 14 defines multiplication"
+    }
+  ]
+}

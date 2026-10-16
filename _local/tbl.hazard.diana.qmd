@@ -1,0 +1,7 @@
+```{r}
+#| label: tbl-hazard-diana
+#| tbl-cap: !expr CAP
+flextable::flextable(dianaTable(Diana, Item)) |>
+  flextable::fontsize(size = 9, part = "all") |>
+  flextable::set_table_properties(layout = "autofit", width = 1)
+```

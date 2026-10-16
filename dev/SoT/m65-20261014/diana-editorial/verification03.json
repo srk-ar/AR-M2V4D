@@ -1,0 +1,405 @@
+{
+  "sourceSha256": "b99c80fad1f56c91b82c12304b68a8e33f43a69fe880225e341c14bb0221896b",
+  "candidateSha256": "cfe2f54c663ec72693c52ec0e740a1a711c2b46836edcc6935f41874a6598799",
+  "tables": [
+    {
+      "body": 2,
+      "cells": 7
+    },
+    {
+      "body": 4,
+      "cells": 17
+    },
+    {
+      "body": 14,
+      "cells": 92
+    },
+    {
+      "body": 339,
+      "cells": 1
+    },
+    {
+      "body": 347,
+      "cells": 12
+    },
+    {
+      "body": 503,
+      "cells": 21
+    },
+    {
+      "body": 602,
+      "cells": 21
+    },
+    {
+      "body": 606,
+      "cells": 30
+    },
+    {
+      "body": 631,
+      "cells": 12
+    },
+    {
+      "body": 667,
+      "cells": 38
+    },
+    {
+      "body": 670,
+      "cells": 38
+    },
+    {
+      "body": 689,
+      "cells": 200
+    },
+    {
+      "body": 692,
+      "cells": 200
+    },
+    {
+      "body": 754,
+      "cells": 72
+    },
+    {
+      "body": 765,
+      "cells": 88
+    },
+    {
+      "body": 828,
+      "cells": 1170
+    },
+    {
+      "body": 957,
+      "cells": 38
+    },
+    {
+      "body": 960,
+      "cells": 38
+    },
+    {
+      "body": 963,
+      "cells": 38
+    },
+    {
+      "body": 966,
+      "cells": 38
+    },
+    {
+      "body": 970,
+      "cells": 38
+    },
+    {
+      "body": 976,
+      "cells": 147
+    },
+    {
+      "body": 993,
+      "cells": 147
+    },
+    {
+      "body": 1032,
+      "cells": 80
+    },
+    {
+      "body": 1036,
+      "cells": 80
+    },
+    {
+      "body": 1040,
+      "cells": 80
+    },
+    {
+      "body": 1044,
+      "cells": 80
+    },
+    {
+      "body": 1048,
+      "cells": 80
+    },
+    {
+      "body": 1054,
+      "cells": 80
+    },
+    {
+      "body": 1058,
+      "cells": 80
+    },
+    {
+      "body": 1062,
+      "cells": 80
+    },
+    {
+      "body": 1066,
+      "cells": 80
+    },
+    {
+      "body": 1070,
+      "cells": 80
+    }
+  ],
+  "mathTokens": 3442,
+  "imagePartsUnchanged": true,
+  "imageOrderUnchanged": true,
+  "links": 192,
+  "missingLinks": [],
+  "changes": [
+    {
+      "body": 365,
+      "before": "Estimate the site response for specific geotechnical conditions at the Site using an empirical method. Determine site classification in accordance to the 2020 National Building Code of Canada (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020) and using available geotechnical data.",
+      "after": "Estimate the site response for specific geotechnical conditions at the Site using an empirical method. Determine site classification in accordance to the 2020 National Building Code of Canada (Canadian Commission on Building and Fire Codes and National Research Council of Canada, 2020) and using available geotechnical data."
+    },
+    {
+      "body": 377,
+      "before": "Chapter 7 presents the site response to determine ground motions at the surface level. Chapter 6.5 also includes the characterization of the site foundation in terms of the average shear wave velocity to a depth of 30 m (Vs,30) using information from the past field geotechnical and geophysical investigations of 2021-2022 and 2023.",
+      "after": "Chapter 7 presents the site response to determine ground motions at the surface level. Chapter 7 also includes the characterization of the site foundation in terms of the average shear wave velocity to a depth of 30 m (Vs,30) using information from the past field geotechnical and geophysical investigations of 2021-2022 and 2023."
+    },
+    {
+      "body": 392,
+      "before": "Eastern Canada, spanning east of the Cordillera from the United States border to the Arctic Ocean, constitutes approximately two-thirds of the stable craton of the North American plate. While majority of this area appears to be predominantly of low seismicity, it contains several zones of concentrated seismic activity, particularly along the eastern continental margin and in specific clusters within the craton. The Natural Resources of Canada (NRC) (2021a) has grouped these seismic clusters in seven regions, as shown in Figure 21.",
+      "after": "Eastern Canada, spanning east of the Cordillera from the United States border to the Arctic Ocean, constitutes approximately two-thirds of the stable craton of the North American plate. While majority of this area appears to be predominantly of low seismicity, it contains several zones of concentrated seismic activity, particularly along the eastern continental margin and in specific clusters within the craton. The Natural Resources Canada (NRC) (2021a) has grouped these seismic clusters in seven regions, as shown in Figure 21."
+    },
+    {
+      "body": 403,
+      "before": "Source: https://www.seismescanada.rncan.gc.ca/zones/eastcan-en.php (Natural Resources of Canada, 2021a)",
+      "after": "Source: https://www.seismescanada.rncan.gc.ca/zones/eastcan-en.php (Natural Resources Canada, 2021a)"
+    },
+    {
+      "body": 405,
+      "before": "Although Northern Ontario earthquake activity rate is low as is part of the stable continental region, large and damaging earthquakes have occurred. Notable intraplate seismicity has been observed, as depicted in Figure 22 (Natural Resources of Canada, 2021a) and Figure 23 (Ma, Eaton, & Adams, 2008). The causes of earthquakes in this region have been primarily linked to:",
+      "after": "Although Northern Ontario earthquake activity rate is low as is part of the stable continental region, large and damaging earthquakes have occurred. Notable intraplate seismicity has been observed, as depicted in Figure 22 (Natural Resources Canada, 2021a) and Figure 23 (Ma, Eaton, & Adams, 2008). The causes of earthquakes in this region have been primarily linked to:"
+    },
+    {
+      "body": 406,
+      "before": "Glacial Isostatic Adjustment (GIA): ongoing process of the Earth's crust to rebound from the weight of the last ice sheets tat has been associated with seismicity in Northern Ontario (Ma, Eaton, & Adams, 2008) (Mazzotti, 2005) (Wu & Hasegawa, 1996), and crustal faults and fractures (Adams & Basham, 1991).",
+      "after": "Glacial Isostatic Adjustment (GIA): ongoing process of the Earth's crust to rebound from the weight of the last ice sheets tat has been associated with seismicity in Northern Ontario (Ma, Eaton, & Adams, 2008) (Mazzotti & Adams, 2005) (Wu & Hasegawa, 1996), and crustal faults and fractures (Adams & Basham, 1991)."
+    },
+    {
+      "body": 407,
+      "before": "Regional intraplate stress: intraplate stress caused by ongoing deformation of the plate, including residual effects of ancient tectonic processes and current tectonic forces that can induce earthquakes (Natural Resources of Canada, 2021a; Adams & Basham, 1991).",
+      "after": "Regional intraplate stress: intraplate stress caused by ongoing deformation of the plate, including residual effects of ancient tectonic processes and current tectonic forces that can induce earthquakes (Natural Resources Canada, 2021a; Adams & Basham, 1991)."
+    },
+    {
+      "body": 411,
+      "before": "Source: https://www.seismescanada.rncan.gc.ca/zones/eastcan-en.php (Natural Resources of Canada, 2021a)",
+      "after": "Source: https://www.seismescanada.rncan.gc.ca/zones/eastcan-en.php (Natural Resources Canada, 2021a)"
+    },
+    {
+      "body": 423,
+      "before": "The combined, updated, and declustered catalog contains  67 events within the study area with moment magnitudes (Mw) ≥ 3, as shown in Figure 31 of which 67 have Mw ≥ 3, and listed in Table A1. These events span the period from 1916 to August 30, 2026. Declustering to remove dependent aftershocks and foreshocks followed the Gardner and Knopoff (1974) statistical method. It was applied to the combined multi-source catalog before selecting the Mw ≥ 3 subset. Records of one source catalog within 10 s and 100 km of a larger or equal event of that catalog were also removed before declustering, because they are alternative solutions of a single earthquake. The updated catalog was used solely to illustrate the most current seismicity in the project site region and was not used to update to recurrence in the 2020 National Building Code of Canada (2020 NBCC) (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020). ",
+      "after": "The combined, updated, and declustered catalog contains  67 events within the study area with moment magnitudes (Mw) ≥ 3, as shown in Figure 31 of which 67 have Mw ≥ 3, and listed in Table A1. These events span the period from 1916 to August 30, 2026. Declustering to remove dependent aftershocks and foreshocks followed the Gardner and Knopoff (1974) statistical method. It was applied to the combined multi-source catalog before selecting the Mw ≥ 3 subset. Records of one source catalog within 10 s and 100 km of a larger or equal event of that catalog were also removed before declustering, because they are alternative solutions of a single earthquake. The updated catalog was used solely to illustrate the most current seismicity in the project site region and was not used to update to recurrence in the 2020 National Building Code of Canada (2020 NBCC) (Canadian Commission on Building and Fire Codes and National Research Council of Canada, 2020). "
+    },
+    {
+      "body": 433,
+      "before": "On November 1, 1935, at 1:03 am local time, an earthquake occurred about 10 km east of Témiscaming, Québec, approximately 285 km southeast of the Site. The earthquake was felt as far west as Thunder Bay, Ontario (later known as Fort William), as far east as the Bay of Fundy, and as far south as Kentucky and Virginia (Natural Resources of Canada, 2021d). ",
+      "after": "On November 1, 1935, at 1:03 am local time, an earthquake occurred about 10 km east of Témiscaming, Québec, approximately 285 km southeast of the Site. The earthquake was felt as far west as Thunder Bay, Ontario (later known as Fort William), as far east as the Bay of Fundy, and as far south as Kentucky and Virginia (Natural Resources Canada, 2021d). "
+    },
+    {
+      "body": 434,
+      "before": "In Témiscaming, Québec, around 80% of chimneys were damaged, indicating a Modified Mercalli intensity of VII. Cracks also appeared in brick walls, and minor rockfalls were observed in the epicentral area. The shake caused significant damage in nearby Mattawa and North Bay, where many chimneys were destroyed. Numerous aftershocks were felt in Témiscaming and Kipawa in the months that followed. The day after the earthquake, Tee Lake's water near the epicenter was discolored, likely due to the resuspension of gyttja (freshwater mud). Additionally, 300 km away near Parent, Québec, the earthquake triggered a 30-meter railroad embankment slide (Natural Resources of Canada, 2021d).",
+      "after": "In Témiscaming, Québec, around 80% of chimneys were damaged, indicating a Modified Mercalli intensity of VII. Cracks also appeared in brick walls, and minor rockfalls were observed in the epicentral area. The shake caused significant damage in nearby Mattawa and North Bay, where many chimneys were destroyed. Numerous aftershocks were felt in Témiscaming and Kipawa in the months that followed. The day after the earthquake, Tee Lake's water near the epicenter was discolored, likely due to the resuspension of gyttja (freshwater mud). Additionally, 300 km away near Parent, Québec, the earthquake triggered a 30-meter railroad embankment slide (Natural Resources Canada, 2021d)."
+    },
+    {
+      "body": 437,
+      "before": "Source: Natural Resources of Canada (2021d).",
+      "after": "Source: Natural Resources Canada (2021d)."
+    },
+    {
+      "body": 440,
+      "before": "On January 1, 2000, an Mw 4.7 earthquake occurred beneath Lac Kipawa, about 10 km north of the town of Témiscaming, Quebec, and approximately 286 km southeast of the Site. The earthquake was felt over distances exceeding 500 km. Residents within 50 km of the epicenter reported intense shaking (intensity MM VI), which caused minor damage, including fallen light objects, a broken ventilation pipe, and cracks in plaster. The earthquake was felt in Témiscaming, North Bay, and as far away as Toronto, making it one of Canada's most significant earthquakes in 2000 (Natural Resources de Canada, 2013).",
+      "after": "On January 1, 2000, an Mw 4.7 earthquake occurred beneath Lac Kipawa, about 10 km north of the town of Témiscaming, Quebec, and approximately 286 km southeast of the Site. The earthquake was felt over distances exceeding 500 km. Residents within 50 km of the epicenter reported intense shaking (intensity MM VI), which caused minor damage, including fallen light objects, a broken ventilation pipe, and cracks in plaster. The earthquake was felt in Témiscaming, North Bay, and as far away as Toronto, making it one of Canada's most significant earthquakes in 2000 (Natural Resources Canada, 2013)."
+    },
+    {
+      "body": 451,
+      "before": "The 6th Generation Seismic Hazard Model of Canada (CanadaSHM6) (Natural Resources of Canada, 2020) is adopted for the present study as implemented in the Global Earthquake Model (GEM) for Canada (Global Earthquake Model (GEM) Foundation, 2018). This model was used to generate the seismic hazard values of 2020 NBCC (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020). The CanadaSHM6 consists of three separate regional models:",
+      "after": "The 6th Generation Seismic Hazard Model of Canada (CanadaSHM6) (Kolaj, Halchuk, Adams, & Allen, 2020) is adopted for the present study as implemented in the Global Earthquake Model (GEM) for Canada (Global Earthquake Model (GEM) Foundation, 2018). This model was used to generate the seismic hazard values of 2020 NBCC (Canadian Commission on Building and Fire Codes and National Research Council of Canada, 2020). The CanadaSHM6 consists of three separate regional models:"
+    },
+    {
+      "body": 456,
+      "before": "Earthquake rates are generally described in terms of a truncated distribution proposed by Gutenberg-Richter (Gutenberg & Ritcher, 1944) to describe the frequency of earthquakes as a function of their magnitude. Earthquake rates in the CanadaSHM6 are described in terms of a discretized incremental frequency distribution using the Gutenberg-Richter a and b values as follows:",
+      "after": "Earthquake rates are generally described in terms of a truncated distribution proposed by Gutenberg-Richter (Gutenberg & Richter, 1944) to describe the frequency of earthquakes as a function of their magnitude. Earthquake rates in the CanadaSHM6 are described in terms of a discretized incremental frequency distribution using the Gutenberg-Richter a and b values as follows:"
+    },
+    {
+      "body": 462,
+      "before": "Table B1through Table B3 in 11Appendix B list the source faults, and their characteristics included in the H2, HY, and R2 sub-models of the CanadaSHM6 Southeastern Model.",
+      "after": "Table B1through Table B3 in Appendix B list the source faults, and their characteristics included in the H2, HY, and R2 sub-models of the CanadaSHM6 Southeastern Model."
+    },
+    {
+      "body": 480,
+      "before": "Figure 51 illustrates various metrics used to measure source-to-site distances. A comprehensive description of these finite fault metrics is provided in Kaklamanos, Baise & Boore (2010).",
+      "after": "Figure 51 illustrates various metrics used to measure source-to-site distances. A comprehensive description of these finite fault metrics is provided in Kaklamanos, Baise & Boore (2011)."
+    },
+    {
+      "body": 503,
+      "before": "Tectonic RegimeGMMNumber of GMM candidatesWeightVs,30 (m/s)PGV (m/s)Tmax (s)Stable CrustAA13(Atkinson & Adams, Ground motion prediction equations for application to the 2015 Canadian national seismic hazard maps, 2013)50.5760Yes10NGA-East-13(Goulet, et al., 2017)130.53,000Yes10",
+      "after": "Tectonic RegimeGMMNumber of GMM candidatesWeightVs,30 (m/s)PGV (m/s)Tmax (s)Stable CrustAA13(Atkinson & Adams, 2013)50.5760Yes10NGA-East-13(Goulet et al., 2017)130.53,000Yes10"
+    },
+    {
+      "body": 512,
+      "before": "Source: (Kolaj, Adams, & Halchuk, 2020). Note:  The symbols mu, mc, ml, bu, bc, and bl refer to the upper, central (preferred) and lower values for Mmax and magnitude recurrence parameters, respectively. Note that the b-branches are composed of N0 and b-value pairs (e.g., “bc” refers to N0c and bc). The logic-tree weights for the NGA-East Ground Motion Models depend on the ground motion parameter (Goulet, et al., 2017)",
+      "after": "Source: (Kolaj, Adams, & Halchuk, 2020). Note:  The symbols mu, mc, ml, bu, bc, and bl refer to the upper, central (preferred) and lower values for Mmax and magnitude recurrence parameters, respectively. Note that the b-branches are composed of N0 and b-value pairs (e.g., “bc” refers to N0c and bc). The logic-tree weights for the NGA-East Ground Motion Models depend on the ground motion parameter (Goulet et al., 2017)"
+    },
+    {
+      "body": 543,
+      "before": "A PSHA for the Site was conducted using the CanadaSHM6 hazard model (Natural Resources of Canada, 2020) as implemented in the OpenQuake engine v.3.26.2 (Pagani, Monelli, & Weatgerill, 2014). The AEP curves present the direct logic-tree calculation. The tabulated design values and UHS combine this evaluation with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. The results are presented in terms of AEP and UHS for various site conditions as defined by the 2020 NBCC (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020). Site classification, described in Section 7.1, are based on a shear wave velocity profile measured from the ground surface to a depth of 30 meters (Vs,30).",
+      "after": "A PSHA for the Site was conducted using the CanadaSHM6 hazard model (Kolaj, Halchuk, Adams, & Allen, 2020) as implemented in the OpenQuake engine v.3.26.2 (Pagani et al., 2014). The AEP curves present the direct logic-tree calculation. The tabulated design values and UHS combine this evaluation with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. The results are presented in terms of AEP and UHS for various site conditions as defined by the 2020 NBCC (Canadian Commission on Building and Fire Codes and National Research Council of Canada, 2020). Site classification, described in Section 7.1, are based on a shear wave velocity profile measured from the ground surface to a depth of 30 meters (Vs,30)."
+    },
+    {
+      "body": 544,
+      "before": "Seismic hazard results for the Site are provided in this section for hard rock site conditions (Site Class A, Vs,30= 1500 m/s) and soft rock site conditions (Site Class B/C, Vs,30= 760 m/s). Seismic hazard results for the soil conditions present at the Site are provided in Section 7. Seismic hazard results for medium rock site conditions (Vs,30= 910 m/s) are included in 11Appendix C.",
+      "after": "Seismic hazard results for the Site are provided in this section for hard rock site conditions (Site Class A, Vs,30= 1500 m/s) and soft rock site conditions (Site Class B/C, Vs,30= 760 m/s). Seismic hazard results for the soil conditions present at the Site are provided in Section 7. Seismic hazard results for medium rock site conditions (Vs,30= 910 m/s) are included in Appendix C."
+    },
+    {
+      "body": 546,
+      "before": "Figure 61 and Figure 62 present the AEP for hard rock site conditions (with Vs,30 = 1500 m/s) in terms of pseudo-acceleration (Sa ) for various structural periods (Tn), ranging from 0 seconds (PGA) to 2.5 seconds. Figure 61 presents the mean values, while Figure 62 shows the 84th percentile values. Additional results for other site classes, such as medium rock (Vs,30= 910 m/s) and other percentiles (50th, 90th, and 95th) are included in 11Appendix C1.",
+      "after": "Figure 61 and Figure 62 present the AEP for hard rock site conditions (with Vs,30 = 1500 m/s) in terms of pseudo-acceleration (Sa ) for various structural periods (Tn), ranging from 0 seconds (PGA) to 2.5 seconds. Figure 61 presents the mean values, while Figure 62 shows the 84th percentile values. Additional results for other site classes, such as medium rock (Vs,30= 910 m/s) and other percentiles (50th, 90th, and 95th) are included in Appendix C1."
+    },
+    {
+      "body": 559,
+      "before": "Figure 65 and Figure 66 present the UHS with 5% damping for hard rock site conditions (Vs,30 = 1,500 m/s) in terms of pseudo accelerations Sag for various return periods, ranging from 475 to 10,000 years. Figure 65 presents the mean values, while Figure 66 shows the 84th percentile values. Similarly, Figure 67 and Figure 68 present the UHS with 5% damping for soft rock site conditions (Vs,30 = 760 m/s) for various return periods, ranging from 475 to 1,0000 years. Figure 67 presents the mean values, while Figure 68 shows the 84th percentile values. Additional UHS values for other site classes, such as medium rock (Vs,30= 910 m/s) and other percentiles (50th, 90th, and 95th) are included in 11Appendix C2.",
+      "after": "Figure 65 and Figure 66 present the UHS with 5% damping for hard rock site conditions (Vs,30 = 1,500 m/s) in terms of pseudo accelerations Sag for various return periods, ranging from 475 to 10,000 years. Figure 65 presents the mean values, while Figure 66 shows the 84th percentile values. Similarly, Figure 67 and Figure 68 present the UHS with 5% damping for soft rock site conditions (Vs,30 = 760 m/s) for various return periods, ranging from 475 to 1,0000 years. Figure 67 presents the mean values, while Figure 68 shows the 84th percentile values. Additional UHS values for other site classes, such as medium rock (Vs,30= 910 m/s) and other percentiles (50th, 90th, and 95th) are included in Appendix C2."
+    },
+    {
+      "body": 600,
+      "before": "The 2020 NBCC classifies sites based on the average shear wave velocity in the top 30 meters of the soil profile, denoted as Vs,30. Table 71: Table 71 presents the site classes according to NBCC 2020.",
+      "after": "The 2020 NBCC classifies sites based on the average shear wave velocity in the top 30 meters of the soil profile, denoted as Vs,30. Table 71 presents the site classes according to NBCC 2020."
+    },
+    {
+      "body": 603,
+      "before": "Source: Table 4.1.8.4 B National Building Code of Canada (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020)",
+      "after": "Source: Table 4.1.8.4 B National Building Code of Canada (Canadian Commission on Building and Fire Codes and National Research Council of Canada, 2020)"
+    },
+    {
+      "body": 604,
+      "before": "A broader classification is proposed by the American Society of Civil Engineers ASCE/SEI 7-22 (2022), identifying average velocity ranges for the boundaries between major site classes, is presented in Table 72: as reference. ",
+      "after": "A broader classification is proposed by the American Society of Civil Engineers ASCE/SEI 7-22 (2022), identifying average velocity ranges for the boundaries between major site classes, is presented in Table 7-2as reference. "
+    },
+    {
+      "body": 610,
+      "before": "Seismic Cone Penetration Test (SCPT) measurements collected from the 2021-2022 and 2023 field investigations (SRK Consulting (Canada), Inc., 2024) (2023) were used to estimate shear wave velocity profiles of the foundation materials at the Site. Figure 71 shows the location of the SCPTs used to estimate the shear wave velocity profiles.",
+      "after": "Seismic Cone Penetration Test (SCPT) measurements collected from the 2021-2022 and 2023 field investigations (SRK Consulting (Canada), Inc., 2023, 2024) were used to estimate shear wave velocity profiles of the foundation materials at the Site. Figure 71 shows the location of the SCPTs used to estimate the shear wave velocity profiles."
+    },
+    {
+      "body": 633,
+      "before": "Site amplification factors from GMMs of the CanadaSHM6 were adopted in the direct calculation. The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. These GMMs use the following amplification factors (Kolaj, Allen, Mayfied, Adams, & Halchuk, 2019):",
+      "after": "Site amplification factors from GMMs of the CanadaSHM6 were adopted in the direct calculation. The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. These GMMs use the following amplification factors (Kolaj, Allen, Mayfield, Adams, & Halchuk, 2019):"
+    },
+    {
+      "body": 634,
+      "before": "The AA13 GMMs (Atkinson & Adams, Ground motion prediction equations for application to the 2015 Canadian national seismic hazard maps, 2013) employ of amplification factors from the 2015 National Building Code of Canada (2015 NBCC) (Canadian Commission on Building and Fire Codes and National Research Council of Canada, 2015). For sites with Vs,30 ≤ 760 m/s, these amplification factors F(T) were derived from the active crust GMM of Boore & Atkinson (BA08) (2008). For sites with Vs,30> 760 m/s, the factors are based on a conversion from 2000 to 760 m/s using the AA13 model, which is derived from the stable crust GMM by Atkinson and Boore (2006). These amplification factors vary the spectral period and the probabilistic PGA hazard for Site Class C, allowing the adjustment of the hazard spectra to match the specific Site Class.",
+      "after": "The AA13 GMMs (Atkinson & Adams, 2013) employ of amplification factors from the 2015 National Building Code of Canada (2015 NBCC) (Canadian Commission on Building and Fire Codes and National Research Council of Canada, 2015). For sites with Vs,30 ≤ 760 m/s, these amplification factors F(T) were derived from the active crust GMM of Boore & Atkinson (BA08) (2008). For sites with Vs,30> 760 m/s, the factors are based on a conversion from 2000 to 760 m/s using the AA13 model, which is derived from the stable crust GMM by Atkinson and Boore (2006). These amplification factors vary the spectral period and the probabilistic PGA hazard for Site Class C, allowing the adjustment of the hazard spectra to match the specific Site Class."
+    },
+    {
+      "body": 635,
+      "before": "For the NGA-East-13 (Goulet, et al., 2017), the approach involves using the larger of: a) a continuous function based on the 2015 NBCC amplification factors and extended to Vs,30 of 3,000 m/s using the model from Boore & Campbell (2017); or b) the L1 model of Harmon, et al. (2017) with modification to the non-linear term as recommended to the USGS in Petersen et al. (2018).  ",
+      "after": "For the NGA-East-13 (Goulet et al., 2017), the approach involves using the larger of: a) a continuous function based on the 2015 NBCC amplification factors and extended to Vs,30 of 3,000 m/s using the model from Boore & Campbell (2017); or b) the L1 model of Harmon (2017) with modification to the non-linear term as recommended to the USGS in Petersen et al. (2018).  "
+    },
+    {
+      "body": 637,
+      "before": "Figure 77 and Figure 78 present the UHS with 5% damping for the Crawford specific soil conditions, estimated using a characteristic value of Vs,30 = 220 m/s, as discussed in Section 7.2. Site Response results are presented in terms of pseudo-accelerations Sag for various return periods, ranging from 475 to 10,000 years. Figure 77 presents the mean values, while Figure 78 shows the 84th percentile values. Additional results for other site classes, such as very dense soil (Vs,30= 580 m/s) and other percentiles (50th, 90th, and 95th) are included in 11Appendix C2.",
+      "after": "Figure 77 and Figure 78 present the UHS with 5% damping for the Crawford specific soil conditions, estimated using a characteristic value of Vs,30 = 220 m/s, as discussed in Section 7.2. Site Response results are presented in terms of pseudo-accelerations Sag for various return periods, ranging from 475 to 10,000 years. Figure 77 presents the mean values, while Figure 78 shows the 84th percentile values. Additional results for other site classes, such as very dense soil (Vs,30= 580 m/s) and other percentiles (50th, 90th, and 95th) are included in Appendix C2."
+    },
+    {
+      "body": 643,
+      "before": "The 2020 National Building Code of Canada (2020 NBCC or NRC 2020) (Natural Resources of Canada, 2021c) provides an online seismic hazard tool that offers seismic hazard values for building design across Canada. Users can input parameters such as:",
+      "after": "The 2020 National Building Code of Canada (2020 NBCC or NRC 2020) (Natural Resources Canada, 2021c) provides an online seismic hazard tool that offers seismic hazard values for building design across Canada. Users can input parameters such as:"
+    },
+    {
+      "body": 653,
+      "before": "Figure 81: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30=1500 m/s/) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values",
+      "after": "Figure 81: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30=1500 m/s) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values"
+    },
+    {
+      "body": 656,
+      "before": "Figure 82: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30=760 ms/) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values",
+      "after": "Figure 82: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30=760 m/s) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values"
+    },
+    {
+      "body": 665,
+      "before": "Table 91 andError! Reference source not found. Table 92 present the PGA values for return periods ranging from 475 to 10,000 years for various rock and soil site conditions, with Vs,30 values ranging from 220 to 1,500 m/s. Table 91  presents the mean values, while Table 92 lists the 84th percentile values. Design PGA values for other confidence levels (50th, 90th, and 95th percentiles) are included in 11Appendix D1.",
+      "after": "Table 91 and Table 92 present the PGA values for return periods ranging from 475 to 10,000 years for various rock and soil site conditions, with Vs,30 values ranging from 220 to 1,500 m/s. Table 91  presents the mean values, while Table 92 lists the 84th percentile values. Design PGA values for other confidence levels (50th, 90th, and 95th percentiles) are included in Appendix D1."
+    },
+    {
+      "body": 674,
+      "before": "Figure 91 and Figure 92 present the design response spectra with 5% damping for the design event with an AEP of 1:10,000 years, and various site conditions, ranging from hard rock (Vs,30 = 1500 m/s) to stiff soil (Vs,30 = 220 m/s). Figure 91  presents the mean values, while Figure 92 shows the 84th percentile values. Similarly, Figure 93 and Figure 94 Error! Reference source not found.show the design response spectra with 5% damping for the design event with an AEP of 1:2,475 years, and various site conditions ranging from hard rock (Vs,30 = 1500 m/s) to stiff soil (Vs,30 = 220 m/s), with Figure 93 Error! Reference source not found. presenting the mean values and Figure 94 showing the 84th percentile values.",
+      "after": "Figure 91 and Figure 92 present the design response spectra with 5% damping for the design event with an AEP of 1:10,000 years, and various site conditions, ranging from hard rock (Vs,30 = 1500 m/s) to stiff soil (Vs,30 = 220 m/s). Figure 91  presents the mean values, while Figure 92 shows the 84th percentile values. Similarly, Figure 93 and Figure 94 show the design response spectra with 5% damping for the design event with an AEP of 1:2,475 years, and various site conditions ranging from hard rock (Vs,30 = 1500 m/s) to stiff soil (Vs,30 = 220 m/s), with Figure 93  presenting the mean values and Figure 94 showing the 84th percentile values."
+    },
+    {
+      "body": 676,
+      "before": "Design response spectra for other confidence levels (50th, 90th, and 95th percentiles) are included in 11Appendix D2.",
+      "after": "Design response spectra for other confidence levels (50th, 90th, and 95th percentiles) are included in Appendix D2."
+    },
+    {
+      "body": 784,
+      "before": "Seismic Hazard Model: The assessment utilized the 6th Generation Seismic Hazard Model of Canada (CanadaSHM6), implemented through the Global Earthquake Model (GEM) (2018). This model forms the basis for seismic hazard values in the 2020 National Building Code of Canada (2020 NBCC) (Natural Resources of Canada, 2020).",
+      "after": "Seismic Hazard Model: The assessment utilized the 6th Generation Seismic Hazard Model of Canada (CanadaSHM6), implemented through the Global Earthquake Model (GEM) (2018). This model forms the basis for seismic hazard values in the 2020 National Building Code of Canada (2020 NBCC) (Kolaj, Halchuk, Adams, & Allen, 2020)."
+    },
+    {
+      "body": 785,
+      "before": "Ground Motion Models: Two sets of Ground Motion Models (GMMs) were employed, capturing epistemic uncertainty. The models, developed by Atkinson and Adams (2013) and the NGA-East project (Goulet, et al., 2017) were used to model the ground motion intensity for the site.",
+      "after": "Ground Motion Models: Two sets of Ground Motion Models (GMMs) were employed, capturing epistemic uncertainty. The models, developed by Atkinson and Adams (2013) and the NGA-East project (Goulet et al., 2017) were used to model the ground motion intensity for the site."
+    },
+    {
+      "body": 786,
+      "before": "PSHA: The PSHA for the site was conducted using the OpenQuake v3.26.2 engine (Pagani, Monelli, & Weatgerill, 2014). Results are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC. The analysis considers events with target AEPs of 1:475, 1:975, 1:2,475, 1:5,000, and 1:10,000 years, and covers various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles.",
+      "after": "PSHA: The PSHA for the site was conducted using the OpenQuake v3.26.2 engine (Pagani et al., 2014). Results are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC. The analysis considers events with target AEPs of 1:475, 1:975, 1:2,475, 1:5,000, and 1:10,000 years, and covers various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles."
+    },
+    {
+      "body": 825,
+      "before": "– Crawford Updated Seismic Catalog",
+      "after": "Appendix A - Crawford Updated Seismic Catalog"
+    },
+    {
+      "body": 833,
+      "before": "- Southeastern Model Seismic Sources of the CanadaSHM6",
+      "after": "Appendix B - Southeastern Model Seismic Sources of the CanadaSHM6"
+    },
+    {
+      "body": 844,
+      "before": "– Seismic Hazard Results",
+      "after": "Appendix C - Seismic Hazard Results"
+    },
+    {
+      "body": 845,
+      "before": "- Annual Exceedance Probability",
+      "after": "C1 - Annual Exceedance Probability"
+    },
+    {
+      "body": 899,
+      "before": "- Uniform Hazard Spectra",
+      "after": "C2 - Uniform Hazard Spectra"
+    },
+    {
+      "body": 952,
+      "before": "- Design Earthquakes",
+      "after": "Appendix D - Design Earthquakes"
+    },
+    {
+      "body": 954,
+      "before": "- Design Peak Ground Acceleration",
+      "after": "D1 - Design Peak Ground Acceleration"
+    },
+    {
+      "body": 973,
+      "before": "- Design Response Spectrum",
+      "after": "D2 - Design Response Spectrum"
+    },
+    {
+      "body": 983,
+      "before": "Figure D23: Design Response Spectra for a Return Period of 10,000 years – 84h Percentile Values",
+      "after": "Figure D23: Design Response Spectra for a Return Period of 10,000 years – 84th Percentile Values"
+    },
+    {
+      "body": 985,
+      "before": "Figure D24: Design Response Spectra for a Return Period of 10,000 years – 90h Percentile Values",
+      "after": "Figure D24: Design Response Spectra for a Return Period of 10,000 years – 90th Percentile Values"
+    },
+    {
+      "body": 987,
+      "before": "Figure D25: Design Response Spectra for a Return Period of 10,000 years –95h Percentile Values",
+      "after": "Figure D25: Design Response Spectra for a Return Period of 10,000 years – 95th Percentile Values"
+    },
+    {
+      "body": 1011,
+      "before": "The BM17 formulation (Bray, Macedo, & Travasauro, Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes, 2018) represents subduction-interface motions with Sa=Sa(1.5Ts):",
+      "after": "The BM17 formulation (Bray, Macedo, & Travasarou, Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes, 2018) represents subduction-interface motions with Sa=Sa(1.5Ts):"
+    }
+  ]
+}

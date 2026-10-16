@@ -1,0 +1,1377 @@
+{
+  "output": "/private/tmp/diana-editorial-20261016/candidate05/CAPR003324_Diana_R04.docx",
+  "sha256": "596816a4c65f3f024f16b1ae4efd234842cf0c365598767ac0b1850196fb1c6d",
+  "changes": [
+    {
+      "field": "REF _Ref174451674 \\r \\h",
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "field": "REF _Ref174451708 \\r \\h  \\* MERGEFORMAT",
+      "before": "0",
+      "after": "3"
+    },
+    {
+      "field": "REF _Ref174031794 \\r \\h",
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "field": "REF _Ref174451752 \\r \\h  \\* MERGEFORMAT",
+      "before": "0",
+      "after": "5"
+    },
+    {
+      "field": "REF _Ref174451818 \\r \\h  \\* MERGEFORMAT",
+      "before": "6.5",
+      "after": "7"
+    },
+    {
+      "field": "REF _Ref174967815 \\r \\h  \\* MERGEFORMAT",
+      "before": "0",
+      "after": "9"
+    },
+    {
+      "field": "REF _Ref174451850 \\r \\h",
+      "before": "6.5",
+      "after": "7"
+    },
+    {
+      "field": "REF _Ref178155696 \\r \\h  \\* MERGEFORMAT",
+      "before": "11Appendix B",
+      "after": "Appendix B"
+    },
+    {
+      "field": "REF _Ref178155749 \\r \\h  \\* MERGEFORMAT",
+      "before": "11Appendix C",
+      "after": "Appendix C"
+    },
+    {
+      "field": "REF _Ref178155775 \\r \\h  \\* MERGEFORMAT",
+      "before": "11Appendix C1",
+      "after": "Appendix C1"
+    },
+    {
+      "field": "REF _Ref178155797 \\r \\h  \\* MERGEFORMAT",
+      "before": "11Appendix C2",
+      "after": "Appendix C2"
+    },
+    {
+      "field": "REF _Ref172153775 \\h  \\* MERGEFORMAT",
+      "before": "Table 7-1: ",
+      "after": ""
+    },
+    {
+      "field": "REF _Ref174438610 \\h  \\* MERGEFORMAT",
+      "before": "Table 7-2: ",
+      "after": "Table 7-2 "
+    },
+    {
+      "field": "REF _Ref178155797 \\r \\h  \\* MERGEFORMAT",
+      "before": "11Appendix C2",
+      "after": "Appendix C2"
+    },
+    {
+      "field": "REF _Ref175137289 \\h  \\* MERGEFORMAT",
+      "before": "Error! Reference source not found.",
+      "after": ""
+    },
+    {
+      "field": "REF _Ref178155953 \\r \\h  \\* MERGEFORMAT",
+      "before": "11Appendix D1",
+      "after": "Appendix D1"
+    },
+    {
+      "field": "REF _Ref178015982 \\h  \\* MERGEFORMAT",
+      "before": "Error! Reference source not found.",
+      "after": ""
+    },
+    {
+      "field": "REF _Ref178015982 \\h  \\* MERGEFORMAT",
+      "before": "Error! Reference source not found.",
+      "after": ""
+    },
+    {
+      "field": "REF _Ref178155973 \\r \\h  \\* MERGEFORMAT",
+      "before": "11Appendix D2",
+      "after": "Appendix D2"
+    },
+    {
+      "before": "Canadian Comission on Building and Fires Codes",
+      "after": "Canadian Commission on Building and Fire Codes"
+    },
+    {
+      "before": "(Goulet, et al., 2017)",
+      "after": "(Goulet et al., 2017)"
+    },
+    {
+      "before": "(2013)(AA13)",
+      "after": "(2013) (AA13)"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Canadian Comission on Building and Fires Codes",
+      "after": "Canadian Commission on Building and Fire Codes"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "(Mazzotti, 2005)",
+      "after": "(Mazzotti & Adams, 2005)"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Canadian Comission on Building and Fires Codes",
+      "after": "Canadian Commission on Building and Fire Codes"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources de Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Canadian Comission on Building and Fires Codes",
+      "after": "Canadian Commission on Building and Fire Codes"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Gutenberg & Ritcher",
+      "after": "Gutenberg & Richter"
+    },
+    {
+      "before": "(Atkinson & Adams, Ground motion prediction equations for application to the 2015 Canadian national seismic hazard maps, 2013)",
+      "after": "(Atkinson & Adams, 2013)"
+    },
+    {
+      "before": "(Goulet, et al., 2017)",
+      "after": "(Goulet et al., 2017)"
+    },
+    {
+      "before": "(Goulet, et al., 2017)",
+      "after": "(Goulet et al., 2017)"
+    },
+    {
+      "before": "Canadian Comission on Building and Fires Codes",
+      "after": "Canadian Commission on Building and Fire Codes"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "(Pagani, Monelli, & Weatgerill, 2014)",
+      "after": "(Pagani et al., 2014)"
+    },
+    {
+      "before": "Canadian Comission on Building and Fires Codes",
+      "after": "Canadian Commission on Building and Fire Codes"
+    },
+    {
+      "before": "Mayfied",
+      "after": "Mayfield"
+    },
+    {
+      "before": "(Atkinson & Adams, Ground motion prediction equations for application to the 2015 Canadian national seismic hazard maps, 2013)",
+      "after": "(Atkinson & Adams, 2013)"
+    },
+    {
+      "before": "(Goulet, et al., 2017)",
+      "after": "(Goulet et al., 2017)"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009",
+      "after": "Bray & Travasarou, 2009"
+    },
+    {
+      "before": "Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009",
+      "after": "Bray & Travasarou, 2009"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "(Goulet, et al., 2017)",
+      "after": "(Goulet et al., 2017)"
+    },
+    {
+      "before": "(Pagani, Monelli, & Weatgerill, 2014)",
+      "after": "(Pagani et al., 2014)"
+    },
+    {
+      "before": "Travasauro",
+      "after": "Travasarou"
+    },
+    {
+      "before": "Canadian Comission on Building and Fires Codes",
+      "after": "Canadian Commission on Building and Fire Codes"
+    },
+    {
+      "before": "Gutenberg, B., & Ritcher",
+      "after": "Gutenberg, B., & Richter"
+    },
+    {
+      "before": "Mayfied",
+      "after": "Mayfield"
+    },
+    {
+      "before": "Natural Resources de Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Natural Resources of Canada",
+      "after": "Natural Resources Canada"
+    },
+    {
+      "before": "Bray & Travasarou, Simplified Procedure for Estimating Earthquake-Induced Deviatoric Slope Displacements, 2007",
+      "after": "Bray & Travasarou, 2007"
+    },
+    {
+      "before": "Travasauro",
+      "after": "Travasarou"
+    },
+    {
+      "before": "Bray, Macedo, & Travasarou, Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes, 2018",
+      "after": "Bray, Macedo, & Travasarou, 2018"
+    },
+    {
+      "before": "Bray & Macedo, Procedure for Estimating Shear-Induced Seismic Slope Displacement for Shallow Crustal Earthquakes, 2019",
+      "after": "Bray & Macedo, 2019"
+    },
+    {
+      "before": "Harmon, et al.",
+      "after": "Harmon"
+    },
+    {
+      "before": "(SRK Consulting (Canada), Inc., 2023) (2024)",
+      "after": "(SRK Consulting (Canada), Inc., 2023, 2024)"
+    },
+    {
+      "before": "(SRK Consulting (Canada), Inc., 2024) (2023)",
+      "after": "(SRK Consulting (Canada), Inc., 2023, 2024)"
+    },
+    {
+      "before": "1500 m/s/",
+      "after": "1500 m/s"
+    },
+    {
+      "before": "760 ms/",
+      "after": "760 m/s"
+    },
+    {
+      "before": "84h",
+      "after": "84th"
+    },
+    {
+      "before": "90h",
+      "after": "90th"
+    },
+    {
+      "before": "95h",
+      "after": "95th"
+    },
+    {
+      "before": "–95th",
+      "after": "– 95th"
+    },
+    {
+      "before": "American Society of Civil Engineers. (2022). Minimum Design Loads for Buildings and Other Structures, ASCE/SEI 7-22 (Vol. 7). Reston, VA. Retrieved from https://doi.org/10.1061/978078441578",
+      "after": "American Society of Civil Engineers. (2022). Minimum Design Loads and Associated Criteria for Buildings and Other Structures, ASCE/SEI 7-22. Reston, VA. https://doi.org/10.1061/9780784415788"
+    },
+    {
+      "before": "Atkinson, G. M., & Boore, D. M. (2006). ., & Boore, D. M. (2006). Bulletin of the Seismological Society of America, 96(6), 2181-2205.",
+      "after": "Atkinson, G. M., & Boore, D. M. (2006). Earthquake ground-motion prediction equations for eastern North America. Bulletin of the Seismological Society of America, 96(6), 2181-2205. https://doi.org/10.1785/0120050245"
+    },
+    {
+      "before": "Boore, D. M., & Campbell, K. W. (2017). Updated Ground-Motion Relations for the Next Generation of Ground-Motion Prediction Equations. Bulletin of the Seismological Society of America, 107(2).",
+      "after": "Boore, D. M., & Campbell, K. W. (2017). Adjusting central and eastern North America ground-motion intensity measures between sites with different reference-rock site conditions. Bulletin of the Seismological Society of America, 107(1), 132-148. https://doi.org/10.1785/0120160208"
+    },
+    {
+      "before": "Bray, J. D., Macedo, J., & Travasarou, T. (2018). Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 144(11).",
+      "after": "Bray, J. D., Macedo, J., & Travasarou, T. (2018). Simplified Procedure for Estimating Seismic Slope Displacements for Subduction Zone Earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 144(3), 04017124. https://doi.org/10.1061/(ASCE)GT.1943-5606.0001833"
+    },
+    {
+      "before": "Dakaoulas ,",
+      "after": "Dakoulas,"
+    },
+    {
+      "before": "Pravia, Italy",
+      "after": "Pavia, Italy"
+    },
+    {
+      "before": "Goulet, C. A., Bozorgnia, Y., Abrahamson, N. A., Kuehn, N., Al Atik, L., Youngs, R. R., & Graves, L. W. (2017). NGA-East Ground-Motion Models for the U.S. Geological Survey National Seismic Hazard Maps, PEER Report No. 2017/03. Pacific Earthquake Engineering Research Center (PEER).",
+      "after": "Goulet, C. A., Bozorgnia, Y., Kuehn, N., Al Atik, L., Youngs, R. R., Graves, R. W., & Atkinson, G. M. (2017). NGA-East Ground-Motion Models for the U.S. Geological Survey National Seismic Hazard Maps. PEER Report No. 2017/03. Pacific Earthquake Engineering Research Center."
+    },
+    {
+      "before": "Harmon, J. K., Edwards, B. D., & Wu, J. (2017). Site Response Analysis and Ground Motion Prediction in the Eastern United States. Seismological Research Letters, 88(4), 985-995.",
+      "after": "Harmon, J. A. (2017). Nonlinear site amplification functions for Central and Eastern North America. Ph.D. dissertation, University of Illinois at Urbana-Champaign. https://hdl.handle.net/2142/97722"
+    },
+    {
+      "before": "Kaklamanos, J., Baise, L. G., & Boore, D. M. (2010). Estimating Unknown Input Parameters when Implementing the NGA Ground-Motion Predition Equations in Engineering Practice. Earthquake Spectra, 27(4), 1219-35.",
+      "after": "Kaklamanos, J., Baise, L. G., & Boore, D. M. (2011). Estimating Unknown Input Parameters when Implementing the NGA Ground-Motion Prediction Equations in Engineering Practice. Earthquake Spectra, 27(4), 1219-1235. https://doi.org/10.1193/1.3650372"
+    },
+    {
+      "before": "7th World Conference",
+      "after": "17th World Conference"
+    },
+    {
+      "before": "Mazzotti, S. (2005). Rates and uncertainties on seismic moment and deformationin eastern Canada. Journal of Geophysical Research, 1110.",
+      "after": "Mazzotti, S., & Adams, J. (2005). Rates and uncertainties on seismic moment and deformation in eastern Canada. Journal of Geophysical Research: Solid Earth, 110, B09301. https://doi.org/10.1029/2004JB003510"
+    },
+    {
+      "before": "Natural Resources Canada. (2020). The 6th Generation Seismic Hazard Model of Canada: Technical Report. Open File 8630. Natural Resources Canada, 2020. Goverment of Canada.",
+      "after": "Kolaj, M., Halchuk, S., Adams, J., & Allen, T. I. (2020). Sixth generation seismic hazard model of Canada: input files to produce values proposed for the 2020 National Building Code of Canada. Geological Survey of Canada, Open File 8630."
+    },
+    {
+      "before": "Pagani, M., Monelli, M., & Weatgerill, G. (2014). OpenQuake Engine: An Open Hazard (and Risk) Software for the Global Earthquake Model. Seismological Research Letters, 85(3), 692-702.",
+      "after": "Pagani, M., Monelli, D., Weatherill, G., Danciu, L., Crowley, H., Silva, V., Henshaw, P., Butler, R., Nastasi, M., Panzeri, L., Simionato, M., & Vigano, D. (2014). OpenQuake Engine: An Open Hazard (and Risk) Software for the Global Earthquake Model. Seismological Research Letters, 85(3), 692-702."
+    },
+    {
+      "before": "Peltier, W. R. (2004). Global Glacial Isostasy and the Surface of the Ice-Age Earth: The ICE-5G (VM2) Model and Grace. Annual Review of Eartha and Planetary Sciences, 32, 111-149.",
+      "after": "Peltier, W. R. (2004). Global Glacial Isostasy and the Surface of the Ice-Age Earth: The ICE-5G (VM2) Model and GRACE. Annual Review of Earth and Planetary Sciences, 32, 111-149. https://doi.org/10.1146/annurev.earth.32.082503.144359"
+    },
+    {
+      "before": "Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., . . . Yeng, Y. (2018). Preliminary 2018 Update of the U.S. United States Geological Survey.",
+      "after": "Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., Rezaeian, S., McNamara, D. E., Hoover, S. M., Luco, N., Boyd, O. S., Rukstales, K. S., Jaiswal, K. S., Thompson, E. M., Clayton, B., Field, E. H., & Zeng, Y. (2018). Preliminary 2018 Update of the U.S. National Seismic Hazard Model: Overview of Model, Changes, and Implications. U.S. Geological Survey report for public comment, 1-47."
+    },
+    {
+      "before": "CAPR003324_Crawford_SeismicHazard_Final.docx",
+      "after": "CAPR003324_Diana_R04.docx"
+    },
+    {
+      "before": "(Natural Resources Canada, 2020)",
+      "after": "(Kolaj, Halchuk, Adams, & Allen, 2020)"
+    },
+    {
+      "before": "(Natural Resources Canada, 2020)",
+      "after": "(Kolaj, Halchuk, Adams, & Allen, 2020)"
+    },
+    {
+      "before": "(Natural Resources Canada, 2020)",
+      "after": "(Kolaj, Halchuk, Adams, & Allen, 2020)"
+    }
+  ],
+  "headings": [
+    [
+      "1 Introduction",
+      "R04Heading342",
+      "TOC1"
+    ],
+    [
+      "1.1 Project Overview",
+      "R04Heading343",
+      "TOC2"
+    ],
+    [
+      "1.2 Scope of Work",
+      "R04Heading359",
+      "TOC2"
+    ],
+    [
+      "1.3 Organization of This Report",
+      "R04Heading369",
+      "TOC2"
+    ],
+    [
+      "2 Seismotectonics",
+      "R04Heading388",
+      "TOC1"
+    ],
+    [
+      "2.1 Seismotectonic Framework in Southeastern Canada",
+      "R04Heading391",
+      "TOC2"
+    ],
+    [
+      "3 Seismicity",
+      "R04Heading416",
+      "TOC1"
+    ],
+    [
+      "3.1 Seismicity Catalog",
+      "R04Heading417",
+      "TOC2"
+    ],
+    [
+      "3.2 Historical Seismicity",
+      "R04Heading430",
+      "TOC2"
+    ],
+    [
+      "3.2.1 The 1935 Mw 6.2 Temiskamingue Earthquake",
+      "R04Heading432",
+      "TOC3"
+    ],
+    [
+      "3.2.2 The 2000 Magnitude Mw 4.7 Kipawa Earthquake",
+      "R04Heading439",
+      "TOC3"
+    ],
+    [
+      "4 Seismic Source Model",
+      "R04Heading442",
+      "TOC1"
+    ],
+    [
+      "4.1 Definitions",
+      "R04Heading443",
+      "TOC2"
+    ],
+    [
+      "4.2 The 6th Generation Seismic Hazard Model of Canada",
+      "R04Heading450",
+      "TOC2"
+    ],
+    [
+      "5 Ground Motion Intensity Model",
+      "R04Heading464",
+      "TOC1"
+    ],
+    [
+      "5.1 Definitions",
+      "R04Heading465",
+      "TOC2"
+    ],
+    [
+      "5.1.1 Ground Motion Intensity Models",
+      "R04Heading466",
+      "TOC3"
+    ],
+    [
+      "5.1.2 Fault Distance Metrics",
+      "R04Heading474",
+      "TOC3"
+    ],
+    [
+      "5.1.3 Probability Distributions",
+      "R04Heading483",
+      "TOC3"
+    ],
+    [
+      "5.2 Ground Motion Models for Southeastern Canada",
+      "R04Heading493",
+      "TOC2"
+    ],
+    [
+      "5.3 Epistemic Uncertainty for the Southeastern Canada Seismic Hazard Model",
+      "R04Heading508",
+      "TOC2"
+    ],
+    [
+      "6 Seismic Hazard",
+      "R04Heading514",
+      "TOC1"
+    ],
+    [
+      "6.1 Definitions",
+      "R04Heading515",
+      "TOC2"
+    ],
+    [
+      "6.1.1 Seismic Hazard Assessment",
+      "R04Heading516",
+      "TOC3"
+    ],
+    [
+      "6.1.2 Annual Exceedance Probability",
+      "R04Heading529",
+      "TOC3"
+    ],
+    [
+      "6.1.3 Peak Ground Acceleration and Response Spectra",
+      "R04Heading539",
+      "TOC3"
+    ],
+    [
+      "6.2 Seismic Hazard Results",
+      "R04Heading542",
+      "TOC2"
+    ],
+    [
+      "6.2.1 Annual Exceedance Probability",
+      "R04Heading545",
+      "TOC3"
+    ],
+    [
+      "6.2.2 Uniform Hazard Spectra",
+      "R04Heading558",
+      "TOC3"
+    ],
+    [
+      "6.3 Hazard Deaggregation and Controlling Seismic Scenarios",
+      "R04Heading569",
+      "TOC2"
+    ],
+    [
+      "6.3.1 Definitions",
+      "R04Heading570",
+      "TOC3"
+    ],
+    [
+      "6.4 Hazard Deaggregation Plots",
+      "R04Heading579",
+      "TOC2"
+    ],
+    [
+      "6.5 Controlling Scenarios",
+      "R04Heading592",
+      "TOC2"
+    ],
+    [
+      "7 Site Response",
+      "R04Heading595",
+      "TOC1"
+    ],
+    [
+      "7.1 Site Class",
+      "R04Heading598",
+      "TOC2"
+    ],
+    [
+      "7.2 Crawford Site-Specific Shear Wave Velocity Profile",
+      "R04Heading609",
+      "TOC2"
+    ],
+    [
+      "7.3 Site Amplification Factors",
+      "R04Heading632",
+      "TOC2"
+    ],
+    [
+      "7.4 Uniform Hazard Spectra",
+      "R04Heading636",
+      "TOC2"
+    ],
+    [
+      "8 2020 National Building Code of Canada Seismic Hazard Values",
+      "R04Heading642",
+      "TOC1"
+    ],
+    [
+      "9 Design Earthquakes",
+      "R04Heading660",
+      "TOC1"
+    ],
+    [
+      "9.1 Peak Ground Acceleration",
+      "R04Heading664",
+      "TOC2"
+    ],
+    [
+      "9.2 Design Response Spectra",
+      "R04Heading673",
+      "TOC2"
+    ],
+    [
+      "10 Slope Design Parameters",
+      "R04Heading695",
+      "TOC1"
+    ],
+    [
+      "10.1 Definitions",
+      "R04Heading698",
+      "TOC2"
+    ],
+    [
+      "10.1.1 Seismic Design Criteria for Slopes",
+      "R04Heading699",
+      "TOC3"
+    ],
+    [
+      "10.1.2 Fundamental Period of the Embankment",
+      "R04Heading704",
+      "TOC3"
+    ],
+    [
+      "10.1.3 Seismic (Pseudo-Static) Coefficients",
+      "R04Heading731",
+      "TOC3"
+    ],
+    [
+      "10.2 Fundamental Periods of the Crawford Embankments",
+      "R04Heading751",
+      "TOC2"
+    ],
+    [
+      "10.3 Seismic Coefficients",
+      "R04Heading762",
+      "TOC2"
+    ],
+    [
+      "11 Conclusions",
+      "R04Heading780",
+      "TOC1"
+    ],
+    [
+      "References",
+      "R04Heading792",
+      "TOC1"
+    ],
+    [
+      "Appendix A - Crawford Updated Seismic Catalog",
+      "R04Heading825",
+      "TOC1"
+    ],
+    [
+      "Appendix B - Southeastern Model Seismic Sources of the CanadaSHM6",
+      "R04Heading833",
+      "TOC1"
+    ],
+    [
+      "Appendix C - Seismic Hazard Results",
+      "R04Heading844",
+      "TOC1"
+    ],
+    [
+      "C1 - Annual Exceedance Probability",
+      "R04Heading845",
+      "TOC2"
+    ],
+    [
+      "C2 - Uniform Hazard Spectra",
+      "R04Heading899",
+      "TOC2"
+    ],
+    [
+      "Appendix D - Design Earthquakes",
+      "R04Heading952",
+      "TOC1"
+    ],
+    [
+      "D1 - Design Peak Ground Acceleration",
+      "R04Heading954",
+      "TOC2"
+    ],
+    [
+      "D2 - Design Response Spectrum",
+      "R04Heading973",
+      "TOC2"
+    ],
+    [
+      "Appendix E Seismic Coefficients",
+      "R04Heading990",
+      "TOC1"
+    ],
+    [
+      "E1 Newmark Permanent-Displacement Formulations",
+      "R04Heading996",
+      "TOC2"
+    ],
+    [
+      "E2 Seismic Coefficient in Acceleration Units",
+      "R04Heading1017",
+      "TOC2"
+    ],
+    [
+      "E3 Seismic Coefficient as a Percentage of PGA",
+      "R04Heading1051",
+      "TOC2"
+    ]
+  ],
+  "captions": {
+    "Table": [
+      [
+        "Table 1-1: Crawford Project Site Coordinates",
+        "R04Table346",
+        "TableofFigures"
+      ],
+      [
+        "Table 5-1: Ground Motion Models for the CanadaSHM6",
+        "R04Table502",
+        "TableofFigures"
+      ],
+      [
+        "Table 7-1: Site Classification according to the National Building Code of Canada (2020)",
+        "R04Table601",
+        "TableofFigures"
+      ],
+      [
+        "Table 7-2: Site Classification according to the American Society of Civil Engineers ASCE 7-22 (2022)",
+        "R04Table605",
+        "TableofFigures"
+      ],
+      [
+        "Table 7-3: Shear Wave Velocity Profile at Crawford Facilities",
+        "R04Table630",
+        "TableofFigures"
+      ],
+      [
+        "Table 9-1: PGA of Design Ground Motions for Various Return Periods and Site Conditions – Mean Values",
+        "R04Table666",
+        "TableofFigures"
+      ],
+      [
+        "Table 9-2: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 84th Percentile Values",
+        "R04Table669",
+        "TableofFigures"
+      ],
+      [
+        "Table 9-3: Spectral Ordinates of the Design Spectra for a 10,000-year Return Period and Various Site Conditions – Mean Values",
+        "R04Table688",
+        "TableofFigures"
+      ],
+      [
+        "Table 9-4: Spectral Ordinates of the Design Spectra for a 2,475-year Return Period and Various Site Conditions – Mean Values",
+        "R04Table691",
+        "TableofFigures"
+      ],
+      [
+        "Table 10-1: Fundamental periods and mean dynamic properties of the evaluated slope scenarios",
+        "R04Table753",
+        "TableofFigures"
+      ],
+      [
+        "Table 10-2: Seismic Coefficients [% of PGA] of the Ensemble Set for Design Earthquakes with AEPs of 1:2,475 and 1:10,000 Years",
+        "R04Table764",
+        "TableofFigures"
+      ],
+      [
+        "Table A-1: Crawford Regional Catalog of Events 1916-08/30/2026 (Mw ≥ 3)",
+        "R04Table827",
+        "TableofFigures"
+      ],
+      [
+        "Table B-1: CanadaSHM6 Southeast HY Model Seismic Sources",
+        "R04Table836",
+        "TableofFigures"
+      ],
+      [
+        "Table B-2: CanadaSHM6 Southeast H2 Model Seismic Sources",
+        "R04Table838",
+        "TableofFigures"
+      ],
+      [
+        "Table B-3: CanadaSHM6 Southeast R2 Model Seismic Sources",
+        "R04Table841",
+        "TableofFigures"
+      ],
+      [
+        "Table D1-1:PGA of Design Ground Motions for Various Return Periods and Site Conditions – Mean Values",
+        "R04Table956",
+        "TableofFigures"
+      ],
+      [
+        "Table D1-2: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 50th Percentile Values",
+        "R04Table959",
+        "TableofFigures"
+      ],
+      [
+        "Table D1-3: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 84th Percentile Values",
+        "R04Table962",
+        "TableofFigures"
+      ],
+      [
+        "Table D1-4: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 90th Percentile Values",
+        "R04Table965",
+        "TableofFigures"
+      ],
+      [
+        "Table D1-5: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 95th Percentile Values",
+        "R04Table969",
+        "TableofFigures"
+      ],
+      [
+        "Table E-1: Shear Stiffness Parameters for Gravels, Sands, and Fines",
+        "R04Table992",
+        "TableofFigures"
+      ],
+      [
+        "Table E2-1: Mean values of kmax [cm/s²] for scenario S135 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1031",
+        "TableofFigures"
+      ],
+      [
+        "Table E2-2: Mean values of kmax [cm/s²] for scenario S50 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1035",
+        "TableofFigures"
+      ],
+      [
+        "Table E2-3: Mean values of kmax [cm/s²] for scenario S32 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1039",
+        "TableofFigures"
+      ],
+      [
+        "Table E2-4: Mean values of kmax [cm/s²] for scenario S27 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1043",
+        "TableofFigures"
+      ],
+      [
+        "Table E2-5: Mean values of kmax [cm/s²] for scenario S35 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1047",
+        "TableofFigures"
+      ],
+      [
+        "Table E3-1: Mean values of kh [% of PGA] for scenario S135 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1053",
+        "TableofFigures"
+      ],
+      [
+        "Table E3-2: Mean values of kh [% of PGA] for scenario S50 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1057",
+        "TableofFigures"
+      ],
+      [
+        "Table E3-3: Mean values of kh [% of PGA] for scenario S32 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1061",
+        "TableofFigures"
+      ],
+      [
+        "Table E3-4: Mean values of kh [% of PGA] for scenario S27 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1065",
+        "TableofFigures"
+      ],
+      [
+        "Table E3-5: Mean values of kh [% of PGA] for scenario S35 and return periods TR=500, 2,500, 10,000 yr.",
+        "R04Table1069",
+        "TableofFigures"
+      ]
+    ],
+    "Figure": [
+      [
+        "Figure 1-1: Site Location Map",
+        "R04Figure351",
+        "TableofFigures"
+      ],
+      [
+        "Figure 1-2: Layout of Project Facilities",
+        "R04Figure357",
+        "TableofFigures"
+      ],
+      [
+        "Figure 2-1: Crustal Regions in Eastern Canada",
+        "R04Figure402",
+        "TableofFigures"
+      ],
+      [
+        "Figure 2-2: Seismicity of Northern Ontario Seismic Zone 1970-1999",
+        "R04Figure410",
+        "TableofFigures"
+      ],
+      [
+        "Figure 2-3: Seismicity of Northern Ontario from 1980 to 2006",
+        "R04Figure413",
+        "TableofFigures"
+      ],
+      [
+        "Figure 3-1: Crawford Regional Catalog 1916-08/30/2026",
+        "R04Figure428",
+        "TableofFigures"
+      ],
+      [
+        "Figure 3-2: Isoseismal Map of the 1935 Mw 6.2 Temiskamingue Earthquake",
+        "R04Figure436",
+        "TableofFigures"
+      ],
+      [
+        "Figure 5-1: Source-to-Site Fault Distances",
+        "R04Figure482",
+        "TableofFigures"
+      ],
+      [
+        "Figure 5-2: Logic Tree in the CanadaSHM6 for Southeastern Canada",
+        "R04Figure511",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-1: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – Mean Values",
+        "R04Figure548",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-2: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 84th Percentile Values",
+        "R04Figure550",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-3: Annual Exceedance Probability (AEP) in Soft Rock (Vs,30 = 760 m/s) for various Structural Periods – Mean Values",
+        "R04Figure555",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-4: Annual Exceedance Probability (AEP) in Soft Rock (Vs,30 = 760 m/s) for Various Structural Periods – 84th Percentile Values",
+        "R04Figure557",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-5: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30=1,500 m/s) – Mean Values",
+        "R04Figure561",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-6: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30=1,500 m/s) – 84th Percentile Values",
+        "R04Figure563",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-7: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30=760 m/s) – Mean Values",
+        "R04Figure565",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-8: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30=760 m/s) – 84th Percentile Values",
+        "R04Figure568",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-9: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:475 AEP",
+        "R04Figure582",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-10: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:975 AEP",
+        "R04Figure584",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-11: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:2,475 AEP",
+        "R04Figure586",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-12: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:5,000 AEP",
+        "R04Figure588",
+        "TableofFigures"
+      ],
+      [
+        "Figure 6-13: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:10,000 AEP",
+        "R04Figure591",
+        "TableofFigures"
+      ],
+      [
+        "Figure 7-1: Location of Seismic CPTs used to Estimate Shear Wave Velocity Profiles",
+        "R04Figure612",
+        "TableofFigures"
+      ],
+      [
+        "Figure 7-2: Shear Wave Velocity Profile at the Crawford Rock, Sand & Till, and Clay Impoundment measured by SCPTu and average Vs,30 determined with Eq. 7-1",
+        "R04Figure620",
+        "TableofFigures"
+      ],
+      [
+        "Figure 7-3: Shear Wave Velocity Profile at the Crawford Open Pit  measured by SCPTu and average Vs,30 determined with Eq. 7-1",
+        "R04Figure622",
+        "TableofFigures"
+      ],
+      [
+        "Figure 7-4: Shear Wave Velocity Profile at the Crawford Stockpile East measured by SCPTu and average Vs,30 determined with Eq. 7-1",
+        "R04Figure624",
+        "TableofFigures"
+      ],
+      [
+        "Figure 7-5: Shear Wave Velocity Profile at the Crawford Stockpile West measured by SCPTu and average Vs,30 determined with Eq. 7-1",
+        "R04Figure626",
+        "TableofFigures"
+      ],
+      [
+        "Figure 7-6: Shear Wave Velocity Profile at the Tailings Management Facility (TMF) measured by SCPTu and average Vs,30 determined with Eq. 7-1",
+        "R04Figure628",
+        "TableofFigures"
+      ],
+      [
+        "Figure 7-7: Uniform Hazard Spectra (UHS) in Stiff Soil (Vs,30=220 m/s) – Mean Values",
+        "R04Figure639",
+        "TableofFigures"
+      ],
+      [
+        "Figure 7-8: Uniform Hazard Spectra (UHS) in Stiff Soil (Vs,30=220 m/s) – 84th Percentile Values",
+        "R04Figure641",
+        "TableofFigures"
+      ],
+      [
+        "Figure 8-1: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30=1500 m/s) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values",
+        "R04Figure653",
+        "TableofFigures"
+      ],
+      [
+        "Figure 8-2: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30=760 m/s) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values",
+        "R04Figure656",
+        "TableofFigures"
+      ],
+      [
+        "Figure 8-3: Uniform Hazard Spectra (UHS) in Stiff Soil (Vs,30= 220 m/s) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values",
+        "R04Figure658",
+        "TableofFigures"
+      ],
+      [
+        "Figure 9-1: Design Response Spectra for a Return Period of 10,000 years - Mean Values",
+        "R04Figure679",
+        "TableofFigures"
+      ],
+      [
+        "Figure 9-2: Design Response Spectra for a Return Period of 10,000 years – 84th Percentile Values",
+        "R04Figure681",
+        "TableofFigures"
+      ],
+      [
+        "Figure 9-3: Design Response Spectra for a Return Period of 2,475 years - Mean Values",
+        "R04Figure683",
+        "TableofFigures"
+      ],
+      [
+        "Figure 9-4: Design Response Spectra for a Return Period of 2,475 years – 84th Percentile Values",
+        "R04Figure685",
+        "TableofFigures"
+      ],
+      [
+        "Figure 10-1: Mean Values of kh [% of PGA] for Return Period TR=475 yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height, Da/H [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.",
+        "R04Figure769",
+        "TableofFigures"
+      ],
+      [
+        "Figure 10-2: Mean Values of kh [% of PGA] for Return Period TR=2,475 yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height, Da/H [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.",
+        "R04Figure773",
+        "TableofFigures"
+      ],
+      [
+        "Figure 10-3: Mean Values of kh [% of PGA] for Return Period TR=10,000 yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height, Da/H [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.",
+        "R04Figure777",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-1: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – Mean Values",
+        "R04Figure848",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-2: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 50th Percentile Values",
+        "R04Figure850",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-3: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 84th Percentile Values",
+        "R04Figure852",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-4: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 90th Percentile Values",
+        "R04Figure854",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-5: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 95th Percentile Values",
+        "R04Figure856",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-6: Annual Exceedance Probability (AEP) in Medium Rock (Vs,30 = 910 m/s) for various Structural Periods – Mean Values",
+        "R04Figure858",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-7: Annual Exceedance Probability (AEP) in Medium Rock (Vs,30 = 910 m/s) for various Structural Periods – 50th Percentile Values",
+        "R04Figure860",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-8: Annual Exceedance Probability (AEP) in Medium Rock (Vs,30 = 910 m/s) for various Structural Periods – 84th Percentile Values",
+        "R04Figure862",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-9: Annual Exceedance Probability (AEP) in Medium Rock (Vs,30 = 910 m/s) for various Structural Periods – 90th Percentile Values",
+        "R04Figure864",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-10: Annual Exceedance Probability (AEP) in Medium Rock (Vs,30 = 910 m/s) for various Structural Periods – 95th Percentile Values",
+        "R04Figure866",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-11: Annual Exceedance Probability (AEP) in Soft Rock (Vs,30 = 760 m/s) for various Structural Periods – Mean Values",
+        "R04Figure868",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-12: Annual Exceedance Probability (AEP) in Soft Rock (Vs,30 = 760 m/s) for various Structural Periods – 50th Percentile Values",
+        "R04Figure870",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-13: Annual Exceedance Probability (AEP) in Soft Rock (Vs,30 = 760 m/s) for various Structural Periods – 84th Percentile Values",
+        "R04Figure872",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-14: Annual Exceedance Probability (AEP) in Soft Rock (Vs,30 = 760 m/s) for various Structural Periods – 90th Percentile Values",
+        "R04Figure874",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-15: Annual Exceedance Probability (AEP) in Soft Rock (Vs,30 = 760 m/s) for various Structural Periods – 95th Percentile Values",
+        "R04Figure876",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-16: Annual Exceedance Probability (AEP) in Very Dense Soil (Vs,30 = 580 m/s) for various Structural Periods – Mean Values",
+        "R04Figure878",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-17: Annual Exceedance Probability (AEP) in Very Dense Soil (Vs,30 = 580 m/s) for various Structural Periods – 50th Percentile Values",
+        "R04Figure880",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-18: Annual Exceedance Probability (AEP) in Very Dense Soil (Vs,30 = 580 m/s) for various Structural Periods – 84th Percentile Values",
+        "R04Figure882",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-19: Annual Exceedance Probability (AEP) in Very Dense Soil (Vs,30 = 580 m/s) for various Structural Periods – 90th Percentile Values",
+        "R04Figure884",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-20: Annual Exceedance Probability (AEP) in Very Dense Soil (Vs,30 = 580 m/s) for various Structural Periods – 95th Percentile Values",
+        "R04Figure886",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-21: Annual Exceedance Probability (AEP) in Stiff Soil (Vs,30 = 220 m/s) for various Structural Periods – Mean Values",
+        "R04Figure888",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-22: Annual Exceedance Probability (AEP) in Stiff Soil (Vs,30 = 220 m/s) for various Structural Periods – 50th Percentile Values",
+        "R04Figure890",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-23: Annual Exceedance Probability (AEP) in Stiff Soil (Vs,30 = 220 m/s) for various Structural Periods – 84th Percentile Values",
+        "R04Figure892",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-24: Annual Exceedance Probability (AEP) in Stiff Soil (Vs,30 = 220 m/s) for various Structural Periods – 90th Percentile Values",
+        "R04Figure894",
+        "TableofFigures"
+      ],
+      [
+        "Figure C1-25: Annual Exceedance Probability (AEP) in Stiff Soil (Vs,30 = 220 m/s) for various Structural Periods – 95th Percentile Values",
+        "R04Figure896",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-1: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30= 1500 m/s) - Mean Values",
+        "R04Figure902",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-2: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30= 1500 m/s) - 50th Percentile Values",
+        "R04Figure904",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-3: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30= 1500 m/s) - 84th Percentile Values",
+        "R04Figure906",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-4: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30= 1500 m/s) - 90th Percentile Values",
+        "R04Figure908",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-5: Uniform Hazard Spectra (UHS) in Hard Rock (Vs,30= 1500 m/s) - 95th Percentile Values",
+        "R04Figure910",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-6: Uniform Hazard Spectra (UHS) in Medium Rock (Vs,30= 910 m/s) – Mean Values",
+        "R04Figure912",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-7: Uniform Hazard Spectra (UHS) in Medium Rock (Vs,30= 910 m/s) - 50th Percentile Values",
+        "R04Figure914",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-8: Uniform Hazard Spectra (UHS) in Medium Rock (Vs,30= 910 m/s) - 84th Percentile Values",
+        "R04Figure916",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-9: Uniform Hazard Spectra (UHS) in Medium Rock (Vs,30= 910 m/s) - 90th Percentile Values",
+        "R04Figure918",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-10: Uniform Hazard Spectra (UHS) in Medium Rock (Vs,30= 910 m/s) - 95th Percentile Values",
+        "R04Figure920",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-11: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30= 760 m/s) – Mean Values",
+        "R04Figure922",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-12: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30= 760 m/s) – 50th Percentile Values",
+        "R04Figure924",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-13: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30= 760 m/s) – 84th Percentile Values",
+        "R04Figure926",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-14: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30= 760 m/s) – 90th Percentile Values",
+        "R04Figure928",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-15: Uniform Hazard Spectra (UHS) in Soft Rock (Vs,30= 760 m/s) – 95th Percentile Values",
+        "R04Figure930",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-16: Uniform Hazard Spectra (UHS) in Very Dense Soil (Vs,30= 580 m/s) – Mean Values",
+        "R04Figure932",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-17: Uniform Hazard Spectra (UHS) in Very Dense Soil (Vs,30= 580 m/s) – 50th Percentile Values",
+        "R04Figure934",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-18: Uniform Hazard Spectra (UHS) in Very Dense Soil (Vs,30= 580 m/s) – 84th Percentile Values",
+        "R04Figure936",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-19: Uniform Hazard Spectra (UHS) in Very Dense Soil (Vs,30= 580 m/s) – 90th Percentile Values",
+        "R04Figure938",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-20: Uniform Hazard Spectra (UHS) in Very Dense Soil (Vs,30= 580 m/s) – 95th Percentile Values",
+        "R04Figure940",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-21: Uniform Hazard Spectra (UHS) in Stiff Soil (Vs,30= 220 m/s) - Mean Values",
+        "R04Figure942",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-22: Uniform Hazard Spectra (UHS) in Stiff Soil (Vs,30= 220 m/s) – 50th Percentile Values",
+        "R04Figure944",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-23: Uniform Hazard Spectra (UHS) in Stiff Soil (Vs,30= 220 m/s) – 84th Percentile Values",
+        "R04Figure946",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-24: Uniform Hazard Spectra (UHS) in Stiff Soil (Vs,30= 220 m/s) – 90th Percentile Values",
+        "R04Figure948",
+        "TableofFigures"
+      ],
+      [
+        "Figure C2-25: Uniform Hazard Spectra (UHS) in Stiff Soil (Vs,30= 220 m/s) – 95th Percentile Values",
+        "R04Figure950",
+        "TableofFigures"
+      ],
+      [
+        "Figure D2-1: Design Response Spectra for a Return Period of 10,000 years - Mean Values",
+        "R04Figure979",
+        "TableofFigures"
+      ],
+      [
+        "Figure D2-2: Design Response Spectra for a Return Period of 10,000 years – 50th Percentile Values",
+        "R04Figure981",
+        "TableofFigures"
+      ],
+      [
+        "Figure D2-3: Design Response Spectra for a Return Period of 10,000 years – 84th Percentile Values",
+        "R04Figure983",
+        "TableofFigures"
+      ],
+      [
+        "Figure D2-4: Design Response Spectra for a Return Period of 10,000 years – 90th Percentile Values",
+        "R04Figure985",
+        "TableofFigures"
+      ],
+      [
+        "Figure D2-5: Design Response Spectra for a Return Period of 10,000 years – 95th Percentile Values",
+        "R04Figure987",
+        "TableofFigures"
+      ],
+      [
+        "Figure E2-1: Mean values of kmax [g] for return period TR=500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.",
+        "R04Figure1020",
+        "TableofFigures"
+      ],
+      [
+        "Figure E2-2: Mean values of kmax [g] for return period TR=2,500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.",
+        "R04Figure1024",
+        "TableofFigures"
+      ],
+      [
+        "Figure E2-3: Mean values of kmax [g] for return period TR=10,000 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.",
+        "R04Figure1028",
+        "TableofFigures"
+      ]
+    ]
+  }
+}

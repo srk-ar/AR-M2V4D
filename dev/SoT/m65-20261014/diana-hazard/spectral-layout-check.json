@@ -1,0 +1,11 @@
+{
+  "baselineSha256": "48479fa7de085b88952feea43631329fbaed0da88359c0734dbcfde668eeec87",
+  "candidateSha256": "5a0860537a9e9008d71c7b118621fa0aef9d1f17ed3778bf96a3fb581d8a38c1",
+  "preservedAllText": true,
+  "changedTables": [
+    689,
+    692
+  ],
+  "otherBodyObjectsAndZipPartsIdentical": true,
+  "visualQA": "pending"
+}

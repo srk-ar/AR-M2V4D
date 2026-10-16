@@ -1,0 +1,1747 @@
+{
+  "candidate_sha256": "277cfe9b09b161f030bedcc929a34c6463c6fcb4ad6dffacf76e6b0b3912e93c",
+  "reviewer": "Codex root, bounded editorial corrections and surrounding-context review",
+  "records": {
+    "contract": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-editorial/contract.md",
+      "sha256": "0f6aa614c09703a3b2f4766f013d76e78f08fccce85110d710cd3f8ca3b35e5d"
+    },
+    "provenance": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-editorial/provenance.md",
+      "sha256": "cf08ee21389d12a91a3dfb26dd527016fb066d409d06793eea0d9be9423ca10b"
+    },
+    "entities": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-editorial/entities.md",
+      "sha256": "f84509681bf781de9871e7f6d8c510364ccdf976345f8ec44f827e5dd9e4e6a2"
+    },
+    "formal": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-editorial/formal.md",
+      "sha256": "07b90b9d7f7059257781d15e3a0f072cd44bd0eec44d440515c70f937fdf07b7"
+    }
+  },
+  "baseline": {
+    "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-editorial/prose-baseline.md",
+    "sha256": "77dd53da40dd49a0c70679ca54dc351fe13e34d22fe69eca77cd7be97cf498b9"
+  },
+  "units": [
+    {
+      "text": "Canadian Commission on Building and Fire Codes",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 NBCC reference and Canadian Commission corporate identity; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Canadian Commission on Building and Fire Codes restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Canadian Commission on Building and Fire Codes keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 NBCC reference and Canadian Commission corporate identity."
+        }
+      }
+    },
+    {
+      "text": "(Goulet et al., 2017)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PEER Report 2017/03, primary PEER publications metadata; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment (Goulet et al., 2017) restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal (Goulet et al., 2017) keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by PEER Report 2017/03, primary PEER publications metadata."
+        }
+      }
+    },
+    {
+      "text": "(2013) (AA13)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 Atkinson and Adams 2013 citation and AA13 abbreviation; whitespace only; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment (2013) (AA13) restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal (2013) (AA13) keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 Atkinson and Adams 2013 citation and AA13 abbreviation; whitespace only."
+        }
+      }
+    },
+    {
+      "text": "Natural Resources Canada",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Official NRCan Open File 8630 publisher identity; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Natural Resources Canada restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Natural Resources Canada keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by Official NRCan Open File 8630 publisher identity."
+        }
+      }
+    },
+    {
+      "text": "(Mazzotti & Adams, 2005)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Wiley DOI 10.1029/2004JB003510, two authors; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment (Mazzotti & Adams, 2005) restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal (Mazzotti & Adams, 2005) keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by Wiley DOI 10.1029/2004JB003510, two authors."
+        }
+      }
+    },
+    {
+      "text": "Gutenberg & Richter",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 bibliography Gutenberg and Richter 1944, surname spelling; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Gutenberg & Richter restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Gutenberg & Richter keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 bibliography Gutenberg and Richter 1944, surname spelling."
+        }
+      }
+    },
+    {
+      "text": "(Atkinson & Adams, 2013)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 bibliography Atkinson and Adams 2013, same work with title removed from in-text citation; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment (Atkinson & Adams, 2013) restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal (Atkinson & Adams, 2013) keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 bibliography Atkinson and Adams 2013, same work with title removed from in-text citation."
+        }
+      }
+    },
+    {
+      "text": "(Pagani et al., 2014)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "GEM OpenQuake citation; Kolaj 2019 references, hydrated lines83-90; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment (Pagani et al., 2014) restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal (Pagani et al., 2014) keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by GEM OpenQuake citation; Kolaj 2019 references, hydrated lines83-90."
+        }
+      }
+    },
+    {
+      "text": "Mayfield",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 Rathje and Mayfield 2008 bibliography; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Mayfield restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Mayfield keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 Rathje and Mayfield 2008 bibliography."
+        }
+      }
+    },
+    {
+      "text": "Bray & Travasarou, 2009",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 bibliography Bray and Travasarou 2009; title retained in bibliography; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Bray & Travasarou, 2009 restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Bray & Travasarou, 2009 keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 bibliography Bray and Travasarou 2009; title retained in bibliography."
+        }
+      }
+    },
+    {
+      "text": "Travasarou",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "ASCE Bray et al. 2018 author list; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Travasarou restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Travasarou keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by ASCE Bray et al. 2018 author list."
+        }
+      }
+    },
+    {
+      "text": "Gutenberg, B., & Richter",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 Gutenberg and Richter 1944 bibliography; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Gutenberg, B., & Richter restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Gutenberg, B., & Richter keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 Gutenberg and Richter 1944 bibliography."
+        }
+      }
+    },
+    {
+      "text": "Bray & Travasarou, 2007",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 bibliography Bray and Travasarou 2007; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Bray & Travasarou, 2007 restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Bray & Travasarou, 2007 keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 bibliography Bray and Travasarou 2007."
+        }
+      }
+    },
+    {
+      "text": "Bray, Macedo, & Travasarou, 2018",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "ASCE DOI10.1061/(ASCE)GT.1943-5606.0001833 and bib/references.bib:394-406; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Bray, Macedo, & Travasarou, 2018 restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Bray, Macedo, & Travasarou, 2018 keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by ASCE DOI10.1061/(ASCE)GT.1943-5606.0001833 and bib/references.bib:394-406."
+        }
+      }
+    },
+    {
+      "text": "Bray & Macedo, 2019",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 bibliography Bray and Macedo 2019; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Bray & Macedo, 2019 restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Bray & Macedo, 2019 keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 bibliography Bray and Macedo 2019."
+        }
+      }
+    },
+    {
+      "text": "Harmon",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Illinois IDEALS102775, owner-confirmed Harmon thesis 2017; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Harmon restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Harmon keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by Illinois IDEALS102775, owner-confirmed Harmon thesis 2017."
+        }
+      }
+    },
+    {
+      "text": "(SRK Consulting (Canada), Inc., 2023, 2024)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 SRK2023 and SRK2024 entries and adjacent citations, both retained; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment (SRK Consulting (Canada), Inc., 2023, 2024) restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal (SRK Consulting (Canada), Inc., 2023, 2024) keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 SRK2023 and SRK2024 entries and adjacent citations, both retained."
+        }
+      }
+    },
+    {
+      "text": "1500 m/s",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 caption body653 and Vs1500 figure; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The caption fragment 1500 m/s communicates the existing velocity unit or percentile without the malformed slash/ordinal."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Caption typography only, on the same existing figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal 1500 m/s keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The digits 1500 are unchanged; no curve, percentile selection or velocity changes."
+        }
+      }
+    },
+    {
+      "text": "760 m/s",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 caption body656 and Vs760 figure; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The caption fragment 760 m/s communicates the existing velocity unit or percentile without the malformed slash/ordinal."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Caption typography only, on the same existing figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal 760 m/s keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The digits 760 are unchanged; no curve, percentile selection or velocity changes."
+        }
+      }
+    },
+    {
+      "text": "84th",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body983 percentile84 caption; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The caption fragment 84th communicates the existing velocity unit or percentile without the malformed slash/ordinal."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Caption typography only, on the same existing figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal 84th keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The digits 84 are unchanged; no curve, percentile selection or velocity changes."
+        }
+      }
+    },
+    {
+      "text": "90th",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body985 percentile90 caption; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The caption fragment 90th communicates the existing velocity unit or percentile without the malformed slash/ordinal."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Caption typography only, on the same existing figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal 90th keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The digits 90 are unchanged; no curve, percentile selection or velocity changes."
+        }
+      }
+    },
+    {
+      "text": "95th",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body987 percentile95 caption; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The caption fragment 95th communicates the existing velocity unit or percentile without the malformed slash/ordinal."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Caption typography only, on the same existing figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal 95th keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The digits 95 are unchanged; no curve, percentile selection or velocity changes."
+        }
+      }
+    },
+    {
+      "text": "– 95th",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body987 separator before percentile95; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The caption fragment – 95th communicates the existing velocity unit or percentile without the malformed slash/ordinal."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Caption typography only, on the same existing figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal – 95th keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The digits 95 are unchanged; no curve, percentile selection or velocity changes."
+        }
+      }
+    },
+    {
+      "text": "American Society of Civil Engineers. (2022). Minimum Design Loads and Associated Criteria for Buildings and Other Structures, ASCE/SEI 7-22. Reston, VA. https://doi.org/10.1061/9780784415788",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "ASCE official book DOI10.1061/9780784415788, ASCE/SEI7-22; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate American Society of Civil Engineers: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal American Society of Civil Engineers. (2022). Minimum Design Loads and Associated Criteria for Buildi keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Atkinson, G. M., & Boore, D. M. (2006). Earthquake ground-motion prediction equations for eastern North America. Bulletin of the Seismological Society of America, 96(6), 2181-2205. https://doi.org/10.1785/0120050245",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "USGS publication70028671 metadata; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Atkinson, G. M., & Boore, D. M: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Atkinson, G. M., & Boore, D. M. (2006). Earthquake ground-motion prediction equations for eastern No keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Boore, D. M., & Campbell, K. W. (2017). Adjusting central and eastern North America ground-motion intensity measures between sites with different reference-rock site conditions. Bulletin of the Seismological Society of America, 107(1), 132-148. https://doi.org/10.1785/0120160208",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "USGS publication70189619 metadata; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Boore, D. M., & Campbell, K. W: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Boore, D. M., & Campbell, K. W. (2017). Adjusting central and eastern North America ground-motion in keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Bray, J. D., Macedo, J., & Travasarou, T. (2018). Simplified Procedure for Estimating Seismic Slope Displacements for Subduction Zone Earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 144(3), 04017124. https://doi.org/10.1061/(ASCE)GT.1943-5606.0001833",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "ASCE DOI10.1061/(ASCE)GT.1943-5606.0001833, 144(3),04017124; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Bray, J. D., Macedo, J., & Travasarou, T: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Bray, J. D., Macedo, J., & Travasarou, T. (2018). Simplified Procedure for Estimating Seismic Slope  keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Dakoulas,",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 Dakoulas source surname, same work; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Dakoulas, restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Dakoulas, keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 Dakoulas source surname, same work."
+        }
+      }
+    },
+    {
+      "text": "Pavia, Italy",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 European school publication location, Pavia; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment Pavia, Italy restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Pavia, Italy keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by R03 European school publication location, Pavia."
+        }
+      }
+    },
+    {
+      "text": "Goulet, C. A., Bozorgnia, Y., Kuehn, N., Al Atik, L., Youngs, R. R., Graves, R. W., & Atkinson, G. M. (2017). NGA-East Ground-Motion Models for the U.S. Geological Survey National Seismic Hazard Maps. PEER Report No. 2017/03. Pacific Earthquake Engineering Research Center.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "PEER primary publications 2017/03 complete author list; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Goulet, C. A., Bozorgnia, Y., Kuehn, N., Al Atik, L., Youngs, R. R., Graves, R. W., & Atkinson, G. M: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Goulet, C. A., Bozorgnia, Y., Kuehn, N., Al Atik, L., Youngs, R. R., Graves, R. W., & Atkinson, G. M keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Harmon, J. A. (2017). Nonlinear site amplification functions for Central and Eastern North America. Ph.D. dissertation, University of Illinois at Urbana-Champaign. https://hdl.handle.net/2142/97722",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Illinois IDEALS102775 / handle2142/97722; owner expressly approved thesis; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Harmon, J. A: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography only; the work already supports an existing citation. The Harmon identity is the owner-selected thesis; Petersen remains explicitly preliminary2018."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Harmon, J. A. (2017). Nonlinear site amplification functions for Central and Eastern North America.  keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Kaklamanos, J., Baise, L. G., & Boore, D. M. (2011). Estimating Unknown Input Parameters when Implementing the NGA Ground-Motion Prediction Equations in Engineering Practice. Earthquake Spectra, 27(4), 1219-1235. https://doi.org/10.1193/1.3650372",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "USGS publication70041861 metadata, 2011; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Kaklamanos, J., Baise, L. G., & Boore, D. M: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Kaklamanos, J., Baise, L. G., & Boore, D. M. (2011). Estimating Unknown Input Parameters when Implem keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "17th World Conference",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "NRCan primary 17WCEE_Kolaj_etal_SECanHazardUncertainty_1c-0029.pdf metadata; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment 17th World Conference restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal 17th World Conference keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by NRCan primary 17WCEE_Kolaj_etal_SECanHazardUncertainty_1c-0029.pdf metadata."
+        }
+      }
+    },
+    {
+      "text": "Mazzotti, S., & Adams, J. (2005). Rates and uncertainties on seismic moment and deformation in eastern Canada. Journal of Geophysical Research: Solid Earth, 110, B09301. https://doi.org/10.1029/2004JB003510",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Wiley DOI10.1029/2004JB003510 metadata; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Mazzotti, S., & Adams, J: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Mazzotti, S., & Adams, J. (2005). Rates and uncertainties on seismic moment and deformation in easte keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Kolaj, M., Halchuk, S., Adams, J., & Allen, T. I. (2020). Sixth generation seismic hazard model of Canada: input files to produce values proposed for the 2020 National Building Code of Canada. Geological Survey of Canada, Open File 8630.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Government of Canada publication9.960685, GSC Open File8630; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Kolaj, M., Halchuk, S., Adams, J., & Allen, T. I: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Kolaj, M., Halchuk, S., Adams, J., & Allen, T. I. (2020). Sixth generation seismic hazard model of C keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Pagani, M., Monelli, D., Weatherill, G., Danciu, L., Crowley, H., Silva, V., Henshaw, P., Butler, R., Nastasi, M., Panzeri, L., Simionato, M., & Vigano, D. (2014). OpenQuake Engine: An Open Hazard (and Risk) Software for the Global Earthquake Model. Seismological Research Letters, 85(3), 692-702.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "GEM OpenQuake citation and official NRCan Kolaj2019 bibliography for Butler R.; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Pagani, M., Monelli, D., Weatherill, G., Danciu, L., Crowley, H., Silva, V., Henshaw, P., Butler, R., Nastasi, M., Panzeri, L., Simionato, M., & Vigano, D: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Pagani, M., Monelli, D., Weatherill, G., Danciu, L., Crowley, H., Silva, V., Henshaw, P., Butler, R. keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Peltier, W. R. (2004). Global Glacial Isostasy and the Surface of the Ice-Age Earth: The ICE-5G (VM2) Model and GRACE. Annual Review of Earth and Planetary Sciences, 32, 111-149. https://doi.org/10.1146/annurev.earth.32.082503.144359",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Annual Reviews DOI10.1146/annurev.earth.32.082503.144359 metadata; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Peltier, W. R: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Peltier, W. R. (2004). Global Glacial Isostasy and the Surface of the Ice-Age Earth: The ICE-5G (VM2 keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., Rezaeian, S., McNamara, D. E., Hoover, S. M., Luco, N., Boyd, O. S., Rukstales, K. S., Jaiswal, K. S., Thompson, E. M., Clayton, B., Field, E. H., & Zeng, Y. (2018). Preliminary 2018 Update of the U.S. National Seismic Hazard Model: Overview of Model, Changes, and Implications. U.S. Geological Survey report for public comment, 1-47.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Official NRCan Kolaj2019 hydrated references lines83-90; secondary metadata for the preliminary2018 report, not the later published model; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., Rezaeian, S., McNamara, D. E., Hoover, S. M., Luco, N., Boyd, O. S., Rukstales, K. S., Jaiswal, K. S., Thompson, E. M., Clayton, B., Field, E. H., & Zeng, Y: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography only; the work already supports an existing citation. The Harmon identity is the owner-selected thesis; Petersen remains explicitly preliminary2018."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., Re keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "CAPR003324_Diana_R04.docx",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Owner-authorized separate R04 copy, filename matches output; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The filename distinguishes the new R04 deliverable from the preserved original."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Document identifier on the existing cover, not a technical assertion."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal CAPR003324_Diana_R04.docx keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Report identity remains CAPR003324; only the delivered-copy filename changes."
+        }
+      }
+    },
+    {
+      "text": "(Kolaj, Halchuk, Adams, & Allen, 2020)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Government of Canada publication9.960685 author identity for the same Open File8630; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The exact fragment (Kolaj, Halchuk, Adams, & Allen, 2020) restores the named author/institution/year or citation punctuation so the reader can match the reference list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "A citation or name within the existing sentence. The surrounding technical proposition is retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal (Kolaj, Halchuk, Adams, & Allen, 2020) keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited proposition is not rewritten; spelling, author identity, citation shortening or adjacent-year punctuation is the only change, supported by Government of Canada publication9.960685 author identity for the same Open File8630."
+        }
+      }
+    },
+    {
+      "text": "Appendix A - Crawford Updated Seismic Catalog",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body825 Appendix A contents; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The label Appendix A - Crawford Updated Seismic Catalog identifies the existing appendix or subsection; removing it would lose the visible navigation destination."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix heading, with its established subject and A-D/C1-C2/D1-D2 hierarchy retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Appendix A - Crawford Updated Seismic Catalog keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Letter and subject match the existing appendix; only the broken automatic numbering is replaced."
+        }
+      }
+    },
+    {
+      "text": "Appendix B - Southeastern Model Seismic Sources of the CanadaSHM6",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body833 Appendix B sources; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The label Appendix B - Southeastern Model Seismic Sources of the CanadaSHM6 identifies the existing appendix or subsection; removing it would lose the visible navigation destination."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix heading, with its established subject and A-D/C1-C2/D1-D2 hierarchy retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Appendix B - Southeastern Model Seismic Sources of the CanadaSHM6 keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Letter and subject match the existing appendix; only the broken automatic numbering is replaced."
+        }
+      }
+    },
+    {
+      "text": "Appendix C - Seismic Hazard Results",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body844 Appendix C contents; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The label Appendix C - Seismic Hazard Results identifies the existing appendix or subsection; removing it would lose the visible navigation destination."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix heading, with its established subject and A-D/C1-C2/D1-D2 hierarchy retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Appendix C - Seismic Hazard Results keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Letter and subject match the existing appendix; only the broken automatic numbering is replaced."
+        }
+      }
+    },
+    {
+      "text": "C1 - Annual Exceedance Probability",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body845 AEP subsection; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The label C1 - Annual Exceedance Probability identifies the existing appendix or subsection; removing it would lose the visible navigation destination."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix heading, with its established subject and A-D/C1-C2/D1-D2 hierarchy retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal C1 - Annual Exceedance Probability keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Letter and subject match the existing appendix; only the broken automatic numbering is replaced."
+        }
+      }
+    },
+    {
+      "text": "C2 - Uniform Hazard Spectra",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body899 UHS subsection; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The label C2 - Uniform Hazard Spectra identifies the existing appendix or subsection; removing it would lose the visible navigation destination."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix heading, with its established subject and A-D/C1-C2/D1-D2 hierarchy retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal C2 - Uniform Hazard Spectra keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Letter and subject match the existing appendix; only the broken automatic numbering is replaced."
+        }
+      }
+    },
+    {
+      "text": "Appendix D - Design Earthquakes",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body952 Appendix D contents; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The label Appendix D - Design Earthquakes identifies the existing appendix or subsection; removing it would lose the visible navigation destination."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix heading, with its established subject and A-D/C1-C2/D1-D2 hierarchy retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Appendix D - Design Earthquakes keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Letter and subject match the existing appendix; only the broken automatic numbering is replaced."
+        }
+      }
+    },
+    {
+      "text": "D1 - Design Peak Ground Acceleration",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body954 PGA subsection; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The label D1 - Design Peak Ground Acceleration identifies the existing appendix or subsection; removing it would lose the visible navigation destination."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix heading, with its established subject and A-D/C1-C2/D1-D2 hierarchy retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal D1 - Design Peak Ground Acceleration keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Letter and subject match the existing appendix; only the broken automatic numbering is replaced."
+        }
+      }
+    },
+    {
+      "text": "D2 - Design Response Spectrum",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "R03 body973 spectra subsection; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The label D2 - Design Response Spectrum identifies the existing appendix or subsection; removing it would lose the visible navigation destination."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix heading, with its established subject and A-D/C1-C2/D1-D2 hierarchy retained."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal D2 - Design Response Spectrum keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Letter and subject match the existing appendix; only the broken automatic numbering is replaced."
+        }
+      }
+    },
+    {
+      "text": "Gardner, J. K., & Knopoff, L. (1974). Is the sequence of earthquakes in Southern California, with aftershocks removed, Poissonian? Bulletin of the Seismological Society of America, 64(5), 1363-1367.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "bib/references.bib:4892-4901; already cited R03 body423; fragment read in context in text-diff03/04 and R03 hydrated prose."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Retains the full work identity so the reader can locate Gardner, J. K., & Knopoff, L: author, year, title and publication details are required; the title is bibliographic metadata, not a new methodological claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bibliography identity repair for an already cited work; no recommendation or numerical result is added."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The literal Gardner, J. K., & Knopoff, L. (1974). Is the sequence of earthquakes in Southern California, with af keeps the report citation/heading register; it adds no appraisal, instruction, comparison or account of the editing process."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The cited work and its purpose stay the same; incorrect metadata are replaced by the stated source. Scientific body, conditions and equations remain unchanged."
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "editorial-1",
+      "fragment": "Canadian Comission on Building and Fires Codes",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Canadian Commission on Building and Fire Codes",
+        "evidence": "Reread Canadian Commission on Building and Fire Codes in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-2",
+      "fragment": "(Goulet, et al., 2017)",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "(Goulet et al., 2017)",
+        "evidence": "Reread (Goulet et al., 2017) in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-3",
+      "fragment": "(2013)(AA13)",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "(2013) (AA13)",
+        "evidence": "Reread (2013) (AA13) in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-4",
+      "fragment": "Natural Resources of Canada",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Natural Resources Canada",
+        "evidence": "Reread Natural Resources Canada in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-5",
+      "fragment": "(Mazzotti, 2005)",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "(Mazzotti & Adams, 2005)",
+        "evidence": "Reread (Mazzotti & Adams, 2005) in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-6",
+      "fragment": "Natural Resources de Canada",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Natural Resources Canada",
+        "evidence": "Reread Natural Resources Canada in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-7",
+      "fragment": "Gutenberg & Ritcher",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Gutenberg & Richter",
+        "evidence": "Reread Gutenberg & Richter in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-8",
+      "fragment": "(Atkinson & Adams, Ground motion prediction equations for application to the 2015 Canadian national seismic hazard maps, 2013)",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "(Atkinson & Adams, 2013)",
+        "evidence": "Reread (Atkinson & Adams, 2013) in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-9",
+      "fragment": "(Pagani, Monelli, & Weatgerill, 2014)",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "(Pagani et al., 2014)",
+        "evidence": "Reread (Pagani et al., 2014) in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-10",
+      "fragment": "Mayfied",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Mayfield",
+        "evidence": "Reread Mayfield in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-11",
+      "fragment": "Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Bray & Travasarou, 2009",
+        "evidence": "Reread Bray & Travasarou, 2009 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-12",
+      "fragment": "Travasauro",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Travasarou",
+        "evidence": "Reread Travasarou in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-13",
+      "fragment": "Gutenberg, B., & Ritcher",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Gutenberg, B., & Richter",
+        "evidence": "Reread Gutenberg, B., & Richter in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-14",
+      "fragment": "Bray & Travasarou, Simplified Procedure for Estimating Earthquake-Induced Deviatoric Slope Displacements, 2007",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Bray & Travasarou, 2007",
+        "evidence": "Reread Bray & Travasarou, 2007 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-15",
+      "fragment": "Bray, Macedo, & Travasarou, Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes, 2018",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Bray, Macedo, & Travasarou, 2018",
+        "evidence": "Reread Bray, Macedo, & Travasarou, 2018 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-16",
+      "fragment": "Bray & Macedo, Procedure for Estimating Shear-Induced Seismic Slope Displacement for Shallow Crustal Earthquakes, 2019",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Bray & Macedo, 2019",
+        "evidence": "Reread Bray & Macedo, 2019 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-17",
+      "fragment": "Harmon, et al.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Harmon",
+        "evidence": "Reread Harmon in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-18",
+      "fragment": "(SRK Consulting (Canada), Inc., 2023) (2024)",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "(SRK Consulting (Canada), Inc., 2023, 2024)",
+        "evidence": "Reread (SRK Consulting (Canada), Inc., 2023, 2024) in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-19",
+      "fragment": "(SRK Consulting (Canada), Inc., 2024) (2023)",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "(SRK Consulting (Canada), Inc., 2023, 2024)",
+        "evidence": "Reread (SRK Consulting (Canada), Inc., 2023, 2024) in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-20",
+      "fragment": "1500 m/s/",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "1500 m/s",
+        "evidence": "Reread 1500 m/s in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-21",
+      "fragment": "760 ms/",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "760 m/s",
+        "evidence": "Reread 760 m/s in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-22",
+      "fragment": "84h",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "84th",
+        "evidence": "Reread 84th in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-23",
+      "fragment": "90h",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "90th",
+        "evidence": "Reread 90th in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-24",
+      "fragment": "95h",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "95th",
+        "evidence": "Reread 95th in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-25",
+      "fragment": "–95th",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "– 95th",
+        "evidence": "Reread – 95th in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-26",
+      "fragment": "American Society of Civil Engineers. (2022). Minimum Design Loads for Buildings and Other Structures, ASCE/SEI 7-22 (Vol. 7). Reston, VA. Retrieved from https://doi.org/10.1061/978078441578",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "American Society of Civil Engineers. (2022). Minimum Design Loads and Associated Criteria for Buildings and Other Structures, ASCE/SEI 7-22. Reston, VA. https://doi.org/10.1061/9780784415788",
+        "evidence": "Reread American Society of Civil Engineers. (2022). Minimum Design Loads and Associated Criteria for Buildings and Other Structures, ASCE/SEI 7-22. Reston, VA. https://doi.org/10.1061/9780784415788 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-27",
+      "fragment": "Atkinson, G. M., & Boore, D. M. (2006). ., & Boore, D. M. (2006). Bulletin of the Seismological Society of America, 96(6), 2181-2205.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Atkinson, G. M., & Boore, D. M. (2006). Earthquake ground-motion prediction equations for eastern North America. Bulletin of the Seismological Society of America, 96(6), 2181-2205. https://doi.org/10.1785/0120050245",
+        "evidence": "Reread Atkinson, G. M., & Boore, D. M. (2006). Earthquake ground-motion prediction equations for eastern North America. Bulletin of the Seismological Society of America, 96(6), 2181-2205. https://doi.org/10.1785/0120050245 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-28",
+      "fragment": "Boore, D. M., & Campbell, K. W. (2017). Updated Ground-Motion Relations for the Next Generation of Ground-Motion Prediction Equations. Bulletin of the Seismological Society of America, 107(2).",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Boore, D. M., & Campbell, K. W. (2017). Adjusting central and eastern North America ground-motion intensity measures between sites with different reference-rock site conditions. Bulletin of the Seismological Society of America, 107(1), 132-148. https://doi.org/10.1785/0120160208",
+        "evidence": "Reread Boore, D. M., & Campbell, K. W. (2017). Adjusting central and eastern North America ground-motion intensity measures between sites with different reference-rock site conditions. Bulletin of the Seismological Society of America, 107(1), 132-148. https://doi.org/10.1785/0120160208 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-29",
+      "fragment": "Bray, J. D., Macedo, J., & Travasarou, T. (2018). Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 144(11).",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Bray, J. D., Macedo, J., & Travasarou, T. (2018). Simplified Procedure for Estimating Seismic Slope Displacements for Subduction Zone Earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 144(3), 04017124. https://doi.org/10.1061/(ASCE)GT.1943-5606.0001833",
+        "evidence": "Reread Bray, J. D., Macedo, J., & Travasarou, T. (2018). Simplified Procedure for Estimating Seismic Slope Displacements for Subduction Zone Earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 144(3), 04017124. https://doi.org/10.1061/(ASCE)GT.1943-5606.0001833 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-30",
+      "fragment": "Dakaoulas ,",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Dakoulas,",
+        "evidence": "Reread Dakoulas, in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-31",
+      "fragment": "Pravia, Italy",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Pavia, Italy",
+        "evidence": "Reread Pavia, Italy in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-32",
+      "fragment": "Goulet, C. A., Bozorgnia, Y., Abrahamson, N. A., Kuehn, N., Al Atik, L., Youngs, R. R., & Graves, L. W. (2017). NGA-East Ground-Motion Models for the U.S. Geological Survey National Seismic Hazard Maps, PEER Report No. 2017/03. Pacific Earthquake Engineering Research Center (PEER).",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Goulet, C. A., Bozorgnia, Y., Kuehn, N., Al Atik, L., Youngs, R. R., Graves, R. W., & Atkinson, G. M. (2017). NGA-East Ground-Motion Models for the U.S. Geological Survey National Seismic Hazard Maps. PEER Report No. 2017/03. Pacific Earthquake Engineering Research Center.",
+        "evidence": "Reread Goulet, C. A., Bozorgnia, Y., Kuehn, N., Al Atik, L., Youngs, R. R., Graves, R. W., & Atkinson, G. M. (2017). NGA-East Ground-Motion Models for the U.S. Geological Survey National Seismic Hazard Maps. PEER Report No. 2017/03. Pacific Earthquake Engineering Research Center. in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-33",
+      "fragment": "Harmon, J. K., Edwards, B. D., & Wu, J. (2017). Site Response Analysis and Ground Motion Prediction in the Eastern United States. Seismological Research Letters, 88(4), 985-995.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Harmon, J. A. (2017). Nonlinear site amplification functions for Central and Eastern North America. Ph.D. dissertation, University of Illinois at Urbana-Champaign. https://hdl.handle.net/2142/97722",
+        "evidence": "Reread Harmon, J. A. (2017). Nonlinear site amplification functions for Central and Eastern North America. Ph.D. dissertation, University of Illinois at Urbana-Champaign. https://hdl.handle.net/2142/97722 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-34",
+      "fragment": "Kaklamanos, J., Baise, L. G., & Boore, D. M. (2010). Estimating Unknown Input Parameters when Implementing the NGA Ground-Motion Predition Equations in Engineering Practice. Earthquake Spectra, 27(4), 1219-35.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Kaklamanos, J., Baise, L. G., & Boore, D. M. (2011). Estimating Unknown Input Parameters when Implementing the NGA Ground-Motion Prediction Equations in Engineering Practice. Earthquake Spectra, 27(4), 1219-1235. https://doi.org/10.1193/1.3650372",
+        "evidence": "Reread Kaklamanos, J., Baise, L. G., & Boore, D. M. (2011). Estimating Unknown Input Parameters when Implementing the NGA Ground-Motion Prediction Equations in Engineering Practice. Earthquake Spectra, 27(4), 1219-1235. https://doi.org/10.1193/1.3650372 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-35",
+      "fragment": "Mazzotti, S. (2005). Rates and uncertainties on seismic moment and deformationin eastern Canada. Journal of Geophysical Research, 1110.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Mazzotti, S., & Adams, J. (2005). Rates and uncertainties on seismic moment and deformation in eastern Canada. Journal of Geophysical Research: Solid Earth, 110, B09301. https://doi.org/10.1029/2004JB003510",
+        "evidence": "Reread Mazzotti, S., & Adams, J. (2005). Rates and uncertainties on seismic moment and deformation in eastern Canada. Journal of Geophysical Research: Solid Earth, 110, B09301. https://doi.org/10.1029/2004JB003510 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-36",
+      "fragment": "Natural Resources Canada. (2020). The 6th Generation Seismic Hazard Model of Canada: Technical Report. Open File 8630. Natural Resources Canada, 2020. Goverment of Canada.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Kolaj, M., Halchuk, S., Adams, J., & Allen, T. I. (2020). Sixth generation seismic hazard model of Canada: input files to produce values proposed for the 2020 National Building Code of Canada. Geological Survey of Canada, Open File 8630.",
+        "evidence": "Reread Kolaj, M., Halchuk, S., Adams, J., & Allen, T. I. (2020). Sixth generation seismic hazard model of Canada: input files to produce values proposed for the 2020 National Building Code of Canada. Geological Survey of Canada, Open File 8630. in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-37",
+      "fragment": "Pagani, M., Monelli, M., & Weatgerill, G. (2014). OpenQuake Engine: An Open Hazard (and Risk) Software for the Global Earthquake Model. Seismological Research Letters, 85(3), 692-702.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Pagani, M., Monelli, D., Weatherill, G., Danciu, L., Crowley, H., Silva, V., Henshaw, P., Butler, R., Nastasi, M., Panzeri, L., Simionato, M., & Vigano, D. (2014). OpenQuake Engine: An Open Hazard (and Risk) Software for the Global Earthquake Model. Seismological Research Letters, 85(3), 692-702.",
+        "evidence": "Reread Pagani, M., Monelli, D., Weatherill, G., Danciu, L., Crowley, H., Silva, V., Henshaw, P., Butler, R., Nastasi, M., Panzeri, L., Simionato, M., & Vigano, D. (2014). OpenQuake Engine: An Open Hazard (and Risk) Software for the Global Earthquake Model. Seismological Research Letters, 85(3), 692-702. in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-38",
+      "fragment": "Peltier, W. R. (2004). Global Glacial Isostasy and the Surface of the Ice-Age Earth: The ICE-5G (VM2) Model and Grace. Annual Review of Eartha and Planetary Sciences, 32, 111-149.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Peltier, W. R. (2004). Global Glacial Isostasy and the Surface of the Ice-Age Earth: The ICE-5G (VM2) Model and GRACE. Annual Review of Earth and Planetary Sciences, 32, 111-149. https://doi.org/10.1146/annurev.earth.32.082503.144359",
+        "evidence": "Reread Peltier, W. R. (2004). Global Glacial Isostasy and the Surface of the Ice-Age Earth: The ICE-5G (VM2) Model and GRACE. Annual Review of Earth and Planetary Sciences, 32, 111-149. https://doi.org/10.1146/annurev.earth.32.082503.144359 in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-39",
+      "fragment": "Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., . . . Yeng, Y. (2018). Preliminary 2018 Update of the U.S. United States Geological Survey.",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., Rezaeian, S., McNamara, D. E., Hoover, S. M., Luco, N., Boyd, O. S., Rukstales, K. S., Jaiswal, K. S., Thompson, E. M., Clayton, B., Field, E. H., & Zeng, Y. (2018). Preliminary 2018 Update of the U.S. National Seismic Hazard Model: Overview of Model, Changes, and Implications. U.S. Geological Survey report for public comment, 1-47.",
+        "evidence": "Reread Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., Rezaeian, S., McNamara, D. E., Hoover, S. M., Luco, N., Boyd, O. S., Rukstales, K. S., Jaiswal, K. S., Thompson, E. M., Clayton, B., Field, E. H., & Zeng, Y. (2018). Preliminary 2018 Update of the U.S. National Seismic Hazard Model: Overview of Model, Changes, and Implications. U.S. Geological Survey report for public comment, 1-47. in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-40",
+      "fragment": "CAPR003324_Crawford_SeismicHazard_Final.docx",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "CAPR003324_Diana_R04.docx",
+        "evidence": "Reread CAPR003324_Diana_R04.docx in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    },
+    {
+      "id": "editorial-41",
+      "fragment": "(Natural Resources Canada, 2020)",
+      "rule": "preservation",
+      "diagnosis": "The original citation/name/caption fragment contains the identity, punctuation or typographic defect recorded by the exact before/after edit.",
+      "resolution": {
+        "action": "revise",
+        "replacement": "(Kolaj, Halchuk, Adams, & Allen, 2020)",
+        "evidence": "Reread (Kolaj, Halchuk, Adams, & Allen, 2020) in its preserved surrounding sentence; provenance.md identifies its source and retained technical meaning.",
+        "verified": true
+      }
+    }
+  ]
+}

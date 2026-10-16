@@ -1,0 +1,38 @@
+---
+title: "Seismic Hazard"
+lang: en
+toc: false
+number-sections: false
+format:
+  docx:
+    reference-doc: _local/gmdp.memo.reference.docx
+---
+
+```{r}
+#| include: false
+root <- normalizePath(here::here())
+source(file.path(root, "scripts/setup/hazardDiana.R"))
+Diana <- readDiana(root)
+```
+
+{{< include /_results/hazard.diana.qmd >}}
+
+```{r}
+#| results: asis
+for (Item in Diana$layout$tables) {
+  NGR::knitBlock(
+    path = "/_local/tbl.hazard.diana.qmd",
+    stem = paste0("diana-table-", tolower(Item$label)), labels = "rewrite",
+    vars = list(Item = Item, CAP = sprintf(readLines("_captions/tbl.hazard.diana.md"), Item$label)),
+    root = root
+  )
+}
+for (Item in Diana$layout$figures) {
+  NGR::knitBlock(
+    path = "/_local/fig.hazard.diana.qmd",
+    stem = paste0("diana-figure-", tolower(Item$label)), labels = "rewrite",
+    vars = list(Item = Item, CAP = sprintf(readLines("_captions/fig.hazard.diana.md"), Item$label)),
+    root = root
+  )
+}
+```

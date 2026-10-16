@@ -1,0 +1,4826 @@
+[
+  {
+    "body": 19,
+    "instruction": " REF _Ref174451674 \\r \\h ",
+    "display": "0",
+    "result": true
+  },
+  {
+    "body": 20,
+    "instruction": " REF _Ref174451708 \\r \\h  \\* MERGEFORMAT ",
+    "display": "0",
+    "result": true
+  },
+  {
+    "body": 21,
+    "instruction": " REF _Ref174031794 \\r \\h ",
+    "display": "0",
+    "result": true
+  },
+  {
+    "body": 21,
+    "instruction": " CITATION Can20 \\l 1033 ",
+    "display": " (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 21,
+    "instruction": "CITATION Glo18 \\n  \\t  \\l 1033 ",
+    "display": " (2018)",
+    "result": true
+  },
+  {
+    "body": 22,
+    "instruction": " REF _Ref174451752 \\r \\h  \\* MERGEFORMAT ",
+    "display": "0",
+    "result": true
+  },
+  {
+    "body": 22,
+    "instruction": "CITATION Atk13 \\n  \\t  \\l 1033 ",
+    "display": "(2013)",
+    "result": true
+  },
+  {
+    "body": 22,
+    "instruction": " CITATION Gou18 \\l 1033 ",
+    "display": " (Goulet, et al., 2017)",
+    "result": true
+  },
+  {
+    "body": 24,
+    "instruction": " REF _Ref174451782 \\r \\h  \\* MERGEFORMAT ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 25,
+    "instruction": " REF _Ref174451818 \\r \\h  \\* MERGEFORMAT ",
+    "display": "6.5",
+    "result": true
+  },
+  {
+    "body": 25,
+    "instruction": " CITATION SRK233 \\l 1033 ",
+    "display": " (SRK Consulting (Canada), Inc., 2023)",
+    "result": true
+  },
+  {
+    "body": 25,
+    "instruction": "CITATION SRK242 \\n  \\t  \\l 1033 ",
+    "display": " (2024)",
+    "result": true
+  },
+  {
+    "body": 26,
+    "instruction": " CITATION Nat213 \\l 1033 ",
+    "display": "(Natural Resources of Canada, 2021d)",
+    "result": true
+  },
+  {
+    "body": 26,
+    "instruction": " REF _Ref174965508 \\r \\h  \\* MERGEFORMAT ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 27,
+    "instruction": "CITATION Can14 \\n  \\t  \\l 1033 ",
+    "display": "(2013)",
+    "result": true
+  },
+  {
+    "body": 27,
+    "instruction": "CITATION Int20 \\n  \\t  \\l 1033 ",
+    "display": "(2020)",
+    "result": true
+  },
+  {
+    "body": 27,
+    "instruction": "CITATION Ont11 \\n  \\t  \\l 1033 ",
+    "display": " (2011)",
+    "result": true
+  },
+  {
+    "body": 27,
+    "instruction": " REF _Ref174967815 \\r \\h  \\* MERGEFORMAT ",
+    "display": "0",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715830 \\h ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715830\" ",
+    "display": "1\tIntroduction\t1",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715831 \\h ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715831\" ",
+    "display": "1.1\tProject Overview\t1",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715832 \\h ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715832\" ",
+    "display": "1.2\tScope of Work\t4",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715833 \\h ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715833\" ",
+    "display": "1.3\tOrganization of This Report\t4",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715834 \\h ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715834\" ",
+    "display": "2\tSeismotectonics\t6",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715835 \\h ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715835\" ",
+    "display": "2.1\tSeismotectonic Framework in Southeastern Canada\t6",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715836 \\h ",
+    "display": "10",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715836\" ",
+    "display": "3\tSeismicity\t10",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715837 \\h ",
+    "display": "10",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715837\" ",
+    "display": "3.1\tSeismicity Catalog\t10",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715839 \\h ",
+    "display": "11",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715839\" ",
+    "display": "3.2\tHistorical Seismicity\t11",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715840 \\h ",
+    "display": "11",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715840\" ",
+    "display": "3.2.1\tThe 1935 Mw 6.2 Temiskamingue Earthquake\t11",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715841 \\h ",
+    "display": "12",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715841\" ",
+    "display": "3.2.2\tThe 2000 Magnitude Mw 4.7 Kipawa Earthquake\t12",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715842 \\h ",
+    "display": "13",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715842\" ",
+    "display": "4\tSeismic Source Model\t13",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715843 \\h ",
+    "display": "13",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715843\" ",
+    "display": "4.1\tDefinitions\t13",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715844 \\h ",
+    "display": "13",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715844\" ",
+    "display": "4.2\tThe 6th Generation Seismic Hazard Model of Canada\t13",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715845 \\h ",
+    "display": "15",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715845\" ",
+    "display": "5\tGround Motion Intensity Model\t15",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715846 \\h ",
+    "display": "15",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715846\" ",
+    "display": "5.1\tDefinitions\t15",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715847 \\h ",
+    "display": "15",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715847\" ",
+    "display": "5.1.1\tGround Motion Intensity Models\t15",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715848 \\h ",
+    "display": "15",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715848\" ",
+    "display": "5.1.2\tFault Distance Metrics\t15",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715849 \\h ",
+    "display": "16",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715849\" ",
+    "display": "5.1.3\tProbability Distributions\t16",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715850 \\h ",
+    "display": "17",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715850\" ",
+    "display": "5.2\tGround Motion Models for Southeastern Canada\t17",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715851 \\h ",
+    "display": "18",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715851\" ",
+    "display": "5.3\tEpistemic Uncertainty for the Southeastern Canada Seismic Hazard Model\t18",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715852 \\h ",
+    "display": "19",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715852\" ",
+    "display": "6\tSeismic Hazard\t19",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715853 \\h ",
+    "display": "19",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715853\" ",
+    "display": "6.1\tDefinitions\t19",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715854 \\h ",
+    "display": "19",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715854\" ",
+    "display": "6.1.1\tSeismic Hazard Assessment\t19",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715855 \\h ",
+    "display": "20",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715855\" ",
+    "display": "6.1.2\tAnnual Exceedance Probability\t20",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715856 \\h ",
+    "display": "20",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715856\" ",
+    "display": "6.1.3\tPeak Ground Acceleration and Response Spectra\t20",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715857 \\h ",
+    "display": "21",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715857\" ",
+    "display": "6.2\tSeismic Hazard Results\t21",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715858 \\h ",
+    "display": "21",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715858\" ",
+    "display": "6.2.1\tAnnual Exceedance Probability\t21",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715859 \\h ",
+    "display": "24",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715859\" ",
+    "display": "6.2.2\tUniform Hazard Spectra\t24",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715860 \\h ",
+    "display": "26",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715860\" ",
+    "display": "6.3\tHazard Deaggregation and Controlling Seismic Scenarios\t26",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715861 \\h ",
+    "display": "26",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715861\" ",
+    "display": "6.3.1\tDefinitions\t26",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715862 \\h ",
+    "display": "27",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715862\" ",
+    "display": "6.4\tHazard Deaggregation Plots\t27",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715863 \\h ",
+    "display": "29",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715863\" ",
+    "display": "6.5\tControlling Scenarios\t29",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715864 \\h ",
+    "display": "31",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715864\" ",
+    "display": "7\tSite Response\t31",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715865 \\h ",
+    "display": "31",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715865\" ",
+    "display": "7.1\tSite Class\t31",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715866 \\h ",
+    "display": "32",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715866\" ",
+    "display": "7.2\tCrawford Site-Specific Shear Wave Velocity Profile\t32",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715867 \\h ",
+    "display": "40",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715867\" ",
+    "display": "7.3\tSite Amplification Factors\t40",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715868 \\h ",
+    "display": "40",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715868\" ",
+    "display": "7.4\tUniform Hazard Spectra\t40",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715869 \\h ",
+    "display": "42",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715869\" ",
+    "display": "8\t2020 National Building Code of Canada Seismic Hazard Values\t42",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715870 \\h ",
+    "display": "46",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715870\" ",
+    "display": "9\tDesign Earthquakes\t46",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715871 \\h ",
+    "display": "46",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715871\" ",
+    "display": "9.1\tPeak Ground Acceleration\t46",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715872 \\h ",
+    "display": "47",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715872\" ",
+    "display": "9.2\tDesign Response Spectra\t47",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715873 \\h ",
+    "display": "54",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715873\" ",
+    "display": "10\tSlope Design Parameters\t54",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715874 \\h ",
+    "display": "54",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715874\" ",
+    "display": "10.1\tDefinitions\t54",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715875 \\h ",
+    "display": "54",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715875\" ",
+    "display": "10.1.1\tSeismic Design Criteria for Slopes\t54",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715876 \\h ",
+    "display": "55",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715876\" ",
+    "display": "10.1.2\tFundamental Period of the Embankment\t55",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715877 \\h ",
+    "display": "57",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715877\" ",
+    "display": "10.1.3\tSeismic (Pseudo-Static) Coefficients\t57",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715878 \\h ",
+    "display": "60",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715878\" ",
+    "display": "10.2\tFundamental Periods of the Crawford Embankments\t60",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715879 \\h ",
+    "display": "61",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715879\" ",
+    "display": "10.3\tSeismic Coefficients\t61",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715880 \\h ",
+    "display": "64",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715880\" ",
+    "display": "11\tConclusions\t64",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " PAGEREF _Toc242715881 \\h ",
+    "display": "66",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " HYPERLINK \\l \"_Toc242715881\" ",
+    "display": "References\t66",
+    "result": true
+  },
+  {
+    "body": 34,
+    "instruction": " TOC \\o \"3-3\" \\h \\z \\t \"Heading 1,1,Heading 2,2,Heading 1 - Unnumbered,2,Heading 2 - Unnumbered,3\" ",
+    "display": "1\tIntroduction\t11.1\tProject Overview\t11.2\tScope of Work\t41.3\tOrganization of This Report\t42\tSeismotectonics\t62.1\tSeismotectonic Framework in Southeastern Canada\t63\tSeismicity\t103.1\tSeismicity Catalog\t103.2\tHistorical Seismicity\t113.2.1\tThe 1935 Mw 6.2 Temiskamingue Earthquake\t113.2.2\tThe 2000 Magnitude Mw 4.7 Kipawa Earthquake\t124\tSeismic Source Model\t134.1\tDefinitions\t134.2\tThe 6th Generation Seismic Hazard Model of Canada\t135\tGround Motion Intensity Model\t155.1\tDefinitions\t155.1.1\tGround Motion Intensity Models\t155.1.2\tFault Distance Metrics\t155.1.3\tProbability Distributions\t165.2\tGround Motion Models for Southeastern Canada\t175.3\tEpistemic Uncertainty for the Southeastern Canada Seismic Hazard Model\t186\tSeismic Hazard\t196.1\tDefinitions\t196.1.1\tSeismic Hazard Assessment\t196.1.2\tAnnual Exceedance Probability\t206.1.3\tPeak Ground Acceleration and Response Spectra\t206.2\tSeismic Hazard Results\t216.2.1\tAnnual Exceedance Probability\t216.2.2\tUniform Hazard Spectra\t246.3\tHazard Deaggregation and Controlling Seismic Scenarios\t266.3.1\tDefinitions\t266.4\tHazard Deaggregation Plots\t276.5\tControlling Scenarios\t297\tSite Response\t317.1\tSite Class\t317.2\tCrawford Site-Specific Shear Wave Velocity Profile\t327.3\tSite Amplification Factors\t407.4\tUniform Hazard Spectra\t408\t2020 National Building Code of Canada Seismic Hazard Values\t429\tDesign Earthquakes\t469.1\tPeak Ground Acceleration\t469.2\tDesign Response Spectra\t4710\tSlope Design Parameters\t5410.1\tDefinitions\t5410.1.1\tSeismic Design Criteria for Slopes\t5410.1.2\tFundamental Period of the Embankment\t5510.1.3\tSeismic (Pseudo-Static) Coefficients\t5710.2\tFundamental Periods of the Crawford Embankments\t6010.3\tSeismic Coefficients\t6111\tConclusions\t64References\t66",
+    "result": true
+  },
+  {
+    "body": 37,
+    "instruction": " PAGEREF _Toc242715882 \\h ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 37,
+    "instruction": " HYPERLINK \\l \"_Toc242715882\" ",
+    "display": "Table 1-1: Crawford Project Site Coordinates\t1",
+    "result": true
+  },
+  {
+    "body": 38,
+    "instruction": " PAGEREF _Toc242715883 \\h ",
+    "display": "18",
+    "result": true
+  },
+  {
+    "body": 38,
+    "instruction": " HYPERLINK \\l \"_Toc242715883\" ",
+    "display": "Table 5-1: Ground Motion Models for the CanadaSHM6\t18",
+    "result": true
+  },
+  {
+    "body": 39,
+    "instruction": " PAGEREF _Toc242715884 \\h ",
+    "display": "31",
+    "result": true
+  },
+  {
+    "body": 39,
+    "instruction": " HYPERLINK \\l \"_Toc242715884\" ",
+    "display": "Table 7-1: Site Classification according to the National Building Code of Canada (2020)\t31",
+    "result": true
+  },
+  {
+    "body": 40,
+    "instruction": " PAGEREF _Toc242715885 \\h ",
+    "display": "31",
+    "result": true
+  },
+  {
+    "body": 40,
+    "instruction": " HYPERLINK \\l \"_Toc242715885\" ",
+    "display": "Table 7-2: Site Classification according to the American Society of Civil Engineers ASCE 7-22 (2022)\t31",
+    "result": true
+  },
+  {
+    "body": 41,
+    "instruction": " PAGEREF _Toc242715886 \\h ",
+    "display": "40",
+    "result": true
+  },
+  {
+    "body": 41,
+    "instruction": " HYPERLINK \\l \"_Toc242715886\" ",
+    "display": "Table 7-3: Shear Wave Velocity Profile at Crawford Facilities\t40",
+    "result": true
+  },
+  {
+    "body": 42,
+    "instruction": " PAGEREF _Toc242715887 \\h ",
+    "display": "46",
+    "result": true
+  },
+  {
+    "body": 42,
+    "instruction": " HYPERLINK \\l \"_Toc242715887\" ",
+    "display": "Table 9-1: PGA of Design Ground Motions for Various Return Periods and Site Conditions – Mean Values\t46",
+    "result": true
+  },
+  {
+    "body": 43,
+    "instruction": " PAGEREF _Toc242715888 \\h ",
+    "display": "47",
+    "result": true
+  },
+  {
+    "body": 43,
+    "instruction": " HYPERLINK \\l \"_Toc242715888\" ",
+    "display": "Table 9-2: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 84th Percentile Values\t47",
+    "result": true
+  },
+  {
+    "body": 44,
+    "instruction": " PAGEREF _Toc242715889 \\h ",
+    "display": "52",
+    "result": true
+  },
+  {
+    "body": 44,
+    "instruction": " HYPERLINK \\l \"_Toc242715889\" ",
+    "display": "Table 9-3: Spectral Ordinates of the Design Spectra for a 10,000-year Return Period and Various Site Conditions – Mean Values\t52",
+    "result": true
+  },
+  {
+    "body": 45,
+    "instruction": " PAGEREF _Toc242715890 \\h ",
+    "display": "53",
+    "result": true
+  },
+  {
+    "body": 45,
+    "instruction": " HYPERLINK \\l \"_Toc242715890\" ",
+    "display": "Table 9-4:Spectral Ordinates of the Design Spectra for a 2,475-year Return Period and Various Site Conditions – Mean Values\t53",
+    "result": true
+  },
+  {
+    "body": 46,
+    "instruction": " PAGEREF _Toc242715891 \\h ",
+    "display": "60",
+    "result": true
+  },
+  {
+    "body": 46,
+    "instruction": " HYPERLINK \\l \"_Toc242715891\" ",
+    "display": "Table 10-1: Fundamental periods and mean dynamic properties of the evaluated slope scenarios\t60",
+    "result": true
+  },
+  {
+    "body": 47,
+    "instruction": " PAGEREF _Toc242715892 \\h ",
+    "display": "61",
+    "result": true
+  },
+  {
+    "body": 47,
+    "instruction": " HYPERLINK \\l \"_Toc242715892\" ",
+    "display": "Table 10-2: Seismic Coefficients [% of PGA] of the Ensemble Set for Design Earthquakes with AEPs of 1:2,475 and 1:10,000 Years\t61",
+    "result": true
+  },
+  {
+    "body": 48,
+    "instruction": " PAGEREF _Toc242715893 \\h ",
+    "display": "72",
+    "result": true
+  },
+  {
+    "body": 48,
+    "instruction": " HYPERLINK \\l \"_Toc242715893\" ",
+    "display": "Table A-1: Crawford Regional Catalog of Events 1916-08/30/2026 (Mw ≥ 3)\t72",
+    "result": true
+  },
+  {
+    "body": 49,
+    "instruction": " PAGEREF _Toc242715894 \\h ",
+    "display": "76",
+    "result": true
+  },
+  {
+    "body": 49,
+    "instruction": " HYPERLINK \\l \"_Toc242715894\" ",
+    "display": "Table B-1: CanadaSHM6 Southeast HY Model Seismic Sources\t76",
+    "result": true
+  },
+  {
+    "body": 50,
+    "instruction": " PAGEREF _Toc242715895 \\h ",
+    "display": "77",
+    "result": true
+  },
+  {
+    "body": 50,
+    "instruction": " HYPERLINK \\l \"_Toc242715895\" ",
+    "display": "Table B-2: CanadaSHM6 Southeast H2 Model Seismic Sources\t77",
+    "result": true
+  },
+  {
+    "body": 51,
+    "instruction": " PAGEREF _Toc242715896 \\h ",
+    "display": "78",
+    "result": true
+  },
+  {
+    "body": 51,
+    "instruction": " HYPERLINK \\l \"_Toc242715896\" ",
+    "display": "Table B-3: CanadaSHM6 Southeast R2 Model Seismic Sources\t78",
+    "result": true
+  },
+  {
+    "body": 52,
+    "instruction": " PAGEREF _Toc242715897 \\h ",
+    "display": "110",
+    "result": true
+  },
+  {
+    "body": 52,
+    "instruction": " HYPERLINK \\l \"_Toc242715897\" ",
+    "display": "Table D1-1:PGA of Design Ground Motions for Various Return Periods and Site Conditions – Mean Values\t110",
+    "result": true
+  },
+  {
+    "body": 53,
+    "instruction": " PAGEREF _Toc242715898 \\h ",
+    "display": "110",
+    "result": true
+  },
+  {
+    "body": 53,
+    "instruction": " HYPERLINK \\l \"_Toc242715898\" ",
+    "display": "Table D1-2: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 50th Percentile Values\t110",
+    "result": true
+  },
+  {
+    "body": 54,
+    "instruction": " PAGEREF _Toc242715899 \\h ",
+    "display": "110",
+    "result": true
+  },
+  {
+    "body": 54,
+    "instruction": " HYPERLINK \\l \"_Toc242715899\" ",
+    "display": "Table D1-3: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 84th Percentile Values\t110",
+    "result": true
+  },
+  {
+    "body": 55,
+    "instruction": " PAGEREF _Toc242715900 \\h ",
+    "display": "110",
+    "result": true
+  },
+  {
+    "body": 55,
+    "instruction": " HYPERLINK \\l \"_Toc242715900\" ",
+    "display": "Table D1-4: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 90th Percentile Values\t110",
+    "result": true
+  },
+  {
+    "body": 56,
+    "instruction": " PAGEREF _Toc242715901 \\h ",
+    "display": "111",
+    "result": true
+  },
+  {
+    "body": 56,
+    "instruction": " HYPERLINK \\l \"_Toc242715901\" ",
+    "display": "Table D1-5: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 95th Percentile Values\t111",
+    "result": true
+  },
+  {
+    "body": 57,
+    "instruction": " PAGEREF _Toc242715902 \\h ",
+    "display": "117",
+    "result": true
+  },
+  {
+    "body": 57,
+    "instruction": " HYPERLINK \\l \"_Toc242715902\" ",
+    "display": "Table E-1: Shear Stiffness Parameters for Gravels, Sands, and Fines\t117",
+    "result": true
+  },
+  {
+    "body": 58,
+    "instruction": " PAGEREF _Toc242715903 \\h ",
+    "display": "122",
+    "result": true
+  },
+  {
+    "body": 58,
+    "instruction": " HYPERLINK \\l \"_Toc242715903\" ",
+    "display": "Table E2-1: Mean values of  [cm/s²] for scenario S135 and return periods  yr.\t122",
+    "result": true
+  },
+  {
+    "body": 59,
+    "instruction": " PAGEREF _Toc242715904 \\h ",
+    "display": "123",
+    "result": true
+  },
+  {
+    "body": 59,
+    "instruction": " HYPERLINK \\l \"_Toc242715904\" ",
+    "display": "Table E2-2: Mean values of  [cm/s²] for scenario S50 and return periods  yr.\t123",
+    "result": true
+  },
+  {
+    "body": 60,
+    "instruction": " PAGEREF _Toc242715905 \\h ",
+    "display": "123",
+    "result": true
+  },
+  {
+    "body": 60,
+    "instruction": " HYPERLINK \\l \"_Toc242715905\" ",
+    "display": "Table E2-3: Mean values of  [cm/s²] for scenario S32 and return periods  yr.\t123",
+    "result": true
+  },
+  {
+    "body": 61,
+    "instruction": " PAGEREF _Toc242715906 \\h ",
+    "display": "124",
+    "result": true
+  },
+  {
+    "body": 61,
+    "instruction": " HYPERLINK \\l \"_Toc242715906\" ",
+    "display": "Table E2-4: Mean values of  [cm/s²] for scenario S27 and return periods  yr.\t124",
+    "result": true
+  },
+  {
+    "body": 62,
+    "instruction": " PAGEREF _Toc242715907 \\h ",
+    "display": "124",
+    "result": true
+  },
+  {
+    "body": 62,
+    "instruction": " HYPERLINK \\l \"_Toc242715907\" ",
+    "display": "Table E2-5: Mean values of  [cm/s²] for scenario S35 and return periods  yr.\t124",
+    "result": true
+  },
+  {
+    "body": 63,
+    "instruction": " PAGEREF _Toc242715908 \\h ",
+    "display": "125",
+    "result": true
+  },
+  {
+    "body": 63,
+    "instruction": " HYPERLINK \\l \"_Toc242715908\" ",
+    "display": "Table E3-1: Mean values of  [% of PGA] for scenario S135 and return periods  yr.\t125",
+    "result": true
+  },
+  {
+    "body": 64,
+    "instruction": " PAGEREF _Toc242715909 \\h ",
+    "display": "125",
+    "result": true
+  },
+  {
+    "body": 64,
+    "instruction": " HYPERLINK \\l \"_Toc242715909\" ",
+    "display": "Table E3-2: Mean values of  [% of PGA] for scenario S50 and return periods  yr.\t125",
+    "result": true
+  },
+  {
+    "body": 65,
+    "instruction": " PAGEREF _Toc242715910 \\h ",
+    "display": "126",
+    "result": true
+  },
+  {
+    "body": 65,
+    "instruction": " HYPERLINK \\l \"_Toc242715910\" ",
+    "display": "Table E3-3: Mean values of  [% of PGA] for scenario S32 and return periods  yr.\t126",
+    "result": true
+  },
+  {
+    "body": 66,
+    "instruction": " PAGEREF _Toc242715911 \\h ",
+    "display": "126",
+    "result": true
+  },
+  {
+    "body": 66,
+    "instruction": " HYPERLINK \\l \"_Toc242715911\" ",
+    "display": "Table E3-4: Mean values of  [% of PGA] for scenario S27 and return periods  yr.\t126",
+    "result": true
+  },
+  {
+    "body": 67,
+    "instruction": " PAGEREF _Toc242715912 \\h ",
+    "display": "127",
+    "result": true
+  },
+  {
+    "body": 67,
+    "instruction": " HYPERLINK \\l \"_Toc242715912\" ",
+    "display": "Table E3-5: Mean values of  [% of PGA] for scenario S35 and return periods  yr.\t127",
+    "result": true
+  },
+  {
+    "body": 37,
+    "instruction": " TOC \\h \\z \\c \"Table\" ",
+    "display": "Table 1-1: Crawford Project Site Coordinates\t1Table 5-1: Ground Motion Models for the CanadaSHM6\t18Table 7-1: Site Classification according to the National Building Code of Canada (2020)\t31Table 7-2: Site Classification according to the American Society of Civil Engineers ASCE 7-22 (2022)\t31Table 7-3: Shear Wave Velocity Profile at Crawford Facilities\t40Table 9-1: PGA of Design Ground Motions for Various Return Periods and Site Conditions – Mean Values\t46Table 9-2: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 84th Percentile Values\t47Table 9-3: Spectral Ordinates of the Design Spectra for a 10,000-year Return Period and Various Site Conditions – Mean Values\t52Table 9-4:Spectral Ordinates of the Design Spectra for a 2,475-year Return Period and Various Site Conditions – Mean Values\t53Table 10-1: Fundamental periods and mean dynamic properties of the evaluated slope scenarios\t60Table 10-2: Seismic Coefficients [% of PGA] of the Ensemble Set for Design Earthquakes with AEPs of 1:2,475 and 1:10,000 Years\t61Table A-1: Crawford Regional Catalog of Events 1916-08/30/2026 (Mw ≥ 3)\t72Table B-1: CanadaSHM6 Southeast HY Model Seismic Sources\t76Table B-2: CanadaSHM6 Southeast H2 Model Seismic Sources\t77Table B-3: CanadaSHM6 Southeast R2 Model Seismic Sources\t78Table D1-1:PGA of Design Ground Motions for Various Return Periods and Site Conditions – Mean Values\t110Table D1-2: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 50th Percentile Values\t110Table D1-3: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 84th Percentile Values\t110Table D1-4: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 90th Percentile Values\t110Table D1-5: PGA of Design Ground Motions for Various Return Periods and Site Conditions – 95th Percentile Values\t111Table E-1: Shear Stiffness Parameters for Gravels, Sands, and Fines\t117Table E2-1: Mean values of  [cm/s²] for scenario S135 and return periods  yr.\t122Table E2-2: Mean values of  [cm/s²] for scenario S50 and return periods  yr.\t123Table E2-3: Mean values of  [cm/s²] for scenario S32 and return periods  yr.\t123Table E2-4: Mean values of  [cm/s²] for scenario S27 and return periods  yr.\t124Table E2-5: Mean values of  [cm/s²] for scenario S35 and return periods  yr.\t124Table E3-1: Mean values of  [% of PGA] for scenario S135 and return periods  yr.\t125Table E3-2: Mean values of  [% of PGA] for scenario S50 and return periods  yr.\t125Table E3-3: Mean values of  [% of PGA] for scenario S32 and return periods  yr.\t126Table E3-4: Mean values of  [% of PGA] for scenario S27 and return periods  yr.\t126Table E3-5: Mean values of  [% of PGA] for scenario S35 and return periods  yr.\t127\t",
+    "result": true
+  },
+  {
+    "body": 92,
+    "instruction": " PAGEREF _Toc242715913 \\h ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 92,
+    "instruction": " HYPERLINK \\l \"_Toc242715913\" ",
+    "display": "Figure 1-1: Site Location Map\t2",
+    "result": true
+  },
+  {
+    "body": 93,
+    "instruction": " PAGEREF _Toc242715914 \\h ",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 93,
+    "instruction": " HYPERLINK \\l \"_Toc242715914\" ",
+    "display": "Figure 1-2: Layout of Project Facilities\t3",
+    "result": true
+  },
+  {
+    "body": 94,
+    "instruction": " PAGEREF _Toc242715915 \\h ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 94,
+    "instruction": " HYPERLINK \\l \"_Toc242715915\" ",
+    "display": "Figure 2-1: Crustal Regions in Eastern Canada\t7",
+    "result": true
+  },
+  {
+    "body": 95,
+    "instruction": " PAGEREF _Toc242715916 \\h ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 95,
+    "instruction": " HYPERLINK \\l \"_Toc242715916\" ",
+    "display": "Figure 2-2: Seismicity of Northern Ontario Seismic Zone 1970-1999\t8",
+    "result": true
+  },
+  {
+    "body": 96,
+    "instruction": " PAGEREF _Toc242715917 \\h ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 96,
+    "instruction": " HYPERLINK \\l \"_Toc242715917\" ",
+    "display": "Figure 2-3: Seismicity of Northern Ontario from 1980 to 2006\t9",
+    "result": true
+  },
+  {
+    "body": 97,
+    "instruction": " PAGEREF _Toc242715918 \\h ",
+    "display": "11",
+    "result": true
+  },
+  {
+    "body": 97,
+    "instruction": " HYPERLINK \\l \"_Toc242715918\" ",
+    "display": "Figure 3-1: Crawford Regional Catalog 1916-08/30/2026\t11",
+    "result": true
+  },
+  {
+    "body": 98,
+    "instruction": " PAGEREF _Toc242715919 \\h ",
+    "display": "12",
+    "result": true
+  },
+  {
+    "body": 98,
+    "instruction": " HYPERLINK \\l \"_Toc242715919\" ",
+    "display": "Figure 3-2: Isoseismal Map of the 1935 Mw 6.2 Temiskamingue Earthquake\t12",
+    "result": true
+  },
+  {
+    "body": 99,
+    "instruction": " PAGEREF _Toc242715920 \\h ",
+    "display": "16",
+    "result": true
+  },
+  {
+    "body": 99,
+    "instruction": " HYPERLINK \\l \"_Toc242715920\" ",
+    "display": "Figure 5-1: Source-to-Site Fault Distances\t16",
+    "result": true
+  },
+  {
+    "body": 100,
+    "instruction": " PAGEREF _Toc242715921 \\h ",
+    "display": "18",
+    "result": true
+  },
+  {
+    "body": 100,
+    "instruction": " HYPERLINK \\l \"_Toc242715921\" ",
+    "display": "Figure 5-2: Logic Tree in the CanadaSHM6 for Southeastern Canada\t18",
+    "result": true
+  },
+  {
+    "body": 101,
+    "instruction": " PAGEREF _Toc242715922 \\h ",
+    "display": "21",
+    "result": true
+  },
+  {
+    "body": 101,
+    "instruction": " HYPERLINK \\l \"_Toc242715922\" ",
+    "display": "Figure 6-1: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – Mean Values\t21",
+    "result": true
+  },
+  {
+    "body": 102,
+    "instruction": " PAGEREF _Toc242715923 \\h ",
+    "display": "22",
+    "result": true
+  },
+  {
+    "body": 102,
+    "instruction": " HYPERLINK \\l \"_Toc242715923\" ",
+    "display": "Figure 6-2: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 84th Percentile Values\t22",
+    "result": true
+  },
+  {
+    "body": 103,
+    "instruction": " PAGEREF _Toc242715924 \\h ",
+    "display": "23",
+    "result": true
+  },
+  {
+    "body": 103,
+    "instruction": " HYPERLINK \\l \"_Toc242715924\" ",
+    "display": "Figure 6-3: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – Mean Values\t23",
+    "result": true
+  },
+  {
+    "body": 104,
+    "instruction": " PAGEREF _Toc242715925 \\h ",
+    "display": "23",
+    "result": true
+  },
+  {
+    "body": 104,
+    "instruction": " HYPERLINK \\l \"_Toc242715925\" ",
+    "display": "Figure 6-4: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for Various Structural Periods – 84th Percentile Values\t23",
+    "result": true
+  },
+  {
+    "body": 105,
+    "instruction": " PAGEREF _Toc242715926 \\h ",
+    "display": "24",
+    "result": true
+  },
+  {
+    "body": 105,
+    "instruction": " HYPERLINK \\l \"_Toc242715926\" ",
+    "display": "Figure 6-5: Uniform Hazard Spectra (UHS) in Hard Rock (1,500 m/s) – Mean Values\t24",
+    "result": true
+  },
+  {
+    "body": 106,
+    "instruction": " PAGEREF _Toc242715927 \\h ",
+    "display": "25",
+    "result": true
+  },
+  {
+    "body": 106,
+    "instruction": " HYPERLINK \\l \"_Toc242715927\" ",
+    "display": "Figure 6-6: Uniform Hazard Spectra (UHS) in Hard Rock (1,500 m/s) – 84th Percentile Values\t25",
+    "result": true
+  },
+  {
+    "body": 107,
+    "instruction": " PAGEREF _Toc242715928 \\h ",
+    "display": "25",
+    "result": true
+  },
+  {
+    "body": 107,
+    "instruction": " HYPERLINK \\l \"_Toc242715928\" ",
+    "display": "Figure 6-7: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – Mean Values\t25",
+    "result": true
+  },
+  {
+    "body": 108,
+    "instruction": " PAGEREF _Toc242715929 \\h ",
+    "display": "26",
+    "result": true
+  },
+  {
+    "body": 108,
+    "instruction": " HYPERLINK \\l \"_Toc242715929\" ",
+    "display": "Figure 6-8: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 84th Percentile Values\t26",
+    "result": true
+  },
+  {
+    "body": 109,
+    "instruction": " PAGEREF _Toc242715930 \\h ",
+    "display": "27",
+    "result": true
+  },
+  {
+    "body": 109,
+    "instruction": " HYPERLINK \\l \"_Toc242715930\" ",
+    "display": "Figure 6-9: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:475 AEP\t27",
+    "result": true
+  },
+  {
+    "body": 110,
+    "instruction": " PAGEREF _Toc242715931 \\h ",
+    "display": "28",
+    "result": true
+  },
+  {
+    "body": 110,
+    "instruction": " HYPERLINK \\l \"_Toc242715931\" ",
+    "display": "Figure 6-10: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:975 AEP\t28",
+    "result": true
+  },
+  {
+    "body": 111,
+    "instruction": " PAGEREF _Toc242715932 \\h ",
+    "display": "28",
+    "result": true
+  },
+  {
+    "body": 111,
+    "instruction": " HYPERLINK \\l \"_Toc242715932\" ",
+    "display": "Figure 6-11: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:2,475 AEP\t28",
+    "result": true
+  },
+  {
+    "body": 112,
+    "instruction": " PAGEREF _Toc242715933 \\h ",
+    "display": "29",
+    "result": true
+  },
+  {
+    "body": 112,
+    "instruction": " HYPERLINK \\l \"_Toc242715933\" ",
+    "display": "Figure 6-12: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:5,000 AEP\t29",
+    "result": true
+  },
+  {
+    "body": 113,
+    "instruction": " PAGEREF _Toc242715934 \\h ",
+    "display": "29",
+    "result": true
+  },
+  {
+    "body": 113,
+    "instruction": " HYPERLINK \\l \"_Toc242715934\" ",
+    "display": "Figure 6-13: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:10,000 AEP\t29",
+    "result": true
+  },
+  {
+    "body": 114,
+    "instruction": " PAGEREF _Toc242715935 \\h ",
+    "display": "33",
+    "result": true
+  },
+  {
+    "body": 114,
+    "instruction": " HYPERLINK \\l \"_Toc242715935\" ",
+    "display": "Figure 7-1: Location of Seismic CPTs used to Estimate Shear Wave Velocity Profiles\t33",
+    "result": true
+  },
+  {
+    "body": 115,
+    "instruction": " PAGEREF _Toc242715936 \\h ",
+    "display": "35",
+    "result": true
+  },
+  {
+    "body": 115,
+    "instruction": " HYPERLINK \\l \"_Toc242715936\" ",
+    "display": "Figure 7-2: Shear Wave Velocity Profile at the Crawford Rock, Sand & Till, and Clay Impoundment measured by SCPTu and average  determined with Eq. 7-1\t35",
+    "result": true
+  },
+  {
+    "body": 116,
+    "instruction": " PAGEREF _Toc242715937 \\h ",
+    "display": "36",
+    "result": true
+  },
+  {
+    "body": 116,
+    "instruction": " HYPERLINK \\l \"_Toc242715937\" ",
+    "display": "Figure 7-3: Shear Wave Velocity Profile at the Crawford Open Pit  measured by SCPTu and average  determined with Eq. 7-1\t36",
+    "result": true
+  },
+  {
+    "body": 117,
+    "instruction": " PAGEREF _Toc242715938 \\h ",
+    "display": "37",
+    "result": true
+  },
+  {
+    "body": 117,
+    "instruction": " HYPERLINK \\l \"_Toc242715938\" ",
+    "display": "Figure 7-4: Shear Wave Velocity Profile at the Crawford Stockpile East measured by SCPTu and average  determined with Eq. 7-1\t37",
+    "result": true
+  },
+  {
+    "body": 118,
+    "instruction": " PAGEREF _Toc242715939 \\h ",
+    "display": "38",
+    "result": true
+  },
+  {
+    "body": 118,
+    "instruction": " HYPERLINK \\l \"_Toc242715939\" ",
+    "display": "Figure 7-5: Shear Wave Velocity Profile at the Crawford Stockpile West measured by SCPTu and average  determined with Eq. 7-1\t38",
+    "result": true
+  },
+  {
+    "body": 119,
+    "instruction": " PAGEREF _Toc242715940 \\h ",
+    "display": "39",
+    "result": true
+  },
+  {
+    "body": 119,
+    "instruction": " HYPERLINK \\l \"_Toc242715940\" ",
+    "display": "Figure 7-6: Shear Wave Velocity Profile at the Tailings Management Facility (TMF) measured by SCPTu and average  determined with Eq. 7-1\t39",
+    "result": true
+  },
+  {
+    "body": 120,
+    "instruction": " PAGEREF _Toc242715941 \\h ",
+    "display": "41",
+    "result": true
+  },
+  {
+    "body": 120,
+    "instruction": " HYPERLINK \\l \"_Toc242715941\" ",
+    "display": "Figure 7-7: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – Mean Values\t41",
+    "result": true
+  },
+  {
+    "body": 121,
+    "instruction": " PAGEREF _Toc242715942 \\h ",
+    "display": "41",
+    "result": true
+  },
+  {
+    "body": 121,
+    "instruction": " HYPERLINK \\l \"_Toc242715942\" ",
+    "display": "Figure 7-8: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 84th Percentile Values\t41",
+    "result": true
+  },
+  {
+    "body": 122,
+    "instruction": " PAGEREF _Toc242715943 \\h ",
+    "display": "43",
+    "result": true
+  },
+  {
+    "body": 122,
+    "instruction": " HYPERLINK \\l \"_Toc242715943\" ",
+    "display": "Figure 8-1: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s/) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values\t43",
+    "result": true
+  },
+  {
+    "body": 123,
+    "instruction": " PAGEREF _Toc242715944 \\h ",
+    "display": "44",
+    "result": true
+  },
+  {
+    "body": 123,
+    "instruction": " HYPERLINK \\l \"_Toc242715944\" ",
+    "display": "Figure 8-2: Uniform Hazard Spectra (UHS) in Soft Rock (760 ms/) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values\t44",
+    "result": true
+  },
+  {
+    "body": 124,
+    "instruction": " PAGEREF _Toc242715945 \\h ",
+    "display": "45",
+    "result": true
+  },
+  {
+    "body": 124,
+    "instruction": " HYPERLINK \\l \"_Toc242715945\" ",
+    "display": "Figure 8-3: Uniform Hazard Spectra (UHS) in Stiff Soil ( 220 m/s) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values\t45",
+    "result": true
+  },
+  {
+    "body": 125,
+    "instruction": " PAGEREF _Toc242715946 \\h ",
+    "display": "48",
+    "result": true
+  },
+  {
+    "body": 125,
+    "instruction": " HYPERLINK \\l \"_Toc242715946\" ",
+    "display": "Figure 9-1: Design Response Spectra for a Return Period of 10,000 years - Mean Values\t48",
+    "result": true
+  },
+  {
+    "body": 126,
+    "instruction": " PAGEREF _Toc242715947 \\h ",
+    "display": "49",
+    "result": true
+  },
+  {
+    "body": 126,
+    "instruction": " HYPERLINK \\l \"_Toc242715947\" ",
+    "display": "Figure 9-2: Design Response Spectra for a Return Period of 10,000 years – 84th Percentile Values\t49",
+    "result": true
+  },
+  {
+    "body": 127,
+    "instruction": " PAGEREF _Toc242715948 \\h ",
+    "display": "50",
+    "result": true
+  },
+  {
+    "body": 127,
+    "instruction": " HYPERLINK \\l \"_Toc242715948\" ",
+    "display": "Figure 9-3: Design Response Spectra for a Return Period of 2,475 years - Mean Values\t50",
+    "result": true
+  },
+  {
+    "body": 128,
+    "instruction": " PAGEREF _Toc242715949 \\h ",
+    "display": "51",
+    "result": true
+  },
+  {
+    "body": 128,
+    "instruction": " HYPERLINK \\l \"_Toc242715949\" ",
+    "display": "Figure 9-4: Design Response Spectra for a Return Period of 2,475 years – 84th Percentile Values\t51",
+    "result": true
+  },
+  {
+    "body": 129,
+    "instruction": " PAGEREF _Toc242715950 \\h ",
+    "display": "62",
+    "result": true
+  },
+  {
+    "body": 129,
+    "instruction": " HYPERLINK \\l \"_Toc242715950\" ",
+    "display": "Figure 10-1: Mean Values of  [% of PGA] for Return Period  yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height,  [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.\t62",
+    "result": true
+  },
+  {
+    "body": 130,
+    "instruction": " PAGEREF _Toc242715951 \\h ",
+    "display": "63",
+    "result": true
+  },
+  {
+    "body": 130,
+    "instruction": " HYPERLINK \\l \"_Toc242715951\" ",
+    "display": "Figure 10-2: Mean Values of  [% of PGA] for Return Period  yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height,  [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.\t63",
+    "result": true
+  },
+  {
+    "body": 131,
+    "instruction": " PAGEREF _Toc242715952 \\h ",
+    "display": "64",
+    "result": true
+  },
+  {
+    "body": 131,
+    "instruction": " HYPERLINK \\l \"_Toc242715952\" ",
+    "display": "Figure 10-3: Mean Values of  [% of PGA] for Return Period  yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height,  [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.\t64",
+    "result": true
+  },
+  {
+    "body": 132,
+    "instruction": " PAGEREF _Toc242715953 \\h ",
+    "display": "81",
+    "result": true
+  },
+  {
+    "body": 132,
+    "instruction": " HYPERLINK \\l \"_Toc242715953\" ",
+    "display": "Figure C1-1: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – Mean Values\t81",
+    "result": true
+  },
+  {
+    "body": 133,
+    "instruction": " PAGEREF _Toc242715954 \\h ",
+    "display": "81",
+    "result": true
+  },
+  {
+    "body": 133,
+    "instruction": " HYPERLINK \\l \"_Toc242715954\" ",
+    "display": "Figure C1-2: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 50th Percentile Values\t81",
+    "result": true
+  },
+  {
+    "body": 134,
+    "instruction": " PAGEREF _Toc242715955 \\h ",
+    "display": "82",
+    "result": true
+  },
+  {
+    "body": 134,
+    "instruction": " HYPERLINK \\l \"_Toc242715955\" ",
+    "display": "Figure C1-3: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 84th Percentile Values\t82",
+    "result": true
+  },
+  {
+    "body": 135,
+    "instruction": " PAGEREF _Toc242715956 \\h ",
+    "display": "82",
+    "result": true
+  },
+  {
+    "body": 135,
+    "instruction": " HYPERLINK \\l \"_Toc242715956\" ",
+    "display": "Figure C1-4: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 90th Percentile Values\t82",
+    "result": true
+  },
+  {
+    "body": 136,
+    "instruction": " PAGEREF _Toc242715957 \\h ",
+    "display": "83",
+    "result": true
+  },
+  {
+    "body": 136,
+    "instruction": " HYPERLINK \\l \"_Toc242715957\" ",
+    "display": "Figure C1-5: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 90th Percentile Values\t83",
+    "result": true
+  },
+  {
+    "body": 137,
+    "instruction": " PAGEREF _Toc242715958 \\h ",
+    "display": "83",
+    "result": true
+  },
+  {
+    "body": 137,
+    "instruction": " HYPERLINK \\l \"_Toc242715958\" ",
+    "display": "Figure C1-6: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – Mean Values\t83",
+    "result": true
+  },
+  {
+    "body": 138,
+    "instruction": " PAGEREF _Toc242715959 \\h ",
+    "display": "84",
+    "result": true
+  },
+  {
+    "body": 138,
+    "instruction": " HYPERLINK \\l \"_Toc242715959\" ",
+    "display": "Figure C1-7: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – 50th Percentile Values\t84",
+    "result": true
+  },
+  {
+    "body": 139,
+    "instruction": " PAGEREF _Toc242715960 \\h ",
+    "display": "84",
+    "result": true
+  },
+  {
+    "body": 139,
+    "instruction": " HYPERLINK \\l \"_Toc242715960\" ",
+    "display": "Figure C1-8: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – 84th Percentile Values\t84",
+    "result": true
+  },
+  {
+    "body": 140,
+    "instruction": " PAGEREF _Toc242715961 \\h ",
+    "display": "85",
+    "result": true
+  },
+  {
+    "body": 140,
+    "instruction": " HYPERLINK \\l \"_Toc242715961\" ",
+    "display": "Figure C1-9: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – 90th Percentile Values\t85",
+    "result": true
+  },
+  {
+    "body": 141,
+    "instruction": " PAGEREF _Toc242715962 \\h ",
+    "display": "85",
+    "result": true
+  },
+  {
+    "body": 141,
+    "instruction": " HYPERLINK \\l \"_Toc242715962\" ",
+    "display": "Figure C1-10: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – 95th Percentile Values\t85",
+    "result": true
+  },
+  {
+    "body": 142,
+    "instruction": " PAGEREF _Toc242715963 \\h ",
+    "display": "86",
+    "result": true
+  },
+  {
+    "body": 142,
+    "instruction": " HYPERLINK \\l \"_Toc242715963\" ",
+    "display": "Figure C1-11: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – Mean Values\t86",
+    "result": true
+  },
+  {
+    "body": 143,
+    "instruction": " PAGEREF _Toc242715964 \\h ",
+    "display": "86",
+    "result": true
+  },
+  {
+    "body": 143,
+    "instruction": " HYPERLINK \\l \"_Toc242715964\" ",
+    "display": "Figure C1-12: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – 50th Percentile Values\t86",
+    "result": true
+  },
+  {
+    "body": 144,
+    "instruction": " PAGEREF _Toc242715965 \\h ",
+    "display": "87",
+    "result": true
+  },
+  {
+    "body": 144,
+    "instruction": " HYPERLINK \\l \"_Toc242715965\" ",
+    "display": "Figure C1-13: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – 84th Percentile Values\t87",
+    "result": true
+  },
+  {
+    "body": 145,
+    "instruction": " PAGEREF _Toc242715966 \\h ",
+    "display": "87",
+    "result": true
+  },
+  {
+    "body": 145,
+    "instruction": " HYPERLINK \\l \"_Toc242715966\" ",
+    "display": "Figure C1-14: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – 90th Percentile Values\t87",
+    "result": true
+  },
+  {
+    "body": 146,
+    "instruction": " PAGEREF _Toc242715967 \\h ",
+    "display": "88",
+    "result": true
+  },
+  {
+    "body": 146,
+    "instruction": " HYPERLINK \\l \"_Toc242715967\" ",
+    "display": "Figure C1-15: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – 95th Percentile Values\t88",
+    "result": true
+  },
+  {
+    "body": 147,
+    "instruction": " PAGEREF _Toc242715968 \\h ",
+    "display": "88",
+    "result": true
+  },
+  {
+    "body": 147,
+    "instruction": " HYPERLINK \\l \"_Toc242715968\" ",
+    "display": "Figure C1-16: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – Mean Values\t88",
+    "result": true
+  },
+  {
+    "body": 148,
+    "instruction": " PAGEREF _Toc242715969 \\h ",
+    "display": "89",
+    "result": true
+  },
+  {
+    "body": 148,
+    "instruction": " HYPERLINK \\l \"_Toc242715969\" ",
+    "display": "Figure C1-17: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – 50th Percentile Values\t89",
+    "result": true
+  },
+  {
+    "body": 149,
+    "instruction": " PAGEREF _Toc242715970 \\h ",
+    "display": "89",
+    "result": true
+  },
+  {
+    "body": 149,
+    "instruction": " HYPERLINK \\l \"_Toc242715970\" ",
+    "display": "Figure C1-18: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – 84th Percentile Values\t89",
+    "result": true
+  },
+  {
+    "body": 150,
+    "instruction": " PAGEREF _Toc242715971 \\h ",
+    "display": "90",
+    "result": true
+  },
+  {
+    "body": 150,
+    "instruction": " HYPERLINK \\l \"_Toc242715971\" ",
+    "display": "Figure C1-19: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – 90th Percentile Values\t90",
+    "result": true
+  },
+  {
+    "body": 151,
+    "instruction": " PAGEREF _Toc242715972 \\h ",
+    "display": "90",
+    "result": true
+  },
+  {
+    "body": 151,
+    "instruction": " HYPERLINK \\l \"_Toc242715972\" ",
+    "display": "Figure C1-20: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – 95th Percentile Values\t90",
+    "result": true
+  },
+  {
+    "body": 152,
+    "instruction": " PAGEREF _Toc242715973 \\h ",
+    "display": "91",
+    "result": true
+  },
+  {
+    "body": 152,
+    "instruction": " HYPERLINK \\l \"_Toc242715973\" ",
+    "display": "Figure C1-21: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – Mean Values\t91",
+    "result": true
+  },
+  {
+    "body": 153,
+    "instruction": " PAGEREF _Toc242715974 \\h ",
+    "display": "91",
+    "result": true
+  },
+  {
+    "body": 153,
+    "instruction": " HYPERLINK \\l \"_Toc242715974\" ",
+    "display": "Figure C1-22: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – 50th Percentile Values\t91",
+    "result": true
+  },
+  {
+    "body": 154,
+    "instruction": " PAGEREF _Toc242715975 \\h ",
+    "display": "92",
+    "result": true
+  },
+  {
+    "body": 154,
+    "instruction": " HYPERLINK \\l \"_Toc242715975\" ",
+    "display": "Figure C1-23: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – 84th Percentile Values\t92",
+    "result": true
+  },
+  {
+    "body": 155,
+    "instruction": " PAGEREF _Toc242715976 \\h ",
+    "display": "92",
+    "result": true
+  },
+  {
+    "body": 155,
+    "instruction": " HYPERLINK \\l \"_Toc242715976\" ",
+    "display": "Figure C1-24: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – 90th Percentile Values\t92",
+    "result": true
+  },
+  {
+    "body": 156,
+    "instruction": " PAGEREF _Toc242715977 \\h ",
+    "display": "93",
+    "result": true
+  },
+  {
+    "body": 156,
+    "instruction": " HYPERLINK \\l \"_Toc242715977\" ",
+    "display": "Figure C1-25: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – 95th Percentile Values\t93",
+    "result": true
+  },
+  {
+    "body": 157,
+    "instruction": " PAGEREF _Toc242715978 \\h ",
+    "display": "95",
+    "result": true
+  },
+  {
+    "body": 157,
+    "instruction": " HYPERLINK \\l \"_Toc242715978\" ",
+    "display": "Figure C2-1: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - Mean Values\t95",
+    "result": true
+  },
+  {
+    "body": 158,
+    "instruction": " PAGEREF _Toc242715979 \\h ",
+    "display": "95",
+    "result": true
+  },
+  {
+    "body": 158,
+    "instruction": " HYPERLINK \\l \"_Toc242715979\" ",
+    "display": "Figure C2-2: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - 50th Percentile Values\t95",
+    "result": true
+  },
+  {
+    "body": 159,
+    "instruction": " PAGEREF _Toc242715980 \\h ",
+    "display": "96",
+    "result": true
+  },
+  {
+    "body": 159,
+    "instruction": " HYPERLINK \\l \"_Toc242715980\" ",
+    "display": "Figure C2-3: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - 84th Percentile Values\t96",
+    "result": true
+  },
+  {
+    "body": 160,
+    "instruction": " PAGEREF _Toc242715981 \\h ",
+    "display": "96",
+    "result": true
+  },
+  {
+    "body": 160,
+    "instruction": " HYPERLINK \\l \"_Toc242715981\" ",
+    "display": "Figure C2-4: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - 90th Percentile Values\t96",
+    "result": true
+  },
+  {
+    "body": 161,
+    "instruction": " PAGEREF _Toc242715982 \\h ",
+    "display": "97",
+    "result": true
+  },
+  {
+    "body": 161,
+    "instruction": " HYPERLINK \\l \"_Toc242715982\" ",
+    "display": "Figure C2-5: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - 95th Percentile Values\t97",
+    "result": true
+  },
+  {
+    "body": 162,
+    "instruction": " PAGEREF _Toc242715983 \\h ",
+    "display": "97",
+    "result": true
+  },
+  {
+    "body": 162,
+    "instruction": " HYPERLINK \\l \"_Toc242715983\" ",
+    "display": "Figure C2-6: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) – Mean Values\t97",
+    "result": true
+  },
+  {
+    "body": 163,
+    "instruction": " PAGEREF _Toc242715984 \\h ",
+    "display": "98",
+    "result": true
+  },
+  {
+    "body": 163,
+    "instruction": " HYPERLINK \\l \"_Toc242715984\" ",
+    "display": "Figure C2-7: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) - 50th Percentile Values\t98",
+    "result": true
+  },
+  {
+    "body": 164,
+    "instruction": " PAGEREF _Toc242715985 \\h ",
+    "display": "98",
+    "result": true
+  },
+  {
+    "body": 164,
+    "instruction": " HYPERLINK \\l \"_Toc242715985\" ",
+    "display": "Figure C2-8: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) - 84th Percentile Values\t98",
+    "result": true
+  },
+  {
+    "body": 165,
+    "instruction": " PAGEREF _Toc242715986 \\h ",
+    "display": "99",
+    "result": true
+  },
+  {
+    "body": 165,
+    "instruction": " HYPERLINK \\l \"_Toc242715986\" ",
+    "display": "Figure C2-9: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) - 90th Percentile Values\t99",
+    "result": true
+  },
+  {
+    "body": 166,
+    "instruction": " PAGEREF _Toc242715987 \\h ",
+    "display": "99",
+    "result": true
+  },
+  {
+    "body": 166,
+    "instruction": " HYPERLINK \\l \"_Toc242715987\" ",
+    "display": "Figure C2-10: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) - 95th Percentile Values\t99",
+    "result": true
+  },
+  {
+    "body": 167,
+    "instruction": " PAGEREF _Toc242715988 \\h ",
+    "display": "100",
+    "result": true
+  },
+  {
+    "body": 167,
+    "instruction": " HYPERLINK \\l \"_Toc242715988\" ",
+    "display": "Figure C2-11: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – Mean Values\t100",
+    "result": true
+  },
+  {
+    "body": 168,
+    "instruction": " PAGEREF _Toc242715989 \\h ",
+    "display": "100",
+    "result": true
+  },
+  {
+    "body": 168,
+    "instruction": " HYPERLINK \\l \"_Toc242715989\" ",
+    "display": "Figure C2-12: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 50th Percentile Values\t100",
+    "result": true
+  },
+  {
+    "body": 169,
+    "instruction": " PAGEREF _Toc242715990 \\h ",
+    "display": "101",
+    "result": true
+  },
+  {
+    "body": 169,
+    "instruction": " HYPERLINK \\l \"_Toc242715990\" ",
+    "display": "Figure C2-13: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 84th Percentile Values\t101",
+    "result": true
+  },
+  {
+    "body": 170,
+    "instruction": " PAGEREF _Toc242715991 \\h ",
+    "display": "101",
+    "result": true
+  },
+  {
+    "body": 170,
+    "instruction": " HYPERLINK \\l \"_Toc242715991\" ",
+    "display": "Figure C2-14: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 90th Percentile Values\t101",
+    "result": true
+  },
+  {
+    "body": 171,
+    "instruction": " PAGEREF _Toc242715992 \\h ",
+    "display": "102",
+    "result": true
+  },
+  {
+    "body": 171,
+    "instruction": " HYPERLINK \\l \"_Toc242715992\" ",
+    "display": "Figure C2-15: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 95th Percentile Values\t102",
+    "result": true
+  },
+  {
+    "body": 172,
+    "instruction": " PAGEREF _Toc242715993 \\h ",
+    "display": "102",
+    "result": true
+  },
+  {
+    "body": 172,
+    "instruction": " HYPERLINK \\l \"_Toc242715993\" ",
+    "display": "Figure C2-16: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – Mean Values\t102",
+    "result": true
+  },
+  {
+    "body": 173,
+    "instruction": " PAGEREF _Toc242715994 \\h ",
+    "display": "103",
+    "result": true
+  },
+  {
+    "body": 173,
+    "instruction": " HYPERLINK \\l \"_Toc242715994\" ",
+    "display": "Figure C2-17: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – 50th Percentile Values\t103",
+    "result": true
+  },
+  {
+    "body": 174,
+    "instruction": " PAGEREF _Toc242715995 \\h ",
+    "display": "103",
+    "result": true
+  },
+  {
+    "body": 174,
+    "instruction": " HYPERLINK \\l \"_Toc242715995\" ",
+    "display": "Figure C2-18: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – 84th Percentile Values\t103",
+    "result": true
+  },
+  {
+    "body": 175,
+    "instruction": " PAGEREF _Toc242715996 \\h ",
+    "display": "104",
+    "result": true
+  },
+  {
+    "body": 175,
+    "instruction": " HYPERLINK \\l \"_Toc242715996\" ",
+    "display": "Figure C2-19: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – 90th Percentile Values\t104",
+    "result": true
+  },
+  {
+    "body": 176,
+    "instruction": " PAGEREF _Toc242715997 \\h ",
+    "display": "104",
+    "result": true
+  },
+  {
+    "body": 176,
+    "instruction": " HYPERLINK \\l \"_Toc242715997\" ",
+    "display": "Figure C2-20: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – 95th Percentile Values\t104",
+    "result": true
+  },
+  {
+    "body": 177,
+    "instruction": " PAGEREF _Toc242715998 \\h ",
+    "display": "105",
+    "result": true
+  },
+  {
+    "body": 177,
+    "instruction": " HYPERLINK \\l \"_Toc242715998\" ",
+    "display": "Figure C2-21: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) - Mean Values\t105",
+    "result": true
+  },
+  {
+    "body": 178,
+    "instruction": " PAGEREF _Toc242715999 \\h ",
+    "display": "105",
+    "result": true
+  },
+  {
+    "body": 178,
+    "instruction": " HYPERLINK \\l \"_Toc242715999\" ",
+    "display": "Figure C2-22: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 50th Percentile Values\t105",
+    "result": true
+  },
+  {
+    "body": 179,
+    "instruction": " PAGEREF _Toc242716000 \\h ",
+    "display": "106",
+    "result": true
+  },
+  {
+    "body": 179,
+    "instruction": " HYPERLINK \\l \"_Toc242716000\" ",
+    "display": "Figure C2-23: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 84th Percentile Values\t106",
+    "result": true
+  },
+  {
+    "body": 180,
+    "instruction": " PAGEREF _Toc242716001 \\h ",
+    "display": "106",
+    "result": true
+  },
+  {
+    "body": 180,
+    "instruction": " HYPERLINK \\l \"_Toc242716001\" ",
+    "display": "Figure C2-24: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 90th Percentile Values\t106",
+    "result": true
+  },
+  {
+    "body": 181,
+    "instruction": " PAGEREF _Toc242716002 \\h ",
+    "display": "107",
+    "result": true
+  },
+  {
+    "body": 181,
+    "instruction": " HYPERLINK \\l \"_Toc242716002\" ",
+    "display": "Figure C2-25: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 95th Percentile Values\t107",
+    "result": true
+  },
+  {
+    "body": 182,
+    "instruction": " PAGEREF _Toc242716003 \\h ",
+    "display": "113",
+    "result": true
+  },
+  {
+    "body": 182,
+    "instruction": " HYPERLINK \\l \"_Toc242716003\" ",
+    "display": "Figure D2-1: Design Response Spectra for a Return Period of 10,000 years - Mean Values\t113",
+    "result": true
+  },
+  {
+    "body": 183,
+    "instruction": " PAGEREF _Toc242716004 \\h ",
+    "display": "113",
+    "result": true
+  },
+  {
+    "body": 183,
+    "instruction": " HYPERLINK \\l \"_Toc242716004\" ",
+    "display": "Figure D2-2: Design Response Spectra for a Return Period of 10,000 years – 50th Percentile Values\t113",
+    "result": true
+  },
+  {
+    "body": 184,
+    "instruction": " PAGEREF _Toc242716005 \\h ",
+    "display": "114",
+    "result": true
+  },
+  {
+    "body": 184,
+    "instruction": " HYPERLINK \\l \"_Toc242716005\" ",
+    "display": "Figure D2-3: Design Response Spectra for a Return Period of 10,000 years – 84h Percentile Values\t114",
+    "result": true
+  },
+  {
+    "body": 185,
+    "instruction": " PAGEREF _Toc242716006 \\h ",
+    "display": "114",
+    "result": true
+  },
+  {
+    "body": 185,
+    "instruction": " HYPERLINK \\l \"_Toc242716006\" ",
+    "display": "Figure D2-4: Design Response Spectra for a Return Period of 10,000 years – 90h Percentile Values\t114",
+    "result": true
+  },
+  {
+    "body": 186,
+    "instruction": " PAGEREF _Toc242716007 \\h ",
+    "display": "115",
+    "result": true
+  },
+  {
+    "body": 186,
+    "instruction": " HYPERLINK \\l \"_Toc242716007\" ",
+    "display": "Figure D2-5: Design Response Spectra for a Return Period of 10,000 years –95h Percentile Values\t115",
+    "result": true
+  },
+  {
+    "body": 187,
+    "instruction": " PAGEREF _Toc242716008 \\h ",
+    "display": "120",
+    "result": true
+  },
+  {
+    "body": 187,
+    "instruction": " HYPERLINK \\l \"_Toc242716008\" ",
+    "display": "Figure E2-1: Mean values of  [] for return period  yr, as a function of the allowable permanent displacement relative to slope height,  [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.\t120",
+    "result": true
+  },
+  {
+    "body": 188,
+    "instruction": " PAGEREF _Toc242716009 \\h ",
+    "display": "121",
+    "result": true
+  },
+  {
+    "body": 188,
+    "instruction": " HYPERLINK \\l \"_Toc242716009\" ",
+    "display": "Figure E2-2: Mean values of  [] for return period  yr, as a function of the allowable permanent displacement relative to slope height,  [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.\t121",
+    "result": true
+  },
+  {
+    "body": 189,
+    "instruction": " PAGEREF _Toc242716010 \\h ",
+    "display": "122",
+    "result": true
+  },
+  {
+    "body": 189,
+    "instruction": " HYPERLINK \\l \"_Toc242716010\" ",
+    "display": "Figure E2-3: Mean values of  [] for return period  yr, as a function of the allowable permanent displacement relative to slope height,  [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.\t122",
+    "result": true
+  },
+  {
+    "body": 92,
+    "instruction": " TOC \\h \\z \\c \"Figure\" ",
+    "display": "Figure 1-1: Site Location Map\t2Figure 1-2: Layout of Project Facilities\t3Figure 2-1: Crustal Regions in Eastern Canada\t7Figure 2-2: Seismicity of Northern Ontario Seismic Zone 1970-1999\t8Figure 2-3: Seismicity of Northern Ontario from 1980 to 2006\t9Figure 3-1: Crawford Regional Catalog 1916-08/30/2026\t11Figure 3-2: Isoseismal Map of the 1935 Mw 6.2 Temiskamingue Earthquake\t12Figure 5-1: Source-to-Site Fault Distances\t16Figure 5-2: Logic Tree in the CanadaSHM6 for Southeastern Canada\t18Figure 6-1: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – Mean Values\t21Figure 6-2: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 84th Percentile Values\t22Figure 6-3: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – Mean Values\t23Figure 6-4: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for Various Structural Periods – 84th Percentile Values\t23Figure 6-5: Uniform Hazard Spectra (UHS) in Hard Rock (1,500 m/s) – Mean Values\t24Figure 6-6: Uniform Hazard Spectra (UHS) in Hard Rock (1,500 m/s) – 84th Percentile Values\t25Figure 6-7: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – Mean Values\t25Figure 6-8: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 84th Percentile Values\t26Figure 6-9: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:475 AEP\t27Figure 6-10: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:975 AEP\t28Figure 6-11: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:2,475 AEP\t28Figure 6-12: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:5,000 AEP\t29Figure 6-13: Hazard Deaggregation of Magnitudes and Distances for PGA – 1:10,000 AEP\t29Figure 7-1: Location of Seismic CPTs used to Estimate Shear Wave Velocity Profiles\t33Figure 7-2: Shear Wave Velocity Profile at the Crawford Rock, Sand & Till, and Clay Impoundment measured by SCPTu and average  determined with Eq. 7-1\t35Figure 7-3: Shear Wave Velocity Profile at the Crawford Open Pit  measured by SCPTu and average  determined with Eq. 7-1\t36Figure 7-4: Shear Wave Velocity Profile at the Crawford Stockpile East measured by SCPTu and average  determined with Eq. 7-1\t37Figure 7-5: Shear Wave Velocity Profile at the Crawford Stockpile West measured by SCPTu and average  determined with Eq. 7-1\t38Figure 7-6: Shear Wave Velocity Profile at the Tailings Management Facility (TMF) measured by SCPTu and average  determined with Eq. 7-1\t39Figure 7-7: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – Mean Values\t41Figure 7-8: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 84th Percentile Values\t41Figure 8-1: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s/) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values\t43Figure 8-2: Uniform Hazard Spectra (UHS) in Soft Rock (760 ms/) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values\t44Figure 8-3: Uniform Hazard Spectra (UHS) in Stiff Soil ( 220 m/s) for 2,475, 975, and 475-year return periods: Comparison with NRC (2021c) Mean Values\t45Figure 9-1: Design Response Spectra for a Return Period of 10,000 years - Mean Values\t48Figure 9-2: Design Response Spectra for a Return Period of 10,000 years – 84th Percentile Values\t49Figure 9-3: Design Response Spectra for a Return Period of 2,475 years - Mean Values\t50Figure 9-4: Design Response Spectra for a Return Period of 2,475 years – 84th Percentile Values\t51Figure 10-1: Mean Values of  [% of PGA] for Return Period  yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height,  [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.\t62Figure 10-2: Mean Values of  [% of PGA] for Return Period  yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height,  [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.\t63Figure 10-3: Mean Values of  [% of PGA] for Return Period  yr, as a Function of the Allowable Permanent Displacement Relative to Slope Height,  [%]. The Curves Represent the Scenarios S135, S50, S32, S27, S35 Evaluated with the Rigid, Ensemble, and Flexible Sets.\t64Figure C1-1: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – Mean Values\t81Figure C1-2: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 50th Percentile Values\t81Figure C1-3: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 84th Percentile Values\t82Figure C1-4: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 90th Percentile Values\t82Figure C1-5: Annual Exceedance Probability (AEP) in Hard Rock ( = 1500 m/s) for various Structural Periods – 90th Percentile Values\t83Figure C1-6: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – Mean Values\t83Figure C1-7: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – 50th Percentile Values\t84Figure C1-8: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – 84th Percentile Values\t84Figure C1-9: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – 90th Percentile Values\t85Figure C1-10: Annual Exceedance Probability (AEP) in Medium Rock ( = 910 m/s) for various Structural Periods – 95th Percentile Values\t85Figure C1-11: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – Mean Values\t86Figure C1-12: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – 50th Percentile Values\t86Figure C1-13: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – 84th Percentile Values\t87Figure C1-14: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – 90th Percentile Values\t87Figure C1-15: Annual Exceedance Probability (AEP) in Soft Rock ( = 760 m/s) for various Structural Periods – 95th Percentile Values\t88Figure C1-16: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – Mean Values\t88Figure C1-17: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – 50th Percentile Values\t89Figure C1-18: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – 84th Percentile Values\t89Figure C1-19: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – 90th Percentile Values\t90Figure C1-20: Annual Exceedance Probability (AEP) in Very Dense Soil ( = 580 m/s) for various Structural Periods – 95th Percentile Values\t90Figure C1-21: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – Mean Values\t91Figure C1-22: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – 50th Percentile Values\t91Figure C1-23: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – 84th Percentile Values\t92Figure C1-24: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – 90th Percentile Values\t92Figure C1-25: Annual Exceedance Probability (AEP) in Stiff Soil ( = 220 m/s) for various Structural Periods – 95th Percentile Values\t93Figure C2-1: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - Mean Values\t95Figure C2-2: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - 50th Percentile Values\t95Figure C2-3: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - 84th Percentile Values\t96Figure C2-4: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - 90th Percentile Values\t96Figure C2-5: Uniform Hazard Spectra (UHS) in Hard Rock (1500 m/s) - 95th Percentile Values\t97Figure C2-6: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) – Mean Values\t97Figure C2-7: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) - 50th Percentile Values\t98Figure C2-8: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) - 84th Percentile Values\t98Figure C2-9: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) - 90th Percentile Values\t99Figure C2-10: Uniform Hazard Spectra (UHS) in Medium Rock (910 m/s) - 95th Percentile Values\t99Figure C2-11: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – Mean Values\t100Figure C2-12: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 50th Percentile Values\t100Figure C2-13: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 84th Percentile Values\t101Figure C2-14: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 90th Percentile Values\t101Figure C2-15: Uniform Hazard Spectra (UHS) in Soft Rock (760 m/s) – 95th Percentile Values\t102Figure C2-16: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – Mean Values\t102Figure C2-17: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – 50th Percentile Values\t103Figure C2-18: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – 84th Percentile Values\t103Figure C2-19: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – 90th Percentile Values\t104Figure C2-20: Uniform Hazard Spectra (UHS) in Very Dense Soil (580 m/s) – 95th Percentile Values\t104Figure C2-21: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) - Mean Values\t105Figure C2-22: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 50th Percentile Values\t105Figure C2-23: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 84th Percentile Values\t106Figure C2-24: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 90th Percentile Values\t106Figure C2-25: Uniform Hazard Spectra (UHS) in Stiff Soil (220 m/s) – 95th Percentile Values\t107Figure D2-1: Design Response Spectra for a Return Period of 10,000 years - Mean Values\t113Figure D2-2: Design Response Spectra for a Return Period of 10,000 years – 50th Percentile Values\t113Figure D2-3: Design Response Spectra for a Return Period of 10,000 years – 84h Percentile Values\t114Figure D2-4: Design Response Spectra for a Return Period of 10,000 years – 90h Percentile Values\t114Figure D2-5: Design Response Spectra for a Return Period of 10,000 years –95h Percentile Values\t115Figure E2-1: Mean values of  [] for return period  yr, as a function of the allowable permanent displacement relative to slope height,  [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.\t120Figure E2-2: Mean values of  [] for return period  yr, as a function of the allowable permanent displacement relative to slope height,  [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.\t121Figure E2-3: Mean values of  [] for return period  yr, as a function of the allowable permanent displacement relative to slope height,  [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.\t122",
+    "result": true
+  },
+  {
+    "body": 345,
+    "instruction": " REF _Ref169701304 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 1-1",
+    "result": true
+  },
+  {
+    "body": 345,
+    "instruction": " REF _Ref178150910 \\h  \\* MERGEFORMAT ",
+    "display": "Table 1-1",
+    "result": true
+  },
+  {
+    "body": 345,
+    "instruction": " REF _Ref174486855 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 1-2",
+    "result": true
+  },
+  {
+    "body": 346,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 346,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 351,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 351,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 357,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 357,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 365,
+    "instruction": " CITATION Can20 \\l 1033 ",
+    "display": "(Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 366,
+    "instruction": "CITATION Can14 \\n  \\t  \\l 1033 ",
+    "display": " (2013)",
+    "result": true
+  },
+  {
+    "body": 366,
+    "instruction": " CITATION Int20 \\l 1033 ",
+    "display": " (International Council on Mining & Metals (ICMM), 2020)",
+    "result": true
+  },
+  {
+    "body": 366,
+    "instruction": "CITATION Ont11 \\n  \\t  \\l 1033 ",
+    "display": "(2011)",
+    "result": true
+  },
+  {
+    "body": 371,
+    "instruction": " REF _Ref178150959 \\r \\h ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 372,
+    "instruction": " REF _Ref178150971 \\r \\h ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 373,
+    "instruction": " REF _Ref178150983 \\r \\h  \\* MERGEFORMAT ",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 374,
+    "instruction": " REF _Ref178150998 \\r \\h ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 375,
+    "instruction": " REF _Ref178151006 \\r \\h ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 376,
+    "instruction": " REF _Ref174451782 \\r \\h ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 377,
+    "instruction": " REF _Ref178151024 \\r \\h ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 377,
+    "instruction": " REF _Ref174451850 \\r \\h ",
+    "display": "6.5",
+    "result": true
+  },
+  {
+    "body": 378,
+    "instruction": " REF _Ref174965508 \\r \\h ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 379,
+    "instruction": " REF _Ref178151051 \\r \\h ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 380,
+    "instruction": " REF _Ref178151061 \\r \\h ",
+    "display": "10",
+    "result": true
+  },
+  {
+    "body": 381,
+    "instruction": " REF _Ref178151071 \\r \\h ",
+    "display": "11",
+    "result": true
+  },
+  {
+    "body": 392,
+    "instruction": "CITATION Nat212 \\n  \\t  \\l 1033 ",
+    "display": " (2021a)",
+    "result": true
+  },
+  {
+    "body": 392,
+    "instruction": " REF _Ref171095102 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 2-1",
+    "result": true
+  },
+  {
+    "body": 402,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 402,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 403,
+    "instruction": "CITATION Nat212 \\l 1033 ",
+    "display": " (Natural Resources of Canada, 2021a)",
+    "result": true
+  },
+  {
+    "body": 404,
+    "instruction": " REF _Ref171095102 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 2-1",
+    "result": true
+  },
+  {
+    "body": 404,
+    "instruction": " CITATION MaS08 \\l 1033 ",
+    "display": "(Ma, Eaton, & Adams, 2008)",
+    "result": true
+  },
+  {
+    "body": 405,
+    "instruction": " REF _Ref170738783 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 2-2",
+    "result": true
+  },
+  {
+    "body": 405,
+    "instruction": "CITATION Nat212 \\l 1033 ",
+    "display": "(Natural Resources of Canada, 2021a)",
+    "result": true
+  },
+  {
+    "body": 405,
+    "instruction": " REF _Ref171088203 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 2-3",
+    "result": true
+  },
+  {
+    "body": 405,
+    "instruction": " CITATION MaS08 \\l 1033 ",
+    "display": "(Ma, Eaton, & Adams, 2008)",
+    "result": true
+  },
+  {
+    "body": 406,
+    "instruction": " CITATION MaS08 \\l 1033 ",
+    "display": "(Ma, Eaton, & Adams, 2008)",
+    "result": true
+  },
+  {
+    "body": 406,
+    "instruction": " CITATION Maz05 \\l 1033 ",
+    "display": " (Mazzotti, 2005)",
+    "result": true
+  },
+  {
+    "body": 406,
+    "instruction": " CITATION WuP96 \\l 1033 ",
+    "display": " (Wu & Hasegawa, 1996)",
+    "result": true
+  },
+  {
+    "body": 406,
+    "instruction": " CITATION Ada91 \\l 1033 ",
+    "display": " (Adams & Basham, 1991)",
+    "result": true
+  },
+  {
+    "body": 407,
+    "instruction": "CITATION Nat212 \\m Ada91 \\l 1033 ",
+    "display": "(Natural Resources of Canada, 2021a; Adams & Basham, 1991)",
+    "result": true
+  },
+  {
+    "body": 408,
+    "instruction": " CITATION Ada91 \\l 1033 ",
+    "display": "(Adams & Basham, 1991)",
+    "result": true
+  },
+  {
+    "body": 410,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 410,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 411,
+    "instruction": "CITATION Nat212 \\l 1033 ",
+    "display": " (Natural Resources of Canada, 2021a)",
+    "result": true
+  },
+  {
+    "body": 413,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 413,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 414,
+    "instruction": "CITATION MaS08 \\n  \\t  \\l 1033 ",
+    "display": "(2008)",
+    "result": true
+  },
+  {
+    "body": 419,
+    "instruction": "CITATION Nat214 \\n  \\t  \\l 1033 ",
+    "display": "(2021b)",
+    "result": true
+  },
+  {
+    "body": 421,
+    "instruction": "CITATION Ass16 \\n  \\t  \\l 1033 ",
+    "display": " (2016)",
+    "result": true
+  },
+  {
+    "body": 423,
+    "instruction": " REF _Ref178151259 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 3-1",
+    "result": true
+  },
+  {
+    "body": 423,
+    "instruction": " REF _Ref178166773 \\h  \\* MERGEFORMAT ",
+    "display": "Table A-1",
+    "result": true
+  },
+  {
+    "body": 423,
+    "instruction": " CITATION Can20 \\l 1033 ",
+    "display": "(Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 424,
+    "instruction": " REF _Ref178151292 \\r \\h ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 428,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 428,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 433,
+    "instruction": "CITATION Nat213 \\l 1033 ",
+    "display": "(Natural Resources of Canada, 2021d)",
+    "result": true
+  },
+  {
+    "body": 434,
+    "instruction": "CITATION Nat213 \\l 1033 ",
+    "display": "(Natural Resources of Canada, 2021d)",
+    "result": true
+  },
+  {
+    "body": 436,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 436,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 437,
+    "instruction": "CITATION Nat213 \\n  \\t  \\l 1033 ",
+    "display": "(2021d)",
+    "result": true
+  },
+  {
+    "body": 440,
+    "instruction": " CITATION Nat13 \\l 1033 ",
+    "display": " (Natural Resources de Canada, 2013)",
+    "result": true
+  },
+  {
+    "body": 451,
+    "instruction": " CITATION Nat20 \\l 1033 ",
+    "display": "(Natural Resources of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 451,
+    "instruction": " CITATION Glo18 \\l 1033 ",
+    "display": "(Global Earthquake Model (GEM) Foundation, 2018)",
+    "result": true
+  },
+  {
+    "body": 451,
+    "instruction": " CITATION Can20 \\l 1033 ",
+    "display": "(Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 456,
+    "instruction": " CITATION Gut44 \\l 1033 ",
+    "display": " (Gutenberg & Ritcher, 1944)",
+    "result": true
+  },
+  {
+    "body": 457,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 457,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 459,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 459,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 462,
+    "instruction": " REF _Ref178166524 \\h ",
+    "display": "Table B-1",
+    "result": true
+  },
+  {
+    "body": 462,
+    "instruction": " REF _Ref178166543 \\h ",
+    "display": "Table B-3",
+    "result": true
+  },
+  {
+    "body": 462,
+    "instruction": " REF _Ref178155696 \\r \\h  \\* MERGEFORMAT ",
+    "display": "11Appendix B",
+    "result": true
+  },
+  {
+    "body": 469,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 469,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 472,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 472,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 473,
+    "instruction": "CITATION Bom08 \\n  \\t  \\l 1033 ",
+    "display": "(2008)",
+    "result": true
+  },
+  {
+    "body": 480,
+    "instruction": " REF _Ref174108027 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 5-1",
+    "result": true
+  },
+  {
+    "body": 480,
+    "instruction": "CITATION Com10 \\n  \\t  \\l 1033 ",
+    "display": "(2010)",
+    "result": true
+  },
+  {
+    "body": 482,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 482,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 485,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 485,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 487,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 487,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 490,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 490,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 495,
+    "instruction": "CITATION Atk13 \\n  \\t  \\l 1033 ",
+    "display": "(2013)",
+    "result": true
+  },
+  {
+    "body": 496,
+    "instruction": "CITATION Gou18 \\n  \\t  \\l 1033 ",
+    "display": " (2017)",
+    "result": true
+  },
+  {
+    "body": 497,
+    "instruction": " REF _Ref178151403 \\h  \\* MERGEFORMAT ",
+    "display": "Table 5-1",
+    "result": true
+  },
+  {
+    "body": 497,
+    "instruction": " REF _Ref172153802 \\h  \\* MERGEFORMAT ",
+    "display": "",
+    "result": true
+  },
+  {
+    "body": 498,
+    "instruction": " REF _Ref172153802 \\h ",
+    "display": "",
+    "result": true
+  },
+  {
+    "body": 499,
+    "instruction": " REF _Ref172153802 \\h ",
+    "display": "",
+    "result": true
+  },
+  {
+    "body": 502,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 502,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 503,
+    "instruction": " CITATION Atk13 \\l 1033 ",
+    "display": "(Atkinson & Adams, Ground motion prediction equations for application to the 2015 Canadian national seismic hazard maps, 2013)",
+    "result": true
+  },
+  {
+    "body": 503,
+    "instruction": "CITATION Gou18 \\l 1033 ",
+    "display": "(Goulet, et al., 2017)",
+    "result": true
+  },
+  {
+    "body": 509,
+    "instruction": " REF _Ref171359863 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 5-2",
+    "result": true
+  },
+  {
+    "body": 511,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 511,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 512,
+    "instruction": "CITATION Kol20 \\t  \\l 1033 ",
+    "display": "(Kolaj, Adams, & Halchuk, 2020)",
+    "result": true
+  },
+  {
+    "body": 512,
+    "instruction": "CITATION Gou18 \\l 1033 ",
+    "display": "(Goulet, et al., 2017)",
+    "result": true
+  },
+  {
+    "body": 521,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 521,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 524,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 524,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 531,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 531,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 533,
+    "instruction": " CITATION Cor68 \\l 1033 ",
+    "display": "(Cornell C. A., 1968)",
+    "result": true
+  },
+  {
+    "body": 533,
+    "instruction": "CITATION McG93 \\l 1033 ",
+    "display": " (McGuire, 1993)",
+    "result": true
+  },
+  {
+    "body": 533,
+    "instruction": " CITATION Kra97 \\l 1033 ",
+    "display": " (Kramer, 1996)",
+    "result": true
+  },
+  {
+    "body": 534,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 534,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 536,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 536,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 538,
+    "instruction": " REF _Ref174362075 \\r \\h  \\* MERGEFORMAT ",
+    "display": "5.1.3",
+    "result": true
+  },
+  {
+    "body": 543,
+    "instruction": " CITATION Nat20 \\l 1033 ",
+    "display": "(Natural Resources of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 543,
+    "instruction": " CITATION Pag14 \\l 1033 ",
+    "display": "(Pagani, Monelli, & Weatgerill, 2014)",
+    "result": true
+  },
+  {
+    "body": 543,
+    "instruction": "CITATION Can20 \\t  \\l 1033 ",
+    "display": "(Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 543,
+    "instruction": " REF _Ref174788605 \\r \\h ",
+    "display": "7.1",
+    "result": true
+  },
+  {
+    "body": 544,
+    "instruction": " REF _Ref178151452 \\r \\h ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 544,
+    "instruction": " REF _Ref178155749 \\r \\h  \\* MERGEFORMAT ",
+    "display": "11Appendix C",
+    "result": true
+  },
+  {
+    "body": 546,
+    "instruction": " REF _Ref178151472 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-1",
+    "result": true
+  },
+  {
+    "body": 546,
+    "instruction": " REF _Ref174527344 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-2",
+    "result": true
+  },
+  {
+    "body": 546,
+    "instruction": " REF _Ref178151472 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-1",
+    "result": true
+  },
+  {
+    "body": 546,
+    "instruction": " REF _Ref174527344 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-2",
+    "result": true
+  },
+  {
+    "body": 546,
+    "instruction": " REF _Ref178155775 \\r \\h  \\* MERGEFORMAT ",
+    "display": "11Appendix C1",
+    "result": true
+  },
+  {
+    "body": 548,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 548,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 550,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 550,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 553,
+    "instruction": " REF _Ref174529699 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-3",
+    "result": true
+  },
+  {
+    "body": 553,
+    "instruction": " REF _Ref174969545 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-4",
+    "result": true
+  },
+  {
+    "body": 553,
+    "instruction": " REF _Ref174529699 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-3",
+    "result": true
+  },
+  {
+    "body": 553,
+    "instruction": " REF _Ref174969545 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-4",
+    "result": true
+  },
+  {
+    "body": 555,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 555,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 557,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 557,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref174543929 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-5",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref174544799 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-6",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref174543929 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-5",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref174544799 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-6",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref174378646 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-7",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref174545092 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-8",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref174378646 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-7",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref174545092 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-8",
+    "result": true
+  },
+  {
+    "body": 559,
+    "instruction": " REF _Ref178155797 \\r \\h  \\* MERGEFORMAT ",
+    "display": "11Appendix C2",
+    "result": true
+  },
+  {
+    "body": 561,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 561,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 563,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 563,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 565,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 565,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 568,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 568,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 571,
+    "instruction": " CITATION Kra97 \\l 1033 ",
+    "display": "(Kramer, 1996)",
+    "result": true
+  },
+  {
+    "body": 571,
+    "instruction": " CITATION Baz99 \\l 1033 ",
+    "display": "(Bazurro & Cornell, 1999)",
+    "result": true
+  },
+  {
+    "body": 571,
+    "instruction": " CITATION Cor70 \\l 1033 ",
+    "display": "(Cornell & Benjamin, 1970)",
+    "result": true
+  },
+  {
+    "body": 572,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 572,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 573,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 573,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 575,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 575,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 576,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 576,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 580,
+    "instruction": " REF _Ref175169907 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-9",
+    "result": true
+  },
+  {
+    "body": 580,
+    "instruction": " REF _Ref175169909 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 6-10",
+    "result": true
+  },
+  {
+    "body": 582,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 582,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 584,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 584,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "10",
+    "result": true
+  },
+  {
+    "body": 586,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 586,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "11",
+    "result": true
+  },
+  {
+    "body": 588,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 588,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "12",
+    "result": true
+  },
+  {
+    "body": 591,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 591,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "13",
+    "result": true
+  },
+  {
+    "body": 600,
+    "instruction": " REF _Ref172153775 \\h  \\* MERGEFORMAT ",
+    "display": "Table 7-1: ",
+    "result": true
+  },
+  {
+    "body": 600,
+    "instruction": " REF _Ref178061837 \\h  \\* MERGEFORMAT ",
+    "display": "Table 7-1",
+    "result": true
+  },
+  {
+    "body": 601,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 601,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 601,
+    "instruction": "CITATION Can20 \\n  \\t  \\l 1033 ",
+    "display": "(2020)",
+    "result": true
+  },
+  {
+    "body": 603,
+    "instruction": "CITATION Can20 \\t  \\l 1033 ",
+    "display": "(Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 604,
+    "instruction": "CITATION Ame21 \\n  \\t  \\l 1033 ",
+    "display": "(2022)",
+    "result": true
+  },
+  {
+    "body": 604,
+    "instruction": " REF _Ref174438610 \\h  \\* MERGEFORMAT ",
+    "display": "Table 7-2: ",
+    "result": true
+  },
+  {
+    "body": 605,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 605,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 605,
+    "instruction": "CITATION Ame21 \\n  \\t  \\l 1033 ",
+    "display": "(2022)",
+    "result": true
+  },
+  {
+    "body": 607,
+    "instruction": "CITATION Ame21 \\n  \\t  \\l 1033 ",
+    "display": "(2022)",
+    "result": true
+  },
+  {
+    "body": 608,
+    "instruction": " REF _Ref174652464 \\r \\h  \\* MERGEFORMAT ",
+    "display": "7.3",
+    "result": true
+  },
+  {
+    "body": 610,
+    "instruction": " CITATION SRK242 \\l 1033 ",
+    "display": "(SRK Consulting (Canada), Inc., 2024)",
+    "result": true
+  },
+  {
+    "body": 610,
+    "instruction": "CITATION SRK233 \\n  \\t  \\l 1033 ",
+    "display": "(2023)",
+    "result": true
+  },
+  {
+    "body": 610,
+    "instruction": " REF _Ref178064632 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 7-1",
+    "result": true
+  },
+  {
+    "body": 612,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 612,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 615,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 615,
+    "instruction": " SEQ Eq. \\* ARABIC \\s 1 ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 618,
+    "instruction": " REF _Ref178061995 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 7-2",
+    "result": true
+  },
+  {
+    "body": 618,
+    "instruction": " REF _Ref178062137 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 7-6",
+    "result": true
+  },
+  {
+    "body": 618,
+    "instruction": " REF _Ref178062173 \\h  \\* MERGEFORMAT ",
+    "display": "Table 7-3",
+    "result": true
+  },
+  {
+    "body": 620,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 620,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 622,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 622,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 624,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 624,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 626,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 626,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 628,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 628,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 630,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 630,
+    "instruction": " SEQ Table \\* ARABIC \\s 1 ",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 633,
+    "instruction": " CITATION Kol19 \\l 1033 ",
+    "display": "(Kolaj, Allen, Mayfied, Adams, & Halchuk, 2019)",
+    "result": true
+  },
+  {
+    "body": 634,
+    "instruction": " CITATION Atk13 \\l 1033 ",
+    "display": "(Atkinson & Adams, Ground motion prediction equations for application to the 2015 Canadian national seismic hazard maps, 2013)",
+    "result": true
+  },
+  {
+    "body": 634,
+    "instruction": " CITATION Can15 \\l 1033 ",
+    "display": "(Canadian Commission on Building and Fire Codes and National Research Council of Canada, 2015)",
+    "result": true
+  },
+  {
+    "body": 634,
+    "instruction": "CITATION Boo08 \\n  \\t  \\l 1033 ",
+    "display": "(2008)",
+    "result": true
+  },
+  {
+    "body": 634,
+    "instruction": "CITATION Atk06 \\n  \\t  \\l 1033 ",
+    "display": "(2006)",
+    "result": true
+  },
+  {
+    "body": 635,
+    "instruction": " CITATION Gou18 \\l 1033 ",
+    "display": "(Goulet, et al., 2017)",
+    "result": true
+  },
+  {
+    "body": 635,
+    "instruction": "CITATION Boo17 \\n  \\t  \\l 1033 ",
+    "display": "(2017)",
+    "result": true
+  },
+  {
+    "body": 635,
+    "instruction": "CITATION Boo17 \\n  \\t  \\l 1033 ",
+    "display": "(2017)",
+    "result": true
+  },
+  {
+    "body": 635,
+    "instruction": "CITATION Pet18 \\n  \\t  \\l 1033 ",
+    "display": "(2018)",
+    "result": true
+  },
+  {
+    "body": 637,
+    "instruction": " REF _Ref174732139 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 7-7",
+    "result": true
+  },
+  {
+    "body": 637,
+    "instruction": " REF _Ref174732146 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 7-8",
+    "result": true
+  },
+  {
+    "body": 637,
+    "instruction": " REF _Ref174634529 \\r \\h  \\* MERGEFORMAT ",
+    "display": "7.2",
+    "result": true
+  },
+  {
+    "body": 637,
+    "instruction": " REF _Ref174732139 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 7-7",
+    "result": true
+  },
+  {
+    "body": 637,
+    "instruction": " REF _Ref174732146 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 7-8",
+    "result": true
+  },
+  {
+    "body": 637,
+    "instruction": " REF _Ref178155797 \\r \\h  \\* MERGEFORMAT ",
+    "display": "11Appendix C2",
+    "result": true
+  },
+  {
+    "body": 639,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 639,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 641,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 641,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 643,
+    "instruction": "CITATION Nat211 \\l 1033 ",
+    "display": " (Natural Resources of Canada, 2021c)",
+    "result": true
+  },
+  {
+    "body": 651,
+    "instruction": " REF _Ref174442866 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 8-1",
+    "result": true
+  },
+  {
+    "body": 651,
+    "instruction": "CITATION Nat211 \\n  \\t  \\l 1033 ",
+    "display": "(2021c)",
+    "result": true
+  },
+  {
+    "body": 651,
+    "instruction": " REF _Ref174635807 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 8-2",
+    "result": true
+  },
+  {
+    "body": 651,
+    "instruction": " REF _Ref174635809 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 8-3",
+    "result": true
+  },
+  {
+    "body": 653,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 653,
+    "instruction": " SEQ Figure \\* ARABIC \\s 1 ",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 653,
+    "instruction": "CITATION Nat211 \\n  \\t  \\l 1033 ",
+    "display": "(2021c)",
+    "result": true
+  },
+  {
+    "body": 656,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 656,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 656,
+    "instruction": "CITATION Nat211 \\n  \\t  \\l 1033 ",
+    "display": "(2021c)",
+    "result": true
+  },
+  {
+    "body": 658,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 658,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 658,
+    "instruction": "CITATION Nat211 \\n  \\t  \\l 1033 ",
+    "display": "(2021c)",
+    "result": true
+  },
+  {
+    "body": 661,
+    "instruction": "CITATION Can14 \\n  \\t  \\l 1033 ",
+    "display": " (2013)",
+    "result": true
+  },
+  {
+    "body": 661,
+    "instruction": "CITATION Int20 \\n  \\t  \\l 1033 ",
+    "display": " (2020)",
+    "result": true
+  },
+  {
+    "body": 661,
+    "instruction": "CITATION Ont11 \\n  \\t  \\l 1033 ",
+    "display": "(2011)",
+    "result": true
+  },
+  {
+    "body": 662,
+    "instruction": " CITATION WSP23 \\l 1033 ",
+    "display": "(WSP, 2023)",
+    "result": true
+  },
+  {
+    "body": 662,
+    "instruction": " CITATION Aus23 \\l 1033 ",
+    "display": "(Ausenco, 2023)",
+    "result": true
+  },
+  {
+    "body": 662,
+    "instruction": "CITATION Can14 \\n  \\t  \\l 1033 ",
+    "display": " (2013)",
+    "result": true
+  },
+  {
+    "body": 665,
+    "instruction": " REF _Ref178064924 \\h  \\* MERGEFORMAT ",
+    "display": "Table 9-1",
+    "result": true
+  },
+  {
+    "body": 665,
+    "instruction": " REF _Ref175137289 \\h  \\* MERGEFORMAT ",
+    "display": "Error! Reference source not found.",
+    "result": true
+  },
+  {
+    "body": 665,
+    "instruction": " REF _Ref178064962 \\h  \\* MERGEFORMAT ",
+    "display": "Table 9-2",
+    "result": true
+  },
+  {
+    "body": 665,
+    "instruction": " REF _Ref178064924 \\h  \\* MERGEFORMAT ",
+    "display": "Table 9-1",
+    "result": true
+  },
+  {
+    "body": 665,
+    "instruction": " REF _Ref178064962 \\h  \\* MERGEFORMAT ",
+    "display": "Table 9-2",
+    "result": true
+  },
+  {
+    "body": 665,
+    "instruction": " REF _Ref178155953 \\r \\h  \\* MERGEFORMAT ",
+    "display": "11Appendix D1",
+    "result": true
+  },
+  {
+    "body": 666,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 666,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 669,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 669,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref174655456 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 9-1",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref174655469 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 9-2",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref174655456 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 9-1",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref174655469 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 9-2",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref178065125 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 9-3",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref178016135 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 9-4",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref178015982 \\h  \\* MERGEFORMAT ",
+    "display": "Error! Reference source not found.",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref178065125 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 9-3",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref178015982 \\h  \\* MERGEFORMAT ",
+    "display": "Error! Reference source not found.",
+    "result": true
+  },
+  {
+    "body": 674,
+    "instruction": " REF _Ref178016135 \\h  \\* MERGEFORMAT ",
+    "display": "Figure 9-4",
+    "result": true
+  },
+  {
+    "body": 675,
+    "instruction": " REF _Ref178065304 \\h  \\* MERGEFORMAT ",
+    "display": "Table 9-3",
+    "result": true
+  },
+  {
+    "body": 675,
+    "instruction": " REF _Ref178065306 \\h  \\* MERGEFORMAT ",
+    "display": "Table 9-4",
+    "result": true
+  },
+  {
+    "body": 676,
+    "instruction": " REF _Ref178155973 \\r \\h  \\* MERGEFORMAT ",
+    "display": "11Appendix D2",
+    "result": true
+  },
+  {
+    "body": 679,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 679,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 681,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 681,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 683,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 683,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 685,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 685,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 688,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 688,
+    "instruction": " SEQ Table \\* ARABIC \\s 1 ",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 691,
+    "instruction": " STYLEREF 1 \\s ",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 691,
+    "instruction": " SEQ Table \\* ARABIC \\s 1 ",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 784,
+    "instruction": "CITATION Glo18 \\n  \\t  \\l 1033 ",
+    "display": " (2018)",
+    "result": true
+  },
+  {
+    "body": 784,
+    "instruction": " CITATION Nat20 \\l 1033 ",
+    "display": " (Natural Resources of Canada, 2020)",
+    "result": true
+  },
+  {
+    "body": 785,
+    "instruction": "CITATION Atk13 \\n  \\t  \\l 1033 ",
+    "display": "(2013)",
+    "result": true
+  },
+  {
+    "body": 785,
+    "instruction": " CITATION Gou18 \\l 1033 ",
+    "display": "(Goulet, et al., 2017)",
+    "result": true
+  },
+  {
+    "body": 786,
+    "instruction": " CITATION Pag14 \\l 1033 ",
+    "display": "(Pagani, Monelli, & Weatgerill, 2014)",
+    "result": true
+  },
+  {
+    "body": 792,
+    "instruction": " BIBLIOGRAPHY ",
+    "display": "Adams, J., & Basham, P. (1991). The seismicity and seismotectonics of eastern Canada. In Neotectonics of North America. Geological Society of America.Aliberti, D., Biondi, G., Cascone, E., & Rampello, S. (2019). Performance Indexes for Seismic Analyses of Earth Dams. In F. Silvestri, & N. Moraci (Eds.), Earthquake Geotechnical Engineering for Protection and Development of Environment and Constructions. Associazione Geotecnica Italiana.Ambraseys, N. N., & Menu, J. M. (1988). Earthquake-Induced Ground Displacements. Earthquake Engineering & Structural Dynamics, 16(7), 985-1006. Retrieved from https://doi.org/10.1002/eqe.4290160704American Society of Civil Engineers. (2022). Minimum Design Loads for Buildings and Other Structures, ASCE/SEI 7-22 (Vol. 7). Reston, VA. Retrieved from https://doi.org/10.1061/978078441578Anderson, D. G., Martin, G. R., Lam, I. P., & Wang, J. N. (2008). Seismic Analysis and Design of Retaining Walls, Buried Structures, Slopes, and Embankments. NCHRP Report No. 611. Transportation Research Board. Retrieved from https://www.ce.memphis.edu/7137/PDFs/Seismic%20Manual/nchrp_rpt_611.pdfAssatourians, K., & Atkinson, G. (2016). Automatically Generated Interactive Ground Motion Maps for Southern Ontario . Retrieved from Earthquake Data Auto-Processor (EDAP): https://www.seismotoolbox.ca/edap/index.phpAtkinson, G. M., & Adams, J. (2013). Ground motion prediction equations for application to the 2015 Canadian national seismic hazard maps. Canadian Journal of Civil Engineering, 40, 988-998.Atkinson, G. M., & Boore, D. M. (2006). ., & Boore, D. M. (2006). Bulletin of the Seismological Society of America, 96(6), 2181-2205.Ausenco. (2023). Crawford Nickel Sulfide Project - Technical Report and Feasibility Study. Australian National Committee on Large Dams. (2012). Guidelines on Tailings Dams: Planning, Design, Construction, Operation and Closure. Australian National Committee on Large Dams.Baker, J. W., & Jayaram, N. (2008). Correlation of Spectral Acceleration Values from NGA Ground Motion Models. Earthquake Spectra, 24(1), 299-317. Retrieved from https://doi.org/10.1193/1.2857544Bazurro, P., & Cornell, A. (1999). Disaggregation of Seismic Hazard. Bulletin of the Seismological Society of America, 89(2), 501-520.Bommer, J., & Scherbaum, F. (2008). The Use and Misuse of Logic Trees in Probabilistic Seismic Hazard Analysis. Earthquake Spectra, 24(4), 997-1009.Boore, D. M., & Campbell, K. W. (2017). Updated Ground-Motion Relations for the Next Generation of Ground-Motion Prediction Equations. Bulletin of the Seismological Society of America, 107(2).Boore, D., & Atkinson, G. (2008). Ground-Motion Prediction Equations for the Average Horizontal Component of PGA, PGV, and 5%-Damped PSA at Spectral Periods between 0.01 s and 10.0 s. Earthquake Spectra, 24(1).Bray, J. D., & Macedo, J. (2019). Procedure for Estimating Shear-Induced Seismic Slope Displacement for Shallow Crustal Earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 145(12), 04019106. Retrieved from https://doi.org/10.1061/(ASCE)GT.1943-5606.0002143Bray, J. D., & Travasarou, T. (2007). Simplified Procedure for Estimating Earthquake-Induced Deviatoric Slope Displacements. Journal of Geotechnical and Geoenvironmental Engineering, 133(4), 381-392. Retrieved from https://doi.org/10.1061/(ASCE)1090-0241(2007)133:4(381)Bray, J. D., & Travasarou, T. (2009). Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation. Journal of Geotechnical and Geoenvironmental Engineering, 135(9), 1336-1340. Retrieved from https://doi.org/10.1061/(ASCE)GT.1943-5606.0000012Bray, J. D., Macedo, J., & Travasauro, T. (2018). Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes. Journal of Geotechnical and Geoenvironmental Engineering, 144(11).Canadian Comission on Building and Fires Codes and National Research Council of Canada. (2020). National Building Code of Canada. Canadian Commission on Building and Fire Codes and National Research Council of Canada. (2015). National Building Code of Canada. Ottawa: National Research Council of Canada.Canadian Dam Association. (2013). Dam Safety Guidelines 2007 (Revised 2013). Canadian Dam Association. (2019). Application of CDA Dam Safety Guidelines to Mining Dams, Technical Bulletin. Cornell, C. A. (1968). Engineering Seismic Risk Analysis. Bulletin of the Seismological Society of America, 58(5), 1583-1606.Cornell, C. A., & Benjamin, J. R. (1970). Probability, Statistics, and Decision for Civil Engineers. McGraw-Hill.Dakaoulas , P., & Gazetas, G. (1985). A class of inhomogeneous shear models for seismic response of dams and embankments. Soil Dynamics and Earthquake Engineering, 4(4), 166-182.European Committee for Standardization. (2004). Eurocode 8: Design of Structures for Earthquake Resistance – Part 5: Foundations, Retaining Structures and Geotechnical Aspects. European Standard EN 1998-5. European Committee for Standardization.Federal Emergency Management Agency. (2005). Federal Guidelines for Dam Safety: Earthquake Analyses and Design of Dams. P-65. Federal Emergency Management Agency.Geological Survey of Canada. (2023). Sixth-generation seismic hazard model of Canada: grid values of mean hazard to be used with the 2020 National Building Code of Canada, Open File No. 8950. Geological Survey of Canada.Global Earthquake Model (GEM) Foundation. (2018). The GEM Global Seismic Hazard Map (Version 2018.1). Pravia, Italy. Retrieved from https://www.globalquakemodel.org/Goulet, C. A., Bozorgnia, Y., Abrahamson, N. A., Kuehn, N., Al Atik, L., Youngs, R. R., & Graves, L. W. (2017). NGA-East Ground-Motion Models for the U.S. Geological Survey National Seismic Hazard Maps, PEER Report No. 2017/03. Pacific Earthquake Engineering Research Center (PEER).Gutenberg, B., & Ritcher, C. F. (1944). Frequency of earthquakes in California. Bulletin of the Seismological Society of America, 34(4), 185-188.Hardin, B. O., & Black, W. L. (1968). Vibration Modulus of Normally Consolidated Clay. Journal of the Soil Mechanics and Foundations Division, 94(2), 353-369. Retrieved from https://doi.org/10.1061/JSFEAQ.0001100Hardin, B. O., & Drnevich, V. P. (1972). Shear Modulus and Damping in Soils: Measurement and Parameter Effects. Journal of the Soil Mechanics and Foundations Division, 98(6), 603-624. Retrieved from https://doi.org/10.1061/JSFEAQ.0001756Harmon, J. K., Edwards, B. D., & Wu, J. (2017). Site Response Analysis and Ground Motion Prediction in the Eastern United States. Seismological Research Letters, 88(4), 985-995.Hashash, Y. M., Ilhan, O., & Harmon, J. A. (2020). Nonlinear Site Amplification Model for Ergodic Seismic Hazard Analysis in Central and Eastern North America. Earthquake Spectra, 36(1), 69-86. Retrieved from https://doi.org/10.1177/8755293019878193International Commission on Large Dams. (2016). Selecting Seismic Parameters for Large Dams – Guidelines. Bulletin No. 148. International Commission on Large Dams.International Council on Mining & Metals (ICMM). (2020). Global Industry Standard on Tailings Management (GISTM). International Council on Mining & Metals.Ishihara, K. (1997). Soil Behaviour in Earthquake Geotechnics (Vol. 34).Jibson, R. W. (2007). Regression Models for Estimating Coseismic Landslide Displacement. Engineering Geology, 91(2-4), 209-218. Retrieved from https://doi.org/10.1016/j.enggeo.2007.01.013Kaklamanos, J., Baise, L. G., & Boore, D. M. (2010). Estimating Unknown Input Parameters when Implementing the NGA Ground-Motion Predition Equations in Engineering Practice. Earthquake Spectra, 27(4), 1219-35.Kolaj, M., Adams, J., & Halchuk, S. (2020). Seismic Hazard in Southeastern Canada: Uncertainty and Controls on Seismic Hazard in a Region of Low-To-Moderate Seismicity. 7th World Conference on Earthquake Engineering, 17WCEE. Sendai, Japan.Kolaj, M., Allen, T., Mayfied, R., Adams, J., & Halchuk, S. (2019). Ground-motion models for the 6th Generation Seismic Hazard Model of Canada. 12th Canadian Conference on Earthquake Engineering, June 17-20, 2019. Quebec.Kramer, S. (1996). Geotechnical Earthquake Engineering. New Jersey: Prentice Hall.Ma, S., Eaton, D. W., & Adams, J. (2008). Intraplate Seismicity of a Recently Deglaciated Shield Terrain: A Case from Northern Ontario, Canada. Bulletin of the Seismological Society of America, 98(6), 2828-2848.Macedo, J., Bray, J. D., Abrahamson, N. A., & Travasarou, T. (2018). Performance-Based Probabilistic Seismic Slope Displacement Procedure. Earthquake Spectra, 34(2), 673-695. Retrieved from https://doi.org/10.1193/122516EQS251MMakdisi, F. I., & Seed, H. B. (1978). Simplified Procedure for Estimating Dam and Embankment Earthquake-Induced Deformations. Journal of the Geotechnical Engineering Division, 104(GT7), 849-867. Retrieved from https://doi.org/10.1061/AJGEB6.0000668Mazzotti, S. (2005). Rates and uncertainties on seismic moment and deformationin eastern Canada. Journal of Geophysical Research, 1110.McGuire, R. K. (1993). Computations of Seismic Hazard. Annals of Geophysics, XXXVI(3-4).Natural Resources de Canada. (2013, 04 26). Retrieved from The 01 January 2000 Kipawa Earthquake (mn=5.2): https://web.archive.org/web/20181123032543/http://www.earthquakescanada.nrcan.gc.ca//pprs/pubs/esssa00_temis.phpNatural Resources of Canada. (2020). The 6th Generation Seismic Hazard Model of Canada: Technical Report. Open File 8630. Natural Resources Canada, 2020. Goverment of Canada.Natural Resources of Canada. (2021a, 04 06). Earthquake zones in Eastern Canada. Retrieved from https://www.earthquakescanada.nrcan.gc.ca/zones/eastcan-en.phpNatural Resources of Canada. (2021b, 04 06). Search the Earthquake Database. Retrieved from Earthquakes Canada: https://www.earthquakescanada.nrcan.gc.ca/stndon/NEDB-BNDS/bulletin-en.phpNatural Resources of Canada. (2021c). Retrieved from 2020 National Building Code of Canada Seismic Hazard Tool: https://www.earthquakescanada.nrcan.gc.ca/hazard-alea/interpolat/nbc2020-cnb2020-en.phpNatural Resources of Canada. (2021d, 04 06). The 1935 Magnitude 6.1 Timiskaming earthquake. Retrieved from https://www.seismescanada.rncan.gc.ca/historic-historique/events/19351101-en.phpNewmark, N. M. (1965). Effects of Earthquakes on Dams and Embankments. Géotechnique, 15(2), 139-160. Retrieved from https://doi.org/10.1680/geot.1965.15.2.139Ontario Ministry of Natural Resources. (2011). Technical Bulletin for Seismic Hazard Criteria, Assessment and Considerations . Pagani, M., Monelli, M., & Weatgerill, G. (2014). OpenQuake Engine: An Open Hazard (and Risk) Software for the Global Earthquake Model. Seismological Research Letters, 85(3), 692-702.Peltier, W. R. (2004). Global Glacial Isostasy and the Surface of the Ice-Age Earth: The ICE-5G (VM2) Model and Grace. Annual Review of Eartha and Planetary Sciences, 32, 111-149.Petersen, M. D., Shumway, A. M., Powers, P. M., Mueller, C. S., Moschetti, M. P., Frankel, A. D., . . . Yeng, Y. (2018). Preliminary 2018 Update of the U.S. United States Geological Survey.Saygili, G., & Rathje, E. M. (2008). Empirical Predictive Models for Earthquake-Induced Sliding Displacements of Slopes. Journal of Geotechnical and Geoenvironmental Engineering, 134(6), 790-803.Shibata, T., & Soelarno, D. S. (1975). Stress-Strain Characteristics of Sands Under Cyclic Loading. Proceedings of the Japan Society of Civil Engineers(239), 57-65. Retrieved from https://doi.org/10.2208/jscej1969.1975.57SRK Consulting (Canada), Inc. (2023). Crawford Q1-2024 Winter Geotechnical Exploration Program, Technical Memorandum, Draft, Project No. CAPR000801, December 8. SRK Consulting (Canada), Inc. (2024). Crawford Overburden Geotechnical Investigation, Factual Report 2024-Q1, Draft, Project No. CAPR003118. Stewart, J. P., Parker, G. A., Atkinson, G. M., Boore, D. M., Hashash, Y. M., & Silva, W. J. (2020). Ergodic Site Amplification Model for Central and Eastern North America. Earthquake Spectra, 36(1), 42-68. Retrieved from https://doi.org/10.1177/8755293019878185U.S. Army Corps of Engineers. (1995). Earthquake Design and Evaluation for Civil Works Projects. Engineer Regulation ER 1110-2-1806. U.S. Army Corps of Engineers. Retrieved from https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/ER_1110-2-1806.pdfU.S. Army Corps of Engineers. (2003). Slope Stability. Engineer Manual EM 1110-2-1902. U.S. Army Corps of Engineers. Retrieved from https://www.publications.usace.army.mil/Portals/76/Publications/EngineerManuals/EM_1110-2-1902.pdfU.S. Army Corps of Engineers. (2005). Stability of Concrete Structures. Engineer Manual EM 1110-2-2100. U.S. Army Corps of Engineers. Retrieved from https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-2-2100.pdfVerri Kozlowski, A. (2026). Probabilistic Estimation of Newmark Displacements and Seismic Coefficients Under Hazard Uncertainty. WSP. (2023). Crawford Project - Tailings Management Feasibility Design. Wu, P., & Hasegawa, H. S. (1996). Induced Stresses and Fault Potential In Eastern Canada Due to A Disc Load: A Preliminary Analysis. Geophysical Journal International.",
+    "result": true
+  },
+  {
+    "body": 827,
+    "instruction": " STYLEREF 8 \\s ",
+    "display": "A",
+    "result": true
+  },
+  {
+    "body": 827,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 836,
+    "instruction": " STYLEREF 8 \\s ",
+    "display": "B",
+    "result": true
+  },
+  {
+    "body": 836,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 838,
+    "instruction": " STYLEREF 8 \\s ",
+    "display": "B",
+    "result": true
+  },
+  {
+    "body": 838,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 841,
+    "instruction": " STYLEREF 8 \\s ",
+    "display": "B",
+    "result": true
+  },
+  {
+    "body": 841,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 848,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 848,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 850,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 850,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 852,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 852,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 854,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 854,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 856,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 856,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 858,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 858,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 860,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 860,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 862,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 862,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 864,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 864,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 866,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 866,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "10",
+    "result": true
+  },
+  {
+    "body": 868,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 868,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "11",
+    "result": true
+  },
+  {
+    "body": 870,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 870,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "12",
+    "result": true
+  },
+  {
+    "body": 872,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 872,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "13",
+    "result": true
+  },
+  {
+    "body": 874,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 874,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "14",
+    "result": true
+  },
+  {
+    "body": 876,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 876,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "15",
+    "result": true
+  },
+  {
+    "body": 878,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 878,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "16",
+    "result": true
+  },
+  {
+    "body": 880,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 880,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "17",
+    "result": true
+  },
+  {
+    "body": 882,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 882,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "18",
+    "result": true
+  },
+  {
+    "body": 884,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 884,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "19",
+    "result": true
+  },
+  {
+    "body": 886,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 886,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "20",
+    "result": true
+  },
+  {
+    "body": 888,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 888,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "21",
+    "result": true
+  },
+  {
+    "body": 890,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 890,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "22",
+    "result": true
+  },
+  {
+    "body": 892,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 892,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "23",
+    "result": true
+  },
+  {
+    "body": 894,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 894,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "24",
+    "result": true
+  },
+  {
+    "body": 896,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C1",
+    "result": true
+  },
+  {
+    "body": 896,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "25",
+    "result": true
+  },
+  {
+    "body": 902,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 902,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 904,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 904,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 906,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 906,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 908,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 908,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 910,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 910,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 912,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 912,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "6",
+    "result": true
+  },
+  {
+    "body": 914,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 914,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "7",
+    "result": true
+  },
+  {
+    "body": 916,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 916,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "8",
+    "result": true
+  },
+  {
+    "body": 918,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 918,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "9",
+    "result": true
+  },
+  {
+    "body": 920,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 920,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "10",
+    "result": true
+  },
+  {
+    "body": 922,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 922,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "11",
+    "result": true
+  },
+  {
+    "body": 924,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 924,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "12",
+    "result": true
+  },
+  {
+    "body": 926,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 926,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "13",
+    "result": true
+  },
+  {
+    "body": 928,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 928,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "14",
+    "result": true
+  },
+  {
+    "body": 930,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 930,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "15",
+    "result": true
+  },
+  {
+    "body": 932,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 932,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "16",
+    "result": true
+  },
+  {
+    "body": 934,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 934,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "17",
+    "result": true
+  },
+  {
+    "body": 936,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 936,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "18",
+    "result": true
+  },
+  {
+    "body": 938,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 938,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "19",
+    "result": true
+  },
+  {
+    "body": 940,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 940,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "20",
+    "result": true
+  },
+  {
+    "body": 942,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 942,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "21",
+    "result": true
+  },
+  {
+    "body": 944,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 944,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "22",
+    "result": true
+  },
+  {
+    "body": 946,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 946,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "23",
+    "result": true
+  },
+  {
+    "body": 948,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 948,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "24",
+    "result": true
+  },
+  {
+    "body": 950,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "C2",
+    "result": true
+  },
+  {
+    "body": 950,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "25",
+    "result": true
+  },
+  {
+    "body": 956,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D1",
+    "result": true
+  },
+  {
+    "body": 956,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 959,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D1",
+    "result": true
+  },
+  {
+    "body": 959,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 962,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D1",
+    "result": true
+  },
+  {
+    "body": 962,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 965,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D1",
+    "result": true
+  },
+  {
+    "body": 965,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 969,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D1",
+    "result": true
+  },
+  {
+    "body": 969,
+    "instruction": "SEQ Table \\* ARABIC \\s 9",
+    "display": "5",
+    "result": true
+  },
+  {
+    "body": 979,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D2",
+    "result": true
+  },
+  {
+    "body": 979,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "1",
+    "result": true
+  },
+  {
+    "body": 981,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D2",
+    "result": true
+  },
+  {
+    "body": 981,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "2",
+    "result": true
+  },
+  {
+    "body": 983,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D2",
+    "result": true
+  },
+  {
+    "body": 983,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "3",
+    "result": true
+  },
+  {
+    "body": 985,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D2",
+    "result": true
+  },
+  {
+    "body": 985,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "4",
+    "result": true
+  },
+  {
+    "body": 987,
+    "instruction": "STYLEREF 9 \\s",
+    "display": "D2",
+    "result": true
+  },
+  {
+    "body": 987,
+    "instruction": "SEQ Figure \\* ARABIC \\s 9",
+    "display": "5",
+    "result": true
+  }
+]

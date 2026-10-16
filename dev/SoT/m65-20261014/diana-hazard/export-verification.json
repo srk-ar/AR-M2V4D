@@ -1,0 +1,23 @@
+[
+  {
+    "vs30": 220,
+    "calcId": 90,
+    "members": 256,
+    "crc": "ok",
+    "coverage": "same as accepted760"
+  },
+  {
+    "vs30": 580,
+    "calcId": 91,
+    "members": 256,
+    "crc": "ok",
+    "coverage": "same as accepted760"
+  },
+  {
+    "vs30": 910,
+    "calcId": 92,
+    "members": 256,
+    "crc": "ok",
+    "coverage": "same as accepted760"
+  }
+]

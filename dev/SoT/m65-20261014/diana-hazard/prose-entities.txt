@@ -1,0 +1,22 @@
+check_entities: candidate dev/SoT/m65-20261014/diana-hazard/prose-candidate.md; sources 4 file(s)
+UNSUPPORTED acronyms (5)
+  P84: "## Engine 3.26.2 ## PGA 10000 mean 0.312 ## PGA 10000 P84 0.442 ## PGA 2500 mean 0.159 ## PGA 2500 P84 0.229 ## Site amplification The design demands combine th"
+  AEP: "## AEP method The AEP curves present the direct logic-tree calculation."
+  UHS: "The tabulated design values and UHS combine this evaluation with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the"
+  NRC: "## NRC comparison The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared."
+  PSHA: "## NRC comparison The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared."
+UNSUPPORTED names (2)
+  Controlling: "## Controlling scenarios The deaggregation plots show that the largest joint contributions to the seismic hazard for PGA occur at magnitude bin centers ranging "
+  Structural: "## NRC periods Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+UNSUPPORTED numbers (7)
+  2020: "## NRC comparison The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared."
+  0.10: "## NRC periods Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+  0.20: "## NRC periods Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+  0.30: "## NRC periods Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+  0.50: "## NRC periods Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+  2.00: "## NRC periods Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+  5.00: "## NRC periods Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+REGISTER flags (2)
+  each: "## Engine 3.26.2 ## PGA 10000 mean 0.312 ## PGA 10000 P84 0.442 ## PGA 2500 mean 0.159 ## PGA 2500 P84 0.229 ## Site amplification The design demands combine th"
+  largest: "## Controlling scenarios The deaggregation plots show that the largest joint contributions to the seismic hazard for PGA occur at magnitude bin centers ranging "
+SUMMARY unsupported=14 register=2

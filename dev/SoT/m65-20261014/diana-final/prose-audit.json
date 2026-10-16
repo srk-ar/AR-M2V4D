@@ -1,0 +1,1814 @@
+{
+  "candidate_sha256": "3a1fdf4dfde2c83fc6dd198d5311a5fec0815aabe5f485d5c8382619b8deba81",
+  "reviewer": "Codex root, clause-by-clause review against named rendered sources",
+  "records": {
+    "contract": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/contract.md",
+      "sha256": "904e8e0a091eb2d58980edd0703fce583428d2088857f3f3008959a14ede79af"
+    },
+    "provenance": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/provenance.md",
+      "sha256": "29a69994429f205266eef5d02d5d6c5bd9bebe7dd3705bf858ebd11af7e68246"
+    },
+    "entities": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/entities-resolved.txt",
+      "sha256": "fa0cd69f5686e4dc9828a00e11cdfbb5699b942240cd766adbfae85e8e7b8e77"
+    },
+    "formal": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/formal.md",
+      "sha256": "511a5091fae4ce9b4a4458127b12c8f91a7c62bef97b6cdce53659ca0f4fb4c3"
+    }
+  },
+  "baseline": {
+    "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/prose-baseline.md",
+    "sha256": "ddc115b683e86e97f8b4b0d0362ced587ab3df7136a67b30cb134f72705fa88a"
+  },
+  "units": [
+    {
+      "text": "The Newmark permanent displacement $D_{n}$ quantifies the displacement induced by an earthquake and accumulated in the sliding mass and is the performance measure from which the seismic coefficients are derived. The $D_{n}(k_{y})$ curves relate, for each combination of geometry, material, and design scenario, the yield acceleration $k_{y}$ to the expected permanent displacement; they were computed with the ensemble set of AM88, JB07, SR08, BT07, and BM19, with the reference magnitude assigned to each seismic demand and 300 realizations per demand and are read at the fractiles $q = 1 - p_{e}$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 1, all sentence rows: /private/tmp/diana-audit-root.25nVLM/report/document.md:81; /private/tmp/diana-audit-root.25nVLM/memo/document.md:400-446"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The first sentence defines Dn as the performance measure; the second links ky to displacement and identifies the five formulations, demand-specific magnitude, 300 realizations and q=1-pe. Removing either loses the meaning or the computational basis of the slope results."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Executive overview of the actual five-model PSHA computation; no MCE result or cross-material range is imported."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Direct methodological description copied from the rendered executive block; each restricts the statement to geometry-material-demand combinations."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Replaces the obsolete singular empirical method. Dn, ky, all five codes, the realization count and the fractile relation match the full report."
+        }
+      }
+    },
+    {
+      "text": "The Newmark permanent displacement $D_{n}$ quantifies the displacement induced by an earthquake accumulates in the sliding mass and is the performance measure from which the seismic coefficients are derived. The $D_{n}(k_{y})$ curves relate, for each combination of geometry, material, and design scenario, the yield acceleration $k_{y}$ to the expected permanent displacement; they were computed with an ensemble set of AM88 (Ambraseys & Menu, 1988), JB07 (Jibson, 2007), SR08 (Saygili & Rathje, 2008), BT07 (Bray & Travasarou, 2007), and BM19 (Bray & Macedo, 2019), with reference magnitudes $M_{w}$ = 5.5 and $M_{w}$ = 6.5 assigned according to the seismic demand and 300 realizations per demand and are read at the fractiles $q = 1 - p_{e}$. The horizontal pseudostatic coefficient $k_{h}$ is in turn derived from the allowable permanent displacement $D_{a}$ of the potentially sliding mass (Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009; Macedo, Bray, Abrahamson, & Travasarou, 2018); the coefficients are reported at four relative displacement limits, $D_{a}/H_{s}$ = 0.1, 0.4, 1.0, 2.5%, and the tables in Section **10.3** and **Appendix E** report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 2, all sentence rows: /private/tmp/diana-audit-root.25nVLM/r02/document.md:1382; /private/tmp/diana-audit-root.25nVLM/memo/document.md:400-446,896,930"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Sentence one defines displacement; sentence two identifies the ensemble, magnitudes and realizations; sentence three defines kh, the four thresholds and where the results are tabulated. The corrected BM19 citation connects that model to its actual source."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Chapter 10 retains Diana wording and selected geometries; the correction is citation identity, not a new method or editorial rewrite."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Original prose and parenthetical Word citations retained as requested; no new evaluation of model adequacy is added."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Only the BM19 author/year is corrected here, to Bray and Macedo 2019. The surrounding quantities, units, thresholds and citations remain unchanged."
+        }
+      }
+    },
+    {
+      "text": "where $\\mu_{\\ln D}$ and $\\sigma_{\\ln D}$ are the mean and standard deviation of $\\ln D_{n}$ defined by each model, and $\\epsilon$ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch, conditional on displacement exceeding the model’s zero-or-negligible-displacement threshold. In every formulation, $k_{y}$, PGA, and $S_{a}$ are expressed in units of $g$ – the acceleration of gravity – $I_{A}$ in m/s, and $T_{s}$ in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude is $M_{w} =$ 5.5 for return periods up to 2,500 years and $M_{w} =$ 6.5 for return periods of 5,000 and 10,000 years. Within each demand, that magnitude is common to the geometry, material and site combinations evaluated. The published form of each formulation is reproduced in **Appendix E**. The performance-based seismic coefficient is defined by",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 3, all sentence rows: /private/tmp/diana-audit-root.25nVLM/r02/document.md:1467; /private/tmp/diana-audit-root.25nVLM/memo/document.md:400-428"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The clauses define lognormal parameters and conditioning, units, Arias-intensity derivation, magnitude allocation, shared magnitude within demand and the Appendix E formula location. Each prevents a different misreading of the ensuing criterion."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The owner selected PSHA: 5.5 through 2500 years and 6.5 for 5000/10000 remain, while the MCE mention is removed."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Every formulation is bounded to the declared active set, not all published models. The positive-branch wording is preserved from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Only the excluded MCE demand is removed; logarithmic conditioning, g/m/s/s units and magnitude allocation remain intact."
+        }
+      }
+    },
+    {
+      "text": "# Appendix E Seismic Coefficients",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 4, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:990"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The heading locates the restored coefficient appendix referenced from chapter 10."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Existing appendix scope."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Document title, no scientific claim."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Restores visibility without changing the chapter identity."
+        }
+      }
+    },
+    {
+      "text": ": Table E-1: Shear Stiffness Parameters for Gravels, Sands, and Fines",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 5, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:992; /private/tmp/diana-audit-root.25nVLM/memo/document.md:101-147"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The caption identifies the shear-stiffness parameter table and its gravel, sand and fines families."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Same material families as the transferred table."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Short object label; E-1 is local numbering."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Retains the caption meaning while repairing its missing hyphen; numeric table content is separately checked."
+        }
+      }
+    },
+    {
+      "text": "## E1 Newmark Permanent-Displacement Formulations",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 6, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:832; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:996"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The subsection heading distinguishes model equations from coefficient result tables."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Newmark formulations only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical heading, no new entity."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Restores E1 with explicit numbering, avoiding the broken inherited heading field."
+        }
+      }
+    },
+    {
+      "text": "The seismic-coefficient section applies five Newmark permanent-displacement formulations: three rigid-block models, two flexible-block models and, among the latter, the BM branch selected by the tectonic control of the project. This section reproduces the published form of each formulation, including both BM branches, and states the rule that defines the active configuration. The rigid-block formulations relate the displacement to measures of the base excitation, whereas the flexible-block formulations additionally incorporate the dynamic response of the sliding mass through its fundamental period $\\mathbf{T}_{\\mathbf{s}}$ and the spectral acceleration evaluated at a period proportional to $\\mathbf{T}_{\\mathbf{s}}$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 7, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:834; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:997"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Sentence one distinguishes three rigid and two flexible active models; sentence two explains why both BM equations are displayed; sentence three identifies the extra Ts/spectral predictor in flexible models. All three are needed to read the formula list without treating both BM branches as active."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Five active formulations, with one BM branch selected by tectonic context."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Reproduces describes the equations physically supplied in the appendix, not the agent work process; retained from Diana and the memo."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves counts, model families and spectral-period relationship."
+        }
+      }
+    },
+    {
+      "text": "Rigid-Block Models",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 8, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:836; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:998"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The heading groups AM88, JB07 and SR08 under the rigid-block idealization."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Rigid family only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Classification label."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Same grouping as the source."
+        }
+      }
+    },
+    {
+      "text": "The AM88 formulation (Ambraseys & Menu, 1988) uses the ratio of yield acceleration to PGA, capped to preserve the logarithmic domain, $\\mathbf{r}^{\\mathbf{\\star}}\\mathbf{= min(}\\mathbf{k}_{\\mathbf{y}}\\mathbf{/PGA,}\\mathbf{0.9999}\\mathbf{)}$:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 9, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:838; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:999"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The sentence identifies AM88 and the capped yield/PGA ratio that keeps the logarithm in its domain."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "AM88 domain limit only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Factual model description with existing parenthetical citation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Retains r-star and 0.9999; removes a duplicate citation and dangling footnote, whose substantive AM88 limit remains below."
+        }
+      }
+    },
+    {
+      "text": "$\\begin{array}{r}\n\\mu_{\\ln D} = \\ln(10)\\left\\lbrack 0.90 + \\log_{10}\\left( (1 - r^{\\star})^{2.53}(r^{\\star})^{- 1.09} \\right) \\right\\rbrack, \\\\\n\\sigma_{\\ln D} = 0.30\\ln(10).\n\\end{array}$ (E1-1)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 10, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:840-843"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The displayed equation \\end{array}$ (E1-1) supplies the mean/dispersion or AM88 inversion used by its preceding paragraph; each coefficient, exponent, branch boundary and sign is retained."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Equation from the rendered memo; no scientific recomputation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Native Word mathematical notation, no prose evaluation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Seven OMML formulas match the memo token strings exactly after removal of literal alignment ampersands; local E1 numbering replaces memo numbering."
+        }
+      }
+    },
+    {
+      "text": "The two remaining rigid-block formulations, JB07 and SR08, use the Arias intensity, which is estimated for each realization from the PGA; $\\mathbf{I}_{\\mathbf{A}}$ is expressed in m/s and PGA in units of $\\mathbf{g}$, and the estimate is applied deterministically, so that each PGA realization determines a single value of $\\mathbf{I}_{\\mathbf{A}}$ and the displacement sample propagates the PGA variability. The JB07 formulation (Jibson, 2007) incorporates the Arias intensity and the ratio $\\mathbf{k}_{\\mathbf{y}}\\mathbf{/PGA}$:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 11, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:845; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1001"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The first sentence defines Arias intensity units, deterministic mapping from each PGA realization and propagated variability; the second identifies the JB07 predictors. Removing the first would imply an independent random IA draw."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "JB07 and SR08 input construction, then JB07 equation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Single is the sourced one-to-one PGA-to-IA relation, not an unsupported uniqueness claim."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves IA m/s, PGA g and ky/PGA; duplicated citation removed without losing its source."
+        }
+      }
+    },
+    {
+      "text": "$\\begin{array}{r}\n\\mu_{\\ln D} = \\ln(10)\\left\\lbrack 0.561\\log_{10}I_{A} - 3.833\\log_{10}\\left( \\frac{k_{y}}{PGA} \\right) - 1.474 \\right\\rbrack, \\\\\n\\sigma_{\\ln D} = 0.616\\ln(10).\n\\end{array}$ (E1-2)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 12, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:847-850"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The displayed equation \\end{array}$ (E1-2) supplies the mean/dispersion or AM88 inversion used by its preceding paragraph; each coefficient, exponent, branch boundary and sign is retained."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Equation from the rendered memo; no scientific recomputation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Native Word mathematical notation, no prose evaluation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Seven OMML formulas match the memo token strings exactly after removal of literal alignment ampersands; local E1 numbering replaces memo numbering."
+        }
+      }
+    },
+    {
+      "text": "The SR08 formulation (Saygili & Rathje, 2008) defines $\\mathbf{r}\\mathbf{=}\\mathbf{k}_{\\mathbf{y}}\\mathbf{/PGA}$ and combines PGA and Arias intensity:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 13, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:852; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1003"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The sentence defines SR08 ratio r and its PGA/IA predictors before the equation."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "SR08 only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Method statement, no ranking of models."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Retains r=ky/PGA and both intensity measures."
+        }
+      }
+    },
+    {
+      "text": "$\\begin{array}{r}\n\\mu_{\\ln D} = 2.39 - 5.24r - 18.78r^{2} + 42.01r^{3} - 29.15r^{4} \\\\\n - 1.56\\ln PGA + 1.38\\ln I_{A}, \\\\\n\\sigma_{\\ln D} = 0.46 + 0.56r.\n\\end{array}$ (E1-3)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 14, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:854-858"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The displayed equation \\end{array}$ (E1-3) supplies the mean/dispersion or AM88 inversion used by its preceding paragraph; each coefficient, exponent, branch boundary and sign is retained."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Equation from the rendered memo; no scientific recomputation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Native Word mathematical notation, no prose evaluation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Seven OMML formulas match the memo token strings exactly after removal of literal alignment ampersands; local E1 numbering replaces memo numbering."
+        }
+      }
+    },
+    {
+      "text": "The logarithmic extension of the $\\mathbf{D}_{\\mathbf{n}}\\mathbf{(}\\mathbf{k}_{\\mathbf{y}}\\mathbf{)}$ relations beyond their computed support has one exception, the AM88 limit. If the sampled PGA of a realization, $\\mathbf{PGA}_{\\mathbf{s}}$, is smaller than the lower end of the grid, all stored points may satisfy $\\mathbf{k}_{\\mathbf{y}}\\mathbf{/}\\mathbf{PGA}_{\\mathbf{s}}\\mathbf{\\geq}\\mathbf{r}_{\\mathbf{\\max}}\\mathbf{=}\\mathbf{0.9999}$ and form a plateau $\\mathbf{D}_{\\mathbf{0}\\mathbf{,}\\mathbf{s}}$. In that case the physical branch $\\mathbf{0}\\mathbf{<}\\mathbf{r}\\mathbf{<}\\mathbf{r}_{\\mathbf{\\max}}$ of Eq. E1-1 is solved for $\\mathbf{D}_{\\mathbf{a}}\\mathbf{>}\\mathbf{D}_{\\mathbf{0}\\mathbf{,}\\mathbf{s}}$, instead of extrapolating the plateau or assigning $\\mathbf{k}_{\\mathbf{\\max}}\\mathbf{=}\\mathbf{0}$:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 15, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:860; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1005"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The three sentences identify the AM88 exception, the all-grid capped plateau condition, and the physical-branch solve for Da above that plateau. The inequality and target condition are necessary limits."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Only AM88 full plateaus under the stated sampled-PGA condition."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "All is qualified by may satisfy and the explicit grid inequality; the negative contrast rules out two technically incorrect inversions."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves rmax, D0s, sampled PGA and Da>D0s; local reference E1-1 replaces the source equation number."
+        }
+      }
+    },
+    {
+      "text": "$\\mu_{\\ln D}(r) = \\ln D_{a} - \\ln D_{0,s} + \\mu_{\\ln D}(r_{\\max}),\\quad\\quad k_{\\max,s} = {PGA}_{s}r.$ (E1-4)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 16, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:862-862"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The displayed equation $\\mu_{\\ln D}(r) = \\ln D_{a} - \\ln D_{0,s} + \\mu_{\\ln D}(r_{\\max}),\\quad\\quad k_{\\max,s} = {PGA}_{s}r.$ (E1-4) supplies the mean/dispersion or AM88 inversion used by its preceding paragraph; each coefficient, exponent, branch boundary and sign is retained."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Equation from the rendered memo; no scientific recomputation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Native Word mathematical notation, no prose evaluation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Seven OMML formulas match the memo token strings exactly after removal of literal alignment ampersands; local E1 numbering replaces memo numbering."
+        }
+      }
+    },
+    {
+      "text": "The random residual cancels between $\\mathbf{D}_{\\mathbf{a}}$ and $\\mathbf{D}_{\\mathbf{0}\\mathbf{,}\\mathbf{s}}$, and $\\mathbf{d}\\mathbf{\\mu}_{\\mathbf{\\ln}\\mathbf{D}}\\mathbf{/d}\\mathbf{r}\\mathbf{= -}\\mathbf{2.53}\\mathbf{/(}\\mathbf{1}\\mathbf{-}\\mathbf{r}\\mathbf{) -}\\mathbf{1.09}\\mathbf{/}\\mathbf{r}\\mathbf{<}\\mathbf{0}$, so the root is unique. An AM88 plateau is accepted only when the original curve is exactly constant and $\\mathbf{PGA}_{\\mathbf{s}}$ itself shows that the entire grid reached that limit; a flat curve from another model, or a target $\\mathbf{D}_{\\mathbf{a}}\\mathbf{\\leq}\\mathbf{D}_{\\mathbf{0}\\mathbf{,}\\mathbf{s}}$, is rejected as non-identifiable support.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 17, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:864; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1007"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The derivative and residual cancellation establish unique root recovery; the second sentence states acceptance and rejection conditions that bound the recovery."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "No general recovery for another model or a target below the plateau."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Unique and only are justified by the displayed strictly negative derivative and the explicit eligibility condition."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves both rejection branches, exact-flatness condition and sampled-PGA evidence."
+        }
+      }
+    },
+    {
+      "text": "Flexible-Block Models",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 18, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:866; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1008"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The heading groups the dynamic-response formulations apart from rigid models."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Flexible-block family."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Classification label."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Retains the source model split."
+        }
+      }
+    },
+    {
+      "text": "The flexible-block formulations evaluate the spectral acceleration at a period proportional to the fundamental period $\\mathbf{T}_{\\mathbf{s}}$ of the sliding mass. The BT07 formulation (Bray & Travasarou, Simplified Procedure for Estimating Earthquake-Induced Deviatoric Slope Displacements, 2007) employs $\\mathbf{S}_{\\mathbf{a}}\\mathbf{=}\\mathbf{S}_{\\mathbf{a}}\\mathbf{(}\\mathbf{1.5}\\mathbf{T}_{\\mathbf{s}}\\mathbf{)}$ and $\\mathbf{M}_{\\mathbf{w}}$:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 19, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:868; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1009"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The first sentence describes the period-scaled spectral predictor; the second assigns 1.5Ts and Mw to BT07."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "BT07 plus its flexible-family context."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "No claim of comparative performance; existing citation style retained."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves the 1.5 factor, Ts and Mw and the 2007 source; duplicate citation removed."
+        }
+      }
+    },
+    {
+      "text": "$\\begin{array}{r}\n\\mu_{\\ln D} = a_{0} - 2.83\\ln k_{y} - 0.333(\\ln k_{y})^{2} + 0.566\\ln k_{y}\\ln S_{a} \\\\\n + 3.04\\ln S_{a} - 0.244(\\ln S_{a})^{2} + 1.50T_{s} + 0.278(M_{w} - 7), \\\\\na_{0} = \\left\\{ \\begin{matrix}\n - 0.22, & T_{s} < 0.05\\ s, \\\\\n - 1.10, & T_{s} \\geq 0.05\\ s,\n\\end{matrix} \\right.\\  \\\\\n\\sigma_{\\ln D} = 0.66.\n\\end{array}$ (E1-5)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 20, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:870-878"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The displayed equation \\end{array}$ (E1-5) supplies the mean/dispersion or AM88 inversion used by its preceding paragraph; each coefficient, exponent, branch boundary and sign is retained."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Equation from the rendered memo; no scientific recomputation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Native Word mathematical notation, no prose evaluation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Seven OMML formulas match the memo token strings exactly after removal of literal alignment ampersands; local E1 numbering replaces memo numbering."
+        }
+      }
+    },
+    {
+      "text": "The BM17 formulation (Bray, Macedo, & Travasauro, Simplified procedure for estimating seismic slope displacements for subduction and crustal earthquakes, 2018) represents subduction-interface motions with $\\mathbf{S}_{\\mathbf{a}}\\mathbf{=}\\mathbf{S}_{\\mathbf{a}}\\mathbf{(}\\mathbf{1.5}\\mathbf{T}_{\\mathbf{s}}\\mathbf{)}$:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 21, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:880; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1011"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The sentence identifies BM17 as the subduction-interface branch and assigns Sa(1.5Ts)."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Displayed for the branch rule; it is not activated for this crustal project."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Existing parenthetical bibliographic wording preserved."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves BM17, 2018 source and the 1.5Ts spectral ordinate."
+        }
+      }
+    },
+    {
+      "text": "$\\begin{array}{r}\n\\mu_{\\ln D} = a_{0} + a_{1}\\ln S_{a} - 0.225(\\ln S_{a})^{2}, \\\\\na_{1} = 3.060 + 0.538\\ln k_{y}, \\\\\na_{0, <} = - 5.864 + 0.550M_{w} - 9.421T_{s} \\\\\n - 3.353\\ln k_{y} - 0.390(\\ln k_{y})^{2}, \\\\\na_{0, \\geq} = - 6.896 + 0.550M_{w} + 3.081T_{s} - 0.803T_{s}^{2} \\\\\n - 3.353\\ln k_{y} - 0.390(\\ln k_{y})^{2}, \\\\\na_{0} = \\left\\{ \\begin{matrix}\na_{0, <}, & T_{s} < 0.1\\ s, \\\\\na_{0, \\geq}, & T_{s} \\geq 0.1\\ s,\n\\end{matrix} \\right.\\  \\\\\n\\sigma_{\\ln D} = 0.73.\n\\end{array}$ (E1-6)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 22, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:882-894"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The displayed equation \\end{array}$ (E1-6) supplies the mean/dispersion or AM88 inversion used by its preceding paragraph; each coefficient, exponent, branch boundary and sign is retained."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Equation from the rendered memo; no scientific recomputation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Native Word mathematical notation, no prose evaluation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Seven OMML formulas match the memo token strings exactly after removal of literal alignment ampersands; local E1 numbering replaces memo numbering."
+        }
+      }
+    },
+    {
+      "text": "The BM19 formulation (Bray & Macedo, Procedure for Estimating Shear-Induced Seismic Slope Displacement for Shallow Crustal Earthquakes, 2019) represents ordinary shallow crustal motions with $\\mathbf{S}_{\\mathbf{a}}\\mathbf{=}\\mathbf{S}_{\\mathbf{a}}\\mathbf{(}\\mathbf{1.3}\\mathbf{T}_{\\mathbf{s}}\\mathbf{)}$:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 23, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:896; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1013"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The sentence identifies BM19 as the shallow-crustal branch and assigns Sa(1.3Ts)."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The active crustal BM branch, without claiming both branches run together."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Existing citation and factual tectonic scope."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves the 2019 identity and 1.3Ts predictor."
+        }
+      }
+    },
+    {
+      "text": "$\\begin{array}{r}\n\\mu_{\\ln D} = a_{0} + \\left( 2.649 + 0.344\\ln k_{y} \\right)\\ln S_{a} - 0.090(\\ln S_{a})^{2}, \\\\\na_{0, <} = - 4.684 + 0.603M_{w} - 9.471T_{s} \\\\\n - 2.482\\ln k_{y} - 0.244(\\ln k_{y})^{2}, \\\\\na_{0, \\geq} = - 5.981 + 0.603M_{w} + 3.223T_{s} - 0.945T_{s}^{2} \\\\\n - 2.482\\ln k_{y} - 0.244(\\ln k_{y})^{2}, \\\\\na_{0} = \\left\\{ \\begin{matrix}\na_{0, <}, & T_{s} < 0.1\\ s, \\\\\na_{0, \\geq}, & T_{s} \\geq 0.1\\ s,\n\\end{matrix} \\right.\\  \\\\\n\\sigma_{\\ln D} = 0.72.\n\\end{array}$ (E1-7)",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 24, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:898-910"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The displayed equation \\end{array}$ (E1-7) supplies the mean/dispersion or AM88 inversion used by its preceding paragraph; each coefficient, exponent, branch boundary and sign is retained."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Equation from the rendered memo; no scientific recomputation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Native Word mathematical notation, no prose evaluation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Seven OMML formulas match the memo token strings exactly after removal of literal alignment ampersands; local E1 numbering replaces memo numbering."
+        }
+      }
+    },
+    {
+      "text": "Ensemble",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 25, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:912; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1015"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The heading introduces the model-combination rule after individual equations."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Ensemble definition."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical label."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Same source classification."
+        }
+      }
+    },
+    {
+      "text": "The active configuration applies five formulations: AM88, JB07, SR08, BT07, and one BM branch – BM17 when the project declares subduction control, BM19 when it declares crustal control; each evaluation therefore applies five formulations, never both BM branches at once. The predictors and dispersions are applied in the published form of each model, and the five formulations are combined with the equal weights and the rigid and flexible families defined in Section 10.1.3.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 26, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:914; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1016"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The first sentence identifies five active models and the mutually exclusive BM branches; the second retains published predictors/dispersion and equal weighting with the chapter cross-reference."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Model-set selection, not deterministic hazard scope."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Never both is the explicit mutually exclusive branch rule, necessary to avoid a six-model interpretation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves five-model weights and both family definitions; section 10.1.3 is the local counterpart of memo 1.3."
+        }
+      }
+    },
+    {
+      "text": "## E2 Seismic Coefficient in Acceleration Units",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 27, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1017; /private/tmp/diana-audit-root.25nVLM/memo/document.md:448"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The heading distinguishes kmax in acceleration units from kh percentage tables."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Absolute coefficient section."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Descriptive heading."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Unit distinction retained."
+        }
+      }
+    },
+    {
+      "text": "Figure E2-1 to Figure E2-3 show the horizontal seismic coefficient in units of g, as a function of the allowable permanent displacement relative to the slope height, for design earthquakes with AEPs of 1:500, 1:2,500, and 1:10,000 years. Table E2-1 to Table E2-5 list the coefficient in cm/s² for each scenario at the four relative displacement limits. The tables include the rigid, ensemble, and flexible sets.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 28, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1018; /private/tmp/diana-audit-root.25nVLM/memo/document.md:450-632"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Sentence one identifies the three g-valued curves and their return periods; sentence two identifies cm/s2 tables and four limits; sentence three identifies the model sets."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Only probabilistic rows and plots at 500/2500/10000."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The object references let the reader distinguish the plotted unit from the tabular unit."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Legacy 475/2475 labels in the restored appendix are replaced from the memo 500/2500 labels, without interpolation; all five scenarios and three sets remain."
+        }
+      }
+    },
+    {
+      "text": "Figure E2-1: Mean values of $\\mathbf{k}_{\\mathbf{\\max}}$ [$\\mathbf{g}$] for return period $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500}$ yr, as a function of the allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 29, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:450-455; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1020"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Figure E2-1 identifies kmax in g, the corresponding return period, relative displacement and the five named scenarios and three sets. Both caption sentences are required to decode the plot."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Same scenario and demand cut as the exact imported PNG."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Object caption with source vocabulary; no inference about governing scenarios."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves mean statistic, g unit, Da/H percentage and scenario identities; updates return-period label from the model."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 30, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}\\mathbf{=}\\mathbf{0.1}\\mathbf{,}\\mathbf{0.4}\\mathbf{,}\\mathbf{1.0}\\mathbf{,}\\mathbf{2.5}$ %.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 31, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:975"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to figure E2-1: the first sentence maps color/line style to scenario/model family; the second defines all four shaded damage thresholds."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Legend applies to the adjacent coefficient figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "A decoding key rather than a claim of model accuracy."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Colors, solid/short/long dash meanings and 0.1/0.4/1.0/2.5 percent thresholds remain those of the source."
+        }
+      }
+    },
+    {
+      "text": "Figure E2-2: Mean values of $\\mathbf{k}_{\\mathbf{\\max}}$ [$\\mathbf{g}$] for return period $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 2,500}$ yr, as a function of the allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 32, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:456-461; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1024"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Figure E2-2 identifies kmax in g, the corresponding return period, relative displacement and the five named scenarios and three sets. Both caption sentences are required to decode the plot."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Same scenario and demand cut as the exact imported PNG."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Object caption with source vocabulary; no inference about governing scenarios."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves mean statistic, g unit, Da/H percentage and scenario identities; updates return-period label from the model."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 33, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}\\mathbf{=}\\mathbf{0.1}\\mathbf{,}\\mathbf{0.4}\\mathbf{,}\\mathbf{1.0}\\mathbf{,}\\mathbf{2.5}$ %.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 34, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:977"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to figure E2-2: the first sentence maps color/line style to scenario/model family; the second defines all four shaded damage thresholds."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Legend applies to the adjacent coefficient figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "A decoding key rather than a claim of model accuracy."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Colors, solid/short/long dash meanings and 0.1/0.4/1.0/2.5 percent thresholds remain those of the source."
+        }
+      }
+    },
+    {
+      "text": "Figure E2-3: Mean values of $\\mathbf{k}_{\\mathbf{\\max}}$ [$\\mathbf{g}$] for return period $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 10,000}$ yr, as a function of the allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 35, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:462-467; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1028"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Figure E2-3 identifies kmax in g, the corresponding return period, relative displacement and the five named scenarios and three sets. Both caption sentences are required to decode the plot."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Same scenario and demand cut as the exact imported PNG."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Object caption with source vocabulary; no inference about governing scenarios."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves mean statistic, g unit, Da/H percentage and scenario identities; updates return-period label from the model."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 36, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> Color identifies the scenario and line pattern identifies the set: solid for rigid, short dashes for ensemble, and long dashes for flexible. The shaded bands are delimited by the damage thresholds $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}\\mathbf{=}\\mathbf{0.1}\\mathbf{,}\\mathbf{0.4}\\mathbf{,}\\mathbf{1.0}\\mathbf{,}\\mathbf{2.5}$ %.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 37, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:979"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to figure E2-3: the first sentence maps color/line style to scenario/model family; the second defines all four shaded damage thresholds."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Legend applies to the adjacent coefficient figure."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "A decoding key rather than a claim of model accuracy."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Colors, solid/short/long dash meanings and 0.1/0.4/1.0/2.5 percent thresholds remain those of the source."
+        }
+      }
+    },
+    {
+      "text": ": Table E2-1: Mean values of $\\mathbf{k}_{\\mathbf{\\max}}$ [cm/s²] for scenario S135 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 38, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:496"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E2-1 caption identifies the S135 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 39, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%]. The fractiles associated with the exceedance target $\\mathbf{p}_{\\mathbf{e}}$ are defined in the seismic-coefficient section.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 40, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:983; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1034"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E2-1: sentence one defines ID/IDn; sentence two defines Ts and Vs30 with units; sentence three identifies arithmetic-mean columns and relative limits; sentence four distinguishes exceedance fractiles from mean values."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The scenario table retains all three model families; mean is not mislabeled P84."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions, without a performance conclusion."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves s, m/s, percent, mean statistic and the q/pe distinction of the source."
+        }
+      }
+    },
+    {
+      "text": ": Table E2-2: Mean values of $\\mathbf{k}_{\\mathbf{\\max}}$ [cm/s²] for scenario S50 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 41, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:530"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E2-2 caption identifies the S50 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 42, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%]. The fractiles associated with the exceedance target $\\mathbf{p}_{\\mathbf{e}}$ are defined in the seismic-coefficient section.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 43, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:985; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1038"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E2-2: sentence one defines ID/IDn; sentence two defines Ts and Vs30 with units; sentence three identifies arithmetic-mean columns and relative limits; sentence four distinguishes exceedance fractiles from mean values."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The scenario table retains all three model families; mean is not mislabeled P84."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions, without a performance conclusion."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves s, m/s, percent, mean statistic and the q/pe distinction of the source."
+        }
+      }
+    },
+    {
+      "text": ": Table E2-3: Mean values of $\\mathbf{k}_{\\mathbf{\\max}}$ [cm/s²] for scenario S32 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 44, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:564"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E2-3 caption identifies the S32 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 45, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%]. The fractiles associated with the exceedance target $\\mathbf{p}_{\\mathbf{e}}$ are defined in the seismic-coefficient section.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 46, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:987; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1042"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E2-3: sentence one defines ID/IDn; sentence two defines Ts and Vs30 with units; sentence three identifies arithmetic-mean columns and relative limits; sentence four distinguishes exceedance fractiles from mean values."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The scenario table retains all three model families; mean is not mislabeled P84."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions, without a performance conclusion."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves s, m/s, percent, mean statistic and the q/pe distinction of the source."
+        }
+      }
+    },
+    {
+      "text": ": Table E2-4: Mean values of $\\mathbf{k}_{\\mathbf{\\max}}$ [cm/s²] for scenario S27 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 47, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:598"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E2-4 caption identifies the S27 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 48, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%]. The fractiles associated with the exceedance target $\\mathbf{p}_{\\mathbf{e}}$ are defined in the seismic-coefficient section.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 49, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:989; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1046"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E2-4: sentence one defines ID/IDn; sentence two defines Ts and Vs30 with units; sentence three identifies arithmetic-mean columns and relative limits; sentence four distinguishes exceedance fractiles from mean values."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The scenario table retains all three model families; mean is not mislabeled P84."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions, without a performance conclusion."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves s, m/s, percent, mean statistic and the q/pe distinction of the source."
+        }
+      }
+    },
+    {
+      "text": ": Table E2-5: Mean values of $\\mathbf{k}_{\\mathbf{\\max}}$ [cm/s²] for scenario S35 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 50, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:632"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E2-5 caption identifies the S35 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 51, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the arithmetic mean at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%]. The fractiles associated with the exceedance target $\\mathbf{p}_{\\mathbf{e}}$ are defined in the seismic-coefficient section.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 52, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:991; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1050"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E2-5: sentence one defines ID/IDn; sentence two defines Ts and Vs30 with units; sentence three identifies arithmetic-mean columns and relative limits; sentence four distinguishes exceedance fractiles from mean values."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The scenario table retains all three model families; mean is not mislabeled P84."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions, without a performance conclusion."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves s, m/s, percent, mean statistic and the q/pe distinction of the source."
+        }
+      }
+    },
+    {
+      "text": "## E3 Seismic Coefficient as a Percentage of PGA",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 53, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1051; /private/tmp/diana-audit-root.25nVLM/memo/document.md:636"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The heading distinguishes percentage-of-PGA results from acceleration-unit results."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Normalized coefficient section."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Descriptive heading."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "PGA normalization remains explicit."
+        }
+      }
+    },
+    {
+      "text": "Table E3-1 to Table E3-5 list the horizontal seismic coefficient, expressed as a percentage of the PGA, for each scenario at the four relative displacement limits. The tables include the rigid, ensemble, and flexible sets. The coefficients of the ensemble set for the 1:2,500 and 1:10,000 year design earthquakes are also summarized in Table 10-2.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 54, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1052; /private/tmp/diana-audit-root.25nVLM/memo/document.md:636-828; /private/tmp/diana-audit-root.25nVLM/r02/document.md:1531-1563"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Sentence one identifies per-scenario kh tables and four limits; sentence two specifies all three sets; sentence three locates the ensemble subset in the main chapter."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Only the 2500/10000 ensemble subset is attributed to table 10-2."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "References are navigation for interpreting related tables, with no new scientific comparison."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Corrects the broken Table 102 reference to 10-2, retains the subset distinction and omits MCE."
+        }
+      }
+    },
+    {
+      "text": ": Table E3-1: Mean values of $\\mathbf{k}_{\\mathbf{h}}$ [% of PGA] for scenario S135 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 55, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:692"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E3-1 caption identifies the S135 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 56, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%], expressed as $\\mathbf{100}\\mathbf{}\\mathbf{k}_{\\mathbf{\\max}}\\mathbf{/PGA(}\\mathbf{V}_{\\mathbf{S30}}\\mathbf{)}$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 57, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:1001,428,993; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1056"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E3-1: sentence one defines demand/model labels; sentence two defines Ts/Vs30 units; sentence three defines the mean coefficient and its 100*kmax/PGA normalization."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Percent of the corresponding site-condition PGA, not raw acceleration or another Vs30."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions; no invented numerical result."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The stray comma after 100 is removed to match memo equation 14 and figure notes; all mathematical quantities and units remain unchanged."
+        }
+      }
+    },
+    {
+      "text": ": Table E3-2: Mean values of $\\mathbf{k}_{\\mathbf{h}}$ [% of PGA] for scenario S50 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 58, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:726"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E3-2 caption identifies the S50 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 59, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%], expressed as $\\mathbf{100}\\mathbf{}\\mathbf{k}_{\\mathbf{\\max}}\\mathbf{/PGA(}\\mathbf{V}_{\\mathbf{S30}}\\mathbf{)}$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 60, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:1003,428,993; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1060"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E3-2: sentence one defines demand/model labels; sentence two defines Ts/Vs30 units; sentence three defines the mean coefficient and its 100*kmax/PGA normalization."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Percent of the corresponding site-condition PGA, not raw acceleration or another Vs30."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions; no invented numerical result."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The stray comma after 100 is removed to match memo equation 14 and figure notes; all mathematical quantities and units remain unchanged."
+        }
+      }
+    },
+    {
+      "text": ": Table E3-3: Mean values of $\\mathbf{k}_{\\mathbf{h}}$ [% of PGA] for scenario S32 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 61, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:760"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E3-3 caption identifies the S32 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 62, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%], expressed as $\\mathbf{100}\\mathbf{}\\mathbf{k}_{\\mathbf{\\max}}\\mathbf{/PGA(}\\mathbf{V}_{\\mathbf{S30}}\\mathbf{)}$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 63, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:1005,428,993; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1064"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E3-3: sentence one defines demand/model labels; sentence two defines Ts/Vs30 units; sentence three defines the mean coefficient and its 100*kmax/PGA normalization."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Percent of the corresponding site-condition PGA, not raw acceleration or another Vs30."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions; no invented numerical result."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The stray comma after 100 is removed to match memo equation 14 and figure notes; all mathematical quantities and units remain unchanged."
+        }
+      }
+    },
+    {
+      "text": ": Table E3-4: Mean values of $\\mathbf{k}_{\\mathbf{h}}$ [% of PGA] for scenario S27 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 64, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:794"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E3-4 caption identifies the S27 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 65, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%], expressed as $\\mathbf{100}\\mathbf{}\\mathbf{k}_{\\mathbf{\\max}}\\mathbf{/PGA(}\\mathbf{V}_{\\mathbf{S30}}\\mathbf{)}$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 66, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:1007,428,993; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1068"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E3-4: sentence one defines demand/model labels; sentence two defines Ts/Vs30 units; sentence three defines the mean coefficient and its 100*kmax/PGA normalization."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Percent of the corresponding site-condition PGA, not raw acceleration or another Vs30."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions; no invented numerical result."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The stray comma after 100 is removed to match memo equation 14 and figure notes; all mathematical quantities and units remain unchanged."
+        }
+      }
+    },
+    {
+      "text": ": Table E3-5: Mean values of $\\mathbf{k}_{\\mathbf{h}}$ [% of PGA] for scenario S35 and return periods $\\mathbf{T}_{\\mathbf{R}}\\mathbf{= 500,\\ 2,500,\\ 10,000}$ yr.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 67, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:828"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Table E3-5 caption identifies the S35 scenario, mean statistic, coefficient unit and 500/2500/10000-year rows; none can be omitted without ambiguity."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The MCE rows/caption clause are excluded under the explicit PSHA decision."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Concise table identity, not a prose retelling of values."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Scenario identity and coefficient unit match the transferred table; only probabilistic source rows are retained."
+        }
+      }
+    },
+    {
+      "text": "Notes:",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 68, all sentence rows: /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The Notes label separates the adjacent object caption from its units, columns or legend definitions."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Adjacent object only."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Conventional label retained from Diana."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "No scientific statement or value introduced."
+        }
+      }
+    },
+    {
+      "text": "> ID identifies the seismic demand and IDn the model set (rigid, ensemble, or flexible). $\\mathbf{T}_{\\mathbf{s}}$ is the fundamental period of the slope [s] and $\\mathbf{V}_{\\mathbf{S30}}$ the shear-wave velocity of the evaluated condition [m/s]. The coefficient columns report the mean estimate at each allowable permanent displacement relative to slope height, $\\mathbf{D}_{\\mathbf{a}}\\mathbf{/}\\mathbf{H}$ [%], expressed as $\\mathbf{100}\\mathbf{}\\mathbf{k}_{\\mathbf{\\max}}\\mathbf{/PGA(}\\mathbf{V}_{\\mathbf{S30}}\\mathbf{)}$.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Provenance unit 69, all sentence rows: /private/tmp/diana-audit-root.25nVLM/memo/document.md:1009,428,993; /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/original-appendix.txt:1072"
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Note to E3-5: sentence one defines demand/model labels; sentence two defines Ts/Vs30 units; sentence three defines the mean coefficient and its 100*kmax/PGA normalization."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Percent of the corresponding site-condition PGA, not raw acceleration or another Vs30."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Technical column definitions; no invented numerical result."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The stray comma after 100 is removed to match memo equation 14 and figure notes; all mathematical quantities and units remain unchanged."
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "summary",
+      "fragment": "Seismic coefficients for the Crawford project embankments were estimated using an empirical",
+      "rule": "scope",
+      "diagnosis": "The singular empirical-method summary does not describe the active ensemble.",
+      "resolution": {
+        "action": "revise",
+        "evidence": "Full report executive paragraph copied; ensemble, demand allocation and sample count retained.",
+        "verified": true,
+        "replacement": "The Newmark permanent displacement $D_{n}$ quantifies the displacement induced by an earthquake and accumulated in the sliding mass and is the performance measure from which the seismic coefficients are derived. The $D_{n}(k_{y})$ curves relate, for each combination of geometry, material, and design scenario, the yield acceleration $k_{y}$ to the expected permanent displacement; they were computed with the ensemble set of AM88, JB07, SR08, BT07, and BM19, with the reference magnitude assigned to each seismic demand and 300 realizations per demand and are read at the fractiles $q = 1 - p_{e}$."
+      }
+    },
+    {
+      "id": "bm19",
+      "fragment": "and BM19 (Bray, Macedo, & Travasauro, 2018)",
+      "rule": "support",
+      "diagnosis": "The BM19 label points to the wrong paper.",
+      "resolution": {
+        "action": "revise",
+        "evidence": "Memo896/930 and Diana bibliography1627 identify Bray and Macedo2019; surrounding model list and magnitudes reread unchanged.",
+        "verified": true,
+        "replacement": "and BM19 (Bray & Macedo, 2019)"
+      }
+    },
+    {
+      "id": "normalization",
+      "fragment": "100,kmax/PGA(VS30)",
+      "rule": "preservation",
+      "diagnosis": "A literal comma in the old appendix note obscures the multiplicative normalization.",
+      "resolution": {
+        "action": "remove",
+        "evidence": "Memo equation14 and figure note993 define multiplication by100. Revised E3 notes retain this coefficient and site-condition denominator.",
+        "verified": true
+      }
+    },
+    {
+      "id": "caption",
+      "fragment": "Table E1: Shear Stiffness Parameters for Gravels, Sands, and Fines",
+      "rule": "register",
+      "diagnosis": "The restored table label lacked its caption hyphen.",
+      "resolution": {
+        "action": "revise",
+        "evidence": "Caption and adjacent table reread; E-1 identifies the existing appendix table, no new result.",
+        "verified": true,
+        "replacement": "Table E-1: Shear Stiffness Parameters for Gravels, Sands, and Fines"
+      }
+    },
+    {
+      "id": "scope",
+      "fragment": "for return periods of 5,000 and 10,000 years and the MCE",
+      "rule": "scope",
+      "diagnosis": "MCE demand conflicts with the explicit PSHA-only delivery.",
+      "resolution": {
+        "action": "revise",
+        "evidence": "Owner selected the probabilistic scope; Mw6.5 and both return periods remain, MCE is excluded only from this copy.",
+        "verified": true,
+        "replacement": "for return periods of 5,000 and 10,000 years"
+      }
+    }
+  ]
+}

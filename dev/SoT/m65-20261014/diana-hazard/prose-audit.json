@@ -1,0 +1,563 @@
+{
+  "candidate_sha256": "bb0c1d97f26d9146d85d3e0e33d009b048e221bebeed066a6b014fd11612bfef",
+  "reviewer": "/root",
+  "records": {
+    "contract": {
+      "path": "WRITING-CONTRACT.md",
+      "sha256": "d158136860507694b481f0527e2da30d387216055b9affe42e1ce017d26c51f7"
+    },
+    "provenance": {
+      "path": "PROVENANCE.md",
+      "sha256": "7042b1afe8cfdf2baca4d9eba073c58ecfd69be2fdd0d67a8805e72b12819ce0"
+    },
+    "entities": {
+      "path": "prose-entities.txt",
+      "sha256": "b34572be7a286df823e53321fa98a26c99afa88c2deb1131f4ef2bc3e6e7e579"
+    },
+    "formal": {
+      "path": "PROSE-FORMAL.md",
+      "sha256": "2fa05e27b5d7862cfd48018e257a98d20acffb701546f87d3c3d014ebb4f5ede"
+    }
+  },
+  "baseline": {
+    "path": "prose-candidate.md",
+    "sha256": "bb0c1d97f26d9146d85d3e0e33d009b048e221bebeed066a6b014fd11612bfef"
+  },
+  "units": [
+    {
+      "text": "## Engine",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P1: submit.log line1 explicitly identifies Engine3.26.2; original body24/543/786 contain the older versions."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The value identifies the implementation that produced the replacement results; removing it leaves the old engine claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Execution provenance for the requested Hazard update, not a new scientific parameter."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Numeric version only; Engine is an internal transfer heading and adds no promotion or interpretation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Only the version changes in the three existing sentences; PSHA scope, conditions and citations remain."
+        }
+      }
+    },
+    {
+      "text": "3.26.2",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P1: submit.log line1 explicitly identifies Engine3.26.2; original body24/543/786 contain the older versions."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The value identifies the implementation that produced the replacement results; removing it leaves the old engine claim."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Execution provenance for the requested Hazard update, not a new scientific parameter."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Numeric version only; Engine is an internal transfer heading and adds no promotion or interpretation."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Only the version changes in the three existing sentences; PSHA scope, conditions and citations remain."
+        }
+      }
+    },
+    {
+      "text": "## PGA 10000 mean",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P2: independent RDS query returned SaF0.3123115g at CFD/M2V4D/Vs220/T0/TR10000/mean; formatC gives0.312."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "This is the mean PGA required by the existing TMF design-event sentences."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Same site,Vs30,event and mean statistic as the existing paragraphs27/672/788."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The label distinguishes mean from P84; the value is factual and contains no adequacy claim."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Three-decimal precision and g units in the surrounding original sentences are retained; replaces0.395 only."
+        }
+      }
+    },
+    {
+      "text": "0.312",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P2: independent RDS query returned SaF0.3123115g at CFD/M2V4D/Vs220/T0/TR10000/mean; formatC gives0.312."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "This is the mean PGA required by the existing TMF design-event sentences."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Same site,Vs30,event and mean statistic as the existing paragraphs27/672/788."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The label distinguishes mean from P84; the value is factual and contains no adequacy claim."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Three-decimal precision and g units in the surrounding original sentences are retained; replaces0.395 only."
+        }
+      }
+    },
+    {
+      "text": "## PGA 10000 P84",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P3: independent RDS query returned SaF0.4423981g at the same TR10000 selection,p0.84; formatC gives0.442."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "This is the84th-percentile PGA paired with the mean for the same TMF event."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "P84 is a transfer key for the original84th percentile, with no confusion with P50 or the mean."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Numeric result and descriptive mapping label; no statement of confidence adequacy."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Retains the original84th-percentile wording and g context, replacing0.491."
+        }
+      }
+    },
+    {
+      "text": "0.442",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P3: independent RDS query returned SaF0.4423981g at the same TR10000 selection,p0.84; formatC gives0.442."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "This is the84th-percentile PGA paired with the mean for the same TMF event."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "P84 is a transfer key for the original84th percentile, with no confusion with P50 or the mean."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Numeric result and descriptive mapping label; no statement of confidence adequacy."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Retains the original84th-percentile wording and g context, replacing0.491."
+        }
+      }
+    },
+    {
+      "text": "## PGA 2500 mean",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P4: RDS query gives SaF0.1587537g at TR2500,mean,Vs220,T0; formatting gives0.159."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The impoundments and stockpiles require their distinct mean PGA; the TMF number cannot substitute for it."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Owner accepted the2475/2500 correspondence; original2475 labels stay in Diana."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Factual numeric value; no assertion that the two return-period labels are mathematically identical."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Replaces0.157 while preserving facilities, event label, units and precision."
+        }
+      }
+    },
+    {
+      "text": "0.159",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P4: RDS query gives SaF0.1587537g at TR2500,mean,Vs220,T0; formatting gives0.159."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The impoundments and stockpiles require their distinct mean PGA; the TMF number cannot substitute for it."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Owner accepted the2475/2500 correspondence; original2475 labels stay in Diana."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Factual numeric value; no assertion that the two return-period labels are mathematically identical."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Replaces0.157 while preserving facilities, event label, units and precision."
+        }
+      }
+    },
+    {
+      "text": "## PGA 2500 P84",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P5: RDS query gives SaF0.2287538g at TR2500,p0.84,Vs220,T0; formatting gives0.229."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Supplies the upper percentile paired with the stockpile/impoundment mean."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Same target population asP4, with the explicit84th percentile; no Vs800 or cm/s2 product is used."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Numeric result without evaluative language; P84 label is resolved in the ledger."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Replaces0.198 and keeps the existing84th percentile annotation; no new design criterion."
+        }
+      }
+    },
+    {
+      "text": "0.229",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P5: RDS query gives SaF0.2287538g at TR2500,p0.84,Vs220,T0; formatting gives0.229."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Supplies the upper percentile paired with the stockpile/impoundment mean."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Same target population asP4, with the explicit84th percentile; no Vs800 or cm/s2 product is used."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Numeric result without evaluative language; P84 label is resolved in the ledger."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Replaces0.198 and keeps the existing84th percentile annotation; no new design criterion."
+        }
+      }
+    },
+    {
+      "text": "## Site amplification",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P6: site.results.qmd line17 states direct logic-tree plus ST20 at reference760m/s conditioned by the PGA of the same realization; UHS.Vref verifies760."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Both branches and the conditioning explain why the replacement design UHS differ from the old direct-only description."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Describes the already validated model, within the existing site-response paragraphs; adds no stratigraphic calculation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Declarative method statement. Each refers to evaluated conditions from the source, not a universal site claim."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves the source method and its realization-level condition; replaces only the incompatible old amplification description."
+        }
+      }
+    },
+    {
+      "text": "The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P6: site.results.qmd line17 states direct logic-tree plus ST20 at reference760m/s conditioned by the PGA of the same realization; UHS.Vref verifies760."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Both branches and the conditioning explain why the replacement design UHS differ from the old direct-only description."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Describes the already validated model, within the existing site-response paragraphs; adds no stratigraphic calculation."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Declarative method statement. Each refers to evaluated conditions from the source, not a universal site claim."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves the source method and its realization-level condition; replaces only the incompatible old amplification description."
+        }
+      }
+    },
+    {
+      "text": "## AEP method",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P7/P8: the owner selected full direct curves; exported CSVs feed AEP. P6 supports the mixed design UHS in the second sentence."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The first sentence identifies the curve product; the second prevents readers equating it with the tabulated design-mixture ordinates."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "This is the exact distinction requested in the AEP answer; it does not interpolate or extrapolate design points into curves."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Two declarative method sentences, no instructions or unjustified comparison. Repetition ofP6 occurs at a separate existing method location."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Retains all conditions ofP6 and the owner's direct-curve choice; it changes no probability, grid or statistical definition."
+        }
+      }
+    },
+    {
+      "text": "The AEP curves present the direct logic-tree calculation. The tabulated design values and UHS combine this evaluation with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P7/P8: the owner selected full direct curves; exported CSVs feed AEP. P6 supports the mixed design UHS in the second sentence."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The first sentence identifies the curve product; the second prevents readers equating it with the tabulated design-mixture ordinates."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "This is the exact distinction requested in the AEP answer; it does not interpolate or extrapolate design points into curves."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Two declarative method sentences, no instructions or unjustified comparison. Repetition ofP6 occurs at a separate existing method location."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Retains all conditions ofP6 and the owner's direct-curve choice; it changes no probability, grid or statistical definition."
+        }
+      }
+    },
+    {
+      "text": "## NRC comparison",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P9: R computed project/NRC ratios on the81 common Vs/TR/period rows; rounded extrema0.70/1.30 follow from the auditedUHS and officialNBC2020 response."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The ratio range replaces the obsolete good-agreement/reliability assertion with the measured comparison the figure presents."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bounded to the periods and site conditions compared in8-1..3; does not generalize to all Canada, P84 or noncommon periods."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Owner-authorized comparison; no adequacy, causal explanation or claim of reliability remains in the replaced sentence."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves PSHA/NRC2020 identity and mean comparison context while updating the quantitative relation; citations around the sentence stay."
+        }
+      }
+    },
+    {
+      "text": "The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P9: R computed project/NRC ratios on the81 common Vs/TR/period rows; rounded extrema0.70/1.30 follow from the auditedUHS and officialNBC2020 response."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The ratio range replaces the obsolete good-agreement/reliability assertion with the measured comparison the figure presents."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Bounded to the periods and site conditions compared in8-1..3; does not generalize to all Canada, P84 or noncommon periods."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Owner-authorized comparison; no adequacy, causal explanation or claim of reliability remains in the replaced sentence."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Preserves PSHA/NRC2020 identity and mean comparison context while updating the quantitative relation; citations around the sentence stay."
+        }
+      }
+    },
+    {
+      "text": "## Controlling scenarios",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P10/P11: independently queried joint maxima giveMw4.875\u20135.125,R18.75\u201331.25km; summed marginal maxima giveMw5.125\u20136.875 for the five originalTRs."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The first sentence describes the dominant joint bins visible in deaggregation; the second preserves information on magnitude peaks that differ after summing distances."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "PGA deaggregation only. Bin centers are identified explicitly and are not the design magnitudes used in Newmark."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Largest is the actual argmax under the authorized update of the controlling-sources paragraph; no unsupported background/fault classification is added."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Corrects the obsolete magnitude/distance ranges while preserving multiple magnitudes and the original final fault-source sentence outside this fragment."
+        }
+      }
+    },
+    {
+      "text": "The deaggregation plots show that the largest joint contributions to the seismic hazard for PGA occur at magnitude bin centers ranging between 4.875 and 5.125 and distance bin centers ranging between 18.75 and 31.25 km. The magnitudes at the peaks of the marginal distributions range from 5.125 to 6.875.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P10/P11: independently queried joint maxima giveMw4.875\u20135.125,R18.75\u201331.25km; summed marginal maxima giveMw5.125\u20136.875 for the five originalTRs."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The first sentence describes the dominant joint bins visible in deaggregation; the second preserves information on magnitude peaks that differ after summing distances."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "PGA deaggregation only. Bin centers are identified explicitly and are not the design magnitudes used in Newmark."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Largest is the actual argmax under the authorized update of the controlling-sources paragraph; no unsupported background/fault classification is added."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Corrects the obsolete magnitude/distance ranges while preserving multiple magnitudes and the original final fault-source sentence outside this fragment."
+        }
+      }
+    },
+    {
+      "text": "## NRC periods",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P12: the official response fields enumeratePGA and nine spectral periods0.05,0.1,0.2,0.3,0.5,1,2,5,10seconds."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The listing updates what the official tool provides; omitting it would retain the incomplete old period list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "This paragraph describes service availability; comparison plots use only the common model grid through5s, as recorded inP9."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Structural periods is the original paragraph649 opening; numbers are formatted response field identities, not invented measurements."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Keeps PGA separate from positive spectral periods and retains seconds; adds only periods actually returned byNBC2020."
+        }
+      }
+    },
+    {
+      "text": "Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "P12: the official response fields enumeratePGA and nine spectral periods0.05,0.1,0.2,0.3,0.5,1,2,5,10seconds."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The listing updates what the official tool provides; omitting it would retain the incomplete old period list."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "This paragraph describes service availability; comparison plots use only the common model grid through5s, as recorded inP9."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Structural periods is the original paragraph649 opening; numbers are formatted response field identities, not invented measurements."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Keeps PGA separate from positive spectral periods and retains seconds; adds only periods actually returned byNBC2020."
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "fragment": "at each condition",
+      "rule": "register",
+      "diagnosis": "Entity checker flags each as a potential unsupported quantifier.",
+      "resolution": {
+        "action": "retain",
+        "evidence": "P6 limits each to evaluated site conditions and preserves the same wording and method of site.results.qmd:17; removing it loses the condition-specific direct evaluation.",
+        "verified": true
+      }
+    },
+    {
+      "id": "F2",
+      "fragment": "largest joint contributions",
+      "rule": "support",
+      "diagnosis": "A maximum claim requires observed support and authorized scope.",
+      "resolution": {
+        "action": "retain",
+        "evidence": "P10 independently reads the RMw joint argmax for the five original return periods. The owner authorized updating this existing controlling-hazard paragraph; bin centers explicitly prevent treating these as Newmark design magnitudes.",
+        "verified": true
+      }
+    },
+    {
+      "id": "F3",
+      "fragment": "for the periods and site conditions compared",
+      "rule": "scope",
+      "diagnosis": "The NRC ratio could be misread as applying outside the plotted intersection.",
+      "resolution": {
+        "action": "retain",
+        "evidence": "P9 enumerates the exact81 comparison rows at threeVs,threeTR,ninecommonperiods; retaining this clause bounds the ratio to figures8-1..3 and avoids a general adequacy claim.",
+        "verified": true
+      }
+    }
+  ]
+}

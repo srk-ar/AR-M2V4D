@@ -1,0 +1,56 @@
+[
+  {
+    "avk": "image41.png",
+    "memo": "rId61.png",
+    "shape": [
+      1418,
+      1890,
+      3
+    ],
+    "changedPixels": 60,
+    "totalPixels": 2680020,
+    "fraction": 2.2387892627666956e-05,
+    "bbox": [
+      1646,
+      1158,
+      1648,
+      1177
+    ]
+  },
+  {
+    "avk": "image42.png",
+    "memo": "rId66.png",
+    "shape": [
+      1418,
+      1890,
+      3
+    ],
+    "changedPixels": 5148,
+    "totalPixels": 2680020,
+    "fraction": 0.001920881187453825,
+    "bbox": [
+      152,
+      39,
+      1800,
+      1177
+    ]
+  },
+  {
+    "avk": "image43.png",
+    "memo": "rId71.png",
+    "shape": [
+      1418,
+      1890,
+      3
+    ],
+    "changedPixels": 426,
+    "totalPixels": 2680020,
+    "fraction": 0.0001589540376564354,
+    "bbox": [
+      1644,
+      1046,
+      1652,
+      1172
+    ]
+  }
+]

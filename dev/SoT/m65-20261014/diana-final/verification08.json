@@ -1,0 +1,171 @@
+{
+  "hashes": {
+    "original": "bec7b8068951a03e36aaf98274702c9a70b408363f5e2dc980ccd17cd53efa3d",
+    "avk": "69eee3e499fde36cba7886ec8504114d164cc8d4942725a9bc8b9560226cfdc8",
+    "r02": "86dd4a5e7631e1abc5db539176fdf0da118904690a86be77a03187bd501a180e",
+    "r03": "b99c80fad1f56c91b82c12304b68a8e33f43a69fe880225e341c14bb0221896b",
+    "redline": "90ad8e0f05b41b0b9bbb006c31d176c43e9e0b098e7520b3a65636e62eb5b503",
+    "memo": "9812e23c42a59a5be3738723e8e1e06684f2aa84287870c3f06472a03c92a329",
+    "hazard": "a3d5fa6667e4be7c138760c833746c9708fa17b5fc18d12c11ae3d09ceaf42ee"
+  },
+  "originalsIntact": true,
+  "hazardTables": [
+    {
+      "bodyIndex": 667,
+      "source": 47,
+      "cells": 30
+    },
+    {
+      "bodyIndex": 670,
+      "source": 52,
+      "cells": 30
+    },
+    {
+      "bodyIndex": 689,
+      "source": 57,
+      "cells": 192
+    },
+    {
+      "bodyIndex": 692,
+      "source": 62,
+      "cells": 192
+    },
+    {
+      "bodyIndex": 957,
+      "source": 67,
+      "cells": 30
+    },
+    {
+      "bodyIndex": 960,
+      "source": 72,
+      "cells": 30
+    },
+    {
+      "bodyIndex": 963,
+      "source": 77,
+      "cells": 30
+    },
+    {
+      "bodyIndex": 966,
+      "source": 82,
+      "cells": 30
+    },
+    {
+      "bodyIndex": 970,
+      "source": 87,
+      "cells": 30
+    }
+  ],
+  "appendixTables": [
+    {
+      "bodyIndex": 1032,
+      "source": 88,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1036,
+      "source": 95,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1040,
+      "source": 102,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1044,
+      "source": 109,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1048,
+      "source": 116,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1054,
+      "source": 130,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1058,
+      "source": 137,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1062,
+      "source": 144,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1066,
+      "source": 151,
+      "cells": 80,
+      "rows": 9
+    },
+    {
+      "bodyIndex": 1070,
+      "source": 158,
+      "cells": 80,
+      "rows": 9
+    }
+  ],
+  "slopeImages": [
+    {
+      "bodyIndex": 768,
+      "source": 123,
+      "sha256": "ccf08047763ae42c2412df9b8b431c98b54ec1799347135dea9561e487aab15f"
+    },
+    {
+      "bodyIndex": 772,
+      "source": 124,
+      "sha256": "f1c5368bd1692f46ae46170ce5b73187c1a80b4ec6841a149e85294a8ba4c194"
+    },
+    {
+      "bodyIndex": 776,
+      "source": 125,
+      "sha256": "1c4e7cccc9e9dd082beb0d78abec283610052a06fc7988470ee3188f02f38063"
+    },
+    {
+      "bodyIndex": 1019,
+      "source": 81,
+      "sha256": "ea24317bbeeb6cdd476d3449adf83a8659788c5a836dc1687c4d4660fea1b53d"
+    },
+    {
+      "bodyIndex": 1023,
+      "source": 82,
+      "sha256": "08c8d6d074ca34e6f477f4d70c142f9dda14c2d6f6fcac649de876c7a6e2abab"
+    },
+    {
+      "bodyIndex": 1027,
+      "source": 83,
+      "sha256": "dc33fb4761b04a852a6c86fc9dcd87c3d5eec8be7e608814732e9aa07f7fbae5"
+    }
+  ],
+  "equationsExactIgnoringAlignmentTokens": 7,
+  "scopePshaOnly": true,
+  "endpoints": {
+    "accepted": {
+      "textExact": true,
+      "imageOrderAndBytesExact": true,
+      "characters": 149794,
+      "images": 104
+    },
+    "rejected": {
+      "textExact": true,
+      "imageOrderAndBytesExact": true,
+      "characters": 132826,
+      "images": 101
+    }
+  },
+  "newRevisions": 3375,
+  "newRevisionIdsUnique": true
+}

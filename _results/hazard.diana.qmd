@@ -1,0 +1,44 @@
+```{r}
+#| include: false
+Values <- dianaValues(Diana, root)
+```
+
+## Engine
+
+`r Values$engine`
+
+## PGA 10000 mean
+
+`r Values[["10000.mean"]]`
+
+## PGA 10000 P84
+
+`r Values[["10000.0.84"]]`
+
+## PGA 2500 mean
+
+`r Values[["2500.mean"]]`
+
+## PGA 2500 P84
+
+`r Values[["2500.0.84"]]`
+
+## Site amplification
+
+The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of `r Values$vref` m/s, conditioned on the PGA of the same realization.
+
+## AEP method
+
+The AEP curves present the direct logic-tree calculation. The tabulated design values and UHS combine this evaluation with the ST20 transformation of the demand at the reference condition of `r Values$vref` m/s, conditioned on the PGA of the same realization.
+
+## NRC comparison
+
+The ratios of the PSHA spectral ordinates to the NRC 2020 values range from `r Values$ratioMin` to `r Values$ratioMax` for the periods and site conditions compared.
+
+## Controlling scenarios
+
+The deaggregation plots show that the largest joint contributions to the seismic hazard for PGA occur at magnitude bin centers ranging between `r format(min(Values$jointMw), trim = TRUE)` and `r format(max(Values$jointMw), trim = TRUE)` and distance bin centers ranging between `r format(min(Values$jointR), trim = TRUE)` and `r format(max(Values$jointR), trim = TRUE)` km. The magnitudes at the peaks of the marginal distributions range from `r format(min(Values$marginalMw), trim = TRUE)` to `r format(max(Values$marginalMw), trim = TRUE)`.
+
+## NRC periods
+
+Structural periods: PGA and spectral periods of `r knitr::combine_words(format(Values$nrcPeriods, trim = TRUE), and = " and ")` seconds.

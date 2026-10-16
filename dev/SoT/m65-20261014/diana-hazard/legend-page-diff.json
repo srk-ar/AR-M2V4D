@@ -1,0 +1,25 @@
+{
+  "baseline": "/private/tmp/diana-hazard-r02-final-qa",
+  "candidate": "/private/tmp/diana-hazard-r02-qa04",
+  "pages": 143,
+  "differentPages": [
+    49,
+    50,
+    51,
+    66,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132
+  ],
+  "otherPagesPixelIdentical": true
+}

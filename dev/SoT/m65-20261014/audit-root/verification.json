@@ -1,0 +1,1956 @@
+{
+  "identities": {
+    "original": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/CAPR003324_Crawford_SeismicHazard_Final.docx",
+      "sha256": "bec7b8068951a03e36aaf98274702c9a70b408363f5e2dc980ccd17cd53efa3d",
+      "bytes": 128638139
+    },
+    "avk": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/diana-actualizado/CAPR003324_Crawford_SeismicHazard_Final_AVK.docx",
+      "sha256": "69eee3e499fde36cba7886ec8504114d164cc8d4942725a9bc8b9560226cfdc8",
+      "bytes": 128718790
+    },
+    "r02": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/diana-actualizado/CAPR003324_Crawford_SeismicHazard_Final_AVK_R02.docx",
+      "sha256": "86dd4a5e7631e1abc5db539176fdf0da118904690a86be77a03187bd501a180e",
+      "bytes": 144362238
+    },
+    "report": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/docx.en.docx",
+      "sha256": "7b1096f0f6223b024f3b2c2a3dd9af50835743fdfa1154848fe447a94418c760",
+      "bytes": 186957
+    },
+    "memo": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/gmdp.memo.en.docx",
+      "sha256": "9812e23c42a59a5be3738723e8e1e06684f2aa84287870c3f06472a03c92a329",
+      "bytes": 2046292
+    },
+    "hazard": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/hazard.diana.en.docx",
+      "sha256": "a3d5fa6667e4be7c138760c833746c9708fa17b5fc18d12c11ae3d09ceaf42ee",
+      "bytes": 13891064
+    }
+  },
+  "bodyIndexBase": 0,
+  "numericReturnPeriod": 2500,
+  "stages": {
+    "original-avk": {
+      "changedBodyIndices": [
+        696,
+        697,
+        706,
+        707,
+        740,
+        743,
+        754,
+        765
+      ],
+      "changedParagraphs": [
+        {
+          "bodyIndex": 696,
+          "before": "This section reports the dynamic properties of the slopes analyzed, the permanent displacements induced by the design earthquakes accumulate in their potential sliding masses, and the performance-based seismic coefficients derived from those displacements. The flexible sliding-block displacement models require the fundamental period of each potential sliding mass and the dynamic soil stiffness that determines it: the analyses considered 5 geometry–material scenarios with heights between 27 and 135 m, and the estimated fundamental period varies between 0.19 and 0.83 s.",
+          "after": "This section reports the dynamic properties of the slopes analyzed, the permanent displacements induced by the design earthquakes accumulate in their potential sliding masses, and the performance-based seismic coefficients derived from those displacements. The flexible sliding-block displacement models require the fundamental period of each potential sliding mass and the dynamic soil stiffness that determines it: the analyses considered 5 geometry–material scenarios with heights between 27 and 135 m, and the estimated fundamental period varies between 0.22 and 1.28 s."
+        },
+        {
+          "bodyIndex": 697,
+          "before": "The Newmark permanent displacement Dn quantifies the displacement induced by an earthquake accumulates in the sliding mass and is the performance measure from which the seismic coefficients are derived. The Dn(ky) curves relate, for each combination of geometry, material, and design scenario, the yield acceleration ky to the expected permanent displacement; they were computed with an ensemble set of AM88 (Ambraseys & Menu, 1988), JB07 (Jibson, 2007), SR08 (Saygili & Rathje, 2008), BT07 (Bray & Travasarou, 2007), and BM19 (Bray, Macedo, & Travasauro, 2018), with the reference magnitude Mw = 7.0 and 300 realizations per demand and are read at the fractiles q=1-pe. The horizontal pseudostatic coefficient kh is in turn derived from the allowable permanent displacement Da of the potentially sliding mass (Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009; Macedo, Bray, Abrahamson, & Travasarou, 2018); the coefficients are reported at four relative displacement limits, Da/Hs = 0.1, 0.4, 1.0, 2.5%, and the tables in Section 10.3 and 11Appendix E report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA.",
+          "after": "The Newmark permanent displacement Dn quantifies the displacement induced by an earthquake accumulates in the sliding mass and is the performance measure from which the seismic coefficients are derived. The Dn(ky) curves relate, for each combination of geometry, material, and design scenario, the yield acceleration ky to the expected permanent displacement; they were computed with an ensemble set of AM88 (Ambraseys & Menu, 1988), JB07 (Jibson, 2007), SR08 (Saygili & Rathje, 2008), BT07 (Bray & Travasarou, 2007), and BM19 (Bray, Macedo, & Travasauro, 2018), with reference magnitudes Mw = 5.5 and Mw = 6.5 assigned according to the seismic demand and 300 realizations per demand and are read at the fractiles q=1-pe. The horizontal pseudostatic coefficient kh is in turn derived from the allowable permanent displacement Da of the potentially sliding mass (Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009; Macedo, Bray, Abrahamson, & Travasarou, 2018); the coefficients are reported at four relative displacement limits, Da/Hs = 0.1, 0.4, 1.0, 2.5%, and the tables in Section 10.3 and 11Appendix E report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA."
+        },
+        {
+          "bodyIndex": 706,
+          "before": "Ts=4πHsa1(2-mo)VSo,[Eq. 101]",
+          "after": "Ts=4πHa1(2−mo)VSo,[Eq. 101]"
+        },
+        {
+          "bodyIndex": 707,
+          "before": "where Hs is the slope height, VSo is the basal shear-wave velocity associated with Go, mo is the inhomogeneity factor governing the shear-modulus profile, and a1 is the first modal root of the characteristic equation. The height from the virtual apex to the base of the equivalent wedge is Hs(1-λo). The modal root depends jointly on mo and the truncation ratio λo, which geometric similarity gives as",
+          "after": "where Hs is the slope height, VSo is the basal shear-wave velocity associated with Go, mo is the inhomogeneity factor governing the shear-modulus profile, and a1 is the first modal root of the characteristic equation. The height from the virtual apex to the base of the equivalent wedge is H=Hs/(1−λo). The modal root depends jointly on mo and the truncation ratio λo, which geometric similarity gives as"
+        },
+        {
+          "bodyIndex": 740,
+          "before": "where μlnD and σlnD are the mean and standard deviation of lnDn defined by each model, and ϵ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch, conditional on displacement exceeding the model’s zero-or-negligible-displacement threshold. In every formulation, ky, PGA, and Sa are expressed in units of g – the acceleration of gravity – IA in m/s, and Ts in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude of the project, Mw= 7.0, is applied as a constant input to every demand, geometry, material and site evaluated. The published form of each formulation is reproduced in 11Appendix E. The performance-based seismic coefficient is defined by",
+          "after": "where μlnD and σlnD are the mean and standard deviation of lnDn defined by each model, and ϵ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch, conditional on displacement exceeding the model’s zero-or-negligible-displacement threshold. In every formulation, ky, PGA, and Sa are expressed in units of g – the acceleration of gravity – IA in m/s, and Ts in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude is Mw= 5.5 for return periods up to 2,500 years and Mw= 6.5 for return periods of 5,000 and 10,000 years and the MCE. Within each demand, that magnitude is common to the geometry, material and site combinations evaluated. The published form of each formulation is reproduced in 11Appendix E. The performance-based seismic coefficient is defined by"
+        },
+        {
+          "bodyIndex": 743,
+          "before": "kh=kmaxPGA(VS30).[Eq. 1015]",
+          "after": "kh=100 kmaxPGA(VS30).[Eq. 1015]"
+        }
+      ],
+      "changedImages": [
+        {
+          "bodyIndex": 768,
+          "before": "word/media/image41.png",
+          "after": "word/media/image41.png",
+          "sha256": "fe61797b86899085aa790cc8916903b96adb8d5d9747cb94631dcc407970bd1a"
+        },
+        {
+          "bodyIndex": 772,
+          "before": "word/media/image42.png",
+          "after": "word/media/image42.png",
+          "sha256": "b18453aa42869b2cc0f34712b0c9ad1420f66b20464a56bbd7a0d00792b0656c"
+        },
+        {
+          "bodyIndex": 776,
+          "before": "word/media/image43.png",
+          "after": "word/media/image43.png",
+          "sha256": "7ff8222d93627b1a90d57be789147b1c0d76063ad9df119e7bd28145a6e2fe15"
+        }
+      ],
+      "newInsDel": 0,
+      "removedInsDel": {
+        "ins": 13,
+        "del": 5
+      },
+      "changedRemainingInsDel": 0,
+      "changedZipParts": [
+        "word/document.xml",
+        "word/media/image41.png",
+        "word/media/image42.png",
+        "word/media/image43.png"
+      ]
+    },
+    "avk-r02": {
+      "changedBodyIndices": [
+        24,
+        25,
+        26,
+        27,
+        543,
+        547,
+        549,
+        554,
+        556,
+        560,
+        562,
+        564,
+        567,
+        581,
+        583,
+        585,
+        587,
+        590,
+        593,
+        633,
+        638,
+        640,
+        649,
+        651,
+        652,
+        655,
+        657,
+        667,
+        670,
+        672,
+        678,
+        680,
+        682,
+        684,
+        689,
+        692,
+        786,
+        787,
+        788,
+        847,
+        849,
+        851,
+        853,
+        855,
+        856,
+        857,
+        859,
+        861,
+        863,
+        865,
+        867,
+        869,
+        871,
+        873,
+        875,
+        877,
+        879,
+        881,
+        883,
+        885,
+        887,
+        889,
+        891,
+        893,
+        895,
+        901,
+        903,
+        905,
+        907,
+        909,
+        911,
+        913,
+        915,
+        917,
+        919,
+        921,
+        923,
+        925,
+        927,
+        929,
+        931,
+        933,
+        935,
+        937,
+        939,
+        941,
+        943,
+        945,
+        947,
+        949,
+        957,
+        960,
+        963,
+        966,
+        970,
+        978,
+        980,
+        982,
+        984,
+        986
+      ],
+      "changedParagraphs": [
+        {
+          "bodyIndex": 24,
+          "before": "The PSHA for the Site was conducted using the OpenQuake v3.19.1 engine. Results of the PSHA are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC (Chapter 6). The analysis considers events associated with a target AEP of 1:475, 1: 975, 1:2,475, 1:5,000 and 1:10,000 years and for various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles.",
+          "after": "The PSHA for the Site was conducted using the OpenQuake v3.26.2 engine. Results of the PSHA are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC (Chapter 6). The analysis considers events associated with a target AEP of 1:475, 1: 975, 1:2,475, 1:5,000 and 1:10,000 years and for various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles."
+        },
+        {
+          "bodyIndex": 25,
+          "before": "Dynamic site response analysis was used to modify the response spectra to the specific geotechnical conditions of each project facility (Chapter 6.5). This analysis involves estimating multi-period amplification factors dependent on the average shear-wave velocity of the upper 30 m of soil (Vs,30) as defined by the 2020 NBCC. Amplification factors were adopted from the from GMMs of the CanadaSHM6. Seismic Cone Penetration Tests (SCPT) conducted during the 2021-2022 and 2023 field investigations (SRK Consulting (Canada), Inc., 2023) (2024) provided Vs,30 values ranging from 180 to 230 m/s. A characteristic Vs,30value of 220 m/s was adopted for the site, classifying it as Stiff Soil Class D per the 2020 NBCC. The amplification factors were then applied to adjust the UHS for these site-specific conditions and were presented for target AEPs of ranging from 1:475 to 1:10,000 years and for various confidence levels.",
+          "after": "Dynamic site response analysis was used to modify the response spectra to the specific geotechnical conditions of each project facility (Chapter 6.5). This analysis involves estimating multi-period amplification factors dependent on the average shear-wave velocity of the upper 30 m of soil (Vs,30) as defined by the 2020 NBCC. The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. Seismic Cone Penetration Tests (SCPT) conducted during the 2021-2022 and 2023 field investigations (SRK Consulting (Canada), Inc., 2023) (2024) provided Vs,30 values ranging from 180 to 230 m/s. A characteristic Vs,30value of 220 m/s was adopted for the site, classifying it as Stiff Soil Class D per the 2020 NBCC. The resulting UHS for these site-specific conditions were presented for target AEPs of ranging from 1:475 to 1:10,000 years and for various confidence levels."
+        },
+        {
+          "bodyIndex": 26,
+          "before": "The 2020 NBCC offers an online seismic hazard tool that provides seismic hazard values for building design across Canada (Natural Resources of Canada, 2021d). A comparison of the mean response spectra from this tool with the PSHA analysis was conducted, covering the relevant AEPs and structural periods (Chapter 8). The results demonstrate that the PSHA analysis aligns with the seismic hazard estimations used in the 2020 NBCC tool.",
+          "after": "The 2020 NBCC offers an online seismic hazard tool that provides seismic hazard values for building design across Canada (Natural Resources of Canada, 2021d). A comparison of the mean response spectra from this tool with the PSHA analysis was conducted, covering the relevant AEPs and structural periods (Chapter 8). The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared."
+        },
+        {
+          "bodyIndex": 27,
+          "before": "The Canadian Dam Association (CDA) (2013) along with the International Council on Mining and Metals (ICMM) (2020) and the Ontario Ministry of Natural Resources (MNR) (2011), recommends performing PSHA and determining recurrence intervals based on the potential consequences of dam failure, which range from “Low” to “Extreme.” For this project, an “Extreme” consequence level has been designated for the FEED phase of the TMF, leading to a designation of the “Maximum Design Earthquake” (MDE) with an AEP of 1:10,000 years, consistent with GISTM and, for closure, with ICOLD and ANCOLD guidance. For the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, the MDE corresponds to an AEP of 1: 2,475 years. Response spectra and PGA values for the MDE have been provided for various site conditions, from hard rock to stiff soil, and at different confidence levels (Chapter 0). For stiff soils (Vs,30= 220 m/s), the MDE for the TMF is anticipated to result in a horizontal Peak Ground Acceleration (PGA) of 0.395 g (mean) and 0.491 g (84th percentile) and the MDE for the impoundments and stockpiles is anticipated to result in a PGA of 0.157 g (mean) and 0.198 g (84th percentile).",
+          "after": "The Canadian Dam Association (CDA) (2013) along with the International Council on Mining and Metals (ICMM) (2020) and the Ontario Ministry of Natural Resources (MNR) (2011), recommends performing PSHA and determining recurrence intervals based on the potential consequences of dam failure, which range from “Low” to “Extreme.” For this project, an “Extreme” consequence level has been designated for the FEED phase of the TMF, leading to a designation of the “Maximum Design Earthquake” (MDE) with an AEP of 1:10,000 years, consistent with GISTM and, for closure, with ICOLD and ANCOLD guidance. For the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, the MDE corresponds to an AEP of 1: 2,475 years. Response spectra and PGA values for the MDE have been provided for various site conditions, from hard rock to stiff soil, and at different confidence levels (Chapter 0). For stiff soils (Vs,30= 220 m/s), the MDE for the TMF is anticipated to result in a horizontal Peak Ground Acceleration (PGA) of 0.312 g (mean) and 0.442 g (84th percentile) and the MDE for the impoundments and stockpiles is anticipated to result in a PGA of 0.159 g (mean) and 0.229 g (84th percentile)."
+        },
+        {
+          "bodyIndex": 543,
+          "before": "A PSHA for the Site was conducted using the CanadaSHM6 hazard model (Natural Resources of Canada, 2020) as implemented in the OpenQuake engine v.3.19 (Pagani, Monelli, & Weatgerill, 2014). The results are presented in terms of AEP and UHS for various site conditions as defined by the 2020 NBCC (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020). Site classification, described in Section 7.1, are based on a shear wave velocity profile measured from the ground surface to a depth of 30 meters (Vs,30).",
+          "after": "A PSHA for the Site was conducted using the CanadaSHM6 hazard model (Natural Resources of Canada, 2020) as implemented in the OpenQuake engine v.3.26.2 (Pagani, Monelli, & Weatgerill, 2014). The AEP curves present the direct logic-tree calculation. The tabulated design values and UHS combine this evaluation with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. The results are presented in terms of AEP and UHS for various site conditions as defined by the 2020 NBCC (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020). Site classification, described in Section 7.1, are based on a shear wave velocity profile measured from the ground surface to a depth of 30 meters (Vs,30)."
+        },
+        {
+          "bodyIndex": 593,
+          "before": "The deaggregation plots show that the seismic hazard for PGA Tn=0 s is primarily controlled by nearby background seismicity sources with magnitudes M ranging between 4.8 – 5.25. and distances R less than 100 km. Additional contribution is generally provided by background sources with M ranging between 5 and 6.5 and distances R larger than 100 km. There are no known fault sources in the study area that can contribute to the hazard or influence the deaggregation results.",
+          "after": "The deaggregation plots show that the largest joint contributions to the seismic hazard for PGA occur at magnitude bin centers ranging between 4.875 and 5.125 and distance bin centers ranging between 18.75 and 31.25 km. The magnitudes at the peaks of the marginal distributions range from 5.125 to 6.875. There are no known fault sources in the study area that can contribute to the hazard or influence the deaggregation results."
+        },
+        {
+          "bodyIndex": 633,
+          "before": "Site amplification factors from GMMs of the CanadaSHM6 were adopted for this study. These GMMs use the following amplification factors (Kolaj, Allen, Mayfied, Adams, & Halchuk, 2019):",
+          "after": "Site amplification factors from GMMs of the CanadaSHM6 were adopted in the direct calculation. The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. These GMMs use the following amplification factors (Kolaj, Allen, Mayfied, Adams, & Halchuk, 2019):"
+        },
+        {
+          "bodyIndex": 649,
+          "before": "Structural periods: PGA and spectral periods of 0.2, 0.5, 1.0, and 5.0 seconds.",
+          "after": "Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+        },
+        {
+          "bodyIndex": 651,
+          "before": "Figure 81 compares the response spectra for spectral ordinates with 5% damping in hard rock (Vs,30= 1500 m/s), showing mean values obtained from the PSHA analysis alongside those from the 2020 NRC (2021c) seismic hazard tool obtained for the Site. Similarly, Figure 82 and Figure 83 provide a comparison for soft rock (Vs,30= 760 m/s) and stiff soil (Vs,30= 220 m/s), respectively, presenting the mean values from both the PSHA analysis and the NRC 2020 seismic hazard tool. The comparisons in both figures reveal a good agreement between the PSHA analysis results and the NRC 2020 values, supporting the reliability of the PSHA in estimating seismic hazards for the design of the project facilities.",
+          "after": "Figure 81 compares the response spectra for spectral ordinates with 5% damping in hard rock (Vs,30= 1500 m/s), showing mean values obtained from the PSHA analysis alongside those from the 2020 NRC (2021c) seismic hazard tool obtained for the Site. Similarly, Figure 82 and Figure 83 provide a comparison for soft rock (Vs,30= 760 m/s) and stiff soil (Vs,30= 220 m/s), respectively, presenting the mean values from both the PSHA analysis and the NRC 2020 seismic hazard tool. The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared."
+        },
+        {
+          "bodyIndex": 672,
+          "before": "For the stiff soils on the Site (Vs,30=220 m/s, Site Class D), the design event for the TMF, with an AEP of 1:10,000 years, will have a PGA of 0.395 g (mean) and 0.491 g (84th percentile).  The design event for the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, with an AEP of 1:2,475 years, will have a PGA of 0.157 g (mean) and 0.198 (84th percentile).",
+          "after": "For the stiff soils on the Site (Vs,30=220 m/s, Site Class D), the design event for the TMF, with an AEP of 1:10,000 years, will have a PGA of 0.312 g (mean) and 0.442 g (84th percentile).  The design event for the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, with an AEP of 1:2,475 years, will have a PGA of 0.159 g (mean) and 0.229 (84th percentile)."
+        },
+        {
+          "bodyIndex": 786,
+          "before": "PSHA: The PSHA for the site was conducted using the OpenQuake v3.19.1 engine (Pagani, Monelli, & Weatgerill, 2014). Results are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC. The analysis considers events with target AEPs of 1:475, 1:975, 1:2,475, 1:5,000, and 1:10,000 years, and covers various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles.",
+          "after": "PSHA: The PSHA for the site was conducted using the OpenQuake v3.26.2 engine (Pagani, Monelli, & Weatgerill, 2014). Results are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC. The analysis considers events with target AEPs of 1:475, 1:975, 1:2,475, 1:5,000, and 1:10,000 years, and covers various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles."
+        },
+        {
+          "bodyIndex": 787,
+          "before": "Site-Specific Adjustments: Amplification factors were applied to the Uniform Hazard Spectra (UHS) to account for the site's geotechnical conditions. Seismic Cone Penetration Tests (SCPT) classified the site as Stiff Soil Class D (Vs,30= 220 m/s) per the 2020 NBCC.",
+          "after": "Site-Specific Adjustments: The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. Seismic Cone Penetration Tests (SCPT) classified the site as Stiff Soil Class D (Vs,30= 220 m/s) per the 2020 NBCC."
+        },
+        {
+          "bodyIndex": 788,
+          "before": "Design Earthquake (MDE): Based on GISTM, and for closure on ICOLD and ANCOLD guidance, an \"Extreme\" consequence level was adopted for the TMF, resulting in a Maximum Design Earthquake (MDE) with an AEP of 1:10,000 years. For Site Class D soils, the MDE corresponds to a horizontal PGA of 0.395 g (mean) and 0.491 g (84th percentile). For the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, the MDE corresponds to an AEP of 1:2,475 years, with a PGA of 0.157 g (mean) and 0.198 (84th percentile).",
+          "after": "Design Earthquake (MDE): Based on GISTM, and for closure on ICOLD and ANCOLD guidance, an \"Extreme\" consequence level was adopted for the TMF, resulting in a Maximum Design Earthquake (MDE) with an AEP of 1:10,000 years. For Site Class D soils, the MDE corresponds to a horizontal PGA of 0.312 g (mean) and 0.442 g (84th percentile). For the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, the MDE corresponds to an AEP of 1:2,475 years, with a PGA of 0.159 g (mean) and 0.229 (84th percentile)."
+        },
+        {
+          "bodyIndex": 856,
+          "before": "Figure C15: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 90th Percentile Values",
+          "after": "Figure C15: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 95th Percentile Values"
+        }
+      ],
+      "changedImages": [
+        {
+          "bodyIndex": 547,
+          "before": "word/media/image13.png",
+          "after": "word/media/diana-hazard-6-1.png",
+          "sha256": "97201d54632b43d008584699f0d76de87ec77444f3a96c8ae69a73e4f832e3c1"
+        },
+        {
+          "bodyIndex": 549,
+          "before": "word/media/image14.png",
+          "after": "word/media/diana-hazard-6-2.png",
+          "sha256": "77a95f8ca18a0a65cba9284be1314bee139742b917377e3ef41c743f01f9e90f"
+        },
+        {
+          "bodyIndex": 554,
+          "before": "word/media/image15.png",
+          "after": "word/media/diana-hazard-6-3.png",
+          "sha256": "3c910ac8ae122b4523df204eafbb267af43f763dcacdc9cc38006b7b3785103c"
+        },
+        {
+          "bodyIndex": 556,
+          "before": "word/media/image16.png",
+          "after": "word/media/diana-hazard-6-4.png",
+          "sha256": "1ac53d7f633528b18942fe5917f9b8fd827aa06f42c27303ee021689a89341b6"
+        },
+        {
+          "bodyIndex": 560,
+          "before": "word/media/image17.png",
+          "after": "word/media/diana-hazard-6-5.png",
+          "sha256": "b1f837d378326d7a7abdf298e9b56616b3680d3bd7429c78ca96aec6554b7893"
+        },
+        {
+          "bodyIndex": 562,
+          "before": "word/media/image18.jpeg",
+          "after": "word/media/diana-hazard-6-6.png",
+          "sha256": "f488769f3d232ce41dc9d488ae6b3b67b31e40c770eee6c0f51592a55276bc50"
+        },
+        {
+          "bodyIndex": 564,
+          "before": "word/media/image19.png",
+          "after": "word/media/diana-hazard-6-7.png",
+          "sha256": "7497bd2b2c7149d9d9a97535d9d8160eeba99d5b493d291a241ebeee666a3ebc"
+        },
+        {
+          "bodyIndex": 567,
+          "before": "word/media/image20.jpeg",
+          "after": "word/media/diana-hazard-6-8.png",
+          "sha256": "1e0ffeac34b656aa1086ebc277dfa9ad0c52df89295c4cecf7ad098de5dadd0e"
+        },
+        {
+          "bodyIndex": 581,
+          "before": "word/media/image21.png",
+          "after": "word/media/diana-hazard-6-9.png",
+          "sha256": "65f91905b86c8b039c7597b0b23ab9b422874cd9cf21e86069bd7952f57c184d"
+        },
+        {
+          "bodyIndex": 583,
+          "before": "word/media/image22.png",
+          "after": "word/media/diana-hazard-6-10.png",
+          "sha256": "fd6709c34651463663ea42f607f6c7c83c71e1d756e930d5fc775630fc1f5f5d"
+        },
+        {
+          "bodyIndex": 585,
+          "before": "word/media/image23.png",
+          "after": "word/media/diana-hazard-6-11.png",
+          "sha256": "bb8087a5654ce66d6882ec3b52df45584ba159c9c661b754fe0630af8fa52516"
+        },
+        {
+          "bodyIndex": 587,
+          "before": "word/media/image24.png",
+          "after": "word/media/diana-hazard-6-12.png",
+          "sha256": "f14a0060ddeb61506e264cba11138292b65961ad702c4683f737e9ced2f21ced"
+        },
+        {
+          "bodyIndex": 590,
+          "before": "word/media/image25.png",
+          "after": "word/media/diana-hazard-6-13.png",
+          "sha256": "56d5024f2819effe3488215fd5001ff82d6ebc097d110e527af325e723d8e61e"
+        },
+        {
+          "bodyIndex": 638,
+          "before": "word/media/image32.png",
+          "after": "word/media/diana-hazard-7-7.png",
+          "sha256": "51c10c4bcf722a65baa7f7e79eed84cc49ed0510f1b8a8ea7ee28ae1bca7b3a3"
+        },
+        {
+          "bodyIndex": 640,
+          "before": "word/media/image33.jpeg",
+          "after": "word/media/diana-hazard-7-8.png",
+          "sha256": "91c68215f23429ea7f0ca5dd29b3b03c7ea5a4941c9f6e10869a7b99db7035c8"
+        },
+        {
+          "bodyIndex": 652,
+          "before": "word/media/image34.png",
+          "after": "word/media/diana-hazard-8-1.png",
+          "sha256": "9b35b52a457f141b2f266bef72705241631af848306b9d7bf82040c07e53ece6"
+        },
+        {
+          "bodyIndex": 655,
+          "before": "word/media/image35.png",
+          "after": "word/media/diana-hazard-8-2.png",
+          "sha256": "7a2242869aa2bca1f9d3434bb898c638ab216661ccb26f235470801503f58791"
+        },
+        {
+          "bodyIndex": 657,
+          "before": "word/media/image36.png",
+          "after": "word/media/diana-hazard-8-3.png",
+          "sha256": "7d737c8eefa85ad3a23238d31f2e96f5d483a639d0d2a7bf0f41488e24fec80d"
+        },
+        {
+          "bodyIndex": 678,
+          "before": "word/media/image37.png",
+          "after": "word/media/diana-hazard-9-1.png",
+          "sha256": "0dbdbb5075594274dea4244465e3c2f9c36b2475f549f1fdc9a29f0259fc70be"
+        },
+        {
+          "bodyIndex": 680,
+          "before": "word/media/image38.png",
+          "after": "word/media/diana-hazard-9-2.png",
+          "sha256": "143ddb542bc7fb9486bfd50dddd7f221411efba06476594c5da6509c32946d5e"
+        },
+        {
+          "bodyIndex": 682,
+          "before": "word/media/image39.png",
+          "after": "word/media/diana-hazard-9-3.png",
+          "sha256": "a5996813985de9818136f2f9dced0bb2888260f7321ec08a2a66c60717496c89"
+        },
+        {
+          "bodyIndex": 684,
+          "before": "word/media/image40.png",
+          "after": "word/media/diana-hazard-9-4.png",
+          "sha256": "54144398a4d5ae97e24b8a952537c89d86c0bc53d40676f967695838460e9fe9"
+        },
+        {
+          "bodyIndex": 847,
+          "before": "word/media/image47.jpeg",
+          "after": "word/media/diana-hazard-c1-1.png",
+          "sha256": "09bf5530a71482520277eafc80731753be2e9c13b67d1302eeaba7396214ae29"
+        },
+        {
+          "bodyIndex": 849,
+          "before": "word/media/image48.jpeg",
+          "after": "word/media/diana-hazard-c1-2.png",
+          "sha256": "d055858be21eee4876a4960ab73f81813c6c8fdddb80d59e3ace018af852713c"
+        },
+        {
+          "bodyIndex": 851,
+          "before": "word/media/image49.jpeg",
+          "after": "word/media/diana-hazard-c1-3.png",
+          "sha256": "d052e23fef93d964526dca36c47bd68ec79f761dd52b8f5afa43f3e4e313e1f0"
+        },
+        {
+          "bodyIndex": 853,
+          "before": "word/media/image50.jpeg",
+          "after": "word/media/diana-hazard-c1-4.png",
+          "sha256": "4ef3dbb7da04f5f894bf2ef6a65b73e16c5ebf4f7f1ffea9b63768b7b9be1567"
+        },
+        {
+          "bodyIndex": 855,
+          "before": "word/media/image51.jpeg",
+          "after": "word/media/diana-hazard-c1-5.png",
+          "sha256": "e519bea21fc68dcfddb72a3b73aac0944c9f5f231a2239a9d3194ab7f3276252"
+        },
+        {
+          "bodyIndex": 857,
+          "before": "word/media/image52.jpeg",
+          "after": "word/media/diana-hazard-c1-6.png",
+          "sha256": "d9461d3956cf4e71f9ae24b21c13b1863208010f2f37317bbd605f6956571c1b"
+        },
+        {
+          "bodyIndex": 859,
+          "before": "word/media/image53.jpeg",
+          "after": "word/media/diana-hazard-c1-7.png",
+          "sha256": "99ee62943bd64aa0c0727e1e5d7159c0e65e06a6e68efc3d2bd0b6e637c9ef73"
+        },
+        {
+          "bodyIndex": 861,
+          "before": "word/media/image54.jpeg",
+          "after": "word/media/diana-hazard-c1-8.png",
+          "sha256": "74381d3193b4063b23fd7eed6fdff3810a11586e2d7d70e0a0df5c09186a0ca3"
+        },
+        {
+          "bodyIndex": 863,
+          "before": "word/media/image55.jpeg",
+          "after": "word/media/diana-hazard-c1-9.png",
+          "sha256": "a31e4c422c52d3c5890e7037ae02458bbeee3fe84b2aee8dc6bf482ccb6db117"
+        },
+        {
+          "bodyIndex": 865,
+          "before": "word/media/image56.jpeg",
+          "after": "word/media/diana-hazard-c1-10.png",
+          "sha256": "06d3110abf2409132f8d71c4ced9eda66a00b3494c1bee4f2b0624c87ff235cb"
+        },
+        {
+          "bodyIndex": 867,
+          "before": "word/media/image57.jpeg",
+          "after": "word/media/diana-hazard-c1-11.png",
+          "sha256": "c6ab007776cd9eade1ccb1c901bae42f71ab81449006cd65269a1db08057fc82"
+        },
+        {
+          "bodyIndex": 869,
+          "before": "word/media/image58.jpeg",
+          "after": "word/media/diana-hazard-c1-12.png",
+          "sha256": "c1379c64dee31ac0e20750a9ff7248c8e750492d7c1ddb220d7c839af84b04ba"
+        },
+        {
+          "bodyIndex": 871,
+          "before": "word/media/image59.jpeg",
+          "after": "word/media/diana-hazard-c1-13.png",
+          "sha256": "a1284d4b213e6beabf6929451f120aae0f0f895dfcda55c9738ca0e296c98a65"
+        },
+        {
+          "bodyIndex": 873,
+          "before": "word/media/image59.jpeg",
+          "after": "word/media/diana-hazard-c1-14.png",
+          "sha256": "da63b703462fa8e3ab7152f9453558960a9e647bde7b7ad52ddb00409761eb31"
+        },
+        {
+          "bodyIndex": 875,
+          "before": "word/media/image60.jpeg",
+          "after": "word/media/diana-hazard-c1-15.png",
+          "sha256": "6f2e278ed7d7b25dd234549b210ff8b051cf5ff66077339f12813e8e7575abe6"
+        },
+        {
+          "bodyIndex": 877,
+          "before": "word/media/image61.jpeg",
+          "after": "word/media/diana-hazard-c1-16.png",
+          "sha256": "d876065ae9d2d1bb37c35377d36234a66203dc01253a9839de6c640d788cda7a"
+        },
+        {
+          "bodyIndex": 879,
+          "before": "word/media/image62.jpeg",
+          "after": "word/media/diana-hazard-c1-17.png",
+          "sha256": "a71a65d861963c2987809b9913e041857511c73e69f0b9710111760f0ec8ce91"
+        },
+        {
+          "bodyIndex": 881,
+          "before": "word/media/image63.jpeg",
+          "after": "word/media/diana-hazard-c1-18.png",
+          "sha256": "76d0459617b2c9eb892edf2aa3807f534f84886cb1144586d36069758eab3813"
+        },
+        {
+          "bodyIndex": 883,
+          "before": "word/media/image64.jpeg",
+          "after": "word/media/diana-hazard-c1-19.png",
+          "sha256": "625992f622bfa82eb997e844b501fc93b408760614a7fe2bfedd6fb35d33db42"
+        },
+        {
+          "bodyIndex": 885,
+          "before": "word/media/image65.jpeg",
+          "after": "word/media/diana-hazard-c1-20.png",
+          "sha256": "dc8ee1196be7b792b875069507f60efc3feb3fe6e422cfd577d63d18fd381a1b"
+        },
+        {
+          "bodyIndex": 887,
+          "before": "word/media/image66.jpeg",
+          "after": "word/media/diana-hazard-c1-21.png",
+          "sha256": "57c5c5c0129f1c5da34978f68c8d98b767811010b632c09e6c4ccf2cf4e3be4e"
+        },
+        {
+          "bodyIndex": 889,
+          "before": "word/media/image67.jpeg",
+          "after": "word/media/diana-hazard-c1-22.png",
+          "sha256": "99a834fb96657315c2eee43f0f6048689173455b0817761200eb72e585c2ef04"
+        },
+        {
+          "bodyIndex": 891,
+          "before": "word/media/image68.jpeg",
+          "after": "word/media/diana-hazard-c1-23.png",
+          "sha256": "27d3d197895855a4ab4ffa1d20cd95c5fec612c7a4d216a2dc2871d69ed53d29"
+        },
+        {
+          "bodyIndex": 893,
+          "before": "word/media/image69.jpeg",
+          "after": "word/media/diana-hazard-c1-24.png",
+          "sha256": "44c48551dd09a82f870620200a3bbf0996987f883932aa35bb643e2a1359b131"
+        },
+        {
+          "bodyIndex": 895,
+          "before": "word/media/image70.jpeg",
+          "after": "word/media/diana-hazard-c1-25.png",
+          "sha256": "e2da843c9de694866f6869bada56df07cf1729a85ba3a2b1b5be8dc8edceb4b2"
+        },
+        {
+          "bodyIndex": 901,
+          "before": "word/media/image71.jpeg",
+          "after": "word/media/diana-hazard-c2-1.png",
+          "sha256": "af2f843c51337a7cf97689c480ded32b389753d5d9f10d62a66e774a05127176"
+        },
+        {
+          "bodyIndex": 903,
+          "before": "word/media/image72.jpeg",
+          "after": "word/media/diana-hazard-c2-2.png",
+          "sha256": "6798b99270950aa02d65ec697f0de3a744b971b373114c922bdcef68ff36fac0"
+        },
+        {
+          "bodyIndex": 905,
+          "before": "word/media/image73.jpeg",
+          "after": "word/media/diana-hazard-c2-3.png",
+          "sha256": "015e01c730c4d153fd66fe7f97da76c1639cf4aed71e22aeadd193c0781a3056"
+        },
+        {
+          "bodyIndex": 907,
+          "before": "word/media/image74.jpeg",
+          "after": "word/media/diana-hazard-c2-4.png",
+          "sha256": "427cd0d6be1e1d5521aed141e57880d487f2f8c1899fa1c67aae3a13d08c5e6f"
+        },
+        {
+          "bodyIndex": 909,
+          "before": "word/media/image75.jpeg",
+          "after": "word/media/diana-hazard-c2-5.png",
+          "sha256": "4e968357af4ddc0d05243002c8781c7b69139dfe2b715ae535e9292ada600765"
+        },
+        {
+          "bodyIndex": 911,
+          "before": "word/media/image76.jpeg",
+          "after": "word/media/diana-hazard-c2-6.png",
+          "sha256": "71daff2e6f05afcfb9ebe73e78ea8c496c37b28935403add8e722af8d696db98"
+        },
+        {
+          "bodyIndex": 913,
+          "before": "word/media/image77.jpeg",
+          "after": "word/media/diana-hazard-c2-7.png",
+          "sha256": "6b18ba8c185a14b23d800cc0ea70d9992d9b7e21f3a4bf39df96818589f3d484"
+        },
+        {
+          "bodyIndex": 915,
+          "before": "word/media/image78.jpeg",
+          "after": "word/media/diana-hazard-c2-8.png",
+          "sha256": "228ad6068961c2bba2c93faba0e38fd890585b3ac02c64058cd8a0e2184333b1"
+        },
+        {
+          "bodyIndex": 917,
+          "before": "word/media/image79.jpeg",
+          "after": "word/media/diana-hazard-c2-9.png",
+          "sha256": "36d2cf26e562021cf97e8ea13020cb7548f1515ba2b09bf4297fbf4d03bc98f4"
+        },
+        {
+          "bodyIndex": 919,
+          "before": "word/media/image80.jpeg",
+          "after": "word/media/diana-hazard-c2-10.png",
+          "sha256": "d2812a89a59cac0fb2ab6a65e0f1f4ec8e992f80a4c348eb0afe083d8185e997"
+        },
+        {
+          "bodyIndex": 921,
+          "before": "word/media/image81.jpeg",
+          "after": "word/media/diana-hazard-c2-11.png",
+          "sha256": "4dc8c64cb8f560117875202d94e9b708686ffa5b7a05253b70ee6031514d7da0"
+        },
+        {
+          "bodyIndex": 923,
+          "before": "word/media/image82.jpeg",
+          "after": "word/media/diana-hazard-c2-12.png",
+          "sha256": "27b10315857ead7d47559df569e9e234582ebc3ecf93422b5bb0ec0382560443"
+        },
+        {
+          "bodyIndex": 925,
+          "before": "word/media/image83.jpeg",
+          "after": "word/media/diana-hazard-c2-13.png",
+          "sha256": "616a082b495891dfce05fa68e3355d8c2c0269a6ae26e87d9256a02a8f4156f7"
+        },
+        {
+          "bodyIndex": 927,
+          "before": "word/media/image84.jpeg",
+          "after": "word/media/diana-hazard-c2-14.png",
+          "sha256": "7c23f337becb581dad9213e17448f9a3c3aeb6507976467b1b89d1da4a5090bc"
+        },
+        {
+          "bodyIndex": 929,
+          "before": "word/media/image85.jpeg",
+          "after": "word/media/diana-hazard-c2-15.png",
+          "sha256": "5fbd10537458bef3f32d6ef01fc1ba931bf28ac0b90216230d11a764ad150439"
+        },
+        {
+          "bodyIndex": 931,
+          "before": "word/media/image86.jpeg",
+          "after": "word/media/diana-hazard-c2-16.png",
+          "sha256": "6ac13d3812eb12aa24d73400c0d6b1bea085a2da208028eab82c17e2a0fea21f"
+        },
+        {
+          "bodyIndex": 933,
+          "before": "word/media/image87.jpeg",
+          "after": "word/media/diana-hazard-c2-17.png",
+          "sha256": "c63428771df473e16413f2ad42551766e1b0cd1f2258a61fe286e5047604124d"
+        },
+        {
+          "bodyIndex": 935,
+          "before": "word/media/image88.jpeg",
+          "after": "word/media/diana-hazard-c2-18.png",
+          "sha256": "22c30b21378ed561e90784e03da4e78219b5bcf0483036820f4c599674889ad2"
+        },
+        {
+          "bodyIndex": 937,
+          "before": "word/media/image89.jpeg",
+          "after": "word/media/diana-hazard-c2-19.png",
+          "sha256": "8796b513cb54bd2a146810e0a129811419996b4d239af9418d6434ed920e096a"
+        },
+        {
+          "bodyIndex": 939,
+          "before": "word/media/image90.jpeg",
+          "after": "word/media/diana-hazard-c2-20.png",
+          "sha256": "80fc1810bb572c2067e40459338336f213a5439820f5acada60c8628606f1987"
+        },
+        {
+          "bodyIndex": 941,
+          "before": "word/media/image91.jpeg",
+          "after": "word/media/diana-hazard-c2-21.png",
+          "sha256": "347357830787d7ca8397197c0b0559739e59b13ff170322ee6ab23f128186034"
+        },
+        {
+          "bodyIndex": 943,
+          "before": "word/media/image92.jpeg",
+          "after": "word/media/diana-hazard-c2-22.png",
+          "sha256": "36acef6e9681eba1f79e8633e4d87c88b84b60a645d5167ef1e977cab837a27d"
+        },
+        {
+          "bodyIndex": 945,
+          "before": "word/media/image93.jpeg",
+          "after": "word/media/diana-hazard-c2-23.png",
+          "sha256": "d4f98e98e97a04b84ef1056d9bf079ed97065d8a1580be4a5f44148f11d782b6"
+        },
+        {
+          "bodyIndex": 947,
+          "before": "word/media/image94.jpeg",
+          "after": "word/media/diana-hazard-c2-24.png",
+          "sha256": "bea21ff181f15f75f4f9163ac2f8dec70ec8ced3dac0b5735ab2ff61a3057059"
+        },
+        {
+          "bodyIndex": 949,
+          "before": "word/media/image95.jpeg",
+          "after": "word/media/diana-hazard-c2-25.png",
+          "sha256": "7a375c3301f7ce131a778d0d7ed3b96440fc1c1ddb35a307569f64c57c3bed4f"
+        },
+        {
+          "bodyIndex": 978,
+          "before": "word/media/image96.jpeg",
+          "after": "word/media/diana-hazard-d2-1.png",
+          "sha256": "c0b4e879e19c8b01577e77a3ec7e0534559ae3de89e2f0d3b6aa4b87c2c54248"
+        },
+        {
+          "bodyIndex": 980,
+          "before": "word/media/image97.jpeg",
+          "after": "word/media/diana-hazard-d2-2.png",
+          "sha256": "d1c6ed46411ef76ecb960ab593daba0bc669e576234476578a7aad40c00da559"
+        },
+        {
+          "bodyIndex": 982,
+          "before": "word/media/image98.jpeg",
+          "after": "word/media/diana-hazard-d2-3.png",
+          "sha256": "1e6688e6c061911f57057a8107322ce7b100a2946a67a839de2ce1bb35a991f1"
+        },
+        {
+          "bodyIndex": 984,
+          "before": "word/media/image99.jpeg",
+          "after": "word/media/diana-hazard-d2-4.png",
+          "sha256": "248d5c6c88b956111707c63eaa43f5a32d7fcb14fc7097f44289f8d1cc79fb70"
+        },
+        {
+          "bodyIndex": 986,
+          "before": "word/media/image100.jpeg",
+          "after": "word/media/diana-hazard-d2-5.png",
+          "sha256": "513459c47474350b67f3530060176584085cfccdf3bbe74d03fd3832e7d3f0de"
+        }
+      ],
+      "newInsDel": 0,
+      "removedInsDel": {
+        "del": 149,
+        "ins": 149
+      },
+      "changedRemainingInsDel": 0,
+      "changedZipParts": [
+        "word/_rels/document.xml.rels",
+        "word/document.xml",
+        "word/media/diana-hazard-6-1.png",
+        "word/media/diana-hazard-6-10.png",
+        "word/media/diana-hazard-6-11.png",
+        "word/media/diana-hazard-6-12.png",
+        "word/media/diana-hazard-6-13.png",
+        "word/media/diana-hazard-6-2.png",
+        "word/media/diana-hazard-6-3.png",
+        "word/media/diana-hazard-6-4.png",
+        "word/media/diana-hazard-6-5.png",
+        "word/media/diana-hazard-6-6.png",
+        "word/media/diana-hazard-6-7.png",
+        "word/media/diana-hazard-6-8.png",
+        "word/media/diana-hazard-6-9.png",
+        "word/media/diana-hazard-7-7.png",
+        "word/media/diana-hazard-7-8.png",
+        "word/media/diana-hazard-8-1.png",
+        "word/media/diana-hazard-8-2.png",
+        "word/media/diana-hazard-8-3.png",
+        "word/media/diana-hazard-9-1.png",
+        "word/media/diana-hazard-9-2.png",
+        "word/media/diana-hazard-9-3.png",
+        "word/media/diana-hazard-9-4.png",
+        "word/media/diana-hazard-c1-1.png",
+        "word/media/diana-hazard-c1-10.png",
+        "word/media/diana-hazard-c1-11.png",
+        "word/media/diana-hazard-c1-12.png",
+        "word/media/diana-hazard-c1-13.png",
+        "word/media/diana-hazard-c1-14.png",
+        "word/media/diana-hazard-c1-15.png",
+        "word/media/diana-hazard-c1-16.png",
+        "word/media/diana-hazard-c1-17.png",
+        "word/media/diana-hazard-c1-18.png",
+        "word/media/diana-hazard-c1-19.png",
+        "word/media/diana-hazard-c1-2.png",
+        "word/media/diana-hazard-c1-20.png",
+        "word/media/diana-hazard-c1-21.png",
+        "word/media/diana-hazard-c1-22.png",
+        "word/media/diana-hazard-c1-23.png",
+        "word/media/diana-hazard-c1-24.png",
+        "word/media/diana-hazard-c1-25.png",
+        "word/media/diana-hazard-c1-3.png",
+        "word/media/diana-hazard-c1-4.png",
+        "word/media/diana-hazard-c1-5.png",
+        "word/media/diana-hazard-c1-6.png",
+        "word/media/diana-hazard-c1-7.png",
+        "word/media/diana-hazard-c1-8.png",
+        "word/media/diana-hazard-c1-9.png",
+        "word/media/diana-hazard-c2-1.png",
+        "word/media/diana-hazard-c2-10.png",
+        "word/media/diana-hazard-c2-11.png",
+        "word/media/diana-hazard-c2-12.png",
+        "word/media/diana-hazard-c2-13.png",
+        "word/media/diana-hazard-c2-14.png",
+        "word/media/diana-hazard-c2-15.png",
+        "word/media/diana-hazard-c2-16.png",
+        "word/media/diana-hazard-c2-17.png",
+        "word/media/diana-hazard-c2-18.png",
+        "word/media/diana-hazard-c2-19.png",
+        "word/media/diana-hazard-c2-2.png",
+        "word/media/diana-hazard-c2-20.png",
+        "word/media/diana-hazard-c2-21.png",
+        "word/media/diana-hazard-c2-22.png",
+        "word/media/diana-hazard-c2-23.png",
+        "word/media/diana-hazard-c2-24.png",
+        "word/media/diana-hazard-c2-25.png",
+        "word/media/diana-hazard-c2-3.png",
+        "word/media/diana-hazard-c2-4.png",
+        "word/media/diana-hazard-c2-5.png",
+        "word/media/diana-hazard-c2-6.png",
+        "word/media/diana-hazard-c2-7.png",
+        "word/media/diana-hazard-c2-8.png",
+        "word/media/diana-hazard-c2-9.png",
+        "word/media/diana-hazard-d2-1.png",
+        "word/media/diana-hazard-d2-2.png",
+        "word/media/diana-hazard-d2-3.png",
+        "word/media/diana-hazard-d2-4.png",
+        "word/media/diana-hazard-d2-5.png"
+      ]
+    }
+  },
+  "chapter10": {
+    "start": 695,
+    "endExclusive": 780,
+    "bodyExact": true,
+    "imagesExact": true
+  },
+  "table10_1": {
+    "matchesMemoIncludingHeaders": true,
+    "cellsIncludingHeaders": 72
+  },
+  "table10_2": [
+    {
+      "scenario": "S135",
+      "modelDemand": "TR 2,500 yr",
+      "dianaLabel": "1:2,475",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.835",
+        "193",
+        "18.1",
+        "7.4",
+        "3.6",
+        "1.9"
+      ],
+      "avk": [
+        "1.278",
+        "194",
+        "14.3",
+        "5.8",
+        "2.9",
+        "1.4"
+      ],
+      "r02": [
+        "1.278",
+        "194",
+        "14.3",
+        "5.8",
+        "2.9",
+        "1.4"
+      ],
+      "source": [
+        "1.278",
+        "194",
+        "14.3",
+        "5.8",
+        "2.9",
+        "1.4"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S135",
+      "modelDemand": "TR 10,000 yr",
+      "dianaLabel": "1:10,000",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.835",
+        "193",
+        "21.3",
+        "10.3",
+        "5.3",
+        "2.7"
+      ],
+      "avk": [
+        "1.278",
+        "194",
+        "18.6",
+        "8.5",
+        "4.3",
+        "2.3"
+      ],
+      "r02": [
+        "1.278",
+        "194",
+        "18.6",
+        "8.5",
+        "4.3",
+        "2.3"
+      ],
+      "source": [
+        "1.278",
+        "194",
+        "18.6",
+        "8.5",
+        "4.3",
+        "2.3"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S50",
+      "modelDemand": "TR 2,500 yr",
+      "dianaLabel": "1:2,475",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.377",
+        "217.5",
+        "31.3",
+        "15.3",
+        "7.7",
+        "3.3"
+      ],
+      "avk": [
+        "0.526",
+        "218",
+        "25.2",
+        "11.4",
+        "5.6",
+        "2.6"
+      ],
+      "r02": [
+        "0.526",
+        "218",
+        "25.2",
+        "11.4",
+        "5.6",
+        "2.6"
+      ],
+      "source": [
+        "0.526",
+        "218",
+        "25.2",
+        "11.4",
+        "5.6",
+        "2.6"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S50",
+      "modelDemand": "TR 10,000 yr",
+      "dianaLabel": "1:10,000",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.377",
+        "217.5",
+        "34.7",
+        "19.2",
+        "11.4",
+        "5.8"
+      ],
+      "avk": [
+        "0.526",
+        "218",
+        "32.5",
+        "17.4",
+        "9.8",
+        "4.8"
+      ],
+      "r02": [
+        "0.526",
+        "218",
+        "32.5",
+        "17.4",
+        "9.8",
+        "4.8"
+      ],
+      "source": [
+        "0.526",
+        "218",
+        "32.5",
+        "17.4",
+        "9.8",
+        "4.8"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S32",
+      "modelDemand": "TR 2,500 yr",
+      "dianaLabel": "1:2,475",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.308",
+        "205.6",
+        "39.4",
+        "21.1",
+        "11.8",
+        "5.5"
+      ],
+      "avk": [
+        "0.392",
+        "205.7",
+        "33.1",
+        "16.6",
+        "8.8",
+        "4.2"
+      ],
+      "r02": [
+        "0.392",
+        "205.7",
+        "33.1",
+        "16.6",
+        "8.8",
+        "4.2"
+      ],
+      "source": [
+        "0.392",
+        "205.7",
+        "33.1",
+        "16.6",
+        "8.8",
+        "4.2"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S32",
+      "modelDemand": "TR 10,000 yr",
+      "dianaLabel": "1:10,000",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.308",
+        "205.6",
+        "42.2",
+        "24.6",
+        "15.6",
+        "8.7"
+      ],
+      "avk": [
+        "0.392",
+        "205.7",
+        "41.5",
+        "23.5",
+        "14.3",
+        "7.5"
+      ],
+      "r02": [
+        "0.392",
+        "205.7",
+        "41.5",
+        "23.5",
+        "14.3",
+        "7.5"
+      ],
+      "source": [
+        "0.392",
+        "205.7",
+        "41.5",
+        "23.5",
+        "14.3",
+        "7.5"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S27",
+      "modelDemand": "TR 2,500 yr",
+      "dianaLabel": "1:2,475",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.187",
+        "310.6",
+        "47.3",
+        "25.8",
+        "15.1",
+        "7.2"
+      ],
+      "avk": [
+        "0.219",
+        "309.9",
+        "39.4",
+        "20.4",
+        "11.2",
+        "5.2"
+      ],
+      "r02": [
+        "0.219",
+        "309.9",
+        "39.4",
+        "20.4",
+        "11.2",
+        "5.2"
+      ],
+      "source": [
+        "0.219",
+        "309.9",
+        "39.4",
+        "20.4",
+        "11.2",
+        "5.2"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S27",
+      "modelDemand": "TR 10,000 yr",
+      "dianaLabel": "1:10,000",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.187",
+        "310.6",
+        "50.6",
+        "29.6",
+        "19.0",
+        "10.8"
+      ],
+      "avk": [
+        "0.219",
+        "309.9",
+        "49.3",
+        "27.9",
+        "17.3",
+        "9.3"
+      ],
+      "r02": [
+        "0.219",
+        "309.9",
+        "49.3",
+        "27.9",
+        "17.3",
+        "9.3"
+      ],
+      "source": [
+        "0.219",
+        "309.9",
+        "49.3",
+        "27.9",
+        "17.3",
+        "9.3"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S35",
+      "modelDemand": "TR 2,500 yr",
+      "dianaLabel": "1:2,475",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.28",
+        "251.4",
+        "38.4",
+        "20.2",
+        "11.0",
+        "5.1"
+      ],
+      "avk": [
+        "0.305",
+        "251.6",
+        "33.3",
+        "16.2",
+        "8.4",
+        "3.8"
+      ],
+      "r02": [
+        "0.305",
+        "251.6",
+        "33.3",
+        "16.2",
+        "8.4",
+        "3.8"
+      ],
+      "source": [
+        "0.305",
+        "251.6",
+        "33.3",
+        "16.2",
+        "8.4",
+        "3.8"
+      ],
+      "exact": true
+    },
+    {
+      "scenario": "S35",
+      "modelDemand": "TR 10,000 yr",
+      "dianaLabel": "1:10,000",
+      "columns": [
+        "Ts",
+        "Vs30",
+        "0.1%",
+        "0.4%",
+        "1%",
+        "2.5%"
+      ],
+      "original": [
+        "0.28",
+        "251.4",
+        "42.1",
+        "24.3",
+        "15.2",
+        "8.3"
+      ],
+      "avk": [
+        "0.305",
+        "251.6",
+        "42.6",
+        "23.6",
+        "14.1",
+        "7.2"
+      ],
+      "r02": [
+        "0.305",
+        "251.6",
+        "42.6",
+        "23.6",
+        "14.1",
+        "7.2"
+      ],
+      "source": [
+        "0.305",
+        "251.6",
+        "42.6",
+        "23.6",
+        "14.1",
+        "7.2"
+      ],
+      "exact": true
+    }
+  ],
+  "hazardTables": [
+    {
+      "label": "9-1",
+      "r02BodyIndex": 667,
+      "sourceBodyIndex": 47,
+      "cells": 30,
+      "accelerations": 25,
+      "exact": true,
+      "headersPreserved": true
+    },
+    {
+      "label": "9-2",
+      "r02BodyIndex": 670,
+      "sourceBodyIndex": 52,
+      "cells": 30,
+      "accelerations": 25,
+      "exact": true,
+      "headersPreserved": true
+    },
+    {
+      "label": "9-3",
+      "r02BodyIndex": 689,
+      "sourceBodyIndex": 57,
+      "cells": 192,
+      "accelerations": 160,
+      "exact": true,
+      "headersPreserved": true
+    },
+    {
+      "label": "9-4",
+      "r02BodyIndex": 692,
+      "sourceBodyIndex": 62,
+      "cells": 192,
+      "accelerations": 160,
+      "exact": true,
+      "headersPreserved": true
+    },
+    {
+      "label": "D1-1",
+      "r02BodyIndex": 957,
+      "sourceBodyIndex": 67,
+      "cells": 30,
+      "accelerations": 25,
+      "exact": true,
+      "headersPreserved": true
+    },
+    {
+      "label": "D1-2",
+      "r02BodyIndex": 960,
+      "sourceBodyIndex": 72,
+      "cells": 30,
+      "accelerations": 25,
+      "exact": true,
+      "headersPreserved": true
+    },
+    {
+      "label": "D1-3",
+      "r02BodyIndex": 963,
+      "sourceBodyIndex": 77,
+      "cells": 30,
+      "accelerations": 25,
+      "exact": true,
+      "headersPreserved": true
+    },
+    {
+      "label": "D1-4",
+      "r02BodyIndex": 966,
+      "sourceBodyIndex": 82,
+      "cells": 30,
+      "accelerations": 25,
+      "exact": true,
+      "headersPreserved": true
+    },
+    {
+      "label": "D1-5",
+      "r02BodyIndex": 970,
+      "sourceBodyIndex": 87,
+      "cells": 30,
+      "accelerations": 25,
+      "exact": true,
+      "headersPreserved": true
+    }
+  ],
+  "hazardImages": [
+    {
+      "target": "word/media/diana-hazard-6-1.png",
+      "matchingSources": [
+        "word/media/rId27.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-2.png",
+      "matchingSources": [
+        "word/media/rId31.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-3.png",
+      "matchingSources": [
+        "word/media/rId35.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-4.png",
+      "matchingSources": [
+        "word/media/rId39.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-5.png",
+      "matchingSources": [
+        "word/media/rId43.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-6.png",
+      "matchingSources": [
+        "word/media/rId47.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-7.png",
+      "matchingSources": [
+        "word/media/rId51.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-8.png",
+      "matchingSources": [
+        "word/media/rId55.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-9.png",
+      "matchingSources": [
+        "word/media/rId59.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-10.png",
+      "matchingSources": [
+        "word/media/rId63.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-11.png",
+      "matchingSources": [
+        "word/media/rId67.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-12.png",
+      "matchingSources": [
+        "word/media/rId71.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-6-13.png",
+      "matchingSources": [
+        "word/media/rId75.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-7-7.png",
+      "matchingSources": [
+        "word/media/rId79.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-7-8.png",
+      "matchingSources": [
+        "word/media/rId83.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-8-1.png",
+      "matchingSources": [
+        "word/media/rId87.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-8-2.png",
+      "matchingSources": [
+        "word/media/rId91.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-8-3.png",
+      "matchingSources": [
+        "word/media/rId95.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-9-1.png",
+      "matchingSources": [
+        "word/media/rId99.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-9-2.png",
+      "matchingSources": [
+        "word/media/rId103.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-9-3.png",
+      "matchingSources": [
+        "word/media/rId107.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-9-4.png",
+      "matchingSources": [
+        "word/media/rId111.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-1.png",
+      "matchingSources": [
+        "word/media/rId115.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-2.png",
+      "matchingSources": [
+        "word/media/rId119.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-3.png",
+      "matchingSources": [
+        "word/media/rId123.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-4.png",
+      "matchingSources": [
+        "word/media/rId127.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-5.png",
+      "matchingSources": [
+        "word/media/rId131.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-6.png",
+      "matchingSources": [
+        "word/media/rId135.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-7.png",
+      "matchingSources": [
+        "word/media/rId139.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-8.png",
+      "matchingSources": [
+        "word/media/rId143.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-9.png",
+      "matchingSources": [
+        "word/media/rId147.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-10.png",
+      "matchingSources": [
+        "word/media/rId151.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-11.png",
+      "matchingSources": [
+        "word/media/rId155.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-12.png",
+      "matchingSources": [
+        "word/media/rId159.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-13.png",
+      "matchingSources": [
+        "word/media/rId163.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-14.png",
+      "matchingSources": [
+        "word/media/rId167.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-15.png",
+      "matchingSources": [
+        "word/media/rId171.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-16.png",
+      "matchingSources": [
+        "word/media/rId175.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-17.png",
+      "matchingSources": [
+        "word/media/rId179.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-18.png",
+      "matchingSources": [
+        "word/media/rId183.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-19.png",
+      "matchingSources": [
+        "word/media/rId187.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-20.png",
+      "matchingSources": [
+        "word/media/rId191.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-21.png",
+      "matchingSources": [
+        "word/media/rId195.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-22.png",
+      "matchingSources": [
+        "word/media/rId199.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-23.png",
+      "matchingSources": [
+        "word/media/rId203.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-24.png",
+      "matchingSources": [
+        "word/media/rId207.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c1-25.png",
+      "matchingSources": [
+        "word/media/rId211.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-1.png",
+      "matchingSources": [
+        "word/media/rId215.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-2.png",
+      "matchingSources": [
+        "word/media/rId219.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-3.png",
+      "matchingSources": [
+        "word/media/rId223.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-4.png",
+      "matchingSources": [
+        "word/media/rId227.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-5.png",
+      "matchingSources": [
+        "word/media/rId231.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-6.png",
+      "matchingSources": [
+        "word/media/rId235.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-7.png",
+      "matchingSources": [
+        "word/media/rId239.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-8.png",
+      "matchingSources": [
+        "word/media/rId243.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-9.png",
+      "matchingSources": [
+        "word/media/rId247.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-10.png",
+      "matchingSources": [
+        "word/media/rId251.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-11.png",
+      "matchingSources": [
+        "word/media/rId255.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-12.png",
+      "matchingSources": [
+        "word/media/rId259.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-13.png",
+      "matchingSources": [
+        "word/media/rId263.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-14.png",
+      "matchingSources": [
+        "word/media/rId267.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-15.png",
+      "matchingSources": [
+        "word/media/rId271.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-16.png",
+      "matchingSources": [
+        "word/media/rId275.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-17.png",
+      "matchingSources": [
+        "word/media/rId279.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-18.png",
+      "matchingSources": [
+        "word/media/rId283.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-19.png",
+      "matchingSources": [
+        "word/media/rId287.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-20.png",
+      "matchingSources": [
+        "word/media/rId291.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-21.png",
+      "matchingSources": [
+        "word/media/rId295.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-22.png",
+      "matchingSources": [
+        "word/media/rId299.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-23.png",
+      "matchingSources": [
+        "word/media/rId303.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-24.png",
+      "matchingSources": [
+        "word/media/rId307.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-c2-25.png",
+      "matchingSources": [
+        "word/media/rId311.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-d2-1.png",
+      "matchingSources": [
+        "word/media/rId315.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-d2-2.png",
+      "matchingSources": [
+        "word/media/rId319.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-d2-3.png",
+      "matchingSources": [
+        "word/media/rId323.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-d2-4.png",
+      "matchingSources": [
+        "word/media/rId327.png"
+      ]
+    },
+    {
+      "target": "word/media/diana-hazard-d2-5.png",
+      "matchingSources": [
+        "word/media/rId331.png"
+      ]
+    }
+  ],
+  "fullReportCommonPga1500": [
+    {
+      "modelDemand": "500",
+      "statistic": "mean",
+      "Vs30": 1500,
+      "units": "g",
+      "report": "0.037",
+      "r02": "0.0374",
+      "equalAtReportPrecision": true
+    },
+    {
+      "modelDemand": "1000",
+      "statistic": "mean",
+      "Vs30": 1500,
+      "units": "g",
+      "report": "0.065",
+      "r02": "0.0653",
+      "equalAtReportPrecision": true
+    },
+    {
+      "modelDemand": "2500",
+      "statistic": "mean",
+      "Vs30": 1500,
+      "units": "g",
+      "report": "0.126",
+      "r02": "0.1261",
+      "equalAtReportPrecision": true
+    },
+    {
+      "modelDemand": "5000",
+      "statistic": "mean",
+      "Vs30": 1500,
+      "units": "g",
+      "report": "0.194",
+      "r02": "0.1943",
+      "equalAtReportPrecision": true
+    },
+    {
+      "modelDemand": "10000",
+      "statistic": "mean",
+      "Vs30": 1500,
+      "units": "g",
+      "report": "0.285",
+      "r02": "0.2852",
+      "equalAtReportPrecision": true
+    },
+    {
+      "modelDemand": "MDE (84%)",
+      "statistic": "P84",
+      "Vs30": 1500,
+      "units": "g",
+      "report": "0.412",
+      "r02": "0.4122",
+      "equalAtReportPrecision": true
+    }
+  ],
+  "fullReportCommonGeometry": {
+    "IDm": "U2",
+    "Hs": 50,
+    "reportRow": [
+      "U2",
+      "SP SM",
+      "50",
+      "108",
+      "2.75",
+      "0.282",
+      "0.479",
+      "3.3699",
+      "213.4",
+      "324.7",
+      "218.0",
+      "0.526"
+    ],
+    "dianaRow": [
+      "U2",
+      "SP SM",
+      "50",
+      "108",
+      "2.75",
+      "0.282",
+      "0.479",
+      "3.3699",
+      "213.4",
+      "324.7",
+      "218.0",
+      "0.526"
+    ],
+    "exact": true
+  },
+  "appendixE": {
+    "start": 989,
+    "endExclusive": 1074,
+    "exactOriginalR02": true,
+    "visibleTextCharacters": 0,
+    "deletedTextCharacters": 15103
+  }
+}

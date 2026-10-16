@@ -1,0 +1,3858 @@
+{
+  "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/docx/gmdp.memo.en.docx",
+  "bytes": 2046292,
+  "sha256": "9812e23c42a59a5be3738723e8e1e06684f2aa84287870c3f06472a03c92a329",
+  "parts": {
+    "[Content_Types].xml": "16ffd05f07172a1c5330acf2eef8cb9ef97f38116cc971aee843799506c9eaa5",
+    "_rels/.rels": "ac6a012040a82c3b23f19cf36dd8d10cad16e2fe442c8665f53dde2b9836178e",
+    "docProps/app.xml": "3af512c1d965d98f87dfdb9d3638ab668264dea6f73aed3ea005f1aa6b533359",
+    "docProps/core.xml": "669797d39cca78085f914bd954e78cbd9871636971c4ba4ada65f654d9d32fdc",
+    "docProps/custom.xml": "7e63803e1379424892a056eb85fdf3d1136f89199f5f81533921f7994c38ca30",
+    "word/_rels/document.xml.rels": "b23559a11eee440b3e509909e9d864d50a8fbf3550329042966b1b51ce979567",
+    "word/_rels/footnotes.xml.rels": "b5fd7b70eab863f9bb2f25243baaef3731b9213b75c0daa5dd89eee995483699",
+    "word/comments.xml": "7b87229d5af1f34f0fad2e50382eb6c8080c9afa29b641c4ae93e98529d0a320",
+    "word/document.xml": "5ee0bb050810ac25ef14da4c3dbb59cc74acb08b5722da6a7752e21118367fb7",
+    "word/fontTable.xml": "f9882f6889e3e73231adcc178b4ecc40f8783693d135dc8cc4b4e4f2b8b05db9",
+    "word/footer1.xml": "1f571496235857ef59751aca9645d7825768e68462c1ae9abb6fc828f6ff821d",
+    "word/footnotes.xml": "540ca63b2dc4ef226e3b4a0b8e763ce3cc1b5b088bfab144f1fdc5c79cc0ff9e",
+    "word/header1.xml": "d88ee0ad3eeb0503ca7c49ee496b7b6127dd47a97886d52ff488e4e0a7af3651",
+    "word/media/rId30.png": "ea24317bbeeb6cdd476d3449adf83a8659788c5a836dc1687c4d4660fea1b53d",
+    "word/media/rId35.png": "08c8d6d074ca34e6f477f4d70c142f9dda14c2d6f6fcac649de876c7a6e2abab",
+    "word/media/rId40.png": "dc33fb4761b04a852a6c86fc9dcd87c3d5eec8be7e608814732e9aa07f7fbae5",
+    "word/media/rId45.png": "73c472dfef245771f7c3db1cd02af0ad197d1541fcbf929c8a8b33f6b444deb3",
+    "word/media/rId61.png": "ccf08047763ae42c2412df9b8b431c98b54ec1799347135dea9561e487aab15f",
+    "word/media/rId66.png": "f1c5368bd1692f46ae46170ce5b73187c1a80b4ec6841a149e85294a8ba4c194",
+    "word/media/rId71.png": "1c4e7cccc9e9dd082beb0d78abec283610052a06fc7988470ee3188f02f38063",
+    "word/media/rId76.png": "652416511fc5b0a89d4b58b4b9564ad49961a0d11e452d737b0e0a182c629117",
+    "word/media/srk-na-logo.wmf": "c5e94914920e7c7d7a0038fb140449960fdb00173dd9dfea71ffca5240ab82db",
+    "word/numbering.xml": "bdafb55791c638a32965f46b3e491051c1fdc90a5b7155bc219695ea85f519bd",
+    "word/settings.xml": "78845bee5614156e3129e4bd72a0c855fc2f2135d75a1a07954eb967c44f6576",
+    "word/srk-composition.json": "7c28368cc70dedf56c323b3435f66633596d6acb94a0a3b30569b94fea3bee72",
+    "word/srk-cover-footer.xml": "72b76446212b6ebeb4b54c15f3e4e31dc0f3aa54b8e273d54939366f38c7eefd",
+    "word/srk-empty-footer.xml": "72b76446212b6ebeb4b54c15f3e4e31dc0f3aa54b8e273d54939366f38c7eefd",
+    "word/srk-empty-header.xml": "1c6b4fcc889f753bc6155bf576d80520fb47f620a8166d03f18fa05cfea2f70f",
+    "word/styles.xml": "2f6250253819f56c27b4533d59f837641c616be7e27f5a3e9deeb5f890f23212",
+    "word/theme/theme1.xml": "488a401645c6030b741d7e912aa55ad9ec6b219d36a3247332454c0de867b827",
+    "word/webSettings.xml": "bc4ba4918aa343b54d91100c8e606be38048c22c160be89c585ac598034fa0de"
+  },
+  "bodyCount": 283,
+  "nodes": [
+    {
+      "bodyIndex": 1,
+      "tag": "p",
+      "sha256": "5e75dea94daf4718c297e812971858d29b68ef1783bf1d90870d9332239179cd",
+      "text": ""
+    },
+    {
+      "bodyIndex": 2,
+      "tag": "p",
+      "sha256": "a5a35ddc61a075b615365cc38c0c9f2a869a72e4d9aa9cc03ceb0fe2f1196ad1",
+      "text": ""
+    },
+    {
+      "bodyIndex": 3,
+      "tag": "tbl",
+      "sha256": "de3ca3b0e40d812b76848d982e5f634ae2be18756969903181f28f0bf37fb0f3",
+      "text": "Ground-Motion Design ParametersPrepared forCanada Nickel Co.Prepared bySRK Consulting (Canada), Inc. and Paterson & CookeAR-M2V4D15/10/2026"
+    },
+    {
+      "bodyIndex": 4,
+      "tag": "p",
+      "sha256": "7bcef469b80811a9cf42926e8741ed7671111da59558f99d6a658dbb9d13279d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 5,
+      "tag": "tbl",
+      "sha256": "edd52a6650044b7ad5a40163f78572e134b51d13d4cd167e64fc5204f0132d2a",
+      "text": "Ground-Motion Design Parameters15/10/2026Prepared forPrepared byCanada Nickel Co.SRK Consulting (Canada), Inc. and Paterson & CookeWeb:https://www.srk.com/Project No.:AR-M2V4DFile Name:gmdp.memo.en.docx"
+    },
+    {
+      "bodyIndex": 6,
+      "tag": "p",
+      "sha256": "9fe6fc5fea31122411747af26be90f81fc569f91b9e224315d7266034ad360e3",
+      "text": ""
+    },
+    {
+      "bodyIndex": 7,
+      "tag": "bookmarkStart",
+      "sha256": "e9011e7489a77422ce0d16adefb98b311935eeb6d647a4878a28fb15d89c6edc",
+      "text": ""
+    },
+    {
+      "bodyIndex": 8,
+      "tag": "p",
+      "sha256": "7d60ed49a92a1f90fd6730ad13cb343c33da96501b12bab96264cd07666b165c",
+      "text": "Ground-Motion Design Parameters"
+    },
+    {
+      "bodyIndex": 9,
+      "tag": "p",
+      "sha256": "4e0d754c6fc55daaad5991d26d120e677dcc16e369797dd5bc03faddf0258af2",
+      "text": "SRK Consulting (Canada), Inc. and Paterson & Cooke prepared this report for Canada Nickel Co. under project AR-M2V4D, located in Timmins, Ontario, Canada. It reports the dynamic properties of the slopes analyzed, the permanent displacements induced by the design earthquakes and accumulated in their potential sliding masses, and the performance-based seismic coefficients derived from those displacements. The flexible sliding-block displacement models require the fundamental period of each potential sliding mass and the dynamic soil stiffness that determines it: the analyses considered 5 geometry–material scenarios with heights between 27 and 135 m, and the estimated fundamental period varies between 0.22 and 1.28 s."
+    },
+    {
+      "bodyIndex": 10,
+      "tag": "p",
+      "sha256": "b8332ae117554d3c5b0f697308c16c6229b7f14725bf5ce53e3b9d0cc87d8f19",
+      "text": "The Newmark permanent displacement Dn quantifies the displacement induced by an earthquake and accumulated in the sliding mass and is the performance measure from which the seismic coefficients are derived. The Dn(ky) curves relate, for each combination of geometry, material, and design scenario, the yield acceleration ky to the expected permanent displacement; they were computed with the ensemble set of AM88, JB07, SR08, BT07, and BM19, with the reference magnitude assigned to each seismic demand and 300 realizations per demand and are read at the fractiles q=1−pe. The horizontal pseudostatic coefficient kh is in turn derived from the allowable permanent displacement Da of the potentially sliding mass (Bray and Travasarou 2009; Macedo et al. 2018); the coefficients are reported at four relative displacement limits, Da/Hs = 0.1, 0.4, 1.0, 2.5%, and the tables in Section 1.5 report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA."
+    },
+    {
+      "bodyIndex": 11,
+      "tag": "bookmarkStart",
+      "sha256": "04b620d9176f3af662a2b044360a56e51e3abe29ea0edb5a9e4026f87919582e",
+      "text": ""
+    },
+    {
+      "bodyIndex": 12,
+      "tag": "p",
+      "sha256": "a374ee77432104d8d9d4e9225053f69717d296deab853679b9054f5e3e56b7cc",
+      "text": "Seismic Design Criteria for Slopes"
+    },
+    {
+      "bodyIndex": 13,
+      "tag": "p",
+      "sha256": "97f0876fe810b51b2b5e2c721d3488c84dff99b30ca6d873a4033856535a67a7",
+      "text": "The seismic design of tailings storage facilities is based on the two-level performance framework consolidated by dam-safety practice: an Operating Basis Earthquake (OBE), which the facility must withstand without operational interruption, and a Safety Evaluation Earthquake (SEE), under which it must not release tailings. ICOLD Bulletin 148 formalizes this framework for embankment structures (International Commission on Large Dams 2016; Australian National Committee on Large Dams 2012), and the USACE Engineer Regulation ER 1110-2-1806 expresses it in terms of the OBE and the Maximum Design Earthquake (MDE) (U.S. Army Corps of Engineers 1995). In this report, the MDE is represented by the probabilistic spectrum for a 10,000-year return period, whereas the MCE is represented by the deterministic envelope."
+    },
+    {
+      "bodyIndex": 14,
+      "tag": "p",
+      "sha256": "746d7913b2f538f2a9c3bb32a643f2cde3511cf7614c55a028a97c85a704f32f",
+      "text": "The verification of the slopes under those design earthquakes follows the practice that ICOLD and FEMA frame for dams and embankments through successive tiers of analysis including pseudostatic stability checks, simplified estimates of permanent deformation, and dynamic analyses where warranted by the consequences of failure, anticipated response, or complexity of the failure mechanism (International Commission on Large Dams 2016; Federal Emergency Management Agency 2005). Within this framework, the Newmark method provides a deformation-based assessment that complements the limit-equilibrium analysis. The pseudostatic seismic coefficient is a project-specific value rather than a universal value assigned to a particular structure type. USACE manuals EM 1110-2-1902 and EM 1110-2-2100 include pseudostatic analysis among the methods applicable to dams and earthworks and address the sliding block for estimating permanent seismic deformation. Selection of the coefficient considers the site-specific seismic hazard, potential failure mechanism, and project performance criteria, so the coefficient results from the conditions of each project instead of a single value applicable to all of them (U.S. Army Corps of Engineers 2003, 2005)."
+    },
+    {
+      "bodyIndex": 15,
+      "tag": "p",
+      "sha256": "4a0e35d7ddc51f549f3b8133c6dbb6c25eda7233b0a595e3a775b8d8d1d083b5",
+      "text": "Two further references relate the pseudostatic verification to the permanent deformation. NCHRP Report 611 formulates the seismic analysis of slopes and transportation infrastructure in terms of displacement-based performance and uses simplified Newmark correlations to relate demand to permanent deformation (Anderson et al. 2008), and Eurocode 8 ties the pseudostatic action to the design seismic acceleration and the consequence class and admits Newmark displacement calculations when the ratio between the critical acceleration and the design acceleration justifies a deformation-based verification (European Committee for Standardization 2004). These references provide the framing and the comparison criteria for the coefficients of this report; their indicative values serve that comparison, and the displacement objective defined for the project governs the coefficients themselves."
+    },
+    {
+      "bodyIndex": 16,
+      "tag": "p",
+      "sha256": "5f6eabea350ee34384587fa997d6281838db8300731b17ca0d16ea2e6aa75f82",
+      "text": "That objective is expressed as an allowable permanent displacement relative to the slope height. This report evaluates the coefficients at four damage thresholds of the relative permanent displacement, Da/H = 0.1, 0.4, 1.0, 2.5%: the crest-settlement ratios derived from ninety case histories of earthquake damage to embankment dams and associated with the Operational, Damage, Life Safety and Collapse limit states of the Italian dam code NTD14 (Aliberti et al. 2019). Their denominator, the reference height, includes the embankment height and the thickness of the deformable foundation and is adopted here as the slope height for normalization. The seismic coefficient tables are presented for these four thresholds. Section 1.3 describes the derivation of the coefficients from the allowable displacement."
+    },
+    {
+      "bodyIndex": 17,
+      "tag": "bookmarkEnd",
+      "sha256": "b768630150ef1cfe3a0351023c6bf497ad6d37b28e09db138b119d68f66e791a",
+      "text": ""
+    },
+    {
+      "bodyIndex": 18,
+      "tag": "bookmarkStart",
+      "sha256": "7ef0ec72ad16f0bf4aa59af51b39cacf398408c897b0c514ef75c3c8f08f8a6c",
+      "text": ""
+    },
+    {
+      "bodyIndex": 19,
+      "tag": "p",
+      "sha256": "603e7fc65dbeea2644cb1bd23ea572a1d8baac2a318376b611bfb7e4259f2224",
+      "text": "Dynamic Properties of Slopes"
+    },
+    {
+      "bodyIndex": 20,
+      "tag": "p",
+      "sha256": "96b5599f4b106f4c8484ac37acfe7e3970b024c3599ad27a51f7d4d36680ea67",
+      "text": "Flexible sliding-block models account for the dynamic response of the potential sliding mass through spectral acceleration evaluated at a period proportional to its fundamental period, so each slope geometry–material combination needs Ts, which is derived from the geometry and the depth-dependent small-strain shear stiffness, described by Go, mo, and VSo; the mean values of Ts and VS30 provide the dynamic inputs to the permanent-displacement models. The fundamental period of the potential sliding mass is estimated from the first mode of the truncated inhomogeneous shear-beam model of Dakoulas and Gazetas (1985) as"
+    },
+    {
+      "bodyIndex": 21,
+      "tag": "p",
+      "sha256": "274be2878557619a69b6e8f2cff43d932b45d5f7d78fe452601e655256ada684",
+      "text": "Ts=4πHa1(2−mo)VSo,(1)"
+    },
+    {
+      "bodyIndex": 22,
+      "tag": "p",
+      "sha256": "d3b10ec2066c41e433a73adf6bb6a6f73aeb22b464732f926cd73ed1fb93ba43",
+      "text": "where H=Hs/(1−λo) is the height of the truncated wedge from the apex of the extended slopes to the base, Hs is the slope height, VSo is the basal shear-wave velocity associated with Go, mo is the inhomogeneity factor governing the shear-modulus profile, and a1 is the first modal root of the characteristic equation. The modal root depends jointly on mo and the truncation ratio λo, which geometric similarity gives as"
+    },
+    {
+      "bodyIndex": 23,
+      "tag": "p",
+      "sha256": "1ae3228c1dcb78a200c7a745569885c15bfd86b62beb23d08a4bb6ace8c5cf14",
+      "text": "λo=bbmax,(2)"
+    },
+    {
+      "bodyIndex": 24,
+      "tag": "p",
+      "sha256": "ec3d08612cd0d070fac54029d0057ddb6b09d193ee76687ca78f7f778159394e",
+      "text": "where b and bmax are the berm and base widths, respectively. The equivalent truncated section in the Dakoulas–Gazetas model (1985) is specified by the height Hs, slope ratio s, and truncation ratio λo; with tanβ=1/s, where β is the slope angle, the berm width is given by"
+    },
+    {
+      "bodyIndex": 25,
+      "tag": "p",
+      "sha256": "12f76d9dde6c86929b20416d4ed0db919537112fd06d90c6aa8dd30f5317ab1e",
+      "text": "b=2Hss1/λo−1.(3)"
+    },
+    {
+      "bodyIndex": 26,
+      "tag": "p",
+      "sha256": "3e0a6d643fbf97a465ee6a9727186bf4beccf62fefafb5233c8eb9fb0d90f10b",
+      "text": "and the base width is"
+    },
+    {
+      "bodyIndex": 27,
+      "tag": "p",
+      "sha256": "4afa9d1a2a118a989389d2a375d3164c6bad05753d777b996b903d5ec10a9193",
+      "text": "bmax=b+2Hss.(4)"
+    },
+    {
+      "bodyIndex": 28,
+      "tag": "p",
+      "sha256": "0597985aea15f9291fa92fa67d94db8b83eb75668436abce49d07d889e5ceb24",
+      "text": "For each profile realization, the basal shear-wave velocity is"
+    },
+    {
+      "bodyIndex": 29,
+      "tag": "p",
+      "sha256": "94a8285310b4249e3df3eb2e74fcb0d5d8adca452ab556dc8d1db28288f6be9f",
+      "text": "VSo=gGoγsat(kb)1/2,(5)"
+    },
+    {
+      "bodyIndex": 30,
+      "tag": "p",
+      "sha256": "c3035a630048c709bdd69462bc1c6fe0f022f8d8b974fa9a3aa0a3bc3b164d81",
+      "text": "where Go is the fitted small-strain shear modulus at the base, g is the acceleration of gravity, and γsat(kb) is the saturated unit weight of the basal layer, indexed by kb; all quantities are expressed in consistent units. The depth dependence of small-strain shear stiffness is represented for each realization by the power-law profile"
+    },
+    {
+      "bodyIndex": 31,
+      "tag": "p",
+      "sha256": "d0ea6328aa8539e8ba83ce27bd96aeb68af3847d9882f61509b3a15ccd6d98c2",
+      "text": "G(z)=GozHsmo,(6)"
+    },
+    {
+      "bodyIndex": 32,
+      "tag": "p",
+      "sha256": "22d028b67cd0285474b26867f9a42607878be73b386dafdef34552b22872153d",
+      "text": "where z is depth below the crest, Go is the fitted shear modulus at the base (z/Hs=1), and mo is obtained from a logarithmic fit to the layer moduli Gm(k); the characteristic equation corresponds to the power law with depth measured from the apex of the extended slopes and normalized by H (1985), so evaluating a1 with the exponent fitted from the crest is an approximation. Those layer moduli come from the soil classification: the USCS classification assigned to layer k selects its soil family and the associated set of J(k) small-strain shear-modulus correlations compiled by Ishihara (1996), and the layer modulus is taken as their arithmetic mean,"
+    },
+    {
+      "bodyIndex": 33,
+      "tag": "p",
+      "sha256": "4782991ec84cfc950fcecb8a40f8d07fd7878415407ba620dc9ad2a3bff6e6ca",
+      "text": "Gm(k)=1J(k)j=1J(k)A(j)Fe(k,j)OCR(k)m1(k)prefn(j)pm(k)prefn(j).(7)"
+    },
+    {
+      "bodyIndex": 34,
+      "tag": "p",
+      "sha256": "3355713b0045e103a9d9fcc60d860af660cb55374c9861c4c07d472886f08877",
+      "text": "Here A(j) and n(j) are tabulated correlation parameters, Fe(k,j) is the void-ratio function, m1(k) is the overconsolidation exponent, pm(k) is the layer-averaged effective octahedral normal stress, and pref=100 kPa is the reference pressure. Under at-rest conditions, the layer-averaged effective octahedral normal stress pm(k) (1968; 1972) is"
+    },
+    {
+      "bodyIndex": 35,
+      "tag": "p",
+      "sha256": "2ba5c775bcbc10e536f2b106aa00b6e3b71fc30d7173dd57f6812edef0a57d12",
+      "text": "pm(k)=1+2K03ℓ=1k−1γ(ℓ)h(ℓ)+γ(k)h(k)2,(8)"
+    },
+    {
+      "bodyIndex": 36,
+      "tag": "p",
+      "sha256": "83bf666d77f1b35186dd545b2dfcc322dbc0b434cf0e9eedc0d5148246601f89",
+      "text": "where K0 is the at-rest lateral earth pressure coefficient, γ(ℓ) and h(ℓ) are the unit weight adopted for the groundwater condition and the thickness of layer ℓ, and ℓ<k denotes the overlying layers. The layer overconsolidation ratio is OCR(k)=max[(pm(k)+POP)/pm(k),1], where POP is the preconsolidation pressure; for fine-grained soils, m1(k)=fIP(IP(k)), whereas for sands and gravels m1(k)=0 and the OCR multiplier is therefore unity. The void ratio e0(k) enters all three soil families through Fe(k,j), which the correlations compiled by Ishihara (1996) define in terms of e0(k) and Ce(j), with the index jSS75 identifying the Shibata–Soelarno formulation (1975):"
+    },
+    {
+      "bodyIndex": 37,
+      "tag": "p",
+      "sha256": "7e6004c2add507ab9687ac6bf3ddc71c0e28098425f41fc39bb3d675d9a9a94d",
+      "text": "Fe(k,j)=Ce(j)−e0(k)1+e0(k),j=jSS75,Ce(j)−e0(k)21+e0(k),j≠jSS75.(9)"
+    },
+    {
+      "bodyIndex": 38,
+      "tag": "p",
+      "sha256": "4cf8006625334d93e77861be31f497591919fdbef6b6563c8b5e45cfdf66c086",
+      "text": "The shear-wave velocity of layer k then follows from"
+    },
+    {
+      "bodyIndex": 39,
+      "tag": "p",
+      "sha256": "12c2764c02dc425dcdc2884439e31ec3d19a85e99e73eee20dc7bc00385125e4",
+      "text": "VS(k)=gGm(k)γsat(k)1/2,(10)"
+    },
+    {
+      "bodyIndex": 40,
+      "tag": "p",
+      "sha256": "6726083efaabb0de3dbf99a2949b656791c245838d31b7bdbeb38f0e7b124e5d",
+      "text": "where Gm(k) is the adopted layer modulus and γsat(k) is its saturated unit weight; all quantities are expressed in consistent units."
+    },
+    {
+      "bodyIndex": 41,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 42,
+      "tag": "bookmarkStart",
+      "sha256": "68ca2737f1824b8e5f68f5876e432f88a1fce40af8bf60e909a6a75d8656fbb3",
+      "text": ""
+    },
+    {
+      "bodyIndex": 43,
+      "tag": "p",
+      "sha256": "67c947caced3ae82d67b827ee9b34364c35b0d6043fb7cbd3154a54a1351f0be",
+      "text": "Table 1: Parameters of the small-strain stiffness formulations for gravels, sands, and fine-grained soils, used in expression 7 with pm(k) and pref in kPa and Gm(k) in MPa."
+    },
+    {
+      "bodyIndex": 44,
+      "tag": "tbl",
+      "sha256": "db9b56af4ecaea19b221f44ca974d85472cd159b536f64ad2dddde1f3357d0ad",
+      "text": "FormulationFamilyReference materialAuthorACenHR63ASandsAngular-grain crushed sandHardin & Richart (1963)3.272.9730.50HR63RSandsRound-grain Ottawa sandHardin & Richart (1963)7.002.1740.50IW78SandsSeveral sandsIwasaki et al.(1978)9.002.1740.38KO80SandsToyoura sandKokusho (1980)8.402.1730.50LO93SandsTicino sandsLo Presti et.al (1993)7.102.2700.43SS75SandsSeveral sandsShibata-Soelarno (1975)42.000.6700.50YR84SandsSeveral sandsYu-Richart (1984)7.002.1730.50HB68FinesSeveral undisturbed NC ClaysHardin & Black (1968)3.272.9730.50KU82CFinesUndisturbed NC ClayKokusho et al.(1982)0.147.3200.60MW72BFinesReconstituted NC BentoniteMarcuson & Wahls (1972)0.454.4000.50MW72KFinesReconstituted NC KaolineMarcuson & Wahls (1972)4.502.9730.50ZU78AFinesClay remolded IP=0-50%Zen-Umehara (1978)2.002.9730.50ZU78BFinesClay remolded IP=0-50%Zen-Umehara (1978)3.002.9730.50ZU78CFinesClay remolded IP=0-50%Zen-Umehara (1978)4.002.9730.50GO87GravelsGravelGoto et al.(1987)1.222.1700.85KE81GGravelsRounded GravelKokusho-Esashi (1981)8.402.1700.60KE81RGravelsCrushed RockKokusho-Esashi (1981)13.002.1700.55NI85GravelsGravelNishio et al.(1985)9.362.1700.44PR81GravelsBalastPrange (1981)7.232.9700.38TA87GravelsGravelTanaka et al.(1987)3.082.1700.60"
+    },
+    {
+      "bodyIndex": 45,
+      "tag": "bookmarkEnd",
+      "sha256": "1192451c6724b41077d02c0d07aa4e38654a262c872a5aa9072119737a8cb367",
+      "text": ""
+    },
+    {
+      "bodyIndex": 46,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 47,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 48,
+      "tag": "p",
+      "sha256": "387e53943f219c557bfa279f3706db95b7b68414407013ebc1be2419da5c7ee7",
+      "text": "For each geometry–material combination, the analysis generates N synthetic realizations of the layered profile, and each of Go, mo, VSo, and VS30 is summarized by its mean and selected marginal fractiles; for the mean and for each reported fractile, a1 and Ts are evaluated from the corresponding mo and VSo values, and the estimates calculated from the mean parameter values provide the dynamic properties used in the displacement analysis. VS30 is the travel-time-averaged shear-wave velocity in the uppermost 30 m:"
+    },
+    {
+      "bodyIndex": 49,
+      "tag": "p",
+      "sha256": "3315df7cc659213914cf5530735d3fc4b1f132e6016bde1c254bb2862973ccc1",
+      "text": "VS30=30i​h30(i)VS(i)+max(30−Hs,0)Vref.(11)"
+    },
+    {
+      "bodyIndex": 50,
+      "tag": "p",
+      "sha256": "2ab10c70d538672ddf67945d487e4507ffe121592db5916f723da127f43e4a99",
+      "text": "In this expression, h30(i) is the portion of layer i within the uppermost 30 m and VS(i) is its shear-wave velocity; when Hs<30 m, the reference velocity Vref is assigned to the remaining thickness."
+    },
+    {
+      "bodyIndex": 51,
+      "tag": "bookmarkStart",
+      "sha256": "9c304750911c7b226ab016e2248770b464d56af359a46cd3d236e7b85638c3ac",
+      "text": ""
+    },
+    {
+      "bodyIndex": 52,
+      "tag": "p",
+      "sha256": "45392cf812a484089be9c93e5562be8ce14ddcb1b70eaa7090be757c4c978014",
+      "text": "Table 2: Fundamental periods Ts≈T1 [s] and mean dynamic properties of the evaluated slope scenarios."
+    },
+    {
+      "bodyIndex": 53,
+      "tag": "tbl",
+      "sha256": "1e32f989d51206ed8513954cfcfeaeecbec34824273f70f36bc2e8e788d28c54",
+      "text": "IDmUSCSHsbsλomoa1GoVSoVS30TsU1ML MH1353632.500.3500.4843.6538263.8368.8194.01.278U2SP SM501082.750.2820.4793.3699213.4324.7218.00.526U3SP SM ML MH32523.000.2130.4643.1306147.6271.3205.70.392U4GP GW27293.250.1420.5463.1036365.1400.1309.90.219U5GP GW SP SM35203.500.0750.5062.9528272.7353.1251.60.305"
+    },
+    {
+      "bodyIndex": 54,
+      "tag": "bookmarkEnd",
+      "sha256": "b74dfeb1fd82e7818fdce5b6a20220367a4c89f79982a528ba25af433ed6bbc0",
+      "text": ""
+    },
+    {
+      "bodyIndex": 55,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 56,
+      "tag": "bookmarkEnd",
+      "sha256": "71183d608c33cac96169eb921d192dd0a4fe964d187f57f8ac9ea49e66b70a0a",
+      "text": ""
+    },
+    {
+      "bodyIndex": 57,
+      "tag": "bookmarkStart",
+      "sha256": "746125fc0499674aaf9b692517eb47b14bdd399a9301b4810bdd1b30d9c8d8a6",
+      "text": ""
+    },
+    {
+      "bodyIndex": 58,
+      "tag": "p",
+      "sha256": "99933894864418cef7617d100db5f393544e82c398994680df4198137b05b325",
+      "text": "Performance-Based Seismic Coefficient"
+    },
+    {
+      "bodyIndex": 59,
+      "tag": "p",
+      "sha256": "1d60b1ab77749c9f01a5fa601dbfb3b2e19bd9e3ddeedc95a9bd2d8c2c70f2c2",
+      "text": "The reference magnitudes assigned to the seismic demands were Mw = 5.5 for TR = 100, 200, 500, 1,000, 2,000, and 2,500 years; Mw = 6.5 for TR = 5,000 and 10,000 years and the MCE. Within each demand, the same magnitude was used for the geometry–material combinations."
+    },
+    {
+      "bodyIndex": 60,
+      "tag": "p",
+      "sha256": "20f83e01d32b49bbfabf6b42ad3175c32a17b921e9451dd1e7a9ab447ec7b4a3",
+      "text": "Pseudostatic seismic design of slopes requires a horizontal coefficient representing earthquake loading on the sliding mass. In this memo the coefficient is derived from displacement-based performance: the Newmark permanent displacement Dn is the slope-deformation performance measure, and the coefficient kmax is the lowest yield coefficient ky consistent with a performance objective defined by the allowable displacement Da and the target maximum probability pe that Dn exceeds Da. The normalized coefficient kh expresses kmax as a percentage of the site-condition PGA after site response is accounted for in each geometry–material combination, and the coefficients are reported by geometry, material and seismic demand. For the slopes considered, Dn is estimated probabilistically by combining empirical regression models within a lognormal framework."
+    },
+    {
+      "bodyIndex": 61,
+      "tag": "p",
+      "sha256": "d91193a9d668bb4dfb8d278e6d7b06a66fca7a5741bc53684e236165efc9d270",
+      "text": "The horizontal pseudostatic coefficient is derived in this assessment from the allowable permanent displacement Da of the potentially sliding mass (Bray and Travasarou 2009; Macedo et al. 2018). The seismic demand and the fundamental periods established in the preceding sections allow the Dn(ky) relations between the Newmark permanent displacement and the yield coefficient to be computed; their inversion yields kmax, and its normalization by the PGA transformed to the VS30 of each geometry–material combination yields kh, so that the result traceably links the deformation objective to the horizontal action employed in the stability verification. The yield acceleration ay represents the acceleration level that mobilizes the available resistance along the potential failure mechanism, and its dimensionless form is ky=ay/g; for each allowable displacement and target exceedance probability, the analysis determines the ky threshold that satisfies the performance criterion, and that threshold is kmax, the coefficient applied in the pseudostatic limit-equilibrium verification."
+    },
+    {
+      "bodyIndex": 62,
+      "tag": "p",
+      "sha256": "b9d91d18b454e9daa8352c711a44dea119e9c63d355e59822462a13d3384786e",
+      "text": "In the Newmark sliding-block method (Newmark 1965), the potentially sliding wedge is represented as a rigid block resting on an inclined plane: relative motion begins when the driving acceleration exceeds the yield acceleration ay=kyg and continues until the relative velocity returns to zero, and the permanent displacement is the sum of those episodes over the duration of the earthquake motion, obtained by double integration of the acceleration excess. The extension of the procedure to dams and embankments (Makdisi and Seed 1978) derived the equivalent acceleration of the sliding mass from its dynamic response and is the direct antecedent of the flexible formulations. The adopted empirical relations represent the accumulated displacement statistically through two idealizations: rigid-block models relate the displacement to measures of the base excitation, and flexible-block models additionally incorporate the dynamic response of the mass through Ts and the spectral acceleration evaluated at a period proportional to Ts."
+    },
+    {
+      "bodyIndex": 63,
+      "tag": "p",
+      "sha256": "35760fbbc0ea0ab193181c626d6dafffb5ea810254d1d20c20d5e7ccfc37d493",
+      "text": "The displacement calculation uses the seismic demand and the fundamental periods established in Section 1.2. For each geometry, material and seismic demand – the probabilistic spectrum of each evaluated return period and the MCE scenario – a joint sample of the intensity measures required by the rigid-block and flexible formulations is constructed; that sample is common to all models, so their differences represent the displacement formulation rather than incompatible seismic demands. Two inputs feed that sample. The probabilistic input for each return period is the reference-rock UHS, which for 10,000 years represents the MDE, and the MCE input is the rock spectrum of each scenario; both retain the complete distribution of the rock demand, and both are defined for VS30=Vref=760 m/s. For each geometry and material scenario, the spectral ordinates and the PGA are transformed to the corresponding VS30 through the ST20 amplification model (Stewart et al. 2020; Hashash et al. 2020)."
+    },
+    {
+      "bodyIndex": 64,
+      "tag": "p",
+      "sha256": "ab97d6e5ce70a2d5de8d45d2b9cffe92d19c450b2dc02d0ddec24afd00ba7c15",
+      "text": "At the site condition of each scenario, the joint sample comprises PGA, Sa(1.3Ts), and Sa(1.5Ts). The three measures are represented through empirical marginals in lnSa and a Gaussian copula with the full inter-period correlation matrix (Baker and Jayaram 2008), and the samples are recentered to preserve the mean of each amplified marginal; in each realization, the three intensities remain paired, and each displacement formulation uses the measures entering its regression. The Arias intensity that JB07 and SR08 require completes the set of intensity measures; it is estimated for each realization from the PGA, so that each PGA realization determines a single value of IA and the displacement sample propagates the PGA variability."
+    },
+    {
+      "bodyIndex": 65,
+      "tag": "p",
+      "sha256": "13ee35124cff2a6038bacfb01ac8d17c43a75509a88ce4d63c471911012e0a4c",
+      "text": "For each scenario, 30 values of ky are evaluated, logarithmically spaced between 0.01 and max(PGA,0.80), where PGA is the mean site-condition PGA of the scenario; that interval establishes the computed range of the Dn(ky) relations, over which the formulations are evaluated and the inversion to kmax operates."
+    },
+    {
+      "bodyIndex": 66,
+      "tag": "p",
+      "sha256": "902a961d9873752a42ae533a620612e4a0f49f762c10a54592f2d70c60d3483d",
+      "text": "Each active formulation estimates the Newmark permanent displacement (1965) of the sliding mass from the yield acceleration and the intensity measures of its regression, and all of them express the positive displacement Dn, in centimeters, through"
+    },
+    {
+      "bodyIndex": 67,
+      "tag": "p",
+      "sha256": "011320f1010db448d3f8a7d70d8cfe1e43a977e271f11738ca9bb185784d6da4",
+      "text": "Dn=exp​μlnD+ϵσlnD,  ϵ∼N(0,1),(12)"
+    },
+    {
+      "bodyIndex": 68,
+      "tag": "p",
+      "sha256": "c697e7a1569009c7c39bf544e087cfc0e6f44f09ea1316986644ecb8d80473df",
+      "text": "where μlnD and σlnD are the mean and standard deviation of lnDn defined by each model, and ϵ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch. In every formulation, ky, PGA, and Sa are expressed in units of g – the acceleration of gravity – IA in m/s, and Ts in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude assigned to each seismic demand is applied to its geometry–material combinations. The published form of each formulation is reproduced in Section 1.6. The performance-based seismic coefficient is defined by"
+    },
+    {
+      "bodyIndex": 69,
+      "tag": "p",
+      "sha256": "15bfaf438e8065aa4311d8f0c001f761168f02670de0ed9860ea5feb6dcf8787",
+      "text": "kmax(pe∣Da)=infky:P[Dn(ky)>Da]≤pe.(13)"
+    },
+    {
+      "bodyIndex": 70,
+      "tag": "p",
+      "sha256": "de0f9686b2625ebb735d779c91fb6f7edb58c11b9c50e8fcd813aede00f4503c",
+      "text": "where pe is the target probability that Dn exceeds Da: kmax is the smallest ky for which the probability of exceeding the allowable displacement is at most pe. The normalized coefficient, reported as a percentage of the PGA [% of PGA], is calculated using the site-condition PGA transformed to the VS30 of the geometry–material combination evaluated for each demand:"
+    },
+    {
+      "bodyIndex": 71,
+      "tag": "p",
+      "sha256": "533a5675d22a2cc5f09fe119b4dabb0fec6838c9729e8f2f8d140279da7bc129",
+      "text": "kh=100 kmaxPGA(VS30).(14)"
+    },
+    {
+      "bodyIndex": 72,
+      "tag": "p",
+      "sha256": "b66a853188780bb9642fe80b9a4bf4321cf8afa9127f3c72c2a5f91e9f100185",
+      "text": "kmax is expressed in units of g and kh as a percentage of the PGA of the corresponding site condition. These two quantities express the displacement criterion as the horizontal action of the pseudostatic verification."
+    },
+    {
+      "bodyIndex": 73,
+      "tag": "p",
+      "sha256": "3ac6781d543bfe88076f57636d419393b5e4eacc7d5be0232e4b3d7e4568625d",
+      "text": "The five formulations are evaluated individually and combined into the three sets that the tables and figures identify as IDn: rigid, flexible and ensemble. The displacement model provides individual realizations for AM88, JB07, SR08, BT07, and a fifth formulation selected by the tectonic context: BM17 for projects with subduction control and BM19 for projects with shallow crustal control. The overall design set, identified as ensemble, combines AM88, JB07, SR08, BT07, and the active BM branch with equal weights; the rigid family combines AM88, JB07, and SR08, and the flexible family combines BT07 and the active BM branch. The rigid family thus relates the displacement to measures of the base excitation, the flexible family additionally incorporates the dynamic response of the sliding mass through Ts, and the ensemble is the design set that combines both. For each ky, the displacements of a family are summarized from the weighted empirical distribution of the realizations of its models."
+    },
+    {
+      "bodyIndex": 74,
+      "tag": "p",
+      "sha256": "986b1c40423b942f427b7e3188302d958ffa362f1fa71a33d1eac437a56b61be",
+      "text": "All models receive the same joint sample of PGA and spectral accelerations, and a single realization of ϵ is shared across the models and across all values of ky; each formulation scales that residual through its own σlnD, and the sampled PGA is retained with each realization so that the inversion preserves the pairing between displacement and seismic demand. The realizations of Dn are calculated for each material class with its mean dynamic properties; the fractiles of the stiffness profiles and of Ts are not propagated as additional realizations in the displacement calculation, and each material class is kept as a separate scenario through the inversion to kmax, so the displacement curves are not averaged across materials before that operation."
+    },
+    {
+      "bodyIndex": 75,
+      "tag": "p",
+      "sha256": "38aaa4fa3f675892fa7cd2c638649c2198f3731ae000e90827908272f8d93cb2",
+      "text": "For each model and realization, the computed Dn(ky) relation is projected onto a non-increasing curve and inverted in the (lnDn,lnky) plane to solve the criterion of 13; when Da falls outside the calculated range, the relation is extrapolated in that plane from the two points at the corresponding end, with the single exception of the AM88 limit treated in Section 1.6. The inversion is performed first for each model within each realization."
+    },
+    {
+      "bodyIndex": 76,
+      "tag": "p",
+      "sha256": "83096aae2d4fcdf0ba9d27ceb290bea65824e93521f76b79b035e6b06adb243d",
+      "text": "The root distributions of the models are then combined with the family weights and summarized through the arithmetic mean and the empirical fractiles q=0.05, 0.10, 0.16, 0.50, 0.84, 0.90, and 0.95 (Verri Kozlowski 2026). Because of the decreasing relation between Dn and ky, the fractile associated with the exceedance target satisfies expression 15, where q=0.84 corresponds to an exceedance probability of pe=16%."
+    },
+    {
+      "bodyIndex": 77,
+      "tag": "p",
+      "sha256": "6d20089114f47c7fe1ae833ea7000d9baa2a2d8ab3ba7cff2970954bcf02e2e2",
+      "text": "q=1−pe(15)"
+    },
+    {
+      "bodyIndex": 78,
+      "tag": "p",
+      "sha256": "b403793530bd68e77828608f03d0124d563a5310649aa4c8a515b502b6e223a5",
+      "text": "The q fractiles are therefore the statistics associated with the criterion expressed through pe; the arithmetic mean summarizes the center of the simulated distribution and does not represent a target probability. The evaluation uses 300 realizations for each demand – the probabilistic spectrum of each return period TR = 500, 2,500, 10,000 years and the MCE – and a grid of allowable displacements Da/Hs ranging from 0.05 to 2.50 %. This grid contains, for every slope height, the damage thresholds Da/H = 0.1, 0.4, 1.0, 2.5% of Section 1.1, at which the coefficient tables are reported; values of Da that exceed the calculated range of a realization are obtained through the logarithmic extrapolation defined above."
+    },
+    {
+      "bodyIndex": 79,
+      "tag": "bookmarkEnd",
+      "sha256": "29610c4955ff9a44b0e00263c97c17b10c798c47785ea8ed1fabfd8325bfcb36",
+      "text": ""
+    },
+    {
+      "bodyIndex": 80,
+      "tag": "bookmarkStart",
+      "sha256": "8cc76d1cdfa391a4b67761bd8c8b73e27641581ddaca44d79709b48fe3f5790f",
+      "text": ""
+    },
+    {
+      "bodyIndex": 81,
+      "tag": "p",
+      "sha256": "4c1fcc7245acacc4a3141ec4337687bf125faecc3c3bd6cc0af4e7dcb6a2fb02",
+      "text": "Performance-Based Seismic Coefficient kmax"
+    },
+    {
+      "bodyIndex": 82,
+      "tag": "tbl",
+      "sha256": "c30ae42e6a2cd8ec94809332e02b50e4951c28f4d5c97f498edfd75f5e41bd90",
+      "text": "Fig. 1: Mean values of kmax [g] for site CFD and return period TR=500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 83,
+      "tag": "tbl",
+      "sha256": "31c5e15521f12fe6d8b4b7d2c3b33e03bdd4f42e2096cbeb98614541332b47b3",
+      "text": "Fig. 2: Mean values of kmax [g] for site CFD and return period TR=2,500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 84,
+      "tag": "tbl",
+      "sha256": "1a77cef002903fe3599f6b905fc1be45d577f2d8db700b97d8d6f3658c98502b",
+      "text": "Fig. 3: Mean values of kmax [g] for site CFD and return period TR=10,000 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 85,
+      "tag": "tbl",
+      "sha256": "df0586d6a6a884674a4161a75c138dd15a6597a109d5d326bcc66ab79d4d8f0e",
+      "text": "Fig. 4: Mean values of kmax [g] for site CFD under the MCE demand, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 86,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 87,
+      "tag": "bookmarkStart",
+      "sha256": "2672a77522146fc1b5602e015d56d718f606f9d31b8b6d7b5292888a5daf9e10",
+      "text": ""
+    },
+    {
+      "bodyIndex": 88,
+      "tag": "p",
+      "sha256": "1b23ae6e27de6799ad88c14901a8bee71ab1d3f5c1c5995be72c6a9b64a1f147",
+      "text": "Table 3: Mean values of kmax [cm/s2] for site CFD, scenario S135, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 89,
+      "tag": "tbl",
+      "sha256": "340def9e809a4bc448ffdad777f701083d8e8f2ad667c0d45bdde4887ce82530",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble1.2781942000TR 500 yrflexible1.2781940000TR 500 yrrigid1.2781944100TR 2,500 yrensemble1.27819418742TR 2,500 yrflexible1.2781944100TR 2,500 yrrigid1.278194281263TR 10,000 yrensemble1.2781944822116TR 10,000 yrflexible1.27819421610TR 10,000 yrrigid1.27819465321710MCEensemble1.2781943819106MCEflexible1.2781945100MCErigid1.2781946131179"
+    },
+    {
+      "bodyIndex": 90,
+      "tag": "bookmarkEnd",
+      "sha256": "9ecdc0ac658593b652d87da45d1e2eaa75ddba4ece9e2bbbdf73e98678b12348",
+      "text": ""
+    },
+    {
+      "bodyIndex": 91,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 92,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 93,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 94,
+      "tag": "bookmarkStart",
+      "sha256": "874af4b25f67c4fc987b28d84835792e581463a4ad192e6017545bb15a7ea105",
+      "text": ""
+    },
+    {
+      "bodyIndex": 95,
+      "tag": "p",
+      "sha256": "39627087af31a694e045a266229df58c4cd12f3c7d174f91e060289ccc723002",
+      "text": "Table 4: Mean values of kmax [cm/s2] for site CFD, scenario S50, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 96,
+      "tag": "tbl",
+      "sha256": "310a8cc4b80c3d0ec936c992c72351274fa428c0327e238c43bfd3da7d93fcd9",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.5262186210TR 500 yrflexible0.5262184000TR 500 yrrigid0.5262188310TR 2,500 yrensemble0.526218321573TR 2,500 yrflexible0.52621820410TR 2,500 yrrigid0.5262184122126TR 10,000 yrensemble0.52621884452512TR 10,000 yrflexible0.5262186828113TR 10,000 yrrigid0.52621895573519MCEensemble0.52621860331910MCEflexible0.52621823720MCErigid0.52621884503117"
+    },
+    {
+      "bodyIndex": 97,
+      "tag": "bookmarkEnd",
+      "sha256": "8af58d5bfe51ab37c05dfee8c55293716fdb705b324b0808de5829cf866c2c2f",
+      "text": ""
+    },
+    {
+      "bodyIndex": 98,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 99,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 100,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 101,
+      "tag": "bookmarkStart",
+      "sha256": "9300481f828df7ee0ef24ce0a839db1dbf1b3327cb93116ecf5eeaf1ac747187",
+      "text": ""
+    },
+    {
+      "bodyIndex": 102,
+      "tag": "p",
+      "sha256": "e0807d69f85307fe7e82371aa35e56c337c575aa57b2253d2eba3a57702cbe79",
+      "text": "Table 5: Mean values of kmax [cm/s2] for site CFD, scenario S32, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 103,
+      "tag": "tbl",
+      "sha256": "ca12bed8c06f3616b8896bcb72275daa6cc9e0c532b8660da04abf64d985bbd8",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.392205.711310TR 500 yrflexible0.392205.710200TR 500 yrrigid0.392205.711521TR 2,500 yrensemble0.392205.74321115TR 2,500 yrflexible0.392205.7351130TR 2,500 yrrigid0.392205.74828179TR 10,000 yrensemble0.392205.7107603719TR 10,000 yrflexible0.392205.710145227TR 10,000 yrrigid0.392205.7111704727MCEensemble0.392205.775432715MCEflexible0.392205.7411561MCErigid0.392205.798624124"
+    },
+    {
+      "bodyIndex": 104,
+      "tag": "bookmarkEnd",
+      "sha256": "22fe8c4a31bbd4946054e2b896d408a796c3dca28130035fca6a82a0fb320838",
+      "text": ""
+    },
+    {
+      "bodyIndex": 105,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 106,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 107,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 108,
+      "tag": "bookmarkStart",
+      "sha256": "d0427a32308b0b4aac09b04e08154de0d69b5a214b0b68ef3052558661d85eb5",
+      "text": ""
+    },
+    {
+      "bodyIndex": 109,
+      "tag": "p",
+      "sha256": "f7bc43650f6a39f06e0f3ae207443f31b7e643b7a34df0a78aeaf272cada78eb",
+      "text": "Table 6: Mean values of kmax [cm/s2] for site CFD, scenario S27, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 110,
+      "tag": "tbl",
+      "sha256": "33185409766caa7fa57838f882d40cdf18ae5633af1a9eae30752d1a2f3796bf",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.219309.911410TR 500 yrflexible0.219309.912200TR 500 yrrigid0.219309.911521TR 2,500 yrensemble0.219309.95227157TR 2,500 yrflexible0.219309.9511971TR 2,500 yrrigid0.219309.953322011TR 10,000 yrensemble0.219309.9134764725TR 10,000 yrflexible0.219309.9148693513TR 10,000 yrrigid0.219309.9125815533MCEensemble0.219309.9103583620MCEflexible0.219309.99441196MCErigid0.219309.9108704728"
+    },
+    {
+      "bodyIndex": 111,
+      "tag": "bookmarkEnd",
+      "sha256": "c76ea34c460cb32b604359b8daf7a253f7c923f72824ff8a1e577116757c470f",
+      "text": ""
+    },
+    {
+      "bodyIndex": 112,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 113,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 114,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 115,
+      "tag": "bookmarkStart",
+      "sha256": "d1726750dd7a0176b73b7ef52472a671deebfbe8a8fa97f91651782b2f627b1e",
+      "text": ""
+    },
+    {
+      "bodyIndex": 116,
+      "tag": "p",
+      "sha256": "432934ea446dcbc4e7206aa94ce1a3fbe166f2af67817165ffed4b5e8b07e053",
+      "text": "Table 7: Mean values of kmax [cm/s2] for site CFD, scenario S35, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 117,
+      "tag": "tbl",
+      "sha256": "69ef8ff1945adbe91fbfdc79f12c5efddf34346de6aab02505c7969efbcca4f6",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.305251.610310TR 500 yrflexible0.305251.610100TR 500 yrrigid0.305251.610421TR 2,500 yrensemble0.305251.64321115TR 2,500 yrflexible0.305251.6381241TR 2,500 yrrigid0.305251.64727168TR 10,000 yrensemble0.305251.6112623719TR 10,000 yrflexible0.305251.611552258TR 10,000 yrrigid0.305251.6110694626MCEensemble0.305251.684472915MCEflexible0.305251.66124103MCErigid0.305251.6100634124"
+    },
+    {
+      "bodyIndex": 118,
+      "tag": "bookmarkEnd",
+      "sha256": "472be1a729b14a2ecb92e2beb548ac0e6084451ababc478bfd90accb66615b42",
+      "text": ""
+    },
+    {
+      "bodyIndex": 119,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 120,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 121,
+      "tag": "bookmarkEnd",
+      "sha256": "bf1453febd021a09fa1295a05b6bcba519db4901f7f3d270146deb9bee6f532f",
+      "text": ""
+    },
+    {
+      "bodyIndex": 122,
+      "tag": "bookmarkStart",
+      "sha256": "1857d46c1c0bc2d5b196fdbee18d60e91a1040e3256abed2f4a9eb7ff2548003",
+      "text": ""
+    },
+    {
+      "bodyIndex": 123,
+      "tag": "p",
+      "sha256": "63d260f138a0260dbf064f34d978ec6f95b557baba4606fb50c47a845e49c25c",
+      "text": "Performance-Based Seismic Coefficient kh"
+    },
+    {
+      "bodyIndex": 124,
+      "tag": "tbl",
+      "sha256": "5158932c732060c2a29b7f1955f7c9a019e672344dcd223b5d535de543a3f1dd",
+      "text": "Fig. 5: Mean values of kh [% of PGA] for site CFD and return period TR=500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 125,
+      "tag": "tbl",
+      "sha256": "411836630a715665679d9feaa3d98054efc0af4cc687e9b3dd7029e9e2285354",
+      "text": "Fig. 6: Mean values of kh [% of PGA] for site CFD and return period TR=2,500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 126,
+      "tag": "tbl",
+      "sha256": "fcb7fc8a2600b7f9424c54642016390cba600a6ada2ef80daa5f75cbdc3f5b05",
+      "text": "Fig. 7: Mean values of kh [% of PGA] for site CFD and return period TR=10,000 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 127,
+      "tag": "tbl",
+      "sha256": "0c00fe462f456c3f7125516b2a2df4a0f7ebbf4375c4426cb317f545161a171b",
+      "text": "Fig. 8: Mean values of kh [% of PGA] for site CFD under the MCE demand, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+    },
+    {
+      "bodyIndex": 128,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 129,
+      "tag": "bookmarkStart",
+      "sha256": "513a6ff3ce3135f3b164581094a157c1a812c31093810184913a5a09c84b7884",
+      "text": ""
+    },
+    {
+      "bodyIndex": 130,
+      "tag": "p",
+      "sha256": "9b966e50b7593d4a1b988a338cf68ccff9a1cc80d0fc9153223d463e9c904e5d",
+      "text": "Table 8: Mean values of kh [% of PGA] for site CFD, scenario S135, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 131,
+      "tag": "tbl",
+      "sha256": "d64ba4ebbc85654b56a90bcbc4066178cfa05f904b783d3f8cbf6085341dda29",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble1.2781945.61.00.30.1TR 500 yrflexible1.2781940.70.00.00.0TR 500 yrrigid1.2781948.91.60.40.1TR 2,500 yrensemble1.27819414.35.82.91.4TR 2,500 yrflexible1.2781943.20.50.00.0TR 2,500 yrrigid1.27819421.79.34.82.4TR 10,000 yrensemble1.27819418.68.54.32.3TR 10,000 yrflexible1.2781948.12.30.60.1TR 10,000 yrrigid1.27819425.512.76.73.8MCEensemble1.27819416.88.34.52.4MCEflexible1.2781942.20.50.10.0MCErigid1.27819426.513.57.44.0"
+    },
+    {
+      "bodyIndex": 132,
+      "tag": "bookmarkEnd",
+      "sha256": "69d19d99a71d1092dbb16c0b5b246a4c1d6b6d5161586dfd7c7845437052cfd3",
+      "text": ""
+    },
+    {
+      "bodyIndex": 133,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 134,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 135,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 136,
+      "tag": "bookmarkStart",
+      "sha256": "2786a722a49c6ed69a1b3e1608d33daf01e637dd6deba38b10795c9db22937c9",
+      "text": ""
+    },
+    {
+      "bodyIndex": 137,
+      "tag": "p",
+      "sha256": "319b1543a113d34333c7b8316d7ff6a592b961ecb5cbc5df5471831347ee6e9b",
+      "text": "Table 9: Mean values of kh [% of PGA] for site CFD, scenario S50, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 138,
+      "tag": "tbl",
+      "sha256": "5ca7a122207d02e1fcf41f890063b6ee886f9fcc506415b45f162335b88bac40",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.52621814.84.11.30.2TR 500 yrflexible0.5262188.90.40.00.0TR 500 yrrigid0.52621818.86.62.10.4TR 2,500 yrensemble0.52621825.211.45.62.6TR 2,500 yrflexible0.52621815.83.40.50.0TR 2,500 yrrigid0.52621831.516.89.14.4TR 10,000 yrensemble0.52621832.517.49.84.8TR 10,000 yrflexible0.52621826.310.84.41.1TR 10,000 yrrigid0.52621836.721.813.47.2MCEensemble0.52621825.714.08.24.3MCEflexible0.5262189.83.00.70.1MCErigid0.52621836.321.413.27.1"
+    },
+    {
+      "bodyIndex": 139,
+      "tag": "bookmarkEnd",
+      "sha256": "3fe9f9f7648c1706f032cb9485a3c3239dbb11b5ac9013d6cfe96512e6325cd8",
+      "text": ""
+    },
+    {
+      "bodyIndex": 140,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 141,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 142,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 143,
+      "tag": "bookmarkStart",
+      "sha256": "cd807918f9c4d1790c4ac91e87942863bb14d8b0b321b6cf025d1152d33ba8b0",
+      "text": ""
+    },
+    {
+      "bodyIndex": 144,
+      "tag": "p",
+      "sha256": "df81f4bc36cd39396e2cac2d6180f974505e2acc2cd6773c856da0f5d78d8a2c",
+      "text": "Table 10: Mean values of kh [% of PGA] for site CFD, scenario S32, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 145,
+      "tag": "tbl",
+      "sha256": "42edcbd72964a29a1635314267d1711715a94fadd3bac4f92b4945a0177dba96",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.392205.724.78.02.90.9TR 500 yrflexible0.392205.724.54.10.50.0TR 500 yrrigid0.392205.724.910.64.51.4TR 2,500 yrensemble0.392205.733.116.68.84.2TR 2,500 yrflexible0.392205.727.38.92.60.4TR 2,500 yrrigid0.392205.737.121.813.06.7TR 10,000 yrensemble0.392205.741.523.514.37.5TR 10,000 yrflexible0.392205.739.217.68.42.8TR 10,000 yrrigid0.392205.743.027.318.110.7MCEensemble0.392205.732.718.711.66.3MCEflexible0.392205.717.96.62.40.4MCErigid0.392205.742.526.817.710.2"
+    },
+    {
+      "bodyIndex": 146,
+      "tag": "bookmarkEnd",
+      "sha256": "e83feff14bd272aec82209804a5abe7545f09a6da8a8436c1c8a4c6617fa600e",
+      "text": ""
+    },
+    {
+      "bodyIndex": 147,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 148,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 149,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 150,
+      "tag": "bookmarkStart",
+      "sha256": "70a7c1a5317f6da55661ac8b70d3238f45c49f9d0acbb3f804f1ec5187618747",
+      "text": ""
+    },
+    {
+      "bodyIndex": 151,
+      "tag": "p",
+      "sha256": "f35a9cbb5099a2000b51b6f7a5fb8f06dda117fcdc0badeb4ef65215a4e873bf",
+      "text": "Table 11: Mean values of kh [% of PGA] for site CFD, scenario S27, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 152,
+      "tag": "tbl",
+      "sha256": "0bf263c65e42c4271b3ff5f62b24cc52d1f6accf0efaf138afd3a273c858d620",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.219309.925.78.63.00.9TR 500 yrflexible0.219309.927.24.70.40.0TR 500 yrrigid0.219309.924.811.34.71.5TR 2,500 yrensemble0.219309.939.420.411.25.2TR 2,500 yrflexible0.219309.938.714.45.20.9TR 2,500 yrrigid0.219309.939.924.415.28.1TR 10,000 yrensemble0.219309.949.327.917.39.3TR 10,000 yrflexible0.219309.954.525.212.94.7TR 10,000 yrrigid0.219309.945.829.720.312.3MCEensemble0.219309.942.023.814.78.0MCEflexible0.219309.938.716.87.92.7MCErigid0.219309.944.228.519.211.6"
+    },
+    {
+      "bodyIndex": 153,
+      "tag": "bookmarkEnd",
+      "sha256": "74e709bc0c68abbe0a4c37e83bfb5b5ab2bb4e38d2ab5cf09bc3429bea014405",
+      "text": ""
+    },
+    {
+      "bodyIndex": 154,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 155,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 156,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 157,
+      "tag": "bookmarkStart",
+      "sha256": "b7f69ee4e3bc2b67579b9f4f64351fecdf116144dcb03da8cd40c3897b4354f6",
+      "text": ""
+    },
+    {
+      "bodyIndex": 158,
+      "tag": "p",
+      "sha256": "3591fa799835081a135cd768bd322905a8467e1a74b34ca5b2da8f6b780285b7",
+      "text": "Table 12: Mean values of kh [% of PGA] for site CFD, scenario S35, under the MCE demand and return periods TR=500,2,500,10,000 yr."
+    },
+    {
+      "bodyIndex": 159,
+      "tag": "tbl",
+      "sha256": "fcfc4286bb8f84ca25515dfea91f7bf19320327df5b926385a9acf2f39da4c56",
+      "text": "IDIDnTsVS300.1%0.4%1%2.5%TR 500 yrensemble0.305251.623.07.22.60.8TR 500 yrflexible0.305251.622.73.20.30.0TR 500 yrrigid0.305251.623.210.04.11.3TR 2,500 yrensemble0.305251.633.316.28.43.8TR 2,500 yrflexible0.305251.629.39.52.80.4TR 2,500 yrrigid0.305251.636.020.712.26.1TR 10,000 yrensemble0.305251.642.623.614.17.2TR 10,000 yrflexible0.305251.643.719.69.33.0TR 10,000 yrrigid0.305251.641.826.317.39.9MCEensemble0.305251.635.620.012.26.5MCEflexible0.305251.625.610.24.21.1MCErigid0.305251.642.326.517.510.2"
+    },
+    {
+      "bodyIndex": 160,
+      "tag": "bookmarkEnd",
+      "sha256": "f72ae1b8541d0011dd9d20c384a5ea5d31bc72f5d7b50dc4741ac7bac45686e2",
+      "text": ""
+    },
+    {
+      "bodyIndex": 161,
+      "tag": "p",
+      "sha256": "14228b27ca5bbac8b28f52c1a44c2772ab78aeeb46fd0a75ada042cb579fa2ea",
+      "text": ""
+    },
+    {
+      "bodyIndex": 162,
+      "tag": "p",
+      "sha256": "36d8fd28d5e4decc935f55993017c99c90cb91c2683eb39a46596771afb81caf",
+      "text": " "
+    },
+    {
+      "bodyIndex": 163,
+      "tag": "bookmarkEnd",
+      "sha256": "acff62abd089f75a584eb7c2031aa89267630ea39c9585e43136c73351017210",
+      "text": ""
+    },
+    {
+      "bodyIndex": 164,
+      "tag": "bookmarkStart",
+      "sha256": "519988e5dec54ce8662cd03d6fde6a0f75a0d73897e45f56febfc1275bfd9b02",
+      "text": ""
+    },
+    {
+      "bodyIndex": 165,
+      "tag": "p",
+      "sha256": "b23e9569307788521d28fdd82a327ba7f87d2a81c9af7ed70cd23b6c4e67c0ee",
+      "text": "Newmark Permanent-Displacement Formulations"
+    },
+    {
+      "bodyIndex": 166,
+      "tag": "p",
+      "sha256": "dd5dd42eb55fa67a4fb9cf43ab785da9d59e63176f23d339e181e25a3b034505",
+      "text": "The seismic-coefficient section applies five Newmark permanent-displacement formulations: three rigid-block models, two flexible-block models and, among the latter, the BM branch selected by the tectonic control of the project. This section reproduces the published form of each formulation, including both BM branches, and states the rule that defines the active configuration. The rigid-block formulations relate the displacement to measures of the base excitation, whereas the flexible-block formulations additionally incorporate the dynamic response of the sliding mass through its fundamental period Ts and the spectral acceleration evaluated at a period proportional to Ts."
+    },
+    {
+      "bodyIndex": 167,
+      "tag": "bookmarkEnd",
+      "sha256": "cbd6c2ff10dd1dbe28c4db39fe9fb8a60784298bf2920c015d555670a1ecca17",
+      "text": ""
+    },
+    {
+      "bodyIndex": 168,
+      "tag": "bookmarkStart",
+      "sha256": "7c0173a2bb9084ec1a8dae4aed4b7d72ab70f8436e8d50feae54c4f30eb15ae6",
+      "text": ""
+    },
+    {
+      "bodyIndex": 169,
+      "tag": "p",
+      "sha256": "96cd8691b4032ff5c9183579879cf01efe190252ba7edaa479decb67c9fb78aa",
+      "text": "Rigid-Block Models"
+    },
+    {
+      "bodyIndex": 170,
+      "tag": "p",
+      "sha256": "5a99791fa12411f3f97bdd92674f04fdde6436ee8b72dcb586e541ac5fc957d2",
+      "text": "The AM88 formulation (Ambraseys and Menu 1988) uses the ratio of yield acceleration to PGA, capped to preserve the logarithmic domain, r⋆=min(ky/PGA,0.9999):"
+    },
+    {
+      "bodyIndex": 171,
+      "tag": "p",
+      "sha256": "111ff669637630cba3302885df110280901a053c94faf04b32257ade2e311b90",
+      "text": "μlnD&=ln(10)0.90+log10​(1−r⋆)2.53(r⋆)−1.09,σlnD&=0.30ln(10).(16)"
+    },
+    {
+      "bodyIndex": 172,
+      "tag": "p",
+      "sha256": "9b42cb398ff0afb146e1793ded2856ba940e48b9cb05324954d09907c5b39103",
+      "text": "The two remaining rigid-block formulations, JB07 and SR08, use the Arias intensity, which is estimated for each realization from the PGA; IA is expressed in m/s and PGA in units of g, and the estimate is applied deterministically, so that each PGA realization determines a single value of IA and the displacement sample propagates the PGA variability. The JB07 formulation (Jibson 2007) incorporates the Arias intensity and the ratio ky/PGA:"
+    },
+    {
+      "bodyIndex": 173,
+      "tag": "p",
+      "sha256": "f6d38158be90805bf48663c5b3392e128daca6eb2ee6d1977eb96fef3d1601e2",
+      "text": "μlnD&=ln(10)0.561log10IA−3.833log10​kyPGA−1.474,σlnD&=0.616ln(10).(17)"
+    },
+    {
+      "bodyIndex": 174,
+      "tag": "p",
+      "sha256": "ccf6989df8dc7e3728462775164148ec6af0f3b74539213754253e45a88b7820",
+      "text": "The SR08 formulation (Saygili and Rathje 2008) defines r=ky/PGA and combines PGA and Arias intensity:"
+    },
+    {
+      "bodyIndex": 175,
+      "tag": "p",
+      "sha256": "94179f69d3857b3d9828a0e32a965c0ce88ae3b2160c08de74a7c9b415ada2c5",
+      "text": "μlnD=​&2.39−5.24r−18.78r2+42.01r3−29.15r4&−1.56lnPGA+1.38lnIA,σlnD=​&0.46+0.56r.(18)"
+    },
+    {
+      "bodyIndex": 176,
+      "tag": "p",
+      "sha256": "17e1da79ae43cec26790d6f789632f9d80b635ce08fadde13c6c22a8e546defc",
+      "text": "The logarithmic extension of the Dn(ky) relations beyond their computed support has one exception, the AM88 limit. If the sampled PGA of a realization, PGAs, is smaller than the lower end of the grid, all stored points may satisfy ky/PGAs≥rmax=0.9999 and form a plateau D0,s. In that case the physical branch 0<r<rmax of eq. 16 is solved for Da>D0,s, instead of extrapolating the plateau or assigning kmax=0:"
+    },
+    {
+      "bodyIndex": 177,
+      "tag": "p",
+      "sha256": "1d80eecd4a16fa0e70ebaac3b68bddb11bdd23e3db7bcc1bf0afe87eebeafa18",
+      "text": "μlnD(r)=lnDa−lnD0,s+μlnD(rmax),  kmax,s=PGAsr.(19)"
+    },
+    {
+      "bodyIndex": 178,
+      "tag": "p",
+      "sha256": "ab5fd680b4df25f11c6b54733c8a7acfa7005985f5da9f09a4deb5ce435e49d1",
+      "text": "The random residual cancels between Da and D0,s, and dμlnD/dr=−2.53/(1−r)−1.09/r<0, so the root is unique. An AM88 plateau is accepted only when the original curve is exactly constant and PGAs itself shows that the entire grid reached that limit; a flat curve from another model, or a target Da≤D0,s, is rejected as non-identifiable support."
+    },
+    {
+      "bodyIndex": 179,
+      "tag": "bookmarkEnd",
+      "sha256": "5684c78224037ba0a817a4571dd062f308c160d13ec771038433c31ab75b5216",
+      "text": ""
+    },
+    {
+      "bodyIndex": 180,
+      "tag": "bookmarkStart",
+      "sha256": "60693a59b7168ea36189a76ab8016db05831e37e1724a7d33d0b3d60cea2e0b6",
+      "text": ""
+    },
+    {
+      "bodyIndex": 181,
+      "tag": "p",
+      "sha256": "7607818893048d2b03f3df84d60edc62abae9b4d574ea512034f2dfaf3fe1ecd",
+      "text": "Flexible-Block Models"
+    },
+    {
+      "bodyIndex": 182,
+      "tag": "p",
+      "sha256": "cbcae7d8d507a8e2b19621f892c8b60a7f2b82b519a4b10682564034283d3b12",
+      "text": "The flexible-block formulations evaluate the spectral acceleration at a period proportional to the fundamental period Ts of the sliding mass. The BT07 formulation (Bray and Travasarou 2007) employs Sa=Sa(1.5Ts) and Mw:"
+    },
+    {
+      "bodyIndex": 183,
+      "tag": "p",
+      "sha256": "ce60a7278d42bd8df6238cf5e3ec7c2d06446000fe8cbd53f1d515dc6b313653",
+      "text": "μlnD=​&a0−2.83lnky−0.333(lnky)2+0.566lnkylnSa&+3.04lnSa−0.244(lnSa)2+1.50Ts+0.278(Mw−7),a0=​&−0.22,Ts<0.05 s,−1.10,Ts≥0.05 s,σlnD=​&0.66.(20)"
+    },
+    {
+      "bodyIndex": 184,
+      "tag": "p",
+      "sha256": "dec4db1c81668146454296a1e4541aec93850d096a4df4da67834db5104acc28",
+      "text": "The BM17 formulation (Bray et al. 2018) represents subduction-interface motions with Sa=Sa(1.5Ts):"
+    },
+    {
+      "bodyIndex": 185,
+      "tag": "p",
+      "sha256": "b4458987b0e17083473b1c537fe3f932d7e26113a674e1b65ed7702b6f2de93e",
+      "text": "μlnD&=a0+a1lnSa−0.225(lnSa)2,a1&=3.060+0.538lnky,a0,<=​&−5.864+0.550Mw−9.421Ts&−3.353lnky−0.390(lnky)2,a0,≥=​&−6.896+0.550Mw+3.081Ts−0.803Ts2&−3.353lnky−0.390(lnky)2,a0&=a0,<,Ts<0.1 s,a0,≥,Ts≥0.1 s,σlnD&=0.73.(21)"
+    },
+    {
+      "bodyIndex": 186,
+      "tag": "p",
+      "sha256": "9d1e4fb0bc99405cc0d886765a5f5c5848005237221cb65c16fcec40fe3136f5",
+      "text": "The BM19 formulation (Bray and Macedo 2019) represents ordinary shallow crustal motions with Sa=Sa(1.3Ts):"
+    },
+    {
+      "bodyIndex": 187,
+      "tag": "p",
+      "sha256": "1f6c7c4a97e9767be5ea1682ace8dbfae958bf1d433693034a9f32c5176bc101",
+      "text": "μlnD&=a0+2.649+0.344lnkylnSa−0.090(lnSa)2,a0,<=​&−4.684+0.603Mw−9.471Ts&−2.482lnky−0.244(lnky)2,a0,≥=​&−5.981+0.603Mw+3.223Ts−0.945Ts2&−2.482lnky−0.244(lnky)2,a0&=a0,<,Ts<0.1 s,a0,≥,Ts≥0.1 s,σlnD&=0.72.(22)"
+    },
+    {
+      "bodyIndex": 188,
+      "tag": "bookmarkEnd",
+      "sha256": "ad2ca0d6f2823ef480455366220f0c4b24a41c090c4a4ad3fdbed774d6bf602b",
+      "text": ""
+    },
+    {
+      "bodyIndex": 189,
+      "tag": "bookmarkStart",
+      "sha256": "cf64115a25098bf1381a414e908e5373f0989cecb2a28be417a4579093714405",
+      "text": ""
+    },
+    {
+      "bodyIndex": 190,
+      "tag": "p",
+      "sha256": "d97716002c0dce09c30af639b67da71f40ae1ff76d500a726308b76e63f183ed",
+      "text": "Ensemble"
+    },
+    {
+      "bodyIndex": 191,
+      "tag": "p",
+      "sha256": "a947cf33193f0fc5842159aafb838b88f1a95e72aa412937ef58c3aee9560360",
+      "text": "The active configuration applies five formulations: AM88, JB07, SR08, BT07, and one BM branch – BM17 when the project declares subduction control, BM19 when it declares crustal control; each evaluation therefore applies five formulations, never both BM branches at once. The predictors and dispersions are applied in the published form of each model, and the five formulations are combined with the equal weights and the rigid and flexible families defined in Section 1.3."
+    },
+    {
+      "bodyIndex": 192,
+      "tag": "bookmarkEnd",
+      "sha256": "4c716e682795d2daac515746fdac6f1f8aa15c8c03cd547a38802939c4064c9e",
+      "text": ""
+    },
+    {
+      "bodyIndex": 193,
+      "tag": "bookmarkStart",
+      "sha256": "7e7a95410a11f1156a0b1fc82f6e9a441be36a99983d1325c735b72ef1529b8b",
+      "text": ""
+    },
+    {
+      "bodyIndex": 194,
+      "tag": "p",
+      "sha256": "9e0080ec8c512c58fe73767e1400deaa79fadc10cc2af313ac8c0dc71b2627e1",
+      "text": "References"
+    },
+    {
+      "bodyIndex": 195,
+      "tag": "bookmarkStart",
+      "sha256": "652ce762bf82ae19a8c89f3f2751ed499fb4afed32457ff947d41d8ed6557d2d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 196,
+      "tag": "bookmarkStart",
+      "sha256": "15bfbe014cb3046f90145e248ec095c2d0dab807dd1fcf5ee31530773bf64e51",
+      "text": ""
+    },
+    {
+      "bodyIndex": 197,
+      "tag": "p",
+      "sha256": "87106873392aa189b937d53d65935a33b7cf5e242a8d1ddd578165b390f835d6",
+      "text": "Aliberti, D., G. Biondi, E. Cascone, and S. Rampello. 2019. “Performance Indexes for Seismic Analyses of Earth Dams.” In Earthquake Geotechnical Engineering for Protection and Development of Environment and Constructions, edited by F. Silvestri and N. Moraci. Associazione Geotecnica Italiana."
+    },
+    {
+      "bodyIndex": 198,
+      "tag": "bookmarkEnd",
+      "sha256": "b85f12b5d6c7af134de287d6ec981b3c9a9fe902c1ceb7627eaf8660aa176c75",
+      "text": ""
+    },
+    {
+      "bodyIndex": 199,
+      "tag": "bookmarkStart",
+      "sha256": "f0071beb09370c0a3a56978c72bcaa7f968df539254fa4161ac2832c1f7a853f",
+      "text": ""
+    },
+    {
+      "bodyIndex": 200,
+      "tag": "p",
+      "sha256": "3ddc56aa729dc42f49579f80e73a3ececbf42712ecb1e04cbf508ead42e4b2f0",
+      "text": "Ambraseys, N. N., and J. M. Menu. 1988. “Earthquake-Induced Ground Displacements.” Earthquake Engineering & Structural Dynamics 16 (7): 985–1006. https://doi.org/10.1002/eqe.4290160704."
+    },
+    {
+      "bodyIndex": 201,
+      "tag": "bookmarkEnd",
+      "sha256": "24a7186a60413a71e1de22d5cff8eb3434eefd7e32038c85c243da0ae05cf2b7",
+      "text": ""
+    },
+    {
+      "bodyIndex": 202,
+      "tag": "bookmarkStart",
+      "sha256": "a7767a38032996a51e15942124a48d1d1f17fb64ff1b6aa567aaaed243089bdd",
+      "text": ""
+    },
+    {
+      "bodyIndex": 203,
+      "tag": "p",
+      "sha256": "f0f6303ece2d9f61f265b5e3976bf73277e16b859bfa7eb8b0a198c28aa5cf8a",
+      "text": "Anderson, Donald G., Geoffrey R. Martin, I. P. Lam, and John N. Wang. 2008. Seismic Analysis and Design of Retaining Walls, Buried Structures, Slopes, and Embankments. NCHRP Report No. 611. Transportation Research Board. https://www.ce.memphis.edu/7137/PDFs/Seismic%20Manual/nchrp_rpt_611.pdf."
+    },
+    {
+      "bodyIndex": 204,
+      "tag": "bookmarkEnd",
+      "sha256": "a1e6f71ad0facdff8f70881b9a7d15745c5eaa142d0d158437935724aa90aeb5",
+      "text": ""
+    },
+    {
+      "bodyIndex": 205,
+      "tag": "bookmarkStart",
+      "sha256": "b0e94efcd994eff2a8b85dcc4c66e187372de76f67bd8044f26a82088f41c624",
+      "text": ""
+    },
+    {
+      "bodyIndex": 206,
+      "tag": "p",
+      "sha256": "10945802523d25ee7f9f29e8c3e7924b0308276b69edc8504d938c51b466c84d",
+      "text": "Australian National Committee on Large Dams. 2012. Guidelines on Tailings Dams: Planning, Design, Construction, Operation and Closure. Australian National Committee on Large Dams."
+    },
+    {
+      "bodyIndex": 207,
+      "tag": "bookmarkEnd",
+      "sha256": "dfa20542c99ee3c6defd680e5ac639486506488a294637d505d259044b492018",
+      "text": ""
+    },
+    {
+      "bodyIndex": 208,
+      "tag": "bookmarkStart",
+      "sha256": "2063b3a4d8e3d446f0bff61af2a2fa6d98e60b06b69e4b089559aba8784e3949",
+      "text": ""
+    },
+    {
+      "bodyIndex": 209,
+      "tag": "p",
+      "sha256": "191a60568f758a3edc5f7a48dd7d53529d210012e3ca0269819d74910bfe877f",
+      "text": "Baker, Jack W., and Nirmal Jayaram. 2008. “Correlation of Spectral Acceleration Values from NGA Ground Motion Models.” Earthquake Spectra 24 (1): 299–317. https://doi.org/10.1193/1.2857544."
+    },
+    {
+      "bodyIndex": 210,
+      "tag": "bookmarkEnd",
+      "sha256": "d3863167781aa5e1142e1cc7f14c18129530b29a41256a0298ed63f878a7fd57",
+      "text": ""
+    },
+    {
+      "bodyIndex": 211,
+      "tag": "bookmarkStart",
+      "sha256": "04216cc6943fa45cb419bfc16427283b717b81daed53507cece7291374032066",
+      "text": ""
+    },
+    {
+      "bodyIndex": 212,
+      "tag": "p",
+      "sha256": "745d1384f560a29231e93b4471f820678d1bf431edecbe501e890e8c465b1e6a",
+      "text": "Bray, J. D., and Thaleia Travasarou. 2007. “Simplified Procedure for Estimating Earthquake-Induced Deviatoric Slope Displacements.” Journal of Geotechnical and Geoenvironmental Engineering 133 (4): 381–92. https://doi.org/10.1061/(ASCE)1090-0241(2007)133:4(381)."
+    },
+    {
+      "bodyIndex": 213,
+      "tag": "bookmarkEnd",
+      "sha256": "0ae1715548c246ae8124d5b5bb09cfec7e168363a2cc926462d3e1376f161ffb",
+      "text": ""
+    },
+    {
+      "bodyIndex": 214,
+      "tag": "bookmarkStart",
+      "sha256": "9b6f4cfe72ae1114b47cb352a94115ba35232bbe0956c3aa5a72c7b7c874443d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 215,
+      "tag": "p",
+      "sha256": "b1f7ca87a3a1245ba8dbff15d2362ea2324b6f24510f20fe839f36b45bccc532",
+      "text": "Bray, Jonathan D., and Jorge Macedo. 2019. “Procedure for Estimating Shear-Induced Seismic Slope Displacement for Shallow Crustal Earthquakes.” Journal of Geotechnical and Geoenvironmental Engineering 145 (12): 04019106. https://doi.org/10.1061/(ASCE)GT.1943-5606.0002143."
+    },
+    {
+      "bodyIndex": 216,
+      "tag": "bookmarkEnd",
+      "sha256": "b92aa2f8766fcd8e6ab8486c9e0d0aaf50ac76b256d138d15210357d7a3eca51",
+      "text": ""
+    },
+    {
+      "bodyIndex": 217,
+      "tag": "bookmarkStart",
+      "sha256": "8da615044a9f671afe6afb044ae7cb486431358ad4fcfcf7557e8f6aed52a468",
+      "text": ""
+    },
+    {
+      "bodyIndex": 218,
+      "tag": "p",
+      "sha256": "7ef5b36dbb5adc237e0e178c478fd0c844405d930f543892c6337b1f3f218b14",
+      "text": "Bray, Jonathan D., Jorge Macedo, and Thaleia Travasarou. 2018. “Simplified Procedure for Estimating Seismic Slope Displacements for Subduction Zone Earthquakes.” Journal of Geotechnical and Geoenvironmental Engineering 144 (3): 04017124. https://doi.org/10.1061/(ASCE)GT.1943-5606.0001833."
+    },
+    {
+      "bodyIndex": 219,
+      "tag": "bookmarkEnd",
+      "sha256": "200526d915245f91d69f80c3788a33190731660a7c9f111e85e35f1578ab694b",
+      "text": ""
+    },
+    {
+      "bodyIndex": 220,
+      "tag": "bookmarkStart",
+      "sha256": "49ce38de5e2040aecfc7c407b601637e97d56f6071c89bfb0dac861d1303a4c7",
+      "text": ""
+    },
+    {
+      "bodyIndex": 221,
+      "tag": "p",
+      "sha256": "a38cfe9d998058d967a5a0289d16d82f7e562f073195844d50836d2764deb7c9",
+      "text": "Bray, Jonathan D., and Thaleia Travasarou. 2009. “Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation.” Journal of Geotechnical and Geoenvironmental Engineering 135 (9): 1336–40. https://doi.org/10.1061/(ASCE)GT.1943-5606.0000012."
+    },
+    {
+      "bodyIndex": 222,
+      "tag": "bookmarkEnd",
+      "sha256": "c177f40eba1ae3f20b1481730c340437fe326c6905a7771307bb01bf4e013404",
+      "text": ""
+    },
+    {
+      "bodyIndex": 223,
+      "tag": "bookmarkStart",
+      "sha256": "871df5bd2937dd8f4a449acdd05f916dbd67da5be2baca793b1da323178dbe82",
+      "text": ""
+    },
+    {
+      "bodyIndex": 224,
+      "tag": "p",
+      "sha256": "293003f031c8f36ae9bcc00bc455e9daf88ef715308685333f961d2cb057b5fa",
+      "text": "Dakoulas, Panos, and George Gazetas. 1985. “A Class of Inhomogeneous Shear Models for Seismic Response of Dams and Embankments.” International Journal of Soil Dynamics and Earthquake Engineering 4 (4): 166–82. https://doi.org/10.1016/0261-7277(85)90037-3."
+    },
+    {
+      "bodyIndex": 225,
+      "tag": "bookmarkEnd",
+      "sha256": "acce54a538e47660933434e1a09c8cda26c4b68accd3383127226fd223eb86b6",
+      "text": ""
+    },
+    {
+      "bodyIndex": 226,
+      "tag": "bookmarkStart",
+      "sha256": "52401248ceb2db9e8838ea9ecb20bf2211ea157d4c3a54c09541a97e9e4f87c0",
+      "text": ""
+    },
+    {
+      "bodyIndex": 227,
+      "tag": "p",
+      "sha256": "51098427fa7d1198c9b9ac561bdc2d4f31608222a368cdbfcdc1420c1ffb5f7b",
+      "text": "European Committee for Standardization. 2004. Eurocode 8: Design of Structures for Earthquake Resistance – Part 5: Foundations, Retaining Structures and Geotechnical Aspects. European Standard EN 1998-5. European Committee for Standardization."
+    },
+    {
+      "bodyIndex": 228,
+      "tag": "bookmarkEnd",
+      "sha256": "7edecde52e15ee5ab9c2c6c83529b01aab0b07638c378c739c69c59d2f412d4f",
+      "text": ""
+    },
+    {
+      "bodyIndex": 229,
+      "tag": "bookmarkStart",
+      "sha256": "a32134f38da46078060128f914b7914f30ed8f8db00f7be51688c378a5f16fa6",
+      "text": ""
+    },
+    {
+      "bodyIndex": 230,
+      "tag": "p",
+      "sha256": "9870c9b8741f9bc9579334e573afecaff2136b156500f57f9ed0c383eefe8e97",
+      "text": "Federal Emergency Management Agency. 2005. Federal Guidelines for Dam Safety: Earthquake Analyses and Design of Dams. P-65. Federal Emergency Management Agency."
+    },
+    {
+      "bodyIndex": 231,
+      "tag": "bookmarkEnd",
+      "sha256": "cc3864c08b2c5fe5b91d0133fbb91d8c876fb0263e1e08fce02668af0d88f51c",
+      "text": ""
+    },
+    {
+      "bodyIndex": 232,
+      "tag": "bookmarkStart",
+      "sha256": "f04efb756d4bbac6e9186709a078d55783873ffc44fc198b3c6d50a504178b4d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 233,
+      "tag": "p",
+      "sha256": "31d8c90ce67accdede8ab737e4d1113a156c0399f68abdd840a1b1c7117b53ce",
+      "text": "Hardin, Bobby O., and William L. Black. 1968. “Vibration Modulus of Normally Consolidated Clay.” Journal of the Soil Mechanics and Foundations Division 94 (2): 353–69. https://doi.org/10.1061/JSFEAQ.0001100."
+    },
+    {
+      "bodyIndex": 234,
+      "tag": "bookmarkEnd",
+      "sha256": "6cd87d5bbd611d53c65a59b596cd724ed610c8f715f5d6bcff64de5033802fbc",
+      "text": ""
+    },
+    {
+      "bodyIndex": 235,
+      "tag": "bookmarkStart",
+      "sha256": "9176c77e47c6fb822d3663115c9f9978d8ee6d6b6be5ead5785fff35509b62d9",
+      "text": ""
+    },
+    {
+      "bodyIndex": 236,
+      "tag": "p",
+      "sha256": "42b018aa0cc1de4ab94feaba75165979a98540d0a5394c5e7ebb5eb883d957fa",
+      "text": "Hardin, Bobby O., and Vincent P. Drnevich. 1972. “Shear Modulus and Damping in Soils: Measurement and Parameter Effects.” Journal of the Soil Mechanics and Foundations Division 98 (6): 603–24. https://doi.org/10.1061/JSFEAQ.0001756."
+    },
+    {
+      "bodyIndex": 237,
+      "tag": "bookmarkEnd",
+      "sha256": "f1de63d1fab7580f5c848e1a1d57ec2449eda04024745e3c9ee04bd8eb736d41",
+      "text": ""
+    },
+    {
+      "bodyIndex": 238,
+      "tag": "bookmarkStart",
+      "sha256": "44e714f633925f2ea09bd58df3dc6d53e43250dc2648862bdd5d48a15b903487",
+      "text": ""
+    },
+    {
+      "bodyIndex": 239,
+      "tag": "p",
+      "sha256": "5dbbc5c3e8f9c0bf78af21cc119a9c228a405f71376f110eed9ede3192d08c23",
+      "text": "Hashash, Youssef M. A., Okan Ilhan, Joseph A. Harmon, et al. 2020. “Nonlinear Site Amplification Model for Ergodic Seismic Hazard Analysis in Central and Eastern North America.” Earthquake Spectra 36 (1): 69–86. https://doi.org/10.1177/8755293019878193."
+    },
+    {
+      "bodyIndex": 240,
+      "tag": "bookmarkEnd",
+      "sha256": "1ba2b33e5e058b7abb082b65f92f02ae997ad029c83f19636f04c1af64d23390",
+      "text": ""
+    },
+    {
+      "bodyIndex": 241,
+      "tag": "bookmarkStart",
+      "sha256": "de7137152e222ca7a6760b5b2f5282ab6f528c162f827f733a64c04c326ce19e",
+      "text": ""
+    },
+    {
+      "bodyIndex": 242,
+      "tag": "p",
+      "sha256": "dd2ead19dc27b54e1996728ce4ec6ed0b2606b0e9151ebe588c60bab00d903a7",
+      "text": "International Commission on Large Dams. 2016. Selecting Seismic Parameters for Large Dams – Guidelines. Bulletin No. 148. International Commission on Large Dams."
+    },
+    {
+      "bodyIndex": 243,
+      "tag": "bookmarkEnd",
+      "sha256": "4e624386c630ea537e53fc40a7daf1118917325527e86b475969d20fabb4045b",
+      "text": ""
+    },
+    {
+      "bodyIndex": 244,
+      "tag": "bookmarkStart",
+      "sha256": "9c1bf7316b9f2479b051c01dad7bfddf6a9a463d32f9bef6d91fef0a10f5e7fa",
+      "text": ""
+    },
+    {
+      "bodyIndex": 245,
+      "tag": "p",
+      "sha256": "fcdab5e11c7c377b91de73a9227e4711586de95ce46297ac8863484cea5d23e2",
+      "text": "Ishihara, Kenji. 1996. Soil Behaviour in Earthquake Geotechnics. Clarendon Press; Oxford University Press. https://doi.org/10.1093/oso/9780198562245.001.0001."
+    },
+    {
+      "bodyIndex": 246,
+      "tag": "bookmarkEnd",
+      "sha256": "d8bb87260b156a241f4f5c18a77bfe0c7bac2d8a28156d70b8d9158e5d020df7",
+      "text": ""
+    },
+    {
+      "bodyIndex": 247,
+      "tag": "bookmarkStart",
+      "sha256": "28b3481d3e7a315551fe51c54d8210c80f3dfd14887392132f151ffda49ab5ee",
+      "text": ""
+    },
+    {
+      "bodyIndex": 248,
+      "tag": "p",
+      "sha256": "1f2960acd8a9f19bb83136af359b23573066bdf92f32dd40a7ca72fc7d202814",
+      "text": "Jibson, R. W. 2007. “Regression Models for Estimating Coseismic Landslide Displacement.” Engineering Geology 91 (2–4): 209–18. https://doi.org/10.1016/j.enggeo.2007.01.013."
+    },
+    {
+      "bodyIndex": 249,
+      "tag": "bookmarkEnd",
+      "sha256": "3d8347307d0e5941ac60e85efb3e8c03f4918d93540cfbace5c7e1430b632551",
+      "text": ""
+    },
+    {
+      "bodyIndex": 250,
+      "tag": "bookmarkStart",
+      "sha256": "e6e46968b20217022c4c74f58cb91edfc8b44cf91c5a5e7dbb30f66e67ed1c83",
+      "text": ""
+    },
+    {
+      "bodyIndex": 251,
+      "tag": "p",
+      "sha256": "534f459ca268cdde71de65a3a6ffd2476829b8518d21df219a7e5d370e2334ec",
+      "text": "Macedo, Jorge, Jonathan D. Bray, Norman A. Abrahamson, and Thaleia Travasarou. 2018. “Performance-Based Probabilistic Seismic Slope Displacement Procedure.” Earthquake Spectra 34 (2): 673–95. https://doi.org/10.1193/122516EQS251M."
+    },
+    {
+      "bodyIndex": 252,
+      "tag": "bookmarkEnd",
+      "sha256": "177efcd869af01e70a6808bacc185096cc0510663d17393a2f9c9a1a6b52e682",
+      "text": ""
+    },
+    {
+      "bodyIndex": 253,
+      "tag": "bookmarkStart",
+      "sha256": "2071ce366deadd6d1e1327c394c75914eb256eadd0c07fa03cfc76089d8a6c1d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 254,
+      "tag": "p",
+      "sha256": "85a873ee58818fb299e2046a80545b935e10c7ca62097a5f559ef0ba4e7a0187",
+      "text": "Makdisi, Faiz I., and H. Bolton Seed. 1978. “Simplified Procedure for Estimating Dam and Embankment Earthquake-Induced Deformations.” Journal of the Geotechnical Engineering Division 104 (GT7): 849–67. https://doi.org/10.1061/AJGEB6.0000668."
+    },
+    {
+      "bodyIndex": 255,
+      "tag": "bookmarkEnd",
+      "sha256": "ad68bd39d0988025da4888776b1fbad429d9e8dad685f9844f53b7eb5e890e43",
+      "text": ""
+    },
+    {
+      "bodyIndex": 256,
+      "tag": "bookmarkStart",
+      "sha256": "f71f00189a045cd9933aabc25074896c001573771d3fd593fc1b9de27e25fbfb",
+      "text": ""
+    },
+    {
+      "bodyIndex": 257,
+      "tag": "p",
+      "sha256": "1180ba12649b9d592c7ff2e720bb3e8057bcb37a7e2c287d5b5a1d742baaa7b1",
+      "text": "Newmark, Nathan M. 1965. “Effects of Earthquakes on Dams and Embankments.” Géotechnique 15 (2): 139–60. https://doi.org/10.1680/geot.1965.15.2.139."
+    },
+    {
+      "bodyIndex": 258,
+      "tag": "bookmarkEnd",
+      "sha256": "287b5cedef1c5d8166af8bf817cdda7777061e320e6ce90fd423334e3e9e8c3a",
+      "text": ""
+    },
+    {
+      "bodyIndex": 259,
+      "tag": "bookmarkStart",
+      "sha256": "136f5375f187c8be93ae9e39ef5597ad2f14537c71f30e3885324377e7e2afcf",
+      "text": ""
+    },
+    {
+      "bodyIndex": 260,
+      "tag": "p",
+      "sha256": "2ef3c821a61d1e7be59873bd6ce9fb5fd04e88671013547eb01c6ba35cc63cb5",
+      "text": "Saygili, G., and E. M. Rathje. 2008. “Empirical Predictive Models for Earthquake-Induced Sliding Displacements of Slopes.” Journal of Geotechnical and Geoenvironmental Engineering 134 (6): 790–803."
+    },
+    {
+      "bodyIndex": 261,
+      "tag": "bookmarkEnd",
+      "sha256": "4039aa09c96a846fe81550050aa3e609931dc010e8bffecff1ac69126f219a9d",
+      "text": ""
+    },
+    {
+      "bodyIndex": 262,
+      "tag": "bookmarkStart",
+      "sha256": "eadc2a88dd3ba87cee6bc6132dcd6bc149171d5ac44c5e9140fd3026d40eb1e1",
+      "text": ""
+    },
+    {
+      "bodyIndex": 263,
+      "tag": "p",
+      "sha256": "674a58d0d5823e2b19fb7e3ffb6568bd1e685cde432262eff0a344be67d300f0",
+      "text": "Shibata, Toru, and Dojoko S. Soelarno. 1975. “Stress-Strain Characteristics of Sands Under Cyclic Loading.” Proceedings of the Japan Society of Civil Engineers 1975 (239): 57–65. https://doi.org/10.2208/jscej1969.1975.57."
+    },
+    {
+      "bodyIndex": 264,
+      "tag": "bookmarkEnd",
+      "sha256": "1f31fb20cfae9a35c125a1299af447acb3a486a88d6e9746731783cf3ce0c7d7",
+      "text": ""
+    },
+    {
+      "bodyIndex": 265,
+      "tag": "bookmarkStart",
+      "sha256": "b1f9a296c8917ebefd0f2c4fba88a957ea3e7eb463a7c72f9945c989cbee088e",
+      "text": ""
+    },
+    {
+      "bodyIndex": 266,
+      "tag": "p",
+      "sha256": "3b12a2ddc27545763ae54564a9357905e1fc7288e79a901a01b63902b69f6a2b",
+      "text": "Stewart, Jonathan P., Grace A. Parker, Gail M. Atkinson, David M. Boore, Youssef M. A. Hashash, and Walter J. Silva. 2020. “Ergodic Site Amplification Model for Central and Eastern North America.” Earthquake Spectra 36 (1): 42–68. https://doi.org/10.1177/8755293019878185."
+    },
+    {
+      "bodyIndex": 267,
+      "tag": "bookmarkEnd",
+      "sha256": "9113aa03ffc5638b797043709e9c3dc7689defb9e0e9906faa79796282d1b595",
+      "text": ""
+    },
+    {
+      "bodyIndex": 268,
+      "tag": "bookmarkStart",
+      "sha256": "bce5f2c55b592b03b0c936c73d3ef6fa6dd6042cf4c8dca7b34d1a9a67f22432",
+      "text": ""
+    },
+    {
+      "bodyIndex": 269,
+      "tag": "p",
+      "sha256": "4fac37ca259b5aaaab8f6de088b3f5859c0c40550b8d0b6824bd2be237164f6d",
+      "text": "U.S. Army Corps of Engineers. 1995. Earthquake Design and Evaluation for Civil Works Projects. Engineer Regulation ER 1110-2-1806. U.S. Army Corps of Engineers. https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/ER_1110-2-1806.pdf."
+    },
+    {
+      "bodyIndex": 270,
+      "tag": "bookmarkEnd",
+      "sha256": "8a1f2b9f60f63eac9feefe9978753b0be7fefd929e4ffc9558f6d0625a5b27f7",
+      "text": ""
+    },
+    {
+      "bodyIndex": 271,
+      "tag": "bookmarkStart",
+      "sha256": "64e9481160dbd89b5a1cd7029f992d4abada5923a1f7857a775f2ff811152003",
+      "text": ""
+    },
+    {
+      "bodyIndex": 272,
+      "tag": "p",
+      "sha256": "4823b8dea24283a24283fe7bc41f9226ef73c297b1b8d76f1f22953d689e473f",
+      "text": "U.S. Army Corps of Engineers. 2003. Slope Stability. Engineer Manual EM 1110-2-1902. U.S. Army Corps of Engineers. https://www.publications.usace.army.mil/Portals/76/Publications/EngineerManuals/EM_1110-2-1902.pdf."
+    },
+    {
+      "bodyIndex": 273,
+      "tag": "bookmarkEnd",
+      "sha256": "e855f780d68a70a57d0b0149606a38ea72356f8959cfababb4feb84c1becfa79",
+      "text": ""
+    },
+    {
+      "bodyIndex": 274,
+      "tag": "bookmarkStart",
+      "sha256": "89532cd0de223c3a58a7b508bea855e7c492896a3ec1f0d9b257c851eb7dc6a5",
+      "text": ""
+    },
+    {
+      "bodyIndex": 275,
+      "tag": "p",
+      "sha256": "0e1420ae4609ebff9bf9517d27d987aedff86dea17fd9bd1fb35cd406bcdd8bc",
+      "text": "U.S. Army Corps of Engineers. 2005. Stability of Concrete Structures. Engineer Manual EM 1110-2-2100. U.S. Army Corps of Engineers. https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-2-2100.pdf."
+    },
+    {
+      "bodyIndex": 276,
+      "tag": "bookmarkEnd",
+      "sha256": "e2cc07fab3c42a93e6485fe8d29859d86fa75d598abd199dee0937bdc66fdec7",
+      "text": ""
+    },
+    {
+      "bodyIndex": 277,
+      "tag": "bookmarkStart",
+      "sha256": "29a9ac380cb6347530653eebe03a48fc40d67305bf5dbd1c3e76b52cb6af75e2",
+      "text": ""
+    },
+    {
+      "bodyIndex": 278,
+      "tag": "p",
+      "sha256": "b256097f3e4a96510e983b79679d2016bc7e4074ec11d53d9dc41e9c0ce64dcf",
+      "text": "Verri Kozlowski, Alejandro. 2026. “Probabilistic Estimation of Newmark Displacements and Seismic Coefficients Under Hazard Uncertainty.” Unpublished manuscript. In press."
+    },
+    {
+      "bodyIndex": 279,
+      "tag": "bookmarkEnd",
+      "sha256": "27373725874dff2885f2df648b937e87cc298e294af569092d838cae2a65c3d0",
+      "text": ""
+    },
+    {
+      "bodyIndex": 280,
+      "tag": "bookmarkEnd",
+      "sha256": "54a05f1f4a5be8ff2c2a6cd2d6ec202569275c797288726c1fff66626bff4734",
+      "text": ""
+    },
+    {
+      "bodyIndex": 281,
+      "tag": "bookmarkEnd",
+      "sha256": "bdbfc3a332d35a5badfa8bc3a5dca44ac6b117097f1314bed55c44fae6f22f06",
+      "text": ""
+    },
+    {
+      "bodyIndex": 282,
+      "tag": "bookmarkEnd",
+      "sha256": "1c7ccf2e8d8351450e865c8697c8531e18c68c966f1400f788bab9c6039772b0",
+      "text": ""
+    },
+    {
+      "bodyIndex": 283,
+      "tag": "sectPr",
+      "sha256": "099471c3ca58bab642e7f0ad5a24312fff9938cd5ff117f5d8ed5684b0e7fb59",
+      "text": ""
+    }
+  ],
+  "tables": [
+    {
+      "bodyIndex": 3,
+      "rows": [
+        [
+          "",
+          "Ground-Motion Design Parameters",
+          ""
+        ],
+        [
+          "",
+          "Prepared forCanada Nickel Co."
+        ],
+        [
+          "",
+          "Prepared bySRK Consulting (Canada), Inc. and Paterson & CookeAR-M2V4D15/10/2026"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 5,
+      "rows": [
+        [
+          "",
+          "Ground-Motion Design Parameters"
+        ],
+        [
+          "",
+          "15/10/2026"
+        ],
+        [
+          "",
+          "Prepared for",
+          "Prepared by"
+        ],
+        [
+          "",
+          "Canada Nickel Co.",
+          "SRK Consulting (Canada), Inc. and Paterson & Cooke"
+        ],
+        [
+          "",
+          "",
+          "Web:https://www.srk.com/"
+        ],
+        [
+          "",
+          "Project No.:AR-M2V4DFile Name:gmdp.memo.en.docx"
+        ],
+        [
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 44,
+      "rows": [
+        [
+          "Formulation",
+          "Family",
+          "Reference material",
+          "Author",
+          "A",
+          "Ce",
+          "n"
+        ],
+        [
+          "HR63A",
+          "Sands",
+          "Angular-grain crushed sand",
+          "Hardin & Richart (1963)",
+          "3.27",
+          "2.973",
+          "0.50"
+        ],
+        [
+          "HR63R",
+          "Sands",
+          "Round-grain Ottawa sand",
+          "Hardin & Richart (1963)",
+          "7.00",
+          "2.174",
+          "0.50"
+        ],
+        [
+          "IW78",
+          "Sands",
+          "Several sands",
+          "Iwasaki et al.(1978)",
+          "9.00",
+          "2.174",
+          "0.38"
+        ],
+        [
+          "KO80",
+          "Sands",
+          "Toyoura sand",
+          "Kokusho (1980)",
+          "8.40",
+          "2.173",
+          "0.50"
+        ],
+        [
+          "LO93",
+          "Sands",
+          "Ticino sands",
+          "Lo Presti et.al (1993)",
+          "7.10",
+          "2.270",
+          "0.43"
+        ],
+        [
+          "SS75",
+          "Sands",
+          "Several sands",
+          "Shibata-Soelarno (1975)",
+          "42.00",
+          "0.670",
+          "0.50"
+        ],
+        [
+          "YR84",
+          "Sands",
+          "Several sands",
+          "Yu-Richart (1984)",
+          "7.00",
+          "2.173",
+          "0.50"
+        ],
+        [
+          "HB68",
+          "Fines",
+          "Several undisturbed NC Clays",
+          "Hardin & Black (1968)",
+          "3.27",
+          "2.973",
+          "0.50"
+        ],
+        [
+          "KU82C",
+          "Fines",
+          "Undisturbed NC Clay",
+          "Kokusho et al.(1982)",
+          "0.14",
+          "7.320",
+          "0.60"
+        ],
+        [
+          "MW72B",
+          "Fines",
+          "Reconstituted NC Bentonite",
+          "Marcuson & Wahls (1972)",
+          "0.45",
+          "4.400",
+          "0.50"
+        ],
+        [
+          "MW72K",
+          "Fines",
+          "Reconstituted NC Kaoline",
+          "Marcuson & Wahls (1972)",
+          "4.50",
+          "2.973",
+          "0.50"
+        ],
+        [
+          "ZU78A",
+          "Fines",
+          "Clay remolded IP=0-50%",
+          "Zen-Umehara (1978)",
+          "2.00",
+          "2.973",
+          "0.50"
+        ],
+        [
+          "ZU78B",
+          "Fines",
+          "Clay remolded IP=0-50%",
+          "Zen-Umehara (1978)",
+          "3.00",
+          "2.973",
+          "0.50"
+        ],
+        [
+          "ZU78C",
+          "Fines",
+          "Clay remolded IP=0-50%",
+          "Zen-Umehara (1978)",
+          "4.00",
+          "2.973",
+          "0.50"
+        ],
+        [
+          "GO87",
+          "Gravels",
+          "Gravel",
+          "Goto et al.(1987)",
+          "1.22",
+          "2.170",
+          "0.85"
+        ],
+        [
+          "KE81G",
+          "Gravels",
+          "Rounded Gravel",
+          "Kokusho-Esashi (1981)",
+          "8.40",
+          "2.170",
+          "0.60"
+        ],
+        [
+          "KE81R",
+          "Gravels",
+          "Crushed Rock",
+          "Kokusho-Esashi (1981)",
+          "13.00",
+          "2.170",
+          "0.55"
+        ],
+        [
+          "NI85",
+          "Gravels",
+          "Gravel",
+          "Nishio et al.(1985)",
+          "9.36",
+          "2.170",
+          "0.44"
+        ],
+        [
+          "PR81",
+          "Gravels",
+          "Balast",
+          "Prange (1981)",
+          "7.23",
+          "2.970",
+          "0.38"
+        ],
+        [
+          "TA87",
+          "Gravels",
+          "Gravel",
+          "Tanaka et al.(1987)",
+          "3.08",
+          "2.170",
+          "0.60"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 53,
+      "rows": [
+        [
+          "IDm",
+          "USCS",
+          "Hs",
+          "b",
+          "s",
+          "λo",
+          "mo",
+          "a1",
+          "Go",
+          "VSo",
+          "VS30",
+          "Ts"
+        ],
+        [
+          "U1",
+          "ML MH",
+          "135",
+          "363",
+          "2.50",
+          "0.350",
+          "0.484",
+          "3.6538",
+          "263.8",
+          "368.8",
+          "194.0",
+          "1.278"
+        ],
+        [
+          "U2",
+          "SP SM",
+          "50",
+          "108",
+          "2.75",
+          "0.282",
+          "0.479",
+          "3.3699",
+          "213.4",
+          "324.7",
+          "218.0",
+          "0.526"
+        ],
+        [
+          "U3",
+          "SP SM ML MH",
+          "32",
+          "52",
+          "3.00",
+          "0.213",
+          "0.464",
+          "3.1306",
+          "147.6",
+          "271.3",
+          "205.7",
+          "0.392"
+        ],
+        [
+          "U4",
+          "GP GW",
+          "27",
+          "29",
+          "3.25",
+          "0.142",
+          "0.546",
+          "3.1036",
+          "365.1",
+          "400.1",
+          "309.9",
+          "0.219"
+        ],
+        [
+          "U5",
+          "GP GW SP SM",
+          "35",
+          "20",
+          "3.50",
+          "0.075",
+          "0.506",
+          "2.9528",
+          "272.7",
+          "353.1",
+          "251.6",
+          "0.305"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 82,
+      "rows": [
+        [
+          "Fig. 1: Mean values of kmax [g] for site CFD and return period TR=500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 83,
+      "rows": [
+        [
+          "Fig. 2: Mean values of kmax [g] for site CFD and return period TR=2,500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 84,
+      "rows": [
+        [
+          "Fig. 3: Mean values of kmax [g] for site CFD and return period TR=10,000 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 85,
+      "rows": [
+        [
+          "Fig. 4: Mean values of kmax [g] for site CFD under the MCE demand, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 89,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "1.278",
+          "194",
+          "2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "1.278",
+          "194",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "1.278",
+          "194",
+          "4",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "1.278",
+          "194",
+          "18",
+          "7",
+          "4",
+          "2"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "1.278",
+          "194",
+          "4",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "1.278",
+          "194",
+          "28",
+          "12",
+          "6",
+          "3"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "1.278",
+          "194",
+          "48",
+          "22",
+          "11",
+          "6"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "1.278",
+          "194",
+          "21",
+          "6",
+          "1",
+          "0"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "1.278",
+          "194",
+          "65",
+          "32",
+          "17",
+          "10"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "1.278",
+          "194",
+          "38",
+          "19",
+          "10",
+          "6"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "1.278",
+          "194",
+          "5",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "1.278",
+          "194",
+          "61",
+          "31",
+          "17",
+          "9"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 96,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "0.526",
+          "218",
+          "6",
+          "2",
+          "1",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "0.526",
+          "218",
+          "4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "0.526",
+          "218",
+          "8",
+          "3",
+          "1",
+          "0"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "0.526",
+          "218",
+          "32",
+          "15",
+          "7",
+          "3"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "0.526",
+          "218",
+          "20",
+          "4",
+          "1",
+          "0"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "0.526",
+          "218",
+          "41",
+          "22",
+          "12",
+          "6"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "0.526",
+          "218",
+          "84",
+          "45",
+          "25",
+          "12"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "0.526",
+          "218",
+          "68",
+          "28",
+          "11",
+          "3"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "0.526",
+          "218",
+          "95",
+          "57",
+          "35",
+          "19"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "0.526",
+          "218",
+          "60",
+          "33",
+          "19",
+          "10"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "0.526",
+          "218",
+          "23",
+          "7",
+          "2",
+          "0"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "0.526",
+          "218",
+          "84",
+          "50",
+          "31",
+          "17"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 103,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "0.392",
+          "205.7",
+          "11",
+          "3",
+          "1",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "0.392",
+          "205.7",
+          "10",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "0.392",
+          "205.7",
+          "11",
+          "5",
+          "2",
+          "1"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "0.392",
+          "205.7",
+          "43",
+          "21",
+          "11",
+          "5"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "0.392",
+          "205.7",
+          "35",
+          "11",
+          "3",
+          "0"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "0.392",
+          "205.7",
+          "48",
+          "28",
+          "17",
+          "9"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "0.392",
+          "205.7",
+          "107",
+          "60",
+          "37",
+          "19"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "0.392",
+          "205.7",
+          "101",
+          "45",
+          "22",
+          "7"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "0.392",
+          "205.7",
+          "111",
+          "70",
+          "47",
+          "27"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "0.392",
+          "205.7",
+          "75",
+          "43",
+          "27",
+          "15"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "0.392",
+          "205.7",
+          "41",
+          "15",
+          "6",
+          "1"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "0.392",
+          "205.7",
+          "98",
+          "62",
+          "41",
+          "24"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 110,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "0.219",
+          "309.9",
+          "11",
+          "4",
+          "1",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "0.219",
+          "309.9",
+          "12",
+          "2",
+          "0",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "0.219",
+          "309.9",
+          "11",
+          "5",
+          "2",
+          "1"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "0.219",
+          "309.9",
+          "52",
+          "27",
+          "15",
+          "7"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "0.219",
+          "309.9",
+          "51",
+          "19",
+          "7",
+          "1"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "0.219",
+          "309.9",
+          "53",
+          "32",
+          "20",
+          "11"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "0.219",
+          "309.9",
+          "134",
+          "76",
+          "47",
+          "25"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "0.219",
+          "309.9",
+          "148",
+          "69",
+          "35",
+          "13"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "0.219",
+          "309.9",
+          "125",
+          "81",
+          "55",
+          "33"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "0.219",
+          "309.9",
+          "103",
+          "58",
+          "36",
+          "20"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "0.219",
+          "309.9",
+          "94",
+          "41",
+          "19",
+          "6"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "0.219",
+          "309.9",
+          "108",
+          "70",
+          "47",
+          "28"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 117,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "0.305",
+          "251.6",
+          "10",
+          "3",
+          "1",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "0.305",
+          "251.6",
+          "10",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "0.305",
+          "251.6",
+          "10",
+          "4",
+          "2",
+          "1"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "0.305",
+          "251.6",
+          "43",
+          "21",
+          "11",
+          "5"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "0.305",
+          "251.6",
+          "38",
+          "12",
+          "4",
+          "1"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "0.305",
+          "251.6",
+          "47",
+          "27",
+          "16",
+          "8"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "0.305",
+          "251.6",
+          "112",
+          "62",
+          "37",
+          "19"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "0.305",
+          "251.6",
+          "115",
+          "52",
+          "25",
+          "8"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "0.305",
+          "251.6",
+          "110",
+          "69",
+          "46",
+          "26"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "0.305",
+          "251.6",
+          "84",
+          "47",
+          "29",
+          "15"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "0.305",
+          "251.6",
+          "61",
+          "24",
+          "10",
+          "3"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "0.305",
+          "251.6",
+          "100",
+          "63",
+          "41",
+          "24"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 124,
+      "rows": [
+        [
+          "Fig. 5: Mean values of kh [% of PGA] for site CFD and return period TR=500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 125,
+      "rows": [
+        [
+          "Fig. 6: Mean values of kh [% of PGA] for site CFD and return period TR=2,500 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 126,
+      "rows": [
+        [
+          "Fig. 7: Mean values of kh [% of PGA] for site CFD and return period TR=10,000 yr, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 127,
+      "rows": [
+        [
+          "Fig. 8: Mean values of kh [% of PGA] for site CFD under the MCE demand, as a function of the allowable permanent displacement relative to slope height, Da/H [%]. The curves represent the scenarios S135, S50, S32, S27, S35 evaluated with the rigid, ensemble, and flexible sets."
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 131,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "1.278",
+          "194",
+          "5.6",
+          "1.0",
+          "0.3",
+          "0.1"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "1.278",
+          "194",
+          "0.7",
+          "0.0",
+          "0.0",
+          "0.0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "1.278",
+          "194",
+          "8.9",
+          "1.6",
+          "0.4",
+          "0.1"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "1.278",
+          "194",
+          "14.3",
+          "5.8",
+          "2.9",
+          "1.4"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "1.278",
+          "194",
+          "3.2",
+          "0.5",
+          "0.0",
+          "0.0"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "1.278",
+          "194",
+          "21.7",
+          "9.3",
+          "4.8",
+          "2.4"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "1.278",
+          "194",
+          "18.6",
+          "8.5",
+          "4.3",
+          "2.3"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "1.278",
+          "194",
+          "8.1",
+          "2.3",
+          "0.6",
+          "0.1"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "1.278",
+          "194",
+          "25.5",
+          "12.7",
+          "6.7",
+          "3.8"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "1.278",
+          "194",
+          "16.8",
+          "8.3",
+          "4.5",
+          "2.4"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "1.278",
+          "194",
+          "2.2",
+          "0.5",
+          "0.1",
+          "0.0"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "1.278",
+          "194",
+          "26.5",
+          "13.5",
+          "7.4",
+          "4.0"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 138,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "0.526",
+          "218",
+          "14.8",
+          "4.1",
+          "1.3",
+          "0.2"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "0.526",
+          "218",
+          "8.9",
+          "0.4",
+          "0.0",
+          "0.0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "0.526",
+          "218",
+          "18.8",
+          "6.6",
+          "2.1",
+          "0.4"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "0.526",
+          "218",
+          "25.2",
+          "11.4",
+          "5.6",
+          "2.6"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "0.526",
+          "218",
+          "15.8",
+          "3.4",
+          "0.5",
+          "0.0"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "0.526",
+          "218",
+          "31.5",
+          "16.8",
+          "9.1",
+          "4.4"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "0.526",
+          "218",
+          "32.5",
+          "17.4",
+          "9.8",
+          "4.8"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "0.526",
+          "218",
+          "26.3",
+          "10.8",
+          "4.4",
+          "1.1"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "0.526",
+          "218",
+          "36.7",
+          "21.8",
+          "13.4",
+          "7.2"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "0.526",
+          "218",
+          "25.7",
+          "14.0",
+          "8.2",
+          "4.3"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "0.526",
+          "218",
+          "9.8",
+          "3.0",
+          "0.7",
+          "0.1"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "0.526",
+          "218",
+          "36.3",
+          "21.4",
+          "13.2",
+          "7.1"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 145,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "0.392",
+          "205.7",
+          "24.7",
+          "8.0",
+          "2.9",
+          "0.9"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "0.392",
+          "205.7",
+          "24.5",
+          "4.1",
+          "0.5",
+          "0.0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "0.392",
+          "205.7",
+          "24.9",
+          "10.6",
+          "4.5",
+          "1.4"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "0.392",
+          "205.7",
+          "33.1",
+          "16.6",
+          "8.8",
+          "4.2"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "0.392",
+          "205.7",
+          "27.3",
+          "8.9",
+          "2.6",
+          "0.4"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "0.392",
+          "205.7",
+          "37.1",
+          "21.8",
+          "13.0",
+          "6.7"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "0.392",
+          "205.7",
+          "41.5",
+          "23.5",
+          "14.3",
+          "7.5"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "0.392",
+          "205.7",
+          "39.2",
+          "17.6",
+          "8.4",
+          "2.8"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "0.392",
+          "205.7",
+          "43.0",
+          "27.3",
+          "18.1",
+          "10.7"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "0.392",
+          "205.7",
+          "32.7",
+          "18.7",
+          "11.6",
+          "6.3"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "0.392",
+          "205.7",
+          "17.9",
+          "6.6",
+          "2.4",
+          "0.4"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "0.392",
+          "205.7",
+          "42.5",
+          "26.8",
+          "17.7",
+          "10.2"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 152,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "0.219",
+          "309.9",
+          "25.7",
+          "8.6",
+          "3.0",
+          "0.9"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "0.219",
+          "309.9",
+          "27.2",
+          "4.7",
+          "0.4",
+          "0.0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "0.219",
+          "309.9",
+          "24.8",
+          "11.3",
+          "4.7",
+          "1.5"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "0.219",
+          "309.9",
+          "39.4",
+          "20.4",
+          "11.2",
+          "5.2"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "0.219",
+          "309.9",
+          "38.7",
+          "14.4",
+          "5.2",
+          "0.9"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "0.219",
+          "309.9",
+          "39.9",
+          "24.4",
+          "15.2",
+          "8.1"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "0.219",
+          "309.9",
+          "49.3",
+          "27.9",
+          "17.3",
+          "9.3"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "0.219",
+          "309.9",
+          "54.5",
+          "25.2",
+          "12.9",
+          "4.7"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "0.219",
+          "309.9",
+          "45.8",
+          "29.7",
+          "20.3",
+          "12.3"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "0.219",
+          "309.9",
+          "42.0",
+          "23.8",
+          "14.7",
+          "8.0"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "0.219",
+          "309.9",
+          "38.7",
+          "16.8",
+          "7.9",
+          "2.7"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "0.219",
+          "309.9",
+          "44.2",
+          "28.5",
+          "19.2",
+          "11.6"
+        ]
+      ]
+    },
+    {
+      "bodyIndex": 159,
+      "rows": [
+        [
+          "ID",
+          "IDn",
+          "Ts",
+          "VS30",
+          "0.1%",
+          "0.4%",
+          "1%",
+          "2.5%"
+        ],
+        [
+          "TR 500 yr",
+          "ensemble",
+          "0.305",
+          "251.6",
+          "23.0",
+          "7.2",
+          "2.6",
+          "0.8"
+        ],
+        [
+          "TR 500 yr",
+          "flexible",
+          "0.305",
+          "251.6",
+          "22.7",
+          "3.2",
+          "0.3",
+          "0.0"
+        ],
+        [
+          "TR 500 yr",
+          "rigid",
+          "0.305",
+          "251.6",
+          "23.2",
+          "10.0",
+          "4.1",
+          "1.3"
+        ],
+        [
+          "TR 2,500 yr",
+          "ensemble",
+          "0.305",
+          "251.6",
+          "33.3",
+          "16.2",
+          "8.4",
+          "3.8"
+        ],
+        [
+          "TR 2,500 yr",
+          "flexible",
+          "0.305",
+          "251.6",
+          "29.3",
+          "9.5",
+          "2.8",
+          "0.4"
+        ],
+        [
+          "TR 2,500 yr",
+          "rigid",
+          "0.305",
+          "251.6",
+          "36.0",
+          "20.7",
+          "12.2",
+          "6.1"
+        ],
+        [
+          "TR 10,000 yr",
+          "ensemble",
+          "0.305",
+          "251.6",
+          "42.6",
+          "23.6",
+          "14.1",
+          "7.2"
+        ],
+        [
+          "TR 10,000 yr",
+          "flexible",
+          "0.305",
+          "251.6",
+          "43.7",
+          "19.6",
+          "9.3",
+          "3.0"
+        ],
+        [
+          "TR 10,000 yr",
+          "rigid",
+          "0.305",
+          "251.6",
+          "41.8",
+          "26.3",
+          "17.3",
+          "9.9"
+        ],
+        [
+          "MCE",
+          "ensemble",
+          "0.305",
+          "251.6",
+          "35.6",
+          "20.0",
+          "12.2",
+          "6.5"
+        ],
+        [
+          "MCE",
+          "flexible",
+          "0.305",
+          "251.6",
+          "25.6",
+          "10.2",
+          "4.2",
+          "1.1"
+        ],
+        [
+          "MCE",
+          "rigid",
+          "0.305",
+          "251.6",
+          "42.3",
+          "26.5",
+          "17.5",
+          "10.2"
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "bodyIndex": 3,
+      "relationship": "rId9",
+      "part": "word/media/srk-na-logo.wmf",
+      "sha256": "c5e94914920e7c7d7a0038fb140449960fdb00173dd9dfea71ffca5240ab82db"
+    },
+    {
+      "bodyIndex": 5,
+      "relationship": "rId9",
+      "part": "word/media/srk-na-logo.wmf",
+      "sha256": "c5e94914920e7c7d7a0038fb140449960fdb00173dd9dfea71ffca5240ab82db"
+    },
+    {
+      "bodyIndex": 82,
+      "relationship": "rId30",
+      "part": "word/media/rId30.png",
+      "sha256": "ea24317bbeeb6cdd476d3449adf83a8659788c5a836dc1687c4d4660fea1b53d"
+    },
+    {
+      "bodyIndex": 83,
+      "relationship": "rId35",
+      "part": "word/media/rId35.png",
+      "sha256": "08c8d6d074ca34e6f477f4d70c142f9dda14c2d6f6fcac649de876c7a6e2abab"
+    },
+    {
+      "bodyIndex": 84,
+      "relationship": "rId40",
+      "part": "word/media/rId40.png",
+      "sha256": "dc33fb4761b04a852a6c86fc9dcd87c3d5eec8be7e608814732e9aa07f7fbae5"
+    },
+    {
+      "bodyIndex": 85,
+      "relationship": "rId45",
+      "part": "word/media/rId45.png",
+      "sha256": "73c472dfef245771f7c3db1cd02af0ad197d1541fcbf929c8a8b33f6b444deb3"
+    },
+    {
+      "bodyIndex": 124,
+      "relationship": "rId61",
+      "part": "word/media/rId61.png",
+      "sha256": "ccf08047763ae42c2412df9b8b431c98b54ec1799347135dea9561e487aab15f"
+    },
+    {
+      "bodyIndex": 125,
+      "relationship": "rId66",
+      "part": "word/media/rId66.png",
+      "sha256": "f1c5368bd1692f46ae46170ce5b73187c1a80b4ec6841a149e85294a8ba4c194"
+    },
+    {
+      "bodyIndex": 126,
+      "relationship": "rId71",
+      "part": "word/media/rId71.png",
+      "sha256": "1c4e7cccc9e9dd082beb0d78abec283610052a06fc7988470ee3188f02f38063"
+    },
+    {
+      "bodyIndex": 127,
+      "relationship": "rId76",
+      "part": "word/media/rId76.png",
+      "sha256": "652416511fc5b0a89d4b58b4b9564ad49961a0d11e452d737b0e0a182c629117"
+    }
+  ],
+  "revisions": {
+    "ins": [],
+    "del": [],
+    "rPrChange": [],
+    "pPrChange": [],
+    "tblPrChange": [],
+    "trPrChange": [],
+    "tcPrChange": [],
+    "moveFrom": [],
+    "moveTo": []
+  },
+  "trackRevisions": false,
+  "math": [
+    "8bbb7a58f16860cc68afcb9f9fcf486b1677825d59dc67839853e1098c234ff7",
+    "b25d334b92d756bd8d20ae82611c505d6871d5efabab8f67b7c03b41fc60fd3a",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "b51aadbb3bee9dae8afe53976211e0385abf3db6af968c06531c973dc1efd6fe",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "f6582cc4ca23dc7c0a8b6d3864253f3211c39e1bad5926bd08580464d1a1ab78",
+    "8ebff2c3696c44dda85e7b07cb406b2cf0dafee630b5206ce6732a31a475ebf3",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "8ce510349d3a9b5e5737ec6d85a6728af23c27f77a3384b29c43a3d73c24b72a",
+    "e6b49508667ab6b3bd4d57d4e7f6a62649ea71b674f46e4e56f2b645b6beb643",
+    "7bdd89ef72d8af43f96787172f4b000131f40545c034dba7f6e5b8e515d69dd6",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "a54c4e660683520d2d7f3191f0682be5ba72e59b90bb232ae556956e74e0a1ff",
+    "539b5da799f9cbd9dcb3574aa3ed1bb156acbd2c8f1056dc4971016b8a105be7",
+    "f8ede362c52587d2367c0e92948488ffbf35ce911889657a0b06b753989835d2",
+    "5cb50ec98da3aa338e757bb810502baf438e736d4274e627dff81ab3141476e9",
+    "7bdd89ef72d8af43f96787172f4b000131f40545c034dba7f6e5b8e515d69dd6",
+    "8ce510349d3a9b5e5737ec6d85a6728af23c27f77a3384b29c43a3d73c24b72a",
+    "e6b49508667ab6b3bd4d57d4e7f6a62649ea71b674f46e4e56f2b645b6beb643",
+    "8287e9d60d9fbb53113ebbe6cd94f86031247d72b2eff8ab184f2415218cb775",
+    "e6b49508667ab6b3bd4d57d4e7f6a62649ea71b674f46e4e56f2b645b6beb643",
+    "a2051142879e99ee01cdc4f5baf2a6c28c51a15bd2234fc3c7b3234f381c4b8a",
+    "7996002e176b9561507d4ed6efb211ae46aa208e550d1d66c70c446a5106e0b9",
+    "edaa8cafd504e2d148e0826641e7cb044606584195784c683b6df0b297de4464",
+    "810f43d5e42bc0b36a9559646503dac79b167d06cdafe4430ddee48cc541e441",
+    "5cb50ec98da3aa338e757bb810502baf438e736d4274e627dff81ab3141476e9",
+    "862d3bb5d0a3bef7cc1ce1e46e0543e1cc5511d634b305052bbf39ddc569bc27",
+    "a2051142879e99ee01cdc4f5baf2a6c28c51a15bd2234fc3c7b3234f381c4b8a",
+    "6076dcd7b41385d61b9093722a98d255d5080e89d5b52d7f84a213be3a4f0ff7",
+    "1f15d366b38ee1516eea52a2ca4bbd1e56103187cc29e7a4e8c015b8a756a999",
+    "4decd1e86d51379ed4b77a54b8193aa3ad25b67e5471526a195ec42d0eca2c82",
+    "bb68253ea5fa5655efa1c1f839728faaddb3f9c621bae34e26a17553159bffd5",
+    "0f0966f230cf02e35672e80fcdef3dceb3d13eb4a1c72ba4f317e423c63d45e3",
+    "8ce510349d3a9b5e5737ec6d85a6728af23c27f77a3384b29c43a3d73c24b72a",
+    "9c2ad52611589817bd33a7424443cdcb27cc3127df2d3a519a29fd48dbf081c6",
+    "71f07b19e1cc654f7043c52bb532c296586a46f370a7d827e0d5577d85beacf3",
+    "e8c7230a179b3080a2d3243e3223dc47d0bf6c4e4f489209dadc177829d3b8f8",
+    "7f0f0bfb82807ba1f79b5db46d17967bed40b02b92e49c02dc81417d7f09cfbf",
+    "063a3195cfd44d98bea13c1acef9c2675755167e02b47f8d3566b57d87e5f7dd",
+    "8ce510349d3a9b5e5737ec6d85a6728af23c27f77a3384b29c43a3d73c24b72a",
+    "ee221f8e53ea072eb8e3897b0b02b2c5f5221133001fa1cd254f689714623583",
+    "e6b49508667ab6b3bd4d57d4e7f6a62649ea71b674f46e4e56f2b645b6beb643",
+    "79b70a711ae692b1c62415ac4c92010925dfc415c04728b698d6c782a9f78a5d",
+    "cbd18ca915fb172a59d804e5d02ddbf6d987cb26560e54acf9a757fc550e9d9a",
+    "8287e9d60d9fbb53113ebbe6cd94f86031247d72b2eff8ab184f2415218cb775",
+    "8a55683c7ea474b657fe7aca0ebf94ef783f45f9c717aef2721a5b7d902aa95f",
+    "6c5a2ea70447d7a7b3b22d24b939fbd79d0d4407e0774a353bd99f6b35fa275f",
+    "56fb77c3e94b48eaa9b551590233cf373ab422d1b297474cf7411f62e24eba48",
+    "05804b5a0c6c3fc11ba5bceb08ee1b0b946a22865d8f33cd4a7dcab13b66329c",
+    "a812853dd881bb977e3f388708b23e8e3ecd80407942c8fa3344c5a643a5f1b0",
+    "465de762f62261f2af4ada2f2f8119332df6ec03ac470e573b6f9fc6b359f49e",
+    "17ae4af2c0908409c022282d23adc9e23bf72038c3eebf24fc723854f98edd80",
+    "513c95261d917c359cb21bb13b99122d43aca02fea3fda079d9297fe70c4c5cd",
+    "bc2b1e9b67ab32e26229385211bbecdeeacb50f5cdb5f341f506e08fbe935127",
+    "513c95261d917c359cb21bb13b99122d43aca02fea3fda079d9297fe70c4c5cd",
+    "5d4645e041a5b769482e69d4b676a54d54268a7ad33d0f18a26cc157db079e67",
+    "f9e526c6b5be03d869424e6dcd39ddfc572b366d7ac5bf003ce5bd1217cd71cd",
+    "f23f549ff0e2b9b7cf09fab48f08777916a5603b19a91a5192e1c82d314227a8",
+    "2e0f6c78fd783e229efba747bb54421a8d0eddf7d46054726c877367dbfd2353",
+    "ee235cb1c0dbb88e03b26101761418da1810063ba97e44d00ac09a230458d204",
+    "e18a3382c11e7e17d9104852365148bdc1c77b16df53fd1ab171762a36d9d0b8",
+    "599464dedef7b945b4e04baafb20bc14af79fa9ebbfbb07e1bced5d741ebb3b4",
+    "9919079fa5792d69af9ef65d506fe1ac2e41d80e34184d0cb3ffdde101fc3876",
+    "2321721a1730b2a4c954bd8a3034f64e4672fba95fa2ea3ba008441005c9f6e4",
+    "3f61b39db858998562f27a0dcb07817da565d9715dd3c40e0bc4a2fde3ca6944",
+    "129e3a68cb1d50162f955121687f5f4d53396d0fee285d7622e30969b7098cb4",
+    "465de762f62261f2af4ada2f2f8119332df6ec03ac470e573b6f9fc6b359f49e",
+    "129e3a68cb1d50162f955121687f5f4d53396d0fee285d7622e30969b7098cb4",
+    "8bbd9fec57c876cacf1811851d1f5bde3222dffceb639da1c774f11789e90842",
+    "480a201a69ed971c0d2f8e2f16ed230ff1a262f3fe4c59233ef530478d784a10",
+    "36f2cc47ba08b967e2e1cfe472a48bb6c8aba8ceb787e0780faff4faea957066",
+    "8a55683c7ea474b657fe7aca0ebf94ef783f45f9c717aef2721a5b7d902aa95f",
+    "ce14cf984c7aad6a916a30df9ae29be731c14eda24268e1647ee238ce6bf2662",
+    "79b70a711ae692b1c62415ac4c92010925dfc415c04728b698d6c782a9f78a5d",
+    "709473301d828ef45011469c04e420c582a7df7badcc7293c096d8fb75e4f0cb",
+    "513c95261d917c359cb21bb13b99122d43aca02fea3fda079d9297fe70c4c5cd",
+    "39f34c9e02b09ea38a10e5e226fd0350f2837a748403124f0830d0ebaef56b0c",
+    "79b70a711ae692b1c62415ac4c92010925dfc415c04728b698d6c782a9f78a5d",
+    "eee4d4d4deb6b67310e9a9b58832a51547da8e5ead740de8840b976f15a5da29",
+    "2f8051c32aee54022b959a6127434a64b2f2ac9e139403c544472841db5e7fc7",
+    "8ce510349d3a9b5e5737ec6d85a6728af23c27f77a3384b29c43a3d73c24b72a",
+    "e6b49508667ab6b3bd4d57d4e7f6a62649ea71b674f46e4e56f2b645b6beb643",
+    "7bdd89ef72d8af43f96787172f4b000131f40545c034dba7f6e5b8e515d69dd6",
+    "a54c4e660683520d2d7f3191f0682be5ba72e59b90bb232ae556956e74e0a1ff",
+    "8287e9d60d9fbb53113ebbe6cd94f86031247d72b2eff8ab184f2415218cb775",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "e6b49508667ab6b3bd4d57d4e7f6a62649ea71b674f46e4e56f2b645b6beb643",
+    "7bdd89ef72d8af43f96787172f4b000131f40545c034dba7f6e5b8e515d69dd6",
+    "a54c4e660683520d2d7f3191f0682be5ba72e59b90bb232ae556956e74e0a1ff",
+    "f735ec363fb534bc6dc0a642ab6c6cb5cbc8581726d9f52d696a42a2867791d1",
+    "302b9835b9e09c7827be81c48f11ba355a99d7420d47ecead7539071749ea730",
+    "4b1ed20ba51f5ae6413e97be3f6c70624d830a4f612219fd50a32c576f1e39f1",
+    "7b2a441b48c0233ce14d94bc79476c9ce7d12887ca9915530ec0d744704c6593",
+    "6a8bc1d839d1c07d9dc54fd0a22e7be66f097772028d0b3edbfc2f26966515f8",
+    "6ef6f239f18a064605fbefb8dcc1c04df6b3e7213173f8dca48e8fbe907b3303",
+    "42b49963c603661f89c0c1e93db8fb80d9d21ef7a324587dcf4f26c7ac787239",
+    "c84933e15afe16abdf471e68d0fb29c33a1f34deb78a02dbf1c95f82a74f7bcb",
+    "40bda22f8a9b37ac505e718bd7fcb73016a9094ce8005069e5ec0c20d3ccfa77",
+    "0a54e6929e8e6b435b68c17d6ab3a91164fe313cf93c1316a3a89893e916c72f",
+    "109fdcd9099e539a7ddef80c447d5078a3e8bd96565fab0a1aed83f522bfac15",
+    "495069cb884cc90a4038f3015176c48423fce61d749f0952621a1f144b1da0db",
+    "93b1a8abcb44b86698f5dcbfad9b8035f53df235d9e8ed455be0b771050ae9d2",
+    "4f87d5b1ed255b11f1aae4c9b599de96950de985605e5ab5ad78de376abb1ba0",
+    "5ccc6ca8d14b978d545d4677c740c6dee28a914f3dc23d34c91cb2fe13b563c9",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "38b0dc1d5fb3cbb40ad423f32007b08f3ee3a1aabd78f805241e463be2d4f358",
+    "e99dae46c033973e6fbeb6cc2b21f82cf641c9302f9aa10ddfa679b1332317a1",
+    "38b0dc1d5fb3cbb40ad423f32007b08f3ee3a1aabd78f805241e463be2d4f358",
+    "e99dae46c033973e6fbeb6cc2b21f82cf641c9302f9aa10ddfa679b1332317a1",
+    "8bbb7a58f16860cc68afcb9f9fcf486b1677825d59dc67839853e1098c234ff7",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "f6582cc4ca23dc7c0a8b6d3864253f3211c39e1bad5926bd08580464d1a1ab78",
+    "7766f9883288bad0bc2b012f95e891c4ad3f4b65c43432b95f0bb19f72617cfa",
+    "8bbb7a58f16860cc68afcb9f9fcf486b1677825d59dc67839853e1098c234ff7",
+    "f6582cc4ca23dc7c0a8b6d3864253f3211c39e1bad5926bd08580464d1a1ab78",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "8bbb7a58f16860cc68afcb9f9fcf486b1677825d59dc67839853e1098c234ff7",
+    "f6582cc4ca23dc7c0a8b6d3864253f3211c39e1bad5926bd08580464d1a1ab78",
+    "b25d334b92d756bd8d20ae82611c505d6871d5efabab8f67b7c03b41fc60fd3a",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "a54c4e660683520d2d7f3191f0682be5ba72e59b90bb232ae556956e74e0a1ff",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "958b430d04ce967867734debeefb4d0fe5c97ea3b1c58bc46d85b14f1a9fa3a9",
+    "bfe2087944b936adfd1803dab4270ce3018784da7e357a6587af024c4adea93d",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "507b33967178ed6ec9672d81d07f86c6e78683cf622a51423641ace563f70e48",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "e716c615b757c197fadbfe7db1c20096686dbfcf438bbc108503df43c31cff3c",
+    "a54c4e660683520d2d7f3191f0682be5ba72e59b90bb232ae556956e74e0a1ff",
+    "bc79a043c8d124cbf17f4d56eb2ad6a68789c39cfdc7b4fd59d50595833eea1f",
+    "f49e742613344a13e9f9568a16204d390bb1ee895dcbe85b41d1fadc1aa43b56",
+    "ad10b54203d6c36ff82b6f2b4def1a76bec15c43b57ee687d3e30e4f75e0bdd5",
+    "79ac14e3ce201f445ed7877de8687087c5077dc749c7768d7c3a5f47b84ee870",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "7121fe3f2fb4171282d343f4dff617cac0ac6a0f4d04aa82d27190ce04e876c4",
+    "bef9bd902551f2c0684491d46d06f27f978c0ebd37dde8f3d4860184d7b44d79",
+    "b25d334b92d756bd8d20ae82611c505d6871d5efabab8f67b7c03b41fc60fd3a",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "8bbb7a58f16860cc68afcb9f9fcf486b1677825d59dc67839853e1098c234ff7",
+    "a8c06363de614a69cdb8b55cb8c4f06ead324111f9c36aafcbdc90f9a43fb0cc",
+    "83dd3764856fad2b759091dd0556f7b037d7aa48b0aa455622563db998d87b7d",
+    "72999b9a8087366da2e6ff947a0f4040a45c182a9bf2ba2a3ce49c02fe6eecd3",
+    "6259ac844117084efa51115a669c8b5e118257912866a3f1d621171e5056be76",
+    "f2ad79b2d36a398acacf885b49e0b82fea5db76d1138cf2dd0a9a149dba442a1",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "789ca3eb4492aef3e4e48c87135a345daa6e0b78d53dddd3e6949442dabdbbaf",
+    "9c2ad52611589817bd33a7424443cdcb27cc3127df2d3a519a29fd48dbf081c6",
+    "79ac14e3ce201f445ed7877de8687087c5077dc749c7768d7c3a5f47b84ee870",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "57c1c80c4df258601a9e3aa24035a9f99eb067945036821e9072bc4b38ec6b16",
+    "7766f9883288bad0bc2b012f95e891c4ad3f4b65c43432b95f0bb19f72617cfa",
+    "8bbb7a58f16860cc68afcb9f9fcf486b1677825d59dc67839853e1098c234ff7",
+    "f6582cc4ca23dc7c0a8b6d3864253f3211c39e1bad5926bd08580464d1a1ab78",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "7766f9883288bad0bc2b012f95e891c4ad3f4b65c43432b95f0bb19f72617cfa",
+    "a54c4e660683520d2d7f3191f0682be5ba72e59b90bb232ae556956e74e0a1ff",
+    "02edef23d4933cb0ba0601727d338bba0c77ac351bd996d0c0da03bfdf388492",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "9c2ad52611589817bd33a7424443cdcb27cc3127df2d3a519a29fd48dbf081c6",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "f2ad79b2d36a398acacf885b49e0b82fea5db76d1138cf2dd0a9a149dba442a1",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "72999b9a8087366da2e6ff947a0f4040a45c182a9bf2ba2a3ce49c02fe6eecd3",
+    "8bbb7a58f16860cc68afcb9f9fcf486b1677825d59dc67839853e1098c234ff7",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "b25d334b92d756bd8d20ae82611c505d6871d5efabab8f67b7c03b41fc60fd3a",
+    "ce4213949c472a07adbc7c7a4984bd073205a44524b55cb95e831580e5c1cf8d",
+    "f6582cc4ca23dc7c0a8b6d3864253f3211c39e1bad5926bd08580464d1a1ab78",
+    "948b5dcd59c3e24554b05fb9b30c2eccce4fccfc587dbb07bf8951141f293b8e",
+    "8bbb7a58f16860cc68afcb9f9fcf486b1677825d59dc67839853e1098c234ff7",
+    "1bb28aea46860cde28cca9919c7743864b348d97b2852923ed1e5d6b704ea717",
+    "4cec25a80e46acc722157d1b6d7e4e1d9e63f3a9f2c4d8639e46e4fae6c985ac",
+    "a81a855ca9f2fa7a8ef6be18872966038f9f9288dccac35ab8fb6d05f8eb4679",
+    "b51aadbb3bee9dae8afe53976211e0385abf3db6af968c06531c973dc1efd6fe",
+    "c744cea6672bd798089ae41d546d28ecb46176694d8d10c76b75b82db4a222b6",
+    "7766f9883288bad0bc2b012f95e891c4ad3f4b65c43432b95f0bb19f72617cfa",
+    "e99dae46c033973e6fbeb6cc2b21f82cf641c9302f9aa10ddfa679b1332317a1",
+    "8ebff2c3696c44dda85e7b07cb406b2cf0dafee630b5206ce6732a31a475ebf3",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "f6582cc4ca23dc7c0a8b6d3864253f3211c39e1bad5926bd08580464d1a1ab78",
+    "f4de4f8a086018eb3dc52f583a8c843d831444ac058cc41af5c95cbb0eb7e804",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "9c2ad52611589817bd33a7424443cdcb27cc3127df2d3a519a29fd48dbf081c6",
+    "3fd9bfc1e36957764e59de4f302eac57df268d154664d5f2e6e7041e7a4f6784",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "9c2ad52611589817bd33a7424443cdcb27cc3127df2d3a519a29fd48dbf081c6",
+    "cba252d8e8ea7fee4aee729bce5a26fb54007364aa3b1c63cd317f5aa43cad2b",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "9c2ad52611589817bd33a7424443cdcb27cc3127df2d3a519a29fd48dbf081c6",
+    "02b6a5a72512f2ebc6dbbe592cd7281a9acfb2ce19edcb660150d77d4a094c51",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "9c2ad52611589817bd33a7424443cdcb27cc3127df2d3a519a29fd48dbf081c6",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "d45f9166fc2ad3869ca7471667a171b463171d902556623820e5a2bc18b8131e",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "3fd9bfc1e36957764e59de4f302eac57df268d154664d5f2e6e7041e7a4f6784",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "cba252d8e8ea7fee4aee729bce5a26fb54007364aa3b1c63cd317f5aa43cad2b",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "02b6a5a72512f2ebc6dbbe592cd7281a9acfb2ce19edcb660150d77d4a094c51",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "84db28acd8231840a0f0deb6bbc56a01cb19fe283189a69e9a9b30959b10b760",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "56fade26ea19fc6707d56c7f19290a2afb9538d55d2890a5e051665d7aae87a9",
+    "2e5c46850f49e3464d6c186a24dad4654ebeabb26e2e581d82f999ba4a98d003",
+    "7b5b98aebf532d686a18f2382e4bfed6efd71e3a7c0b7ce7de1fb5083b7b57d7",
+    "ce0271ad66ac7714e191698945bf27d0ceda8074e59daab7a460dea4282b79fd",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "487a03d665cae7ec0bd4de0c01ece072f7fc1aaf5e33981d6d6bef7e50a60500",
+    "e7445689291830d624168eacab1b52dd77fdb2d72684ead163060181d75fae75",
+    "79ac14e3ce201f445ed7877de8687087c5077dc749c7768d7c3a5f47b84ee870",
+    "9c2ad52611589817bd33a7424443cdcb27cc3127df2d3a519a29fd48dbf081c6",
+    "79ac14e3ce201f445ed7877de8687087c5077dc749c7768d7c3a5f47b84ee870",
+    "78070d2959599417ad7ed5b2a68cbbc9bfa9b6cbf4262c4814da962022108ac2",
+    "0f06fcdcfe9a0a91771f6968c8dd608025e2f29843332b7b829fdaaae889829d",
+    "b48f22f68a19e40961e09929f7731089ee5fa2309ce924db14a9f05cff9dc53f",
+    "c87448fb7edaedd79ac0989a9e607fcd22d0f8c195569ecbb43604d135dc7ae3",
+    "b25d334b92d756bd8d20ae82611c505d6871d5efabab8f67b7c03b41fc60fd3a",
+    "27528934e609d25e32db0f948e7f2ae67c1832017a4d59205cbb33a53189912f",
+    "a6bab1b57c17ddff864b001c77cc0814b9eefa98b80a562c8dea0691ca99b141",
+    "8d7a8fe40e72d23450cbc538d23161698a6a6fa5a78060977dbba494ef6fe9af",
+    "a65d01c61f350ab39ffecaf8feac2e59566d022c3891364fb8ab2280eb47d6ef",
+    "3ef247386e28e1553b73c172e427392cd78838d1191c8f1361101eae4839f73e",
+    "7c320ddf39453035b697475967c245add2243c6126b7f261819deb5859262b92",
+    "59cbfaaef58476b0d1868014dec2c78aef2498821b41955be802e10d1a226e59",
+    "f6582cc4ca23dc7c0a8b6d3864253f3211c39e1bad5926bd08580464d1a1ab78",
+    "8d7a8fe40e72d23450cbc538d23161698a6a6fa5a78060977dbba494ef6fe9af",
+    "06fd85ae76f646f45bc0acd4c66ab2f6897e6b59e5e7c7205dc6812baf2f5082",
+    "27528934e609d25e32db0f948e7f2ae67c1832017a4d59205cbb33a53189912f",
+    "e60afed3a2f4ca5e7df075a9b008251750ca783db42b0e70d8f07229ab315b49",
+    "d42b3fe93b171b236dd02ce4b85113cd14a1677737bffc1c832b69ef3515a9af",
+    "16af23218d7844921bd51cfeda27bfd57d69c597f0436d01a6b515a911f1ba34",
+    "38b0dc1d5fb3cbb40ad423f32007b08f3ee3a1aabd78f805241e463be2d4f358",
+    "5a8ec155ba89e5681e437652af9ac9f1bd3d0a9887ae7d3c7fa70392d0e57610",
+    "16af23218d7844921bd51cfeda27bfd57d69c597f0436d01a6b515a911f1ba34",
+    "f87ddc6a2ef0d05fbffb3a915f70ba1d43da95fff3020ef9e9fe7bca866ee2aa",
+    "231b0105f4d4128bddf8b51dd9eb179573b62dbff659cd554838ad658871c12d",
+    "5e6934bfb733021ac205717f33d756aa8e06cf85336bef7096e3b75cf0951ab4"
+  ]
+}

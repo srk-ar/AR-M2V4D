@@ -1,0 +1,44 @@
+Render timestamp: 2026-10-15 17:30:55 -03
+[render] note: bib is beside _local/hazard.diana.en.qmd; the master resolves resources from the project root.
+[render] docx -> docx/
+
+
+processing file: hazard.diana.en.qmd
+1/7                  
+2/7 [unnamed-chunk-1]
+3/7                  
+4/7 [unnamed-chunk-2]
+5/7                  
+6/7 [unnamed-chunk-3]
+7/7                  
+output file: hazard.diana.en.knit.md
+
+pandoc 
+  to: docx
+  output-file: hazard.diana.en.docx
+  default-image-extension: png
+  reference-doc: _local/gmdp.memo.reference.docx
+  toc: false
+  number-sections: false
+  variables: {}
+  
+metadata
+  link-citations: true
+  colorlinks: true
+  crossref:
+    fig-title: Fig.
+    tbl-title: Table
+    eq-title: Equation
+    eq-prefix: eq.
+    tbl-prefix: tbl.
+    fig-prefix: fig.
+  toc-title: Table of Contents
+  engines:
+    - path: /Applications/quarto/share/extension-subtrees/julia-engine/_extensions/julia-engine/julia-engine.js
+  number-depth: 4
+  title: Seismic Hazard
+  lang: en
+  
+Output created: _ngr-output/hazard.diana.en.docx
+
+{"output": "/private/var/folders/kd/rphyx8vs1t91vfqlq8mfqyqr0000gn/T/Rtmp4USvdL/ngr-render-14705112c6c5/_ngr-output/hazard.diana.en.docx.composed", "sha256": "a3d5fa6667e4be7c138760c833746c9708fa17b5fc18d12c11ae3d09ceaf42ee"}

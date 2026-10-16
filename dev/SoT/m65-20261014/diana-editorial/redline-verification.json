@@ -1,0 +1,20 @@
+{
+  "endpoints": {
+    "final": {
+      "textAndMathExact": true,
+      "imageOrderAndBytesExact": true,
+      "characters": 150667
+    },
+    "original": {
+      "textAndMathExact": true,
+      "imageOrderAndBytesExact": true,
+      "characters": 132826
+    }
+  },
+  "revisions": 4112,
+  "hashes": {
+    "original": "bec7b8068951a03e36aaf98274702c9a70b408363f5e2dc980ccd17cd53efa3d",
+    "final": "74b7e470e6358fc80af4ac861e328f8112c668a5f29de40cb91c566807850810",
+    "redline": "6413170ea39e2856f06b14b77dcd4ff6db52afe4cc0a4f2fcacca45352f99627"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "candidate_sha256": "04cfff945ffb5fc86a49e0068b4f584674cbbfe0892405893c05533c900ee685",
+  "reviewer": "Codex root, organization paragraphs and source outline read in context",
+  "records": {
+    "contract": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/organization-evidence.md",
+      "sha256": "a6beb7994f559b85cf83654a65bef78fafb3b76d49f80eaba8db2b0c2e7c31f8"
+    },
+    "provenance": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/organization-evidence.md",
+      "sha256": "a6beb7994f559b85cf83654a65bef78fafb3b76d49f80eaba8db2b0c2e7c31f8"
+    },
+    "entities": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/organization-entities.txt",
+      "sha256": "19683ba1ba2257020f4d2dc91bd3a28899bf31a822f506be475776f891971f4e"
+    },
+    "formal": {
+      "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/organization-evidence.md",
+      "sha256": "a6beb7994f559b85cf83654a65bef78fafb3b76d49f80eaba8db2b0c2e7c31f8"
+    }
+  },
+  "baseline": {
+    "path": "/Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/diana-final/organization.md",
+    "sha256": "04cfff945ffb5fc86a49e0068b4f584674cbbfe0892405893c05533c900ee685"
+  },
+  "units": [
+    {
+      "text": "The report comprises eleven chapters and five appendices.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "The complete outline at parsed07/document.md:611–631 lists chapters 1–11; 635–643 lists A–E, entailing eleven chapters and five appendices."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "The sentence gives the scope of the existing organizational outline; removing it loses the report-level count Diana supplied."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Document structure only; no scientific value, method or scenario selection."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "The counts are supported by the explicit outline; comprises is a neutral description."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "The eleven chapters and the original sentence structure remain; four becomes five to include the restored E."
+        }
+      }
+    },
+    {
+      "text": "The report also includes five appendices.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "parsed07/document.md:635–643 supplies the five appendix entries immediately following this sentence."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "This existing sentence introduces the appendix list after the eleven chapter descriptions. Its repeated count is retained to preserve Diana structure."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "The appendix-list scope stays separate from the chapter list."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "A factual list introduction, with no evaluation or new vocabulary."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Only the outdated count changes; report, includes and appendices remain."
+        }
+      }
+    },
+    {
+      "text": "Appendix E presents the seismic coefficient formulations and results.",
+      "checks": {
+        "support": {
+          "verdict": "pass",
+          "evidence": "Appendix E at parsed07/document.md:2252 onward contains the formulations and coefficient results also read in prose.md; this sentence identifies that content."
+        },
+        "contribution": {
+          "verdict": "pass",
+          "evidence": "Without this entry the organization list ends at D despite the restored and referenced E. It supplies the missing navigation item."
+        },
+        "scope": {
+          "verdict": "pass",
+          "evidence": "Seismic coefficients only, under the probabilistic delivery chosen by the owner."
+        },
+        "register": {
+          "verdict": "pass",
+          "evidence": "Uses the existing Appendix naming and the supplied technical terms formulations and results."
+        },
+        "preservation": {
+          "verdict": "pass",
+          "evidence": "Adds no scientific claim, numeric result or new appendix; names the content already restored from the owner sources."
+        }
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "repeated-count",
+      "fragment": "The report also includes five appendices.",
+      "rule": "contribution",
+      "diagnosis": "The appendix count repeats the opening outline count.",
+      "resolution": {
+        "action": "retain",
+        "evidence": "Retained in Diana original structural position: after eleven chapter descriptions it introduces the separate appendix list, whose new E entry must be accounted for. No repeated scientific conclusion.",
+        "verified": true
+      }
+    }
+  ]
+}

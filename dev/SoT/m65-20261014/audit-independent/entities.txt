@@ -1,0 +1,33 @@
+check_entities: candidate /Users/averrik/Cloud/github/projects/AR-M2V4D/dev/SoT/m65-20261014/audit-independent/RESULTADO.md; sources 10 file(s)
+UNSUPPORTED acronyms (7)
+  AVK: "# Auditoría independiente de AVK y R02 Las dos entregas conservan la secuencia prevista: AVK actualiza los resultados de taludes y R02 conserva esos cambios y a"
+  R02: "# Auditoría independiente de AVK y R02 Las dos entregas conservan la secuencia prevista: AVK actualiza los resultados de taludes y R02 conserva esos cambios y a"
+  NGR: "La tabla 10-1 coincide con las 72 celdas de la tabla de propiedades del memo NGR, incluidos encabezados."
+  SHA256: "Las 77 imágenes agregadas coinciden por SHA256 con la figura correspondiente de esa transferencia NGR y cada una tiene un vínculo en el cuerpo del Word."
+  PNG: "Los PNG auxiliares examinados de las páginas 141 y 143 muestran rótulos de apéndices superpuestos y ecuaciones vacías."
+  OOXML: "**Cobertura y límites.** Se compararon los seis DOCX validados mediante hidratación pública con pdf2md y revisión estructural OOXML, sin modificar documentos ni"
+  ZIP: "La comprobación cubre las partes ZIP, la conservación acumulativa, las tablas indicadas, los vínculos de las figuras, las marcas de revisión y los pasajes citad"
+UNSUPPORTED names (15)
+  Auditoría: "# Auditoría independiente de AVK y R02 Las dos entregas conservan la secuencia prevista: AVK actualiza los resultados de taludes y R02 conserva esos cambios y a"
+  Las: "# Auditoría independiente de AVK y R02 Las dos entregas conservan la secuencia prevista: AVK actualiza los resultados de taludes y R02 conserva esos cambios y a"
+  Frente: "**AVK.** Frente al original cambian seis párrafos, dos tablas y tres imágenes del capítulo 10; las otras partes del archivo permanecen idénticas."
+  Prosa: "**Prosa de Hazard.** El resumen ejecutivo, la sección 9.1 y las conclusiones contienen los valores 0.312/0.442 g para TR 10000 y 0.159/0.229 g para TR 2500, con"
+  Coinciden: "Coinciden con la transferencia NGR."
+  También: "También se incorporaron la versión 3.26.2, la distinción entre curvas directas y demandas combinadas con ST20, el rango 0.70 a 1.30 de la comparación NRC 2020 y"
+  Track: "**Track Changes.** Ninguna etapa agrega inserciones ni borrados registrados."
+  Ninguna: "**Track Changes.** Ninguna etapa agrega inserciones ni borrados registrados."
+  Apéndice: "**Apéndice E pendiente.** El capítulo 10 remite al apéndice E para las formulaciones, la excepción AM88 y los coeficientes rígidos/flexibles y en unidades de ac"
+  Sin: "Sin embargo, las diez tablas finales permanecen iguales al original y conservan sus valores antiguos como texto marcado para borrado, sin datos visibles actuali"
+  Por: "Por ejemplo, la tabla de coeficientes de S135 conserva en borrados Ts=0.835 y 18.1/7.4/3.6/1.9 para TR 2475; la tabla 10-2 vigente contiene Ts=1.278 y 14.3/5.8/"
+  Resumen: "**Resumen de taludes pendiente.** En ambos Word, el resumen ejecutivo conserva la descripción de un método empírico singular y de coeficientes para distintas cl"
+  Figuras: "**Figuras de coeficientes.** Las figuras 10-1, 10-2 y 10-3 tienen los mismos rótulos, leyendas y trazados discernibles que las figuras 5, 6 y 7 del memo actual,"
+  Cobertura: "**Cobertura y límites.** Se compararon los seis DOCX validados mediante hidratación pública con pdf2md y revisión estructural OOXML, sin modificar documentos ni"
+  Evidencia: "Evidencia reproducible: `audit_structure.py`, `check_coverage.py`, `comparison.json`, `coverage.json`, `anchors-revisions.json`, `slope-image-diff.json` y `prov"
+UNSUPPORTED numbers (1)
+  451: "Los 451 marcadores de inicio y 451 de fin conservan sus identificadores."
+REGISTER flags (4)
+  cada: "Las 77 imágenes agregadas coinciden por SHA256 con la figura correspondiente de esa transferencia NGR y cada una tiene un vínculo en el cuerpo del Word."
+  Ninguna: "**Track Changes.** Ninguna etapa agrega inserciones ni borrados registrados."
+  sólo: "**MCE pendiente de coherencia.** El párrafo actualizado de magnitudes menciona MCE, mientras la explicación local de las demandas enumera sólo los espectros pro"
+  todo: "La auditoría identifica esa diferencia de alcance; no establece que deba incorporarse automáticamente todo el contenido determinístico de NGR al Word de Diana."
+SUMMARY unsupported=23 register=4

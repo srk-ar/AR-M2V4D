@@ -1,0 +1,14 @@
+check_entities: candidate dev/SoT/m65-20261014/diana-final/prose.md; sources 5 file(s)
+UNSUPPORTED acronyms (0)
+UNSUPPORTED names (0)
+UNSUPPORTED numbers (0)
+REGISTER flags (8)
+  each: "The curves relate, for each combination of geometry, material, and design scenario, the yield acceleration to the expected permanent displacement; they were com"
+  every: "In every formulation, , PGA, and are expressed in units of – the acceleration of gravity – in m/s, and in seconds; the Arias intensity is derived from the PGA o"
+  reproduces: "This section reproduces the published form of each formulation, including both BM branches, and states the rule that defines the active configuration."
+  single: "\end{array}$ (E1-1) The two remaining rigid-block formulations, JB07 and SR08, use the Arias intensity, which is estimated for each realization from the PGA; is"
+  all: "If the sampled PGA of a realization, , is smaller than the lower end of the grid, all stored points may satisfy and form a plateau ."
+  unique: "E1-1 is solved for , instead of extrapolating the plateau or assigning : (E1-4) The random residual cancels between and , and , so the root is unique."
+  only: "An AM88 plateau is accepted only when the original curve is exactly constant and itself shows that the entire grid reached that limit; a flat curve from another"
+  never: "\end{array}$ (E1-7) Ensemble The active configuration applies five formulations: AM88, JB07, SR08, BT07, and one BM branch – BM17 when the project declares subd"
+SUMMARY unsupported=0 register=8

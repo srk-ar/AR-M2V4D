@@ -1,0 +1,906 @@
+{
+  "original-avk": {
+    "changedParts": [
+      "word/document.xml",
+      "word/media/image41.png",
+      "word/media/image42.png",
+      "word/media/image43.png"
+    ],
+    "addedParts": [],
+    "removedParts": [],
+    "bodyCounts": [
+      1074,
+      1074
+    ],
+    "changedNodes": [
+      {
+        "bodyIndex": 697,
+        "tag": "p",
+        "before": "This section reports the dynamic properties of the slopes analyzed, the permanent displacements induced by the design earthquakes accumulate in their potential sliding masses, and the performance-based seismic coefficients derived from those displacements. The flexible sliding-block displacement models require the fundamental period of each potential sliding mass and the dynamic soil stiffness that determines it: the analyses considered 5 geometry–material scenarios with heights between 27 and 135 m, and the estimated fundamental period varies between 0.19 and 0.83 s.",
+        "after": "This section reports the dynamic properties of the slopes analyzed, the permanent displacements induced by the design earthquakes accumulate in their potential sliding masses, and the performance-based seismic coefficients derived from those displacements. The flexible sliding-block displacement models require the fundamental period of each potential sliding mass and the dynamic soil stiffness that determines it: the analyses considered 5 geometry–material scenarios with heights between 27 and 135 m, and the estimated fundamental period varies between 0.22 and 1.28 s."
+      },
+      {
+        "bodyIndex": 698,
+        "tag": "p",
+        "before": "The Newmark permanent displacement Dn quantifies the displacement induced by an earthquake accumulates in the sliding mass and is the performance measure from which the seismic coefficients are derived. The Dn(ky) curves relate, for each combination of geometry, material, and design scenario, the yield acceleration ky to the expected permanent displacement; they were computed with an ensemble set of AM88 (Ambraseys & Menu, 1988), JB07 (Jibson, 2007), SR08 (Saygili & Rathje, 2008), BT07 (Bray & Travasarou, 2007), and BM19 (Bray, Macedo, & Travasauro, 2018), with the reference magnitude Mw = 7.0 and 300 realizations per demand and are read at the fractiles q=1-pe. The horizontal pseudostatic coefficient kh is in turn derived from the allowable permanent displacement Da of the potentially sliding mass (Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009; Macedo, Bray, Abrahamson, & Travasarou, 2018); the coefficients are reported at four relative displacement limits, Da/Hs = 0.1, 0.4, 1.0, 2.5%, and the tables in Section 10.3 and 11Appendix E report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA.",
+        "after": "The Newmark permanent displacement Dn quantifies the displacement induced by an earthquake accumulates in the sliding mass and is the performance measure from which the seismic coefficients are derived. The Dn(ky) curves relate, for each combination of geometry, material, and design scenario, the yield acceleration ky to the expected permanent displacement; they were computed with an ensemble set of AM88 (Ambraseys & Menu, 1988), JB07 (Jibson, 2007), SR08 (Saygili & Rathje, 2008), BT07 (Bray & Travasarou, 2007), and BM19 (Bray, Macedo, & Travasauro, 2018), with reference magnitudes Mw = 5.5 and Mw = 6.5 assigned according to the seismic demand and 300 realizations per demand and are read at the fractiles q=1-pe. The horizontal pseudostatic coefficient kh is in turn derived from the allowable permanent displacement Da of the potentially sliding mass (Bray & Travasarou, Pseudostatic Coefficient for Use in Simplified Seismic Slope Stability Evaluation, 2009; Macedo, Bray, Abrahamson, & Travasarou, 2018); the coefficients are reported at four relative displacement limits, Da/Hs = 0.1, 0.4, 1.0, 2.5%, and the tables in Section 10.3 and 11Appendix E report, for the demands and scenarios analyzed, the coefficient at each limit, expressed as a percentage of the PGA."
+      },
+      {
+        "bodyIndex": 707,
+        "tag": "p",
+        "before": "Ts=4πHsa1(2-mo)VSo,[Eq. 101]",
+        "after": "Ts=4πHa1(2−mo)VSo,[Eq. 101]"
+      },
+      {
+        "bodyIndex": 708,
+        "tag": "p",
+        "before": "where Hs is the slope height, VSo is the basal shear-wave velocity associated with Go, mo is the inhomogeneity factor governing the shear-modulus profile, and a1 is the first modal root of the characteristic equation. The height from the virtual apex to the base of the equivalent wedge is Hs(1-λo). The modal root depends jointly on mo and the truncation ratio λo, which geometric similarity gives as",
+        "after": "where Hs is the slope height, VSo is the basal shear-wave velocity associated with Go, mo is the inhomogeneity factor governing the shear-modulus profile, and a1 is the first modal root of the characteristic equation. The height from the virtual apex to the base of the equivalent wedge is H=Hs/(1−λo). The modal root depends jointly on mo and the truncation ratio λo, which geometric similarity gives as"
+      },
+      {
+        "bodyIndex": 741,
+        "tag": "p",
+        "before": "where μlnD and σlnD are the mean and standard deviation of lnDn defined by each model, and ϵ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch, conditional on displacement exceeding the model’s zero-or-negligible-displacement threshold. In every formulation, ky, PGA, and Sa are expressed in units of g – the acceleration of gravity – IA in m/s, and Ts in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude of the project, Mw= 7.0, is applied as a constant input to every demand, geometry, material and site evaluated. The published form of each formulation is reproduced in 11Appendix E. The performance-based seismic coefficient is defined by",
+        "after": "where μlnD and σlnD are the mean and standard deviation of lnDn defined by each model, and ϵ is a standard-normal residual. Some source formulations contain a discrete branch of zero or negligible displacement; the implemented evaluation uses exclusively the positive lognormal branch, conditional on displacement exceeding the model’s zero-or-negligible-displacement threshold. In every formulation, ky, PGA, and Sa are expressed in units of g – the acceleration of gravity – IA in m/s, and Ts in seconds; the Arias intensity is derived from the PGA of each realization, and the reference magnitude is Mw= 5.5 for return periods up to 2,500 years and Mw= 6.5 for return periods of 5,000 and 10,000 years and the MCE. Within each demand, that magnitude is common to the geometry, material and site combinations evaluated. The published form of each formulation is reproduced in 11Appendix E. The performance-based seismic coefficient is defined by"
+      },
+      {
+        "bodyIndex": 744,
+        "tag": "p",
+        "before": "kh=kmaxPGA(VS30).[Eq. 1015]",
+        "after": "kh=100 kmaxPGA(VS30).[Eq. 1015]"
+      },
+      {
+        "bodyIndex": 755,
+        "tag": "tbl",
+        "before": "IDmUSCSHsbsλomoa1GoVSoVS30TsU1ML MH1353632.500.3500.4853.656261.8366.7193.00.835U2SP SM501082.750.2820.4793.370212.6324.8217.50.377U3SP SM ML MH32523.000.2130.4553.116146.2271.5205.60.308U4GP GW27293.250.1420.5473.105366.7402.5310.60.187U5GP GW SP SM35203.500.0750.5222.976276.9357.5251.40.280",
+        "after": "IDmUSCSHsbsλomoa1GoVSoVS30TsU1ML MH1353632.500.3500.4843.6538263.8368.8194.01.278U2SP SM501082.750.2820.4793.3699213.4324.7218.00.526U3SP SM ML MH32523.000.2130.4643.1306147.6271.3205.70.392U4GP GW27293.250.1420.5463.1036365.1400.1309.90.219U5GP GW SP SM35203.500.0750.5062.9528272.7353.1251.60.305"
+      },
+      {
+        "bodyIndex": 766,
+        "tag": "tbl",
+        "before": "ScenarioAEPTsVS300.1%0.4%1%2.5%S1351:2,4750.83519318.17.43.61.9S1351:10,0000.83519321.310.35.32.7S501:2,4750.377217.531.315.37.73.3S501:10,0000.377217.534.719.211.45.8S321:2,4750.308205.639.421.111.85.5S321:10,0000.308205.642.224.615.68.7S271:2,4750.187310.647.325.815.17.2S271:10,0000.187310.650.629.619.010.8S351:2,4750.28251.438.420.211.05.1S351:10,0000.28251.442.124.315.28.3",
+        "after": "ScenarioAEPTsVS300.1%0.4%1%2.5%S1351:2,4751.27819414.35.82.91.4S1351:10,0001.27819418.68.54.32.3S501:2,4750.52621825.211.45.62.6S501:10,0000.52621832.517.49.84.8S321:2,4750.392205.733.116.68.84.2S321:10,0000.392205.741.523.514.37.5S271:2,4750.219309.939.420.411.25.2S271:10,0000.219309.949.327.917.39.3S351:2,4750.305251.633.316.28.43.8S351:10,0000.305251.642.623.614.17.2"
+      }
+    ],
+    "revisions": {
+      "ins": {
+        "counts": [
+          1638,
+          1625
+        ],
+        "added": 0,
+        "removed": 13
+      },
+      "del": {
+        "counts": [
+          5599,
+          5594
+        ],
+        "added": 0,
+        "removed": 5
+      },
+      "rPrChange": {
+        "counts": [
+          1254,
+          1254
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "pPrChange": {
+        "counts": [
+          1041,
+          1041
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "tblPrChange": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "trPrChange": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "tcPrChange": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "moveFrom": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "moveTo": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      }
+    }
+  },
+  "avk-r02": {
+    "changedParts": [
+      "word/document.xml",
+      "word/_rels/document.xml.rels"
+    ],
+    "addedParts": [
+      "word/media/diana-hazard-6-1.png",
+      "word/media/diana-hazard-6-10.png",
+      "word/media/diana-hazard-6-11.png",
+      "word/media/diana-hazard-6-12.png",
+      "word/media/diana-hazard-6-13.png",
+      "word/media/diana-hazard-6-2.png",
+      "word/media/diana-hazard-6-3.png",
+      "word/media/diana-hazard-6-4.png",
+      "word/media/diana-hazard-6-5.png",
+      "word/media/diana-hazard-6-6.png",
+      "word/media/diana-hazard-6-7.png",
+      "word/media/diana-hazard-6-8.png",
+      "word/media/diana-hazard-6-9.png",
+      "word/media/diana-hazard-7-7.png",
+      "word/media/diana-hazard-7-8.png",
+      "word/media/diana-hazard-8-1.png",
+      "word/media/diana-hazard-8-2.png",
+      "word/media/diana-hazard-8-3.png",
+      "word/media/diana-hazard-9-1.png",
+      "word/media/diana-hazard-9-2.png",
+      "word/media/diana-hazard-9-3.png",
+      "word/media/diana-hazard-9-4.png",
+      "word/media/diana-hazard-c1-1.png",
+      "word/media/diana-hazard-c1-10.png",
+      "word/media/diana-hazard-c1-11.png",
+      "word/media/diana-hazard-c1-12.png",
+      "word/media/diana-hazard-c1-13.png",
+      "word/media/diana-hazard-c1-14.png",
+      "word/media/diana-hazard-c1-15.png",
+      "word/media/diana-hazard-c1-16.png",
+      "word/media/diana-hazard-c1-17.png",
+      "word/media/diana-hazard-c1-18.png",
+      "word/media/diana-hazard-c1-19.png",
+      "word/media/diana-hazard-c1-2.png",
+      "word/media/diana-hazard-c1-20.png",
+      "word/media/diana-hazard-c1-21.png",
+      "word/media/diana-hazard-c1-22.png",
+      "word/media/diana-hazard-c1-23.png",
+      "word/media/diana-hazard-c1-24.png",
+      "word/media/diana-hazard-c1-25.png",
+      "word/media/diana-hazard-c1-3.png",
+      "word/media/diana-hazard-c1-4.png",
+      "word/media/diana-hazard-c1-5.png",
+      "word/media/diana-hazard-c1-6.png",
+      "word/media/diana-hazard-c1-7.png",
+      "word/media/diana-hazard-c1-8.png",
+      "word/media/diana-hazard-c1-9.png",
+      "word/media/diana-hazard-c2-1.png",
+      "word/media/diana-hazard-c2-10.png",
+      "word/media/diana-hazard-c2-11.png",
+      "word/media/diana-hazard-c2-12.png",
+      "word/media/diana-hazard-c2-13.png",
+      "word/media/diana-hazard-c2-14.png",
+      "word/media/diana-hazard-c2-15.png",
+      "word/media/diana-hazard-c2-16.png",
+      "word/media/diana-hazard-c2-17.png",
+      "word/media/diana-hazard-c2-18.png",
+      "word/media/diana-hazard-c2-19.png",
+      "word/media/diana-hazard-c2-2.png",
+      "word/media/diana-hazard-c2-20.png",
+      "word/media/diana-hazard-c2-21.png",
+      "word/media/diana-hazard-c2-22.png",
+      "word/media/diana-hazard-c2-23.png",
+      "word/media/diana-hazard-c2-24.png",
+      "word/media/diana-hazard-c2-25.png",
+      "word/media/diana-hazard-c2-3.png",
+      "word/media/diana-hazard-c2-4.png",
+      "word/media/diana-hazard-c2-5.png",
+      "word/media/diana-hazard-c2-6.png",
+      "word/media/diana-hazard-c2-7.png",
+      "word/media/diana-hazard-c2-8.png",
+      "word/media/diana-hazard-c2-9.png",
+      "word/media/diana-hazard-d2-1.png",
+      "word/media/diana-hazard-d2-2.png",
+      "word/media/diana-hazard-d2-3.png",
+      "word/media/diana-hazard-d2-4.png",
+      "word/media/diana-hazard-d2-5.png"
+    ],
+    "removedParts": [],
+    "bodyCounts": [
+      1074,
+      1074
+    ],
+    "changedNodes": [
+      {
+        "bodyIndex": 25,
+        "tag": "p",
+        "before": "The PSHA for the Site was conducted using the OpenQuake v3.19.1 engine. Results of the PSHA are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC (Chapter 6). The analysis considers events associated with a target AEP of 1:475, 1: 975, 1:2,475, 1:5,000 and 1:10,000 years and for various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles.",
+        "after": "The PSHA for the Site was conducted using the OpenQuake v3.26.2 engine. Results of the PSHA are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC (Chapter 6). The analysis considers events associated with a target AEP of 1:475, 1: 975, 1:2,475, 1:5,000 and 1:10,000 years and for various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles."
+      },
+      {
+        "bodyIndex": 26,
+        "tag": "p",
+        "before": "Dynamic site response analysis was used to modify the response spectra to the specific geotechnical conditions of each project facility (Chapter 6.5). This analysis involves estimating multi-period amplification factors dependent on the average shear-wave velocity of the upper 30 m of soil (Vs,30) as defined by the 2020 NBCC. Amplification factors were adopted from the from GMMs of the CanadaSHM6. Seismic Cone Penetration Tests (SCPT) conducted during the 2021-2022 and 2023 field investigations (SRK Consulting (Canada), Inc., 2023) (2024) provided Vs,30 values ranging from 180 to 230 m/s. A characteristic Vs,30value of 220 m/s was adopted for the site, classifying it as Stiff Soil Class D per the 2020 NBCC. The amplification factors were then applied to adjust the UHS for these site-specific conditions and were presented for target AEPs of ranging from 1:475 to 1:10,000 years and for various confidence levels.",
+        "after": "Dynamic site response analysis was used to modify the response spectra to the specific geotechnical conditions of each project facility (Chapter 6.5). This analysis involves estimating multi-period amplification factors dependent on the average shear-wave velocity of the upper 30 m of soil (Vs,30) as defined by the 2020 NBCC. The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. Seismic Cone Penetration Tests (SCPT) conducted during the 2021-2022 and 2023 field investigations (SRK Consulting (Canada), Inc., 2023) (2024) provided Vs,30 values ranging from 180 to 230 m/s. A characteristic Vs,30value of 220 m/s was adopted for the site, classifying it as Stiff Soil Class D per the 2020 NBCC. The resulting UHS for these site-specific conditions were presented for target AEPs of ranging from 1:475 to 1:10,000 years and for various confidence levels."
+      },
+      {
+        "bodyIndex": 27,
+        "tag": "p",
+        "before": "The 2020 NBCC offers an online seismic hazard tool that provides seismic hazard values for building design across Canada (Natural Resources of Canada, 2021d). A comparison of the mean response spectra from this tool with the PSHA analysis was conducted, covering the relevant AEPs and structural periods (Chapter 8). The results demonstrate that the PSHA analysis aligns with the seismic hazard estimations used in the 2020 NBCC tool.",
+        "after": "The 2020 NBCC offers an online seismic hazard tool that provides seismic hazard values for building design across Canada (Natural Resources of Canada, 2021d). A comparison of the mean response spectra from this tool with the PSHA analysis was conducted, covering the relevant AEPs and structural periods (Chapter 8). The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared."
+      },
+      {
+        "bodyIndex": 28,
+        "tag": "p",
+        "before": "The Canadian Dam Association (CDA) (2013) along with the International Council on Mining and Metals (ICMM) (2020) and the Ontario Ministry of Natural Resources (MNR) (2011), recommends performing PSHA and determining recurrence intervals based on the potential consequences of dam failure, which range from “Low” to “Extreme.” For this project, an “Extreme” consequence level has been designated for the FEED phase of the TMF, leading to a designation of the “Maximum Design Earthquake” (MDE) with an AEP of 1:10,000 years, consistent with GISTM and, for closure, with ICOLD and ANCOLD guidance. For the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, the MDE corresponds to an AEP of 1: 2,475 years. Response spectra and PGA values for the MDE have been provided for various site conditions, from hard rock to stiff soil, and at different confidence levels (Chapter 0). For stiff soils (Vs,30= 220 m/s), the MDE for the TMF is anticipated to result in a horizontal Peak Ground Acceleration (PGA) of 0.395 g (mean) and 0.491 g (84th percentile) and the MDE for the impoundments and stockpiles is anticipated to result in a PGA of 0.157 g (mean) and 0.198 g (84th percentile).",
+        "after": "The Canadian Dam Association (CDA) (2013) along with the International Council on Mining and Metals (ICMM) (2020) and the Ontario Ministry of Natural Resources (MNR) (2011), recommends performing PSHA and determining recurrence intervals based on the potential consequences of dam failure, which range from “Low” to “Extreme.” For this project, an “Extreme” consequence level has been designated for the FEED phase of the TMF, leading to a designation of the “Maximum Design Earthquake” (MDE) with an AEP of 1:10,000 years, consistent with GISTM and, for closure, with ICOLD and ANCOLD guidance. For the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, the MDE corresponds to an AEP of 1: 2,475 years. Response spectra and PGA values for the MDE have been provided for various site conditions, from hard rock to stiff soil, and at different confidence levels (Chapter 0). For stiff soils (Vs,30= 220 m/s), the MDE for the TMF is anticipated to result in a horizontal Peak Ground Acceleration (PGA) of 0.312 g (mean) and 0.442 g (84th percentile) and the MDE for the impoundments and stockpiles is anticipated to result in a PGA of 0.159 g (mean) and 0.229 g (84th percentile)."
+      },
+      {
+        "bodyIndex": 544,
+        "tag": "p",
+        "before": "A PSHA for the Site was conducted using the CanadaSHM6 hazard model (Natural Resources of Canada, 2020) as implemented in the OpenQuake engine v.3.19 (Pagani, Monelli, & Weatgerill, 2014). The results are presented in terms of AEP and UHS for various site conditions as defined by the 2020 NBCC (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020). Site classification, described in Section 7.1, are based on a shear wave velocity profile measured from the ground surface to a depth of 30 meters (Vs,30).",
+        "after": "A PSHA for the Site was conducted using the CanadaSHM6 hazard model (Natural Resources of Canada, 2020) as implemented in the OpenQuake engine v.3.26.2 (Pagani, Monelli, & Weatgerill, 2014). The AEP curves present the direct logic-tree calculation. The tabulated design values and UHS combine this evaluation with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. The results are presented in terms of AEP and UHS for various site conditions as defined by the 2020 NBCC (Canadian Comission on Building and Fires Codes and National Research Council of Canada, 2020). Site classification, described in Section 7.1, are based on a shear wave velocity profile measured from the ground surface to a depth of 30 meters (Vs,30)."
+      },
+      {
+        "bodyIndex": 548,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 550,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 555,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 557,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 561,
+        "tag": "p",
+        "before": "5% Damping5% Damping",
+        "after": ""
+      },
+      {
+        "bodyIndex": 563,
+        "tag": "p",
+        "before": "5% Damping5% Damping",
+        "after": ""
+      },
+      {
+        "bodyIndex": 565,
+        "tag": "p",
+        "before": "5% Damping5% Damping",
+        "after": ""
+      },
+      {
+        "bodyIndex": 568,
+        "tag": "p",
+        "before": "5% Damping5% Damping",
+        "after": ""
+      },
+      {
+        "bodyIndex": 582,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 584,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 586,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 588,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 591,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 594,
+        "tag": "p",
+        "before": "The deaggregation plots show that the seismic hazard for PGA Tn=0 s is primarily controlled by nearby background seismicity sources with magnitudes M ranging between 4.8 – 5.25. and distances R less than 100 km. Additional contribution is generally provided by background sources with M ranging between 5 and 6.5 and distances R larger than 100 km. There are no known fault sources in the study area that can contribute to the hazard or influence the deaggregation results.",
+        "after": "The deaggregation plots show that the largest joint contributions to the seismic hazard for PGA occur at magnitude bin centers ranging between 4.875 and 5.125 and distance bin centers ranging between 18.75 and 31.25 km. The magnitudes at the peaks of the marginal distributions range from 5.125 to 6.875. There are no known fault sources in the study area that can contribute to the hazard or influence the deaggregation results."
+      },
+      {
+        "bodyIndex": 634,
+        "tag": "p",
+        "before": "Site amplification factors from GMMs of the CanadaSHM6 were adopted for this study. These GMMs use the following amplification factors (Kolaj, Allen, Mayfied, Adams, & Halchuk, 2019):",
+        "after": "Site amplification factors from GMMs of the CanadaSHM6 were adopted in the direct calculation. The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. These GMMs use the following amplification factors (Kolaj, Allen, Mayfied, Adams, & Halchuk, 2019):"
+      },
+      {
+        "bodyIndex": 639,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 641,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 650,
+        "tag": "p",
+        "before": "Structural periods: PGA and spectral periods of 0.2, 0.5, 1.0, and 5.0 seconds.",
+        "after": "Structural periods: PGA and spectral periods of 0.05, 0.10, 0.20, 0.30, 0.50, 1.00, 2.00, 5.00, and 10.00 seconds."
+      },
+      {
+        "bodyIndex": 652,
+        "tag": "p",
+        "before": "Figure 81 compares the response spectra for spectral ordinates with 5% damping in hard rock (Vs,30= 1500 m/s), showing mean values obtained from the PSHA analysis alongside those from the 2020 NRC (2021c) seismic hazard tool obtained for the Site. Similarly, Figure 82 and Figure 83 provide a comparison for soft rock (Vs,30= 760 m/s) and stiff soil (Vs,30= 220 m/s), respectively, presenting the mean values from both the PSHA analysis and the NRC 2020 seismic hazard tool. The comparisons in both figures reveal a good agreement between the PSHA analysis results and the NRC 2020 values, supporting the reliability of the PSHA in estimating seismic hazards for the design of the project facilities.",
+        "after": "Figure 81 compares the response spectra for spectral ordinates with 5% damping in hard rock (Vs,30= 1500 m/s), showing mean values obtained from the PSHA analysis alongside those from the 2020 NRC (2021c) seismic hazard tool obtained for the Site. Similarly, Figure 82 and Figure 83 provide a comparison for soft rock (Vs,30= 760 m/s) and stiff soil (Vs,30= 220 m/s), respectively, presenting the mean values from both the PSHA analysis and the NRC 2020 seismic hazard tool. The ratios of the PSHA spectral ordinates to the NRC 2020 values range from 0.70 to 1.30 for the periods and site conditions compared."
+      },
+      {
+        "bodyIndex": 653,
+        "tag": "p",
+        "before": "5% Damping5% Damping",
+        "after": ""
+      },
+      {
+        "bodyIndex": 656,
+        "tag": "p",
+        "before": "5% Damping5% Damping",
+        "after": ""
+      },
+      {
+        "bodyIndex": 658,
+        "tag": "p",
+        "before": "5% Damping5% Damping",
+        "after": ""
+      },
+      {
+        "bodyIndex": 668,
+        "tag": "tbl",
+        "before": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.02900.02830.02820.03130.04709750.05300.05120.05060.05610.08172,4750.10980.10490.10290.11400.15685,0000.18700.17720.17260.19140.250710,0000.31390.29520.28560.31700.3949",
+        "after": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.03740.03610.03510.03880.05159750.06530.06290.06100.06710.08762,4750.12610.12100.11710.12780.15885,0000.19430.18620.18000.19480.228810,0000.28520.27260.26320.28280.3123"
+      },
+      {
+        "bodyIndex": 671,
+        "tag": "tbl",
+        "before": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.03890.03690.03650.04030.06069750.07030.06680.06590.07280.10432,4750.14380.13690.13410.14870.19785,0000.24230.23100.22510.25070.314110,0000.40260.38430.37240.41660.4913",
+        "after": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.05240.05010.04740.05390.07369750.09290.08870.08400.09470.12642,4750.18030.17170.16230.18120.22885,0000.27940.26540.25090.27730.327110,0000.41220.38990.36840.40400.4424"
+      },
+      {
+        "bodyIndex": 673,
+        "tag": "p",
+        "before": "For the stiff soils on the Site (Vs,30=220 m/s, Site Class D), the design event for the TMF, with an AEP of 1:10,000 years, will have a PGA of 0.395 g (mean) and 0.491 g (84th percentile).  The design event for the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, with an AEP of 1:2,475 years, will have a PGA of 0.157 g (mean) and 0.198 (84th percentile).",
+        "after": "For the stiff soils on the Site (Vs,30=220 m/s, Site Class D), the design event for the TMF, with an AEP of 1:10,000 years, will have a PGA of 0.312 g (mean) and 0.442 g (84th percentile).  The design event for the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, with an AEP of 1:2,475 years, will have a PGA of 0.159 g (mean) and 0.229 (84th percentile)."
+      },
+      {
+        "bodyIndex": 679,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 681,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 683,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 685,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 690,
+        "tag": "tbl",
+        "before": "Pseudo-AccelerationSa(Tn) [g]Spectral PeriodTn (s)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  PGA0.3140.2950.2860.3170.3950.050.8230.9200.9290.8710.6820.070.7660.9070.9330.8930.6560.100.6760.8210.8580.8450.6880.120.6110.7510.7910.7930.6480.150.4770.6230.6750.7050.6470.170.4060.5540.6180.6540.6210.200.3790.4700.5270.6040.5990.220.3430.3960.4690.5450.5760.250.3060.3610.3850.4810.5490.300.2680.3160.3350.3860.5110.350.2380.2790.2980.3330.4830.400.2120.2490.2660.3020.4450.450.1910.2280.2400.2790.4260.500.1800.2110.2250.2630.4220.600.1470.1700.1810.2150.3690.700.1250.1470.1530.1860.3190.800.1100.1260.1330.1600.2850.900.0970.1110.1160.1410.2471.000.0890.1010.1060.1280.2301.200.0710.0800.0840.1010.1851.500.0550.0610.0640.0780.1451.700.0470.0530.0550.0670.1222.000.0410.0460.0470.0590.1072.200.0340.0380.0390.0480.0902.500.0280.0310.0330.0400.0742.700.0260.0280.0290.0360.0683.000.0220.0240.0250.0310.0603.200.0200.0220.0230.0280.0533.500.0170.0190.0200.0240.0473.700.0160.0180.0180.0220.0444.000.0140.0160.0160.0200.038",
+        "after": "Pseudo-AccelerationSa(Tn) [g]Spectral PeriodTn (s)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  0.0000.2850.2730.2630.2830.3120.0500.5930.5990.6020.6200.5570.0750.5580.6200.6320.6530.5680.1000.5200.6010.6190.6500.5920.1200.4710.5500.5690.6020.5610.1500.4050.4870.5090.5450.5260.1800.3740.4320.4570.4990.5160.2000.3610.4030.4280.4740.5120.2200.3280.3600.3840.4300.4860.2500.2910.3140.3320.3780.4540.2800.2640.2830.2980.3400.4300.3000.2500.2690.2810.3190.4180.3500.2180.2340.2450.2790.3800.4000.1940.2090.2170.2500.3560.4500.1740.1870.1940.2260.3360.5000.1570.1690.1750.2060.3240.6000.1240.1330.1370.1630.2680.7000.1030.1110.1140.1370.2340.7500.0960.1020.1050.1260.2230.8500.0840.0890.0910.1100.1950.9000.0790.0830.0860.1030.1841.0000.0710.0750.0760.0920.1691.2500.0540.0570.0580.0710.1291.5000.0440.0460.0470.0570.1071.7500.0370.0390.0390.0480.0882.0000.0320.0330.0340.0410.0752.5000.0230.0240.0240.0300.0543.0000.0180.0180.0190.0230.0413.5000.0140.0150.0150.0180.0334.0000.0120.0120.0120.0150.0274.5000.0100.0100.0100.0130.0235.0000.0090.0090.0090.0110.019"
+      },
+      {
+        "bodyIndex": 693,
+        "tag": "tbl",
+        "before": "Pseudo-AccelerationSa(Tn) [g]Spectral PeriodTn (s)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  PGA0.1100.1050.1030.1140.1570.050.2650.2980.3000.2910.2480.070.2580.3030.3100.3050.2520.100.2400.2910.3020.3050.2740.120.2200.2690.2820.2880.2660.150.1770.2330.2510.2650.2640.170.1540.2100.2310.2500.2580.200.1440.1780.2020.2310.2520.220.1340.1560.1810.2140.2470.250.1220.1430.1540.1910.2390.300.1070.1260.1340.1550.2240.350.0970.1140.1210.1380.2120.400.0880.1030.1100.1260.1980.450.0800.0940.1000.1160.1880.500.0740.0870.0920.1090.1850.600.0610.0710.0760.0900.1620.700.0520.0610.0640.0780.1410.800.0460.0530.0560.0670.1240.900.0410.0470.0490.0590.1091.000.0360.0410.0430.0520.0971.200.0290.0330.0350.0420.0791.500.0230.0250.0270.0320.0611.700.0190.0220.0230.0270.0522.000.0160.0180.0190.0230.0432.200.0140.0150.0160.0190.0372.500.0110.0130.0130.0160.0302.700.0100.0110.0120.0140.0273.000.0090.0100.0100.0120.0233.200.0080.0090.0090.0110.0213.500.0070.0080.0080.0100.0183.700.0060.0070.0070.0090.0174.000.0060.0060.0060.0080.015",
+        "after": "Pseudo-AccelerationSa(Tn) [g]Spectral PeriodTn (s)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  0.0000.1260.1210.1170.1280.1590.0500.2450.2440.2460.2590.2690.0750.2380.2610.2660.2810.2840.1000.2280.2610.2690.2880.3040.1200.2070.2410.2490.2680.2890.1500.1800.2150.2240.2440.2720.1800.1660.1920.2030.2240.2670.2000.1610.1800.1910.2140.2660.2200.1470.1610.1720.1940.2530.2500.1300.1400.1490.1700.2360.2800.1180.1270.1340.1530.2230.3000.1120.1200.1260.1440.2160.3500.0970.1040.1090.1250.1950.4000.0870.0930.0970.1120.1800.4500.0780.0830.0870.1010.1690.5000.0700.0750.0780.0920.1620.6000.0560.0600.0620.0730.1340.7000.0470.0500.0520.0620.1150.7500.0430.0460.0480.0570.1090.8500.0380.0410.0420.0500.0950.9000.0360.0380.0390.0470.0901.0000.0330.0350.0350.0430.0821.2500.0250.0260.0270.0330.0631.5000.0200.0220.0220.0270.0511.7500.0170.0180.0180.0220.0422.0000.0150.0160.0160.0190.0362.5000.0110.0110.0110.0140.0263.0000.0080.0080.0090.0110.0193.5000.0060.0070.0070.0080.0154.0000.0050.0050.0060.0070.0124.5000.0040.0050.0050.0060.0105.0000.0040.0040.0040.0050.009"
+      },
+      {
+        "bodyIndex": 787,
+        "tag": "p",
+        "before": "PSHA: The PSHA for the site was conducted using the OpenQuake v3.19.1 engine (Pagani, Monelli, & Weatgerill, 2014). Results are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC. The analysis considers events with target AEPs of 1:475, 1:975, 1:2,475, 1:5,000, and 1:10,000 years, and covers various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles.",
+        "after": "PSHA: The PSHA for the site was conducted using the OpenQuake v3.26.2 engine (Pagani, Monelli, & Weatgerill, 2014). Results are presented in terms of Annual Exceedance Probability (AEP) and Uniform Hazard Spectra (UHS) for site conditions ranging from hard to soft rock, as defined by the 2020 NBCC. The analysis considers events with target AEPs of 1:475, 1:975, 1:2,475, 1:5,000, and 1:10,000 years, and covers various confidence levels, including mean, 50th, 84th, 90th, and 95th percentiles."
+      },
+      {
+        "bodyIndex": 788,
+        "tag": "p",
+        "before": "Site-Specific Adjustments: Amplification factors were applied to the Uniform Hazard Spectra (UHS) to account for the site's geotechnical conditions. Seismic Cone Penetration Tests (SCPT) classified the site as Stiff Soil Class D (Vs,30= 220 m/s) per the 2020 NBCC.",
+        "after": "Site-Specific Adjustments: The design demands combine the direct logic-tree evaluation at each condition with the ST20 transformation of the demand at the reference condition of 760 m/s, conditioned on the PGA of the same realization. Seismic Cone Penetration Tests (SCPT) classified the site as Stiff Soil Class D (Vs,30= 220 m/s) per the 2020 NBCC."
+      },
+      {
+        "bodyIndex": 789,
+        "tag": "p",
+        "before": "Design Earthquake (MDE): Based on GISTM, and for closure on ICOLD and ANCOLD guidance, an \"Extreme\" consequence level was adopted for the TMF, resulting in a Maximum Design Earthquake (MDE) with an AEP of 1:10,000 years. For Site Class D soils, the MDE corresponds to a horizontal PGA of 0.395 g (mean) and 0.491 g (84th percentile). For the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, the MDE corresponds to an AEP of 1:2,475 years, with a PGA of 0.157 g (mean) and 0.198 (84th percentile).",
+        "after": "Design Earthquake (MDE): Based on GISTM, and for closure on ICOLD and ANCOLD guidance, an \"Extreme\" consequence level was adopted for the TMF, resulting in a Maximum Design Earthquake (MDE) with an AEP of 1:10,000 years. For Site Class D soils, the MDE corresponds to a horizontal PGA of 0.312 g (mean) and 0.442 g (84th percentile). For the Clay, Rock, and Sand & Silt Impoundments, as well as the East and West Stockpiles, the MDE corresponds to an AEP of 1:2,475 years, with a PGA of 0.159 g (mean) and 0.229 (84th percentile)."
+      },
+      {
+        "bodyIndex": 848,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 850,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 852,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 854,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 856,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 857,
+        "tag": "p",
+        "before": "Figure C15: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 90th Percentile Values",
+        "after": "Figure C15: Annual Exceedance Probability (AEP) in Hard Rock (Vs,30 = 1500 m/s) for various Structural Periods – 95th Percentile Values"
+      },
+      {
+        "bodyIndex": 858,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 860,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 862,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 864,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 866,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 868,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 870,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 872,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 874,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 876,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 878,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 880,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 882,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 884,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 886,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 888,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 890,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 892,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 894,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 896,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 902,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 904,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 906,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 908,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 910,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 912,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 914,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 916,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 918,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 920,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 922,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 924,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 926,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 928,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 930,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 932,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 934,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 936,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 938,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 940,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 942,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 944,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 946,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 948,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 950,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 958,
+        "tag": "tbl",
+        "before": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.02900.02830.02820.03130.04709750.05300.05120.05060.05610.08172,4750.10980.10490.10290.11400.15685,0000.18700.17720.17260.19140.250710,0000.31390.29520.28560.31700.3949",
+        "after": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.03740.03610.03510.03880.05159750.06530.06290.06100.06710.08762,4750.12610.12100.11710.12780.15885,0000.19430.18620.18000.19480.228810,0000.28520.27260.26320.28280.3123"
+      },
+      {
+        "bodyIndex": 961,
+        "tag": "tbl",
+        "before": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.02610.02460.02410.02650.03819750.04580.04320.04230.04650.06582,4750.09010.08490.08300.09190.12575,0000.14760.13900.13560.15110.200910,0000.23830.22430.21540.24520.3166",
+        "after": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.03400.03300.03280.03540.04749750.05860.05670.05620.06070.08012,4750.11270.10860.10740.11530.14565,0000.17290.16650.16450.17510.212010,0000.25250.24300.23980.25350.2919"
+      },
+      {
+        "bodyIndex": 964,
+        "tag": "tbl",
+        "before": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.03890.03690.03650.04030.06069750.07030.06680.06590.07280.10432,4750.14380.13690.13410.14870.19785,0000.24230.23100.22510.25070.314110,0000.40260.38430.37240.41660.4913",
+        "after": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.05240.05010.04740.05390.07369750.09290.08870.08400.09470.12642,4750.18030.17170.16230.18120.22885,0000.27940.26540.25090.27730.327110,0000.41220.38990.36840.40400.4424"
+      },
+      {
+        "bodyIndex": 967,
+        "tag": "tbl",
+        "before": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.03940.03760.03760.04210.06479750.07280.06860.06780.07540.10982,4750.15500.14340.13980.15340.20495,0000.27020.24660.23840.25840.321210,0000.46480.41870.40140.42960.4965",
+        "after": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.05960.05670.05280.06100.08319750.10630.10120.09430.10770.14332,4750.20700.19630.18290.20660.25895,0000.32150.30410.28340.31690.368310,0000.47540.44770.41700.46240.4958"
+      },
+      {
+        "bodyIndex": 971,
+        "tag": "tbl",
+        "before": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.05220.05330.05360.05990.09069750.09680.09560.09520.10520.14732,4750.20540.19380.19000.20650.25545,0000.35660.32430.32430.33730.376710,0000.61040.53600.53500.54320.5471",
+        "after": "PGA (g)Return Period (years)Hard RockSite Class AVs,30= 1500 m/s  Medium RockSite Class BVs,30= 910 m/s  Soft RockSite Class B/CVs,30= 760 m/s  Very Dense SoilSite Class CVs,30= 580 m/s  Stiff SoilSite Class DVs,30= 220 m/s  4750.07050.06650.06040.07150.09689750.12670.11980.10920.12720.16752,4750.24720.23310.21280.24430.30215,0000.38510.36210.33070.37550.427210,0000.57090.53430.48770.54900.5723"
+      },
+      {
+        "bodyIndex": 979,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 981,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 983,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 985,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      },
+      {
+        "bodyIndex": 987,
+        "tag": "p",
+        "before": "",
+        "after": ""
+      }
+    ],
+    "revisions": {
+      "ins": {
+        "counts": [
+          1625,
+          1476
+        ],
+        "added": 0,
+        "removed": 149
+      },
+      "del": {
+        "counts": [
+          5594,
+          5445
+        ],
+        "added": 0,
+        "removed": 149
+      },
+      "rPrChange": {
+        "counts": [
+          1254,
+          1254
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "pPrChange": {
+        "counts": [
+          1041,
+          1041
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "tblPrChange": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "trPrChange": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "tcPrChange": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "moveFrom": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      },
+      "moveTo": {
+        "counts": [
+          0,
+          0
+        ],
+        "added": 0,
+        "removed": 0
+      }
+    }
+  }
+}

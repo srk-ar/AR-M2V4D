@@ -1,0 +1,8 @@
+```{r}
+#| label: fig-hazard-diana
+#| fig-cap: !expr CAP
+#| fig-width: !expr Item$width
+#| fig-height: !expr Item$height
+#| out-width: !expr paste0(Item$width, "in")
+dianaPlot(Diana, Item)
+```
