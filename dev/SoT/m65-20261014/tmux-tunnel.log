@@ -1,1 +1,42 @@
 2026-10-14 23:27:49 tunnel up
+Read from remote host tms9900.local: No route to host
+client_loop: send disconnect: Broken pipe
+2026-10-16 10:53:16 tunnel exited, retrying
+2026-10-16 10:54:38 tunnel up
+Read from remote host tms9900.local: No route to host
+client_loop: send disconnect: Broken pipe
+2026-10-16 10:55:43 tunnel exited, retrying
+2026-10-16 18:38:33 tunnel up
+Read from remote host tms9900.local: No route to host
+client_loop: send disconnect: Broken pipe
+2026-10-17 01:28:25 tunnel exited, retrying
+2026-10-17 04:03:22 tunnel up
+Read from remote host tms9900.local: No route to host
+client_loop: send disconnect: Broken pipe
+2026-10-17 04:04:27 tunnel exited, retrying
+2026-10-17 09:40:32 tunnel up
+Read from remote host tms9900.local: Operation timed out
+client_loop: send disconnect: Broken pipe
+2026-10-17 09:44:35 tunnel exited, retrying
+2026-10-17 10:31:37 tunnel up
+Connection to tms9900.local closed by remote host.
+2026-10-17 11:04:23 tunnel exited, retrying
+2026-10-17 11:08:29 tunnel up
+Connection to tms9900.local closed by remote host.
+2026-10-17 11:49:33 tunnel exited, retrying
+2026-10-17 11:50:21 tunnel up
+Read from remote host tms9900.local: No route to host
+client_loop: send disconnect: Broken pipe
+2026-10-17 12:00:41 tunnel exited, retrying
+2026-10-17 12:43:19 tunnel up
+Read from remote host tms9900.local: No route to host
+client_loop: send disconnect: Broken pipe
+2026-10-17 12:49:49 tunnel exited, retrying
+2026-10-17 12:50:04 tunnel up
+Read from remote host tms9900.local: No route to host
+client_loop: send disconnect: Broken pipe
+2026-10-17 13:17:23 tunnel exited, retrying
+2026-10-17 13:19:17 tunnel up
+Connection to tms9900.local closed by remote host.
+2026-10-17 13:27:15 tunnel exited, retrying
+2026-10-17 21:41:47 tunnel up

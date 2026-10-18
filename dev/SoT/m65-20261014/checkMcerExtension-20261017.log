@@ -1,0 +1,44 @@
+start: 2026-10-17 21:50:50 -0300
+unchanged UHSRock.Rds                                                  TRUE
+unchanged UHSTable.Rds                                                 TRUE
+unchanged AEPTable.Rds                                                 TRUE
+unchanged RMwTable.Rds                                                 TRUE
+unchanged AEPSTable.Rds                                                TRUE
+unchanged GMPETable.Rds                                                TRUE
+unchanged SSMTable.Rds                                                 TRUE
+unchanged data/newmark/ DnPlotTable.Rds                                TRUE
+unchanged data/newmark/ DnTable.Rds                                    TRUE
+unchanged data/newmark/ kmaxTable.Rds                                  TRUE
+unchanged data/newmark/ M2V4D/CFD/DnDraws.Rds                          TRUE
+unchanged data/newmark/ M2V4D/CFD/DnTable.Rds                          TRUE
+unchanged data/newmark/ M2V4D/CFD/kmaxTable.Rds                        TRUE
+unchanged data/newmark/ M2V4D/CFD/PGATable.csv                         TRUE
+unchanged data/newmark/ magnitude-map.csv                              TRUE
+unchanged data/newmark/ PROCEDENCIA.md                                 TRUE
+unchanged data/newmark/ ShearTable.Rds                                 TRUE
+MCETable.Rds columns and classes unchanged                             TRUE
+MCETable.Rds key unchanged                                             TRUE
+MCETable.Rds Vs30 = 11 expected values                                 TRUE
+MCETable.Rds previous row count 16576                                  TRUE
+MCETable.Rds rows of the previous Vs30: same count                     TRUE
+MCETable.Rds rows of the previous Vs30: identical (all columns, no tolerance) TRUE
+MCETable.Rds rows added only for 220/580/910                           TRUE
+MCETable rows at Vs30 760 identical to before (newmark input)          TRUE
+ASCETable.Rds columns and classes unchanged                            TRUE
+ASCETable.Rds key unchanged                                            TRUE
+ASCETable.Rds Vs30 = 11 expected values                                TRUE
+ASCETable.Rds previous row count 768                                   TRUE
+ASCETable.Rds rows of the previous Vs30: same count                    TRUE
+ASCETable.Rds rows of the previous Vs30: identical (all columns, no tolerance) TRUE
+ASCETable.Rds rows added only for 220/580/910                          TRUE
+DEQTable.Rds columns and classes unchanged                             TRUE
+DEQTable.Rds key unchanged                                             TRUE
+DEQTable.Rds Vs30 = 11 expected values                                 TRUE
+DEQTable.Rds previous row count 49152                                  TRUE
+DEQTable.Rds rows of the previous Vs30: same count                     TRUE
+DEQTable.Rds rows of the previous Vs30: identical (all columns, no tolerance) TRUE
+DEQTable.Rds rows added only for 220/580/910                           TRUE
+
+ALL CHECKS PASSED: TRUE 
+check exit=0
+CHECK DONE 2026-10-17 21:50:51

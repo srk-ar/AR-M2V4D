@@ -1,0 +1,26 @@
+start 2026-10-17 21:39:42 -0300; brief del 2026-10-17; hazard 0.2.1
+=== hazard pack --root . --site specs/sites/CFD.json --calc specs/calcs/scenario/CFD/S1.json --vs30 220,580,910 ===
+Pack: model=S1 site=CFD mode=scenario vs30=220
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.220.zip sig=6a80148c89be6883
+Pack: model=S1 site=CFD mode=scenario vs30=580
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.580.zip sig=9f2bb05d361729cd
+Pack: model=S1 site=CFD mode=scenario vs30=910
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S1/S1.CFD.910.zip sig=32789c021203a48a
+Wrote 3 package(s) under data/hazard/run
+pack S1 exit=0
+=== hazard pack --root . --site specs/sites/CFD.json --calc specs/calcs/scenario/CFD/S2.json --vs30 220,580,910 ===
+Pack: model=S2 site=CFD mode=scenario vs30=220
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.220.zip sig=e50a0dd02f080e88
+Pack: model=S2 site=CFD mode=scenario vs30=580
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.580.zip sig=49b5b995575ac64b
+Pack: model=S2 site=CFD mode=scenario vs30=910
+Wrote /Users/averrik/Cloud/github/projects/AR-M2V4D/data/hazard/run/scenario/S2/S2.CFD.910.zip sig=d892ed899f1603c7
+Wrote 3 package(s) under data/hazard/run
+pack S2 exit=0
+S1 220: crc=ok identical=['gmmLT_NBCC.xml', 'rupture_distances.csv', 'rupture_variants.csv', 'ruptures.csv'] differ=['gmm_stats.csv', 'job.ini', 'site_model.csv'] missing=[] extra=[] | job.ini keys that differ: ['description']
+S1 580: crc=ok identical=['gmmLT_NBCC.xml', 'rupture_distances.csv', 'rupture_variants.csv', 'ruptures.csv'] differ=['gmm_stats.csv', 'job.ini', 'site_model.csv'] missing=[] extra=[] | job.ini keys that differ: ['description']
+S1 910: crc=ok identical=['gmmLT_NBCC.xml', 'rupture_distances.csv', 'rupture_variants.csv', 'ruptures.csv'] differ=['gmm_stats.csv', 'job.ini', 'site_model.csv'] missing=[] extra=[] | job.ini keys that differ: ['description']
+S2 220: crc=ok identical=['gmmLT_NBCC.xml', 'rupture_distances.csv', 'rupture_variants.csv', 'ruptures.csv'] differ=['gmm_stats.csv', 'job.ini', 'site_model.csv'] missing=[] extra=[] | job.ini keys that differ: ['description']
+S2 580: crc=ok identical=['gmmLT_NBCC.xml', 'rupture_distances.csv', 'rupture_variants.csv', 'ruptures.csv'] differ=['gmm_stats.csv', 'job.ini', 'site_model.csv'] missing=[] extra=[] | job.ini keys that differ: ['description']
+S2 910: crc=ok identical=['gmmLT_NBCC.xml', 'rupture_distances.csv', 'rupture_variants.csv', 'ruptures.csv'] differ=['gmm_stats.csv', 'job.ini', 'site_model.csv'] missing=[] extra=[] | job.ini keys that differ: ['description']
+VERIFICATION PASS

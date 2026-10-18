@@ -1,0 +1,15 @@
+start: 2026-10-17 21:41:00 -0300 (tmux m2v4d-scn; brief 2026-10-17; server http://127.0.0.1:8800)
+=== hazard run --mode scenario --model S1,S2 --site CFD --vs30 220,580,910 ===
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+Server calculation 93 created scenario/S1/CFD/220
+Server calculation 94 created scenario/S1/CFD/580
+Server calculation 95 created scenario/S1/CFD/910
+Server calculation 96 created scenario/S2/CFD/220
+Server calculation 97 created scenario/S2/CFD/580
+Server calculation 98 created scenario/S2/CFD/910
+run exit=0
+=== polling ===
+2026-10-17 21:41:01 | 93:created 94:created 95:created 96:created 97:created 98:created
+2026-10-17 21:41:32 | 93:complete 94:complete 95:complete 96:complete 97:complete 98:submitted
+2026-10-17 21:42:02 | 93:complete 94:complete 95:complete 96:complete 97:complete 98:complete
+ALL DONE 2026-10-17 21:42:02

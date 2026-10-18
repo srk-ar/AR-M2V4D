@@ -1,0 +1,10 @@
+start: 2026-10-17 21:42:02 -0300
+Server: http://127.0.0.1:8800 Engine: 3.26.2
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/220
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/580
+SUCCESS: complete server export family published: data/hazard/output/scenario/S1/CFD/910
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/220
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/580
+SUCCESS: complete server export family published: data/hazard/output/scenario/S2/CFD/910
+extract exit=0
+EXTRACT DONE 2026-10-17 21:42:03
