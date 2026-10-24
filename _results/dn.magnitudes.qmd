@@ -4,7 +4,7 @@ MagnitudeMap <- fread(file.path(DataRoot$newmark, "magnitude-map.csv"))
 stopifnot(!anyNA(MagnitudeMap), !anyDuplicated(MagnitudeMap$demand))
 MagnitudeContracts <- lapply(c("newmark-M55", "newmark-M65"), function(x) {
   AUX <- .readContract(root, x)
-  data.table(source = AUX$path$products, Mw = .contractValue(AUX, "Mw.gmdp"))
+  data.table(source = AUX$path$tables, Mw = .contractValue(AUX, "Mw.gmdp"))
 })
 MagnitudeContracts <- rbindlist(MagnitudeContracts)
 stopifnot(!anyDuplicated(MagnitudeContracts$source))

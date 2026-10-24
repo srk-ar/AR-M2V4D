@@ -1,6 +1,6 @@
 {
   "path": {
-    "products": "data/newmark-M55",
+    "tables": "data/newmark-M55",
     "data": "data/hazard/tables",
     "uhs": "data/hazard/uhs",
     "calc": "specs/calcs/classical/M2V4D.json"

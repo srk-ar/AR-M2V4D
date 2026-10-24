@@ -65,7 +65,7 @@ Contracts <- list(hazard = .readContract(root, "hazard"),
 # Each producer declares the directory it writes under its own key: hazard
 # names the directory of its tables, newmark the directory it owns. Reading
 # newmark from path.data would resolve to the hazard tables it only reads.
-DataKey <- list(hazard = "data", newmark = "products")
+DataKey <- list(hazard = "data", newmark = "tables")
 DataRoot <- list(hazard = .contractRoot(Contracts$hazard, DataKey$hazard, root),
                  newmark = .contractRoot(Contracts$newmark, DataKey$newmark, root))
 
