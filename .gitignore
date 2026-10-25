@@ -82,3 +82,9 @@ report/data/
 /docx/
 *.docx
 *.DOCX
+
+# Skill copies the front door brings into this repository, and their receipts
+.claude/skills/
+.claude/agents-skills.json
+.agents/skills/
+.agents/agents-skills.json
