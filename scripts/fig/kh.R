@@ -23,6 +23,7 @@ KMT0 <- KMT0[
 GEO <- ShearTable[IDg %in% IDg.target, .(Hs = unique(Hs)[1L]), by = IDg]
 KMT0 <- GEO[KMT0, on = "IDg"]
 SITE_BY <- "siteID" %in% names(KMT0) && uniqueN(KMT0$siteID, na.rm = TRUE) > 1L
+MASK <- .markExtrapolation(KMT0, KMT0$kmax, .currentTarget("KyLimits.kmax"))
 DATA <- KMT0[, .(
   ID    = if (SITE_BY) paste(siteID, IDm, IDg, sep = ".") else paste(IDm, IDg, sep = "."),
   Y     = 100 * Kh,
@@ -30,7 +31,8 @@ DATA <- KMT0[, .(
   # tooltip values readable without visibly moving the curves.
   X     = signif(Da / Hs, 3L),
   style = unname(STYLES[IDg]),
-  size  = unname(WIDTHS[IDg])
+  size  = unname(WIDTHS[IDg]),
+  extrapolated = MASK
 )]
 setorder(DATA, ID, X)
 # Coefficients are reported only up to a displacement of 10% of the slope height.
@@ -60,7 +62,7 @@ PLOT <- buildPlot(
 PLOT$x$hc_opts$series <- lapply(PLOT$x$hc_opts$series, function(Series) {
   ID <- strsplit(Series$name, ".", fixed = TRUE)[[1L]]
   Series$color <- unname(COLORS[[ID[[if (SITE_BY) 2L else 1L]]]])
-  Series
+  .markSeries(Series)
 })
 rm(STYLES, WIDTHS, COLORS)
-rm(KMT0, GEO, DATA, DUP, SITE_BY, MCE)
+rm(KMT0, GEO, DATA, DUP, SITE_BY, MCE, MASK)

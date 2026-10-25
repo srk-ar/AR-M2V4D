@@ -14,7 +14,7 @@ $$
 I_A=\exp(2.6109)\,\mathrm{PGA}^{1.9228}.
 $${#eq-newmark-arias}
 
-where $I_A$ is expressed in m/s and PGA in units of $g$; the relation is applied deterministically, so that each PGA realization determines a single value of $I_A$ and the displacement sample propagates the PGA variability. The `JB07` formulation [@Jibson2007] incorporates the Arias intensity and the ratio $k_y/\mathrm{PGA}$:
+where $I_A$ is expressed in m/s and PGA in units of $g$. The relation is the median of the rock group of the source, without its corrections for the other site groups, and it is applied to the PGA of the site condition of each scenario deterministically, without its dispersion, so that each PGA realization determines a single value of $I_A$ and the displacement sample propagates the PGA variability. The `JB07` formulation [@Jibson2007] incorporates the Arias intensity and the ratio $k_y/\mathrm{PGA}$:
 
 $$
 \begin{aligned} \mu_{\ln D} &=\ln (10)\left[0.561\log_{10}I_A -3.833\log_{10}\!\left(\frac{k_y}{\mathrm{PGA}}\right)-1.474\right],\\ \sigma_{\ln D}&=0.616\ln (10). \end{aligned}
@@ -26,7 +26,7 @@ $$
 \begin{aligned} \mu_{\ln D} ={}&2.39-5.24r-18.78r^2+42.01r^3-29.15r^4\\ &-1.56\ln\mathrm{PGA}+1.38\ln I_A,\\ \sigma_{\ln D}={}&0.46+0.56r. \end{aligned}
 $${#eq-newmark-sr08}
 
-The logarithmic extension of the $D_n (k_y)$ relations beyond their computed support has one exception, the AM88 limit. If the sampled PGA of a realization, $\mathrm{PGA}_s$, is smaller than the lower end of the grid, all stored points may satisfy $k_y/\mathrm{PGA}_s\geq r_{\max}=0.9999$ and form a plateau $D_{0,s}$. In that case the physical branch $0<r<r_{\max}$ of @eq-newmark-am88 is solved for $D_a>D_{0,s}$, instead of extrapolating the plateau or assigning $k_{\max}=0$:
+Beyond the computed support, the inversion of AM88 has a rule of its own, the AM88 limit. If the sampled PGA of a realization, $\mathrm{PGA}_s$, is smaller than the lower end of the grid, all stored points may satisfy $k_y/\mathrm{PGA}_s\geq r_{\max}=0.9999$ and form a plateau $D_{0,s}$. In that case the physical branch $0<r<r_{\max}$ of @eq-newmark-am88 is solved for $D_a>D_{0,s}$, instead of extrapolating the plateau or assigning $k_{\max}=0$:
 
 $$
 \mu_{\ln D}(r)
@@ -35,7 +35,7 @@ $$
 k_{\max,s}=\mathrm{PGA}_s r .
 $${#eq-kmax-am88-limit}
 
-The random residual cancels between $D_a$ and $D_{0,s}$, and $\mathrm{d}\mu_{\ln D}/\mathrm{d}r=-2.53/(1-r)-1.09/r<0$, so the root is unique. An AM88 plateau is accepted only when the original curve is exactly constant and $\mathrm{PGA}_s$ itself shows that the entire grid reached that limit; a flat curve from another model, or a target $D_a\leq D_{0,s}$, is rejected as non-identifiable support.
+The random residual cancels between $D_a$ and $D_{0,s}$, and $\mathrm{d}\mu_{\ln D}/\mathrm{d}r=-2.53/(1-r)-1.09/r<0$, so the root is unique. An AM88 plateau is accepted only when the original curve is exactly constant and $\mathrm{PGA}_s$ itself shows that the entire grid reached that limit; a target $D_a\leq D_{0,s}$ is rejected as non-identifiable support, and so is a flat curve of another model when $D_a$ does not exceed its constant value; a flat curve of another model gives $k_{\max}=0$ when $D_a$ exceeds that value or when the curve lies below the numerical floor of $10^{-4}$ cm.
 
 ## Flexible-Block Models {#sec-newmark-flexible}
 
@@ -48,7 +48,7 @@ $${#eq-newmark-bt07}
 The `BM17` formulation [@BrayEtAl2018] represents subduction-interface motions with $S_a=S_a (1.5T_s)$:
 
 $$
-\begin{aligned} \mu_{\ln D}&=a_0+a_1\ln S_a-0.225 (\ln S_a)^2,\\ a_1&=3.060+0.538\ln k_y,\\ a_{0,<}={}&-5.864+0.550M_w-9.421T_s\\ &-3.353\ln k_y-0.390 (\ln k_y)^2,\\ a_{0,\geq}={}&-6.896+0.550M_w+3.081T_s-0.803T_s^2\\ &-3.353\ln k_y-0.390 (\ln k_y)^2,\\ a_0&= \begin{cases} a_{0,<}, & T_s<0.1\ \mathrm{s},\\ a_{0,\geq}, & T_s\geq0.1\ \mathrm{s}, \end{cases}\\ \sigma_{\ln D}&=0.73. \end{aligned}
+\begin{aligned} \mu_{\ln D}&=a_0+\left(3.060+0.538\ln k_y\right)\ln S_a-0.225 (\ln S_a)^2,\\ a_{0,<}={}&-5.864+0.550M_w-9.421T_s\\ &-3.353\ln k_y-0.390 (\ln k_y)^2,\\ a_{0,\geq}={}&-6.896+0.550M_w+3.081T_s-0.803T_s^2\\ &-3.353\ln k_y-0.390 (\ln k_y)^2,\\ a_0&= \begin{cases} a_{0,<}, & T_s<0.1\ \mathrm{s},\\ a_{0,\geq}, & T_s\geq0.1\ \mathrm{s}, \end{cases}\\ \sigma_{\ln D}&=0.73. \end{aligned}
 $${#eq-newmark-bm17}
 
 The `BM19` formulation [@BrayMacedo2019] represents ordinary shallow crustal motions with $S_a=S_a (1.3T_s)$:

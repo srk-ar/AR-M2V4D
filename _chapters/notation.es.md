@@ -1,6 +1,6 @@
 Las tablas siguientes resumen la notación matemática del reporte, por bloque temático y en orden de aparición.
 
-### Símbolos generales
+## Símbolos generales
 
 | Símbolo | Definición |
 |---|---|
@@ -9,7 +9,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $V_{S30}$ | Velocidad de onda de corte promediada según el tiempo de viaje en los 30 m superiores; identifica una condición de sitio, no una clase de sitio (m/s). |
 | $V_{\mathrm{ref}}$ | Velocidad de la condición de roca de referencia usada como entrada; en la formulación aparecen 760 y 3000 m/s (m/s). |
 
-### Amenaza sísmica
+## Amenaza sísmica
 
 | Símbolo | Definición |
 |---|---|
@@ -27,7 +27,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $R_{JB}$, $R_{rup}$, $R_x$, $R_{hypo}$, $R_{epi}$; $z_{1.0}$, $z_{2.5}$, $z_{tor}$, $W$, $h$ | Métricas de distancia y parámetros geométricos requeridos por los GMM (km). |
 | $\theta_{k,j,\ell}$ | Probabilidad condicional de que la excedencia provenga del intervalo magnitud–distancia–residuo $(k,j,\ell)$; su máximo define el escenario modal. |
 
-### DSHA
+## DSHA
 
 | Símbolo | Definición |
 |---|---|
@@ -36,7 +36,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $w_k=v_g/N_R$ | Peso de la componente $k$: peso de la rama sobre el número de variantes de ruptura; $\sum_k w_k=1$. |
 | $S_a^{(84\%)}(T_n)$ | Envolvente del percentil 84 sobre el conjunto de escenarios (g). |
 
-### Mezcla GMM
+## Mezcla GMM
 
 | Símbolo | Definición |
 |---|---|
@@ -44,7 +44,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $\bar\lambda_I$, $\lambda_I^{(k)}$ | Curva media de amenaza y curva de la rama $k$ (1/año). |
 | $\varepsilon_{ij}=\eta_i+\delta_{ij}$ | Partición de efectos mixtos del residuo total del registro $j$ del evento $i$: término inter-evento $\eta_i$ y término intra-evento $\delta_{ij}$. |
 
-### Respuesta de sitio
+## Respuesta de sitio
 
 | Símbolo | Definición |
 |---|---|
@@ -63,7 +63,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $\sigma_L$, $\sigma_I$, $\sigma_{NL}$ | Contribuciones lineal, de cambio de referencia y no lineal a $\sigma_{\ln F}$. |
 | $\mathrm{AF}$ | Factor de amplificación publicado: media y cuantiles de la razón entre la demanda en la condición de sitio y la demanda en la roca de referencia; vale exactamente 1 en $V_{S30}=760$ m/s. |
 
-### Selección de registros sísmicos
+## Selección de registros sísmicos
 
 | Símbolo | Definición |
 |---|---|
@@ -71,7 +71,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $\mathrm{CAV}_5$ | Velocidad absoluta acumulada restringida a los intervalos en que la aceleración supera 5 cm/s². |
 | $\overline S_a(T_j)$, $S_a^t(T_j)$ | Media espectral del conjunto escalado y espectro objetivo (g). |
 
-### MCER
+## MCER
 
 | Símbolo | Definición |
 |---|---|
@@ -84,7 +84,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $S_{MS}=1.5S_{DS}$, $S_{M1}=1.5S_{D1}$ | Parámetros MCER (g). |
 | $T_0$, $T_S$, $T_L$ | Períodos de esquina del espectro de forma normativa de la Sección 11.4.5: $T_0=0.2\,S_{D1}/S_{DS}$, $T_S=S_{D1}/S_{DS}$; $T_L$ es la transición de período largo (s). |
 
-### Dinámica de taludes
+## Dinámica de taludes
 
 | Símbolo | Definición |
 |---|---|
@@ -93,7 +93,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $V_S^o$ | Velocidad basal de onda de corte asociada a $G_o$ (m/s). |
 | $T_s$ | Período fundamental del talud (Dakoulas–Gazetas) (s). |
 
-### Desplazamientos y coeficientes sísmicos
+## Desplazamientos y coeficientes sísmicos
 
 | Símbolo | Definición |
 |---|---|
@@ -101,7 +101,7 @@ Las tablas siguientes resumen la notación matemática del reporte, por bloque t
 | $\mu_{\ln D}$, $\sigma_{\ln D}$ | Media y desviación estándar de $\ln D_n$ definidas por cada modelo de desplazamiento. |
 | $I_A$ | Intensidad de Arias, derivada de la PGA mediante la relación adoptada en el reporte (m/s). |
 | $D_a$ | Desplazamiento permanente admisible (cm). |
-| $D_a/H$ | Desplazamiento residual relativo (%). |
+| $D_a/H_s$ | Desplazamiento residual relativo (%). |
 | $a_y$, $k_y=a_y/g$ | Aceleración de fluencia (m/s²) y su forma adimensional. |
 | $r$, $r^\star$ | Razón $k_y/\mathrm{PGA}$ y su versión limitada $\min(k_y/\mathrm{PGA},0.9999)$ (AM88). |
 | $k_{\max}(p_e\mid D_a)$ | Menor $k_y$ cuya probabilidad de exceder $D_a$ no supera $p_e$ (g). |

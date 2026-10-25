@@ -1,6 +1,6 @@
 The following tables summarize the mathematical notation of the report, by thematic block and in order of appearance.
 
-### General symbols
+## General symbols
 
 | Symbol | Definition |
 |---|---|
@@ -9,7 +9,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $V_{S30}$ | Travel-time-averaged shear-wave velocity in the uppermost 30 m; it identifies a site condition, not a site class (m/s). |
 | $V_{\mathrm{ref}}$ | Shear-wave velocity of the reference input condition; 760 and 3000 m/s occur in the formulation (m/s). |
 
-### Seismic hazard
+## Seismic hazard
 
 | Symbol | Definition |
 |---|---|
@@ -27,7 +27,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $R_{JB}$, $R_{rup}$, $R_x$, $R_{hypo}$, $R_{epi}$; $z_{1.0}$, $z_{2.5}$, $z_{tor}$, $W$, $h$ | Distance metrics and geometric parameters required by the GMMs (km). |
 | $\theta_{k,j,\ell}$ | Conditional probability that exceedance originates in the magnitude–distance–residual bin $(k,j,\ell)$; its maximum defines the modal scenario. |
 
-### DSHA
+## DSHA
 
 | Symbol | Definition |
 |---|---|
@@ -36,7 +36,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $w_k=v_g/N_R$ | Weight of component $k$: branch weight over the number of rupture variants; $\sum_k w_k=1$. |
 | $S_a^{(84\%)}(T_n)$ | 84th-percentile envelope over the scenario set (g). |
 
-### GMM mixture
+## GMM mixture
 
 | Symbol | Definition |
 |---|---|
@@ -44,7 +44,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $\bar\lambda_I$, $\lambda_I^{(k)}$ | Mean hazard curve and branch-$k$ curve (1/yr). |
 | $\varepsilon_{ij}=\eta_i+\delta_{ij}$ | Mixed-effects partition of the total residual of record $j$ of event $i$: inter-event term $\eta_i$ and intra-event term $\delta_{ij}$. |
 
-### Site response
+## Site response
 
 | Symbol | Definition |
 |---|---|
@@ -63,7 +63,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $\sigma_L$, $\sigma_I$, $\sigma_{NL}$ | Linear, reference-change, and nonlinear contributions to $\sigma_{\ln F}$. |
 | $\mathrm{AF}$ | Published amplification factor: mean and quantiles of the ratio between the site-condition demand and the reference-rock demand; exactly 1 at $V_{S30}=760$ m/s. |
 
-### Seismic record selection
+## Seismic record selection
 
 | Symbol | Definition |
 |---|---|
@@ -71,7 +71,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $\mathrm{CAV}_5$ | Cumulative absolute velocity restricted to the intervals where the acceleration exceeds 5 cm/s². |
 | $\overline S_a(T_j)$, $S_a^t(T_j)$ | Spectral mean of the scaled record set and target spectrum (g). |
 
-### MCER
+## MCER
 
 | Symbol | Definition |
 |---|---|
@@ -84,7 +84,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $S_{MS}=1.5S_{DS}$, $S_{M1}=1.5S_{D1}$ | MCER parameters (g). |
 | $T_0$, $T_S$, $T_L$ | Corner periods of the Section 11.4.5 code-form spectrum: $T_0=0.2\,S_{D1}/S_{DS}$, $T_S=S_{D1}/S_{DS}$; $T_L$ is the long-period transition (s). |
 
-### Slope dynamics
+## Slope dynamics
 
 | Symbol | Definition |
 |---|---|
@@ -93,7 +93,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $V_S^o$ | Basal shear-wave velocity associated with $G_o$ (m/s). |
 | $T_s$ | Fundamental period of the slope (Dakoulas–Gazetas) (s). |
 
-### Displacements and seismic coefficients
+## Displacements and seismic coefficients
 
 | Symbol | Definition |
 |---|---|
@@ -101,7 +101,7 @@ The following tables summarize the mathematical notation of the report, by thema
 | $\mu_{\ln D}$, $\sigma_{\ln D}$ | Mean and standard deviation of $\ln D_n$ defined by each displacement model. |
 | $I_A$ | Arias intensity, derived from PGA through the relation adopted in the report (m/s). |
 | $D_a$ | Allowable permanent displacement (cm). |
-| $D_a/H$ | Relative residual displacement (%). |
+| $D_a/H_s$ | Relative residual displacement (%). |
 | $a_y$, $k_y=a_y/g$ | Yield acceleration (m/s²) and its dimensionless form. |
 | $r$, $r^\star$ | Ratio $k_y/\mathrm{PGA}$ and its capped form $\min(k_y/\mathrm{PGA},0.9999)$ (AM88). |
 | $k_{\max}(p_e\mid D_a)$ | Smallest $k_y$ whose probability of exceeding $D_a$ does not exceed $p_e$ (g). |

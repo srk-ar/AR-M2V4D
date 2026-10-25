@@ -12,5 +12,10 @@ chapters:
   - _docx/sdc.ES.qmd
   - _docx/gmdp.ES.qmd
   - _docx/references.ES.qmd
-  - _docx/appendices.ES.qmd
+appendices:
+  - _docx/notation.appendix.ES.qmd
+  - _docx/gmm.appendix.ES.qmd
+  - _docx/deq.appendix.ES.qmd
+  - _docx/site.appendix.ES.qmd
+  - _docx/dn.appendix.ES.qmd
 ---

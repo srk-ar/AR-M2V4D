@@ -82,6 +82,81 @@ formatRange <- function(x, digits = 0, unit = NULL) {
   .fmt(.convertKmax(x, units), if (units == "g") 3L else 0L)
 }
 
+# Inclusive k_y calibration interval of every displacement branch that `table`
+# stores for each scenario cell (siteID, ID, TR, IDg, IDm), from buildKyLimits()
+# of the installed newmark library at the mean site PGA that kmaxTable (`pga`)
+# carries for the cell. Each row binds a displayed IDn, the branch itself or a
+# tree of the newmark families, to one active member and its interval, so a
+# tree is marked from the stored branches and not from what a figure displays.
+.kyLimits <- function(table, pga) {
+  if (!"buildKyLimits" %in% getNamespaceExports("newmark")) {
+    stop("The installed newmark library has no buildKyLimits(); the k_y calibration marks need it.", call. = FALSE)
+  }
+  if (!"listDisplacementFamilies" %in% getNamespaceExports("newmark")) {
+    stop("The installed newmark library has no listDisplacementFamilies(); the tree marks need it.", call. = FALSE)
+  }
+  FAMILIES <- newmark::listDisplacementFamilies()
+  KEYS <- intersect(c("siteID", "ID", "TR", "IDg", "IDm"), intersect(names(table), names(pga)))
+  AUX <- unique(pga[, c(KEYS, "PGA"), with = FALSE])
+  if (anyDuplicated(AUX, by = KEYS)) stop("kmaxTable carries more than one PGA for a scenario cell.", call. = FALSE)
+  AUX <- AUX[, newmark::buildKyLimits(PGA = PGA), by = KEYS]
+  # buildKyLimits() returns IDn and the lower and upper bounds; their column
+  # names differ between newmark releases, so they are named here by position.
+  setnames(AUX, c(KEYS, "IDn", "kyMin", "kyMax"))
+  AUX <- AUX[unique(table[, c(KEYS, "IDn"), with = FALSE]), on = c(KEYS, "IDn"), nomatch = NULL]
+  Branches <- unique(unlist(FAMILIES, use.names = FALSE))
+  Members <- data.table(
+    IDn = c(rep(names(FAMILIES), lengths(FAMILIES)), Branches),
+    member = c(unlist(FAMILIES, use.names = FALSE), Branches)
+  )
+  Members[AUX, on = c(member = "IDn"), nomatch = NULL, allow.cartesian = TRUE]
+}
+
+# TRUE where the acceleration `ky` in g of each row of `x` (the yield
+# acceleration of a displacement, or the kmax of a coefficient) lies outside the
+# calibration interval of its branch or, for a tree, of at least one active
+# member. A null kmax is a null demand and is not marked.
+.markExtrapolation <- function(x, ky, limits) {
+  if (is.null(limits)) {
+    stop("The k_y calibration intervals are unavailable: they need kmaxTable with its PGA column.", call. = FALSE)
+  }
+  KEYS <- setdiff(names(limits), c("IDn", "member", "kyMin", "kyMax"))
+  DT <- cbind(x[, c(KEYS, "IDn"), with = FALSE], ky = ky)
+  DT[, row := .I]
+  DT <- limits[DT, on = c(KEYS, "IDn"), allow.cartesian = TRUE]
+  if (anyNA(DT$kyMin)) {
+    AUX <- DT[is.na(kyMin)][1L]
+    stop("No k_y calibration interval for IDn ", AUX$IDn, " at ",
+         paste(KEYS, unlist(AUX[, KEYS, with = FALSE]), sep = "=", collapse = ", "), ".", call. = FALSE)
+  }
+  DT[, .(mark = is.finite(ky[1L]) & ky[1L] > 0 & any(ky < kyMin | ky > kyMax)), keyby = row]$mark
+}
+
+# Hollow markers, in the color of the series, on the points that
+# .markExtrapolation() marks; colors and line patterns keep their meaning.
+.markSeries <- function(Series) {
+  Series$data <- lapply(Series$data, function(Point) {
+    if (isTRUE(Point$extrapolated)) {
+      Point$marker <- list(enabled = TRUE, symbol = "circle", radius = 4,
+                           fillColor = "#FFFFFF", lineColor = Series$color, lineWidth = 1.5)
+    }
+    Point
+  })
+  Series
+}
+
+# A superscript asterisk after each body cell that `mask` marks; `mask` holds
+# one logical column per marked column of `table`, aligned with its body rows.
+.markTable <- function(table, mask) {
+  for (j in names(mask)) {
+    i <- which(mask[[j]])
+    if (length(i)) {
+      table <- flextable::append_chunks(table, i = i, j = j, part = "body", flextable::as_sup("*"))
+    }
+  }
+  table
+}
+
 # The Newmark products carry the model ID with its return period, and the MCE
 # with none. One label for legends and table rows, in the form the UHS and AF
 # figures already use for return periods.

@@ -1,0 +1,13 @@
+```{r}
+#| include: true
+#| label: fig-wedge
+#| fig-cap: !expr CAP
+#| fig-height: 2.2
+source(file.path(root, "scripts", "fig", "wedge.R"))
+PLOT
+```
+
+```{r}
+#| include: false
+rm(list = intersect(c("CAP", "PLOT"), ls()))
+```

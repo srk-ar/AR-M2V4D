@@ -10,7 +10,7 @@ $$
 \lambda_o=\frac{b}{b_{\max}},
 $${#eq-slope-truncation}
 
-where $b$ and $b_{\max}$ are the berm and base widths, respectively. The equivalent truncated section in the Dakoulas--Gazetas model [-@DakoulasGazetas1985Inhomogeneous] is specified by the height $H_s$, slope ratio $s$, and truncation ratio $\lambda_o$; with $\tan\beta=1/s$, where $\beta$ is the slope angle, the berm width is given by
+where $b$ and $b_{\max}$ are the berm and base widths, respectively. The equivalent truncated section is specified by the height $H_s$, slope ratio $s$, and truncation ratio $\lambda_o$; with $\tan\beta=1/s$, where $\beta$ is the slope angle, the berm width is given by
 
 $$
 b=\frac{2H_s s}{1/\lambda_o-1}.
@@ -21,6 +21,15 @@ and the base width is
 $$
 b_{\max}=b+2H_s s.
 $${#eq-slope-base-width}
+
+Figure [-@fig-wedge] shows the equivalent truncated section with these parameters: the extended slopes meet at the apex, at the height $h=\lambda_o H$ above the berm, so that $H=H_s+h$.
+
+```{r}
+#| include: false
+CAP <- readCaption("fig.wedge")
+```
+
+{{< include /_fig/wedge.qmd >}}
 
 For each profile realization, the basal shear-wave velocity is
 
@@ -34,7 +43,7 @@ $$
 G(z)=G_o\left(\frac{z}{H_s}\right)^{m_o},
 $${#eq-slope-profile}
 
-where $z$ is depth below the crest, $G_o$ is the fitted shear modulus at the base ($z/H_s=1$), and $m_o$ is obtained from a logarithmic fit to the layer moduli $G_m^{(k)}$; the characteristic equation corresponds to the power law with depth measured from the apex of the extended slopes and normalized by $H$ [-@DakoulasGazetas1985Inhomogeneous], so evaluating $a_1$ with the exponent fitted from the crest is an approximation. The layer moduli come from the soil classification: the USCS classification assigned to layer $k$ selects its soil family and the associated set of $J^{(k)}$ small-strain shear-modulus correlations compiled by Ishihara [-@Ishihara1996], and the layer modulus is taken as their arithmetic mean,
+where $z$ is depth below the crest, $G_o$ is the fitted shear modulus at the base ($z/H_s=1$), and $m_o$ is obtained from a least-squares fit of $\ln G_m^{(k)}$ against $\ln(z_m^{(k)}/H_s)$ over the layers with positive modulus, with $z_m^{(k)}$ the midpoint depth of layer $k$; the characteristic equation corresponds to the power law with depth measured from the apex of the extended slopes and normalized by $H$ [-@DakoulasGazetas1985Inhomogeneous], so evaluating $a_1$ with the exponent fitted from the crest is an approximation. The layer moduli come from the soil classification: the USCS classification of layer $k$, drawn with uniform probability and with replacement from the classes of the material scenario, selects its soil family and the associated set of $J^{(k)}$ small-strain shear-modulus correlations compiled by Ishihara [-@Ishihara1996], and the layer modulus is taken as their arithmetic mean,
 
 $$
 G_m^{(k)}=\frac{1}{J^{(k)}}\sum_{j=1}^{J^{(k)}}
@@ -52,7 +61,7 @@ p_m^{(k)}=\frac{1+2K_0}{3}
 +\frac{\gamma^{(k)}h^{(k)}}{2}\right),
 $${#eq-slope-mean-pressure}
 
-where $K_0$ is the at-rest lateral earth pressure coefficient, $\gamma^{(\ell)}$ and $h^{(\ell)}$ are the unit weight adopted for the groundwater condition and the thickness of layer $\ell$, and $\ell<k$ denotes the overlying layers. The layer overconsolidation ratio is $\mathrm{OCR}^{(k)}=\max[(p_m^{(k)}+\mathrm{POP})/p_m^{(k)},1]$, where $\mathrm{POP}$ is the preconsolidation pressure; for fine-grained soils, $m_1^{(k)}=f_{\mathrm{IP}}(\mathrm{IP}^{(k)})$, whereas for sands and gravels $m_1^{(k)}=0$ and the OCR multiplier is therefore unity. The void ratio $e_0^{(k)}$ enters all three soil families through $F_e^{(k,j)}$, which the correlations compiled by Ishihara [-@Ishihara1996] define in terms of $e_0^{(k)}$ and $C_e^{(j)}$, with the index $j_{\mathrm{SS75}}$ identifying the Shibata--Soelarno formulation [-@ShibataSoelarno1975]:
+where $K_0=0.5$ is the at-rest lateral earth pressure coefficient, $\gamma^{(\ell)}$ and $h^{(\ell)}$ are the unit weight adopted for the groundwater condition and the thickness of layer $\ell$, and $\ell<k$ denotes the overlying layers; a layer whose midpoint lies below the water table takes the submerged unit weight $\max(\gamma_{\mathrm{sat}}-10\,\mathrm{kN/m^3},0)$, and the realizations are generated for a dry column, so that $\gamma^{(\ell)}=\gamma_{\mathrm{sat}}^{(\ell)}$. The layer overconsolidation ratio is $\mathrm{OCR}^{(k)}=\max[(p_m^{(k)}+\mathrm{POP})/p_m^{(k)},1]$, where $\mathrm{POP}=100$ kPa is the preconsolidation pressure; for fine-grained soils, $m_1^{(k)}=f_{\mathrm{IP}}(\mathrm{IP}^{(k)})$ [@HardinDrnevich1972b], with $f_{\mathrm{IP}}$ interpolated linearly through the nodes $\mathrm{IP}$ = 0, 20, 40, 60, 80 and 100 with $m_1$ = 0, 0.18, 0.30, 0.41, 0.48 and 0.48, whereas for sands and gravels $m_1^{(k)}=0$ and the OCR multiplier is therefore unity. The void ratio $e_0^{(k)}$ enters all three soil families through $F_e^{(k,j)}$, which the correlations compiled by Ishihara [-@Ishihara1996] define in terms of $e_0^{(k)}$ and $C_e^{(j)}$, with the index $j_{\mathrm{SS75}}$ identifying the Shibata--Soelarno formulation [-@ShibataSoelarno1975]:
 
 $$
 F_e^{(k,j)}=
@@ -79,7 +88,7 @@ SiteGo.groups <- c(Sands = "Sands", Fines = "Fines", Gravels = "Gravels")
 
 {{< include /_tbl/SiteGo.qmd >}}
 
-For each geometry--material combination, the analysis generates $N$ synthetic realizations of the layered profile, and each of $G_o$, $m_o$, $V_S^o$, and $V_{S30}$ is summarized by its mean and selected marginal fractiles; for the mean and for each reported fractile, $a_1$ and $T_s$ are evaluated from the corresponding $m_o$ and $V_S^o$ values, and the estimates calculated from the mean parameter values provide the dynamic properties used in the displacement analysis. $V_{S30}$ is the travel-time-averaged shear-wave velocity in the uppermost 30 m:
+For each geometry--material combination, the analysis generates $N=100$ synthetic realizations of the layered profile, with layers 1 m thick whose void ratio, saturated unit weight and, for fine-grained soils, liquid limit and plasticity index are drawn with uniform distributions over intervals tabulated by class, and each of $G_o$, $m_o$, $V_S^o$, and $V_{S30}$ is summarized by its mean and its marginal fractiles 0.02, 0.05, 0.10, 0.16, 0.84, 0.90, 0.95 and 0.98. For the mean and for each reported fractile, $a_1$ and $T_s$ are evaluated from the corresponding $m_o$ and $V_S^o$ values, with $a_1$ given by a regression surrogate fitted to a table of roots of the characteristic equation for $m_o$ from 0 to 0.95 and $\lambda_o$ from 0 to 0.5, which extrapolates outside that range; the period of a fractile is thus the expression evaluated with the fractiles of $m_o$ and $V_S^o$, not a fractile of the period, and the estimates calculated from the mean parameter values provide the dynamic properties used in the displacement analysis. $V_{S30}$ is the travel-time-averaged shear-wave velocity in the uppermost 30 m:
 
 $$
 V_{S30}=\frac{30}{
@@ -87,4 +96,4 @@ V_{S30}=\frac{30}{
 +\dfrac{\max(30-H_s,0)}{V_{\mathrm{ref}}}}.
 $${#eq-slope-vs30}
 
-In this expression, $h_{30}^{(i)}$ is the portion of layer $i$ within the uppermost 30 m and $V_S^{(i)}$ is its shear-wave velocity; when $H_s<30$ m, the reference velocity $V_{\mathrm{ref}}$ is assigned to the remaining thickness.
+In this expression, $h_{30}^{(i)}$ is the portion of layer $i$ within the uppermost 30 m and $V_S^{(i)}$ is its shear-wave velocity; when $H_s<30$ m, the reference velocity $V_{\mathrm{ref}}=760$ m/s is assigned to the remaining thickness.

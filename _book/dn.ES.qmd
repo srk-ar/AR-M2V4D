@@ -17,7 +17,7 @@ source(file.path(root, "scripts", "setup", "report.R"))
 
 ## Desplazamientos y coeficientes sísmicos {#sec-newmark_results}
 
-Las figuras de desplazamientos sombrean los umbrales de daño del Capítulo [-@sec-criteria] como bandas de $D_n/H$ en el `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`% de la altura del talud, y las figuras de coeficientes sombrean los mismos umbrales sobre el eje $D_a/H$; cada pestaña de demanda reúne las combinaciones material–geometría para un período de retorno o el MCE, con colores para los materiales y trazos y grosores para las geometrías.
+Las figuras de desplazamientos sombrean los umbrales de daño del Capítulo [-@sec-criteria] como bandas de $D_n/H_s$ en el `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`% de la altura del talud, y las figuras de coeficientes sombrean los mismos umbrales sobre el eje $D_a/H_s$; cada pestaña de demanda reúne las combinaciones material–geometría para un período de retorno o el MCE, con colores para los materiales y trazos y grosores para las geometrías.
 
 ### Curvas de desplazamientos de Newmark {#sec-dn-curves}
 

@@ -92,4 +92,12 @@ if (!is.null(kmaxTable) && !exists("Da.data")) {
     rm(OK)
   }
 }
+
+# ── k_y calibration intervals ─────────────────────────────────────────────────
+# Once per render, from the stored products before any display filter, for the
+# extrapolation marks of the displacement and coefficient figures and tables.
+if (!is.null(kmaxTable) && "PGA" %in% names(kmaxTable) && !exists("KyLimits.kmax")) {
+  KyLimits.kmax <- .kyLimits(kmaxTable, pga = kmaxTable)
+  if (!is.null(DnTable)) KyLimits.Dn <- .kyLimits(DnTable, pga = kmaxTable)
+}
 # nolint end

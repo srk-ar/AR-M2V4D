@@ -8,7 +8,6 @@ WIDTHS <- setNames(rep(c(MID_LINE_SIZE, THICK_LINE_SIZE), each = 6L,
 COLORS <- setNames(grDevices::hcl.colors(length(IDm.gmdp), palette = "Dark 3"), IDm.gmdp)
 IDN_PLOT <- c("ensemble", "rigid", "flexible")
 if (!exists("IDn.target") || !length(IDn.target)) IDn.target <- IDN_PLOT
-IDn.target <- intersect(as.character(IDn.target), IDN_PLOT)
 if (!exists("p.target") || !length(p.target)) p.target <- "mean"
 DN_MIN_PLOT <- if (exists("DN_MIN_PLOT", inherits = FALSE)) DN_MIN_PLOT else 1e-4
 
@@ -24,13 +23,15 @@ SITE_BY <- "siteID" %in% names(DN) && uniqueN(DN$siteID, na.rm = TRUE) > 1L
 GEO <- ShearTable[IDg %in% IDg.target, .(Hs = unique(Hs)[1L]), by = IDg]
 DN <- GEO[DN, on = "IDg"]
 DN <- DN[Dn > DN_MIN_PLOT]
+MASK <- .markExtrapolation(DN, DN$ky, .currentTarget("KyLimits.Dn"))
 
 DATA <- DN[, .(
   ID    = if (SITE_BY) paste(siteID, IDm, IDg, sep = ".") else paste(IDm, IDg, sep = "."),
   Y     = Dn / Hs,
   X     = ky,
   style = unname(STYLES[IDg]),
-  size  = unname(WIDTHS[IDg])
+  size  = unname(WIDTHS[IDg]),
+  extrapolated = MASK
 )]
 setorder(DATA, ID, X)
 DATA <- unique(DATA)
@@ -59,8 +60,8 @@ PLOT <- buildPlot(
 PLOT$x$hc_opts$series <- lapply(PLOT$x$hc_opts$series, function(Series) {
   ID <- strsplit(Series$name, ".", fixed = TRUE)[[1L]]
   Series$color <- unname(COLORS[[ID[[if (SITE_BY) 2L else 1L]]]])
-  Series
+  .markSeries(Series)
 })
 rm(STYLES, WIDTHS, COLORS)
-rm(DN, DN_MIN_PLOT, DATA, DUP, SITE_BY, IDN_PLOT, GEO, MCE)
+rm(DN, DN_MIN_PLOT, DATA, DUP, SITE_BY, IDN_PLOT, GEO, MCE, MASK)
 # nolint end

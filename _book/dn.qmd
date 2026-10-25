@@ -17,7 +17,7 @@ source(file.path(root, "scripts", "setup", "report.R"))
 
 ## Displacements and Seismic Coefficients {#sec-newmark_results}
 
-The displacement figures shade the damage thresholds of Chapter [-@sec-criteria] as bands of $D_n/H$ at `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`% of the slope height, and the coefficient figures shade the same thresholds on the $D_a/H$ axis; each demand tab groups the material–geometry combinations for one return period or the MCE, with colors for materials and line patterns and widths for geometries.
+The displacement figures shade the damage thresholds of Chapter [-@sec-criteria] as bands of $D_n/H_s$ at `r paste(.fmt(DAMAGE.CUTS, 1), collapse = ", ")`% of the slope height, and the coefficient figures shade the same thresholds on the $D_a/H_s$ axis; each demand tab groups the material–geometry combinations for one return period or the MCE, with colors for materials and line patterns and widths for geometries.
 
 ### Newmark Displacement Curves {#sec-dn-curves}
 

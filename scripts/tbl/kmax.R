@@ -24,8 +24,9 @@ KT <- KT[
     IDg %in% IDg.target &
     (ID == "MCE" | TR %in% TR.target)
 ][.matchP(p, p.target)]
+MASK <- .markExtrapolation(KT, KT$kmax, .currentTarget("KyLimits.kmax"))
 
-DT <- KT[, .(ID = .demandLabel(ID, TR), TR, IDn, IDg, Ts, Vs30, Da, kmax)]
+DT <- KT[, .(ID = .demandLabel(ID, TR), TR, IDn, IDg, Ts, Vs30, Da, kmax, extrapolated = MASK)]
 
 GEO <- ShearTable[
   IDg %in% IDg.target,
@@ -60,7 +61,14 @@ AUX <- data.table::dcast(
   ID + TR + IDn + Ts + Vs30 ~ DaH,
   value.var = "kmax"
 )
-AUX <- AUX[base::order(ID == "MCE", TR, IDn)]
+MASK <- data.table::dcast(
+  DT,
+  ID + TR + IDn + Ts + Vs30 ~ DaH,
+  value.var = "extrapolated"
+)
+IDX <- AUX[, base::order(ID == "MCE", TR, IDn)]
+AUX <- AUX[IDX]
+MASK <- MASK[IDX, !c("ID", "TR", "IDn", "Ts", "Vs30")]
 AUX[, TR := NULL]
 
 SYMBOLS <- c(
@@ -77,10 +85,11 @@ TBL <- AUX |>
     font.size.header = FONT.SIZE.HEADER
   ) |>
   .mathHeader(SYMBOLS) |>
+  .markTable(MASK) |>
   .damageTable(DAMAGE.CUTS, DAMAGE.COLORS) |>
   flextable::set_table_properties(layout = "autofit")
 
 rm(list = intersect(c(
-  "KT", "DT", "GEO", "AUX", "DUP", "LEVELS", "MISSING", "SYMBOLS"
+  "KT", "DT", "GEO", "AUX", "DUP", "LEVELS", "MISSING", "SYMBOLS", "MASK", "IDX"
 ), ls()))
 # nolint end
